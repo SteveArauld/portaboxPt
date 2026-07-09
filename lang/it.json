@@ -239,7 +239,7 @@
     "home.testimonials.author.giulia": "Giulia Ferrante",
     "home.testimonials.author.luca": "Luca De Santis",
     "home.testimonials.author.elena": "Elena Moretti",
-    "home.testimonials.text1": "Ho acquistato un container marittimo usato in ottime condizioni. Servizio veloce e professionale, tutto conforme alla descrizione. Vegliaia Containers è diventato il mio riferimento per future necessità.",
+    "home.testimonials.text1": "Ho acquistato un container marittimo usato in ottime condizioni. Servizio veloce e professionale, tutto conforme alla descrizione.",
     "home.testimonials.text2": "Il team ha realizzato per me un container abitativo completamente personalizzato. Finiture perfette, isolamento eccellente e consegna puntuale. Sono davvero soddisfatta del risultato.",
     "home.testimonials.text3": "Abbiamo preso un container frigorifero per la nostra azienda agricola. Funziona alla perfezione e mantiene la temperatura stabile anche con carichi importanti. Ottimo supporto tecnico.",
     "home.testimonials.text4": "Esperienza impeccabile. Lo staff è gentile, preparato e mi ha aiutata a scegliere la soluzione più adatta alle mie esigenze. Il container è arrivato in condizioni eccellenti.",
@@ -345,7 +345,7 @@
     "about.mission_title": "La Nostra Missione",
     "about.mission_text": "La nostra missione è trasformare container standard in spazi intelligenti: case, uffici, magazzini, moduli refrigerati e bungalow funzionali. Con competenza e attenzione al cliente, accompagniamo ogni richiesta con soluzioni su misura, rapide e professionali.",
     "about.innovation_title": "Innovazione e Competenza",
-    "about.innovation_text": "In Vegliaia Containers crediamo nell'innovazione come motore di crescita. Grazie a un team esperto, realizziamo strutture modulari moderne, resistenti e adattabili a molteplici utilizzi. Ogni intervento è pensato per garantire sicurezza, comfort e massima efficienza.",
+    "about.innovation_text": "Crediamo nell'innovazione come motore di crescita. Grazie a un team esperto, realizziamo strutture modulari moderne, resistenti e adattabili a molteplici utilizzi. Ogni intervento è pensato per garantire sicurezza, comfort e massima efficienza.",
     "about.quality_title": "Qualità che Fa la Differenza",
     "about.quality_text": "I nostri container sono selezionati e modificati secondo standard elevati, con materiali certificati e processi controllati. Offriamo container ISO, coibentati, refrigerati e soluzioni abitative curate nei dettagli. La qualità è il nostro impegno quotidiano.",
 
@@ -819,9 +819,63 @@
     "Veuillez sélectionner votre région": "Seleziona la tua regione",
 
 
-    "whatsapp_message": "Buongiorno, vorrei avere informazioni"
+    "whatsapp_message": "Buongiorno, vorrei avere informazioni",
+
+    "Panier": "Carrello",
+
+    "Mon panier": "Il mio carrello",
+    "Accueil": "Home",
+    "Votre panier est vide.": "Il tuo carrello è vuoto.",
+    "Découvrir nos produits": "Scopri i nostri prodotti",
+    "Réf.": "Rif.",
+    "Récapitulatif": "Riepilogo",
+    "Articles": "Articoli",
+    "Total": "Totale",
+    "Passer la commande": "Procedi all'ordine",
+    "Continuer mes achats": "Continua gli acquisti",
+    "Panier": "Carrello",
 
 
+     "Validation de la commande": "Conferma dell'ordine",
+    "Accueil": "Home",
+    "Mon panier": "Il mio carrello",
+    "Commande": "Ordine",
+    "Votre panier est vide.": "Il tuo carrello è vuoto.",
+    "Découvrir nos produits": "Scopri i nostri prodotti",
+    "Vos coordonnées": "I tuoi dati",
+    "Nom complet": "Nome completo",
+    "Email": "Email",
+    "Téléphone": "Telefono",
+    "Adresse de facturation": "Indirizzo di fatturazione",
+    "Pays": "Paese",
+    "Sélectionnez un pays": "Seleziona un paese",
+    "Région / Province": "Regione / Provincia",
+    "Ville": "Città",
+    "Code postal": "Codice postale",
+    "Adresse": "Indirizzo",
+    "Rue, numéro, complément...": "Via, numero, complemento...",
+    "Livrer à une adresse différente": "Consegnare a un indirizzo diverso",
+    "Adresse de livraison": "Indirizzo di consegna",
+    "Nom du destinataire": "Nome del destinatario",
+    "Adresse de livraison": "Indirizzo di consegna",
+    "Notes de commande": "Note dell'ordine",
+    "Informations complémentaires sur votre commande ou votre livraison (facultatif)": "Informazioni aggiuntive sul tuo ordine o sulla consegna (facoltativo)",
+    "Votre commande": "Il tuo ordine",
+    "Total": "Totale",
+    "Confirmer la commande": "Conferma l'ordine",
+    "Retour au panier": "Torna al carrello",
+    "Qté": "Qtà",
+    "Traitement...": "Elaborazione...",
+    "Veuillez vérifier les champs du formulaire.": "Verifica i campi del modulo.",
+    "Une erreur réseau est survenue. Veuillez réessayer.": "Si è verificato un errore di rete. Riprova.",
+
+
+     "Panier": "Carrello",
+    "Mon panier": "Il mio carrello",
+    "Fermer": "Chiudi",
+    "Sous-total": "Subtotale",
+    "Voir le panier": "Vedi carrello",
+    "Commander": "Ordina"
 
 
 }

@@ -13,820 +13,829 @@ class ArticleSeeder extends Seeder
     /**
      * Langues supportées
      */
-    protected array $locales = ['it', 'en', 'fr', 'pt', 'es'];
+    protected array $locales = ['pt'];
 
     public function run(): void
     {
         // Désactiver les événements pour accélérer le seeding
         Article::unsetEventDispatcher();
 
-        // Récupérer toutes les catégories
-        $categories = Category::all()->keyBy('slug');
+        // Récupérer toutes les catégories et les indexer par slug en portugais
+        $categories = Category::all()->mapWithKeys(function ($category) {
+            // Récupérer le nom en portugais (ou fallback sur 'it')
+            $ptName = $category->getTranslation('name', 'pt') 
+                      ?? $category->getTranslation('name', 'it') 
+                      ?? $category->name['it'] ?? 'Non catégorisé';
+            
+            // Générer le slug en portugais
+            $slug = Str::slug($ptName);
+            
+            return [$slug => $category];
+        });
 
         // Les données des articles avec leurs traductions
-        $articlesData =
-            [
-            [
-                "id" => "11363",
-                "name" => [
-                    "it" => "2 MONOBLOCCHI USO UFFICIO CON BAGNO",
-                    "en" => "2 OFFICE MONOBLOCKS WITH BATHROOM",
-                    "fr" => "2 MONOBLOCS BUREAU AVEC SALLE DE BAIN",
-                    "pt" => "2 MONOBLOCOS ESCRITÓRIO COM BANHEIRO",
-                    "es" => "2 MONOBLOCOS OFICINA CON BAÑO"
+        $articlesData = [
+                [
+                    "id" => "11363",
+                    "name" => [
+                        "it" => "2 MONOBLOCCHI USO UFFICIO CON BAGNO",
+                        "en" => "2 OFFICE MONOBLOCKS WITH BATHROOM",
+                        "fr" => "2 MONOBLOCS BUREAU AVEC SALLE DE BAIN",
+                        "pt" => "2 MONOBLOCOS ESCRITÓRIO COM BANHEIRO",
+                        "es" => "2 MONOBLOCOS OFICINA CON BAÑO"
+                    ],
+                    "price" => "7,100.00",
+                    "old_price" => "8,000.00",
+                    "sku" => "3276611363",
+                    "discount_percentage" => "-11%",
+                    "link" => "/product/2-monoblocchi-uso-ufficio-con-bagno/",
+                    "categories" => ["container-modulari"],
+                    "short_description" => [
+                        "it" => "Dimensioni al basamento 593 x 243 cm.\nDimensioni al tetto 600 x 250 cm.\nH interna 240 cm H esterna 272 cm.\nPannello Parete sp.40 mm – Poliuretano\n1 Lato lamiera esterna micro nervata BG RAL 9002.\n1 Lato lamiera interna micro nervata BG RAL 9002.\nPannello Tetto sp.30+35 mm – Poliuretano\n1 Lato lamiera esterna 5 greche RAL 9002.\n1 Lato lamiera interna micro nervata BG RAL 9002.\nBasamento alta portanza con struttura in tubolare, rivestito con lamiera grecata, rivestita con legno IDRO V100 sp.18 mm, rivestito con PVC Antiscivolo.\nSerramenti in alluminio RAL 9010\nVetro 4 mm Trasparente.\nN.1 Porta mezzo vetro a un'anta di ingresso, completa di barre antintrusione, con maniglia e serratura standard, con dimensioni100 x 210h esterna cm.\nN.1 Finestra scorrevole, completa di barre antintrusione, con dimensioni 100 x 100h esterna cm.\nN.1 Porta cieca tutto pannello a un'anta, con maniglia e serratura standard, con dimensioni 80 x 210h esterna cm.\nN.1 Finestrino con apertura a vasistas, con vetro 4 mm tampato, senza barre antintrusione, con dimensioni 50 x 50h esterna cm.\nN.1 Porta a soffietto colore GRIGIO.\nImpianto idraulico interno con tubo MEPLA a vista, compreso di:\nN.1 Wc in ceramica + sedile + cassetta esterna.\nN.1 Portarotolo + Scopino.\nN.1 Lavabo in ceramica 60 cm + colonna + mix.\nN.1 Mensola + Specchio.\nN.1 Piatto doccia in ceramica 90 x 90 cm.\nN.1 Asta doccia + Miscelatore + Soffione.\nN.1 Porta sapone angolare.\nN.1 Boiler elettrico 60 Litri Acqua Calda.\nImpianto elettrico standard norma CEE 220V, con tubo PVC Biancoa vista, compreso di:\nN.1 Quadro elettrico.\nN.1 Differenziale Generale.\nN.1 Differenziale per CDZ.\nN.2 Interruttori.\nN.2 Prese.\nN.1 Plafoniera 19W-LED.\nN.1 Plafoniera 45W-LED.\nN.1 Termoconvettore 500W.\nN.1 Condizionatore Mono Split Inverter BTU 9000-HISENSE.\nN.1 Scatola esterna per allaccio impianto elettrico.",
+                        "en" => "Base dimensions 593 x 243 cm.\nRoof dimensions 600 x 250 cm.\nInternal height 240 cm External height 272 cm.\nWall Panel thickness 40 mm – Polyurethane\n1 External side micro-ribbed sheet metal BG RAL 9002.\n1 Internal side micro-ribbed sheet metal BG RAL 9002.\nRoof Panel thickness 30+35 mm – Polyurethane\n1 External side 5-corrugated sheet metal RAL 9002.\n1 Internal side micro-ribbed sheet metal BG RAL 9002.\nHigh-load base with tubular structure, covered with corrugated sheet metal, covered with IDRO V100 wood thickness 18 mm, covered with Anti-slip PVC.\nAluminum frames RAL 9010\n4 mm Clear Glass.\nNo.1 Half-glass single-leaf entrance door, complete with anti-intrusion bars, with handle and standard lock, external dimensions 100 x 210h cm.\nNo.1 Sliding window, complete with anti-intrusion bars, external dimensions 100 x 100h cm.\nNo.1 Full-panel blind single-leaf door, with handle and standard lock, external dimensions 80 x 210h cm.\nNo.1 Small tilting window, with 4 mm frosted glass, without anti-intrusion bars, external dimensions 50 x 50h cm.\nNo.1 Folding door GRAY color.\nInternal plumbing system with visible MEPLA pipe, including:\nNo.1 Ceramic toilet + seat + external tank.\nNo.1 Toilet roll holder + Brush holder.\nNo.1 Ceramic sink 60 cm + column + mixer.\nNo.1 Shelf + Mirror.\nNo.1 Ceramic shower tray 90 x 90 cm.\nNo.1 Shower rod + Mixer + Shower head.\nNo.1 Corner soap dish.\nNo.1 60 Liter electric water heater.\nStandard electrical system according to CEE 220V regulations, with visible White PVC pipe, including:\nNo.1 Electrical panel.\nNo.1 Main differential switch.\nNo.1 Differential switch for socket outlets.\nNo.2 Switches.\nNo.2 Sockets.\nNo.1 19W-LED ceiling light.\nNo.1 45W-LED ceiling light.\nNo.1 500W electric convector heater.\nNo.1 HISENSE BTU 9000 Inverter Mono Split Air Conditioner.\nNo.1 External box for electrical system connection.",
+                        "fr" => "Dimensions à la base 593 x 243 cm.\nDimensions au toit 600 x 250 cm.\nHauteur intérieure 240 cm Hauteur extérieure 272 cm.\nPanneau mural ép.40 mm – Polyuréthane\n1 Côté extérieur tôle micro-nervurée BG RAL 9002.\n1 Côté intérieur tôle micro-nervurée BG RAL 9002.\nPanneau de toit ép.30+35 mm – Polyuréthane\n1 Côté extérieur tôle 5 nervures RAL 9002.\n1 Côté intérieur tôle micro-nervurée BG RAL 9002.\nSoubassement haute portance avec structure tubulaire, revêtu de tôle nervurée, recouvert de bois IDRO V100 ép.18 mm, revêtu de PVC antidérapant.\nMenuiseries aluminium RAL 9010\nVerre 4 mm Transparent.\nN.1 Porte d'entrée 1 vantail mi-vitrée, complète avec barres anti-intrusion, poignée et serrure standard, dimensions extérieures 100 x 210h cm.\nN.1 Fenêtre coulissante, complète avec barres anti-intrusion, dimensions extérieures 100 x 100h cm.\nN.1 Porte pleine 1 vantail, avec poignée et serrure standard, dimensions extérieures 80 x 210h cm.\nN.1 Vasistas, avec verre 4 mm dépoli, sans barres anti-intrusion, dimensions extérieures 50 x 50h cm.\nN.1 Porte accordéon couleur GRIS.\nInstallation sanitaire intérieure avec tube MEPLA apparent, comprenant :\nN.1 WC céramique + abattant + réservoir externe.\nN.1 Porte rouleau + Balai.\nN.1 Lavabo céramique 60 cm + colonne + mitigeur.\nN.1 Étagère + Miroir.\nN.1 Receveur de douche céramique 90 x 90 cm.\nN.1 Barre de douche + Mitigeur + Pommeau.\nN.1 Porte-savon d'angle.\nN.1 Chauffe-eau électrique 60 Litres.\nInstallation électrique standard norme CEE 220V, avec tube PVC Blanc apparent, comprenant :\nN.1 Tableau électrique.\nN.1 Différentiel Général.\nN.1 Différentiel pour prises.\nN.2 Interrupteurs.\nN.2 Prises.\nN.1 Plafonnier 19W-LED.\nN.1 Plafonnier 45W-LED.\nN.1 Convecteur électrique 500W.\nN.1 Climatiseur Mono Split Inverter BTU 9000-HISENSE.\nN.1 Boîte extérieure pour raccordement électrique.",
+                        "pt" => "Dimensões da base 593 x 243 cm.\nDimensões do telhado 600 x 250 cm.\nAltura interna 240 cm Altura externa 272 cm.\nPainel de Parede esp.40 mm – Poliuretano\n1 Lado externo chapa micro nervurada BG RAL 9002.\n1 Lado interno chapa micro nervurada BG RAL 9002.\nPainel de Telhado esp.30+35 mm – Poliuretano\n1 Lado externo chapa 5 nervuras RAL 9002.\n1 Lado interno chapa micro nervurada BG RAL 9002.\nBase de alta capacidade com estrutura tubular, revestida com chapa nervurada, revestida com madeira IDRO V100 esp.18 mm, revestida com PVC Antiderrapante.\nEsquadrias de alumínio RAL 9010\nVidro 4 mm Transparente.\nN.1 Porta de entrada meio vidro de uma folha, completa com barras anti-intrusão, com maçaneta e fechadura padrão, dimensões externas 100 x 210h cm.\nN.1 Janela de correr, completa com barras anti-intrusão, dimensões externas 100 x 100h cm.\nN.1 Porta cega de painel completo de uma folha, com maçaneta e fechadura padrão, dimensões externas 80 x 210h cm.\nN.1 Pequena janela basculante, com vidro 4 mm fosco, sem barras anti-intrusão, dimensões externas 50 x 50h cm.\nN.1 Porta sanfonada cor CINZA.\nSistema hidráulico interno com tubo MEPLA aparente, incluindo:\nN.1 Vaso sanitário cerâmico + assento + caixa externa.\nN.1 Porta-rolo + Escovinha.\nN.1 Lavatório cerâmico 60 cm + coluna + misturador.\nN.1 Prateleira + Espelho.\nN.1 Base de chuveiro cerâmica 90 x 90 cm.\nN.1 Barra de chuveiro + Misturador + Chuveiro.\nN.1 Saboneteira de canto.\nN.1 Aquecedor elétrico de água 60 Litros.\nSistema elétrico padrão norma CEE 220V, com tubo PVC Branco aparente, incluindo:\nN.1 Quadro elétrico.\nN.1 Diferencial Geral.\nN.1 Diferencial para tomadas.\nN.2 Interruptores.\nN.2 Tomadas.\nN.1 Luminária de teto 19W-LED.\nN.1 Luminária de teto 45W-LED.\nN.1 Convector elétrico 500W.\nN.1 Ar condicionado Mono Split Inverter BTU 9000-HISENSE.\nN.1 Caixa externa para conexão elétrica.",
+                        "es" => "Dimensiones de la base 593 x 243 cm.\nDimensiones del techo 600 x 250 cm.\nAltura interior 240 cm Altura exterior 272 cm.\nPanel de Pared esp.40 mm – Poliuretano\n1 Lado exterior chapa micro nervada BG RAL 9002.\n1 Lado interior chapa micro nervada BG RAL 9002.\nPanel de Techo esp.30+35 mm – Poliuretano\n1 Lado exterior chapa 5 grecas RAL 9002.\n1 Lado interior chapa micro nervada BG RAL 9002.\nBase de alta capacidad con estructura tubular, revestida con chapa grecada, revestida con madera IDRO V100 esp.18 mm, revestida con PVC Antideslizante.\nCarpintería de aluminio RAL 9010\nVidrio 4 mm Transparente.\nN.1 Puerta de entrada de una hoja medio vidrio, completa con barras antintrusión, con manija y cerradura estándar, dimensiones exteriores 100 x 210h cm.\nN.1 Ventana corredera, completa con barras antintrusión, dimensiones exteriores 100 x 100h cm.\nN.1 Puerta ciega de panel completo de una hoja, con manija y cerradura estándar, dimensiones exteriores 80 x 210h cm.\nN.1 Ventanilla practicable, con vidrio 4 mm esmerilado, sin barras antintrusión, dimensiones exteriores 50 x 50h cm.\nN.1 Puerta plegable color GRIS.\nInstalación sanitaria interior con tubo MEPLA visto, incluyendo:\nN.1 Inodoro cerámico + asiento + cisterna externa.\nN.1 Portarrollos + Escobilla.\nN.1 Lavabo cerámico 60 cm + columna + mezclador.\nN.1 Estante + Espejo.\nN.1 Plato de ducha cerámico 90 x 90 cm.\nN.1 Barra de ducha + Mezclador + Alcachofa.\nN.1 Jabonera de esquina.\nN.1 Calentador eléctrico de agua 60 Litros.\nInstalación eléctrica estándar norma CEE 220V, con tubo PVC Blanco visto, incluyendo:\nN.1 Cuadro eléctrico.\nN.1 Diferencial General.\nN.1 Diferencial para tomas.\nN.2 Interruptores.\nN.2 Tomas.\nN.1 Plafón 19W-LED.\nN.1 Plafón 45W-LED.\nN.1 Convector eléctrico 500W.\nN.1 Aire acondicionado Mono Split Inverter BTU 9000-HISENSE.\nN.1 Caja exterior para conexión eléctrica."
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard4-300x300.jpg",
+                        "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard5-300x300.jpg",
+                        "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard6-300x300.jpg",
+                        "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard7-300x300.jpg",
+                        "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard8-300x300.jpg",
+                        "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard9-300x300.jpg",
+                        "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard10-300x300.jpg",
+                        "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard11-300x300.jpg",
+                        "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard1-300x300.jpg",
+                        "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard12-300x300.jpg",
+                        "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard2-300x300.jpg",
+                        "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard13-300x300.jpg",
+                        "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard3-300x300.jpg",
+                        "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard14-300x300.jpg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "price" => "7,100.00",
-                "old_price" => "8,000.00",
-                "sku" => "3276611363",
-                "discount_percentage" => "-11%",
-                "link" => "/product/2-monoblocchi-uso-ufficio-con-bagno/",
-                "categories" => ["container-modulari"],
-                "short_description" => [
-                    "it" => "Dimensioni al basamento 593 x 243 cm.\nDimensioni al tetto 600 x 250 cm.\nH interna 240 cm H esterna 272 cm.\nPannello Parete sp.40 mm – Poliuretano\n1 Lato lamiera esterna micro nervata BG RAL 9002.\n1 Lato lamiera interna micro nervata BG RAL 9002.\nPannello Tetto sp.30+35 mm – Poliuretano\n1 Lato lamiera esterna 5 greche RAL 9002.\n1 Lato lamiera interna micro nervata BG RAL 9002.\nBasamento alta portanza con struttura in tubolare, rivestito con lamiera grecata, rivestita con legno IDRO V100 sp.18 mm, rivestito con PVC Antiscivolo.\nSerramenti in alluminio RAL 9010\nVetro 4 mm Trasparente.\nN.1 Porta mezzo vetro a un'anta di ingresso, completa di barre antintrusione, con maniglia e serratura standard, con dimensioni100 x 210h esterna cm.\nN.1 Finestra scorrevole, completa di barre antintrusione, con dimensioni 100 x 100h esterna cm.\nN.1 Porta cieca tutto pannello a un'anta, con maniglia e serratura standard, con dimensioni 80 x 210h esterna cm.\nN.1 Finestrino con apertura a vasistas, con vetro 4 mm tampato, senza barre antintrusione, con dimensioni 50 x 50h esterna cm.\nN.1 Porta a soffietto colore GRIGIO.\nImpianto idraulico interno con tubo MEPLA a vista, compreso di:\nN.1 Wc in ceramica + sedile + cassetta esterna.\nN.1 Portarotolo + Scopino.\nN.1 Lavabo in ceramica 60 cm + colonna + mix.\nN.1 Mensola + Specchio.\nN.1 Piatto doccia in ceramica 90 x 90 cm.\nN.1 Asta doccia + Miscelatore + Soffione.\nN.1 Porta sapone angolare.\nN.1 Boiler elettrico 60 Litri Acqua Calda.\nImpianto elettrico standard norma CEE 220V, con tubo PVC Biancoa vista, compreso di:\nN.1 Quadro elettrico.\nN.1 Differenziale Generale.\nN.1 Differenziale per CDZ.\nN.2 Interruttori.\nN.2 Prese.\nN.1 Plafoniera 19W-LED.\nN.1 Plafoniera 45W-LED.\nN.1 Termoconvettore 500W.\nN.1 Condizionatore Mono Split Inverter BTU 9000-HISENSE.\nN.1 Scatola esterna per allaccio impianto elettrico.",
-                    "en" => "Base dimensions 593 x 243 cm.\nRoof dimensions 600 x 250 cm.\nInternal height 240 cm External height 272 cm.\nWall Panel thickness 40 mm – Polyurethane\n1 External side micro-ribbed sheet metal BG RAL 9002.\n1 Internal side micro-ribbed sheet metal BG RAL 9002.\nRoof Panel thickness 30+35 mm – Polyurethane\n1 External side 5-corrugated sheet metal RAL 9002.\n1 Internal side micro-ribbed sheet metal BG RAL 9002.\nHigh-load base with tubular structure, covered with corrugated sheet metal, covered with IDRO V100 wood thickness 18 mm, covered with Anti-slip PVC.\nAluminum frames RAL 9010\n4 mm Clear Glass.\nNo.1 Half-glass single-leaf entrance door, complete with anti-intrusion bars, with handle and standard lock, external dimensions 100 x 210h cm.\nNo.1 Sliding window, complete with anti-intrusion bars, external dimensions 100 x 100h cm.\nNo.1 Full-panel blind single-leaf door, with handle and standard lock, external dimensions 80 x 210h cm.\nNo.1 Small tilting window, with 4 mm frosted glass, without anti-intrusion bars, external dimensions 50 x 50h cm.\nNo.1 Folding door GRAY color.\nInternal plumbing system with visible MEPLA pipe, including:\nNo.1 Ceramic toilet + seat + external tank.\nNo.1 Toilet roll holder + Brush holder.\nNo.1 Ceramic sink 60 cm + column + mixer.\nNo.1 Shelf + Mirror.\nNo.1 Ceramic shower tray 90 x 90 cm.\nNo.1 Shower rod + Mixer + Shower head.\nNo.1 Corner soap dish.\nNo.1 60 Liter electric water heater.\nStandard electrical system according to CEE 220V regulations, with visible White PVC pipe, including:\nNo.1 Electrical panel.\nNo.1 Main differential switch.\nNo.1 Differential switch for socket outlets.\nNo.2 Switches.\nNo.2 Sockets.\nNo.1 19W-LED ceiling light.\nNo.1 45W-LED ceiling light.\nNo.1 500W electric convector heater.\nNo.1 HISENSE BTU 9000 Inverter Mono Split Air Conditioner.\nNo.1 External box for electrical system connection.",
-                    "fr" => "Dimensions à la base 593 x 243 cm.\nDimensions au toit 600 x 250 cm.\nHauteur intérieure 240 cm Hauteur extérieure 272 cm.\nPanneau mural ép.40 mm – Polyuréthane\n1 Côté extérieur tôle micro-nervurée BG RAL 9002.\n1 Côté intérieur tôle micro-nervurée BG RAL 9002.\nPanneau de toit ép.30+35 mm – Polyuréthane\n1 Côté extérieur tôle 5 nervures RAL 9002.\n1 Côté intérieur tôle micro-nervurée BG RAL 9002.\nSoubassement haute portance avec structure tubulaire, revêtu de tôle nervurée, recouvert de bois IDRO V100 ép.18 mm, revêtu de PVC antidérapant.\nMenuiseries aluminium RAL 9010\nVerre 4 mm Transparent.\nN.1 Porte d'entrée 1 vantail mi-vitrée, complète avec barres anti-intrusion, poignée et serrure standard, dimensions extérieures 100 x 210h cm.\nN.1 Fenêtre coulissante, complète avec barres anti-intrusion, dimensions extérieures 100 x 100h cm.\nN.1 Porte pleine 1 vantail, avec poignée et serrure standard, dimensions extérieures 80 x 210h cm.\nN.1 Vasistas, avec verre 4 mm dépoli, sans barres anti-intrusion, dimensions extérieures 50 x 50h cm.\nN.1 Porte accordéon couleur GRIS.\nInstallation sanitaire intérieure avec tube MEPLA apparent, comprenant :\nN.1 WC céramique + abattant + réservoir externe.\nN.1 Porte rouleau + Balai.\nN.1 Lavabo céramique 60 cm + colonne + mitigeur.\nN.1 Étagère + Miroir.\nN.1 Receveur de douche céramique 90 x 90 cm.\nN.1 Barre de douche + Mitigeur + Pommeau.\nN.1 Porte-savon d'angle.\nN.1 Chauffe-eau électrique 60 Litres.\nInstallation électrique standard norme CEE 220V, avec tube PVC Blanc apparent, comprenant :\nN.1 Tableau électrique.\nN.1 Différentiel Général.\nN.1 Différentiel pour prises.\nN.2 Interrupteurs.\nN.2 Prises.\nN.1 Plafonnier 19W-LED.\nN.1 Plafonnier 45W-LED.\nN.1 Convecteur électrique 500W.\nN.1 Climatiseur Mono Split Inverter BTU 9000-HISENSE.\nN.1 Boîte extérieure pour raccordement électrique.",
-                    "pt" => "Dimensões da base 593 x 243 cm.\nDimensões do telhado 600 x 250 cm.\nAltura interna 240 cm Altura externa 272 cm.\nPainel de Parede esp.40 mm – Poliuretano\n1 Lado externo chapa micro nervurada BG RAL 9002.\n1 Lado interno chapa micro nervurada BG RAL 9002.\nPainel de Telhado esp.30+35 mm – Poliuretano\n1 Lado externo chapa 5 nervuras RAL 9002.\n1 Lado interno chapa micro nervurada BG RAL 9002.\nBase de alta capacidade com estrutura tubular, revestida com chapa nervurada, revestida com madeira IDRO V100 esp.18 mm, revestida com PVC Antiderrapante.\nEsquadrias de alumínio RAL 9010\nVidro 4 mm Transparente.\nN.1 Porta de entrada meio vidro de uma folha, completa com barras anti-intrusão, com maçaneta e fechadura padrão, dimensões externas 100 x 210h cm.\nN.1 Janela de correr, completa com barras anti-intrusão, dimensões externas 100 x 100h cm.\nN.1 Porta cega de painel completo de uma folha, com maçaneta e fechadura padrão, dimensões externas 80 x 210h cm.\nN.1 Pequena janela basculante, com vidro 4 mm fosco, sem barras anti-intrusão, dimensões externas 50 x 50h cm.\nN.1 Porta sanfonada cor CINZA.\nSistema hidráulico interno com tubo MEPLA aparente, incluindo:\nN.1 Vaso sanitário cerâmico + assento + caixa externa.\nN.1 Porta-rolo + Escovinha.\nN.1 Lavatório cerâmico 60 cm + coluna + misturador.\nN.1 Prateleira + Espelho.\nN.1 Base de chuveiro cerâmica 90 x 90 cm.\nN.1 Barra de chuveiro + Misturador + Chuveiro.\nN.1 Saboneteira de canto.\nN.1 Aquecedor elétrico de água 60 Litros.\nSistema elétrico padrão norma CEE 220V, com tubo PVC Branco aparente, incluindo:\nN.1 Quadro elétrico.\nN.1 Diferencial Geral.\nN.1 Diferencial para tomadas.\nN.2 Interruptores.\nN.2 Tomadas.\nN.1 Luminária de teto 19W-LED.\nN.1 Luminária de teto 45W-LED.\nN.1 Convector elétrico 500W.\nN.1 Ar condicionado Mono Split Inverter BTU 9000-HISENSE.\nN.1 Caixa externa para conexão elétrica.",
-                    "es" => "Dimensiones de la base 593 x 243 cm.\nDimensiones del techo 600 x 250 cm.\nAltura interior 240 cm Altura exterior 272 cm.\nPanel de Pared esp.40 mm – Poliuretano\n1 Lado exterior chapa micro nervada BG RAL 9002.\n1 Lado interior chapa micro nervada BG RAL 9002.\nPanel de Techo esp.30+35 mm – Poliuretano\n1 Lado exterior chapa 5 grecas RAL 9002.\n1 Lado interior chapa micro nervada BG RAL 9002.\nBase de alta capacidad con estructura tubular, revestida con chapa grecada, revestida con madera IDRO V100 esp.18 mm, revestida con PVC Antideslizante.\nCarpintería de aluminio RAL 9010\nVidrio 4 mm Transparente.\nN.1 Puerta de entrada de una hoja medio vidrio, completa con barras antintrusión, con manija y cerradura estándar, dimensiones exteriores 100 x 210h cm.\nN.1 Ventana corredera, completa con barras antintrusión, dimensiones exteriores 100 x 100h cm.\nN.1 Puerta ciega de panel completo de una hoja, con manija y cerradura estándar, dimensiones exteriores 80 x 210h cm.\nN.1 Ventanilla practicable, con vidrio 4 mm esmerilado, sin barras antintrusión, dimensiones exteriores 50 x 50h cm.\nN.1 Puerta plegable color GRIS.\nInstalación sanitaria interior con tubo MEPLA visto, incluyendo:\nN.1 Inodoro cerámico + asiento + cisterna externa.\nN.1 Portarrollos + Escobilla.\nN.1 Lavabo cerámico 60 cm + columna + mezclador.\nN.1 Estante + Espejo.\nN.1 Plato de ducha cerámico 90 x 90 cm.\nN.1 Barra de ducha + Mezclador + Alcachofa.\nN.1 Jabonera de esquina.\nN.1 Calentador eléctrico de agua 60 Litros.\nInstalación eléctrica estándar norma CEE 220V, con tubo PVC Blanco visto, incluyendo:\nN.1 Cuadro eléctrico.\nN.1 Diferencial General.\nN.1 Diferencial para tomas.\nN.2 Interruptores.\nN.2 Tomas.\nN.1 Plafón 19W-LED.\nN.1 Plafón 45W-LED.\nN.1 Convector eléctrico 500W.\nN.1 Aire acondicionado Mono Split Inverter BTU 9000-HISENSE.\nN.1 Caja exterior para conexión eléctrica."
+                [
+                    "id" => "11170",
+                    "name" => [
+                        "it" => "Abri Pool House in Composito – La Soluzione Perfetta per il tuo Spazio Piscina",
+                        "en" => "Composite Pool House Shelter – The Perfect Solution for your Pool Area",
+                        "fr" => "Abri Pool House en Composite – La Solution Parfaite pour votre Espace Piscine",
+                        "pt" => "Abrigo Pool House em Compósito – A Solução Perfeita para o seu Espaço Piscina",
+                        "es" => "Refugio Pool House en Compuesto – La Solución Perfecta para tu Espacio Piscina"
+                    ],
+                    "price" => "4,200.00",
+                    "old_price" => "5,700.00",
+                    "sku" => "3276611170",
+                    "discount_percentage" => null,
+                    "link" => "/product/abri-pool-house-in-composito-la-soluzione-perfetta-per-il-tuo-spazio-piscina/",
+                    "categories" => ["container-modulari"],
+                    "short_description" => [
+                        "it" => "Abri Pool House in Composito: struttura moderna e resistente per il tuo spazio piscina. Facile da montare, eco-sostenibile e personalizzabile. Garanzia 7 anni.",
+                        "en" => "Composite Pool House Shelter: modern and resistant structure for your pool area. Easy to assemble, eco-sustainable and customizable. 7-year warranty.",
+                        "fr" => "Abri Pool House en Composite : structure moderne et résistante pour votre espace piscine. Facile à monter, éco-durable et personnalisable. Garantie 7 ans.",
+                        "pt" => "Abrigo Pool House em Compósito: estrutura moderna e resistente para o seu espaço de piscina. Fácil de montar, ecológico e personalizável. Garantia de 7 anos.",
+                        "es" => "Refugio Pool House en Compuesto: estructura moderna y resistente para tu espacio de piscina. Fácil de montar, ecológico y personalizable. Garantía de 7 años."
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/ABR-POOL-15-COMPO-300x300.png",
+                        "/assets/uploads/2025/11/ABR-POOL-15-COMPO-0-300x300.png"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "images" => [
-                    "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard4-300x300.jpg",
-                    "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard5-300x300.jpg",
-                    "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard6-300x300.jpg",
-                    "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard7-300x300.jpg",
-                    "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard8-300x300.jpg",
-                    "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard9-300x300.jpg",
-                    "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard10-300x300.jpg",
-                    "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard11-300x300.jpg",
-                    "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard1-300x300.jpg",
-                    "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard12-300x300.jpg",
-                    "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard2-300x300.jpg",
-                    "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard13-300x300.jpg",
-                    "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard3-300x300.jpg",
-                    "/assets/uploads/2025/11/pigreco-monoblocchi-prefabbricati-standard14-300x300.jpg"
+                [
+                    "id" => "11416",
+                    "name" => [
+                        "it" => "Bellissima e confortevole casa mobile Chalet Wood Gray",
+                        "en" => "Beautiful and comfortable mobile home Chalet Wood Gray",
+                        "fr" => "Superbe et confortable mobile home Chalet Wood Gray",
+                        "pt" => "Bela e confortável casa móvel Chalet Wood Gray",
+                        "es" => "Hermosa y confortable casa móvil Chalet Wood Gray"
+                    ],
+                    "price" => "9,175.00",
+                    "old_price" => "10,900.00",
+                    "sku" => "3276611416",
+                    "discount_percentage" => null,
+                    "link" => "/product/bellissima-e-confortevole-casa-mobile-chalet-wood-gray/",
+                    "categories" => ["container-modulari"],
+                    "short_description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/365292928_1724244028010760_9118458273124612003_n-300x300.jpg",
+                        "/assets/uploads/2025/11/293034276_586117456380302_6073713447237894855_n_1-300x300.jpg",
+                        "/assets/uploads/2025/11/365279038_247550114843107_8562200479334237832_n-300x300.jpg",
+                        "/assets/uploads/2025/11/365333528_6353595518086683_2102379157695520925_n-300x300.jpg",
+                        "/assets/uploads/2025/11/363724060_698930378919353_5499858359809471751_n-300x300.jpg",
+                        "/assets/uploads/2025/11/365379928_298039132634923_5118853571102416137_n-300x300.jpg",
+                        "/assets/uploads/2025/11/364976532_1319282438669996_7616167524475627419_n-300x300.jpg",
+                        "/assets/uploads/2025/11/290312388_5217095535038785_5734211567357451703_n_1-300x300.jpg",
+                        "/assets/uploads/2025/11/363904005_610502001154042_4856321725211318462_n-300x300.jpg",
+                        "/assets/uploads/2025/11/365197132_1346833699376664_5009297107060185704_n-300x300.jpg",
+                        "/assets/uploads/2025/11/363870226_811174110496652_5011992326891589801_n-300x300.jpg",
+                        "/assets/uploads/2025/11/365331478_3403331143290867_4489396472747588156_n-300x300.jpg",
+                        "/assets/uploads/2025/11/365972027_284145297551971_3305144593671605583_n-300x300.jpg",
+                        "/assets/uploads/2025/11/365829703_5992157390889558_4818937269328459174_n-300x300.jpg",
+                        "/assets/uploads/2025/11/365333519_983835566004490_3840214961872253881_n-300x300.jpg",
+                        "/assets/uploads/2025/11/365326371_672023464786602_4496036859777787928_n-300x300.jpg",
+                        "/assets/uploads/2025/11/363856732_1550308309128442_6771014741808985047_n-300x300.jpg",
+                        "/assets/uploads/2025/11/365270933_1566130337249926_2636523047625156394_n-300x300.jpg",
+                        "/assets/uploads/2025/11/291793422_419438036624822_7256667490450555214_n_1-300x300.jpg",
+                        "/assets/uploads/2025/11/365304030_267584669362376_6053805823883837312_n-300x300.jpg",
+                        "/assets/uploads/2025/11/365379299_143786532098761_5048817808809955357_n-300x300.jpg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "11170",
-                "name" => [
-                    "it" => "Abri Pool House in Composito – La Soluzione Perfetta per il tuo Spazio Piscina",
-                    "en" => "Composite Pool House Shelter – The Perfect Solution for your Pool Area",
-                    "fr" => "Abri Pool House en Composite – La Solution Parfaite pour votre Espace Piscine",
-                    "pt" => "Abrigo Pool House em Compósito – A Solução Perfeita para o seu Espaço Piscina",
-                    "es" => "Refugio Pool House en Compuesto – La Solución Perfecta para tu Espacio Piscina"
+                [
+                    "id" => "10540",
+                    "name" => [
+                        "it" => "Casa container 20 piedi HC – Completamente attrezzata",
+                        "en" => "20ft HC Container House – Fully equipped",
+                        "fr" => "Maison conteneur 20 pieds HC – Entièrement équipée",
+                        "pt" => "Casa contêiner 20 pés HC – Completamente equipada",
+                        "es" => "Casa contenedor 20 pies HC – Completamente equipada"
+                    ],
+                    "price" => "3,523.52",
+                    "old_price" => "5,033.60",
+                    "sku" => "3276610540",
+                    "discount_percentage" => null,
+                    "link" => "/product/casa-container-20-piedi-hc-completamente-attrezzata/",
+                    "categories" => ["contenitori-casa"],
+                    "short_description" => [
+                        "it" => "Casa container compatta da 20 piedi HC, rivestita in fibrocemento effetto legno.Dotata di cucina, bagno, isolamento e finiture interne di alta qualità.\nEstetica moderna effetto legno\nIsolamento termico/acustico\nCucina e bagno inclusi\nImpianto elettrico completo\nPronta all'uso",
+                        "en" => "Compact 20ft HC container house, clad in wood-effect fiber cement. Equipped with kitchen, bathroom, insulation and high-quality interior finishes.\nModern wood-effect aesthetics\nThermal/acoustic insulation\nKitchen and bathroom included\nComplete electrical system\nReady to use",
+                        "fr" => "Maison conteneur compacte 20 pieds HC, revêtue en fibrociment effet bois. Équipée de cuisine, salle de bain, isolation et finitions intérieures de haute qualité.\nEsthétique moderne effet bois\nIsolation thermique/acoustique\nCuisine et salle de bain incluses\nInstallation électrique complète\nPrête à l'emploi",
+                        "pt" => "Casa contêiner compacta de 20 pés HC, revestida em fibrocimento efeito madeira. Equipada com cozinha, banheiro, isolamento e acabamentos internos de alta qualidade.\nEstética moderna efeito madeira\nIsolamento térmico/acústico\nCozinha e banheiro incluídos\nSistema elétrico completo\nPronta para uso",
+                        "es" => "Casa contenedor compacta de 20 pies HC, revestida en fibrocemento efecto madera. Equipada con cocina, baño, aislamiento y acabados interiores de alta calidad.\nEstética moderna efecto madera\nAislamiento térmico/acústico\nCocina y baño incluidos\nSistema eléctrico completo\nLista para usar"
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/1-51-300x300.jpeg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "price" => "4,200.00",
-                "old_price" => "5,700.00",
-                "sku" => "3276611170",
-                "discount_percentage" => null,
-                "link" => "/product/abri-pool-house-in-composito-la-soluzione-perfetta-per-il-tuo-spazio-piscina/",
-                "categories" => ["container-modulari"],
-                "short_description" => [
-                    "it" => "Abri Pool House in Composito: struttura moderna e resistente per il tuo spazio piscina. Facile da montare, eco-sostenibile e personalizzabile. Garanzia 7 anni.",
-                    "en" => "Composite Pool House Shelter: modern and resistant structure for your pool area. Easy to assemble, eco-sustainable and customizable. 7-year warranty.",
-                    "fr" => "Abri Pool House en Composite : structure moderne et résistante pour votre espace piscine. Facile à monter, éco-durable et personnalisable. Garantie 7 ans.",
-                    "pt" => "Abrigo Pool House em Compósito: estrutura moderna e resistente para o seu espaço de piscina. Fácil de montar, ecológico e personalizável. Garantia de 7 anos.",
-                    "es" => "Refugio Pool House en Compuesto: estructura moderna y resistente para tu espacio de piscina. Fácil de montar, ecológico y personalizable. Garantía de 7 años."
+                [
+                    "id" => "11488",
+                    "name" => [
+                        "it" => "Casa container 35 m² – Modello A Cottage, abitabile tutto l'anno",
+                        "en" => "35 m² Container House – Cottage Model, habitable all year round",
+                        "fr" => "Maison conteneur 35 m² – Modèle Cottage, habitable toute l'année",
+                        "pt" => "Casa contêiner 35 m² – Modelo Cottage, habitável o ano todo",
+                        "es" => "Casa contenedor 35 m² – Modelo Cottage, habitable todo el año"
+                    ],
+                    "price" => "8,565.00",
+                    "old_price" => "10,500.00",
+                    "sku" => "3276611488",
+                    "discount_percentage" => null,
+                    "link" => "/product/casa-container-35-m%c2%b2-modello-a-cottage-abitabile-tutto-lanno/",
+                    "categories" => ["container-modulari"],
+                    "short_description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/s2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_22f6493bdd5e41b28d48a7112b5c32917Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_c17ab0588573409d998ed5c7301e06af7Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_3faeb8daf85f46b9af56a40ce007ef947Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_a831440af5b044ceb500bcb453a3f4627Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_b07408f66bed4b54ae9f4d9aba4621267Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_39bd78ffba744ae7a0cad936d91bd1c27Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_57e7b759dcfd4abdb979136e3cd643f37Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_63f028b2a8f64e1e8c4a729da65f235d7Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_de5b5eccb4d84bd9aee28bf9fd13e4257Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_b38a0467affd4b1990a94eb0fee716cb7Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_79bec77c32d64532ab1c2873cad0e3ca7Emv2-300x300.jpg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "images" => [
-                    "/assets/uploads/2025/11/ABR-POOL-15-COMPO-300x300.png",
-                    "/assets/uploads/2025/11/ABR-POOL-15-COMPO-0-300x300.png"
+                [
+                    "id" => "10541",
+                    "name" => [
+                        "it" => "Casa container abitativa 40 piedi",
+                        "en" => "40ft Residential Container House",
+                        "fr" => "Maison conteneur résidentielle 40 pieds",
+                        "pt" => "Casa contêiner residencial 40 pés",
+                        "es" => "Casa contenedor residencial 40 pies"
+                    ],
+                    "price" => "4,314.31",
+                    "old_price" => "6,163.30",
+                    "sku" => "3276610541",
+                    "discount_percentage" => null,
+                    "link" => "/product/casa-container-abitativa-40-piedi/",
+                    "categories" => ["contenitori-casa"],
+                    "short_description" => [
+                        "it" => "Casa container da 40 piedi abitabile, prodotta da Max Shipping Inc.Cucina e bagno inclusi, soggiorno spazioso e consegna veloce in tutto il mondo.\nSpazio abitativo ottimizzato\nCucina attrezzata\nBagno completo\nPerfetta per coppie\nConsegna internazionale rapida",
+                        "en" => "40ft habitable container house, manufactured by Max Shipping Inc. Kitchen and bathroom included, spacious living room and fast worldwide delivery.\nOptimized living space\nFitted kitchen\nComplete bathroom\nPerfect for couples\nFast international delivery",
+                        "fr" => "Maison conteneur habitable 40 pieds, fabriquée par Max Shipping Inc. Cuisine et salle de bain incluses, salon spacieux et livraison rapide dans le monde entier.\nEspace de vie optimisé\nCuisine équipée\nSalle de bain complète\nParfaite pour les couples\nLivraison internationale rapide",
+                        "pt" => "Casa contêiner habitável de 40 pés, fabricada pela Max Shipping Inc. Cozinha e banheiro incluídos, sala de estar espaçosa e entrega rápida em todo o mundo.\nEspaço habitacional otimizado\nCozinha equipada\nBanheiro completo\nPerfeita para casais\nEntrega internacional rápida",
+                        "es" => "Casa contenedor habitable de 40 pies, fabricada por Max Shipping Inc. Cocina y baño incluidos, salón espacioso y entrega rápida en todo el mundo.\nEspacio habitable optimizado\nCocina equipada\nBaño completo\nPerfecta para parejas\nEntrega internacional rápida"
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/1-1-300x300.jpg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "11416",
-                "name" => [
-                    "it" => "Bellissima e confortevole casa mobile Chalet Wood Gray",
-                    "en" => "Beautiful and comfortable mobile home Chalet Wood Gray",
-                    "fr" => "Superbe et confortable mobile home Chalet Wood Gray",
-                    "pt" => "Bela e confortável casa móvel Chalet Wood Gray",
-                    "es" => "Hermosa y confortable casa móvil Chalet Wood Gray"
+                [
+                    "id" => "11486",
+                    "name" => [
+                        "it" => "Casa container da 40 piedi HQ / 12 m – Alloggi moderni e funzionali",
+                        "en" => "40ft HQ / 12 m Container House – Modern and functional accommodation",
+                        "fr" => "Maison conteneur 40 pieds HQ / 12 m – Hébergements modernes et fonctionnels",
+                        "pt" => "Casa contêiner 40 pés HQ / 12 m – Alojamentos modernos e funcionais",
+                        "es" => "Casa contenedor 40 pies HQ / 12 m – Alojamientos modernos y funcionales"
+                    ],
+                    "price" => "8,430.00",
+                    "old_price" => "9,000.00",
+                    "sku" => "3276611486",
+                    "discount_percentage" => null,
+                    "link" => "/product/casa-container-da-40-piedi-hq-12-m-alloggi-moderni-e-funzionali/",
+                    "categories" => ["container-modulari"],
+                    "short_description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/a1ef6f_8c3e9e9cee7249b5a7fb6725b40769ac7Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_5c65f731767e48f0a09bf216375aa7d47Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_8a41d3a21a284b46a19cf4caf1477b187Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_ed8f914403eb407eaa89557d62a471f07Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_05aeea25cb204282a3027ef6823bd96f7Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_2173f4816b814d82b6b88adb1c790a377Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_315e7bf70c884b99bdbff83b37991f4d7Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_eaad0fd06b9440349f312eddbad0ff467Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_3c8218b092b14713857c2813f827c4d47Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_822495c6199744bb8db9daf81af34e677Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_28b6e908feaa458cb8a4b8c4239cc3cb7Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_c561d5b8cdc443eca2a0796f8631c0357Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_26663d69eb71413898764c0835fe468e7Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_fb4650ce197042b3b4372f609b12fcf57Emv2-300x300.jpg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "price" => "9,175.00",
-                "old_price" => "10,900.00",
-                "sku" => "3276611416",
-                "discount_percentage" => null,
-                "link" => "/product/bellissima-e-confortevole-casa-mobile-chalet-wood-gray/",
-                "categories" => ["container-modulari"],
-                "short_description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
+                [
+                    "id" => "10544",
+                    "name" => [
+                        "it" => "Casa Container Modello PLAYERO",
+                        "en" => "PLAYERO Model Container House",
+                        "fr" => "Maison Conteneur Modèle PLAYERO",
+                        "pt" => "Casa Contêiner Modelo PLAYERO",
+                        "es" => "Casa Contenedor Modelo PLAYERO"
+                    ],
+                    "price" => "4,764.76",
+                    "old_price" => "6,806.80",
+                    "sku" => "3276610544",
+                    "discount_percentage" => null,
+                    "link" => "/product/casa-container-modello-playero/",
+                    "categories" => ["contenitori-casa"],
+                    "short_description" => [
+                        "it" => "Abitazione container di design con ampi spazi e comfort moderni.\nContainer 40′ High Cube\n1 camera e 1 bagno completo\nCucina in PVC a L e armadio a specchio\n2 porte scorrevoli in vetro, climatizzazione inverter\nIsolamento totale e connessioni per generatore",
+                        "en" => "Designer container home with spacious areas and modern comforts.\n40′ High Cube container\n1 bedroom and 1 full bathroom\nL-shaped PVC kitchen and mirrored wardrobe\n2 sliding glass doors, inverter air conditioning\nFull insulation and generator connections",
+                        "fr" => "Habitat conteneur design avec grands espaces et conforts modernes.\nConteneur 40′ High Cube\n1 chambre et 1 salle de bain complète\nCuisine en PVC en L et armoire miroir\n2 portes coulissantes en verre, climatisation inverter\nIsolation totale et connexions pour génératrice",
+                        "pt" => "Habitação contêiner de design com amplos espaços e confortos modernos.\nContêiner 40′ High Cube\n1 quarto e 1 banheiro completo\nCozinha em PVC em L e armário espelhado\n2 portas de correr em vidro, ar condicionado inverter\nIsolamento total e conexões para gerador",
+                        "es" => "Vivienda contenedor de diseño con amplios espacios y comodidades modernas.\nContenedor 40′ High Cube\n1 dormitorio y 1 baño completo\nCocina de PVC en L y armario espejo\n2 puertas correderas de vidrio, aire acondicionado inverter\nAislamiento total y conexiones para generador"
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/2-48-300x300.jpeg",
+                        "/assets/uploads/2025/11/1-49-300x300.jpeg",
+                        "/assets/uploads/2025/11/3-47-300x300.jpeg",
+                        "/assets/uploads/2025/11/4-46-300x300.jpeg",
+                        "/assets/uploads/2025/11/5-42-300x300.jpeg",
+                        "/assets/uploads/2025/11/6-35-300x300.jpeg",
+                        "/assets/uploads/2025/11/7-29-300x300.jpeg",
+                        "/assets/uploads/2025/11/8-20-300x300.jpeg",
+                        "/assets/uploads/2025/11/9-17-300x300.jpeg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "images" => [
-                    "/assets/uploads/2025/11/365292928_1724244028010760_9118458273124612003_n-300x300.jpg",
-                    "/assets/uploads/2025/11/293034276_586117456380302_6073713447237894855_n_1-300x300.jpg",
-                    "/assets/uploads/2025/11/365279038_247550114843107_8562200479334237832_n-300x300.jpg",
-                    "/assets/uploads/2025/11/365333528_6353595518086683_2102379157695520925_n-300x300.jpg",
-                    "/assets/uploads/2025/11/363724060_698930378919353_5499858359809471751_n-300x300.jpg",
-                    "/assets/uploads/2025/11/365379928_298039132634923_5118853571102416137_n-300x300.jpg",
-                    "/assets/uploads/2025/11/364976532_1319282438669996_7616167524475627419_n-300x300.jpg",
-                    "/assets/uploads/2025/11/290312388_5217095535038785_5734211567357451703_n_1-300x300.jpg",
-                    "/assets/uploads/2025/11/363904005_610502001154042_4856321725211318462_n-300x300.jpg",
-                    "/assets/uploads/2025/11/365197132_1346833699376664_5009297107060185704_n-300x300.jpg",
-                    "/assets/uploads/2025/11/363870226_811174110496652_5011992326891589801_n-300x300.jpg",
-                    "/assets/uploads/2025/11/365331478_3403331143290867_4489396472747588156_n-300x300.jpg",
-                    "/assets/uploads/2025/11/365972027_284145297551971_3305144593671605583_n-300x300.jpg",
-                    "/assets/uploads/2025/11/365829703_5992157390889558_4818937269328459174_n-300x300.jpg",
-                    "/assets/uploads/2025/11/365333519_983835566004490_3840214961872253881_n-300x300.jpg",
-                    "/assets/uploads/2025/11/365326371_672023464786602_4496036859777787928_n-300x300.jpg",
-                    "/assets/uploads/2025/11/363856732_1550308309128442_6771014741808985047_n-300x300.jpg",
-                    "/assets/uploads/2025/11/365270933_1566130337249926_2636523047625156394_n-300x300.jpg",
-                    "/assets/uploads/2025/11/291793422_419438036624822_7256667490450555214_n_1-300x300.jpg",
-                    "/assets/uploads/2025/11/365304030_267584669362376_6053805823883837312_n-300x300.jpg",
-                    "/assets/uploads/2025/11/365379299_143786532098761_5048817808809955357_n-300x300.jpg"
+                [
+                    "id" => "10543",
+                    "name" => [
+                        "it" => "Casa Container Prefabbricata",
+                        "en" => "Prefabricated Container House",
+                        "fr" => "Maison Conteneur Préfabriquée",
+                        "pt" => "Casa Contêiner Pré-fabricada",
+                        "es" => "Casa Contenedor Prefabricada"
+                    ],
+                    "price" => "3,723.72",
+                    "old_price" => "5,319.60",
+                    "sku" => "3276610543",
+                    "discount_percentage" => null,
+                    "link" => "/product/casa-container-prefabbricata/",
+                    "categories" => ["contenitori-casa"],
+                    "short_description" => [
+                        "it" => "Casa prefabbricata container resistente e veloce da montare.\nStruttura in acciaio Q235B\nPannelli sandwich in lana di roccia da 75 mm\nPavimento ignifugo in MGO da 18 mm\nFinestre antieffrazione in alluminio\nIgnifuga A1, antisismica e antivento",
+                        "en" => "Resistant and quick-to-assemble prefabricated container house.\nQ235B steel structure\n75 mm rock wool sandwich panels\n18 mm MGO fireproof flooring\nAluminum anti-break-in windows\nA1 fireproof, earthquake and wind resistant",
+                        "fr" => "Maison conteneur préfabriquée résistante et rapide à monter.\nStructure en acier Q235B\nPanneaux sandwich laine de roche 75 mm\nPlancher ignifuge MGO 18 mm\nFenêtres en aluminium anti-effraction\nIgnifuge A1, antisismique et antivent",
+                        "pt" => "Casa contêiner pré-fabricada resistente e rápida de montar.\nEstrutura de aço Q235B\nPainéis sanduíche de lã de rocha 75 mm\nPiso à prova de fogo MGO 18 mm\nJanelas de alumínio anti-arrombamento\nÀ prova de fogo A1, antissísmica e antivento",
+                        "es" => "Casa contenedor prefabricada resistente y rápida de montar.\nEstructura de acero Q235B\nPaneles sándwich de lana de roca 75 mm\nSuelo ignífugo MGO 18 mm\nVentanas de aluminio antiefecto\nIgnífuga A1, antisísmica y antiviento"
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/1-19-300x300.webp",
+                        "/assets/uploads/2025/11/2-21-300x300.webp",
+                        "/assets/uploads/2025/11/3-20-300x300.webp",
+                        "/assets/uploads/2025/11/4-17-300x300.webp",
+                        "/assets/uploads/2025/11/5-15-300x300.webp",
+                        "/assets/uploads/2025/11/6-13-300x300.webp",
+                        "/assets/uploads/2025/11/7-10-300x300.webp",
+                        "/assets/uploads/2025/11/8-8-300x300.webp"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "10540",
-                "name" => [
-                    "it" => "Casa container 20 piedi HC – Completamente attrezzata",
-                    "en" => "20ft HC Container House – Fully equipped",
-                    "fr" => "Maison conteneur 20 pieds HC – Entièrement équipée",
-                    "pt" => "Casa contêiner 20 pés HC – Completamente equipada",
-                    "es" => "Casa contenedor 20 pies HC – Completamente equipada"
+                [
+                    "id" => "10542",
+                    "name" => [
+                        "it" => "Casa Container Prefabbricata Modulabile",
+                        "en" => "Modular Prefabricated Container House",
+                        "fr" => "Maison Conteneur Préfabriquée Modulable",
+                        "pt" => "Casa Contêiner Pré-fabricada Modulável",
+                        "es" => "Casa Contenedor Prefabricada Modulable"
+                    ],
+                    "price" => "4,899.89",
+                    "old_price" => "6,999.85",
+                    "sku" => "3276610542",
+                    "discount_percentage" => null,
+                    "link" => "/product/casa-container-prefabbricata-modulabile/",
+                    "categories" => ["contenitori-casa"],
+                    "short_description" => [
+                        "it" => "Casa prefabbricata container modulare, progettata per condizioni estreme.\nStruttura in acciaio rinforzato\nIsolamento avanzato con pannelli sandwich\nPersonalizzabile in ogni dettaglio\nResistente a sismi e vento forte\nIdeale per abitazioni, uffici o spazi commerciali",
+                        "en" => "Modular prefabricated container house, designed for extreme conditions.\nReinforced steel structure\nAdvanced insulation with sandwich panels\nCustomizable in every detail\nResistant to earthquakes and strong wind\nIdeal for homes, offices or commercial spaces",
+                        "fr" => "Maison conteneur préfabriquée modulaire, conçue pour conditions extrêmes.\nStructure en acier renforcé\nIsolation avancée avec panneaux sandwich\nPersonnalisable dans les moindres détails\nRésistant aux séismes et vents forts\nIdéal pour habitations, bureaux ou espaces commerciaux",
+                        "pt" => "Casa contêiner pré-fabricada modular, projetada para condições extremas.\nEstrutura de aço reforçado\nIsolamento avançado com painéis sanduíche\nPersonalizável em cada detalhe\nResistente a terremotos e ventos fortes\nIdeal para residências, escritórios ou espaços comerciais",
+                        "es" => "Casa contenedor prefabricada modular, diseñada para condiciones extremas.\nEstructura de acero reforzado\nAislamiento avanzado con paneles sándwich\nPersonalizable en cada detalle\nResistente a terremotos y vientos fuertes\nIdeal para viviendas, oficinas o espacios comerciales"
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/1-6-300x300.webp",
+                        "/assets/uploads/2025/11/2-8-300x300.webp",
+                        "/assets/uploads/2025/11/3-11-300x300.webp",
+                        "/assets/uploads/2025/11/4-6-300x300.webp"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "price" => "3,523.52",
-                "old_price" => "5,033.60",
-                "sku" => "3276610540",
-                "discount_percentage" => null,
-                "link" => "/product/casa-container-20-piedi-hc-completamente-attrezzata/",
-                "categories" => ["contenitori-casa"],
-                "short_description" => [
-                    "it" => "Casa container compatta da 20 piedi HC, rivestita in fibrocemento effetto legno.Dotata di cucina, bagno, isolamento e finiture interne di alta qualità.\nEstetica moderna effetto legno\nIsolamento termico/acustico\nCucina e bagno inclusi\nImpianto elettrico completo\nPronta all'uso",
-                    "en" => "Compact 20ft HC container house, clad in wood-effect fiber cement. Equipped with kitchen, bathroom, insulation and high-quality interior finishes.\nModern wood-effect aesthetics\nThermal/acoustic insulation\nKitchen and bathroom included\nComplete electrical system\nReady to use",
-                    "fr" => "Maison conteneur compacte 20 pieds HC, revêtue en fibrociment effet bois. Équipée de cuisine, salle de bain, isolation et finitions intérieures de haute qualité.\nEsthétique moderne effet bois\nIsolation thermique/acoustique\nCuisine et salle de bain incluses\nInstallation électrique complète\nPrête à l'emploi",
-                    "pt" => "Casa contêiner compacta de 20 pés HC, revestida em fibrocimento efeito madeira. Equipada com cozinha, banheiro, isolamento e acabamentos internos de alta qualidade.\nEstética moderna efeito madeira\nIsolamento térmico/acústico\nCozinha e banheiro incluídos\nSistema elétrico completo\nPronta para uso",
-                    "es" => "Casa contenedor compacta de 20 pies HC, revestida en fibrocemento efecto madera. Equipada con cocina, baño, aislamiento y acabados interiores de alta calidad.\nEstética moderna efecto madera\nAislamiento térmico/acústico\nCocina y baño incluidos\nSistema eléctrico completo\nLista para usar"
+                [
+                    "id" => "10621",
+                    "name" => [
+                        "it" => "Casa Mobile Luisiana Taos – Comfort Abitativo",
+                        "en" => "Luisiana Taos Mobile Home – Living Comfort",
+                        "fr" => "Mobile Home Luisiana Taos – Confort d'Habitation",
+                        "pt" => "Casa Móvel Luisiana Taos – Conforto Habitacional",
+                        "es" => "Casa Móvil Luisiana Taos – Confort Habitacional"
+                    ],
+                    "price" => "4,200.00",
+                    "old_price" => "6,866.00",
+                    "sku" => "3276610621",
+                    "discount_percentage" => null,
+                    "link" => "/product/casa-mobile-luisiana-taos-comfort-abitativo/",
+                    "categories" => ["contenitori-casa"],
+                    "short_description" => [
+                        "it" => "Casa mobile moderna da 40 m², perfetta per ogni stagione.\nModello 2023 con design contemporaneo\n2 camere da letto e 2 bagni completi\nCucina full optional e soggiorno arredato\nWC separato e predisposizione per lavatrice\nIsolamento termico per uso annuale",
+                        "en" => "Modern 40 m² mobile home, perfect for every season.\n2023 model with contemporary design\n2 bedrooms and 2 full bathrooms\nFully equipped kitchen and furnished living room\nSeparate toilet and washing machine preparation\nThermal insulation for year-round use",
+                        "fr" => "Mobile home moderne de 40 m², parfaite pour toutes les saisons.\nModèle 2023 au design contemporain\n2 chambres et 2 salles de bain complètes\nCuisine tout équipée et salon meublé\nWC séparé et préparation machine à laver\nIsolation thermique pour usage annuel",
+                        "pt" => "Casa móvel moderna de 40 m², perfeita para todas as estações.\nModelo 2023 com design contemporâneo\n2 quartos e 2 banheiros completos\nCozinha completa e sala mobiliada\nBanheiro separado e preparação para máquina de lavar\nIsolamento térmico para uso anual",
+                        "es" => "Casa móvil moderna de 40 m², perfecta para cada estación.\nModelo 2023 con diseño contemporáneo\n2 dormitorios y 2 baños completos\nCocina totalmente equipada y salón amueblado\nWC separado y preparación para lavadora\nAislamiento térmico para uso anual"
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/1-22-300x300.jpeg",
+                        "/assets/uploads/2025/11/2-22-300x300.jpeg",
+                        "/assets/uploads/2025/11/3-21-300x300.jpeg",
+                        "/assets/uploads/2025/11/4-21-300x300.jpeg",
+                        "/assets/uploads/2025/11/5-20-300x300.jpeg",
+                        "/assets/uploads/2025/11/6-17-300x300.jpeg",
+                        "/assets/uploads/2025/11/7-16-300x300.jpeg",
+                        "/assets/uploads/2025/11/8-14-300x300.jpeg",
+                        "/assets/uploads/2025/11/9-13-300x300.jpeg",
+                        "/assets/uploads/2025/11/10-8-300x300.jpeg",
+                        "/assets/uploads/2025/11/11-8-300x300.jpeg",
+                        "/assets/uploads/2025/11/12-6-300x300.jpeg",
+                        "/assets/uploads/2025/11/13-5-300x300.jpeg",
+                        "/assets/uploads/2025/11/14-2-300x300.jpeg",
+                        "/assets/uploads/2025/11/15-1-300x300.jpeg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "images" => [
-                    "/assets/uploads/2025/11/1-51-300x300.jpeg"
+                [
+                    "id" => "12449",
+                    "name" => [
+                        "it" => "Casa mobile moderna – Dimensioni 10,5 x 3,8 m",
+                        "en" => "Modern mobile home – Dimensions 10.5 x 3.8 m",
+                        "fr" => "Mobile home moderne – Dimensions 10,5 x 3,8 m",
+                        "pt" => "Casa móvel moderna – Dimensões 10,5 x 3,8 m",
+                        "es" => "Casa móvil moderna – Dimensiones 10,5 x 3,8 m"
+                    ],
+                    "price" => "5,500.00",
+                    "old_price" => null,
+                    "sku" => "9876543456789",
+                    "discount_percentage" => null,
+                    "link" => "/product/casa-mobile-moderna-dimensioni-105-x-38-m/",
+                    "categories" => ["contenitori-casa"],
+                    "short_description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/7654345687901-300x300.webp",
+                        "/assets/uploads/2025/11/7654345687902-300x300.webp",
+                        "/assets/uploads/2025/11/7654345687903-300x300.webp",
+                        "/assets/uploads/2025/11/7654345687904-300x300.webp",
+                        "/assets/uploads/2025/11/7654345687905-300x300.webp",
+                        "/assets/uploads/2025/11/7654345687906-300x300.webp",
+                        "/assets/uploads/2025/11/7654345687907-300x300.webp",
+                        "/assets/uploads/2025/11/7654345687908-300x300.webp",
+                        "/assets/uploads/2025/11/7654345687909-300x300.webp"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "11488",
-                "name" => [
-                    "it" => "Casa container 35 m² – Modello A Cottage, abitabile tutto l'anno",
-                    "en" => "35 m² Container House – Cottage Model, habitable all year round",
-                    "fr" => "Maison conteneur 35 m² – Modèle Cottage, habitable toute l'année",
-                    "pt" => "Casa contêiner 35 m² – Modelo Cottage, habitável o ano todo",
-                    "es" => "Casa contenedor 35 m² – Modelo Cottage, habitable todo el año"
+                [
+                    "id" => "12437",
+                    "name" => [
+                        "it" => "Casa mobile moderna – Dimensioni 12×4 m",
+                        "en" => "Modern mobile home – Dimensions 12×4 m",
+                        "fr" => "Mobile home moderne – Dimensions 12×4 m",
+                        "pt" => "Casa móvel moderna – Dimensões 12×4 m",
+                        "es" => "Casa móvil moderna – Dimensiones 12×4 m"
+                    ],
+                    "price" => "8,000.00",
+                    "old_price" => null,
+                    "sku" => "097654456789",
+                    "discount_percentage" => null,
+                    "link" => "/product/casa-mobile-moderna-dimensioni-12x4-m/",
+                    "categories" => ["contenitori-casa"],
+                    "short_description" => [
+                        "it" => "Moderna casa mobile 12x4m: costruzione in acciaio e legno, isolamento termico avanzato e configurazioni personalizzabili per ogni esigenza vitale.",
+                        "en" => "Modern 12x4m mobile home: steel and wood construction, advanced thermal insulation and customizable configurations for every living need.",
+                        "fr" => "Mobile home moderne 12x4m : construction acier et bois, isolation thermique avancée et configurations personnalisables pour chaque besoin vital.",
+                        "pt" => "Casa móvel moderna 12x4m: construção em aço e madeira, isolamento térmico avançado e configurações personalizáveis para cada necessidade vital.",
+                        "es" => "Casa móvil moderna 12x4m: construcción en acero y madera, aislamiento térmico avanzado y configuraciones personalizables para cada necesidad vital."
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/7654334657801-300x300.webp",
+                        "/assets/uploads/2025/11/7654334657802-300x300.webp",
+                        "/assets/uploads/2025/11/7654334657803-300x300.webp",
+                        "/assets/uploads/2025/11/7654334657804-300x300.webp",
+                        "/assets/uploads/2025/11/7654334657805-300x300.webp",
+                        "/assets/uploads/2025/11/7654334657806-300x300.webp",
+                        "/assets/uploads/2025/11/7654334657807-300x300.webp",
+                        "/assets/uploads/2025/11/7654334657808-300x300.webp",
+                        "/assets/uploads/2025/11/7654334657809-300x300.webp",
+                        "/assets/uploads/2025/11/7654334657810-300x300.webp"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "price" => "8,565.00",
-                "old_price" => "10,500.00",
-                "sku" => "3276611488",
-                "discount_percentage" => null,
-                "link" => "/product/casa-container-35-m%c2%b2-modello-a-cottage-abitabile-tutto-lanno/",
-                "categories" => ["container-modulari"],
-                "short_description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
+                [
+                    "id" => "12428",
+                    "name" => [
+                        "it" => "Casa Mobile T2 – Una soluzione abitativa moderna e flessibile",
+                        "en" => "T2 Mobile Home – A modern and flexible housing solution",
+                        "fr" => "Mobile Home T2 – Une solution d'habitat moderne et flexible",
+                        "pt" => "Casa Móvel T2 – Uma solução habitacional moderna e flexível",
+                        "es" => "Casa Móvil T2 – Una solución habitacional moderna y flexible"
+                    ],
+                    "price" => "3,050.00",
+                    "old_price" => null,
+                    "sku" => "876543456789",
+                    "discount_percentage" => null,
+                    "link" => "/product/casa-mobile-t2-una-soluzione-abitativa-moderna-e-flessibile/",
+                    "categories" => ["contenitori-casa"],
+                    "short_description" => [
+                        "it" => "Mobile Home Container T2: una casa compatta, moderna e personalizzabile, ideale per qualsiasi esigenza. Facile da trasportare, efficiente e sostenibile.",
+                        "en" => "T2 Container Mobile Home: a compact, modern and customizable home, ideal for any need. Easy to transport, efficient and sustainable.",
+                        "fr" => "Mobile Home Conteneur T2 : une maison compacte, moderne et personnalisable, idéale pour tous les besoins. Facile à transporter, efficace et durable.",
+                        "pt" => "Casa Móvel Contêiner T2: uma casa compacta, moderna e personalizável, ideal para qualquer necessidade. Fácil de transportar, eficiente e sustentável.",
+                        "es" => "Casa Móvil Contenedor T2: una casa compacta, moderna y personalizable, ideal para cualquier necesidad. Fácil de transportar, eficiente y sostenible."
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/876433456789001-300x300.webp",
+                        "/assets/uploads/2025/11/876433456789002-300x300.webp",
+                        "/assets/uploads/2025/11/876433456789003-300x300.webp",
+                        "/assets/uploads/2025/11/876433456789004-300x300.webp",
+                        "/assets/uploads/2025/11/876433456789005-300x300.webp",
+                        "/assets/uploads/2025/11/876433456789006-300x300.webp",
+                        "/assets/uploads/2025/11/876433456789007-300x300.webp",
+                        "/assets/uploads/2025/11/876433456789008-300x300.webp"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "images" => [
-                    "/assets/uploads/2025/11/s2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_22f6493bdd5e41b28d48a7112b5c32917Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_c17ab0588573409d998ed5c7301e06af7Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_3faeb8daf85f46b9af56a40ce007ef947Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_a831440af5b044ceb500bcb453a3f4627Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_b07408f66bed4b54ae9f4d9aba4621267Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_39bd78ffba744ae7a0cad936d91bd1c27Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_57e7b759dcfd4abdb979136e3cd643f37Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_63f028b2a8f64e1e8c4a729da65f235d7Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_de5b5eccb4d84bd9aee28bf9fd13e4257Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_b38a0467affd4b1990a94eb0fee716cb7Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_79bec77c32d64532ab1c2873cad0e3ca7Emv2-300x300.jpg"
+                [
+                    "id" => "10545",
+                    "name" => [
+                        "it" => "Casa Modulare González – Spazio Intelligente da 36 m²",
+                        "en" => "González Modular House – 36 m² Intelligent Space",
+                        "fr" => "Maison Modulaire González – Espace Intelligent de 36 m²",
+                        "pt" => "Casa Modular González – Espaço Inteligente de 36 m²",
+                        "es" => "Casa Modular González – Espacio Inteligente de 36 m²"
+                    ],
+                    "price" => "3,200.00",
+                    "old_price" => "5,720.00",
+                    "sku" => "3276610545",
+                    "discount_percentage" => null,
+                    "link" => "/product/casa-modulare-gonzalez-spazio-intelligente-da-36-m%c2%b2/",
+                    "categories" => ["contenitori-casa"],
+                    "short_description" => [
+                        "it" => "Soluzione abitativa modulare da 36 m² ideale per uso residenziale o turistico.\n1 camera, 1 bagno completo\nOpen space con cucina e soggiorno\nIsolamento poliuretano e lana di vetro\nFinestre termiche in PVC effetto legno\nImpianto elettrico completo e LED",
+                        "en" => "36 m² modular housing solution ideal for residential or tourist use.\n1 bedroom, 1 full bathroom\nOpen space with kitchen and living room\nPolyurethane and fiberglass insulation\nThermal PVC windows with wood effect\nComplete electrical system and LED",
+                        "fr" => "Solution d'habitat modulaire de 36 m² idéale pour usage résidentiel ou touristique.\n1 chambre, 1 salle de bain complète\nEspace ouvert avec cuisine et salon\nIsolation polyuréthane et laine de verre\nFenêtres thermiques PVC effet bois\nInstallation électrique complète et LED",
+                        "pt" => "Solução habitacional modular de 36 m² ideal para uso residencial ou turístico.\n1 quarto, 1 banheiro completo\nEspaço aberto com cozinha e sala\nIsolamento poliuretano e lã de vidro\nJanelas térmicas em PVC efeito madeira\nSistema elétrico completo e LED",
+                        "es" => "Solución habitacional modular de 36 m² ideal para uso residencial o turístico.\n1 dormitorio, 1 baño completo\nEspacio abierto con cocina y salón\nAislamiento de poliuretano y lana de vidrio\nVentanas térmicas de PVC efecto madera\nSistema eléctrico completo y LED"
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/1-55-300x300.jpeg",
+                        "/assets/uploads/2025/11/2-53-300x300.jpeg",
+                        "/assets/uploads/2025/11/3-52-300x300.jpeg",
+                        "/assets/uploads/2025/11/4-51-300x300.jpeg",
+                        "/assets/uploads/2025/11/5-47-300x300.jpeg",
+                        "/assets/uploads/2025/11/6-39-300x300.jpeg",
+                        "/assets/uploads/2025/11/7-33-300x300.jpeg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "10541",
-                "name" => [
-                    "it" => "Casa container abitativa 40 piedi",
-                    "en" => "40ft Residential Container House",
-                    "fr" => "Maison conteneur résidentielle 40 pieds",
-                    "pt" => "Casa contêiner residencial 40 pés",
-                    "es" => "Casa contenedor residencial 40 pies"
+                [
+                    "id" => "10620",
+                    "name" => [
+                        "it" => "Casa Modulare Montes – 36 m² di Comfort, Design",
+                        "en" => "Montes Modular House – 36 m² of Comfort, Design",
+                        "fr" => "Maison Modulaire Montes – 36 m² de Confort, Design",
+                        "pt" => "Casa Modular Montes – 36 m² de Conforto, Design",
+                        "es" => "Casa Modular Montes – 36 m² de Confort, Diseño"
+                    ],
+                    "price" => "3,400.00",
+                    "old_price" => "5,278.30",
+                    "sku" => "3276610620",
+                    "discount_percentage" => null,
+                    "link" => "/product/casa-modulare-montes-36-m%c2%b2-di-comfort-design/",
+                    "categories" => ["contenitori-casa"],
+                    "short_description" => [
+                        "it" => "Casa modulare da 36 m² con layout efficiente e design moderno.\n2 camere da letto, 1 bagno completo\nAmpie finestre in alluminio nero termico\nIsolamento con poliuretano e lana di vetro\nRivestimenti interni in OSB, legno e cartongesso\nImpianto elettrico completo e luci LED",
+                        "en" => "36 m² modular house with efficient layout and modern design.\n2 bedrooms, 1 full bathroom\nLarge thermal black aluminum windows\nInsulation with polyurethane and fiberglass\nInterior finishes in OSB, wood and plasterboard\nComplete electrical system and LED lights",
+                        "fr" => "Maison modulaire de 36 m² avec agencement efficace et design moderne.\n2 chambres, 1 salle de bain complète\nGrandes fenêtres en aluminium noir thermique\nIsolation polyuréthane et laine de verre\nRevêtements intérieurs en OSB, bois et placo\nInstallation électrique complète et lumières LED",
+                        "pt" => "Casa modular de 36 m² com layout eficiente e design moderno.\n2 quartos, 1 banheiro completo\nGrandes janelas em alumínio preto térmico\nIsolamento com poliuretano e lã de vidro\nAcabamentos internos em OSB, madeira e gesso cartonado\nSistema elétrico completo e luzes LED",
+                        "es" => "Casa modular de 36 m² con distribución eficiente y diseño moderno.\n2 dormitorios, 1 baño completo\nGrandes ventanas de aluminio negro térmico\nAislamiento con poliuretano y lana de vidrio\nRevestimientos interiores en OSB, madera y cartón yeso\nSistema eléctrico completo y luces LED"
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/1-2-300x300.jpeg",
+                        "/assets/uploads/2025/11/2-45-300x300.jpeg",
+                        "/assets/uploads/2025/11/3-44-300x300.jpeg",
+                        "/assets/uploads/2025/11/4-43-300x300.jpeg",
+                        "/assets/uploads/2025/11/5-39-300x300.jpeg",
+                        "/assets/uploads/2025/11/6-32-300x300.jpeg",
+                        "/assets/uploads/2025/11/7-26-300x300.jpeg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "price" => "4,314.31",
-                "old_price" => "6,163.30",
-                "sku" => "3276610541",
-                "discount_percentage" => null,
-                "link" => "/product/casa-container-abitativa-40-piedi/",
-                "categories" => ["contenitori-casa"],
-                "short_description" => [
-                    "it" => "Casa container da 40 piedi abitabile, prodotta da Max Shipping Inc.Cucina e bagno inclusi, soggiorno spazioso e consegna veloce in tutto il mondo.\nSpazio abitativo ottimizzato\nCucina attrezzata\nBagno completo\nPerfetta per coppie\nConsegna internazionale rapida",
-                    "en" => "40ft habitable container house, manufactured by Max Shipping Inc. Kitchen and bathroom included, spacious living room and fast worldwide delivery.\nOptimized living space\nFitted kitchen\nComplete bathroom\nPerfect for couples\nFast international delivery",
-                    "fr" => "Maison conteneur habitable 40 pieds, fabriquée par Max Shipping Inc. Cuisine et salle de bain incluses, salon spacieux et livraison rapide dans le monde entier.\nEspace de vie optimisé\nCuisine équipée\nSalle de bain complète\nParfaite pour les couples\nLivraison internationale rapide",
-                    "pt" => "Casa contêiner habitável de 40 pés, fabricada pela Max Shipping Inc. Cozinha e banheiro incluídos, sala de estar espaçosa e entrega rápida em todo o mundo.\nEspaço habitacional otimizado\nCozinha equipada\nBanheiro completo\nPerfeita para casais\nEntrega internacional rápida",
-                    "es" => "Casa contenedor habitable de 40 pies, fabricada por Max Shipping Inc. Cocina y baño incluidos, salón espacioso y entrega rápida en todo el mundo.\nEspacio habitable optimizado\nCocina equipada\nBaño completo\nPerfecta para parejas\nEntrega internacional rápida"
+                [
+                    "id" => "10539",
+                    "name" => [
+                        "it" => "Casa prefabbricata modulare in container",
+                        "en" => "Modular prefabricated container house",
+                        "fr" => "Maison préfabriquée modulaire en conteneur",
+                        "pt" => "Casa pré-fabricada modular em contêiner",
+                        "es" => "Casa prefabricada modular en contenedor"
+                    ],
+                    "price" => "3,500.00",
+                    "old_price" => "5,136.70",
+                    "sku" => "3276610539",
+                    "discount_percentage" => null,
+                    "link" => "/product/casa-prefabbricata-modulare-in-container/",
+                    "categories" => ["contenitori-casa"],
+                    "short_description" => [
+                        "it" => "Casa prefabbricata in container in acciaio Q355 HDG, isolata e altamente resistente.Adatta per abitazioni, uffici, alloggi temporanei e strutture modulari.\nStruttura zincata a caldo\nIsolamento tetto in PU ad alta densità\nPareti in EPS o lana di roccia\nFinestre a doppio vetro\nResiste a venti fino a 210 km/h",
+                        "en" => "Prefabricated Q355 HDG steel container house, insulated and highly resistant. Suitable for homes, offices, temporary accommodation and modular structures.\nHot-dip galvanized structure\nHigh-density PU roof insulation\nEPS or rock wool walls\nDouble glazed windows\nResists winds up to 210 km/h",
+                        "fr" => "Maison conteneur préfabriquée en acier Q355 HDG, isolée et hautement résistante. Adaptée pour habitations, bureaux, hébergements temporaires et structures modulaires.\nStructure galvanisée à chaud\nIsolation toit PU haute densité\nMurs en EPS ou laine de roche\nFenêtres double vitrage\nRésiste aux vents jusqu'à 210 km/h",
+                        "pt" => "Casa contêiner pré-fabricada em aço Q355 HDG, isolada e altamente resistente. Adequada para residências, escritórios, alojamentos temporários e estruturas modulares.\nEstrutura galvanizada por imersão a quente\nIsolamento de telhado em PU de alta densidade\nParedes em EPS ou lã de rocha\nJanelas com vidro duplo\nResiste a ventos até 210 km/h",
+                        "es" => "Casa contenedor prefabricada en acero Q355 HDG, aislada y altamente resistente. Adecuada para viviendas, oficinas, alojamientos temporales y estructuras modulares.\nEstructura galvanizada en caliente\nAislamiento de techo en PU de alta densidad\nParedes en EPS o lana de roca\nVentanas de doble acristalamiento\nResiste vientos de hasta 210 km/h"
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/1-8-300x300.webp",
+                        "/assets/uploads/2025/11/2-10-300x300.webp",
+                        "/assets/uploads/2025/11/3-13-300x300.webp",
+                        "/assets/uploads/2025/11/4-8-300x300.webp",
+                        "/assets/uploads/2025/11/5-7-300x300.webp",
+                        "/assets/uploads/2025/11/6-5-300x300.webp"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "images" => [
-                    "/assets/uploads/2025/11/1-1-300x300.jpg"
+                [
+                    "id" => "11232",
+                    "name" => [
+                        "it" => "CHIOSCO/SNACK CONTAINER – UFFICIO – AREA VENDITA",
+                        "en" => "KIOSK/SNACK CONTAINER – OFFICE – SALES AREA",
+                        "fr" => "KIOSQUE/SNACK CONTENEUR – BUREAU – ZONE DE VENTE",
+                        "pt" => "QUIOSQUE/SNACK CONTÊINER – ESCRITÓRIO – ÁREA DE VENDA",
+                        "es" => "QUIOSCO/SNACK CONTENEDOR – OFICINA – ÁREA DE VENTA"
+                    ],
+                    "price" => "6,100.00",
+                    "old_price" => "8,100.00",
+                    "sku" => "3276611232",
+                    "discount_percentage" => null,
+                    "link" => "/product/chiosco-snack-container-ufficio-area-vendita/",
+                    "categories" => ["container-modulari"],
+                    "short_description" => [
+                        "it" => "Realizzazione di un chiosco, snack bar, food truck, taverna in un container marittimo per il primo viaggio.\n# Nessuna lastra di cemento!\n# Nessuna preparazione!\n# Nessun noioso assemblaggio!\n# Grande volume!\n# Cellulare!\n# Architettura della moda!\n# Nessun permesso di costruire!\n# Senza manutenzione!\nCapire :\n1 container primo viaggio da 40′ (12mx2,45×2,60m)\nAperture:\n1 Tenda a gas 2000 x 1200 mm\n1 Tenda a gas 3000 x 1200 mm\n1 anta 800×2000 mm\nContatori:\n1 Bancone pieghevole 2000x300mm\n1 Bancone pieghevole 3000x300mm\nINSTALLAZIONE ELETTRICA:\n1 tabella 1 riga\n3 luci LED impermeabili\n4 prese di servizio 16A+T\n1 interruttore di alimentazione singolo\n1 pasto veloce\nIsolamento interno:\nPannello Sandwich Alimentare 40mm Bianco\nColore :\nVernice RAL 7016 in tutto il contenitore.",
+                        "en" => "Creation of a kiosk, snack bar, food truck, tavern in a first voyage shipping container.\n# No concrete slab!\n# No preparation!\n# No tedious assembly!\n# Large volume!\n# Mobile!\n# Fashion architecture!\n# No building permit!\n# No maintenance!\nIncludes:\n1 first voyage 40′ container (12mx2.45×2.60m)\nOpenings:\n1 Gas awning 2000 x 1200 mm\n1 Gas awning 3000 x 1200 mm\n1 door 800×2000 mm\nCounters:\n1 Folding counter 2000x300mm\n1 Folding counter 3000x300mm\nELECTRICAL INSTALLATION:\n1 panel 1 row\n3 waterproof LED lights\n4 service sockets 16A+T\n1 single power switch\n1 quick meal\nInternal insulation:\n40mm White Food Sandwich Panel\nColor:\nRAL 7016 paint throughout the container.",
+                        "fr" => "Réalisation d'un kiosque, snack bar, food truck, guinguette dans un conteneur maritime premier voyage.\n# Pas de dalle béton !\n# Aucune préparation !\n# Aucun assemblage fastidieux !\n# Gros volume !\n# Mobile !\n# Architecture tendance !\n# Pas de permis de construire !\n# Sans entretien !\nComprend :\n1 conteneur premier voyage 40′ (12mx2,45×2,60m)\nOuvertures :\n1 Store banne 2000 x 1200 mm\n1 Store banne 3000 x 1200 mm\n1 porte 800×2000 mm\nComptoirs :\n1 Comptoir pliant 2000x300mm\n1 Comptoir pliant 3000x300mm\nINSTALLATION ÉLECTRIQUE :\n1 tableau 1 rangée\n3 luminaires LED étanches\n4 prises de service 16A+T\n1 interrupteur d'alimentation simple\n1 prise rapide\nIsolation intérieure :\nPanneau Sandwich Alimentaire 40mm Blanc\nCouleur :\nPeinture RAL 7016 sur tout le conteneur.",
+                        "pt" => "Criação de um quiosque, snack bar, food truck, taverna em um contêiner marítimo de primeira viagem.\n# Sem laje de concreto!\n# Sem preparação!\n# Nenhuma montagem tediosa!\n# Grande volume!\n# Móvel!\n# Arquitetura moderna!\n# Sem licença de construção!\n# Sem manutenção!\nInclui:\n1 contêiner de primeira viagem 40′ (12mx2,45×2,60m)\nAberturas:\n1 Toldo retrátil 2000 x 1200 mm\n1 Toldo retrátil 3000 x 1200 mm\n1 porta 800×2000 mm\nBalcões:\n1 Balcão dobrável 2000x300mm\n1 Balcão dobrável 3000x300mm\nINSTALAÇÃO ELÉTRICA:\n1 quadro 1 fileira\n3 luzes LED à prova d'água\n4 tomadas de serviço 16A+T\n1 interruptor de alimentação simples\n1 refeição rápida\nIsolamento interno:\nPainel Sanduíche Alimentar 40mm Branco\nCor:\nTinta RAL 7016 em todo o contêiner.",
+                        "es" => "Creación de un quiosco, snack bar, food truck, taberna en un contenedor marítimo de primer viaje.\n# ¡Sin losa de hormigón!\n# ¡Sin preparación!\n# ¡Sin montaje tedioso!\n# ¡Gran volumen!\n# ¡Móvil!\n# ¡Arquitectura moderna!\n# ¡Sin permiso de construcción!\n# ¡Sin mantenimiento!\nIncluye:\n1 contenedor de primer viaje 40′ (12mx2,45×2,60m)\nAberturas:\n1 Toldo 2000 x 1200 mm\n1 Toldo 3000 x 1200 mm\n1 puerta 800×2000 mm\nMostradores:\n1 Mostrador plegable 2000x300mm\n1 Mostrador plegable 3000x300mm\nINSTALACIÓN ELÉCTRICA:\n1 cuadro 1 fila\n3 luces LED impermeables\n4 tomas de servicio 16A+T\n1 interruptor de alimentación simple\n1 toma rápida\nAislamiento interior:\nPanel Sándwich Alimentario 40mm Blanco\nColor:\nPintura RAL 7016 en todo el contenedor."
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/rn-image_picker_lib_temp_1ca25ffe-d7fb-4a9d-9f32-b7cd20ecb708-300x300.jpg",
+                        "/assets/uploads/2025/11/rn-image_picker_lib_temp_471dece2-7bb0-4986-9a7b-cfc04abb0d1c-300x300.jpg",
+                        "/assets/uploads/2025/11/rn-image_picker_lib_temp_d156ba0a-ce76-440d-a430-0ea4a81b8b04-300x300.jpg",
+                        "/assets/uploads/2025/11/rn-image_picker_lib_temp_a90e8119-c992-4ade-8e5f-10973449a4c8-300x300.jpg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "11486",
-                "name" => [
-                    "it" => "Casa container da 40 piedi HQ / 12 m – Alloggi moderni e funzionali",
-                    "en" => "40ft HQ / 12 m Container House – Modern and functional accommodation",
-                    "fr" => "Maison conteneur 40 pieds HQ / 12 m – Hébergements modernes et fonctionnels",
-                    "pt" => "Casa contêiner 40 pés HQ / 12 m – Alojamentos modernos e funcionais",
-                    "es" => "Casa contenedor 40 pies HQ / 12 m – Alojamientos modernos y funcionales"
+                [
+                    "id" => "11054",
+                    "name" => [
+                        "it" => "Container a doppia porta High Cube da 40 piedi",
+                        "en" => "40ft High Cube Double Door Container",
+                        "fr" => "Conteneur High Cube double porte 40 pieds",
+                        "pt" => "Contêiner High Cube porta dupla 40 pés",
+                        "es" => "Contenedor High Cube doble puerta 40 pies"
+                    ],
+                    "price" => "2,100.00",
+                    "old_price" => null,
+                    "sku" => "3276611054",
+                    "discount_percentage" => null,
+                    "link" => "/product/container-a-doppia-porta-high-cube-da-40-piedi/",
+                    "categories" => ["container-di-stoccaggio", "contenitori-40-piedi"],
+                    "short_description" => [
+                        "it" => "Questo container extra alto da 40 piedi ha porte su entrambi i lati anteriori e offre quindi un facile accesso da due lati. Ideale per lo stoccaggio e il trasporto. Certificato CSC, in acciaio CORTEN, impilabile e disponibile in ogni colore RAL.",
+                        "en" => "This 40ft extra-high container has doors on both front sides and therefore offers easy access from two sides. Ideal for storage and transport. CSC certified, CORTEN steel, stackable and available in any RAL color.",
+                        "fr" => "Ce conteneur extra-haut de 40 pieds a des portes sur les deux côtés avant et offre donc un accès facile depuis deux côtés. Idéal pour le stockage et le transport. Certifié CSC, en acier CORTEN, empilable et disponible en toutes couleurs RAL.",
+                        "pt" => "Este contêiner extra alto de 40 pés tem portas em ambos os lados frontais e, portanto, oferece fácil acesso por dois lados. Ideal para armazenamento e transporte. Certificado CSC, aço CORTEN, empilhável e disponível em qualquer cor RAL.",
+                        "es" => "Este contenedor extra alto de 40 pies tiene puertas en ambos lados frontales y por lo tanto ofrece fácil acceso desde dos lados. Ideal para almacenamiento y transporte. Certificado CSC, acero CORTEN, apilable y disponible en cualquier color RAL."
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/a0a2dea73060_40_hcdd_ral5013_10-300x300.webp",
+                        "/assets/uploads/2025/11/a0a2dea73060_40_hcdd_ral5013_13-300x300.webp",
+                        "/assets/uploads/2025/11/a0a2dea73060_fotos_40_hcdd_2_normal-300x300.webp",
+                        "/assets/uploads/2025/11/a0a2dea73060_fotos_40hcdd_5_normal-300x300.webp"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "price" => "8,430.00",
-                "old_price" => "9,000.00",
-                "sku" => "3276611486",
-                "discount_percentage" => null,
-                "link" => "/product/casa-container-da-40-piedi-hq-12-m-alloggi-moderni-e-funzionali/",
-                "categories" => ["container-modulari"],
-                "short_description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
+                [
+                    "id" => "11230",
+                    "name" => [
+                        "it" => "CONTAINER CHIOSCO – SNACK",
+                        "en" => "KIOSK CONTAINER – SNACK",
+                        "fr" => "CONTENEUR KIOSQUE – SNACK",
+                        "pt" => "CONTÊINER QUIOSQUE – SNACK",
+                        "es" => "CONTENEDOR QUIOSCO – SNACK"
+                    ],
+                    "price" => "4,100.00",
+                    "old_price" => "5,000.00",
+                    "sku" => "3276611230",
+                    "discount_percentage" => null,
+                    "link" => "/product/container-chiosco-snack/",
+                    "categories" => ["container-modulari"],
+                    "short_description" => [
+                        "it" => "Realizzazione di uno snack bar, taverna in un container marittimo.\nInclude:\n1 container primo viaggio da 20′ (6mx2,45×2,60m)\nAperture:\n1 Tenda a gas 3000 x 1200 mm\n1 Anta da 90×200 cm\nContatori:\n1 Bancone pieghevole 3000x300mm\nINSTALLAZIONE ELETTRICA:\n1 tabella 1 riga\n2 luci LED impermeabili\n4 prese di servizio 16A+T\n1 interruttore di alimentazione singolo\n1 pasto veloce\nIsolamento interno:\nPannello Sandwich Alimentare 40mm Bianco\nPavimento: resina gelcoat grigia con scarico a pavimento per il drenaggio\nVerniciatura: vernice RAL 7016 su tutto il contenitore.\nImpianti idraulici: Arrivo ed evacuazione acqua, installazione approvvigionamento idrico.\nCappe:\nFornitura e posa in opera di una cappa da 2 mt con aspirazione a soffitto.\nImmersioni:\nFornitura e installazione di 1 serbatoio da 1200 m + cumulo istantaneo\nFrigoriferi:\n1 frigorifero negativo da 600 L\n2 Tavoli con 3 ante positive in acciaio inox\nFriggitrice:\n1 friggitrice doppia in acciaio inox da 14 litri",
+                        "en" => "Creation of a snack bar, tavern in a shipping container.\nIncludes:\n1 first voyage 20′ container (6mx2.45×2.60m)\nOpenings:\n1 Gas awning 3000 x 1200 mm\n1 Door 90×200 cm\nCounters:\n1 Folding counter 3000x300mm\nELECTRICAL INSTALLATION:\n1 panel 1 row\n2 waterproof LED lights\n4 service sockets 16A+T\n1 single power switch\n1 quick meal\nInternal insulation:\n40mm White Food Sandwich Panel\nFloor: gray gelcoat resin with floor drain for drainage\nPainting: RAL 7016 paint throughout the container.\nPlumbing: Water supply and drainage, water supply installation.\nHoods:\nSupply and installation of a 2 m hood with ceiling extraction.\nImmersion:\nSupply and installation of 1 1200 L tank + instant water heater\nRefrigerators:\n1 600 L freezer\n2 Stainless steel tables with 3 positive doors\nDeep fryer:\n1 14 liter double stainless steel deep fryer",
+                        "fr" => "Réalisation d'un snack bar, guinguette dans un conteneur maritime.\nComprend :\n1 conteneur premier voyage 20′ (6mx2,45×2,60m)\nOuvertures :\n1 Store banne 3000 x 1200 mm\n1 Porte 90×200 cm\nComptoirs :\n1 Comptoir pliant 3000x300mm\nINSTALLATION ÉLECTRIQUE :\n1 tableau 1 rangée\n2 luminaires LED étanches\n4 prises de service 16A+T\n1 interrupteur d'alimentation simple\n1 prise rapide\nIsolation intérieure :\nPanneau Sandwich Alimentaire 40mm Blanc\nSol : résine gelcoat grise avec drain de sol pour évacuation\nPeinture : peinture RAL 7016 sur tout le conteneur.\nPlomberie : Arrivée et évacuation d'eau, installation alimentation eau.\nHottes :\nFourniture et pose d'une hotte de 2 m avec extraction plafond.\nImmersion :\nFourniture et installation d'un cumulus instantané 1200 L\nRéfrigérateurs :\n1 réfrigérateur négatif 600 L\n2 Tables inox 3 portes positives\nFriteuse :\n1 friteuse double inox 14 litres",
+                        "pt" => "Criação de um snack bar, taverna em um contêiner marítimo.\nInclui:\n1 contêiner de primeira viagem 20′ (6mx2,45×2,60m)\nAberturas:\n1 Toldo retrátil 3000 x 1200 mm\n1 Porta 90×200 cm\nBalcões:\n1 Balcão dobrável 3000x300mm\nINSTALAÇÃO ELÉTRICA:\n1 quadro 1 fileira\n2 luzes LED à prova d'água\n4 tomadas de serviço 16A+T\n1 interruptor de alimentação simples\n1 refeição rápida\nIsolamento interno:\nPainel Sanduíche Alimentar 40mm Branco\nPiso: resina gelcoat cinza com ralo para drenagem\nPintura: tinta RAL 7016 em todo o contêiner.\nEncanamento: Abastecimento e drenagem de água, instalação de abastecimento de água.",
+                        "es" => "Creación de un snack bar, taberna en un contenedor marítimo.\nIncluye:\n1 contenedor de primer viaje 20′ (6mx2,45×2,60m)\nAberturas:\n1 Toldo 3000 x 1200 mm\n1 Puerta 90×200 cm\nMostradores:\n1 Mostrador plegable 3000x300mm\nINSTALACIÓN ELÉCTRICA:\n1 cuadro 1 fila\n2 luces LED impermeables\n4 tomas de servicio 16A+T\n1 interruptor de alimentación simple\n1 toma rápida\nAislamiento interior:\nPanel Sándwich Alimentario 40mm Blanco\nSuelo: resina gelcoat gris con desagüe para drenaje\nPintura: pintura RAL 7016 en todo el contenedor.\nFontanería: Llegada y evacuación de agua, instalación de suministro de agua.\nCampanas:\nSuministro e instalación de campana de 2 m con extracción de techo.\nInmersión:\nSuministro e instalación de 1 termo instantáneo de 1200 L\nNeveras:\n1 nevera negativa de 600 L\n2 Mesas de acero inoxidable con 3 puertas positivas\nFreidora:\n1 freidora doble de acero inoxidable de 14 litros"
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/rn-image_picker_lib_temp_0a7593de-36dd-4bae-ad34-aa5ce608c131-300x300.jpg",
+                        "/assets/uploads/2025/11/rn-image_picker_lib_temp_03eef24f-5ec5-4bdc-ba50-6beff0ba4efd-300x300.jpg",
+                        "/assets/uploads/2025/11/rn-image_picker_lib_temp_27360151-961a-45d7-8c02-57214e119a48-300x300.jpg",
+                        "/assets/uploads/2025/11/rn-image_picker_lib_temp_f061789e-0711-4d40-a6b1-9a504cd6ece7-300x300.jpg",
+                        "/assets/uploads/2025/11/rn-image_picker_lib_temp_43215567-9066-4e2b-914a-406989efe0e7-300x300.jpg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
                 ],
-                "images" => [
-                    "/assets/uploads/2025/11/a1ef6f_8c3e9e9cee7249b5a7fb6725b40769ac7Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_5c65f731767e48f0a09bf216375aa7d47Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_8a41d3a21a284b46a19cf4caf1477b187Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_ed8f914403eb407eaa89557d62a471f07Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_05aeea25cb204282a3027ef6823bd96f7Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_2173f4816b814d82b6b88adb1c790a377Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_315e7bf70c884b99bdbff83b37991f4d7Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_eaad0fd06b9440349f312eddbad0ff467Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_3c8218b092b14713857c2813f827c4d47Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_822495c6199744bb8db9daf81af34e677Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_28b6e908feaa458cb8a4b8c4239cc3cb7Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_c561d5b8cdc443eca2a0796f8631c0357Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_26663d69eb71413898764c0835fe468e7Emv2-300x300.jpg",
-                    "/assets/uploads/2025/11/a1ef6f_fb4650ce197042b3b4372f609b12fcf57Emv2-300x300.jpg"
-                ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "10544",
-                "name" => [
-                    "it" => "Casa Container Modello PLAYERO",
-                    "en" => "PLAYERO Model Container House",
-                    "fr" => "Maison Conteneur Modèle PLAYERO",
-                    "pt" => "Casa Contêiner Modelo PLAYERO",
-                    "es" => "Casa Contenedor Modelo PLAYERO"
-                ],
-                "price" => "4,764.76",
-                "old_price" => "6,806.80",
-                "sku" => "3276610544",
-                "discount_percentage" => null,
-                "link" => "/product/casa-container-modello-playero/",
-                "categories" => ["contenitori-casa"],
-                "short_description" => [
-                    "it" => "Abitazione container di design con ampi spazi e comfort moderni.\nContainer 40′ High Cube\n1 camera e 1 bagno completo\nCucina in PVC a L e armadio a specchio\n2 porte scorrevoli in vetro, climatizzazione inverter\nIsolamento totale e connessioni per generatore",
-                    "en" => "Designer container home with spacious areas and modern comforts.\n40′ High Cube container\n1 bedroom and 1 full bathroom\nL-shaped PVC kitchen and mirrored wardrobe\n2 sliding glass doors, inverter air conditioning\nFull insulation and generator connections",
-                    "fr" => "Habitat conteneur design avec grands espaces et conforts modernes.\nConteneur 40′ High Cube\n1 chambre et 1 salle de bain complète\nCuisine en PVC en L et armoire miroir\n2 portes coulissantes en verre, climatisation inverter\nIsolation totale et connexions pour génératrice",
-                    "pt" => "Habitação contêiner de design com amplos espaços e confortos modernos.\nContêiner 40′ High Cube\n1 quarto e 1 banheiro completo\nCozinha em PVC em L e armário espelhado\n2 portas de correr em vidro, ar condicionado inverter\nIsolamento total e conexões para gerador",
-                    "es" => "Vivienda contenedor de diseño con amplios espacios y comodidades modernas.\nContenedor 40′ High Cube\n1 dormitorio y 1 baño completo\nCocina de PVC en L y armario espejo\n2 puertas correderas de vidrio, aire acondicionado inverter\nAislamiento total y conexiones para generador"
-                ],
-                "images" => [
-                    "/assets/uploads/2025/11/2-48-300x300.jpeg",
-                    "/assets/uploads/2025/11/1-49-300x300.jpeg",
-                    "/assets/uploads/2025/11/3-47-300x300.jpeg",
-                    "/assets/uploads/2025/11/4-46-300x300.jpeg",
-                    "/assets/uploads/2025/11/5-42-300x300.jpeg",
-                    "/assets/uploads/2025/11/6-35-300x300.jpeg",
-                    "/assets/uploads/2025/11/7-29-300x300.jpeg",
-                    "/assets/uploads/2025/11/8-20-300x300.jpeg",
-                    "/assets/uploads/2025/11/9-17-300x300.jpeg"
-                ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "10543",
-                "name" => [
-                    "it" => "Casa Container Prefabbricata",
-                    "en" => "Prefabricated Container House",
-                    "fr" => "Maison Conteneur Préfabriquée",
-                    "pt" => "Casa Contêiner Pré-fabricada",
-                    "es" => "Casa Contenedor Prefabricada"
-                ],
-                "price" => "3,723.72",
-                "old_price" => "5,319.60",
-                "sku" => "3276610543",
-                "discount_percentage" => null,
-                "link" => "/product/casa-container-prefabbricata/",
-                "categories" => ["contenitori-casa"],
-                "short_description" => [
-                    "it" => "Casa prefabbricata container resistente e veloce da montare.\nStruttura in acciaio Q235B\nPannelli sandwich in lana di roccia da 75 mm\nPavimento ignifugo in MGO da 18 mm\nFinestre antieffrazione in alluminio\nIgnifuga A1, antisismica e antivento",
-                    "en" => "Resistant and quick-to-assemble prefabricated container house.\nQ235B steel structure\n75 mm rock wool sandwich panels\n18 mm MGO fireproof flooring\nAluminum anti-break-in windows\nA1 fireproof, earthquake and wind resistant",
-                    "fr" => "Maison conteneur préfabriquée résistante et rapide à monter.\nStructure en acier Q235B\nPanneaux sandwich laine de roche 75 mm\nPlancher ignifuge MGO 18 mm\nFenêtres en aluminium anti-effraction\nIgnifuge A1, antisismique et antivent",
-                    "pt" => "Casa contêiner pré-fabricada resistente e rápida de montar.\nEstrutura de aço Q235B\nPainéis sanduíche de lã de rocha 75 mm\nPiso à prova de fogo MGO 18 mm\nJanelas de alumínio anti-arrombamento\nÀ prova de fogo A1, antissísmica e antivento",
-                    "es" => "Casa contenedor prefabricada resistente y rápida de montar.\nEstructura de acero Q235B\nPaneles sándwich de lana de roca 75 mm\nSuelo ignífugo MGO 18 mm\nVentanas de aluminio antiefecto\nIgnífuga A1, antisísmica y antiviento"
-                ],
-                "images" => [
-                    "/assets/uploads/2025/11/1-19-300x300.webp",
-                    "/assets/uploads/2025/11/2-21-300x300.webp",
-                    "/assets/uploads/2025/11/3-20-300x300.webp",
-                    "/assets/uploads/2025/11/4-17-300x300.webp",
-                    "/assets/uploads/2025/11/5-15-300x300.webp",
-                    "/assets/uploads/2025/11/6-13-300x300.webp",
-                    "/assets/uploads/2025/11/7-10-300x300.webp",
-                    "/assets/uploads/2025/11/8-8-300x300.webp"
-                ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "10542",
-                "name" => [
-                    "it" => "Casa Container Prefabbricata Modulabile",
-                    "en" => "Modular Prefabricated Container House",
-                    "fr" => "Maison Conteneur Préfabriquée Modulable",
-                    "pt" => "Casa Contêiner Pré-fabricada Modulável",
-                    "es" => "Casa Contenedor Prefabricada Modulable"
-                ],
-                "price" => "4,899.89",
-                "old_price" => "6,999.85",
-                "sku" => "3276610542",
-                "discount_percentage" => null,
-                "link" => "/product/casa-container-prefabbricata-modulabile/",
-                "categories" => ["contenitori-casa"],
-                "short_description" => [
-                    "it" => "Casa prefabbricata container modulare, progettata per condizioni estreme.\nStruttura in acciaio rinforzato\nIsolamento avanzato con pannelli sandwich\nPersonalizzabile in ogni dettaglio\nResistente a sismi e vento forte\nIdeale per abitazioni, uffici o spazi commerciali",
-                    "en" => "Modular prefabricated container house, designed for extreme conditions.\nReinforced steel structure\nAdvanced insulation with sandwich panels\nCustomizable in every detail\nResistant to earthquakes and strong wind\nIdeal for homes, offices or commercial spaces",
-                    "fr" => "Maison conteneur préfabriquée modulaire, conçue pour conditions extrêmes.\nStructure en acier renforcé\nIsolation avancée avec panneaux sandwich\nPersonnalisable dans les moindres détails\nRésistant aux séismes et vents forts\nIdéal pour habitations, bureaux ou espaces commerciaux",
-                    "pt" => "Casa contêiner pré-fabricada modular, projetada para condições extremas.\nEstrutura de aço reforçado\nIsolamento avançado com painéis sanduíche\nPersonalizável em cada detalhe\nResistente a terremotos e ventos fortes\nIdeal para residências, escritórios ou espaços comerciais",
-                    "es" => "Casa contenedor prefabricada modular, diseñada para condiciones extremas.\nEstructura de acero reforzado\nAislamiento avanzado con paneles sándwich\nPersonalizable en cada detalle\nResistente a terremotos y vientos fuertes\nIdeal para viviendas, oficinas o espacios comerciales"
-                ],
-                "images" => [
-                    "/assets/uploads/2025/11/1-6-300x300.webp",
-                    "/assets/uploads/2025/11/2-8-300x300.webp",
-                    "/assets/uploads/2025/11/3-11-300x300.webp",
-                    "/assets/uploads/2025/11/4-6-300x300.webp"
-                ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "10621",
-                "name" => [
-                    "it" => "Casa Mobile Luisiana Taos – Comfort Abitativo",
-                    "en" => "Luisiana Taos Mobile Home – Living Comfort",
-                    "fr" => "Mobile Home Luisiana Taos – Confort d'Habitation",
-                    "pt" => "Casa Móvel Luisiana Taos – Conforto Habitacional",
-                    "es" => "Casa Móvil Luisiana Taos – Confort Habitacional"
-                ],
-                "price" => "4,200.00",
-                "old_price" => "6,866.00",
-                "sku" => "3276610621",
-                "discount_percentage" => null,
-                "link" => "/product/casa-mobile-luisiana-taos-comfort-abitativo/",
-                "categories" => ["contenitori-casa"],
-                "short_description" => [
-                    "it" => "Casa mobile moderna da 40 m², perfetta per ogni stagione.\nModello 2023 con design contemporaneo\n2 camere da letto e 2 bagni completi\nCucina full optional e soggiorno arredato\nWC separato e predisposizione per lavatrice\nIsolamento termico per uso annuale",
-                    "en" => "Modern 40 m² mobile home, perfect for every season.\n2023 model with contemporary design\n2 bedrooms and 2 full bathrooms\nFully equipped kitchen and furnished living room\nSeparate toilet and washing machine preparation\nThermal insulation for year-round use",
-                    "fr" => "Mobile home moderne de 40 m², parfaite pour toutes les saisons.\nModèle 2023 au design contemporain\n2 chambres et 2 salles de bain complètes\nCuisine tout équipée et salon meublé\nWC séparé et préparation machine à laver\nIsolation thermique pour usage annuel",
-                    "pt" => "Casa móvel moderna de 40 m², perfeita para todas as estações.\nModelo 2023 com design contemporâneo\n2 quartos e 2 banheiros completos\nCozinha completa e sala mobiliada\nBanheiro separado e preparação para máquina de lavar\nIsolamento térmico para uso anual",
-                    "es" => "Casa móvil moderna de 40 m², perfecta para cada estación.\nModelo 2023 con diseño contemporáneo\n2 dormitorios y 2 baños completos\nCocina totalmente equipada y salón amueblado\nWC separado y preparación para lavadora\nAislamiento térmico para uso anual"
-                ],
-                "images" => [
-                    "/assets/uploads/2025/11/1-22-300x300.jpeg",
-                    "/assets/uploads/2025/11/2-22-300x300.jpeg",
-                    "/assets/uploads/2025/11/3-21-300x300.jpeg",
-                    "/assets/uploads/2025/11/4-21-300x300.jpeg",
-                    "/assets/uploads/2025/11/5-20-300x300.jpeg",
-                    "/assets/uploads/2025/11/6-17-300x300.jpeg",
-                    "/assets/uploads/2025/11/7-16-300x300.jpeg",
-                    "/assets/uploads/2025/11/8-14-300x300.jpeg",
-                    "/assets/uploads/2025/11/9-13-300x300.jpeg",
-                    "/assets/uploads/2025/11/10-8-300x300.jpeg",
-                    "/assets/uploads/2025/11/11-8-300x300.jpeg",
-                    "/assets/uploads/2025/11/12-6-300x300.jpeg",
-                    "/assets/uploads/2025/11/13-5-300x300.jpeg",
-                    "/assets/uploads/2025/11/14-2-300x300.jpeg",
-                    "/assets/uploads/2025/11/15-1-300x300.jpeg"
-                ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "12449",
-                "name" => [
-                    "it" => "Casa mobile moderna – Dimensioni 10,5 x 3,8 m",
-                    "en" => "Modern mobile home – Dimensions 10.5 x 3.8 m",
-                    "fr" => "Mobile home moderne – Dimensions 10,5 x 3,8 m",
-                    "pt" => "Casa móvel moderna – Dimensões 10,5 x 3,8 m",
-                    "es" => "Casa móvil moderna – Dimensiones 10,5 x 3,8 m"
-                ],
-                "price" => "5,500.00",
-                "old_price" => null,
-                "sku" => "9876543456789",
-                "discount_percentage" => null,
-                "link" => "/product/casa-mobile-moderna-dimensioni-105-x-38-m/",
-                "categories" => ["contenitori-casa"],
-                "short_description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ],
-                "images" => [
-                    "/assets/uploads/2025/11/7654345687901-300x300.webp",
-                    "/assets/uploads/2025/11/7654345687902-300x300.webp",
-                    "/assets/uploads/2025/11/7654345687903-300x300.webp",
-                    "/assets/uploads/2025/11/7654345687904-300x300.webp",
-                    "/assets/uploads/2025/11/7654345687905-300x300.webp",
-                    "/assets/uploads/2025/11/7654345687906-300x300.webp",
-                    "/assets/uploads/2025/11/7654345687907-300x300.webp",
-                    "/assets/uploads/2025/11/7654345687908-300x300.webp",
-                    "/assets/uploads/2025/11/7654345687909-300x300.webp"
-                ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "12437",
-                "name" => [
-                    "it" => "Casa mobile moderna – Dimensioni 12×4 m",
-                    "en" => "Modern mobile home – Dimensions 12×4 m",
-                    "fr" => "Mobile home moderne – Dimensions 12×4 m",
-                    "pt" => "Casa móvel moderna – Dimensões 12×4 m",
-                    "es" => "Casa móvil moderna – Dimensiones 12×4 m"
-                ],
-                "price" => "8,000.00",
-                "old_price" => null,
-                "sku" => "097654456789",
-                "discount_percentage" => null,
-                "link" => "/product/casa-mobile-moderna-dimensioni-12x4-m/",
-                "categories" => ["contenitori-casa"],
-                "short_description" => [
-                    "it" => "Moderna casa mobile 12x4m: costruzione in acciaio e legno, isolamento termico avanzato e configurazioni personalizzabili per ogni esigenza vitale.",
-                    "en" => "Modern 12x4m mobile home: steel and wood construction, advanced thermal insulation and customizable configurations for every living need.",
-                    "fr" => "Mobile home moderne 12x4m : construction acier et bois, isolation thermique avancée et configurations personnalisables pour chaque besoin vital.",
-                    "pt" => "Casa móvel moderna 12x4m: construção em aço e madeira, isolamento térmico avançado e configurações personalizáveis para cada necessidade vital.",
-                    "es" => "Casa móvil moderna 12x4m: construcción en acero y madera, aislamiento térmico avanzado y configuraciones personalizables para cada necesidad vital."
-                ],
-                "images" => [
-                    "/assets/uploads/2025/11/7654334657801-300x300.webp",
-                    "/assets/uploads/2025/11/7654334657802-300x300.webp",
-                    "/assets/uploads/2025/11/7654334657803-300x300.webp",
-                    "/assets/uploads/2025/11/7654334657804-300x300.webp",
-                    "/assets/uploads/2025/11/7654334657805-300x300.webp",
-                    "/assets/uploads/2025/11/7654334657806-300x300.webp",
-                    "/assets/uploads/2025/11/7654334657807-300x300.webp",
-                    "/assets/uploads/2025/11/7654334657808-300x300.webp",
-                    "/assets/uploads/2025/11/7654334657809-300x300.webp",
-                    "/assets/uploads/2025/11/7654334657810-300x300.webp"
-                ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "12428",
-                "name" => [
-                    "it" => "Casa Mobile T2 – Una soluzione abitativa moderna e flessibile",
-                    "en" => "T2 Mobile Home – A modern and flexible housing solution",
-                    "fr" => "Mobile Home T2 – Une solution d'habitat moderne et flexible",
-                    "pt" => "Casa Móvel T2 – Uma solução habitacional moderna e flexível",
-                    "es" => "Casa Móvil T2 – Una solución habitacional moderna y flexible"
-                ],
-                "price" => "3,050.00",
-                "old_price" => null,
-                "sku" => "876543456789",
-                "discount_percentage" => null,
-                "link" => "/product/casa-mobile-t2-una-soluzione-abitativa-moderna-e-flessibile/",
-                "categories" => ["contenitori-casa"],
-                "short_description" => [
-                    "it" => "Mobile Home Container T2: una casa compatta, moderna e personalizzabile, ideale per qualsiasi esigenza. Facile da trasportare, efficiente e sostenibile.",
-                    "en" => "T2 Container Mobile Home: a compact, modern and customizable home, ideal for any need. Easy to transport, efficient and sustainable.",
-                    "fr" => "Mobile Home Conteneur T2 : une maison compacte, moderne et personnalisable, idéale pour tous les besoins. Facile à transporter, efficace et durable.",
-                    "pt" => "Casa Móvel Contêiner T2: uma casa compacta, moderna e personalizável, ideal para qualquer necessidade. Fácil de transportar, eficiente e sustentável.",
-                    "es" => "Casa Móvil Contenedor T2: una casa compacta, moderna y personalizable, ideal para cualquier necesidad. Fácil de transportar, eficiente y sostenible."
-                ],
-                "images" => [
-                    "/assets/uploads/2025/11/876433456789001-300x300.webp",
-                    "/assets/uploads/2025/11/876433456789002-300x300.webp",
-                    "/assets/uploads/2025/11/876433456789003-300x300.webp",
-                    "/assets/uploads/2025/11/876433456789004-300x300.webp",
-                    "/assets/uploads/2025/11/876433456789005-300x300.webp",
-                    "/assets/uploads/2025/11/876433456789006-300x300.webp",
-                    "/assets/uploads/2025/11/876433456789007-300x300.webp",
-                    "/assets/uploads/2025/11/876433456789008-300x300.webp"
-                ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "10545",
-                "name" => [
-                    "it" => "Casa Modulare González – Spazio Intelligente da 36 m²",
-                    "en" => "González Modular House – 36 m² Intelligent Space",
-                    "fr" => "Maison Modulaire González – Espace Intelligent de 36 m²",
-                    "pt" => "Casa Modular González – Espaço Inteligente de 36 m²",
-                    "es" => "Casa Modular González – Espacio Inteligente de 36 m²"
-                ],
-                "price" => "3,200.00",
-                "old_price" => "5,720.00",
-                "sku" => "3276610545",
-                "discount_percentage" => null,
-                "link" => "/product/casa-modulare-gonzalez-spazio-intelligente-da-36-m%c2%b2/",
-                "categories" => ["contenitori-casa"],
-                "short_description" => [
-                    "it" => "Soluzione abitativa modulare da 36 m² ideale per uso residenziale o turistico.\n1 camera, 1 bagno completo\nOpen space con cucina e soggiorno\nIsolamento poliuretano e lana di vetro\nFinestre termiche in PVC effetto legno\nImpianto elettrico completo e LED",
-                    "en" => "36 m² modular housing solution ideal for residential or tourist use.\n1 bedroom, 1 full bathroom\nOpen space with kitchen and living room\nPolyurethane and fiberglass insulation\nThermal PVC windows with wood effect\nComplete electrical system and LED",
-                    "fr" => "Solution d'habitat modulaire de 36 m² idéale pour usage résidentiel ou touristique.\n1 chambre, 1 salle de bain complète\nEspace ouvert avec cuisine et salon\nIsolation polyuréthane et laine de verre\nFenêtres thermiques PVC effet bois\nInstallation électrique complète et LED",
-                    "pt" => "Solução habitacional modular de 36 m² ideal para uso residencial ou turístico.\n1 quarto, 1 banheiro completo\nEspaço aberto com cozinha e sala\nIsolamento poliuretano e lã de vidro\nJanelas térmicas em PVC efeito madeira\nSistema elétrico completo e LED",
-                    "es" => "Solución habitacional modular de 36 m² ideal para uso residencial o turístico.\n1 dormitorio, 1 baño completo\nEspacio abierto con cocina y salón\nAislamiento de poliuretano y lana de vidrio\nVentanas térmicas de PVC efecto madera\nSistema eléctrico completo y LED"
-                ],
-                "images" => [
-                    "/assets/uploads/2025/11/1-55-300x300.jpeg",
-                    "/assets/uploads/2025/11/2-53-300x300.jpeg",
-                    "/assets/uploads/2025/11/3-52-300x300.jpeg",
-                    "/assets/uploads/2025/11/4-51-300x300.jpeg",
-                    "/assets/uploads/2025/11/5-47-300x300.jpeg",
-                    "/assets/uploads/2025/11/6-39-300x300.jpeg",
-                    "/assets/uploads/2025/11/7-33-300x300.jpeg"
-                ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "10620",
-                "name" => [
-                    "it" => "Casa Modulare Montes – 36 m² di Comfort, Design",
-                    "en" => "Montes Modular House – 36 m² of Comfort, Design",
-                    "fr" => "Maison Modulaire Montes – 36 m² de Confort, Design",
-                    "pt" => "Casa Modular Montes – 36 m² de Conforto, Design",
-                    "es" => "Casa Modular Montes – 36 m² de Confort, Diseño"
-                ],
-                "price" => "3,400.00",
-                "old_price" => "5,278.30",
-                "sku" => "3276610620",
-                "discount_percentage" => null,
-                "link" => "/product/casa-modulare-montes-36-m%c2%b2-di-comfort-design/",
-                "categories" => ["contenitori-casa"],
-                "short_description" => [
-                    "it" => "Casa modulare da 36 m² con layout efficiente e design moderno.\n2 camere da letto, 1 bagno completo\nAmpie finestre in alluminio nero termico\nIsolamento con poliuretano e lana di vetro\nRivestimenti interni in OSB, legno e cartongesso\nImpianto elettrico completo e luci LED",
-                    "en" => "36 m² modular house with efficient layout and modern design.\n2 bedrooms, 1 full bathroom\nLarge thermal black aluminum windows\nInsulation with polyurethane and fiberglass\nInterior finishes in OSB, wood and plasterboard\nComplete electrical system and LED lights",
-                    "fr" => "Maison modulaire de 36 m² avec agencement efficace et design moderne.\n2 chambres, 1 salle de bain complète\nGrandes fenêtres en aluminium noir thermique\nIsolation polyuréthane et laine de verre\nRevêtements intérieurs en OSB, bois et placo\nInstallation électrique complète et lumières LED",
-                    "pt" => "Casa modular de 36 m² com layout eficiente e design moderno.\n2 quartos, 1 banheiro completo\nGrandes janelas em alumínio preto térmico\nIsolamento com poliuretano e lã de vidro\nAcabamentos internos em OSB, madeira e gesso cartonado\nSistema elétrico completo e luzes LED",
-                    "es" => "Casa modular de 36 m² con distribución eficiente y diseño moderno.\n2 dormitorios, 1 baño completo\nGrandes ventanas de aluminio negro térmico\nAislamiento con poliuretano y lana de vidrio\nRevestimientos interiores en OSB, madera y cartón yeso\nSistema eléctrico completo y luces LED"
-                ],
-                "images" => [
-                    "/assets/uploads/2025/11/1-2-300x300.jpeg",
-                    "/assets/uploads/2025/11/2-45-300x300.jpeg",
-                    "/assets/uploads/2025/11/3-44-300x300.jpeg",
-                    "/assets/uploads/2025/11/4-43-300x300.jpeg",
-                    "/assets/uploads/2025/11/5-39-300x300.jpeg",
-                    "/assets/uploads/2025/11/6-32-300x300.jpeg",
-                    "/assets/uploads/2025/11/7-26-300x300.jpeg"
-                ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "10539",
-                "name" => [
-                    "it" => "Casa prefabbricata modulare in container",
-                    "en" => "Modular prefabricated container house",
-                    "fr" => "Maison préfabriquée modulaire en conteneur",
-                    "pt" => "Casa pré-fabricada modular em contêiner",
-                    "es" => "Casa prefabricada modular en contenedor"
-                ],
-                "price" => "3,500.00",
-                "old_price" => "5,136.70",
-                "sku" => "3276610539",
-                "discount_percentage" => null,
-                "link" => "/product/casa-prefabbricata-modulare-in-container/",
-                "categories" => ["contenitori-casa"],
-                "short_description" => [
-                    "it" => "Casa prefabbricata in container in acciaio Q355 HDG, isolata e altamente resistente.Adatta per abitazioni, uffici, alloggi temporanei e strutture modulari.\nStruttura zincata a caldo\nIsolamento tetto in PU ad alta densità\nPareti in EPS o lana di roccia\nFinestre a doppio vetro\nResiste a venti fino a 210 km/h",
-                    "en" => "Prefabricated Q355 HDG steel container house, insulated and highly resistant. Suitable for homes, offices, temporary accommodation and modular structures.\nHot-dip galvanized structure\nHigh-density PU roof insulation\nEPS or rock wool walls\nDouble glazed windows\nResists winds up to 210 km/h",
-                    "fr" => "Maison conteneur préfabriquée en acier Q355 HDG, isolée et hautement résistante. Adaptée pour habitations, bureaux, hébergements temporaires et structures modulaires.\nStructure galvanisée à chaud\nIsolation toit PU haute densité\nMurs en EPS ou laine de roche\nFenêtres double vitrage\nRésiste aux vents jusqu'à 210 km/h",
-                    "pt" => "Casa contêiner pré-fabricada em aço Q355 HDG, isolada e altamente resistente. Adequada para residências, escritórios, alojamentos temporários e estruturas modulares.\nEstrutura galvanizada por imersão a quente\nIsolamento de telhado em PU de alta densidade\nParedes em EPS ou lã de rocha\nJanelas com vidro duplo\nResiste a ventos até 210 km/h",
-                    "es" => "Casa contenedor prefabricada en acero Q355 HDG, aislada y altamente resistente. Adecuada para viviendas, oficinas, alojamientos temporales y estructuras modulares.\nEstructura galvanizada en caliente\nAislamiento de techo en PU de alta densidad\nParedes en EPS o lana de roca\nVentanas de doble acristalamiento\nResiste vientos de hasta 210 km/h"
-                ],
-                "images" => [
-                    "/assets/uploads/2025/11/1-8-300x300.webp",
-                    "/assets/uploads/2025/11/2-10-300x300.webp",
-                    "/assets/uploads/2025/11/3-13-300x300.webp",
-                    "/assets/uploads/2025/11/4-8-300x300.webp",
-                    "/assets/uploads/2025/11/5-7-300x300.webp",
-                    "/assets/uploads/2025/11/6-5-300x300.webp"
-                ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "11232",
-                "name" => [
-                    "it" => "CHIOSCO/SNACK CONTAINER – UFFICIO – AREA VENDITA",
-                    "en" => "KIOSK/SNACK CONTAINER – OFFICE – SALES AREA",
-                    "fr" => "KIOSQUE/SNACK CONTENEUR – BUREAU – ZONE DE VENTE",
-                    "pt" => "QUIOSQUE/SNACK CONTÊINER – ESCRITÓRIO – ÁREA DE VENDA",
-                    "es" => "QUIOSCO/SNACK CONTENEDOR – OFICINA – ÁREA DE VENTA"
-                ],
-                "price" => "6,100.00",
-                "old_price" => "8,100.00",
-                "sku" => "3276611232",
-                "discount_percentage" => null,
-                "link" => "/product/chiosco-snack-container-ufficio-area-vendita/",
-                "categories" => ["container-modulari"],
-                "short_description" => [
-                    "it" => "Realizzazione di un chiosco, snack bar, food truck, taverna in un container marittimo per il primo viaggio.\n# Nessuna lastra di cemento!\n# Nessuna preparazione!\n# Nessun noioso assemblaggio!\n# Grande volume!\n# Cellulare!\n# Architettura della moda!\n# Nessun permesso di costruire!\n# Senza manutenzione!\nCapire :\n1 container primo viaggio da 40′ (12mx2,45×2,60m)\nAperture:\n1 Tenda a gas 2000 x 1200 mm\n1 Tenda a gas 3000 x 1200 mm\n1 anta 800×2000 mm\nContatori:\n1 Bancone pieghevole 2000x300mm\n1 Bancone pieghevole 3000x300mm\nINSTALLAZIONE ELETTRICA:\n1 tabella 1 riga\n3 luci LED impermeabili\n4 prese di servizio 16A+T\n1 interruttore di alimentazione singolo\n1 pasto veloce\nIsolamento interno:\nPannello Sandwich Alimentare 40mm Bianco\nColore :\nVernice RAL 7016 in tutto il contenitore.",
-                    "en" => "Creation of a kiosk, snack bar, food truck, tavern in a first voyage shipping container.\n# No concrete slab!\n# No preparation!\n# No tedious assembly!\n# Large volume!\n# Mobile!\n# Fashion architecture!\n# No building permit!\n# No maintenance!\nIncludes:\n1 first voyage 40′ container (12mx2.45×2.60m)\nOpenings:\n1 Gas awning 2000 x 1200 mm\n1 Gas awning 3000 x 1200 mm\n1 door 800×2000 mm\nCounters:\n1 Folding counter 2000x300mm\n1 Folding counter 3000x300mm\nELECTRICAL INSTALLATION:\n1 panel 1 row\n3 waterproof LED lights\n4 service sockets 16A+T\n1 single power switch\n1 quick meal\nInternal insulation:\n40mm White Food Sandwich Panel\nColor:\nRAL 7016 paint throughout the container.",
-                    "fr" => "Réalisation d'un kiosque, snack bar, food truck, guinguette dans un conteneur maritime premier voyage.\n# Pas de dalle béton !\n# Aucune préparation !\n# Aucun assemblage fastidieux !\n# Gros volume !\n# Mobile !\n# Architecture tendance !\n# Pas de permis de construire !\n# Sans entretien !\nComprend :\n1 conteneur premier voyage 40′ (12mx2,45×2,60m)\nOuvertures :\n1 Store banne 2000 x 1200 mm\n1 Store banne 3000 x 1200 mm\n1 porte 800×2000 mm\nComptoirs :\n1 Comptoir pliant 2000x300mm\n1 Comptoir pliant 3000x300mm\nINSTALLATION ÉLECTRIQUE :\n1 tableau 1 rangée\n3 luminaires LED étanches\n4 prises de service 16A+T\n1 interrupteur d'alimentation simple\n1 prise rapide\nIsolation intérieure :\nPanneau Sandwich Alimentaire 40mm Blanc\nCouleur :\nPeinture RAL 7016 sur tout le conteneur.",
-                    "pt" => "Criação de um quiosque, snack bar, food truck, taverna em um contêiner marítimo de primeira viagem.\n# Sem laje de concreto!\n# Sem preparação!\n# Nenhuma montagem tediosa!\n# Grande volume!\n# Móvel!\n# Arquitetura moderna!\n# Sem licença de construção!\n# Sem manutenção!\nInclui:\n1 contêiner de primeira viagem 40′ (12mx2,45×2,60m)\nAberturas:\n1 Toldo retrátil 2000 x 1200 mm\n1 Toldo retrátil 3000 x 1200 mm\n1 porta 800×2000 mm\nBalcões:\n1 Balcão dobrável 2000x300mm\n1 Balcão dobrável 3000x300mm\nINSTALAÇÃO ELÉTRICA:\n1 quadro 1 fileira\n3 luzes LED à prova d'água\n4 tomadas de serviço 16A+T\n1 interruptor de alimentação simples\n1 refeição rápida\nIsolamento interno:\nPainel Sanduíche Alimentar 40mm Branco\nCor:\nTinta RAL 7016 em todo o contêiner.",
-                    "es" => "Creación de un quiosco, snack bar, food truck, taberna en un contenedor marítimo de primer viaje.\n# ¡Sin losa de hormigón!\n# ¡Sin preparación!\n# ¡Sin montaje tedioso!\n# ¡Gran volumen!\n# ¡Móvil!\n# ¡Arquitectura moderna!\n# ¡Sin permiso de construcción!\n# ¡Sin mantenimiento!\nIncluye:\n1 contenedor de primer viaje 40′ (12mx2,45×2,60m)\nAberturas:\n1 Toldo 2000 x 1200 mm\n1 Toldo 3000 x 1200 mm\n1 puerta 800×2000 mm\nMostradores:\n1 Mostrador plegable 2000x300mm\n1 Mostrador plegable 3000x300mm\nINSTALACIÓN ELÉCTRICA:\n1 cuadro 1 fila\n3 luces LED impermeables\n4 tomas de servicio 16A+T\n1 interruptor de alimentación simple\n1 toma rápida\nAislamiento interior:\nPanel Sándwich Alimentario 40mm Blanco\nColor:\nPintura RAL 7016 en todo el contenedor."
-                ],
-                "images" => [
-                    "/assets/uploads/2025/11/rn-image_picker_lib_temp_1ca25ffe-d7fb-4a9d-9f32-b7cd20ecb708-300x300.jpg",
-                    "/assets/uploads/2025/11/rn-image_picker_lib_temp_471dece2-7bb0-4986-9a7b-cfc04abb0d1c-300x300.jpg",
-                    "/assets/uploads/2025/11/rn-image_picker_lib_temp_d156ba0a-ce76-440d-a430-0ea4a81b8b04-300x300.jpg",
-                    "/assets/uploads/2025/11/rn-image_picker_lib_temp_a90e8119-c992-4ade-8e5f-10973449a4c8-300x300.jpg"
-                ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "11054",
-                "name" => [
-                    "it" => "Container a doppia porta High Cube da 40 piedi",
-                    "en" => "40ft High Cube Double Door Container",
-                    "fr" => "Conteneur High Cube double porte 40 pieds",
-                    "pt" => "Contêiner High Cube porta dupla 40 pés",
-                    "es" => "Contenedor High Cube doble puerta 40 pies"
-                ],
-                "price" => "2,100.00",
-                "old_price" => null,
-                "sku" => "3276611054",
-                "discount_percentage" => null,
-                "link" => "/product/container-a-doppia-porta-high-cube-da-40-piedi/",
-                "categories" => ["container-di-stoccaggio", "contenitori-40-piedi"],
-                "short_description" => [
-                    "it" => "Questo container extra alto da 40 piedi ha porte su entrambi i lati anteriori e offre quindi un facile accesso da due lati. Ideale per lo stoccaggio e il trasporto. Certificato CSC, in acciaio CORTEN, impilabile e disponibile in ogni colore RAL.",
-                    "en" => "This 40ft extra-high container has doors on both front sides and therefore offers easy access from two sides. Ideal for storage and transport. CSC certified, CORTEN steel, stackable and available in any RAL color.",
-                    "fr" => "Ce conteneur extra-haut de 40 pieds a des portes sur les deux côtés avant et offre donc un accès facile depuis deux côtés. Idéal pour le stockage et le transport. Certifié CSC, en acier CORTEN, empilable et disponible en toutes couleurs RAL.",
-                    "pt" => "Este contêiner extra alto de 40 pés tem portas em ambos os lados frontais e, portanto, oferece fácil acesso por dois lados. Ideal para armazenamento e transporte. Certificado CSC, aço CORTEN, empilhável e disponível em qualquer cor RAL.",
-                    "es" => "Este contenedor extra alto de 40 pies tiene puertas en ambos lados frontales y por lo tanto ofrece fácil acceso desde dos lados. Ideal para almacenamiento y transporte. Certificado CSC, acero CORTEN, apilable y disponible en cualquier color RAL."
-                ],
-                "images" => [
-                    "/assets/uploads/2025/11/a0a2dea73060_40_hcdd_ral5013_10-300x300.webp",
-                    "/assets/uploads/2025/11/a0a2dea73060_40_hcdd_ral5013_13-300x300.webp",
-                    "/assets/uploads/2025/11/a0a2dea73060_fotos_40_hcdd_2_normal-300x300.webp",
-                    "/assets/uploads/2025/11/a0a2dea73060_fotos_40hcdd_5_normal-300x300.webp"
-                ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
-            [
-                "id" => "11230",
-                "name" => [
-                    "it" => "CONTAINER CHIOSCO – SNACK",
-                    "en" => "KIOSK CONTAINER – SNACK",
-                    "fr" => "CONTENEUR KIOSQUE – SNACK",
-                    "pt" => "CONTÊINER QUIOSQUE – SNACK",
-                    "es" => "CONTENEDOR QUIOSCO – SNACK"
-                ],
-                "price" => "4,100.00",
-                "old_price" => "5,000.00",
-                "sku" => "3276611230",
-                "discount_percentage" => null,
-                "link" => "/product/container-chiosco-snack/",
-                "categories" => ["container-modulari"],
-                "short_description" => [
-                    "it" => "Realizzazione di uno snack bar, taverna in un container marittimo.\nInclude:\n1 container primo viaggio da 20′ (6mx2,45×2,60m)\nAperture:\n1 Tenda a gas 3000 x 1200 mm\n1 Anta da 90×200 cm\nContatori:\n1 Bancone pieghevole 3000x300mm\nINSTALLAZIONE ELETTRICA:\n1 tabella 1 riga\n2 luci LED impermeabili\n4 prese di servizio 16A+T\n1 interruttore di alimentazione singolo\n1 pasto veloce\nIsolamento interno:\nPannello Sandwich Alimentare 40mm Bianco\nPavimento: resina gelcoat grigia con scarico a pavimento per il drenaggio\nVerniciatura: vernice RAL 7016 su tutto il contenitore.\nImpianti idraulici: Arrivo ed evacuazione acqua, installazione approvvigionamento idrico.\nCappe:\nFornitura e posa in opera di una cappa da 2 mt con aspirazione a soffitto.\nImmersioni:\nFornitura e installazione di 1 serbatoio da 1200 m + cumulo istantaneo\nFrigoriferi:\n1 frigorifero negativo da 600 L\n2 Tavoli con 3 ante positive in acciaio inox\nFriggitrice:\n1 friggitrice doppia in acciaio inox da 14 litri",
-                    "en" => "Creation of a snack bar, tavern in a shipping container.\nIncludes:\n1 first voyage 20′ container (6mx2.45×2.60m)\nOpenings:\n1 Gas awning 3000 x 1200 mm\n1 Door 90×200 cm\nCounters:\n1 Folding counter 3000x300mm\nELECTRICAL INSTALLATION:\n1 panel 1 row\n2 waterproof LED lights\n4 service sockets 16A+T\n1 single power switch\n1 quick meal\nInternal insulation:\n40mm White Food Sandwich Panel\nFloor: gray gelcoat resin with floor drain for drainage\nPainting: RAL 7016 paint throughout the container.\nPlumbing: Water supply and drainage, water supply installation.\nHoods:\nSupply and installation of a 2 m hood with ceiling extraction.\nImmersion:\nSupply and installation of 1 1200 L tank + instant water heater\nRefrigerators:\n1 600 L freezer\n2 Stainless steel tables with 3 positive doors\nDeep fryer:\n1 14 liter double stainless steel deep fryer",
-                    "fr" => "Réalisation d'un snack bar, guinguette dans un conteneur maritime.\nComprend :\n1 conteneur premier voyage 20′ (6mx2,45×2,60m)\nOuvertures :\n1 Store banne 3000 x 1200 mm\n1 Porte 90×200 cm\nComptoirs :\n1 Comptoir pliant 3000x300mm\nINSTALLATION ÉLECTRIQUE :\n1 tableau 1 rangée\n2 luminaires LED étanches\n4 prises de service 16A+T\n1 interrupteur d'alimentation simple\n1 prise rapide\nIsolation intérieure :\nPanneau Sandwich Alimentaire 40mm Blanc\nSol : résine gelcoat grise avec drain de sol pour évacuation\nPeinture : peinture RAL 7016 sur tout le conteneur.\nPlomberie : Arrivée et évacuation d'eau, installation alimentation eau.\nHottes :\nFourniture et pose d'une hotte de 2 m avec extraction plafond.\nImmersion :\nFourniture et installation d'un cumulus instantané 1200 L\nRéfrigérateurs :\n1 réfrigérateur négatif 600 L\n2 Tables inox 3 portes positives\nFriteuse :\n1 friteuse double inox 14 litres",
-                    "pt" => "Criação de um snack bar, taverna em um contêiner marítimo.\nInclui:\n1 contêiner de primeira viagem 20′ (6mx2,45×2,60m)\nAberturas:\n1 Toldo retrátil 3000 x 1200 mm\n1 Porta 90×200 cm\nBalcões:\n1 Balcão dobrável 3000x300mm\nINSTALAÇÃO ELÉTRICA:\n1 quadro 1 fileira\n2 luzes LED à prova d'água\n4 tomadas de serviço 16A+T\n1 interruptor de alimentação simples\n1 refeição rápida\nIsolamento interno:\nPainel Sanduíche Alimentar 40mm Branco\nPiso: resina gelcoat cinza com ralo para drenagem\nPintura: tinta RAL 7016 em todo o contêiner.\nEncanamento: Abastecimento e drenagem de água, instalação de abastecimento de água.",
-                    "es" => "Creación de un snack bar, taberna en un contenedor marítimo.\nIncluye:\n1 contenedor de primer viaje 20′ (6mx2,45×2,60m)\nAberturas:\n1 Toldo 3000 x 1200 mm\n1 Puerta 90×200 cm\nMostradores:\n1 Mostrador plegable 3000x300mm\nINSTALACIÓN ELÉCTRICA:\n1 cuadro 1 fila\n2 luces LED impermeables\n4 tomas de servicio 16A+T\n1 interruptor de alimentación simple\n1 toma rápida\nAislamiento interior:\nPanel Sándwich Alimentario 40mm Blanco\nSuelo: resina gelcoat gris con desagüe para drenaje\nPintura: pintura RAL 7016 en todo el contenedor.\nFontanería: Llegada y evacuación de agua, instalación de suministro de agua.\nCampanas:\nSuministro e instalación de campana de 2 m con extracción de techo.\nInmersión:\nSuministro e instalación de 1 termo instantáneo de 1200 L\nNeveras:\n1 nevera negativa de 600 L\n2 Mesas de acero inoxidable con 3 puertas positivas\nFreidora:\n1 freidora doble de acero inoxidable de 14 litros"
-                ],
-                "images" => [
-                    "/assets/uploads/2025/11/rn-image_picker_lib_temp_0a7593de-36dd-4bae-ad34-aa5ce608c131-300x300.jpg",
-                    "/assets/uploads/2025/11/rn-image_picker_lib_temp_03eef24f-5ec5-4bdc-ba50-6beff0ba4efd-300x300.jpg",
-                    "/assets/uploads/2025/11/rn-image_picker_lib_temp_27360151-961a-45d7-8c02-57214e119a48-300x300.jpg",
-                    "/assets/uploads/2025/11/rn-image_picker_lib_temp_f061789e-0711-4d40-a6b1-9a504cd6ece7-300x300.jpg",
-                    "/assets/uploads/2025/11/rn-image_picker_lib_temp_43215567-9066-4e2b-914a-406989efe0e7-300x300.jpg"
-                ],
-                "description" => [
-                    "it" => "",
-                    "en" => "",
-                    "fr" => "",
-                    "pt" => "",
-                    "es" => ""
-                ]
-            ],
 
 
                 [
@@ -3022,8 +3031,7 @@ class ArticleSeeder extends Seeder
                         "pt" => "",
                         "es" => ""
                     ]
-                ]
-            ,
+                ],
 
                 [
                     "id" => "10701",
@@ -3530,8 +3538,7 @@ class ArticleSeeder extends Seeder
                         "pt" => "",
                         "es" => ""
                     ]
-                ]
-            ,
+                ],
 
                 [
                     "id" => "10471",
@@ -3948,8 +3955,7 @@ class ArticleSeeder extends Seeder
                         "pt" => "",
                         "es" => ""
                     ]
-                ]
-            ,
+                ],
                 [
                     "id" => "10482",
                     "name" => [
@@ -4466,8 +4472,7 @@ class ArticleSeeder extends Seeder
                         "pt" => "",
                         "es" => ""
                     ]
-                ]
-            ,
+                ],
                 [
                     "id" => "10483",
                     "name" => [
@@ -4489,400 +4494,400 @@ class ArticleSeeder extends Seeder
                         "fr" => "Besoin d'une solution de stockage mobile, sûre et peu encombrante ? Notre conteneur Dry Van 10 pieds d'occasion offre praticité, résistance et flexibilité. Grâce à la certification CSC, il peut également être utilisé pour le transport intermodal. Sa structure compacte le rend idéal pour les chantiers, ateliers ou environnements industriels avec espace limité.\nPlancher en contreplaqué 28 mm\nÉtanchéité au vent et à l'eau\nCertification CSC pour transport terrestre, maritime ou ferroviaire\nSerrure de sécurité intégrée\nFacile à manutentionner avec chariots élévateurs",
                         "pt" => "Você precisa de uma solução de armazenamento móvel, segura e que economize espaço? Nosso contêiner Dry Van de 10 pés usado oferece praticidade, resistência e flexibilidade. Graças à certificação CSC, também pode ser usado para transporte intermodal. Sua estrutura compacta o torna ideal para canteiros de obras, oficinas ou ambientes industriais com espaço limitado.\nPiso de compensado de 28 mm\nVedação contra vento e água\nCertificação CSC para transporte terrestre, marítimo ou ferroviário\nFechadura de segurança integrada\nFácil de manusear com empilhadeiras",
                         "es" => "Necesita una solución de almacenamiento móvil, segura y que ahorre espacio? Nuestro contenedor Dry Van de 10 pies usado ofrece practicidad, resistencia y flexibilidad. Gracias a la certificación CSC, también se puede utilizar para transporte intermodal. Su estructura compacta lo hace ideal para obras, talleres o entornos industriales con espacio limitado.\nSuelo de madera contrachapada de 28 mm\nSellado hermético al viento y al agua\nCertificación CSC para transporte por tierra, mar o ferrocarril\nCerradura de seguridad integrada\nFácil de manejar con carretillas elevadoras"
-        ],
-        "images" => [
-            "/assets/uploads/2025/11/1-5-300x300.webp",
-            "/assets/uploads/2025/11/2-5-300x300.webp",
-            "/assets/uploads/2025/11/2-11-1-300x300.webp",
-            "/assets/uploads/2025/11/3-10-1-300x300.webp",
-            "/assets/uploads/2025/11/4-9-1-300x300.webp",
-            "/assets/uploads/2025/11/5-8-1-300x300.webp"
-        ],
-        "description" => [
-            "it" => "",
-            "en" => "",
-            "fr" => "",
-            "pt" => "",
-            "es" => ""
-        ]
-    ],
-    [
-        "id" => "10497",
-        "name" => [
-            "it" => "Contenitore Marittimo High Cube 40′ con 4 Porte Laterali – Usato",
-            "en" => "Used 40′ High Cube Shipping Container with 4 Side Doors",
-            "fr" => "Conteneur Maritime High Cube 40′ avec 4 Portes Latérales – Occasion",
-            "pt" => "Contêiner Marítimo High Cube 40′ com 4 Portas Laterais – Usado",
-            "es" => "Contenedor Marítimo High Cube 40′ con 4 Puertas Laterales – Usado"
-        ],
-        "price" => "2,510.00",
-        "old_price" => "3,875.30",
-        "sku" => "3276610497",
-        "discount_percentage" => null,
-        "link" => "/product/contenitore-marittimo-high-cube-40-con-4-porte-laterali-usato/",
-        "categories" => ["contenitori-40-piedi"],
-        "short_description" => [
-            "it" => "Contenitore marittimo High Cube 40' usato, dotato di 4 porte laterali per accesso indipendente alla merce. Soluzione ideale per logistica intensiva, stoccaggio flessibile o adattamenti tecnici.\nStruttura in acciaio Corten\nPorte con chiusura di sicurezza a 4 barre\nFinitura moderna grigio ocra\nAccesso facilitato su più lati",
-            "en" => "Used 40' High Cube shipping container, equipped with 4 side doors for independent access to goods. Ideal solution for intensive logistics, flexible storage or technical adaptations.\nCorten steel structure\nDoors with 4-bar security locking\nModern ochre gray finish\nEasy access on multiple sides",
-            "fr" => "Conteneur maritime High Cube 40' d'occasion, équipé de 4 portes latérales pour un accès indépendant aux marchandises. Solution idéale pour logistique intensive, stockage flexible ou adaptations techniques.\nStructure en acier Corten\nPortes avec verrouillage sécurité 4 barres\nFinition moderne gris ocre\nAccès facilité sur plusieurs côtés",
-            "pt" => "Contêiner marítimo High Cube 40' usado, equipado com 4 portas laterais para acesso independente às mercadorias. Solução ideal para logística intensiva, armazenamento flexível ou adaptações técnicas.\nEstrutura de aço Corten\nPortas com fechamento de segurança de 4 barras\nAcabamento moderno cinza ocre\nAcesso facilitado em vários lados",
-            "es" => "Contenedor marítimo High Cube 40' usado, equipado con 4 puertas laterales para acceso independiente a las mercancías. Solución ideal para logística intensiva, almacenamiento flexible o adaptaciones técnicas.\nEstructura de acero Corten\nPuertas con cierre de seguridad de 4 barras\nAcabado moderno gris ocre\nAcceso facilitado en varios lados"
-        ],
-        "images" => [
-            "/assets/uploads/2025/11/8-10-300x300.jpeg",
-            "/assets/uploads/2025/11/1-13-300x300.jpeg",
-            "/assets/uploads/2025/11/2-13-300x300.jpeg",
-            "/assets/uploads/2025/11/3-12-300x300.jpeg",
-            "/assets/uploads/2025/11/4-12-300x300.jpeg",
-            "/assets/uploads/2025/11/5-12-300x300.jpeg",
-            "/assets/uploads/2025/11/6-10-300x300.jpeg",
-            "/assets/uploads/2025/11/7-11-300x300.jpeg",
-            "/assets/uploads/2025/11/9-9-300x300.jpeg",
-            "/assets/uploads/2025/11/10-7-300x300.jpeg",
-            "/assets/uploads/2025/11/12-5-300x300.jpeg",
-            "/assets/uploads/2025/11/13-4-300x300.jpeg",
-            "/assets/uploads/2025/11/14-1-300x300.jpeg"
-        ],
-        "description" => [
-            "it" => "",
-            "en" => "",
-            "fr" => "",
-            "pt" => "",
-            "es" => ""
-        ]
-    ],
-    [
-        "id" => "11485",
-        "name" => [
-            "it" => "Contenitore modulare 40 piedi – Ufficio/Mensa con finestre a bovindo",
-            "en" => "40ft modular container – Office/Canteen with bay windows",
-            "fr" => "Conteneur modulaire 40 pieds – Bureau/Cantine avec fenêtres en saillie",
-            "pt" => "Contêiner modular 40 pés – Escritório/Cantina com janelas salientes",
-            "es" => "Contenedor modular 40 pies – Oficina/Cantina con ventanales"
-        ],
-        "price" => "6,900.00",
-        "old_price" => "7,500.00",
-        "sku" => "3276611485",
-        "discount_percentage" => null,
-        "link" => "/product/contenitore-modulare-40-piedi-ufficio-mensa-con-finestre-a-bovindo/",
-        "categories" => ["container-modulari"],
-        "short_description" => [
-            "it" => "",
-            "en" => "",
-            "fr" => "",
-            "pt" => "",
-            "es" => ""
-        ],
-        "images" => [
-            "/assets/uploads/2025/11/S4-300x300.jpg",
-            "/assets/uploads/2025/11/a1ef6f_eac25cc329554a4a8928dc322afe868b7Emv2-300x300.jpg",
-            "/assets/uploads/2025/11/a1ef6f_db11ae4ce20f4e7bb4bf7a4ac91c49f97Emv2-300x300.jpg",
-            "/assets/uploads/2025/11/a1ef6f_38b5bf9d168c422b9a2aeea279ebb5267Emv2-300x300.jpg",
-            "/assets/uploads/2025/11/a1ef6f_7f261ee4729546169716806f51a821d37Emv2-300x300.jpg",
-            "/assets/uploads/2025/11/a1ef6f_86324eb3d60c4d7e9b4b8600f1b170fc7Emv2-300x300.jpg",
-            "/assets/uploads/2025/11/a1ef6f_8b49d18cc8624905b3ace1657321db187Emv2-300x300.jpg",
-            "/assets/uploads/2025/11/a1ef6f_fd728f8c14484c80b024a764ef00d65d7Emv2-300x300.jpg",
-            "/assets/uploads/2025/11/a1ef6f_7cc1a32d24ef4e71b49fe0f8089500707Emv2-300x300.jpg",
-            "/assets/uploads/2025/11/a1ef6f_f41dc0f443c6439484f72f24c06af0237Emv2-300x300.jpg",
-            "/assets/uploads/2025/11/a1ef6f_32d038a4d167494faa9887e5c3e1830c7Emv2-300x300.jpg",
-            "/assets/uploads/2025/11/a1ef6f_7a1ce6cdea4a440bbd4e4cc857c39aa07Emv2-300x300.jpg"
-        ],
-        "description" => [
-            "it" => "",
-            "en" => "",
-            "fr" => "",
-            "pt" => "",
-            "es" => ""
-        ]
-    ],
-    [
-        "id" => "11157",
-        "name" => [
-            "it" => "Contenitore Modulare Ampliato Duo 29m² – Spazio Multifunzionale",
-            "en" => "Duo 29m² Expanded Modular Container – Multifunctional Space",
-            "fr" => "Conteneur Modulaire Agrandi Duo 29m² – Espace Multifonctionnel",
-            "pt" => "Contêiner Modular Ampliado Duo 29m² – Espaço Multifuncional",
-            "es" => "Contenedor Modular Ampliado Duo 29m² – Espacio Multifuncional"
-        ],
-        "price" => "4,500.00",
-        "old_price" => "5,000.00",
-        "sku" => "3276611157",
-        "discount_percentage" => null,
-        "link" => "/product/contenitore-modulare-ampliato-duo-29m%c2%b2-spazio-multifunzionale/",
-        "categories" => ["container-modulari"],
-        "short_description" => [
-            "it" => "Il Contenitore Modulare Ampliato Duo 29m² offre uno spazio versatile e moderno. Isolato e pronto all'uso, è ideale per uffici o ambienti multifunzionali.",
-            "en" => "The Duo 29m² Expanded Modular Container offers versatile and modern space. Insulated and ready to use, it is ideal for offices or multifunctional environments.",
-            "fr" => "Le Conteneur Modulaire Agrandi Duo 29m² offre un espace polyvalent et moderne. Isolé et prêt à l'emploi, il est idéal pour les bureaux ou les environnements multifonctionnels.",
-            "pt" => "O Contêiner Modular Ampliado Duo 29m² oferece espaço versátil e moderno. Isolado e pronto para uso, é ideal para escritórios ou ambientes multifuncionais.",
-            "es" => "El Contenedor Modular Ampliado Duo 29m² ofrece un espacio versátil y moderno. Aislado y listo para usar, es ideal para oficinas o entornos multifuncionales."
-        ],
-        "images" => [
-            "/assets/uploads/2025/11/Contenitore-Modulare-Ampliato-Duo-29m²-Spazio-Multifunzionale-0-300x300.png",
-            "/assets/uploads/2025/11/Contenitore-Modulare-Ampliato-Duo-29m²-Spazio-Multifunzionale-300x300.png"
-        ],
-        "description" => [
-            "it" => "",
-            "en" => "",
-            "fr" => "",
-            "pt" => "",
-            "es" => ""
-        ]
-    ],
-    [
-        "id" => "10498",
-        "name" => [
-            "it" => "Contenitore Open Top 40′ – Usato Categoria B",
-            "en" => "40′ Open Top Container – Used Category B",
-            "fr" => "Conteneur Open Top 40′ – Occasion Catégorie B",
-            "pt" => "Contêiner Open Top 40′ – Usado Categoria B",
-            "es" => "Contenedor Open Top 40′ – Usado Categoría B"
-        ],
-        "price" => "1,910.00",
-        "old_price" => "2,509.95",
-        "sku" => "3276610498",
-        "discount_percentage" => null,
-        "link" => "/product/contenitore-open-top-40-usato-categoria-b/",
-        "categories" => ["contenitori-40-piedi"],
-        "short_description" => [
-            "it" => "Contenitore Open Top 40' usato (Categoria B), ideale per carico dall'alto con copertura in telo. Struttura robusta in acciaio Corten, certificato CSC, con pavimento in legno multistrato.\nAccesso superiore per carichi speciali\nTelo resistente alle intemperie\nPavimento da 28 mm\nErmetico a vento e acqua\nPortata utile fino a 25.480 kg",
-            "en" => "Used 40' Open Top container (Category B), ideal for top loading with tarpaulin cover. Robust Corten steel structure, CSC certified, with plywood floor.\nTop access for special loads\nWeather-resistant tarpaulin\n28 mm floor\nWind and water tight\nPayload up to 25,480 kg",
-            "fr" => "Conteneur Open Top 40' d'occasion (Catégorie B), idéal pour chargement par le haut avec bâche. Structure robuste en acier Corten, certifié CSC, avec plancher en contreplaqué.\nAccès supérieur pour charges spéciales\nBâche résistante aux intempéries\nPlancher 28 mm\nÉtanche au vent et à l'eau\nCharge utile jusqu'à 25 480 kg",
-            "pt" => "Contêiner Open Top 40' usado (Categoria B), ideal para carregamento superior com cobertura de lona. Estrutura robusta de aço Corten, certificado CSC, com piso de compensado.\nAcesso superior para cargas especiais\nLona resistente às intempéries\nPiso de 28 mm\nHermético ao vento e água\nCapacidade de carga útil até 25.480 kg",
-            "es" => "Contenedor Open Top 40' usado (Categoría B), ideal para carga superior con cubierta de lona. Estructura robusta de acero Corten, certificado CSC, con suelo de madera contrachapada.\nAcceso superior para cargas especiales\nLona resistente a la intemperie\nSuelo de 28 mm\nHermético al viento y al agua\nCapacidad de carga útil hasta 25.480 kg"
-        ],
-        "images" => [
-            "/assets/uploads/2025/11/1-13-1-300x300.webp",
-            "/assets/uploads/2025/11/2-15-1-300x300.webp",
-            "/assets/uploads/2025/11/3-14-1-300x300.webp",
-            "/assets/uploads/2025/11/4-13-1-300x300.webp"
-        ],
-        "description" => [
-            "it" => "",
-            "en" => "",
-            "fr" => "",
-            "pt" => "",
-            "es" => ""
-        ]
-    ],
-    [
-        "id" => "11364",
-        "name" => [
-            "it" => "Contenitore per barre da 20 piedi",
-            "en" => "20ft Bar container",
-            "fr" => "Conteneur pour barres 20 pieds",
-            "pt" => "Contêiner para barras 20 pés",
-            "es" => "Contenedor para barras 20 pies"
-        ],
-        "price" => "1,849.00",
-        "old_price" => "2,500.00",
-        "sku" => "3276611364",
-        "discount_percentage" => null,
-        "link" => "/product/contenitore-per-barre-da-20-piedi/",
-        "categories" => ["container-modulari"],
-        "short_description" => [
-            "it" => "Dimensioni esterne: L 6058 mm x P 2438 mm x A 2591 mm\n&nbsp;\nDimensioni interne: L 5898 mm x P 2352 mm x A 2390 mm\n&nbsp;\nDimensioni della porta: L 2338 mm x P 2280 mm\n&nbsp;\nVolume: 33,1 m³\n&nbsp;\nPallet europei: 11\nPeso a vuoto: 2200 kg\n&nbsp;\nCarico utile: 28280 kg\n&nbsp;\nPeso totale: 30480 kg\n&nbsp;\nCodice tipo ISO: 22G1\n&nbsp;\nChiave del gruppo ISO: 22 GP\n&nbsp;",
-            "en" => "External dimensions: L 6058 mm x W 2438 mm x H 2591 mm\n&nbsp;\nInternal dimensions: L 5898 mm x W 2352 mm x H 2390 mm\n&nbsp;\nDoor dimensions: L 2338 mm x H 2280 mm\n&nbsp;\nVolume: 33.1 m³\n&nbsp;\nEuro pallets: 11\nTare weight: 2200 kg\n&nbsp;\nPayload: 28280 kg\n&nbsp;\nGross weight: 30480 kg\n&nbsp;\nISO type code: 22G1\n&nbsp;\nISO group key: 22 GP\n&nbsp;",
-            "fr" => "Dimensions extérieures : L 6058 mm x l 2438 mm x H 2591 mm\n&nbsp;\nDimensions intérieures : L 5898 mm x l 2352 mm x H 2390 mm\n&nbsp;\nDimensions de la porte : L 2338 mm x H 2280 mm\n&nbsp;\nVolume : 33,1 m³\n&nbsp;\nPalettes européennes : 11\nPoids à vide : 2200 kg\n&nbsp;\nCharge utile : 28280 kg\n&nbsp;\nPoids brut : 30480 kg\n&nbsp;\nCode type ISO : 22G1\n&nbsp;\nClé du groupe ISO : 22 GP\n&nbsp;",
-            "pt" => "Dimensões externas: C 6058 mm x L 2438 mm x A 2591 mm\n&nbsp;\nDimensões internas: C 5898 mm x L 2352 mm x A 2390 mm\n&nbsp;\nDimensões da porta: C 2338 mm x A 2280 mm\n&nbsp;\nVolume: 33,1 m³\n&nbsp;\nPaletes europeias: 11\nPeso vazio: 2200 kg\n&nbsp;\nCarga útil: 28280 kg\n&nbsp;\nPeso bruto: 30480 kg\n&nbsp;\nCódigo de tipo ISO: 22G1\n&nbsp;\nChave do grupo ISO: 22 GP\n&nbsp;",
-            "es" => "Dimensiones exteriores: L 6058 mm x A 2438 mm x Al 2591 mm\n&nbsp;\nDimensiones interiores: L 5898 mm x A 2352 mm x Al 2390 mm\n&nbsp;\nDimensiones de la puerta: L 2338 mm x Al 2280 mm\n&nbsp;\nVolumen: 33,1 m³\n&nbsp;\nPalés europeos: 11\nPeso en vacío: 2200 kg\n&nbsp;\nCarga útil: 28280 kg\n&nbsp;\nPeso bruto: 30480 kg\n&nbsp;\nCódigo de tipo ISO: 22G1\n&nbsp;\nClave del grupo ISO: 22 GP\n&nbsp;"
-        ],
-        "images" => [
-            "/assets/uploads/2025/11/Barcontainer-2-768x576-1-300x300.jpg",
-            "/assets/uploads/2025/11/Barcontainer-4-768x576-1-300x300.jpg",
-            "/assets/uploads/2025/11/Barcontainer-4-768x576-2-300x300.jpg",
-            "/assets/uploads/2025/11/Barcontainer-5-768x576-1-300x300.jpg",
-            "/assets/uploads/2025/11/Barcontainer-6-768x576-1-300x300.jpg",
-            "/assets/uploads/2025/11/Barcontainer-3-768x576-1-300x300.jpg"
-        ],
-        "description" => [
-            "it" => "",
-            "en" => "",
-            "fr" => "",
-            "pt" => "",
-            "es" => ""
-        ]
-    ],
-    [
-        "id" => "11075",
-        "name" => [
-            "it" => "Contenitore Refrigerato 20 Piedi STD – Precisione e Sicurezza",
-            "en" => "20ft STD Refrigerated Container – Precision and Safety",
-            "fr" => "Conteneur Réfrigéré 20 Pieds STD – Précision et Sécurité",
-            "pt" => "Contêiner Refrigerado 20 Pés STD – Precisão e Segurança",
-            "es" => "Contenedor Refrigerado 20 Pies STD – Precisión y Seguridad"
-        ],
-        "price" => "1,700.00",
-        "old_price" => null,
-        "sku" => "3276611075",
-        "discount_percentage" => null,
-        "link" => "/product/contenitore-refrigerato-20-piedi-std-precisione-e-sicurezza/",
-        "categories" => ["container-refrigerati"],
-        "short_description" => [
-            "it" => "Contenitore refrigerato da 20 piedi nuovo, progettato per trasporto e stoccaggio sicuro di prodotti sensibili alla temperatura. Garanzia di 2 anni inclusa.",
-            "en" => "New 20ft refrigerated container, designed for safe transport and storage of temperature-sensitive products. 2-year warranty included.",
-            "fr" => "Conteneur réfrigéré 20 pieds neuf, conçu pour le transport et le stockage sécurisé de produits sensibles à la température. Garantie 2 ans incluse.",
-            "pt" => "Contêiner refrigerado 20 pés novo, projetado para transporte e armazenamento seguro de produtos sensíveis à temperatura. Garantia de 2 anos incluída.",
-            "es" => "Contenedor refrigerado 20 pies nuevo, diseñado para transporte y almacenamiento seguro de productos sensibles a la temperatura. Garantía de 2 años incluida."
-        ],
-        "images" => [
-            "/assets/uploads/2025/11/Contenitore-Refrigerato-20-Piedi-STD-Precisione-e-Sicurezza-300x300.jpg",
-            "/assets/uploads/2025/11/Contenitore-Refrigerato-20-Piedi-STD-Precisione-e-Sicurezza-0-300x300.jpg"
-        ],
-        "description" => [
-            "it" => "",
-            "en" => "",
-            "fr" => "",
-            "pt" => "",
-            "es" => ""
-        ]
-    ],
-    [
-        "id" => "11076",
-        "name" => [
-            "it" => "Contenitore Refrigerato 20′ STD – Usato Soluzione Ideale per Stoccaggio",
-            "en" => "Used 20′ STD Refrigerated Container – Ideal Storage Solution",
-            "fr" => "Conteneur Réfrigéré 20′ STD – Occasion Solution Idéale de Stockage",
-            "pt" => "Contêiner Refrigerado 20′ STD – Usado Solução Ideal de Armazenamento",
-            "es" => "Contenedor Refrigerado 20′ STD – Usado Solución Ideal de Almacenamiento"
-        ],
-        "price" => "1,200.00",
-        "old_price" => null,
-        "sku" => "3276611076",
-        "discount_percentage" => null,
-        "link" => "/product/contenitore-refrigerato-20%e2%80%b2-std-usato-soluzione-ideale-per-stoccaggio/",
-        "categories" => ["container-refrigerati"],
-        "short_description" => [
-            "it" => "Contenitore refrigerato da 20 piedi usato, progettato per stoccaggio e trasporto sicuro di prodotti sensibili alla temperatura. Coperto da una garanzia di 2 anni.",
-            "en" => "Used 20ft refrigerated container, designed for safe storage and transport of temperature-sensitive products. Covered by a 2-year warranty.",
-            "fr" => "Conteneur réfrigéré 20 pieds d\'occasion, conçu pour le stockage et le transport sécurisé de produits sensibles à la température. Couvert par une garantie de 2 ans.",
-            "pt" => "Contêiner refrigerado 20 pés usado, projetado para armazenamento e transporte seguro de produtos sensíveis à temperatura. Coberto por uma garantia de 2 anos.",
-            "es" => "Contenedor refrigerado 20 pies usado, diseñado para almacenamiento y transporte seguro de productos sensibles a la temperatura. Cubierto por una garantía de 2 años."
-        ],
-        "images" => [
-            "/assets/uploads/2025/11/Contenitore-Refrigerato-20′-STD-–-Usato-300x300.jpg"
-        ],
-        "description" => [
-            "it" => "",
-            "en" => "",
-            "fr" => "",
-            "pt" => "",
-            "es" => ""
-        ]
-    ],
-    [
-        "id" => "11077",
-        "name" => [
-            "it" => "Contenitore Refrigerato 40 Piedi HC – Alta Capacità e Prestazioni",
-            "en" => "40ft HC Refrigerated Container – High Capacity and Performance",
-            "fr" => "Conteneur Réfrigéré 40 Pieds HC – Haute Capacité et Performance",
-            "pt" => "Contêiner Refrigerado 40 Pés HC – Alta Capacidade e Desempenho",
-            "es" => "Contenedor Refrigerado 40 Pies HC – Alta Capacidad y Rendimiento"
-        ],
-        "price" => "5,100.00",
-        "old_price" => null,
-        "sku" => "3276611077",
-        "discount_percentage" => null,
-        "link" => "/product/contenitore-refrigerato-40-piedi-hc-alta-capacita-e-prestazioni/",
-        "categories" => ["container-refrigerati"],
-        "short_description" => [
-            "it" => "Contenitore refrigerato High Cube da 40 piedi nuovo, perfetto per grandi volumi di merci sensibili alla temperatura. Include garanzia di 2 anni e personalizzazioni disponibili.",
-            "en" => "New 40ft High Cube refrigerated container, perfect for large volumes of temperature-sensitive goods. Includes 2-year warranty and available customizations.",
-            "fr" => "Conteneur réfrigéré High Cube 40 pieds neuf, parfait pour grands volumes de marchandises sensibles à la température. Inclut garantie 2 ans et personnalisations disponibles.",
-            "pt" => "Contêiner refrigerado High Cube 40 pés novo, perfeito para grandes volumes de mercadorias sensíveis à temperatura. Inclui garantia de 2 anos e personalizações disponíveis.",
-            "es" => "Contenedor refrigerado High Cube 40 pies nuevo, perfecto para grandes volúmenes de mercancías sensibles a la temperatura. Incluye garantía de 2 años y personalizaciones disponibles."
-        ],
-        "images" => [
-            "/assets/uploads/2025/11/Contenitore-Refrigerato-40-Piedi-HC-–-Alta-Capacita-e-Prestazioni-5-300x300.jpg"
-        ],
-        "description" => [
-            "it" => "",
-            "en" => "",
-            "fr" => "",
-            "pt" => "",
-            "es" => ""
-        ]
-    ],
-    [
-        "id" => "11078",
-        "name" => [
-            "it" => "Contenitore Refrigerato 40 Piedi HC Usato – Grande Capacità e Affidabilità",
-            "en" => "Used 40ft HC Refrigerated Container – Great Capacity and Reliability",
-            "fr" => "Conteneur Réfrigéré 40 Pieds HC Occasion – Grande Capacité et Fiabilité",
-            "pt" => "Contêiner Refrigerado 40 Pés HC Usado – Grande Capacidade e Confiabilidade",
-            "es" => "Contenedor Refrigerado 40 Pies HC Usado – Gran Capacidad y Fiabilidad"
-        ],
-        "price" => "4,500.00",
-        "old_price" => null,
-        "sku" => "3276611078",
-        "discount_percentage" => null,
-        "link" => "/product/contenitore-refrigerato-40-piedi-hc-usato-grande-capacita-e-affidabilita/",
-        "categories" => ["container-refrigerati"],
-        "short_description" => [
-            "it" => "Contenitore refrigerato High Cube da 40 piedi usato, progettato per grandi volumi di merci sensibili alla temperatura. Include garanzia di 2 anni e personalizzazioni disponibili.",
-            "en" => "Used 40ft High Cube refrigerated container, designed for large volumes of temperature-sensitive goods. Includes 2-year warranty and available customizations.",
-            "fr" => "Conteneur réfrigéré High Cube 40 pieds d'occasion, conçu pour grands volumes de marchandises sensibles à la température. Inclut garantie 2 ans et personnalisations disponibles.",
-            "pt" => "Contêiner refrigerado High Cube 40 pés usado, projetado para grandes volumes de mercadorias sensíveis à temperatura. Inclui garantia de 2 anos e personalizações disponíveis.",
-            "es" => "Contenedor refrigerado High Cube 40 pies usado, diseñado para grandes volúmenes de mercancías sensibles a la temperatura. Incluye garantía de 2 años y personalizaciones disponibles."
-        ],
-        "images" => [
-            "/assets/uploads/2025/11/Contenitore-Refrigerato-40-Piedi-HC-Usato-Grande-Capacita-e-Affidabilita-300x300.jpg",
-            "/assets/uploads/2025/11/Contenitore-Refrigerato-40-Piedi-HC-Usato-Grande-Capacita-e-Affidabilita-1-300x300.jpg",
-            "/assets/uploads/2025/11/Contenitore-Refrigerato-40-Piedi-HC-Usato-Grande-Capacita-e-Affidabilita-0-300x300.jpg"
-        ],
-        "description" => [
-            "it" => "",
-            "en" => "",
-            "fr" => "",
-            "pt" => "",
-            "es" => ""
-        ]
-    ],
-    [
-        "id" => "11174",
-        "name" => [
-            "it" => "Contenitore sanitario – WC + doccia + serbatoio",
-            "en" => "Sanitary container – Toilet + shower + tank",
-            "fr" => "Conteneur sanitaire – WC + douche + réservoir",
-            "pt" => "Contêiner sanitário – WC + chuveiro + tanque",
-            "es" => "Contenedor sanitario – WC + ducha + tanque"
-        ],
-        "price" => "1,800.00",
-        "old_price" => "2,500.00",
-        "sku" => "3276611174",
-        "discount_percentage" => null,
-        "link" => "/product/contenitore-sanitario-wc-doccia-serbatoio/",
-        "categories" => ["container-modulari"],
-        "short_description" => [
-            "it" => "Collega semplicemente elettricità, acqua e acque reflue: subito pronto per l'uso\nCabina WC doppia 3×2 metri con serbatoio acque nere con wc e doccia\n– 2 finestre\n– Profilo sandwich da 80 mm termicamente isolato per una bassa perdita di energia\n– Porta esterna in lamiera d'acciaio Hörmann zincata\n– Orinatoi\n– Impianto elettrico completo secondo le direttive CE\n– Prese 230V\n– 2 plafoniere\n– Collegamento 11KW/400V\n– Rivestimento del pavimento in PVC – robusto e veloce da pulire\n– radiatore elettrico a parete\n– Serbatoio delle acque grigie\n– Scale\nNoleggio possibile a tariffe mensili basse. Possiamo anche produrre in qualsiasi momento in altre dimensioni e colori secondo le vostre specifiche.",
-            "en" => "Simply connect electricity, water and wastewater: immediately ready for use\nDouble toilet cabin 3×2 meters with black water tank with toilet and shower\n– 2 windows\n– 80 mm thermally insulated sandwich panel for low energy loss\n– Galvanized Hörmann steel sheet external door\n– Urinals\n– Complete electrical system according to CE directives\n– 230V sockets\n– 2 ceiling lights\n– 11KW/400V connection\n– PVC floor covering – durable and quick to clean\n– Electric wall radiator\n– Grey water tank\n– Stairs\nRental possible at low monthly rates. We can also produce at any time in other dimensions and colors according to your specifications.",
-            "fr" => "Connectez simplement électricité, eau et eaux usées : immédiatement prêt à l'emploi\nCabine WC double 3×2 mètres avec réservoir d'eaux noires avec WC et douche\n– 2 fenêtres\n– Panneau sandwich 80 mm thermiquement isolé pour faible perte d'énergie\n– Porte extérieure en tôle d'acier Hörmann galvanisée\n– Urinoirs\n– Installation électrique complète selon directives CE\n– Prises 230V\n– 2 plafonniers\n– Connexion 11KW/400V\n– Revêtement de sol PVC – robuste et rapide à nettoyer\n– Radiateur électrique mural\n– Réservoir d'eaux grises\n– Escaliers\nLocation possible à tarifs mensuels bas. Nous pouvons également produire à tout moment en d'autres dimensions et couleurs selon vos spécifications.",
-            "pt" => "Basta conectar eletricidade, água e águas residuais: imediatamente pronto para uso\nCabine dupla WC 3×2 metros com tanque de águas negras com WC e chuveiro\n– 2 janelas\n– Painel sanduíche de 80 mm termicamente isolado para baixa perda de energia\n– Porta externa em chapa de aço Hörmann galvanizada\n– Mictórios\n– Sistema elétrico completo conforme diretivas CE\n– Tomadas 230V\n– 2 luminárias de teto\n– Conexão 11KW/400V\n– Revestimento de piso em PVC – durável e rápido de limpar\n– Radiador elétrico de parede\n– Tanque de águas cinzas\n– Escadas\nAluguel possível com tarifas mensais baixas. Também podemos produzir a qualquer momento em outras dimensões e cores de acordo com suas especificações.",
-            "es" => "Simplemente conecte electricidad, agua y aguas residuales: inmediatamente listo para usar\nCabina WC doble 3×2 metros con tanque de aguas negras con WC y ducha\n– 2 ventanas\n– Panel sándwich de 80 mm térmicamente aislado para baja pérdida de energía\n– Puerta exterior de chapa de acero Hörmann galvanizada\n– Urinarios\n– Sistema eléctrico completo según directivas CE\n– Tomas 230V\n– 2 plafones\n– Conexión 11KW/400V\n– Revestimiento de suelo de PVC – duradero y rápido de limpiar\n– Radiador eléctrico de pared\n– Tanque de aguas grises\n– Escaleras\nAlquiler posible con tarifas mensuales bajas. También podemos producir en cualquier momento en otras dimensiones y colores según sus especificaciones."
-        ],
-        "images" => [
-            "/assets/uploads/2025/11/319_0026321769-300x300.jpg",
-            "/assets/uploads/2025/11/319_0026321762-1-300x300.jpg",
-            "/assets/uploads/2025/11/319_0026321763-300x300.jpg",
-            "/assets/uploads/2025/11/319_0026321764-300x300.jpg",
-            "/assets/uploads/2025/11/319_0026321765-768x886-1-300x300.jpg",
-            "/assets/uploads/2025/11/319_0026321766-300x300.jpg",
-            "/assets/uploads/2025/11/319_0026321767-300x300.jpg",
-            "/assets/uploads/2025/11/319_0026321768-300x300.jpg",
-            "/assets/uploads/2025/11/319_0026321772-300x300.jpg",
-            "/assets/uploads/2025/11/319_0026321774-300x300.jpg",
-            "/assets/uploads/2025/11/319_0026321778-300x300.jpg",
-            "/assets/uploads/2025/11/319_0026321779-300x300.jpg",
-            "/assets/uploads/2025/11/319_0026321761-300x300.jpg"
-        ],
-        "description" => [
-            "it" => "",
-            "en" => "",
-            "fr" => "",
-            "pt" => "",
-            "es" => ""
-        ]
-    ],
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/1-5-300x300.webp",
+                        "/assets/uploads/2025/11/2-5-300x300.webp",
+                        "/assets/uploads/2025/11/2-11-1-300x300.webp",
+                        "/assets/uploads/2025/11/3-10-1-300x300.webp",
+                        "/assets/uploads/2025/11/4-9-1-300x300.webp",
+                        "/assets/uploads/2025/11/5-8-1-300x300.webp"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
+                ],
+                [
+                    "id" => "10497",
+                    "name" => [
+                        "it" => "Contenitore Marittimo High Cube 40′ con 4 Porte Laterali – Usato",
+                        "en" => "Used 40′ High Cube Shipping Container with 4 Side Doors",
+                        "fr" => "Conteneur Maritime High Cube 40′ avec 4 Portes Latérales – Occasion",
+                        "pt" => "Contêiner Marítimo High Cube 40′ com 4 Portas Laterais – Usado",
+                        "es" => "Contenedor Marítimo High Cube 40′ con 4 Puertas Laterales – Usado"
+                    ],
+                    "price" => "2,510.00",
+                    "old_price" => "3,875.30",
+                    "sku" => "3276610497",
+                    "discount_percentage" => null,
+                    "link" => "/product/contenitore-marittimo-high-cube-40-con-4-porte-laterali-usato/",
+                    "categories" => ["contenitori-40-piedi"],
+                    "short_description" => [
+                        "it" => "Contenitore marittimo High Cube 40' usato, dotato di 4 porte laterali per accesso indipendente alla merce. Soluzione ideale per logistica intensiva, stoccaggio flessibile o adattamenti tecnici.\nStruttura in acciaio Corten\nPorte con chiusura di sicurezza a 4 barre\nFinitura moderna grigio ocra\nAccesso facilitato su più lati",
+                        "en" => "Used 40' High Cube shipping container, equipped with 4 side doors for independent access to goods. Ideal solution for intensive logistics, flexible storage or technical adaptations.\nCorten steel structure\nDoors with 4-bar security locking\nModern ochre gray finish\nEasy access on multiple sides",
+                        "fr" => "Conteneur maritime High Cube 40' d'occasion, équipé de 4 portes latérales pour un accès indépendant aux marchandises. Solution idéale pour logistique intensive, stockage flexible ou adaptations techniques.\nStructure en acier Corten\nPortes avec verrouillage sécurité 4 barres\nFinition moderne gris ocre\nAccès facilité sur plusieurs côtés",
+                        "pt" => "Contêiner marítimo High Cube 40' usado, equipado com 4 portas laterais para acesso independente às mercadorias. Solução ideal para logística intensiva, armazenamento flexível ou adaptações técnicas.\nEstrutura de aço Corten\nPortas com fechamento de segurança de 4 barras\nAcabamento moderno cinza ocre\nAcesso facilitado em vários lados",
+                        "es" => "Contenedor marítimo High Cube 40' usado, equipado con 4 puertas laterales para acceso independiente a las mercancías. Solución ideal para logística intensiva, almacenamiento flexible o adaptaciones técnicas.\nEstructura de acero Corten\nPuertas con cierre de seguridad de 4 barras\nAcabado moderno gris ocre\nAcceso facilitado en varios lados"
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/8-10-300x300.jpeg",
+                        "/assets/uploads/2025/11/1-13-300x300.jpeg",
+                        "/assets/uploads/2025/11/2-13-300x300.jpeg",
+                        "/assets/uploads/2025/11/3-12-300x300.jpeg",
+                        "/assets/uploads/2025/11/4-12-300x300.jpeg",
+                        "/assets/uploads/2025/11/5-12-300x300.jpeg",
+                        "/assets/uploads/2025/11/6-10-300x300.jpeg",
+                        "/assets/uploads/2025/11/7-11-300x300.jpeg",
+                        "/assets/uploads/2025/11/9-9-300x300.jpeg",
+                        "/assets/uploads/2025/11/10-7-300x300.jpeg",
+                        "/assets/uploads/2025/11/12-5-300x300.jpeg",
+                        "/assets/uploads/2025/11/13-4-300x300.jpeg",
+                        "/assets/uploads/2025/11/14-1-300x300.jpeg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
+                ],
+                [
+                    "id" => "11485",
+                    "name" => [
+                        "it" => "Contenitore modulare 40 piedi – Ufficio/Mensa con finestre a bovindo",
+                        "en" => "40ft modular container – Office/Canteen with bay windows",
+                        "fr" => "Conteneur modulaire 40 pieds – Bureau/Cantine avec fenêtres en saillie",
+                        "pt" => "Contêiner modular 40 pés – Escritório/Cantina com janelas salientes",
+                        "es" => "Contenedor modular 40 pies – Oficina/Cantina con ventanales"
+                    ],
+                    "price" => "6,900.00",
+                    "old_price" => "7,500.00",
+                    "sku" => "3276611485",
+                    "discount_percentage" => null,
+                    "link" => "/product/contenitore-modulare-40-piedi-ufficio-mensa-con-finestre-a-bovindo/",
+                    "categories" => ["container-modulari"],
+                    "short_description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/S4-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_eac25cc329554a4a8928dc322afe868b7Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_db11ae4ce20f4e7bb4bf7a4ac91c49f97Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_38b5bf9d168c422b9a2aeea279ebb5267Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_7f261ee4729546169716806f51a821d37Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_86324eb3d60c4d7e9b4b8600f1b170fc7Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_8b49d18cc8624905b3ace1657321db187Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_fd728f8c14484c80b024a764ef00d65d7Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_7cc1a32d24ef4e71b49fe0f8089500707Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_f41dc0f443c6439484f72f24c06af0237Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_32d038a4d167494faa9887e5c3e1830c7Emv2-300x300.jpg",
+                        "/assets/uploads/2025/11/a1ef6f_7a1ce6cdea4a440bbd4e4cc857c39aa07Emv2-300x300.jpg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
+                ],
+                [
+                    "id" => "11157",
+                    "name" => [
+                        "it" => "Contenitore Modulare Ampliato Duo 29m² – Spazio Multifunzionale",
+                        "en" => "Duo 29m² Expanded Modular Container – Multifunctional Space",
+                        "fr" => "Conteneur Modulaire Agrandi Duo 29m² – Espace Multifonctionnel",
+                        "pt" => "Contêiner Modular Ampliado Duo 29m² – Espaço Multifuncional",
+                        "es" => "Contenedor Modular Ampliado Duo 29m² – Espacio Multifuncional"
+                    ],
+                    "price" => "4,500.00",
+                    "old_price" => "5,000.00",
+                    "sku" => "3276611157",
+                    "discount_percentage" => null,
+                    "link" => "/product/contenitore-modulare-ampliato-duo-29m%c2%b2-spazio-multifunzionale/",
+                    "categories" => ["container-modulari"],
+                    "short_description" => [
+                        "it" => "Il Contenitore Modulare Ampliato Duo 29m² offre uno spazio versatile e moderno. Isolato e pronto all'uso, è ideale per uffici o ambienti multifunzionali.",
+                        "en" => "The Duo 29m² Expanded Modular Container offers versatile and modern space. Insulated and ready to use, it is ideal for offices or multifunctional environments.",
+                        "fr" => "Le Conteneur Modulaire Agrandi Duo 29m² offre un espace polyvalent et moderne. Isolé et prêt à l'emploi, il est idéal pour les bureaux ou les environnements multifonctionnels.",
+                        "pt" => "O Contêiner Modular Ampliado Duo 29m² oferece espaço versátil e moderno. Isolado e pronto para uso, é ideal para escritórios ou ambientes multifuncionais.",
+                        "es" => "El Contenedor Modular Ampliado Duo 29m² ofrece un espacio versátil y moderno. Aislado y listo para usar, es ideal para oficinas o entornos multifuncionales."
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/Contenitore-Modulare-Ampliato-Duo-29m²-Spazio-Multifunzionale-0-300x300.png",
+                        "/assets/uploads/2025/11/Contenitore-Modulare-Ampliato-Duo-29m²-Spazio-Multifunzionale-300x300.png"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
+                ],
+                [
+                    "id" => "10498",
+                    "name" => [
+                        "it" => "Contenitore Open Top 40′ – Usato Categoria B",
+                        "en" => "40′ Open Top Container – Used Category B",
+                        "fr" => "Conteneur Open Top 40′ – Occasion Catégorie B",
+                        "pt" => "Contêiner Open Top 40′ – Usado Categoria B",
+                        "es" => "Contenedor Open Top 40′ – Usado Categoría B"
+                    ],
+                    "price" => "1,910.00",
+                    "old_price" => "2,509.95",
+                    "sku" => "3276610498",
+                    "discount_percentage" => null,
+                    "link" => "/product/contenitore-open-top-40-usato-categoria-b/",
+                    "categories" => ["contenitori-40-piedi"],
+                    "short_description" => [
+                        "it" => "Contenitore Open Top 40' usato (Categoria B), ideale per carico dall'alto con copertura in telo. Struttura robusta in acciaio Corten, certificato CSC, con pavimento in legno multistrato.\nAccesso superiore per carichi speciali\nTelo resistente alle intemperie\nPavimento da 28 mm\nErmetico a vento e acqua\nPortata utile fino a 25.480 kg",
+                        "en" => "Used 40' Open Top container (Category B), ideal for top loading with tarpaulin cover. Robust Corten steel structure, CSC certified, with plywood floor.\nTop access for special loads\nWeather-resistant tarpaulin\n28 mm floor\nWind and water tight\nPayload up to 25,480 kg",
+                        "fr" => "Conteneur Open Top 40' d'occasion (Catégorie B), idéal pour chargement par le haut avec bâche. Structure robuste en acier Corten, certifié CSC, avec plancher en contreplaqué.\nAccès supérieur pour charges spéciales\nBâche résistante aux intempéries\nPlancher 28 mm\nÉtanche au vent et à l'eau\nCharge utile jusqu'à 25 480 kg",
+                        "pt" => "Contêiner Open Top 40' usado (Categoria B), ideal para carregamento superior com cobertura de lona. Estrutura robusta de aço Corten, certificado CSC, com piso de compensado.\nAcesso superior para cargas especiais\nLona resistente às intempéries\nPiso de 28 mm\nHermético ao vento e água\nCapacidade de carga útil até 25.480 kg",
+                        "es" => "Contenedor Open Top 40' usado (Categoría B), ideal para carga superior con cubierta de lona. Estructura robusta de acero Corten, certificado CSC, con suelo de madera contrachapada.\nAcceso superior para cargas especiales\nLona resistente a la intemperie\nSuelo de 28 mm\nHermético al viento y al agua\nCapacidad de carga útil hasta 25.480 kg"
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/1-13-1-300x300.webp",
+                        "/assets/uploads/2025/11/2-15-1-300x300.webp",
+                        "/assets/uploads/2025/11/3-14-1-300x300.webp",
+                        "/assets/uploads/2025/11/4-13-1-300x300.webp"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
+                ],
+                [
+                    "id" => "11364",
+                    "name" => [
+                        "it" => "Contenitore per barre da 20 piedi",
+                        "en" => "20ft Bar container",
+                        "fr" => "Conteneur pour barres 20 pieds",
+                        "pt" => "Contêiner para barras 20 pés",
+                        "es" => "Contenedor para barras 20 pies"
+                    ],
+                    "price" => "1,849.00",
+                    "old_price" => "2,500.00",
+                    "sku" => "3276611364",
+                    "discount_percentage" => null,
+                    "link" => "/product/contenitore-per-barre-da-20-piedi/",
+                    "categories" => ["container-modulari"],
+                    "short_description" => [
+                        "it" => "Dimensioni esterne: L 6058 mm x P 2438 mm x A 2591 mm\n&nbsp;\nDimensioni interne: L 5898 mm x P 2352 mm x A 2390 mm\n&nbsp;\nDimensioni della porta: L 2338 mm x P 2280 mm\n&nbsp;\nVolume: 33,1 m³\n&nbsp;\nPallet europei: 11\nPeso a vuoto: 2200 kg\n&nbsp;\nCarico utile: 28280 kg\n&nbsp;\nPeso totale: 30480 kg\n&nbsp;\nCodice tipo ISO: 22G1\n&nbsp;\nChiave del gruppo ISO: 22 GP\n&nbsp;",
+                        "en" => "External dimensions: L 6058 mm x W 2438 mm x H 2591 mm\n&nbsp;\nInternal dimensions: L 5898 mm x W 2352 mm x H 2390 mm\n&nbsp;\nDoor dimensions: L 2338 mm x H 2280 mm\n&nbsp;\nVolume: 33.1 m³\n&nbsp;\nEuro pallets: 11\nTare weight: 2200 kg\n&nbsp;\nPayload: 28280 kg\n&nbsp;\nGross weight: 30480 kg\n&nbsp;\nISO type code: 22G1\n&nbsp;\nISO group key: 22 GP\n&nbsp;",
+                        "fr" => "Dimensions extérieures : L 6058 mm x l 2438 mm x H 2591 mm\n&nbsp;\nDimensions intérieures : L 5898 mm x l 2352 mm x H 2390 mm\n&nbsp;\nDimensions de la porte : L 2338 mm x H 2280 mm\n&nbsp;\nVolume : 33,1 m³\n&nbsp;\nPalettes européennes : 11\nPoids à vide : 2200 kg\n&nbsp;\nCharge utile : 28280 kg\n&nbsp;\nPoids brut : 30480 kg\n&nbsp;\nCode type ISO : 22G1\n&nbsp;\nClé du groupe ISO : 22 GP\n&nbsp;",
+                        "pt" => "Dimensões externas: C 6058 mm x L 2438 mm x A 2591 mm\n&nbsp;\nDimensões internas: C 5898 mm x L 2352 mm x A 2390 mm\n&nbsp;\nDimensões da porta: C 2338 mm x A 2280 mm\n&nbsp;\nVolume: 33,1 m³\n&nbsp;\nPaletes europeias: 11\nPeso vazio: 2200 kg\n&nbsp;\nCarga útil: 28280 kg\n&nbsp;\nPeso bruto: 30480 kg\n&nbsp;\nCódigo de tipo ISO: 22G1\n&nbsp;\nChave do grupo ISO: 22 GP\n&nbsp;",
+                        "es" => "Dimensiones exteriores: L 6058 mm x A 2438 mm x Al 2591 mm\n&nbsp;\nDimensiones interiores: L 5898 mm x A 2352 mm x Al 2390 mm\n&nbsp;\nDimensiones de la puerta: L 2338 mm x Al 2280 mm\n&nbsp;\nVolumen: 33,1 m³\n&nbsp;\nPalés europeos: 11\nPeso en vacío: 2200 kg\n&nbsp;\nCarga útil: 28280 kg\n&nbsp;\nPeso bruto: 30480 kg\n&nbsp;\nCódigo de tipo ISO: 22G1\n&nbsp;\nClave del grupo ISO: 22 GP\n&nbsp;"
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/Barcontainer-2-768x576-1-300x300.jpg",
+                        "/assets/uploads/2025/11/Barcontainer-4-768x576-1-300x300.jpg",
+                        "/assets/uploads/2025/11/Barcontainer-4-768x576-2-300x300.jpg",
+                        "/assets/uploads/2025/11/Barcontainer-5-768x576-1-300x300.jpg",
+                        "/assets/uploads/2025/11/Barcontainer-6-768x576-1-300x300.jpg",
+                        "/assets/uploads/2025/11/Barcontainer-3-768x576-1-300x300.jpg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
+                ],
+                [
+                    "id" => "11075",
+                    "name" => [
+                        "it" => "Contenitore Refrigerato 20 Piedi STD – Precisione e Sicurezza",
+                        "en" => "20ft STD Refrigerated Container – Precision and Safety",
+                        "fr" => "Conteneur Réfrigéré 20 Pieds STD – Précision et Sécurité",
+                        "pt" => "Contêiner Refrigerado 20 Pés STD – Precisão e Segurança",
+                        "es" => "Contenedor Refrigerado 20 Pies STD – Precisión y Seguridad"
+                    ],
+                    "price" => "1,700.00",
+                    "old_price" => null,
+                    "sku" => "3276611075",
+                    "discount_percentage" => null,
+                    "link" => "/product/contenitore-refrigerato-20-piedi-std-precisione-e-sicurezza/",
+                    "categories" => ["container-refrigerati"],
+                    "short_description" => [
+                        "it" => "Contenitore refrigerato da 20 piedi nuovo, progettato per trasporto e stoccaggio sicuro di prodotti sensibili alla temperatura. Garanzia di 2 anni inclusa.",
+                        "en" => "New 20ft refrigerated container, designed for safe transport and storage of temperature-sensitive products. 2-year warranty included.",
+                        "fr" => "Conteneur réfrigéré 20 pieds neuf, conçu pour le transport et le stockage sécurisé de produits sensibles à la température. Garantie 2 ans incluse.",
+                        "pt" => "Contêiner refrigerado 20 pés novo, projetado para transporte e armazenamento seguro de produtos sensíveis à temperatura. Garantia de 2 anos incluída.",
+                        "es" => "Contenedor refrigerado 20 pies nuevo, diseñado para transporte y almacenamiento seguro de productos sensibles a la temperatura. Garantía de 2 años incluida."
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/Contenitore-Refrigerato-20-Piedi-STD-Precisione-e-Sicurezza-300x300.jpg",
+                        "/assets/uploads/2025/11/Contenitore-Refrigerato-20-Piedi-STD-Precisione-e-Sicurezza-0-300x300.jpg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
+                ],
+                [
+                    "id" => "11076",
+                    "name" => [
+                        "it" => "Contenitore Refrigerato 20′ STD – Usato Soluzione Ideale per Stoccaggio",
+                        "en" => "Used 20′ STD Refrigerated Container – Ideal Storage Solution",
+                        "fr" => "Conteneur Réfrigéré 20′ STD – Occasion Solution Idéale de Stockage",
+                        "pt" => "Contêiner Refrigerado 20′ STD – Usado Solução Ideal de Armazenamento",
+                        "es" => "Contenedor Refrigerado 20′ STD – Usado Solución Ideal de Almacenamiento"
+                    ],
+                    "price" => "1,200.00",
+                    "old_price" => null,
+                    "sku" => "3276611076",
+                    "discount_percentage" => null,
+                    "link" => "/product/contenitore-refrigerato-20%e2%80%b2-std-usato-soluzione-ideale-per-stoccaggio/",
+                    "categories" => ["container-refrigerati"],
+                    "short_description" => [
+                        "it" => "Contenitore refrigerato da 20 piedi usato, progettato per stoccaggio e trasporto sicuro di prodotti sensibili alla temperatura. Coperto da una garanzia di 2 anni.",
+                        "en" => "Used 20ft refrigerated container, designed for safe storage and transport of temperature-sensitive products. Covered by a 2-year warranty.",
+                        "fr" => "Conteneur réfrigéré 20 pieds d\'occasion, conçu pour le stockage et le transport sécurisé de produits sensibles à la température. Couvert par une garantie de 2 ans.",
+                        "pt" => "Contêiner refrigerado 20 pés usado, projetado para armazenamento e transporte seguro de produtos sensíveis à temperatura. Coberto por uma garantia de 2 anos.",
+                        "es" => "Contenedor refrigerado 20 pies usado, diseñado para almacenamiento y transporte seguro de productos sensibles a la temperatura. Cubierto por una garantía de 2 años."
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/Contenitore-Refrigerato-20′-STD-–-Usato-300x300.jpg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
+                ],
+                [
+                    "id" => "11077",
+                    "name" => [
+                        "it" => "Contenitore Refrigerato 40 Piedi HC – Alta Capacità e Prestazioni",
+                        "en" => "40ft HC Refrigerated Container – High Capacity and Performance",
+                        "fr" => "Conteneur Réfrigéré 40 Pieds HC – Haute Capacité et Performance",
+                        "pt" => "Contêiner Refrigerado 40 Pés HC – Alta Capacidade e Desempenho",
+                        "es" => "Contenedor Refrigerado 40 Pies HC – Alta Capacidad y Rendimiento"
+                    ],
+                    "price" => "5,100.00",
+                    "old_price" => null,
+                    "sku" => "3276611077",
+                    "discount_percentage" => null,
+                    "link" => "/product/contenitore-refrigerato-40-piedi-hc-alta-capacita-e-prestazioni/",
+                    "categories" => ["container-refrigerati"],
+                    "short_description" => [
+                        "it" => "Contenitore refrigerato High Cube da 40 piedi nuovo, perfetto per grandi volumi di merci sensibili alla temperatura. Include garanzia di 2 anni e personalizzazioni disponibili.",
+                        "en" => "New 40ft High Cube refrigerated container, perfect for large volumes of temperature-sensitive goods. Includes 2-year warranty and available customizations.",
+                        "fr" => "Conteneur réfrigéré High Cube 40 pieds neuf, parfait pour grands volumes de marchandises sensibles à la température. Inclut garantie 2 ans et personnalisations disponibles.",
+                        "pt" => "Contêiner refrigerado High Cube 40 pés novo, perfeito para grandes volumes de mercadorias sensíveis à temperatura. Inclui garantia de 2 anos e personalizações disponíveis.",
+                        "es" => "Contenedor refrigerado High Cube 40 pies nuevo, perfecto para grandes volúmenes de mercancías sensibles a la temperatura. Incluye garantía de 2 años y personalizaciones disponibles."
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/Contenitore-Refrigerato-40-Piedi-HC-–-Alta-Capacita-e-Prestazioni-5-300x300.jpg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
+                ],
+                [
+                    "id" => "11078",
+                    "name" => [
+                        "it" => "Contenitore Refrigerato 40 Piedi HC Usato – Grande Capacità e Affidabilità",
+                        "en" => "Used 40ft HC Refrigerated Container – Great Capacity and Reliability",
+                        "fr" => "Conteneur Réfrigéré 40 Pieds HC Occasion – Grande Capacité et Fiabilité",
+                        "pt" => "Contêiner Refrigerado 40 Pés HC Usado – Grande Capacidade e Confiabilidade",
+                        "es" => "Contenedor Refrigerado 40 Pies HC Usado – Gran Capacidad y Fiabilidad"
+                    ],
+                    "price" => "4,500.00",
+                    "old_price" => null,
+                    "sku" => "3276611078",
+                    "discount_percentage" => null,
+                    "link" => "/product/contenitore-refrigerato-40-piedi-hc-usato-grande-capacita-e-affidabilita/",
+                    "categories" => ["container-refrigerati"],
+                    "short_description" => [
+                        "it" => "Contenitore refrigerato High Cube da 40 piedi usato, progettato per grandi volumi di merci sensibili alla temperatura. Include garanzia di 2 anni e personalizzazioni disponibili.",
+                        "en" => "Used 40ft High Cube refrigerated container, designed for large volumes of temperature-sensitive goods. Includes 2-year warranty and available customizations.",
+                        "fr" => "Conteneur réfrigéré High Cube 40 pieds d'occasion, conçu pour grands volumes de marchandises sensibles à la température. Inclut garantie 2 ans et personnalisations disponibles.",
+                        "pt" => "Contêiner refrigerado High Cube 40 pés usado, projetado para grandes volumes de mercadorias sensíveis à temperatura. Inclui garantia de 2 anos e personalizações disponíveis.",
+                        "es" => "Contenedor refrigerado High Cube 40 pies usado, diseñado para grandes volúmenes de mercancías sensibles a la temperatura. Incluye garantía de 2 años y personalizaciones disponibles."
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/Contenitore-Refrigerato-40-Piedi-HC-Usato-Grande-Capacita-e-Affidabilita-300x300.jpg",
+                        "/assets/uploads/2025/11/Contenitore-Refrigerato-40-Piedi-HC-Usato-Grande-Capacita-e-Affidabilita-1-300x300.jpg",
+                        "/assets/uploads/2025/11/Contenitore-Refrigerato-40-Piedi-HC-Usato-Grande-Capacita-e-Affidabilita-0-300x300.jpg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
+                ],
+                [
+                    "id" => "11174",
+                    "name" => [
+                        "it" => "Contenitore sanitario – WC + doccia + serbatoio",
+                        "en" => "Sanitary container – Toilet + shower + tank",
+                        "fr" => "Conteneur sanitaire – WC + douche + réservoir",
+                        "pt" => "Contêiner sanitário – WC + chuveiro + tanque",
+                        "es" => "Contenedor sanitario – WC + ducha + tanque"
+                    ],
+                    "price" => "1,800.00",
+                    "old_price" => "2,500.00",
+                    "sku" => "3276611174",
+                    "discount_percentage" => null,
+                    "link" => "/product/contenitore-sanitario-wc-doccia-serbatoio/",
+                    "categories" => ["container-modulari"],
+                    "short_description" => [
+                        "it" => "Collega semplicemente elettricità, acqua e acque reflue: subito pronto per l'uso\nCabina WC doppia 3×2 metri con serbatoio acque nere con wc e doccia\n– 2 finestre\n– Profilo sandwich da 80 mm termicamente isolato per una bassa perdita di energia\n– Porta esterna in lamiera d'acciaio Hörmann zincata\n– Orinatoi\n– Impianto elettrico completo secondo le direttive CE\n– Prese 230V\n– 2 plafoniere\n– Collegamento 11KW/400V\n– Rivestimento del pavimento in PVC – robusto e veloce da pulire\n– radiatore elettrico a parete\n– Serbatoio delle acque grigie\n– Scale\nNoleggio possibile a tariffe mensili basse. Possiamo anche produrre in qualsiasi momento in altre dimensioni e colori secondo le vostre specifiche.",
+                        "en" => "Simply connect electricity, water and wastewater: immediately ready for use\nDouble toilet cabin 3×2 meters with black water tank with toilet and shower\n– 2 windows\n– 80 mm thermally insulated sandwich panel for low energy loss\n– Galvanized Hörmann steel sheet external door\n– Urinals\n– Complete electrical system according to CE directives\n– 230V sockets\n– 2 ceiling lights\n– 11KW/400V connection\n– PVC floor covering – durable and quick to clean\n– Electric wall radiator\n– Grey water tank\n– Stairs\nRental possible at low monthly rates. We can also produce at any time in other dimensions and colors according to your specifications.",
+                        "fr" => "Connectez simplement électricité, eau et eaux usées : immédiatement prêt à l'emploi\nCabine WC double 3×2 mètres avec réservoir d'eaux noires avec WC et douche\n– 2 fenêtres\n– Panneau sandwich 80 mm thermiquement isolé pour faible perte d'énergie\n– Porte extérieure en tôle d'acier Hörmann galvanisée\n– Urinoirs\n– Installation électrique complète selon directives CE\n– Prises 230V\n– 2 plafonniers\n– Connexion 11KW/400V\n– Revêtement de sol PVC – robuste et rapide à nettoyer\n– Radiateur électrique mural\n– Réservoir d'eaux grises\n– Escaliers\nLocation possible à tarifs mensuels bas. Nous pouvons également produire à tout moment en d'autres dimensions et couleurs selon vos spécifications.",
+                        "pt" => "Basta conectar eletricidade, água e águas residuais: imediatamente pronto para uso\nCabine dupla WC 3×2 metros com tanque de águas negras com WC e chuveiro\n– 2 janelas\n– Painel sanduíche de 80 mm termicamente isolado para baixa perda de energia\n– Porta externa em chapa de aço Hörmann galvanizada\n– Mictórios\n– Sistema elétrico completo conforme diretivas CE\n– Tomadas 230V\n– 2 luminárias de teto\n– Conexão 11KW/400V\n– Revestimento de piso em PVC – durável e rápido de limpar\n– Radiador elétrico de parede\n– Tanque de águas cinzas\n– Escadas\nAluguel possível com tarifas mensais baixas. Também podemos produzir a qualquer momento em outras dimensões e cores de acordo com suas especificações.",
+                        "es" => "Simplemente conecte electricidad, agua y aguas residuales: inmediatamente listo para usar\nCabina WC doble 3×2 metros con tanque de aguas negras con WC y ducha\n– 2 ventanas\n– Panel sándwich de 80 mm térmicamente aislado para baja pérdida de energía\n– Puerta exterior de chapa de acero Hörmann galvanizada\n– Urinarios\n– Sistema eléctrico completo según directivas CE\n– Tomas 230V\n– 2 plafones\n– Conexión 11KW/400V\n– Revestimiento de suelo de PVC – duradero y rápido de limpiar\n– Radiador eléctrico de pared\n– Tanque de aguas grises\n– Escaleras\nAlquiler posible con tarifas mensuales bajas. También podemos producir en cualquier momento en otras dimensiones y colores según sus especificaciones."
+                    ],
+                    "images" => [
+                        "/assets/uploads/2025/11/319_0026321769-300x300.jpg",
+                        "/assets/uploads/2025/11/319_0026321762-1-300x300.jpg",
+                        "/assets/uploads/2025/11/319_0026321763-300x300.jpg",
+                        "/assets/uploads/2025/11/319_0026321764-300x300.jpg",
+                        "/assets/uploads/2025/11/319_0026321765-768x886-1-300x300.jpg",
+                        "/assets/uploads/2025/11/319_0026321766-300x300.jpg",
+                        "/assets/uploads/2025/11/319_0026321767-300x300.jpg",
+                        "/assets/uploads/2025/11/319_0026321768-300x300.jpg",
+                        "/assets/uploads/2025/11/319_0026321772-300x300.jpg",
+                        "/assets/uploads/2025/11/319_0026321774-300x300.jpg",
+                        "/assets/uploads/2025/11/319_0026321778-300x300.jpg",
+                        "/assets/uploads/2025/11/319_0026321779-300x300.jpg",
+                        "/assets/uploads/2025/11/319_0026321761-300x300.jpg"
+                    ],
+                    "description" => [
+                        "it" => "",
+                        "en" => "",
+                        "fr" => "",
+                        "pt" => "",
+                        "es" => ""
+                    ]
+                ],
 
                 [
                     "id" => "10795",
@@ -8499,7 +8504,7 @@ class ArticleSeeder extends Seeder
 
 
 
-        ];
+            ];
 
         $this->command->info('Starting to seed ' . count($articlesData) . ' articles...');
 
@@ -8535,14 +8540,14 @@ class ArticleSeeder extends Seeder
                 if (!$existingArticle) {
                     // Créer l'article avec les traductions
                     $article = Article::create([
-                        'name' => $item['name'], // Array associatif avec les 5 langues
+                        'name' => $item['name'],
                         'slug' => $slug,
                         'sku' => $item['sku'],
                         'price' => $price,
                         'old_price' => $oldPrice,
                         'discount_percentage' => $item['discount_percentage'] ?? null,
-                        'short_description' => $item['short_description'], // Array associatif avec les 5 langues
-                        'description' => $item['description'], // Array associatif avec les 5 langues
+                        'short_description' => $item['short_description'],
+                        'description' => $item['description'],
                         'link' => $item['link'] ?? null,
                         'stock' => rand(1, 20),
                         'category_id' => $this->getCategoryId($item['categories'], $categories)
@@ -8569,8 +8574,6 @@ class ArticleSeeder extends Seeder
                             }
                         }
                     }
-//
-//                    $this->command->info("\n✓ Article created: {$item['name']['it']} (SKU: {$item['sku']})");
                 }
 
                 $bar->advance();
@@ -8596,24 +8599,16 @@ class ArticleSeeder extends Seeder
             return null;
         }
 
-        // Si le prix contient une virgule comme séparateur de milliers (ex: "9,900.00")
         if (preg_match('/,\d{3}\./', $price)) {
-            // Enlever les virgules (séparateurs de milliers)
             $price = str_replace(',', '', $price);
-        }
-        // Si c'est un prix avec virgule décimale (ex: "9,90")
-        else if (preg_match('/,\d{2}$/', $price)) {
-            // Remplacer la virgule par un point
+        } else if (preg_match('/,\d{2}$/', $price)) {
             $price = str_replace(',', '.', $price);
         }
 
-        // Supprimer tous les caractères sauf chiffres et point
         $price = preg_replace('/[^0-9.]/', '', $price);
 
-        // S'assurer qu'il n'y a qu'un seul point décimal
         $parts = explode('.', $price);
         if (count($parts) > 2) {
-            // Cas où il reste plusieurs points (ex: "9.900.00")
             $price = $parts[0] . '.' . implode('', array_slice($parts, 1));
         }
 
@@ -8626,14 +8621,29 @@ class ArticleSeeder extends Seeder
     private function getCategoryId($categories, $categoriesCollection)
     {
         if (empty($categories)) {
-            // Retourner une catégorie par défaut (non-categorizzato)
-            $defaultCategory = $categoriesCollection->firstWhere('slug', 'non-categorizzato');
+            $defaultCategory = $categoriesCollection->firstWhere('slug', 'nao-categorizado');
             return $defaultCategory ? $defaultCategory->id : 1;
         }
 
-        // Prendre la première catégorie (un article n'a qu'une seule catégorie principale)
-        $categorySlug = $categories[0];
-        $category = $categoriesCollection->firstWhere('slug', $categorySlug);
+        // Prendre la première catégorie et la convertir en slug portugais
+        $categorySlugFromData = $categories[0];
+        
+        // Trouver la catégorie correspondante en utilisant le slug portugais
+        $category = $categoriesCollection->get($categorySlugFromData);
+        
+        // Si la catégorie n'est pas trouvée avec le slug direct, essayer une correspondance partielle
+        if (!$category) {
+            foreach ($categoriesCollection as $slug => $cat) {
+                // Comparer les slugs en supprimant les tirets et en les mettant en minuscule
+                $slugClean = str_replace('-', '', strtolower($slug));
+                $searchClean = str_replace('-', '', strtolower($categorySlugFromData));
+                
+                if ($slugClean === $searchClean || str_contains($slugClean, $searchClean) || str_contains($searchClean, $slugClean)) {
+                    $category = $cat;
+                    break;
+                }
+            }
+        }
 
         return $category ? $category->id : $this->getDefaultCategoryId($categoriesCollection);
     }
@@ -8643,6 +8653,15 @@ class ArticleSeeder extends Seeder
      */
     private function getDefaultCategoryId($categoriesCollection)
     {
+        // Chercher la catégorie "Não Categorizado" en portugais
+        foreach ($categoriesCollection as $cat) {
+            $ptName = $cat->getTranslation('name', 'pt') ?? '';
+            if (str_contains(strtolower($ptName), 'não categorizado') || 
+                str_contains(strtolower($ptName), 'nao categorizado')) {
+                return $cat->id;
+            }
+        }
+        
         $defaultCategory = $categoriesCollection->first();
         return $defaultCategory ? $defaultCategory->id : 1;
     }

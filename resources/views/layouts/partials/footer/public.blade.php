@@ -575,7 +575,7 @@
         </div>
         <div class="chaty-channel Email-channel-link" id="Email-0-channel" data-id="Email-0" data-widget="0"
              data-channel="Email">
-            <a href="mailto:contato@portaboxsolutions.com" target="" rel="nofollow noopener"
+            <a href="mailto:contato@portocontentores.pt" target="" rel="nofollow noopener"
                aria-label="Email" class="chaty-tooltip Email-channel chaty-link chaty-email-channel pos-left"
                data-form="chaty-form-0-Email" data-hover="Email">
                     <span class="chaty-icon channel-icon-Email">

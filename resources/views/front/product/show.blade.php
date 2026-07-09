@@ -1095,7 +1095,7 @@
                                         data-image="{{ $mainImgUrl }}"
                                         data-url="{{ route('product.show', $article->slug) }}">
                                     <i class="fas fa-cart-plus"></i>
-                                    <span class="pbs-add-label">{{ __('Ajouter au panier') }}</span>
+                                 
                                 </button>
                             </div>
 

@@ -701,7 +701,7 @@ a.wp-block-button__link,
 .ts-shortcode > .shop-more .shop-more-button,
 .footer-container a.button,
 .footer-container a.elementor-button {
-	padding: 10px 30px;
+	/* padding: 10px 30px; */
 	border-width: 1px;
 	border-style: solid;
 	border-radius: var(--ts-border-radius);
