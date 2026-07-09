@@ -48,64 +48,64 @@
                     </div>
 
                     <div class="ts-search-by-category ">
-                        <form action="{{ route('shop') }}" method="get">
-                            <select name="category" class="select-category">
-                                @php
-                                    if(!isset($category)){
-                                        $category = "";
-                                    }
-                                @endphp
-                                <option value="">{{ __('header.all_categories') }}</option>
-                                <option {{ $category == 'caffetteria-bar-ristorante' ? 'selected' : '' }} value="caffetteria-bar-ristorante">
-                                    {{ __('header.category.caffetteria') }}
-                                </option>
-                                <option {{ $category == 'container-di-stoccaggio' ? 'selected' : '' }} value="container-di-stoccaggio">
-                                    {{ __('header.category.stoccaggio') }}
-                                </option>
-                                <option {{ $category == 'container-laterale-aperto' ? 'selected' : '' }} value="container-laterale-aperto">
-                                    {{ __('header.category.laterale_aperto') }}
-                                </option>
-                                <option {{ $category == 'container-modulari' ? 'selected' : '' }} value="container-modulari">
-                                    {{ __('header.category.modulari') }}
-                                </option>
-                                <option {{ $category == 'container-refrigerati' ? 'selected' : '' }} value="container-refrigerati">
-                                    {{ __('header.category.refrigerati') }}
-                                </option>
-                                <option {{ $category == 'container-standard-usati' ? 'selected' : '' }} value="container-standard-usati">
-                                    {{ __('header.category.standard_usati') }}
-                                </option>
-                                <option {{ $category == 'contenitori-10-piedi' ? 'selected' : '' }} value="contenitori-10-piedi">
-                                    {{ __('header.category.contenitori_10') }}
-                                </option>
-                                <option {{ $category == 'contenitori-20-piedi' ? 'selected' : '' }} value="contenitori-20-piedi">
-                                    {{ __('header.category.contenitori_20') }}
-                                </option>
-                                <option {{ $category == 'contenitori-40-piedi' ? 'selected' : '' }} value="contenitori-40-piedi">
-                                    {{ __('header.category.contenitori_40') }}
-                                </option>
-                                <option {{ $category == 'contenitori-casa' ? 'selected' : '' }} value="contenitori-casa">
-                                    {{ __('header.category.contenitori_casa') }}
-                                </option>
-                                <option {{ $category == 'non-categorizzato' ? 'selected' : '' }} value="non-categorizzato">
-                                    {{ __('header.category.non_categorizzato') }}
-                                </option>
-                                <option {{ $category == 'piscina' ? 'selected' : '' }} value="piscina">{{ __('header.category.piscina') }}</option>
-                                <option {{ $category == 'sanitario' ? 'selected' : '' }} value="sanitario">{{ __('header.category.sanitario') }}
-                                </option>
-                                <option {{ $category == 'ufficio' ? 'selected' : '' }} value="ufficio">{{ __('header.category.ufficio') }}</option>
-                            </select>
-                            <div class="search-table">
-                                <div class="search-field search-content">
-                                    <input type="text" value="{{ $search2 ?? '' }}" name="search_Prin"
-                                           placeholder="{{ __('header.search.placeholder') }}" autocomplete="off"/>
+                     <form action="{{ route('shop') }}" method="get">
+    <select name="category" class="select-category">
+        @php
+            if(!isset($category)){
+                $category = "";
+            }
+        @endphp
+        <option value="">{{ __('header.all_categories') }}</option>
+        <option {{ $category == 'cafeteria-bar-restaurante' ? 'selected' : '' }} value="cafeteria-bar-restaurante">
+            {{ __('header.category.caffetteria') }}
+        </option>
+        <option {{ $category == 'conteineres-de-armazenamento' ? 'selected' : '' }} value="conteineres-de-armazenamento">
+            {{ __('header.category.stoccaggio') }}
+        </option>
+        <option {{ $category == 'conteiner-com-abertura-lateral' ? 'selected' : '' }} value="conteiner-com-abertura-lateral">
+            {{ __('header.category.laterale_aperto') }}
+        </option>
+        <option {{ $category == 'conteineres-modulares' ? 'selected' : '' }} value="conteineres-modulares">
+            {{ __('header.category.modulari') }}
+        </option>
+        <option {{ $category == 'conteineres-refrigerados' ? 'selected' : '' }} value="conteineres-refrigerados">
+            {{ __('header.category.refrigerati') }}
+        </option>
+        <option {{ $category == 'conteineres-padrao-usados' ? 'selected' : '' }} value="conteineres-padrao-usados">
+            {{ __('header.category.standard_usati') }}
+        </option>
+        <option {{ $category == 'conteineres-10-pes' ? 'selected' : '' }} value="conteineres-10-pes">
+            {{ __('header.category.contenitori_10') }}
+        </option>
+        <option {{ $category == 'conteineres-20-pes' ? 'selected' : '' }} value="conteineres-20-pes">
+            {{ __('header.category.contenitori_20') }}
+        </option>
+        <option {{ $category == 'conteineres-40-pes' ? 'selected' : '' }} value="conteineres-40-pes">
+            {{ __('header.category.contenitori_40') }}
+        </option>
+        <option {{ $category == 'conteineres-casa' ? 'selected' : '' }} value="conteineres-casa">
+            {{ __('header.category.contenitori_casa') }}
+        </option>
+        <option {{ $category == 'nao-categorizado' ? 'selected' : '' }} value="nao-categorizado">
+            {{ __('header.category.non_categorizzato') }}
+        </option>
+        <option {{ $category == 'piscina' ? 'selected' : '' }} value="piscina">{{ __('header.category.piscina') }}</option>
+        <option {{ $category == 'sanitario' ? 'selected' : '' }} value="sanitario">{{ __('header.category.sanitario') }}
+        </option>
+        <option {{ $category == 'escritorio' ? 'selected' : '' }} value="escritorio">{{ __('header.category.ufficio') }}</option>
+    </select>
+    <div class="search-table">
+        <div class="search-field search-content">
+            <input type="text" value="{{ $search2 ?? '' }}" name="search_Prin"
+                   placeholder="{{ __('header.search.placeholder') }}" autocomplete="off"/>
 
-                                    <div class="search-button">
-                                        <input type="submit" title="{{ __('header.search.button') }}" value="{{ __('header.search.button') }}"/>
-                                    </div>
+            <div class="search-button">
+                <input type="submit" title="{{ __('header.search.button') }}" value="{{ __('header.search.button') }}"/>
+            </div>
 
-                                </div>
-                            </div>
-                        </form>
+        </div>
+    </div>
+</form>
 
                         <div class="search-dropdown">
                             <div class="ts-search-result-container woocommerce"></div>
