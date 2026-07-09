@@ -289,7 +289,7 @@
                 <img src="{{ asset('/assets/uploads/2024/07/Porto-Contentores-2560x822-1.png') }}" alt="{{ config('app.name') }}" style="max-width: 180px;">
             </div>
             <div class="badge-admin">🔔 ADMIN NOTIFICATION</div>
-            <h2>📦 NOUVELLE DEMANDE CLIENT</h2>
+            <h2> NOUVELLE DEMANDE CLIENT</h2>
         </div>
 
         <div class="content">
@@ -401,12 +401,12 @@
                 <span style="color: #718096;">📧 {{ config('mail.from.address') }}</span>
                 @if(config('app.phone'))
                 <br>
-                <span style="color: #718096;">📞 {{ config('app.phone') }}</span>
+                <span style="color: #718096;"> {{ config('app.phone') }}</span>
                 @endif
             </div>
 
             <div style="text-align: center; margin-top: 15px; color: #94a3b8;">
-                <span>⚡ Notification automatique - Action requise</span>
+                <span> Notification automatique - Action requise</span>
             </div>
         </div>
     </div>

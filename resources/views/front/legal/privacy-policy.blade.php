@@ -46,7 +46,7 @@
                         <p>
                             <strong>{{ __('privacy.company_name') }}</strong><br>
                             📍 <strong>{{ __('privacy.section1.address') }}</strong> Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
-                            📞 <strong>{{ __('privacy.section1.phone') }}</strong> +39 350 872 4295<br>
+                             <strong>{{ __('privacy.section1.phone') }}</strong> +39 350 872 4295<br>
                             📧 <strong>{{ __('privacy.section1.email') }}</strong> <a>contato@portocontentores.com</a><br>
                             🌐 <strong>{{ __('privacy.section1.website') }}</strong> <a href="{{ route('home') }}">{{ route('home') }}</a>
                         </p>

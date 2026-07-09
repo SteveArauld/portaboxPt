@@ -14,7 +14,7 @@
             data-sku="{{ $item->sku }}"
             data-image="{{ $cbImgUrl }}"
             data-url="{{ route('product.show', $item->slug) }}">
-        <i class="fas fa-cart-plus"></i>
-      
+         <i class="fas fa-plus"></i>
+                        <span class="pbs-add-label">{{ __('Ajouter au panier') }}</span>
     </button>
 </div>

@@ -616,7 +616,7 @@
         }
 
         .urgent-form::before {
-            content: "⚡ LIVRAISON EXPRESS ⚡";
+            content: " LIVRAISON EXPRESS ";
             position: absolute;
             top: -15px;
             left: 50%;
@@ -1083,20 +1083,8 @@
                                     <input type="number" id="pbs-product-qty-input" value="1" min="1" class="pbs-qty-input">
                                     <button type="button" class="pbs-qty-btn" onclick="pbsAdjustQty(1)"><i class="fas fa-plus"></i></button>
                                 </div>
-                                <button type="button"
-                                        class="pbs-add-to-cart pbs-add-lg"
-                                        data-add-to-cart
-                                        data-qty-target="#pbs-product-qty-input"
-                                        data-id="{{ $article->id }}"
-                                        data-name="{{ $article->name }}"
-                                        data-price="{{ $article->price }}"
-                                        data-slug="{{ $article->slug }}"
-                                        data-sku="{{ $article->sku }}"
-                                        data-image="{{ $mainImgUrl }}"
-                                        data-url="{{ route('product.show', $article->slug) }}">
-                                    <i class="fas fa-cart-plus"></i>
-                                 
-                                </button>
+                        @include('front.partials.cart-button', ['item' => $article])
+
                             </div>
 
                             <style>
@@ -1223,7 +1211,7 @@
                                 {{-- Bandeau promo livraison gratuite --}}
                                 <div class="delivery-banners">
                                     <div class="delivery-banner urgent">
-                                        <div class="banner-icon">🚚</div>
+                                        <div class="banner-icon"></div>
                                         <div class="banner-content">
                                             <span class="banner-title">{{ __('Livraison gratuite') }}</span>
                                             <span
@@ -1241,7 +1229,7 @@
                                             <span class="feature-text">{{ __('Livraison à domicile') }}</span>
                                         </div>
                                         <div class="feature-item">
-                                            <span class="feature-icon">📦</span>
+                                            <span class="feature-icon"></span>
                                             <span class="feature-text">{{ __('Suivi en temps réel') }}</span>
                                         </div>
                                     </div>
@@ -1356,11 +1344,11 @@
                                     {{-- Badges de confiance --}}
                                     <div class="trust-badges">
                                         <div class="trust-badge">
-                                            <span class="badge-icon">🔒</span>
+                                            <span class="badge-icon"></span>
                                             <span class="badge-text">{{ __('Paiement 100% sécurisé') }}</span>
                                         </div>
                                         <div class="trust-badge">
-                                            <span class="badge-icon">📞</span>
+                                            <span class="badge-icon"></span>
                                             <span class="badge-text">{{ __('Assistance téléphonique') }}</span>
                                         </div>
                                         <div class="trust-badge">

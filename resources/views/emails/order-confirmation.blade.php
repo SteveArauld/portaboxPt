@@ -31,7 +31,7 @@
 <div class="email-container">
     <div class="header">
         <img src="{{ asset('/assets/uploads/2024/07/Porto-Contentores-2560x822-1.png') }}" alt="{{ config('app.name') }}">
-        <h2>✅ {{ __('Commande confirmée') }}</h2>
+        <h2> {{ __('Commande confirmée') }}</h2>
         <div class="order-badge">{{ __('Commande') }} : <strong>#{{ $order->order_number }}</strong></div>
     </div>
 

@@ -261,7 +261,7 @@
             <div class="logo">
                 <img src="{{ asset('/assets/uploads/2024/07/Porto-Contentores-2560x822-1.png') }}" alt="{{ config('app.name') }}" style="max-width: 180px;">
             </div>
-            <h2>✅ {{ __('email.inquiry_confirmed') }}</h2>
+            <h2> {{ __('email.inquiry_confirmed') }}</h2>
             <div class="order-badge">
                 {{ __('email.inquiry_number') }}: <strong>#{{ $order_number ?? 'INQ-' . date('Ymd') . '-' . rand(1000, 9999) }}</strong>
             </div>
@@ -284,7 +284,7 @@
                     </div>
                     <div class="detail-row">
                         <span class="detail-label">{{ __('email.inquiry_status') }}</span>
-                        <span class="detail-value" style="color: #28a745;">✅ {{ __('email.received') }}</span>
+                        <span class="detail-value" style="color: #28a745;"> {{ __('email.received') }}</span>
                     </div>
                 </div>
 
@@ -356,7 +356,7 @@
                     @if(config('app.phone'))
                     <tr>
                         <td style="padding: 5px 0; color: #718096;">
-                            📞 {{ config('app.phone') }}
+                             {{ config('app.phone') }}
                         </td>
                     </tr>
                     @endif

@@ -11,64 +11,79 @@ use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Str; 
 
 
 class HomeController extends Controller
 {
-    public function index()
-    {
-        $containerRefrigerati = Article::with(['category', 'images'])
-            ->whereHas('category', function ($query) {
-                $query->where('slug', 'container-refrigerati');
-            })->paginate(20);
+public function index()
+{
+    // Récupérer la langue cible depuis le fichier .env
+    $targetLocale = config('app.locale', 'pt');
 
-        $container_modulari = Article::with(['category', 'images'])
-            ->whereHas('category', function ($query) {
-                $query->where('slug', 'container-modulari');
-            })->paginate(20);
+    // Générer les slugs en portugais
+    $slugs = [
+        'containerRefrigerati' => Str::slug('Contêineres Refrigerados'),
+        'container_modulari' => Str::slug('Contêineres Modulares'),
+        'contenitori_20_piedi' => Str::slug('Contêineres 20 Pés'),
+        'contenitori_40_piedi' => Str::slug('Contêineres 40 Pés'),
+        'contenitori_casa' => Str::slug('Contêineres Casa'),
+        'piscina' => Str::slug('Piscina'),
+        'contenitori_10_piedi' => Str::slug('Contêineres 10 Pés'),
+        'caffetteria_bar_ristorante' => Str::slug('Cafeteria Bar Restaurante'),
+    ];
 
-        $contenitori_20_piedi = Article::with(['category', 'images'])
-            ->whereHas('category', function ($query) {
-                $query->where('slug', 'contenitori-20-piedi');
-            })->paginate(20);
+    $containerRefrigerati = Article::with(['category', 'images'])
+        ->whereHas('category', function ($query) use ($slugs) {
+            $query->where('slug', $slugs['containerRefrigerati']);
+        })->paginate(20);
 
+    $container_modulari = Article::with(['category', 'images'])
+        ->whereHas('category', function ($query) use ($slugs) {
+            $query->where('slug', $slugs['container_modulari']);
+        })->paginate(20);
 
-        $contenitori_40_piedi = Article::with(['category', 'images'])
-            ->whereHas('category', function ($query) {
-                $query->where('slug', 'contenitori-40-piedi');
-            })->paginate(20);
+    $contenitori_20_piedi = Article::with(['category', 'images'])
+        ->whereHas('category', function ($query) use ($slugs) {
+            $query->where('slug', $slugs['contenitori_20_piedi']);
+        })->paginate(20);
 
-        $contenitori_casa = Article::with(['category', 'images'])
-            ->whereHas('category', function ($query) {
-                $query->where('slug', 'contenitori-casa');
-            })->paginate(20);
+    $contenitori_40_piedi = Article::with(['category', 'images'])
+        ->whereHas('category', function ($query) use ($slugs) {
+            $query->where('slug', $slugs['contenitori_40_piedi']);
+        })->paginate(20);
 
-        $piscina = Article::with(['category', 'images'])
-            ->whereHas('category', function ($query) {
-                $query->where('slug', 'piscina');
-            })->paginate(5);
+    $contenitori_casa = Article::with(['category', 'images'])
+        ->whereHas('category', function ($query) use ($slugs) {
+            $query->where('slug', $slugs['contenitori_casa']);
+        })->paginate(20);
 
-        $contenitori_10_piedi = Article::with(['category', 'images'])
-            ->whereHas('category', function ($query) {
-                $query->where('slug', 'contenitori-10-piedi');
-            })->paginate(20);
+    $piscina = Article::with(['category', 'images'])
+        ->whereHas('category', function ($query) use ($slugs) {
+            $query->where('slug', $slugs['piscina']);
+        })->paginate(5);
 
-        $caffetteria_bar_ristorante = Article::with(['category', 'images'])
-            ->whereHas('category', function ($query) {
-                $query->where('slug', 'caffetteria-bar-ristorante');
-            })->paginate(5);
+    $contenitori_10_piedi = Article::with(['category', 'images'])
+        ->whereHas('category', function ($query) use ($slugs) {
+            $query->where('slug', $slugs['contenitori_10_piedi']);
+        })->paginate(20);
 
-        return view('front.home', compact(
-            'containerRefrigerati',
-            'container_modulari',
-            'contenitori_20_piedi',
-            'contenitori_40_piedi',
-            'contenitori_casa',
-            'piscina',
-            'contenitori_10_piedi',
-            'caffetteria_bar_ristorante',
-        ));
-    }
+    $caffetteria_bar_ristorante = Article::with(['category', 'images'])
+        ->whereHas('category', function ($query) use ($slugs) {
+            $query->where('slug', $slugs['caffetteria_bar_ristorante']);
+        })->paginate(5);
+
+    return view('front.home', compact(
+        'containerRefrigerati',
+        'container_modulari',
+        'contenitori_20_piedi',
+        'contenitori_40_piedi',
+        'contenitori_casa',
+        'piscina',
+        'contenitori_10_piedi',
+        'caffetteria_bar_ristorante',
+    ));
+}
 
     public function showProduct($slug)
     {

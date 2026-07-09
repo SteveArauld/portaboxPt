@@ -32,7 +32,7 @@
     <div class="header">
         <img src="{{ asset('/assets/uploads/2024/07/Porto-Contentores-2560x822-1.png') }}" alt="{{ config('app.name') }}">
         <div class="badge">🔔 {{ __('Notification administrateur') }}</div>
-        <h2>📦 {{ __('Nouvelle commande') }} #{{ $order->order_number }}</h2>
+        <h2> {{ __('Nouvelle commande') }} #{{ $order->order_number }}</h2>
     </div>
 
     <div class="content">
@@ -62,7 +62,7 @@
         </div>
 
         @if ($order->ship_to_different)
-            <div class="section-title">🚚 {{ __('Adresse de livraison') }}</div>
+            <div class="section-title"> {{ __('Adresse de livraison') }}</div>
             <div class="info-card">
                 <span class="val">
                     {{ $order->shipping_name }}<br>
@@ -109,7 +109,7 @@
 
     <div class="footer">
         <strong style="color:#2c3e50;">{{ config('app.name') }}</strong><br>
-        ⚡ {{ __('Notification automatique — Action requise') }}
+         {{ __('Notification automatique — Action requise') }}
     </div>
 </div>
 </body>

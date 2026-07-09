@@ -15,12 +15,12 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background: #fff;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 30px;
+     background: #ffffff;
+     border: none;
+
     padding: 8px 16px;
     cursor: pointer;
-    color: var(--pbs-dark);
+    color: rgb(0, 0, 0);
     font-size: 14px;
     font-weight: 600;
     transition: all 0.25s ease;
@@ -28,10 +28,10 @@
 }
 
 .pbs-cart-toggle:hover {
-    background: var(--pbs-primary);
-    border-color: var(--pbs-primary);
-    color: #fff;
-    transform: translateY(-1px);
+     background: #ffffff;
+  
+    color: #ce0000;
+;
 }
 
 .pbs-cart-toggle svg,
@@ -52,7 +52,7 @@
     min-width: 20px;
     height: 20px;
     padding: 0 5px;
-    background: var(--pbs-primary);
+    background: #ce0000;
     color: #fff;
     border-radius: 50%;
     font-size: 11px;
@@ -60,7 +60,7 @@
     display: none;
     align-items: center;
     justify-content: center;
-    border: 2px solid #fff;
+    border: none;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -113,7 +113,7 @@
     margin: 0;
     font-size: 18px;
     font-weight: 700;
-    color: var(--pbs-dark);
+    color: #000;
     display: flex;
     align-items: center;
     gap: 8px;
@@ -133,7 +133,7 @@
 }
 
 .pbs-drawer-close:hover {
-    background: var(--pbs-primary);
+    background: #000;
     color: #fff;
 }
 
@@ -180,7 +180,7 @@
     display: block;
     font-size: 14px;
     font-weight: 600;
-    color: var(--pbs-dark);
+    color: #000;
     text-decoration: none;
     margin-bottom: 4px;
     overflow: hidden;
@@ -189,13 +189,13 @@
 }
 
 .pbs-drawer-name:hover {
-    color: var(--pbs-primary);
+    color: #000;
 }
 
 .pbs-drawer-price {
     font-size: 14px;
     font-weight: 700;
-    color: var(--pbs-primary);
+    color: #000;
     margin-bottom: 6px;
 }
 
@@ -220,7 +220,7 @@
 }
 
 .pbs-qty-btn:hover {
-    background: var(--pbs-primary);
+    background: #000;
     color: #fff;
 }
 
@@ -243,7 +243,7 @@
 }
 
 .pbs-drawer-remove:hover {
-    color: var(--pbs-primary);
+    color: #000;
 }
 
 .pbs-drawer-footer {
@@ -258,12 +258,12 @@
     align-items: center;
     margin-bottom: 16px;
     font-size: 16px;
-    color: var(--pbs-dark);
+    color: #000;
 }
 
 .pbs-drawer-total-row strong {
     font-size: 20px;
-    color: var(--pbs-primary);
+    color: #000;
 }
 
 .pbs-btn {
@@ -282,25 +282,24 @@
 }
 
 .pbs-btn-primary {
-    background: var(--pbs-primary);
+    background: #000;
     color: #fff !important;
-    box-shadow: 0 6px 18px rgba(198, 33, 59, 0.3);
 }
 
 .pbs-btn-primary:hover {
     background: var(--pbs-primary-dark);
-    transform: translateY(-2px);
+  
 }
 
 .pbs-btn-outline {
     background: #fff;
-    color: var(--pbs-dark) !important;
+    color: #000 !important;
     border: 2px solid #e2e8f0;
     margin-top: 10px;
 }
 
 .pbs-btn-outline:hover {
-    border-color: var(--pbs-dark);
+    border-color: #000;
 }
 
 /* ---------- Bouton "Ajouter au panier" sur les cartes produit ---------- */
@@ -326,8 +325,8 @@
     gap: 8px;
     width: 100%;
     padding: 11px 16px;
-    background: var(--pbs-dark);
-    color: #fff;
+    background: rgb(235, 238, 240);
+    color: #000;
     border: none;
     border-radius: 8px;
     font-size: 13px;
@@ -340,9 +339,7 @@
 }
 
 .pbs-add-to-cart:hover {
-    background: var(--pbs-primary);
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(198, 33, 59, 0.25);
+    background: #000;
 }
 
 .pbs-add-to-cart.pbs-added {
@@ -374,7 +371,7 @@
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%) translateY(20px);
-    background: var(--pbs-dark);
+    background: rgb(0, 0, 0);
     color: #fff;
     padding: 14px 26px;
     border-radius: 50px;

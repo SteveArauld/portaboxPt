@@ -501,17 +501,17 @@ body .select2-container-default .select2-selection--ts-multiple,
 body .select2-container--default .select2-selection--single .select2-selection__rendered {
 	filter: none !important;
 	padding: 10px 20px;
-	width: 100%;
+	/* width: 100%; */
 	box-shadow: none;
 	vertical-align: bottom;
 	border-width: 1px;
-	border-style: solid;
+	/* border-style: solid; */
 	line-height: 24px;
 	border-radius: var(--ts-border-radius);
 	font-size: var(--ts-btn-font-size);
 	color: var(--ts-input-color);
-	background-color: var(--ts-input-background-color);
-	border-color: var(--ts-input-border);
+	/* background-color: var(--ts-input-background-color); */
+	/* border-color: var(--ts-input-border); */
 }
 .woocommerce form .form-row .input-text, 
 .woocommerce form .form-row select {

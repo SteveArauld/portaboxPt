@@ -51,7 +51,7 @@
         }
     </style>
 @endpush
-@section('title', 'Porto Contentores SOLUTIONS')
+@section('title', 'PORTA BOX SOLUTIONS')
 @section('content')
 
     <div id="main" class="wrapper ">

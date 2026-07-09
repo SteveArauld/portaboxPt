@@ -118,7 +118,7 @@
                     <!-- Bouton panier -->
                     <button type="button" class="pbs-cart-toggle" data-cart-toggle aria-label="{{ __('Panier') }}">
                         <i class="fas fa-shopping-cart"></i>
-                        <span class="pbs-cart-label">{{ __('Panier') }}</span>
+                        <!-- <span class="pbs-cart-label">{{ __('Panier') }}</span> -->
                         <span class="pbs-cart-count">0</span>
                     </button>
 

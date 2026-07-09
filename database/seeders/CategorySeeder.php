@@ -10,6 +10,9 @@ class CategorySeeder extends Seeder
 {
     public function run(): void
     {
+        // Récupérer la langue cible depuis le fichier .env
+        $targetLocale = config('app.locale', 'pt'); // par défaut 'pt'
+
         $categories = [
             [
                 'name' => [
@@ -19,7 +22,6 @@ class CategorySeeder extends Seeder
                     'pt' => 'Contêineres Modulares',
                     'es' => 'Contenedores Modulares'
                 ],
-                'slug' => 'container-modulari',
                 'description' => [
                     'it' => 'Container modulari per diverse esigenze abitative e commerciali',
                     'en' => 'Modular containers for various residential and commercial needs',
@@ -36,7 +38,6 @@ class CategorySeeder extends Seeder
                     'pt' => 'Contêineres Casa',
                     'es' => 'Contenedores Casa'
                 ],
-                'slug' => 'contenitori-casa',
                 'description' => [
                     'it' => 'Case container e soluzioni abitative',
                     'en' => 'Container homes and housing solutions',
@@ -53,7 +54,6 @@ class CategorySeeder extends Seeder
                     'pt' => 'Contêineres de Armazenamento',
                     'es' => 'Contenedores de Almacenamiento'
                 ],
-                'slug' => 'container-di-stoccaggio',
                 'description' => [
                     'it' => 'Container per stoccaggio e magazzino',
                     'en' => 'Containers for storage and warehousing',
@@ -70,7 +70,6 @@ class CategorySeeder extends Seeder
                     'pt' => 'Contêineres 10 Pés',
                     'es' => 'Contenedores 10 Pies'
                 ],
-                'slug' => 'contenitori-10-piedi',
                 'description' => [
                     'it' => 'Container da 10 piedi per varie applicazioni',
                     'en' => '10ft containers for various applications',
@@ -87,7 +86,6 @@ class CategorySeeder extends Seeder
                     'pt' => 'Contêineres 20 Pés',
                     'es' => 'Contenedores 20 Pies'
                 ],
-                'slug' => 'contenitori-20-piedi',
                 'description' => [
                     'it' => 'Container standard da 20 piedi',
                     'en' => 'Standard 20ft containers',
@@ -104,7 +102,6 @@ class CategorySeeder extends Seeder
                     'pt' => 'Contêineres 40 Pés',
                     'es' => 'Contenedores 40 Pies'
                 ],
-                'slug' => 'contenitori-40-piedi',
                 'description' => [
                     'it' => 'Container da 40 piedi per grandi volumi',
                     'en' => '40ft containers for large volumes',
@@ -121,7 +118,6 @@ class CategorySeeder extends Seeder
                     'pt' => 'Contêineres Refrigerados',
                     'es' => 'Contenedores Refrigerados'
                 ],
-                'slug' => 'container-refrigerati',
                 'description' => [
                     'it' => 'Container frigoriferi per prodotti sensibili',
                     'en' => 'Refrigerated containers for sensitive products',
@@ -138,7 +134,6 @@ class CategorySeeder extends Seeder
                     'pt' => 'Contêineres Padrão Usados',
                     'es' => 'Contenedores Estándar Usados'
                 ],
-                'slug' => 'container-standard-usati',
                 'description' => [
                     'it' => 'Container standard di seconda mano',
                     'en' => 'Second-hand standard containers',
@@ -155,7 +150,6 @@ class CategorySeeder extends Seeder
                     'pt' => 'Cafeteria Bar Restaurante',
                     'es' => 'Cafetería Bar Restaurante'
                 ],
-                'slug' => 'caffetteria-bar-ristorante',
                 'description' => [
                     'it' => 'Container per bar e ristoranti mobili',
                     'en' => 'Containers for mobile bars and restaurants',
@@ -172,7 +166,6 @@ class CategorySeeder extends Seeder
                     'pt' => 'Escritório',
                     'es' => 'Oficina'
                 ],
-                'slug' => 'ufficio',
                 'description' => [
                     'it' => 'Container ufficio e spazi di lavoro',
                     'en' => 'Office containers and workspaces',
@@ -189,7 +182,6 @@ class CategorySeeder extends Seeder
                     'pt' => 'Sanitário',
                     'es' => 'Sanitario'
                 ],
-                'slug' => 'sanitario',
                 'description' => [
                     'it' => 'Blocchi sanitari e servizi igienici',
                     'en' => 'Sanitary blocks and toilet facilities',
@@ -206,7 +198,6 @@ class CategorySeeder extends Seeder
                     'pt' => 'Contêiner com Abertura Lateral',
                     'es' => 'Contenedor con Apertura Lateral'
                 ],
-                'slug' => 'container-laterale-aperto',
                 'description' => [
                     'it' => 'Container con apertura laterale',
                     'en' => 'Container with side opening',
@@ -223,7 +214,6 @@ class CategorySeeder extends Seeder
                     'pt' => 'Piscina',
                     'es' => 'Piscina'
                 ],
-                'slug' => 'piscina',
                 'description' => [
                     'it' => 'Piscine container',
                     'en' => 'Container swimming pools',
@@ -240,7 +230,6 @@ class CategorySeeder extends Seeder
                     'pt' => 'Não Categorizado',
                     'es' => 'Sin Categoría'
                 ],
-                'slug' => 'non-categorizzato',
                 'description' => [
                     'it' => 'Prodotti non categorizzati',
                     'en' => 'Uncategorized products',
@@ -251,16 +240,21 @@ class CategorySeeder extends Seeder
             ]
         ];
 
-        foreach ($categories as $category) {
+        foreach ($categories as $categoryData) {
+            // Générer le slug à partir du nom en portugais (ou la langue cible)
+            $ptName = $categoryData['name'][$targetLocale] ?? $categoryData['name']['pt'] ?? $categoryData['name']['it'];
+            $slug = Str::slug($ptName);
+
             Category::updateOrCreate(
-                ['slug' => $category['slug']],
+                ['slug' => $slug],
                 [
-                    'name' => $category['name'],
-                    'description' => $category['description']
+                    'name' => $categoryData['name'],
+                    'description' => $categoryData['description']
                 ]
             );
         }
 
         $this->command->info('Categories seeded successfully with translations!');
+        $this->command->info('Slugs generated from language: ' . $targetLocale);
     }
 }
