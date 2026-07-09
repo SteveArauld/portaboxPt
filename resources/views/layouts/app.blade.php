@@ -115,14 +115,14 @@
 
     <meta name="generator"
           content="Powered by Slider Revolution 6.7.38 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
-    <link rel="icon" href="{{ asset('assets/uploads/2026/02/cropped-PORTABOX-SOLUTION-scaled-1-32x32.png') }}"
+    <link rel="icon" href="{{ asset('assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1-32x32.png') }}"
           sizes="32x32"/>
-    <link rel="icon" href="{{ asset('assets/uploads/2026/02/cropped-PORTABOX-SOLUTION-scaled-1-192x192.png') }}"
+    <link rel="icon" href="{{ asset('assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1-192x192.png') }}"
           sizes="192x192"/>
     <link rel="apple-touch-icon"
-          href="{{ asset('assets/uploads/2026/02/cropped-PORTABOX-SOLUTION-scaled-1-180x180.png') }}"/>
+          href="{{ asset('assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1-180x180.png') }}"/>
     <meta name="msapplication-TileImage"
-          content="{{ asset('assets/uploads/2026/02/cropped-PORTABOX-SOLUTION-scaled-1-270x270.png') }}"/>
+          content="{{ asset('assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1-270x270.png') }}"/>
 
           <meta name="google-site-verification" content="5S0R9M998FMcss3SDaLUDAqxhFYcroIcWZ8tsKUykqY" />
 

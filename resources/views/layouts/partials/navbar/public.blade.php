@@ -26,13 +26,13 @@
                 <div class="logo-wrapper">
                     <div class="logo">
                         <a href="{{ route('home') }}">
-                            <img src="../assets/uploads/2026/02/cropped-PORTABOX-SOLUTION-scaled-1.png"
+                            <img src="../assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1.png"
                                  alt="PORTA-BOX-SOLUTION" title="PORTA-BOX-SOLUTION" class="normal-logo"/>
 
-                            <img src="../assets/uploads/2026/02/cropped-PORTABOX-SOLUTION-scaled-1.png"
+                            <img src="../assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1.png"
                                  alt="PORTA-BOX-SOLUTION" title="PORTA-BOX-SOLUTION" class="mobile-logo"/>
 
-                            <img src="../assets/uploads/2026/02/cropped-PORTABOX-SOLUTION-scaled-1.png"
+                            <img src="../assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1.png"
                                  alt="PORTA-BOX-SOLUTION" title="PORTA-BOX-SOLUTION" class="sticky-logo"/>
 
                         </a>

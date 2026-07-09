@@ -286,7 +286,7 @@
     <div class="email-container">
         <div class="header">
             <div class="logo">
-                <img src="{{ asset('/assets/uploads/2024/07/PORTABOX-SOLUTION-2560x822-1.png') }}" alt="{{ config('app.name') }}" style="max-width: 180px;">
+                <img src="{{ asset('/assets/uploads/2024/07/Porto-Contentores-2560x822-1.png') }}" alt="{{ config('app.name') }}" style="max-width: 180px;">
             </div>
             <div class="badge-admin">🔔 ADMIN NOTIFICATION</div>
             <h2>📦 NOUVELLE DEMANDE CLIENT</h2>

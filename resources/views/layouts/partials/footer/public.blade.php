@@ -75,7 +75,7 @@
                     <div class="elementor-element elementor-element-1084eb0 elementor-widget elementor-widget-image"
                          data-id="1084eb0" data-element_type="widget" data-widget_type="image.default">
                         <img loading="lazy" width="2560" height="822"
-                             src="/assets/uploads/2024/07/PORTABOX-SOLUTION-2560x822-1.png"
+                             src="/assets/uploads/2024/07/Porto-Contentores-2560x822-1.png"
                              class="attachment-full size-full wp-image-12730" alt=""
                              sizes="(max-width: 2560px) 100vw, 2560px"/>
                     </div>
@@ -281,7 +281,7 @@
                         <div class="elementor-element elementor-element-6113d52 elementor-widget elementor-widget-image"
                              data-id="6113d52" data-element_type="widget" data-widget_type="image.default">
                             <img loading="lazy" width="2560" height="822"
-                                 src="/assets/uploads/2024/07/PORTABOX-SOLUTION-2560x822-1.png"
+                                 src="/assets/uploads/2024/07/Porto-Contentores-2560x822-1.png"
                                  class="attachment-full size-full wp-image-12730" alt=""
                                  sizes="(max-width: 2560px) 100vw, 2560px"/>
                         </div>

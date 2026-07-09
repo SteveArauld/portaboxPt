@@ -30,7 +30,7 @@
 <body>
 <div class="email-container">
     <div class="header">
-        <img src="{{ asset('/assets/uploads/2024/07/PORTABOX-SOLUTION-2560x822-1.png') }}" alt="{{ config('app.name') }}">
+        <img src="{{ asset('/assets/uploads/2024/07/Porto-Contentores-2560x822-1.png') }}" alt="{{ config('app.name') }}">
         <div class="badge">🔔 {{ __('Notification administrateur') }}</div>
         <h2>📦 {{ __('Nouvelle commande') }} #{{ $order->order_number }}</h2>
     </div>

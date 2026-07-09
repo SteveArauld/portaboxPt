@@ -281,7 +281,7 @@
                         <figure class="wp-block-image size-full is-resized">
                             <img fetchpriority="high" decoding="async"
                                  width="512" height="512"
-                                 src="/assets/uploads/2026/02/cropped-PORTABOX-SOLUTION-scaled-1.png"
+                                 src="/assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1.png"
                                  alt="" class="wp-image-12724"
                                  style="width:318px;height:auto"
                                  sizes="(max-width: 512px) 100vw, 512px">

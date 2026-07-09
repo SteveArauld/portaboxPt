@@ -425,7 +425,7 @@
                                 <div class="elementor-element elementor-element-f282072 elementor-widget elementor-widget-image"
                                      data-id="f282072" data-element_type="widget" data-widget_type="image.default">
                                     <img fetchpriority="high" decoding="async" width="300" height="300"
-                                         src="/assets/uploads/2026/02/cropped-PORTABOX-SOLUTION-scaled-1-300x300.png"
+                                         src="/assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1-300x300.png"
                                          class="attachment-medium size-medium wp-image-12724" alt=""
                                          sizes="(max-width: 300px) 100vw, 300px">
                                 </div>
