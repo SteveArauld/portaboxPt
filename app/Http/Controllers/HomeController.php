@@ -602,7 +602,7 @@ public function index()
 
     public function contato()
     {
-        return view('front.pages.contato');
+        return view('front.pages.contact');
     }
 
     public function legalNotice()
