@@ -1378,7 +1378,7 @@
                                                 <span class="spinner" style="display: none;"></span>
                                             </button>
                                             <p class="form-footnote">
-                                                {{ __('En cliquant sur ce bouton, vous acceptez d\'être contacté par nos conseillers') }}
+                                                {{ __('En cliquant sur ce bouton, vous acceptez d\'être contatoé par nos conseillers') }}
                                             </p>
                                         </div>
                                     </div>

@@ -1097,7 +1097,7 @@ body .swiper:not(.swiper-initialized) .swiper-wrapper {overflow: visible;}
 /*-------------------------------------------------------------------------------------------------------------
 	3. CUSTOM PLUGIN
 /*------------------------------------------------------------------------------------------------------------*/
-/*** Contact Form 7 ***/
+/*** contato Form 7 ***/
 .wpcf7 .wpcf7-form {
 	display: flex;
 	flex-direction: column;

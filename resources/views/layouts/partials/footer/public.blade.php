@@ -218,8 +218,8 @@
                                     <li class="{{ request()->routeIs('faq') ? 'active-footer' : '' }}">
                                         <a href="{{ route('faq') }}">{{ __('footer.info.faq') }}</a>
                                     </li>
-                                    <li class="{{ request()->routeIs('contact') ? 'active-footer' : '' }}">
-                                        <a href="{{ route('contact') }}">{{ __('footer.info.contact') }}</a>
+                                    <li class="{{ request()->routeIs('contato') ? 'active-footer' : '' }}">
+                                        <a href="{{ route('contato') }}">{{ __('footer.info.contato') }}</a>
                                     </li>
                                     <li class="{{ request()->routeIs('shop') ? 'active-footer' : '' }}">
                                         <a href="{{ route('shop') }}">{{ __('footer.info.shop') }}</a>
@@ -404,9 +404,9 @@
                             <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12327 ts-normal-menu {{ request()->routeIs('faq') ? 'active-menu' : '' }}">
                                 <a href="{{ route('faq') }}"><span class="menu-label">{{ __('header.menu.faq') }}</span></a>
                             </li>
-                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12329 ts-normal-menu {{ request()->routeIs('contact') ? 'active-menu' : '' }}">
-                                <a href="{{ route('contact') }}"><span
-                                            class="menu-label">{{ __('header.menu.contact') }}</span></a>
+                            <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12329 ts-normal-menu {{ request()->routeIs('contato') ? 'active-menu' : '' }}">
+                                <a href="{{ route('contato') }}"><span
+                                            class="menu-label">{{ __('header.menu.contato') }}</span></a>
                             </li>
                         </ul>
                     </nav>
@@ -575,7 +575,7 @@
         </div>
         <div class="chaty-channel Email-channel-link" id="Email-0-channel" data-id="Email-0" data-widget="0"
              data-channel="Email">
-            <a href="mailto:contact@portaboxsolutions.com" target="" rel="nofollow noopener"
+            <a href="mailto:contato@portaboxsolutions.com" target="" rel="nofollow noopener"
                aria-label="Email" class="chaty-tooltip Email-channel chaty-link chaty-email-channel pos-left"
                data-form="chaty-form-0-Email" data-hover="Email">
                     <span class="chaty-icon channel-icon-Email">

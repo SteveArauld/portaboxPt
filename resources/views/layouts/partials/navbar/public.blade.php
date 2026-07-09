@@ -5,9 +5,9 @@
 
             <div class="header-right">
                 <div class="hotline">
-                    <a href="tel:contact@portaboxsolutions.com">
+                    <a href="tel:contato@portocontentores.com">
                         <span>{{ __('header.email') }}</span>
-                        <span>contact@portaboxsolutions.com</span>
+                        <span>contato@portocontentores.com</span>
                     </a>
                 </div>
             </div>
@@ -41,9 +41,9 @@
 
                 <div class="header-center">
                     <div class="hotline">
-                        <a href="tel:contact@portaboxsolutions.com">
+                        <a href="tel:contato@portocontentores.com">
                             <span>{{ __('header.email') }}</span>
-                            <span>contact@portaboxsolutions.com</span>
+                            <span>contato@portocontentores.com</span>
                         </a>
                     </div>
 
@@ -263,9 +263,9 @@
                                     </a>
                                 </li>
 
-                                <li class="menu-item {{ request()->routeIs('contact') ? 'active-menu' : '' }}">
-                                    <a href="{{ route('contact') }}">
-                                        <span class="menu-label">{{ __('header.menu.contact') }}</span>
+                                <li class="menu-item {{ request()->routeIs('contato') ? 'active-menu' : '' }}">
+                                    <a href="{{ route('contato') }}">
+                                        <span class="menu-label">{{ __('header.menu.contato') }}</span>
                                     </a>
                                 </li>
 

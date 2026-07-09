@@ -61,7 +61,7 @@
                             <strong>{{ __('terms.company_name') }}</strong><br>
                             📍 <strong>{{ __('terms.section2.legal_address') }}</strong> Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
                             📞 <strong>{{ __('terms.section2.phone') }}</strong> +39 350 872 4295<br>
-                            📧 <strong>{{ __('terms.section2.email') }}</strong> <a>contact@portaboxsolutions.com</a><br>
+                            📧 <strong>{{ __('terms.section2.email') }}</strong> <a>contato@portocontentores.com</a><br>
                             🌐 <strong>{{ __('terms.section2.website') }}</strong> <a href="{{ route('home') }}">{{ route('home') }}</a>
                         </p>
 
@@ -234,7 +234,7 @@
                         <p>{{ __('terms.section9.text1') }}</p>
 
                         <p>
-                            📧 <a>contact@portaboxsolutions.com</a><br>
+                            📧 <a>contato@portocontentores.com</a><br>
                             📱 WhatsApp: +39 377 594 6734<br>
                             🕘 {{ __('terms.section9.hours') }} {{ __('terms.section9.hours_text') }}
                         </p>
@@ -255,7 +255,7 @@
                             <li>{{ __('terms.section10.right5') }}</li>
                         </ul>
 
-                        <p>{{ __('terms.section10.text4') }} <strong><a>contact@portaboxsolutions.com</a></strong></p>
+                        <p>{{ __('terms.section10.text4') }} <strong><a>contato@portocontentores.com</a></strong></p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
 
@@ -284,7 +284,7 @@
                         <p>
                             <strong>{{ __('terms.company_name') }}</strong><br>
                             📍 Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
-                            📧 <a>contact@portaboxsolutions.com</a><br>
+                            📧 <a>contato@portocontentores.com</a><br>
                             📱 +39 +39 351 000 0001<br>
                             🌐 <a href="{{ route('home') }}">{{ route('home') }}</a>
                         </p>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', __('contact.page_title'))
+@section('title', __('contato.page_title'))
 
 @push('styles')
 
@@ -32,7 +32,7 @@
                             <div class="e-con-inner">
                                 <div class="elementor-element elementor-element-aa94d98 elementor-widget elementor-widget-heading"
                                      data-id="aa94d98" data-element_type="widget" data-widget_type="heading.default">
-                                    <h1 class="elementor-heading-title elementor-size-default">{{ __('contact.title') }}</h1>
+                                    <h1 class="elementor-heading-title elementor-size-default">{{ __('contato.title') }}</h1>
                                 </div>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                                     <div class="elementor-element elementor-element-f3c70fc elementor-widget elementor-widget-text-editor"
                                          data-id="f3c70fc" data-element_type="widget"
                                          data-widget_type="text-editor.default">
-                                        <p>{{ __('contact.address') }}</p>
+                                        <p>{{ __('contato.address') }}</p>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-530c8c7 e-con-full e-flex e-con e-child"
@@ -82,7 +82,7 @@
                                     <div class="elementor-element elementor-element-7123791 elementor-widget elementor-widget-text-editor"
                                          data-id="7123791" data-element_type="widget"
                                          data-widget_type="text-editor.default">
-                                        <p>{{ __('contact.phone') }}</p>
+                                        <p>{{ __('contato.phone') }}</p>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-a647ddf e-con-full e-flex e-con e-child"
@@ -102,9 +102,9 @@
                                     <div class="elementor-element elementor-element-0605244 elementor-widget elementor-widget-text-editor"
                                          data-id="0605244" data-element_type="widget"
                                          data-widget_type="text-editor.default">
-                                        <p>{{ __('contact.email') }} <strong data-start="1196" data-end="1231"><a
+                                        <p>{{ __('contato.email') }} <strong data-start="1196" data-end="1231"><a
                                                         class="decorated-link cursor-pointer" rel="noopener"
-                                                        data-start="1198" data-end="1229">contact@portaboxsolutions.com</a></strong>
+                                                        data-start="1198" data-end="1229">contato@portocontentores.com</a></strong>
                                         </p>
                                     </div>
                                 </div>
@@ -115,7 +115,7 @@
                             <div class="e-con-inner">
                                 <div class="elementor-element elementor-element-6b98511 elementor-widget elementor-widget-heading"
                                      data-id="6b98511" data-element_type="widget" data-widget_type="heading.default">
-                                    <h3 class="elementor-heading-title elementor-size-default">{{ __('contact.question_title') }}</h3>
+                                    <h3 class="elementor-heading-title elementor-size-default">{{ __('contato.question_title') }}</h3>
                                 </div>
                                 <div class="elementor-element elementor-element-4d91c85 elementor-widget elementor-widget-shortcode"
                                      data-id="4d91c85" data-element_type="widget" data-widget_type="shortcode.default">
@@ -126,7 +126,7 @@
                                                                                    aria-atomic="true"></p>
                                                 <ul></ul>
                                             </div>
-                                            <form id="contact-form" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
+                                            <form id="contato-form" class="wpcf7-form init" aria-label="contato form" novalidate="novalidate" data-status="init">
                                                 @csrf
                                                 <p class="ts-col-6">
                                                     <label>
@@ -134,8 +134,8 @@
                 <input size="40" maxlength="400"
                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                        aria-required="true" aria-invalid="false"
-                       placeholder="{{ __('contact.form.name') }}"
-                       value="" type="text" name="your-name" id="contact-name" required>
+                       placeholder="{{ __('contato.form.name') }}"
+                       value="" type="text" name="your-name" id="contato-name" required>
             </span>
                                                     </label>
                                                 </p>
@@ -145,8 +145,8 @@
                 <input size="40" maxlength="400"
                        class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
                        aria-required="true" aria-invalid="false"
-                       placeholder="{{ __('contact.form.email') }}"
-                       value="" type="email" name="your-email" id="contact-email" required>
+                       placeholder="{{ __('contato.form.email') }}"
+                       value="" type="email" name="your-email" id="contato-email" required>
             </span>
                                                     </label>
                                                 </p>
@@ -156,8 +156,8 @@
                 <input size="40" maxlength="400"
                        class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                        aria-required="true" aria-invalid="false"
-                       placeholder="{{ __('contact.form.subject') }}"
-                       value="" type="text" name="your-subject" id="contact-subject" required>
+                       placeholder="{{ __('contato.form.subject') }}"
+                       value="" type="text" name="your-subject" id="contato-subject" required>
             </span>
                                                     </label>
                                                 </p>
@@ -167,23 +167,23 @@
                 <textarea cols="40" rows="10" maxlength="2000"
                           class="wpcf7-form-control wpcf7-textarea"
                           aria-invalid="false"
-                          placeholder="{{ __('contact.form.message') }}"
-                          name="your-message" id="contact-message" required></textarea>
+                          placeholder="{{ __('contato.form.message') }}"
+                          name="your-message" id="contato-message" required></textarea>
             </span>
                                                     </label>
                                                 </p>
                                                 <p class="wpcf7-form-submit">
-                                                    <button type="submit" id="contact-submit" class="wpcf7-form-control wpcf7-submit">
-                                                        <span class="btn-text">{{ __('contact.form.submit') }}</span>
+                                                    <button type="submit" id="contato-submit" class="wpcf7-form-control wpcf7-submit">
+                                                        <span class="btn-text">{{ __('contato.form.submit') }}</span>
                                                         <span class="spinner" style="display: none;"></span>
                                                     </button>
                                                 </p>
-                                                <div class="wpcf7-response-output success-message" aria-hidden="true" id="contact-response" style="display: none;"></div>
+                                                <div class="wpcf7-response-output success-message" aria-hidden="true" id="contato-response" style="display: none;"></div>
                                             </form>
 
                                             <style>
                                                 /* Style du bouton avec loader */
-                                                #contact-submit {
+                                                #contato-submit {
                                                     position: relative;
                                                     padding: 12px 30px;
                                                     background-color: #007bff;
@@ -201,11 +201,11 @@
                                                     gap: 10px;
                                                 }
 
-                                                #contact-submit:hover {
+                                                #contato-submit:hover {
                                                     background-color: #0056b3;
                                                 }
 
-                                                #contact-submit:disabled {
+                                                #contato-submit:disabled {
                                                     opacity: 0.7;
                                                     cursor: not-allowed;
                                                 }
@@ -286,17 +286,17 @@
 
                                             <script>
                                                 document.addEventListener('DOMContentLoaded', function() {
-                                                    const form = document.getElementById('contact-form');
-                                                    const submitBtn = document.getElementById('contact-submit');
+                                                    const form = document.getElementById('contato-form');
+                                                    const submitBtn = document.getElementById('contato-submit');
                                                     const btnText = submitBtn.querySelector('.btn-text');
                                                     const spinner = submitBtn.querySelector('.spinner');
-                                                    const responseDiv = document.getElementById('contact-response');
+                                                    const responseDiv = document.getElementById('contato-response');
 
                                                     // Récupérer tous les champs du formulaire
-                                                    const nameInput = document.getElementById('contact-name');
-                                                    const emailInput = document.getElementById('contact-email');
-                                                    const subjectInput = document.getElementById('contact-subject');
-                                                    const messageInput = document.getElementById('contact-message');
+                                                    const nameInput = document.getElementById('contato-name');
+                                                    const emailInput = document.getElementById('contato-email');
+                                                    const subjectInput = document.getElementById('contato-subject');
+                                                    const messageInput = document.getElementById('contato-message');
                                                     const allInputs = [nameInput, emailInput, subjectInput, messageInput];
 
                                                     // Fonction pour vider tous les champs
@@ -366,7 +366,7 @@
 
                                                         // Validation
                                                         if (!validateForm()) {
-                                                            alert('{{ __("contact.form.validation_error") }}');
+                                                            alert('{{ __("contato.form.validation_error") }}');
                                                             return;
                                                         }
 
@@ -394,7 +394,7 @@
                                                             submitBtn.disabled = false;
 
                                                             // Afficher le message de succès (permanent)
-                                                            responseDiv.textContent = '{{ __("contact.form.success") }}';
+                                                            responseDiv.textContent = '{{ __("contato.form.success") }}';
                                                             responseDiv.style.display = 'block';
 
                                                             // Optionnel : faire défiler jusqu'au message

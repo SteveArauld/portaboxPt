@@ -88,7 +88,7 @@
             <div class="info-title">📬 {{ __('Prochaines étapes') }}</div>
             <ul style="margin: 0; padding-left: 20px; color: #2d3748;">
                 <li>{{ __('Notre équipe examine votre commande.') }}</li>
-                <li>{{ __('Un conseiller vous contactera pour finaliser le paiement et la livraison.') }}</li>
+                <li>{{ __('Un conseiller vous contatoera pour finaliser le paiement et la livraison.') }}</li>
                 <li>{{ __('Vous recevrez les informations de suivi dès l\'expédition.') }}</li>
             </ul>
         </div>

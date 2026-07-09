@@ -18,8 +18,8 @@
 {{--    <link rel='stylesheet' id='chaty-css-css'
           href='{{ asset("assets/plugins/chaty-pro/css/chaty-front.minb5e3.css") }}'
           type='text/css' media='all'/>--}}
-    <link rel='stylesheet' id='contact-form-7-css'
-          href='{{ asset("assets/plugins/contact-form-7/includes/css/styles1b46.css") }}' type='text/css'
+    <link rel='stylesheet' id='contato-form-7-css'
+          href='{{ asset("assets/plugins/contato-form-7/includes/css/styles1b46.css") }}' type='text/css'
           media='all'/>
     <link rel='stylesheet' id='sr7css-css'
           href='{{ asset("assets/plugins/revslider/public/css/sr7659f.css") }}' type='text/css'
@@ -640,8 +640,8 @@
         id="wp-i18n-js"></script>
 
 <script type="text/javascript"
-        src="{{ asset('assets/plugins/contact-form-7/includes/js/index1b46.html') }}"
-        id="contact-form-7-js"></script>
+        src="{{ asset('assets/plugins/contato-form-7/includes/js/index1b46.html') }}"
+        id="contato-form-7-js"></script>
 
 <script type="text/javascript" src="{{ asset('assets/plugins/themesky/js/themeskyc358.html') }}"
         id="ts-script-js"></script>

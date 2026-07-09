@@ -33,7 +33,7 @@ Route::get('/ordine-confermato/{orderNumber}', [OrderController::class, 'confirm
 Route::get('/chi-siamo', [HomeController::class, 'about'])->name('about');
 Route::get('/negozio', [HomeController::class, 'showShop'])->name('shop');
 Route::get('/domande-frequenti-faq', [HomeController::class, 'faq'])->name('faq');
-Route::get('/contatto', [HomeController::class, 'contact'])->name('contact');
+Route::get('/contatto', [HomeController::class, 'contato'])->name('contato');
 
 // Legal Pages
 Route::get('/menzioni-legali', [HomeController::class, 'legalNotice'])->name('legal.notice');

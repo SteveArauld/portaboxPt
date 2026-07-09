@@ -392,7 +392,7 @@ class HomeController extends Controller
 
             // Email pour l'admin
             Mail::send('emails.product-inquiry', $details, function ($message) use ($details) {
-                $message->to(config('mail.admin_address', 'contact@portaboxsolutions.com'))
+                $message->to(config('mail.admin_address', 'contato@portocontentores.com'))
                     ->subject(__('email.inquiry_admin_subject', ['product' => $details['product_name']]))
                     ->from(config('mail.from.address'), config('mail.from.name'))
                     ->replyTo($details['email'], $details['name']);
@@ -585,9 +585,9 @@ class HomeController extends Controller
         return view('front.pages.faq');
     }
 
-    public function contact()
+    public function contato()
     {
-        return view('front.pages.contact');
+        return view('front.pages.contato');
     }
 
     public function legalNotice()

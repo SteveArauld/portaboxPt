@@ -150,7 +150,7 @@
 
                         <h3 class="wp-block-heading">{{ __('refund.section6.subtitle1') }}</h3>
 
-                        <p>{{ __('refund.section6.text1') }}<br>📧 <strong><a>contact@portaboxsolutions.com</a></strong></p>
+                        <p>{{ __('refund.section6.text1') }}<br>📧 <strong><a>contato@portocontentores.com</a></strong></p>
 
                         <p>{{ __('refund.section6.text2') }}</p>
 
@@ -209,7 +209,7 @@
                         <p>{{ __('refund.section8.text1') }}</p>
 
                         <p>
-                            📧 <strong><a>contact@portaboxsolutions.com</a></strong><br>
+                            📧 <strong><a>contato@portocontentores.com</a></strong><br>
                             📱 <strong>{{ __('refund.section8.whatsapp') }}</strong> +39 350 872 4295<br>
                             📍 <strong>{{ __('refund.section8.address') }}</strong> Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
                             🕘 <strong>{{ __('refund.section8.hours') }}</strong> {{ __('refund.section8.hours_text') }}

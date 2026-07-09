@@ -65,7 +65,7 @@
                         <p>🌍 <strong>{{ __('delivery.section2.international') }}</strong></p>
 
                         <p>{{ __('delivery.section2.international_text') }}<br>
-                            📧 <strong><a>contact@portaboxsolutions.com</a></strong>
+                            📧 <strong><a>contato@portocontentores.com</a></strong>
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -158,7 +158,7 @@
                         <p>{{ __('delivery.section5.text2') }}</p>
 
                         <p>{{ __('delivery.section5.text3') }}<br>
-                            📧 <strong><a>contact@portaboxsolutions.com</a></strong>
+                            📧 <strong><a>contato@portocontentores.com</a></strong>
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -206,7 +206,7 @@
                             <li>{{ __('delivery.section8.item2') }}</li>
                             <li>{{ __('delivery.section8.item3') }}</li>
                             <li>{{ __('delivery.section8.item4') }}<br>
-                                📧 <strong><a>contact@portaboxsolutions.com</a></strong>
+                                📧 <strong><a>contato@portocontentores.com</a></strong>
                             </li>
                         </ul>
 
@@ -241,7 +241,7 @@
                         <h3 class="wp-block-heading">{{ __('delivery.section9.subtitle') }}</h3>
 
                         <p>{{ __('delivery.section9.text2') }}<br>
-                            📧 <strong><a>contact@portaboxsolutions.com</a></strong>
+                            📧 <strong><a>contato@portocontentores.com</a></strong>
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -253,7 +253,7 @@
                         <p>
                             📱 <strong>{{ __('delivery.section10.whatsapp') }}</strong> +39 350 872 4295<br>
                             📧 <strong>{{ __('delivery.section10.email') }}</strong>
-                            <a>contact@portaboxsolutions.com</a><br>
+                            <a>contato@portocontentores.com</a><br>
                             📍 <strong>{{ __('delivery.section10.address') }}</strong> Via Case Rosse, 19/B – 84131
                             Salerno (SA), Italia<br>
                             🕘

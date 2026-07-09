@@ -218,7 +218,7 @@
             color: #718096;
         }
 
-        .contact-info {
+        .contato-info {
             margin-bottom: 15px;
         }
 
@@ -325,7 +325,7 @@
                 <div class="info-title">📬 {{ __('email.next_steps') }}</div>
                 <ul style="margin: 0; padding-left: 20px; color: #2d3748;">
                     <li>{{ __('email.step_review') }}</li>
-                    <li>{{ __('email.step_contact') }}</li>
+                    <li>{{ __('email.step_contato') }}</li>
                     <li>{{ __('email.step_quote') }}</li>
                     <li>{{ __('email.step_followup') }}</li>
                 </ul>
@@ -341,7 +341,7 @@
         </div>
 
         <div class="footer">
-            <div class="contact-info">
+            <div class="contato-info">
                 <table width="100%" cellpadding="0" cellspacing="0" style="width: 100%;">
                     <tr>
                         <td style="padding: 5px 0; color: #1e3c72;">
