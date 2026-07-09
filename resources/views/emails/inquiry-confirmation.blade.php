@@ -303,7 +303,7 @@
                 </div>
 
                 <div class="info-box">
-                    <div class="info-title">📍 {{ __('email.location_info') }}</div>
+                    <div class="info-title"> {{ __('email.location_info') }}</div>
                     <p style="margin: 0; color: #2d3748;">
                         <strong>{{ __('email.country') }}:</strong> {{ $country ?? __('email.not_specified') }}<br>
                         <strong>{{ __('email.region') }}:</strong> {{ $region ?? __('email.not_specified') }}<br>
@@ -350,7 +350,7 @@
                     </tr>
                     <tr>
                         <td style="padding: 5px 0; color: #718096;">
-                            📧 {{ config('mail.from.address') }}
+                             {{ config('mail.from.address') }}
                         </td>
                     </tr>
                     @if(config('app.phone'))

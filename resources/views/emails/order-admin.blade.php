@@ -52,7 +52,7 @@
             </table>
         </div>
 
-        <div class="section-title">📍 {{ __('Adresse de facturation') }}</div>
+        <div class="section-title"> {{ __('Adresse de facturation') }}</div>
         <div class="info-card">
             <span class="val">
                 {{ $order->address }}<br>

@@ -150,7 +150,7 @@
 
                         <h3 class="wp-block-heading">{{ __('refund.section6.subtitle1') }}</h3>
 
-                        <p>{{ __('refund.section6.text1') }}<br>📧 <strong><a>contato@portocontentores.com</a></strong></p>
+                        <p>{{ __('refund.section6.text1') }}<br> <strong><a>contato@portocontentores.com</a></strong></p>
 
                         <p>{{ __('refund.section6.text2') }}</p>
 
@@ -175,7 +175,7 @@
                         </ul>
 
                         <p><strong>{{ __('refund.section6.text7') }}</strong></p>
-                        <p><strong>{{ __('refund.company_name') }}</strong><br>📍 Via Case Rosse, 19/B – 84131 Salerno (SA), Italia</p>
+                        <p><strong>{{ __('refund.company_name') }}</strong><br> Via Case Rosse, 19/B – 84131 Salerno (SA), Italia</p>
 
                         <p>{{ __('refund.section6.text8') }} <strong>7</strong> {{ __('refund.section6.text9') }} {{ __('refund.section6.text10') }}</p>
 
@@ -209,10 +209,10 @@
                         <p>{{ __('refund.section8.text1') }}</p>
 
                         <p>
-                            📧 <strong><a>contato@portocontentores.com</a></strong><br>
-                            📱 <strong>{{ __('refund.section8.whatsapp') }}</strong> +39 350 872 4295<br>
-                            📍 <strong>{{ __('refund.section8.address') }}</strong> Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
-                            🕘 <strong>{{ __('refund.section8.hours') }}</strong> {{ __('refund.section8.hours_text') }}
+                             <strong><a>contato@portocontentores.com</a></strong><br>
+                            <strong>{{ __('refund.section8.whatsapp') }}</strong> +39 350 872 4295<br>
+                             <strong>{{ __('refund.section8.address') }}</strong> Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
+                            <strong>{{ __('refund.section8.hours') }}</strong> {{ __('refund.section8.hours_text') }}
                         </p>
 
                         <p>{{ __('refund.section8.text2') }}</p>
@@ -235,7 +235,7 @@
                         <hr class="wp-block-separator has-alpha-channel-opacity">
 
                         <p>
-                            📅 <strong>{{ __('refund.last_update') }}</strong> {{ __('refund.date') }}<br>
+                            <strong>{{ __('refund.last_update') }}</strong> {{ __('refund.date') }}<br>
                             © <strong>{{ __('refund.company_name') }}</strong> – {{ __('refund.copyright') }}
                         </p>
 

@@ -398,7 +398,7 @@
             <div style="text-align: center;">
                 <strong style="color: #2c3e50;">{{ config('app.name') }}</strong>
                 <br>
-                <span style="color: #718096;">📧 {{ config('mail.from.address') }}</span>
+                <span style="color: #718096;"> {{ config('mail.from.address') }}</span>
                 @if(config('app.phone'))
                 <br>
                 <span style="color: #718096;"> {{ config('app.phone') }}</span>

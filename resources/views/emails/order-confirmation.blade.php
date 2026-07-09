@@ -68,7 +68,7 @@
         </table>
 
         <div class="info-box">
-            <div class="info-title">📍 {{ __('Adresse de livraison') }}</div>
+            <div class="info-title"> {{ __('Adresse de livraison') }}</div>
             <p style="margin: 0; color: #2d3748;">
                 @if ($order->ship_to_different)
                     {{ $order->shipping_name }}<br>
@@ -102,7 +102,7 @@
 
     <div class="footer">
         <strong style="color:#1e3c72;">{{ config('app.name') }}</strong><br>
-        📧 {{ config('mail.from.address') }}<br>
+         {{ config('mail.from.address') }}<br>
         © {{ date('Y') }} {{ config('app.name') }}. {{ __('Tous droits réservés.') }}
     </div>
 </div>
