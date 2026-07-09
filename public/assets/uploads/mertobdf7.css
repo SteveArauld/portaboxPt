@@ -1,0 +1,214 @@
+
+:root {
+	--ts-logo-width: 126px;
+	
+	--ts-font-family: Poppins;
+	--ts-font-style: normal;
+	--ts-font-weight: 400;
+	--ts-letter-spacing: 0em;
+	
+	--ts-heading-font-family: Poppins;
+	--ts-heading-font-style: normal;
+	--ts-heading-font-weight: 600;
+	--ts-heading-letter-spacing: 0em;
+	
+	--ts-btn-font-family: Poppins;
+	--ts-btn-font-style: normal;
+	--ts-btn-font-weight: 600;
+	--ts-btn-letter-spacing: 0em;
+	
+	--ts-menu-font-family: Poppins;
+	--ts-menu-font-weight: 500;
+	--ts-menu-font-size: 14px;
+	--ts-menu-letter-spacing: inherit;
+	
+	--ts-v-menu-font-family: Poppins;
+	--ts-v-menu-font-weight: 500;
+	--ts-v-menu-font-size: inherit;
+	--ts-v-menu-letter-spacing: 0em;
+	
+	--ts-body-font-size: 14px;
+	--ts-line-height: 24px;
+	--ts-btn-font-size: 14px;
+	--ts-btn-line-height: 24px;
+	--ts-product-font-size: 14px;
+	--ts-h1-font-size: 40px;
+	--ts-h1-line-height: 54px;
+	--ts-h2-font-size: 30px;
+	--ts-h2-line-height: 40px;
+	--ts-h3-font-size: 26px;
+	--ts-h3-line-height: 32px;
+	--ts-h4-font-size: 20px;
+	--ts-h4-line-height: 30px;
+	--ts-h5-font-size: 16px;
+	--ts-h5-line-height: 24px;
+	--ts-h6-font-size: 14px;
+	--ts-h6-line-height: 20px;
+
+	--ts-primary-color: rgba(222,16,16,1);
+	--ts-text-in-primary-color: rgba(255,255,255,1);
+	--ts-main-bg: rgba(255,255,255,1);
+	--ts-text-color: rgba(0,0,0,1);
+	--ts-heading-color: rgba(0,0,0,1);
+	--ts-gray-color: rgba(132,132,132,1);
+	--ts-hightlight: rgba(252,201,4,1);
+	--ts-dropdown-color: rgba(0,0,0,1);
+	--ts-dropdown-bg: rgba(255,255,255,1);
+	--ts-link-color: rgba(222,16,16,1);
+	--ts-link-hover-color: rgba(222,16,16,1);
+	--ts-border: rgba(229,229,229,1);
+
+	--ts-input-color: rgba(0,0,0,1);
+	--ts-input-background-color: rgba(235,238,240,1);
+	--ts-input-border: rgba(235,238,240,1);
+
+	--ts-btn-color: rgba(255,255,255,1);
+	--ts-btn-bg: rgba(0,0,0,1);
+	--ts-btn-border: rgba(0,0,0,1);
+	--ts-btn-hover-color: rgba(255,255,255,1);
+	--ts-btn-hover-bg: rgba(222,16,16,1);
+	--ts-btn-hover-border: rgba(222,16,16,1);
+	
+	--ts-btn-addtocart-color: rgba(0,0,0,1);
+	--ts-btn-addtocart-bg: rgba(235,238,240,1);
+	--ts-btn-addtocart-border: rgba(235,238,240,1);
+	--ts-btn-addtocart-hover-color: rgba(255,255,255,1);
+	--ts-btn-addtocart-hover-bg: rgba(222,16,16,1);
+	--ts-btn-addtocart-hover-border: rgba(222,16,16,1);
+	
+	--ts-btn-thumbnail-color: rgba(0,0,0,1);
+	--ts-btn-thumbnail-bg: rgba(235,238,240,1);
+	--ts-btn-thumbnail-hover-color: rgba(255,255,255,1);
+	--ts-btn-thumbnail-hover-bg: rgba(0,0,0,1);
+	
+	--ts-rating-color: rgba(0,0,0,1);
+	--ts-product-price-color: rgba(0,0,0,1);
+	--ts-product-regular-price-color: rgba(129,131,136,1);
+	
+	--ts-sale-label-color: rgba(255,255,255,1);
+	--ts-sale-label-bg: rgba(222,16,16,1);
+	--ts-new-label-color: rgba(255,255,255,1);
+	--ts-new-label-bg: rgba(132,167,169,1);
+	--ts-hot-label-color: rgba(255,255,255,1);
+	--ts-hot-label-bg: rgba(0,0,0,1);
+	--ts-soldout-label-color: rgba(255,255,255,1);
+	--ts-soldout-label-bg: rgba(145,145,145,1);
+	
+	--ts-breadcrumb-bg: rgba(255,255,255,1);
+	--ts-breadcrumb-color: rgba(129,131,136,1);
+	--ts-breadcrumb-2-color: rgba(255,255,255,1);
+	--ts-breadcrumb-link-color: rgba(0,0,0,1);
+	
+	--ts-notice-bg: rgba(0,0,0,1);
+	--ts-notice-color: rgba(255,255,255,1);
+	
+	--ts-hd-search-bg: rgba(235,238,240,1);
+	--ts-hd-search-color: rgba(0,0,0,1);
+	--ts-hd-search-border: rgba(235,238,240,1);
+	--ts-hd-search-focus-bg: rgba(235,238,240,1);
+	--ts-hd-search-focus-color: rgba(0,0,0,1);
+	--ts-hd-search-focus-border: rgba(235,238,240,1);
+	--ts-hd-search-btn-bg: rgba(0,0,0,1);
+	--ts-hd-search-btn-color: rgba(255,255,255,1);
+	--ts-hd-search-btn-border: rgba(0,0,0,1);
+	
+	--ts-vertical-menu-heading-bg: rgba(255,255,255,1);
+	--ts-vertical-menu-heading-color: rgba(0,0,0,1);
+	--ts-vertical-menu-heading-border: rgba(229,229,229,1);
+	
+	--ts-mobile-menu-bg: rgba(255,255,255,1);
+	--ts-mobile-menu-color: rgba(0,0,0,1);
+	--ts-tab-menu-bg: rgba(235,239,240,1);
+	--ts-tab-menu-color: rgba(0,0,0,1);
+	--ts-tab-active-menu-bg: rgba(0,0,0,1);
+	--ts-tab-active-menu-color: rgba(255,255,255,1);
+}
+
+.ts-header {
+	--ts-hd-top-bg: rgba(0,0,0,1);
+	--ts-hd-top-color: rgba(255,255,255,1);
+	--ts-hd-top-border: rgba(229,229,229,1);
+	--ts-hd-top-link-hover: rgba(222,16,16,1);
+	
+	--ts-hd-middle-bg: rgba(255,255,255,1);
+	--ts-hd-middle-color: rgba(0,0,0,1);
+	--ts-hd-middle-border: rgba(229,229,229,1);
+	--ts-hd-middle-link-hover: rgba(222,16,16,1);
+	
+	--ts-hd-bottom-bg: rgba(255,255,255,1);
+	--ts-hd-bottom-color: rgba(0,0,0,1);
+	--ts-hd-bottom-border: rgba(229,229,229,1);
+	--ts-hd-bottom-link-hover: rgba(222,16,16,1);
+	
+	--ts-main-menu-border: rgba(0,0,0,1);
+	--ts-cart-count-bg: rgba(222,16,16,1);
+	--ts-cart-count-color: rgba(255,255,255,1);
+}
+
+.footer-container {
+	--ts-footer-bg: rgba(27,31,34,1);
+	--ts-footer-color: rgba(153,153,153,1);
+	--ts-footer-heading-color: rgba(255,255,255,1);
+	--ts-footer-link-color: rgba(255,255,255,1);
+	--ts-footer-link-hover-color: rgba(222,16,16,1);
+}
+
+@media only screen and (max-width: 1400px){
+	:root {
+		--ts-menu-font-size: 13px;
+		--ts-v-menu-font-size: -1px;
+		--ts-body-font-size: 13px;
+		--ts-line-height: 20px;
+		--ts-product-font-size: 13px;
+		--ts-btn-font-size: 13px;
+	}
+}
+
+@media only screen and (max-width: 1200px){
+	:root {
+		--ts-logo-width: 100px;
+		--ts-h1-font-size: 30px;
+		--ts-h1-line-height: 40px;
+		--ts-h2-font-size: 25px;
+		--ts-h2-line-height: 30px;
+		--ts-h3-font-size: 22px;
+		--ts-h3-line-height: 28px;
+		--ts-h4-font-size: 18px;
+		--ts-h4-line-height: 24px;
+		--ts-h5-font-size: 15px;
+		--ts-h5-line-height: 20px;
+		--ts-h6-font-size: 14px;
+		--ts-h6-line-height: 20px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	:root {
+		--ts-logo-width: 86px;
+		--ts-h1-font-size: 30px;
+		--ts-h1-line-height: 40px;
+		--ts-h2-font-size: 25px;
+		--ts-h2-line-height: 30px;
+		--ts-h3-font-size: 22px;
+		--ts-h3-line-height: 28px;
+		--ts-h4-font-size: 18px;
+		--ts-h4-line-height: 24px;
+		--ts-h5-font-size: 15px;
+		--ts-h5-line-height: 20px;
+		--ts-h6-font-size: 14px;
+		--ts-h6-line-height: 20px;
+		--ts-menu-font-size: 14px;
+	}
+}
+
+table.group_table .woocommerce-grouped-product-list-item__label a,
+.woocommerce ul.cart_list li .product-name a, 
+.woocommerce ul.product_list_widget li .product-name a,
+.woocommerce ul.product_list_widget li .ts-wg-meta > a,
+.woocommerce .products .product .product-name {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	max-height: calc(2 * 1.42em);
+}

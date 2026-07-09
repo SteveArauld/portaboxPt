@@ -1,0 +1,419 @@
+/* ============================================================
+   PORTA BOX SOLUTIONS - Panier / Cart UI
+   ============================================================ */
+
+:root {
+    --pbs-primary: #c6213b;
+    --pbs-primary-dark: #a01b2f;
+    --pbs-dark: #2c3e50;
+}
+
+/* ---------- Icône panier dans le header ---------- */
+.pbs-cart-toggle {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: var(--pbs-dark);
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    line-height: 1;
+}
+
+.pbs-cart-toggle:hover {
+    background: var(--pbs-primary);
+    border-color: var(--pbs-primary);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.pbs-cart-toggle svg,
+.pbs-cart-toggle i {
+    width: 20px;
+    height: 20px;
+    font-size: 18px;
+}
+
+.pbs-cart-toggle .pbs-cart-label {
+    white-space: nowrap;
+}
+
+.pbs-cart-count {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    background: var(--pbs-primary);
+    color: #fff;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: 700;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- Tiroir (drawer) ---------- */
+.pbs-drawer-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 99998;
+}
+
+.pbs-drawer-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.pbs-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 400px;
+    max-width: 92vw;
+    height: 100%;
+    background: #fff;
+    box-shadow: -10px 0 40px rgba(0, 0, 0, 0.18);
+    transform: translateX(100%);
+    transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.pbs-drawer.open {
+    transform: translateX(0);
+}
+
+.pbs-drawer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 22px;
+    border-bottom: 1px solid #eef0f3;
+}
+
+.pbs-drawer-header h3 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--pbs-dark);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pbs-drawer-close {
+    background: #f4f6f9;
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 16px;
+    color: #555;
+    transition: all 0.2s ease;
+    line-height: 1;
+}
+
+.pbs-drawer-close:hover {
+    background: var(--pbs-primary);
+    color: #fff;
+}
+
+.pbs-drawer-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px 18px;
+}
+
+.pbs-drawer-empty {
+    text-align: center;
+    padding: 60px 20px;
+    color: #94a3b8;
+}
+
+.pbs-drawer-empty-ico {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.pbs-drawer-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 0;
+    border-bottom: 1px solid #f0f2f5;
+    position: relative;
+}
+
+.pbs-drawer-thumb img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #eef0f3;
+}
+
+.pbs-drawer-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.pbs-drawer-name {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--pbs-dark);
+    text-decoration: none;
+    margin-bottom: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.pbs-drawer-name:hover {
+    color: var(--pbs-primary);
+}
+
+.pbs-drawer-price {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--pbs-primary);
+    margin-bottom: 6px;
+}
+
+.pbs-qty {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.pbs-qty-btn {
+    width: 28px;
+    height: 28px;
+    border: none;
+    background: #f8fafc;
+    cursor: pointer;
+    font-size: 16px;
+    color: #444;
+    line-height: 1;
+    transition: background 0.2s;
+}
+
+.pbs-qty-btn:hover {
+    background: var(--pbs-primary);
+    color: #fff;
+}
+
+.pbs-qty-val {
+    min-width: 34px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.pbs-drawer-remove {
+    background: none;
+    border: none;
+    color: #cbd5e1;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 6px;
+    transition: color 0.2s;
+    align-self: flex-start;
+}
+
+.pbs-drawer-remove:hover {
+    color: var(--pbs-primary);
+}
+
+.pbs-drawer-footer {
+    border-top: 1px solid #eef0f3;
+    padding: 18px 22px 22px;
+    background: #fff;
+}
+
+.pbs-drawer-total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: var(--pbs-dark);
+}
+
+.pbs-drawer-total-row strong {
+    font-size: 20px;
+    color: var(--pbs-primary);
+}
+
+.pbs-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    transition: all 0.25s ease;
+    box-sizing: border-box;
+}
+
+.pbs-btn-primary {
+    background: var(--pbs-primary);
+    color: #fff !important;
+    box-shadow: 0 6px 18px rgba(198, 33, 59, 0.3);
+}
+
+.pbs-btn-primary:hover {
+    background: var(--pbs-primary-dark);
+    transform: translateY(-2px);
+}
+
+.pbs-btn-outline {
+    background: #fff;
+    color: var(--pbs-dark) !important;
+    border: 2px solid #e2e8f0;
+    margin-top: 10px;
+}
+
+.pbs-btn-outline:hover {
+    border-color: var(--pbs-dark);
+}
+
+/* ---------- Bouton "Ajouter au panier" sur les cartes produit ---------- */
+.pbs-cart-action {
+    margin-top: 12px;
+}
+
+/* Le thème affiche un overlay .product-wrapper:hover:before (fond plein, z-index:1)
+   qui recouvre la carte au survol. On garde le bouton au-dessus et cliquable. */
+.product .product-wrapper .pbs-cart-action {
+    position: relative;
+    z-index: 3;
+}
+.product .product-wrapper .pbs-cart-action .pbs-add-to-cart {
+    position: relative;
+    z-index: 3;
+}
+
+.pbs-add-to-cart {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 11px 16px;
+    background: var(--pbs-dark);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    line-height: 1.2;
+}
+
+.pbs-add-to-cart:hover {
+    background: var(--pbs-primary);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(198, 33, 59, 0.25);
+}
+
+.pbs-add-to-cart.pbs-added {
+    background: #28a745;
+}
+
+.pbs-add-to-cart.pbs-added .pbs-add-label::after {
+    content: ' ✓';
+}
+
+.pbs-add-to-cart svg,
+.pbs-add-to-cart i {
+    width: 18px;
+    height: 18px;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+/* Bouton large (page produit) */
+.pbs-add-to-cart.pbs-add-lg {
+    width: auto;
+    padding: 16px 36px;
+    font-size: 15px;
+}
+
+/* ---------- Toast ---------- */
+.pbs-toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: var(--pbs-dark);
+    color: #fff;
+    padding: 14px 26px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.pbs-toast.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.pbs-toast-ico {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background: #28a745;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .pbs-cart-toggle .pbs-cart-label {
+        display: none;
+    }
+    .pbs-cart-toggle {
+        padding: 9px;
+        width: 42px;
+        height: 42px;
+    }
+}
