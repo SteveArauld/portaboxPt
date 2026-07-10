@@ -236,7 +236,7 @@
                         <p>
                             📧 <a>contato@portocontentores.com</a><br>
                             📱 WhatsApp: +39 377 594 6734<br>
-                            🕘 {{ __('terms.section9.hours') }} {{ __('terms.section9.hours_text') }}
+                            {{ __('terms.section9.hours') }} {{ __('terms.section9.hours_text') }}
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">

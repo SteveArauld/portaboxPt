@@ -62,7 +62,7 @@
                             <li>{{ __('delivery.section2.italy_items.portuali') }}</li>
                         </ul>
 
-                        <p>🌍 <strong>{{ __('delivery.section2.international') }}</strong></p>
+                        <p> <strong>{{ __('delivery.section2.international') }}</strong></p>
 
                         <p>{{ __('delivery.section2.international_text') }}<br>
                              <strong><a>contato@portocontentores.com</a></strong>
@@ -99,7 +99,7 @@
                             </li>
                         </ul>
 
-                        <p>🌍 <strong>{{ __('delivery.section3.international') }}</strong></p>
+                        <p> <strong>{{ __('delivery.section3.international') }}</strong></p>
 
                         <ul class="wp-block-list">
                             <li>
@@ -108,11 +108,11 @@
                             </li>
                         </ul>
 
-                        <p>⏱ <strong>{{ __('delivery.section3.important') }}</strong>
+                        <p><strong>{{ __('delivery.section3.important') }}</strong>
                             {{ __('delivery.section3.important_text') }}
                         </p>
 
-                        <p>🚫 <strong>{{ __('delivery.section3.unavailable') }}</strong></p>
+                        <p><strong>{{ __('delivery.section3.unavailable') }}</strong></p>
 
                         <p>{{ __('delivery.section3.unavailable_text1') }}</p>
 

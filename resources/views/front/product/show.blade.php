@@ -1155,7 +1155,7 @@
                                 </div>
                                 <button type="submit"
                                     class="single_add_to_cart_button button alt">{{ __('product.add_to_cart') }}</button>
-                                <a href="#" class="button ts-buy-now-button">{{ __('product.buy_now') }}</a>
+                                <!-- <a href="#" class="button ts-buy-now-button">{{ __('product.buy_now') }}</a> -->
                             </form>
 
                             <div class="meta-content">
