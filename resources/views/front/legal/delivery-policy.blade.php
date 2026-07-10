@@ -50,22 +50,21 @@
                         <p>{{ __('delivery.section2.text1') }}</p>
 
                         <p>
-                            <img draggable="false" role="img" class="emoji" alt="🇮🇹" width="13" height="13"
-                                 src="https://s.w.org/images/core/emoji/17.0.2/svg/1f1ee-1f1f9.svg">
-                            <strong>{{ __('delivery.section2.italy') }}</strong>
+                           
+                            <strong>{{ __('delivery.section2.portugal') }}</strong>
                         </p>
 
-                        <ul class="wp-block-list">
-                            <li>{{ __('delivery.section2.italy_items.penisola') }}</li>
-                            <li>{{ __('delivery.section2.italy_items.sicilia') }}</li>
-                            <li>{{ __('delivery.section2.italy_items.sardegna') }}</li>
-                            <li>{{ __('delivery.section2.italy_items.portuali') }}</li>
-                        </ul>
+                     <ul class="wp-block-list">
+                        <li>{{ __('delivery.section2.portugal_items.continente') }}</li>
+                        <li>{{ __('delivery.section2.portugal_items.acores') }}</li>
+                        <li>{{ __('delivery.section2.portugal_items.madeira') }}</li>
+                        <li>{{ __('delivery.section2.portugal_items.portuarias') }}</li>
+                    </ul>
 
                         <p> <strong>{{ __('delivery.section2.international') }}</strong></p>
 
                         <p>{{ __('delivery.section2.international_text') }}<br>
-                             <strong><a>contato@portocontentores.com</a></strong>
+                             <strong><a>contato@portocontentores.pt</a></strong>
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -75,9 +74,8 @@
                         <p>{{ __('delivery.section3.text1') }}</p>
 
                         <p>
-                            <img draggable="false" role="img" class="emoji" alt="🇮🇹" width="13"
-                                 src="https://s.w.org/images/core/emoji/17.0.2/svg/1f1ee-1f1f9.svg">
-                            <strong>{{ __('delivery.section3.italy') }}</strong>
+                            
+                            <strong>{{ __('delivery.section3.portugal') }}</strong>
                         </p>
 
                         <ul class="wp-block-list">
@@ -151,14 +149,14 @@
                         <p>{{ __('delivery.section5.text1') }}</p>
 
                         <ul class="wp-block-list">
-                            <li><strong>{{ __('delivery.section5.italy') }}</strong> 230 €</li>
+                            <li><strong>{{ __('delivery.section5.portugal') }}</strong> 230 €</li>
                             <li><strong>{{ __('delivery.section5.eu') }}</strong> 310 €</li>
                         </ul>
 
                         <p>{{ __('delivery.section5.text2') }}</p>
 
                         <p>{{ __('delivery.section5.text3') }}<br>
-                             <strong><a>contato@portocontentores.com</a></strong>
+                             <strong><a>contato@portocontentores.pt</a></strong>
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -206,7 +204,7 @@
                             <li>{{ __('delivery.section8.item2') }}</li>
                             <li>{{ __('delivery.section8.item3') }}</li>
                             <li>{{ __('delivery.section8.item4') }}<br>
-                                 <strong><a>contato@portocontentores.com</a></strong>
+                                 <strong><a>contato@portocontentores.pt</a></strong>
                             </li>
                         </ul>
 
@@ -241,7 +239,7 @@
                         <h3 class="wp-block-heading">{{ __('delivery.section9.subtitle') }}</h3>
 
                         <p>{{ __('delivery.section9.text2') }}<br>
-                             <strong><a>contato@portocontentores.com</a></strong>
+                             <strong><a>contato@portocontentores.pt</a></strong>
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -253,10 +251,10 @@
                         <p>
                             <strong>{{ __('delivery.section10.whatsapp') }}</strong> +39 350 872 4295<br>
                              <strong>{{ __('delivery.section10.email') }}</strong>
-                            <a>contato@portocontentores.com</a><br>
+                            <a>contato@portocontentores.pt</a><br>
                              <strong>{{ __('delivery.section10.address') }}</strong> Via Case Rosse, 19/B – 84131
                             Salerno (SA), Italia<br>
-                            🕘
+                            
                             <strong>{{ __('delivery.section10.hours') }}</strong> {{ __('delivery.section10.hours_text') }}
                         </p>
 

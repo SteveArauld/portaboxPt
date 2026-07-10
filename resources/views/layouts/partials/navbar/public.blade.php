@@ -5,9 +5,9 @@
 
             <div class="header-right">
                 <div class="hotline">
-                    <a href="tel:contato@portocontentores.com">
+                    <a href="tel:contato@portocontentores.pt">
                         <span>{{ __('header.email') }}</span>
-                        <span>contato@portocontentores.com</span>
+                        <span>contato@portocontentores.pt</span>
                     </a>
                 </div>
             </div>
@@ -41,9 +41,9 @@
 
                 <div class="header-center">
                     <div class="hotline">
-                        <a href="tel:contato@portocontentores.com">
+                        <a href="tel:contato@portocontentores.pt">
                             <span>{{ __('header.email') }}</span>
-                            <span>contato@portocontentores.com</span>
+                            <span>contato@portocontentores.pt</span>
                         </a>
                     </div>
 

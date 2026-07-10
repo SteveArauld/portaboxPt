@@ -266,6 +266,28 @@
     color: #000;
 }
 
+#pbs-product-qty-input{
+    filter: none !important;
+	padding: 10px 20px;
+	/* width: 100%; */
+	box-shadow: none;
+	vertical-align: bottom;
+	border-width: 1px;
+	border-style: none;
+	line-height: 24px;
+	border-radius: n    ;
+	font-size: var(--ts-btn-font-size);
+	color: var(--ts-input-color);
+	background-color: transparent;
+	border-color: transparent;
+
+}
+
+.pbs-product-qty{
+    height: 40px !important;
+}
+
+
 .pbs-btn {
     display: block;
     width: 100%;
@@ -302,10 +324,7 @@
     border-color: #000;
 }
 
-/* ---------- Bouton "Ajouter au panier" sur les cartes produit ---------- */
-.pbs-cart-action {
-    margin-top: 12px;
-}
+
 
 /* Le thème affiche un overlay .product-wrapper:hover:before (fond plein, z-index:1)
    qui recouvre la carte au survol. On garde le bouton au-dessus et cliquable. */

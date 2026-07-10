@@ -63,7 +63,7 @@
                             Italia</p>
 
 
-                        <p><strong>Telefono / WhatsApp:</strong> +39 350 872 4295<br><strong>E-mail:</strong> <a>contato@portocontentores.com</a><br><strong>Sito
+                        <p><strong>Telefono / WhatsApp:</strong> +39 350 872 4295<br><strong>E-mail:</strong> <a>contato@portocontentores.pt</a><br><strong>Sito
                                 web:</strong> <a
                                     href="{{ route('home') }}">{{ route('home') }}</a></p>
 
@@ -180,7 +180,7 @@
 
 
                         <p>Le richieste devono essere inviate a:<br>
-                            <strong><a>contato@portocontentores.com</a></strong></p>
+                            <strong><a>contato@portocontentores.pt</a></strong></p>
 
 
                         <p>Per maggiori dettagli, consultare la Politica della Privacy del sito.</p>
@@ -301,7 +301,7 @@
 
 
                         <p><strong>EB. BOX S.R.L.</strong><br> Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
-                            Telefono / WhatsApp: +39 350 872 4295<br> <a>contato@portocontentores.com</a><br>🌐 <a
+                            Telefono / WhatsApp: +39 350 872 4295<br> <a>contato@portocontentores.pt</a><br> <a
                                     href="{{ route('home') }}">{{ route('home') }}</a></p>
 
 

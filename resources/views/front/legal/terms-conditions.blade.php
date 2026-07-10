@@ -59,10 +59,10 @@
 
                         <p>
                             <strong>{{ __('terms.company_name') }}</strong><br>
-                            📍 <strong>{{ __('terms.section2.legal_address') }}</strong> Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
-                            📞 <strong>{{ __('terms.section2.phone') }}</strong> +39 350 872 4295<br>
-                            📧 <strong>{{ __('terms.section2.email') }}</strong> <a>contato@portocontentores.com</a><br>
-                            🌐 <strong>{{ __('terms.section2.website') }}</strong> <a href="{{ route('home') }}">{{ route('home') }}</a>
+                             <strong>{{ __('terms.section2.legal_address') }}</strong> Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
+                             <strong>{{ __('terms.section2.phone') }}</strong> +39 350 872 4295<br>
+                            <strong>{{ __('terms.section2.email') }}</strong> <a>contato@portocontentores.pt</a><br>
+                            <strong>{{ __('terms.section2.website') }}</strong> <a href="{{ route('home') }}">{{ route('home') }}</a>
                         </p>
 
                         <p>
@@ -234,9 +234,9 @@
                         <p>{{ __('terms.section9.text1') }}</p>
 
                         <p>
-                            📧 <a>contato@portocontentores.com</a><br>
-                            📱 WhatsApp: +39 377 594 6734<br>
-                            {{ __('terms.section9.hours') }} {{ __('terms.section9.hours_text') }}
+                            <a>contato@portocontentores.pt</a><br>
+                            WhatsApp: +39 377 594 6734<br>
+                             {{ __('terms.section9.hours') }} {{ __('terms.section9.hours_text') }}
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -255,7 +255,7 @@
                             <li>{{ __('terms.section10.right5') }}</li>
                         </ul>
 
-                        <p>{{ __('terms.section10.text4') }} <strong><a>contato@portocontentores.com</a></strong></p>
+                        <p>{{ __('terms.section10.text4') }} <strong><a>contato@portocontentores.pt</a></strong></p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
 
@@ -275,7 +275,7 @@
 
                         <h2 class="wp-block-heading">{{ __('terms.section12.title') }}</h2>
 
-                        <p>{{ __('terms.section12.text1') }}<br>{{ __('terms.section12.text2') }}<br>📍 <strong>Salerno (Italia)</strong>.</p>
+                        <p>{{ __('terms.section12.text1') }}<br>{{ __('terms.section12.text2') }}<br> <strong>Salerno (Italia)</strong>.</p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
 
@@ -283,14 +283,14 @@
 
                         <p>
                             <strong>{{ __('terms.company_name') }}</strong><br>
-                            📍 Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
-                            📧 <a>contato@portocontentores.com</a><br>
-                            📱 +39 +39 351 000 0001<br>
-                            🌐 <a href="{{ route('home') }}">{{ route('home') }}</a>
+                             Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
+                            <a>contato@portocontentores.pt</a><br>
+                            +39 +39 351 000 0001<br>
+                            <a href="{{ route('home') }}">{{ route('home') }}</a>
                         </p>
 
                         <p>
-                            📅 <strong>{{ __('terms.last_update') }}</strong> {{ __('terms.date') }}<br>
+                             <strong>{{ __('terms.last_update') }}</strong> {{ __('terms.date') }}<br>
                             © <strong>{{ __('terms.company_name') }}</strong> – {{ __('terms.copyright') }}
                         </p>
 

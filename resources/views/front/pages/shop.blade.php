@@ -1000,14 +1000,14 @@
                                                 </div>
                                             @endif
 
-                                            <div class="product-group-button">
+                                            <!-- <div class="product-group-button">
                                                 <div class="button-in quickshop">
                                                     <a class="quickshop" href="#" data-product_id="{{ $article->id }}"
                                                        onclick="quickView({{ $article->id }}); return false;">
                                                         <span class="ts-tooltip button-tooltip">{{ __('shop.products.quickshop') }}</span>
                                                     </a>
                                                 </div>
-                                            </div>
+                                            </div> -->
                                         </div>
 
                                         <div class="meta-wrapper">
@@ -1191,11 +1191,7 @@
             });
         });
 
-        // Fonction pour l'aperçu rapide (à implémenter)
-        function quickView(productId) {
-            // Vous pouvez implémenter une modale avec les détails du produit
-            alert('Quick view pour le produit ' + productId + ' (à implémenter)');
-        }
+    
 
         // Gestionnaire pour les filtres (soumission automatique)
         document.querySelectorAll('.perpage, .product-on-sale-form input').forEach(element => {
