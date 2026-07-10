@@ -2,7 +2,6 @@
     <div class="overlay"></div>
     <div class="header-top visible-md hidden-xs">
         <div class="container">
-
             <div class="header-right">
                 <div class="hotline">
                     <a href="tel:contato@portocontentores.pt">
@@ -15,7 +14,7 @@
     </div>
 
     <!-- Reste du header (votre code existant) -->
-    <div class="header-template header-sticky" >
+    <div class="header-template header-sticky">
         <div class="header-middle">
             <div class="container">
 
@@ -23,18 +22,78 @@
                     <span class="icon"></span>
                 </div>
 
+                <!-- Recherche mobile -->
+                <div class="mobile-search-wrapper visible-xs">
+                    <button class="mobile-search-toggle" aria-label="Rechercher">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    <div class="mobile-search-form">
+                        <form action="{{ route('shop') }}" method="get">
+                            <select name="category" class="select-category">
+                                @php
+                                    if(!isset($category)){
+                                        $category = "";
+                                    }
+                                @endphp
+                                <option value="">{{ __('header.all_categories') }}</option>
+                                <option {{ $category == 'cafeteria-bar-restaurante' ? 'selected' : '' }} value="cafeteria-bar-restaurante">
+                                    {{ __('header.category.caffetteria') }}
+                                </option>
+                                <option {{ $category == 'contentores-de-armazenamento' ? 'selected' : '' }} value="contentores-de-armazenamento">
+                                    {{ __('header.category.stoccaggio') }}
+                                </option>
+                                <option {{ $category == 'conteiner-com-abertura-lateral' ? 'selected' : '' }} value="conteiner-com-abertura-lateral">
+                                    {{ __('header.category.laterale_aperto') }}
+                                </option>
+                                <option {{ $category == 'contentores-modulares' ? 'selected' : '' }} value="contentores-modulares">
+                                    {{ __('header.category.modulari') }}
+                                </option>
+                                <option {{ $category == 'contentores-refrigerados' ? 'selected' : '' }} value="contentores-refrigerados">
+                                    {{ __('header.category.refrigerati') }}
+                                </option>
+                                <option {{ $category == 'contentores-padrao-usados' ? 'selected' : '' }} value="contentores-padrao-usados">
+                                    {{ __('header.category.standard_usati') }}
+                                </option>
+                                <option {{ $category == 'contentores-10-pes' ? 'selected' : '' }} value="contentores-10-pes">
+                                    {{ __('header.category.contenitori_10') }}
+                                </option>
+                                <option {{ $category == 'contentores-20-pes' ? 'selected' : '' }} value="contentores-20-pes">
+                                    {{ __('header.category.contenitori_20') }}
+                                </option>
+                                <option {{ $category == 'contentores-40-pes' ? 'selected' : '' }} value="contentores-40-pes">
+                                    {{ __('header.category.contenitori_40') }}
+                                </option>
+                                <option {{ $category == 'contentores-casa' ? 'selected' : '' }} value="contentores-casa">
+                                    {{ __('header.category.contenitori_casa') }}
+                                </option>
+                                <option {{ $category == 'nao-categorizado' ? 'selected' : '' }} value="nao-categorizado">
+                                    {{ __('header.category.non_categorizzato') }}
+                                </option>
+                                <option {{ $category == 'piscina' ? 'selected' : '' }} value="piscina">{{ __('header.category.piscina') }}</option>
+                                <option {{ $category == 'sanitario' ? 'selected' : '' }} value="sanitario">{{ __('header.category.sanitario') }}</option>
+                                <option {{ $category == 'escritorio' ? 'selected' : '' }} value="escritorio">{{ __('header.category.ufficio') }}</option>
+                            </select>
+                            <div class="search-field">
+                                <input type="text" name="search_Prin" placeholder="{{ __('header.search.placeholder') }}" autocomplete="off" />
+                                <button type="submit" class="search-submit">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
                 <div class="logo-wrapper">
                     <div class="logo">
                         <a href="{{ route('home') }}">
                             <img src="../assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1.png"
-                                 alt="Porto Contentores" title="Porto Contentores" class="normal-logo"/>
+                                alt="Porto Contentores" title="Porto Contentores" class="normal-logo" />
 
                             <img src="../assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1.png"
-                                 alt="Porto Contentores" title="Porto Contentores" class="mobile-logo"/>
+                                alt="Porto Contentores" title="Porto Contentores" class="mobile-logo" />
 
                             <img src="../assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1.png"
-                                 alt="Porto Contentores" title="Porto Contentores" class="sticky-logo"/>
-
+                                alt="Porto Contentores" title="Porto Contentores" class="sticky-logo" />
                         </a>
                     </div>
                 </div>
@@ -48,64 +107,64 @@
                     </div>
 
                     <div class="ts-search-by-category ">
-                     <form action="{{ route('shop') }}" method="get">
-    <select name="category" class="select-category">
-        @php
-            if(!isset($category)){
-                $category = "";
-            }
-        @endphp
-        <option value="">{{ __('header.all_categories') }}</option>
-        <option {{ $category == 'cafeteria-bar-restaurante' ? 'selected' : '' }} value="cafeteria-bar-restaurante">
-            {{ __('header.category.caffetteria') }}
-        </option>
-        <option {{ $category == 'contentores-de-armazenamento' ? 'selected' : '' }} value="contentores-de-armazenamento">
-            {{ __('header.category.stoccaggio') }}
-        </option>
-        <option {{ $category == 'conteiner-com-abertura-lateral' ? 'selected' : '' }} value="conteiner-com-abertura-lateral">
-            {{ __('header.category.laterale_aperto') }}
-        </option>
-        <option {{ $category == 'contentores-modulares' ? 'selected' : '' }} value="contentores-modulares">
-            {{ __('header.category.modulari') }}
-        </option>
-        <option {{ $category == 'contentores-refrigerados' ? 'selected' : '' }} value="contentores-refrigerados">
-            {{ __('header.category.refrigerati') }}
-        </option>
-        <option {{ $category == 'contentores-padrao-usados' ? 'selected' : '' }} value="contentores-padrao-usados">
-            {{ __('header.category.standard_usati') }}
-        </option>
-        <option {{ $category == 'contentores-10-pes' ? 'selected' : '' }} value="contentores-10-pes">
-            {{ __('header.category.contenitori_10') }}
-        </option>
-        <option {{ $category == 'contentores-20-pes' ? 'selected' : '' }} value="contentores-20-pes">
-            {{ __('header.category.contenitori_20') }}
-        </option>
-        <option {{ $category == 'contentores-40-pes' ? 'selected' : '' }} value="contentores-40-pes">
-            {{ __('header.category.contenitori_40') }}
-        </option>
-        <option {{ $category == 'contentores-casa' ? 'selected' : '' }} value="contentores-casa">
-            {{ __('header.category.contenitori_casa') }}
-        </option>
-        <option {{ $category == 'nao-categorizado' ? 'selected' : '' }} value="nao-categorizado">
-            {{ __('header.category.non_categorizzato') }}
-        </option>
-        <option {{ $category == 'piscina' ? 'selected' : '' }} value="piscina">{{ __('header.category.piscina') }}</option>
-        <option {{ $category == 'sanitario' ? 'selected' : '' }} value="sanitario">{{ __('header.category.sanitario') }}
-        </option>
-        <option {{ $category == 'escritorio' ? 'selected' : '' }} value="escritorio">{{ __('header.category.ufficio') }}</option>
-    </select>
-    <div class="search-table">
-        <div class="search-field search-content">
-            <input type="text" value="{{ $search2 ?? '' }}" name="search_Prin"
-                   placeholder="{{ __('header.search.placeholder') }}" autocomplete="off"/>
+                        <form action="{{ route('shop') }}" method="get">
+                            <select name="category" class="select-category">
+                                @php
+                                if(!isset($category)){
+                                $category = "";
+                                }
+                                @endphp
+                                <option value="">{{ __('header.all_categories') }}</option>
+                                <option {{ $category == 'cafeteria-bar-restaurante' ? 'selected' : '' }} value="cafeteria-bar-restaurante">
+                                    {{ __('header.category.caffetteria') }}
+                                </option>
+                                <option {{ $category == 'contentores-de-armazenamento' ? 'selected' : '' }} value="contentores-de-armazenamento">
+                                    {{ __('header.category.stoccaggio') }}
+                                </option>
+                                <option {{ $category == 'conteiner-com-abertura-lateral' ? 'selected' : '' }} value="conteiner-com-abertura-lateral">
+                                    {{ __('header.category.laterale_aperto') }}
+                                </option>
+                                <option {{ $category == 'contentores-modulares' ? 'selected' : '' }} value="contentores-modulares">
+                                    {{ __('header.category.modulari') }}
+                                </option>
+                                <option {{ $category == 'contentores-refrigerados' ? 'selected' : '' }} value="contentores-refrigerados">
+                                    {{ __('header.category.refrigerati') }}
+                                </option>
+                                <option {{ $category == 'contentores-padrao-usados' ? 'selected' : '' }} value="contentores-padrao-usados">
+                                    {{ __('header.category.standard_usati') }}
+                                </option>
+                                <option {{ $category == 'contentores-10-pes' ? 'selected' : '' }} value="contentores-10-pes">
+                                    {{ __('header.category.contenitori_10') }}
+                                </option>
+                                <option {{ $category == 'contentores-20-pes' ? 'selected' : '' }} value="contentores-20-pes">
+                                    {{ __('header.category.contenitori_20') }}
+                                </option>
+                                <option {{ $category == 'contentores-40-pes' ? 'selected' : '' }} value="contentores-40-pes">
+                                    {{ __('header.category.contenitori_40') }}
+                                </option>
+                                <option {{ $category == 'contentores-casa' ? 'selected' : '' }} value="contentores-casa">
+                                    {{ __('header.category.contenitori_casa') }}
+                                </option>
+                                <option {{ $category == 'nao-categorizado' ? 'selected' : '' }} value="nao-categorizado">
+                                    {{ __('header.category.non_categorizzato') }}
+                                </option>
+                                <option {{ $category == 'piscina' ? 'selected' : '' }} value="piscina">{{ __('header.category.piscina') }}</option>
+                                <option {{ $category == 'sanitario' ? 'selected' : '' }} value="sanitario">{{ __('header.category.sanitario') }}
+                                </option>
+                                <option {{ $category == 'escritorio' ? 'selected' : '' }} value="escritorio">{{ __('header.category.ufficio') }}</option>
+                            </select>
+                            <div class="search-table">
+                                <div class="search-field search-content">
+                                    <input type="text" value="{{ $search2 ?? '' }}" name="search_Prin"
+                                        placeholder="{{ __('header.search.placeholder') }}" autocomplete="off" />
 
-            <div class="search-button">
-                <input type="submit" title="{{ __('header.search.button') }}" value="{{ __('header.search.button') }}"/>
-            </div>
+                                    <div class="search-button">
+                                        <input type="submit" title="{{ __('header.search.button') }}" value="{{ __('header.search.button') }}" />
+                                    </div>
 
-        </div>
-    </div>
-</form>
+                                </div>
+                            </div>
+                        </form>
 
                         <div class="search-dropdown">
                             <div class="ts-search-result-container woocommerce"></div>
@@ -114,118 +173,16 @@
                 </div>
 
                 <div class="header-left">
-
                     <!-- Bouton panier -->
                     <button type="button" class="pbs-cart-toggle" data-cart-toggle aria-label="{{ __('Panier') }}">
                         <i class="fas fa-shopping-cart"></i>
-                        <!-- <span class="pbs-cart-label">{{ __('Panier') }}</span> -->
                         <span class="pbs-cart-count">0</span>
                     </button>
-
-                    <!-- Sélecteur de langues personnalisé sans Bootstrap -->
-                    <!-- <div class="language-selector-wrapper">
-                        <div class="language-selector">
-                            <button class="language-dropdown-toggle" id="languageDropdown" aria-expanded="false">
-                                @if (app()->getLocale() === 'fr')
-                                    <img class="flag-icon" src="{{ asset('assets/images/flags/fr.svg') }}" alt="Français">
-                                    <span>{{ __('header.language.french') }}</span>
-                                @elseif (app()->getLocale() === 'en')
-                                    <img class="flag-icon" src="{{ asset('assets/images/flags/uk.svg') }}" alt="English">
-                                    <span>{{ __('header.language.english') }}</span>
-                                @elseif (app()->getLocale() === 'it')
-                                    <img class="flag-icon" src="{{ asset('assets/images/flags/it.svg') }}" alt="Italiano">
-                                    <span>{{ __('header.language.italian') }}</span>
-                                @elseif (app()->getLocale() === 'pt')
-                                    <img class="flag-icon" src="{{ asset('assets/images/flags/pt.svg') }}" alt="Português">
-                                    <span>{{ __('header.language.portuguese') }}</span>
-                                @elseif (app()->getLocale() === 'es')
-                                    <img class="flag-icon" src="{{ asset('assets/images/flags/es.svg') }}" alt="Español">
-                                    <span>{{ __('header.language.spanish') }}</span>
-                                @endif
-                                <svg class="dropdown-arrow" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2 4L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
-                            </button>
-                            <ul class="language-dropdown-menu" id="languageDropdownMenu">
-                                <li>
-                                    <a class="language-dropdown-item {{ app()->getLocale() == 'fr' ? 'active' : '' }}"
-                                       href="{{ route('lang.switch', 'fr') }}">
-                                        <div class="language-item-content">
-                                            <img class="flag-icon" src="{{ asset('assets/images/flags/fr.svg') }}" alt="Français">
-                                            <span>{{ __('header.language.french') }}</span>
-                                        </div>
-                                        @if (app()->getLocale() == 'fr')
-                                            <svg class="check-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.6667 3.5L5.25 9.91667L2.33333 7" stroke="#2c3e50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        @endif
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="language-dropdown-item {{ app()->getLocale() == 'en' ? 'active' : '' }}"
-                                       href="{{ route('lang.switch', 'en') }}">
-                                        <div class="language-item-content">
-                                            <img class="flag-icon" src="{{ asset('assets/images/flags/uk.svg') }}" alt="English">
-                                            <span>{{ __('header.language.english') }}</span>
-                                        </div>
-                                        @if (app()->getLocale() == 'en')
-                                            <svg class="check-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.6667 3.5L5.25 9.91667L2.33333 7" stroke="#2c3e50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        @endif
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="language-dropdown-item {{ app()->getLocale() == 'it' ? 'active' : '' }}"
-                                       href="{{ route('lang.switch', 'it') }}">
-                                        <div class="language-item-content">
-                                            <img class="flag-icon" src="{{ asset('assets/images/flags/it.svg') }}" alt="Italiano">
-                                            <span>{{ __('header.language.italian') }}</span>
-                                        </div>
-                                        @if (app()->getLocale() == 'it')
-                                            <svg class="check-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.6667 3.5L5.25 9.91667L2.33333 7" stroke="#2c3e50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        @endif
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="language-dropdown-item {{ app()->getLocale() == 'pt' ? 'active' : '' }}"
-                                       href="{{ route('lang.switch', 'pt') }}">
-                                        <div class="language-item-content">
-                                            <img class="flag-icon" src="{{ asset('assets/images/flags/pt.svg') }}" alt="Português">
-                                            <span>{{ __('header.language.portuguese') }}</span>
-                                        </div>
-                                        @if (app()->getLocale() == 'pt')
-                                            <svg class="check-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.6667 3.5L5.25 9.91667L2.33333 7" stroke="#2c3e50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        @endif
-                                    </a>
-                                </li>
-                                <li>
-                                    <a class="language-dropdown-item {{ app()->getLocale() == 'es' ? 'active' : '' }}"
-                                       href="{{ route('lang.switch', 'es') }}">
-                                        <div class="language-item-content">
-                                            <img class="flag-icon" src="{{ asset('assets/images/flags/es.svg') }}" alt="Español">
-                                            <span>{{ __('header.language.spanish') }}</span>
-                                        </div>
-                                        @if (app()->getLocale() == 'es')
-                                            <svg class="check-icon" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M11.6667 3.5L5.25 9.91667L2.33333 7" stroke="#2c3e50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                            </svg>
-                                        @endif
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div> -->
                 </div>
 
-
             </div>
-
         </div>
+        
         <div class="header-bottom hidden-xs">
             <div class="container">
                 <div class="menu-wrapper">
@@ -238,37 +195,31 @@
                     <div class="ts-menu">
                         <nav class="main-menu pc-menu ts-mega-menu-wrapper">
                             <ul id="menu-cosmetic" class="menu">
-
                                 <li class="menu-item {{ request()->routeIs('home') ? 'active-menu' : '' }}">
                                     <a href="{{ route('home') }}">
                                         <span class="menu-label">{{ __('header.menu.home') }}</span>
                                     </a>
                                 </li>
-
                                 <li class="menu-item {{ request()->routeIs('about') ? 'active-menu' : '' }}">
                                     <a href="{{ route('about') }}">
                                         <span class="menu-label">{{ __('header.menu.about') }}</span>
                                     </a>
                                 </li>
-
                                 <li class="menu-item {{ request()->routeIs('shop') ? 'active-menu' : '' }}">
                                     <a href="{{ route('shop') }}">
                                         <span class="menu-label">{{ __('header.menu.shop') }}</span>
                                     </a>
                                 </li>
-
                                 <li class="menu-item {{ request()->routeIs('faq') ? 'active-menu' : '' }}">
                                     <a href="{{ route('faq') }}">
                                         <span class="menu-label">{{ __('header.menu.faq') }}</span>
                                     </a>
                                 </li>
-
                                 <li class="menu-item {{ request()->routeIs('contato') ? 'active-menu' : '' }}">
                                     <a href="{{ route('contato') }}">
                                         <span class="menu-label">{{ __('header.menu.contato') }}</span>
                                     </a>
                                 </li>
-
                             </ul>
                         </nav>
                     </div>
@@ -279,142 +230,185 @@
 </header>
 
 <style>
-
-    .language-selector-wrapper {
-        position: relative;
-        display: inline-block;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    }
-
-
-    .language-dropdown-toggle {
-        display: flex;
-        align-items: center;
-        gap: 8px;
-        padding: 8px 15px;
-        background: transparent;
-        border: 1px solid rgba(0,0,0,0.1);
-        border-radius: 30px;
-        cursor: pointer;
-        font-size: 14px;
-        color: #333;
-        transition: all 0.3s ease;
-        min-width: 120px;
-        background-color: white;
-    }
-
-    .language-dropdown-toggle:hover {
-        background-color: #f8f9fa;
-        border-color: rgba(0,0,0,0.2);
-    }
-
-
-    .flag-icon {
-        width: 20px;
-        height: 15px;
-        object-fit: cover;
-        border-radius: 2px;
-        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-    }
-
-
-    .dropdown-arrow {
-        margin-left: auto;
-        transition: transform 0.3s ease;
-    }
-
-    .language-selector.active .dropdown-arrow {
-        transform: rotate(180deg);
-    }
-
-
-    .language-dropdown-menu {
-        position: absolute;
-        top: calc(100% + 5px);
+    /* ========== HEADER FIXED ========== */
+    .header-middle {
+        position: fixed;
+        top: 0;
         left: 0;
-
-        background: white;
-        border-radius: 8px;
-        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-        padding: 8px 0;
-        margin: 0;
-        list-style: none;
+        right: 0;
         z-index: 1000;
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-10px);
-        transition: all 0.3s ease;
+        background-color: #fff;
     }
 
-    .language-selector.active .language-dropdown-menu {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
+    body {
+        padding-top: 120px;
     }
-
-
-    .language-dropdown-item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 8px 15px;
-        text-decoration: none;
-        color: #333;
-        font-size: 14px;
-        transition: all 0.2s ease;
-        cursor: pointer;
-        gap: 30px;
-    }
-
-    .language-dropdown-item:hover {
-        background-color: #f5f5f5;
-    }
-
-    .language-dropdown-item.active {
-        background-color: #f0f0f0;
-        font-weight: 500;
-    }
-
-    .language-item-content {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-
-    .check-icon {
-        width: 14px;
-        height: 14px;
-    }
-
-
-    .language-dropdown-item:hover .flag-icon {
-        transform: scale(1.1);
-        transition: transform 0.2s ease;
-    }
-
-
-    @media (max-width: 768px) {
-        .language-dropdown-toggle {
-            padding: 6px 12px;
-            font-size: 13px;
-            min-width: 100px;
-        }
-
-
-        .flag-icon {
-            width: 18px;
-            height: 13px;
-        }
-    }
-
 
     .header-top {
         background-color: #f8f9fa;
         padding: 8px 0;
-        border-bottom: 1px solid rgba(0,0,0,0.05);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     }
 
+    .header-template.header-sticky {
+        position: relative;
+        top: auto;
+    }
+
+    @media (max-width: 768px) {
+        body {
+            padding-top: 70px;
+        }
+    }
+
+    /* ========== RECHERCHE MOBILE ========== */
+    .mobile-search-wrapper {
+        display: none;
+    }
+
+    @media (max-width: 767px) {
+        .mobile-search-wrapper.visible-xs {
+            display: flex;
+            align-items: center;
+            order: 2;
+            z-index: 2;
+        }
+
+        .mobile-search-toggle {
+            background: none;
+            border: none;
+            font-size: 20px;
+            color: #333;
+            cursor: pointer;
+            padding: 8px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mobile-search-toggle:hover {
+            color: black;
+            background-color: transparent;
+        }
+
+        .mobile-search-form {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transform: translateY(-10px);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1001;
+        }
+
+        .mobile-search-wrapper.active .mobile-search-form {
+            transform: translateY(0);
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .mobile-search-form form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .mobile-search-form .select-category {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            background: white;
+        }
+
+        .mobile-search-form .search-field {
+            display: flex;
+            gap: 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .mobile-search-form .search-field input {
+            flex: 1;
+            padding: 12px 15px;
+            border: none;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .mobile-search-form .search-submit {
+         
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .mobile-search-form .search-submit:hover {
+            background: #0056b3;
+        }
+
+        /* Organisation mobile */
+        .header-middle .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            padding: 10px 15px;
+            gap: 10px;
+        }
+
+        .ts-mobile-icon-toggle {
+            order: 1;
+            flex: 0 0 auto;
+        }
+
+        .logo-wrapper {
+            order: 3;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .header-left {
+            order: 4;
+            flex: 0 0 auto;
+        }
+
+        .logo-wrapper .logo img {
+            max-height: 35px;
+            width: auto;
+        }
+
+        .header-center {
+            display: none !important;
+        }
+
+        .header-top {
+            display: none !important;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+        .mobile-search-wrapper.visible-xs {
+            display: none;
+        }
+        
+        .header-center {
+            display: none;
+        }
+    }
+
+    /* ========== STYLES GÉNÉRAUX ========== */
     .header-top .container {
         display: flex;
         justify-content: space-between;
@@ -454,178 +448,50 @@
         font-weight: 600;
         font-size: 14px;
     }
-
-
-    .language-dropdown-menu {
-        position: absolute;
-        top: calc(100% + 5px);
-        left: 0;
-
-        background: white;
-        border-radius: 12px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15), 0 5px 15px rgba(0, 0, 0, 0.1);
-        padding: 8px 0;
-        margin: 0;
-        list-style: none;
-        z-index: 1000;
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-10px);
-        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        background-color: rgba(255, 255, 255, 0.98);
-    }
-
-
-    .language-dropdown-menu li {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        border: none;
-    }
-
-
-    .language-dropdown-item {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 18px;
-        text-decoration: none;
-        color: #2c3e50;
-        font-size: 14px;
-        font-weight: 500;
-        transition: all 0.3s ease;
-        cursor: pointer;
-        position: relative;
-        border-left: 3px solid transparent;
-    }
-
-    .language-dropdown-item:hover {
-        background: linear-gradient(90deg, rgba(52, 152, 219, 0.08) 0%, rgba(52, 152, 219, 0.02) 100%);
-        border-left-color: #3498db;
-        padding-left: 22px;
-    }
-
-
-    .language-dropdown-item.active {
-        background: linear-gradient(90deg, rgba(46, 204, 113, 0.1) 0%, rgba(46, 204, 113, 0.02) 100%);
-        border-left-color: #2ecc71;
-        font-weight: 600;
-        color: #27ae60;
-    }
-
-
-    .language-item-content {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        flex: 1;
-    }
-
-
-    .language-item-content .flag-icon {
-        width: 24px;
-        height: 18px;
-        object-fit: cover;
-        border-radius: 4px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-        transition: all 0.3s ease;
-    }
-
-
-    .language-dropdown-item:hover .flag-icon {
-        transform: scale(1.15) rotate(2deg);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-
-    .language-item-content span {
-        font-size: 14px;
-        letter-spacing: 0.3px;
-        transition: all 0.3s ease;
-    }
-
-    .language-dropdown-item:hover .language-item-content span {
-        transform: translateX(3px);
-    }
-
-
-    .check-icon {
-        width: 16px;
-        height: 16px;
-        opacity: 0;
-        transform: scale(0);
-        transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-    }
-
-    .language-dropdown-item.active .check-icon {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-
-    .language-selector.active .language-dropdown-menu {
-        opacity: 1;
-        visibility: visible;
-        transform: translateY(0);
-    }
-
-
-    .language-dropdown-menu li:not(:last-child) {
-        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    }
-
-    .language-dropdown-item:active {
-        background-color: rgba(52, 152, 219, 0.2);
-        transform: scale(0.98);
-    }
-
-    @media (max-width: 768px) {
-        .language-dropdown-menu {
-
-            border-radius: 10px;
-        }
-
-        .language-dropdown-item {
-            padding: 8px 15px;
-        }
-
-        .language-item-content .flag-icon {
-            width: 22px;
-            height: 16px;
-        }
-
-        .language-item-content span {
-            font-size: 13px;
-        }
-    }
-
-    @keyframes slideIn {
-        from {
-            opacity: 0;
-            transform: translateX(-10px);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    .language-selector.active .language-dropdown-menu li {
-        animation: slideIn 0.3s ease forwards;
-        animation-delay: calc(0.05s * var(--i, 1));
-    }
-
-    .language-selector.active .language-dropdown-menu li:nth-child(1) { --i: 1; }
-    .language-selector.active .language-dropdown-menu li:nth-child(2) { --i: 2; }
-    .language-selector.active .language-dropdown-menu li:nth-child(3) { --i: 3; }
-    .language-selector.active .language-dropdown-menu li:nth-child(4) { --i: 4; }
-    .language-selector.active .language-dropdown-menu li:nth-child(5) { --i: 5; }
 </style>
 
 <script>
     document.addEventListener('DOMContentLoaded', function() {
+        // ========== RECHERCHE MOBILE ==========
+        const mobileSearchWrapper = document.querySelector('.mobile-search-wrapper');
+        const mobileSearchToggle = document.querySelector('.mobile-search-toggle');
+        
+        if (mobileSearchToggle && mobileSearchWrapper) {
+            mobileSearchToggle.addEventListener('click', function(e) {
+                e.stopPropagation();
+                mobileSearchWrapper.classList.toggle('active');
+                
+                if (mobileSearchWrapper.classList.contains('active')) {
+                    const searchInput = mobileSearchWrapper.querySelector('input[type="text"]');
+                    if (searchInput) {
+                        setTimeout(() => {
+                            searchInput.focus();
+                        }, 300);
+                    }
+                }
+            });
+            
+            document.addEventListener('click', function(e) {
+                if (!mobileSearchWrapper.contains(e.target)) {
+                    mobileSearchWrapper.classList.remove('active');
+                }
+            });
+            
+            const mobileSearchForm = mobileSearchWrapper.querySelector('.mobile-search-form');
+            if (mobileSearchForm) {
+                mobileSearchForm.addEventListener('click', function(e) {
+                    e.stopPropagation();
+                });
+            }
+            
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    mobileSearchWrapper.classList.remove('active');
+                }
+            });
+        }
+
+        // ========== SÉLECTEUR DE LANGUES ==========
         const languageSelector = document.querySelector('.language-selector');
         const dropdownToggle = document.querySelector('.language-dropdown-toggle');
 

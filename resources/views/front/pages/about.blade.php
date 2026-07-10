@@ -58,7 +58,7 @@
                                              data-id="3dc8e6c" data-element_type="widget"
                                              data-widget_type="image.default">
                                             <img fetchpriority="high" decoding="async" width="1024" height="576"
-                                                 src="../assets/uploads/2026/02/81-1024x576.jpg"
+                                                 src="../assets/uploads/2026/02/81-1024x576.png"
                                                  class="attachment-large size-large wp-image-12738" alt=""
                                                  sizes="(max-width: 1024px) 100vw, 1024px">
                                         </div>
@@ -110,7 +110,7 @@
                                                          data-id="43e5aba6" data-element_type="widget"
                                                          data-widget_type="image.default">
                                                         <img decoding="async" width="1600" height="1200"
-                                                             src="../assets/uploads/2026/02/WhatsApp-Image-2025-12-03-at-15.33.52.jpg"
+                                                             src="../assets/uploads/2026/02/Image_m.png"
                                                              class="attachment-full size-full wp-image-12737" alt=""
                                                              sizes="(max-width: 1600px) 100vw, 1600px">
                                                     </div>

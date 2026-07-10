@@ -458,7 +458,7 @@ body.tribe-theme-merto .datepicker {z-index: 993 !important;}
 span.close:hover,.overlay:hover {cursor: pointer}
 .woocommerce form.login input,.woocommerce form.login select,.woocommerce form.login textarea,.woocommerce form.register input,.woocommerce form.register select,.woocommerce form.register textarea {max-width:450px}
 html input.button,input[type^=check],input[type^=radio],input[type^=submit] {margin:0;width:auto}
-html input {box-shadow:none;width:100%;border:0;margin:0 0 10px;padding:6px 25px;border-radius:0}
+/* html input {box-shadow:none;width:100%;border:0;margin:0 0 10px;padding:6px 25px;border-radius:0} */
 input[type=file] {line-height:18px}
 button,input {transition:350ms}
 fieldset {border-width:1px;border-style:solid;padding:20px 20px 10px;margin:20px 0;border-radius: var(--ts-border-radius);}

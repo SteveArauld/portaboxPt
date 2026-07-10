@@ -87,7 +87,7 @@
                                                             <sr7-slide id="SR7_7_1-17" data-key="17">
                                                                 <sr7-bg id="SR7_7_1-17-11" class="sr7-layer">
                                                                     <noscript><img decoding="async"
-                                                                                   src="assets/uploads/2026/02/WhatsApp-Image-2025-12-03-at-15.33.52.jpg"
+                                                                                   src="assets/uploads/2026/02/Image_m.png"
                                                                                    alt=""
                                                                                    title="WhatsApp Image 2025-12-03 at 15.33.52"></noscript>
                                                                 </sr7-bg>
@@ -98,7 +98,7 @@
                                                             <sr7-slide id="SR7_7_1-18" data-key="18">
                                                                 <sr7-bg id="SR7_7_1-18-11" class="sr7-layer">
                                                                     <noscript><img decoding="async"
-                                                                                   src="assets/uploads/2026/02/81.jpg"
+                                                                                   src="assets/uploads/2026/02/81.png"
                                                                                    alt="" title="81"></noscript>
                                                                 </sr7-bg>
                                                                 <sr7-txt id="SR7_7_1-18-1" class="sr7-layer">{{ __('home.slider.slide2.title') }}</sr7-txt>
@@ -108,7 +108,7 @@
                                                             <sr7-slide id="SR7_7_1-19" data-key="19">
                                                                 <sr7-bg id="SR7_7_1-19-11" class="sr7-layer">
                                                                     <noscript><img decoding="async"
-                                                                                   src="assets/uploads/2026/02/47.jpg"
+                                                                                   src="assets/uploads/2026/02/47.png"
                                                                                    alt="" title="47"></noscript>
                                                                 </sr7-bg>
                                                                 <sr7-txt id="SR7_7_1-19-1" class="sr7-layer">{{ __('home.slider.slide3.title') }}</sr7-txt>
@@ -123,10 +123,10 @@
                                                                  data-libid="12737" data-lib="medialibrary"
                                                                  title="WhatsApp Image 2025-12-03 at 15.33.52" width="0" height="0"
                                                                  data-dbsrc="Ly9jb250YWluZXJib3hpdGFsaWEuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzAyL1doYXRzQXBwLUltYWdlLTIwMjUtMTItMDMtYXQtMTUuMzMuNTIuanBlZw=="/>
-                                                            <img data-src="/assets/uploads/2026/02/81.jpg"
+                                                            <img data-src="/assets/uploads/2026/02/81.png"
                                                                  data-libid="12738" data-lib="medialibrary" title="81" width="0" height="0"
                                                                  data-dbsrc="Ly9jb250YWluZXJib3hpdGFsaWEuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzAyLzgxLmpwZw=="/>
-                                                            <img data-src="/assets/uploads/2026/02/47.jpg"
+                                                            <img data-src="/assets/uploads/2026/02/47.png"
                                                                  data-libid="12739" data-lib="medialibrary" title="47" width="0" height="0"
                                                                  data-dbsrc="Ly9jb250YWluZXJib3hpdGFsaWEuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDI2LzAyLzQ3LmpwZw=="/>
                                                         </image_lists>
@@ -399,16 +399,16 @@
                                                         <div class="banner-bg">
                                                             <img loading="lazy" decoding="async" width="2048"
                                                                  height="1536"
-                                                                 src="assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.jpg"
+                                                                 src="assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png"
                                                                  class="bg-image mobile-banner" alt=""
-                                                                 srcset="/assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.jpg 2048w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n-300x225.jpg 300w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n-1024x768.jpg 1024w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n-768x576.jpg 768w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n-1536x1152.jpg 1536w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n-700x525.jpg 700w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n-1300x975.jpg 1300w"
+                                                                 srcset="/assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 2048w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 300w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 1024w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 768w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 1536w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 700w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 1300w"
                                                                  sizes="(max-width: 2048px) 100vw, 2048px"/>
                                                             <img
                                                                     loading="lazy" decoding="async" width="2048"
                                                                     height="1536"
-                                                                    src="assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.jpg"
+                                                                    src="assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png"
                                                                     class="bg-image bg-image main-banner" alt=""
-                                                                    srcset="/assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.jpg 2048w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n-300x225.jpg 300w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n-1024x768.jpg 1024w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n-768x576.jpg 768w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n-1536x1152.jpg 1536w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n-700x525.jpg 700w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n-1300x975.jpg 1300w"
+                                                                    srcset="/assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 2048w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 300w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 1024w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 768w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 1536w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 700w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 1300w"
                                                                     sizes="(max-width: 2048px) 100vw, 2048px"/>
                                                         </div>
 

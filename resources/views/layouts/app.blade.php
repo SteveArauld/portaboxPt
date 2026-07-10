@@ -483,9 +483,9 @@
 
                         // Créer un slider de remplacement avec animations
                         var images = [
-                            '{{ asset("assets/uploads/2026/02/WhatsApp-Image-2025-12-03-at-15.33.52.jpg") }}',
-                            '{{ asset("assets/uploads/2026/02/81.jpg") }}',
-                            '{{ asset("assets/uploads/2026/02/47.jpg") }}'
+                            '{{ asset("assets/uploads/2026/02/Image_m.png") }}',
+                            '{{ asset("assets/uploads/2026/02/81.png") }}',
+                            '{{ asset("assets/uploads/2026/02/47.png") }}'
                         ];
 
                         // Construction du HTML (sans les styles)

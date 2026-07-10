@@ -249,7 +249,7 @@
                         <p>{{ __('delivery.section10.text1') }}</p>
 
                         <p>
-                            <strong>{{ __('delivery.section10.whatsapp') }}</strong> +39 350 872 4295<br>
+                            <strong>{{ __('delivery.section10.whatsapp') }}</strong>+351 912 345 678<br>
                              <strong>{{ __('delivery.section10.email') }}</strong>
                             <a>contato@portocontentores.pt</a><br>
                             
