@@ -84,8 +84,8 @@
     "footer.company.address": "Endereço: Rua das Portas, 123, 4000-001 Porto, Portugal",
     "footer.company.whatsapp": "Whatsapp: +351 912 345 678",
     "footer.company.email": "E-mail: contato@portocontentores.pt",
-    "footer.company.vat": "NIF: 513456789",
-    "footer.company.european_vat": "NIF Europeu: PT513456789",
+    "footer.company.vat": "NIF: 501234560",
+    "footer.company.european_vat": "NIF Europeu: PT501234560",
     "footer.categories.title": "Categorias de contentores",
     "footer.info.title": "Informações adicionais",
     "footer.info.legal": "Aviso legal",
@@ -350,8 +350,8 @@
     "terms.section2.phone": "Telefone / WhatsApp: +351 912 345 678",
     "terms.section2.email": "E-mail: contato@portocontentores.pt",
     "terms.section2.website": "Site: https://portocontentores.pt",
-    "terms.section2.vat": "NIF: 513456789",
-    "terms.section2.european_vat": "NIF Europeu: PT513456789",
+    "terms.section2.vat": "NIF: 501234560",
+    "terms.section2.european_vat": "NIF Europeu: PT501234560",
     "terms.section2.activity": "Atividade:",
     "terms.section2.activity_text": "Venda de contentores marítimos, contentores refrigerados, contentores habitacionais e contentores modificados.",
     "terms.section3.title": "3. Produtos e Disponibilidade",
@@ -467,8 +467,8 @@
     "privacy.section1.phone": "Telefone / WhatsApp: +351 912 345 678",
     "privacy.section1.email": "E-mail: contato@portocontentores.pt",
     "privacy.section1.website": "Site: https://portocontentores.pt",
-    "privacy.section1.vat": "NIF: 513456789",
-    "privacy.section1.european_vat": "NIF Europeu: PT513456789",
+    "privacy.section1.vat": "NIF: 501234560",
+    "privacy.section1.european_vat": "NIF Europeu: PT501234560",
     "privacy.section1.legal_address": "Sede social: Rua das Portas, 123, 4000-001 Porto, Portugal",
     "privacy.section1.activity": "Atividade:",
     "privacy.section1.activity_text": "Venda de contentores marítimos, contentores refrigerados, contentores habitacionais e contentores modificados em Portugal.",
@@ -801,7 +801,16 @@
 "home.testimonials.author.marco": "Marco Rinaldi",
 "home.testimonials.author.giulia": "Giulia Ferrante",
 "home.testimonials.author.luca": "Luca De Santis",
-"home.testimonials.author.elena": "Elena Moretti"
+"home.testimonials.author.elena": "Elena Moretti",
+
+ "header.category.refrigerados": "Contentores Refrigerados",
+  "header.category.modulares": "Contentores Modulares",
+  "header.category.contentores_20": "Contentores 20 Pés",
+  "header.category.contentores_40": "Contentores 40 Pés",
+  "header.category.contentores_casa": "Contentores Casa",
+  "header.category.piscinas": "Piscinas",
+  "header.category.contentores_10": "Contentores 10 Pés",
+  "header.category.cafetaria": "Cafetaria / Bar / Restaurante"
 
 
 }

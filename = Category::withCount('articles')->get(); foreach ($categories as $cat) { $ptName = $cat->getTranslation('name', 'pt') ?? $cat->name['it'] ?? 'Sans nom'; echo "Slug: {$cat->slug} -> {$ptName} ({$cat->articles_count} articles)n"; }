@@ -3,7 +3,7 @@
       [34;4mApp\Models\Category[39;24m {#5565
         [34mid[39m: [35m1[39m,
         [34mname[39m: "[32m{"it":"Container Modulari","en":"Modular Containers","fr":"Conteneurs Modulaires","pt":"Contêineres Modulares","es":"Contenedores Modulares"}[39m",
-        [34mslug[39m: "[32mconteineres-modulares[39m",
+        [34mslug[39m: "[32mcontentores-modulares[39m",
         [34mdescription[39m: "[32m{"it":"Container modulari per diverse esigenze abitative e commerciali","en":"Modular containers for various residential and commercial needs","fr":"Conteneurs modulaires pour divers besoins résidentiels et commerciaux","pt":"Contêineres modulares para diversas necessidades residenciais e comerciais","es":"Contenedores modulares para diversas necesidades residenciales y comerciales"}[39m",
         [34mcreated_at[39m: "[32m2026-07-09 22:51:39[39m",
         [34mupdated_at[39m: "[32m2026-07-09 22:51:39[39m",
@@ -11,7 +11,7 @@
       [34;4mApp\Models\Category[39;24m {#5566
         [34mid[39m: [35m2[39m,
         [34mname[39m: "[32m{"it":"Contenitori Casa","en":"Home Containers","fr":"Conteneurs Habitat","pt":"Contêineres Casa","es":"Contenedores Casa"}[39m",
-        [34mslug[39m: "[32mconteineres-casa[39m",
+        [34mslug[39m: "[32mcontentores-casa[39m",
         [34mdescription[39m: "[32m{"it":"Case container e soluzioni abitative","en":"Container homes and housing solutions","fr":"Maisons conteneurs et solutions d'habitat","pt":"Casas contêiner e soluções habitacionais","es":"Casas contenedor y soluciones habitacionales"}[39m",
         [34mcreated_at[39m: "[32m2026-07-09 22:51:39[39m",
         [34mupdated_at[39m: "[32m2026-07-09 22:51:39[39m",
@@ -19,7 +19,7 @@
       [34;4mApp\Models\Category[39;24m {#5567
         [34mid[39m: [35m3[39m,
         [34mname[39m: "[32m{"it":"Container di Stoccaggio","en":"Storage Containers","fr":"Conteneurs de Stockage","pt":"Contêineres de Armazenamento","es":"Contenedores de Almacenamiento"}[39m",
-        [34mslug[39m: "[32mconteineres-de-armazenamento[39m",
+        [34mslug[39m: "[32mcontentores-de-armazenamento[39m",
         [34mdescription[39m: "[32m{"it":"Container per stoccaggio e magazzino","en":"Containers for storage and warehousing","fr":"Conteneurs pour stockage et entrepôt","pt":"Contêineres para armazenamento e depósito","es":"Contenedores para almacenamiento y depósito"}[39m",
         [34mcreated_at[39m: "[32m2026-07-09 22:51:39[39m",
         [34mupdated_at[39m: "[32m2026-07-09 22:51:39[39m",
@@ -27,7 +27,7 @@
       [34;4mApp\Models\Category[39;24m {#6024
         [34mid[39m: [35m4[39m,
         [34mname[39m: "[32m{"it":"Contenitori 10 Piedi","en":"10ft Containers","fr":"Conteneurs 10 Pieds","pt":"Contêineres 10 Pés","es":"Contenedores 10 Pies"}[39m",
-        [34mslug[39m: "[32mconteineres-10-pes[39m",
+        [34mslug[39m: "[32mcontentores-10-pes[39m",
         [34mdescription[39m: "[32m{"it":"Container da 10 piedi per varie applicazioni","en":"10ft containers for various applications","fr":"Conteneurs 10 pieds pour diverses applications","pt":"Contêineres de 10 pés para várias aplicações","es":"Contenedores de 10 pies para diversas aplicaciones"}[39m",
         [34mcreated_at[39m: "[32m2026-07-09 22:51:39[39m",
         [34mupdated_at[39m: "[32m2026-07-09 22:51:39[39m",
@@ -35,7 +35,7 @@
       [34;4mApp\Models\Category[39;24m {#6729
         [34mid[39m: [35m5[39m,
         [34mname[39m: "[32m{"it":"Contenitori 20 Piedi","en":"20ft Containers","fr":"Conteneurs 20 Pieds","pt":"Contêineres 20 Pés","es":"Contenedores 20 Pies"}[39m",
-        [34mslug[39m: "[32mconteineres-20-pes[39m",
+        [34mslug[39m: "[32mcontentores-20-pes[39m",
         [34mdescription[39m: "[32m{"it":"Container standard da 20 piedi","en":"Standard 20ft containers","fr":"Conteneurs standard 20 pieds","pt":"Contêineres padrão de 20 pés","es":"Contenedores estándar de 20 pies"}[39m",
         [34mcreated_at[39m: "[32m2026-07-09 22:51:39[39m",
         [34mupdated_at[39m: "[32m2026-07-09 22:51:39[39m",
@@ -43,7 +43,7 @@
       [34;4mApp\Models\Category[39;24m {#6574
         [34mid[39m: [35m6[39m,
         [34mname[39m: "[32m{"it":"Contenitori 40 Piedi","en":"40ft Containers","fr":"Conteneurs 40 Pieds","pt":"Contêineres 40 Pés","es":"Contenedores 40 Pies"}[39m",
-        [34mslug[39m: "[32mconteineres-40-pes[39m",
+        [34mslug[39m: "[32mcontentores-40-pes[39m",
         [34mdescription[39m: "[32m{"it":"Container da 40 piedi per grandi volumi","en":"40ft containers for large volumes","fr":"Conteneurs 40 pieds pour grands volumes","pt":"Contêineres de 40 pés para grandes volumes","es":"Contenedores de 40 pies para grandes volúmenes"}[39m",
         [34mcreated_at[39m: "[32m2026-07-09 22:51:39[39m",
         [34mupdated_at[39m: "[32m2026-07-09 22:51:39[39m",
@@ -51,7 +51,7 @@
       [34;4mApp\Models\Category[39;24m {#6573
         [34mid[39m: [35m7[39m,
         [34mname[39m: "[32m{"it":"Container Refrigerati","en":"Refrigerated Containers","fr":"Conteneurs Réfrigérés","pt":"Contêineres Refrigerados","es":"Contenedores Refrigerados"}[39m",
-        [34mslug[39m: "[32mconteineres-refrigerados[39m",
+        [34mslug[39m: "[32mcontentores-refrigerados[39m",
         [34mdescription[39m: "[32m{"it":"Container frigoriferi per prodotti sensibili","en":"Refrigerated containers for sensitive products","fr":"Conteneurs frigorifiques pour produits sensibles","pt":"Contêineres frigoríficos para produtos sensíveis","es":"Contenedores frigoríficos para productos sensibles"}[39m",
         [34mcreated_at[39m: "[32m2026-07-09 22:51:39[39m",
         [34mupdated_at[39m: "[32m2026-07-09 22:51:39[39m",
@@ -59,7 +59,7 @@
       [34;4mApp\Models\Category[39;24m {#6714
         [34mid[39m: [35m8[39m,
         [34mname[39m: "[32m{"it":"Container Standard Usati","en":"Used Standard Containers","fr":"Conteneurs Standards d'Occasion","pt":"Contêineres Padrão Usados","es":"Contenedores Estándar Usados"}[39m",
-        [34mslug[39m: "[32mconteineres-padrao-usados[39m",
+        [34mslug[39m: "[32mcontentores-padrao-usados[39m",
         [34mdescription[39m: "[32m{"it":"Container standard di seconda mano","en":"Second-hand standard containers","fr":"Conteneurs standards de seconde main","pt":"Contêineres padrão de segunda mão","es":"Contenedores estándar de segunda mano"}[39m",
         [34mcreated_at[39m: "[32m2026-07-09 22:51:39[39m",
         [34mupdated_at[39m: "[32m2026-07-09 22:51:39[39m",

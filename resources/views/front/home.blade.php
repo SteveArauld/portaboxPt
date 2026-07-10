@@ -51,6 +51,7 @@
         }
     </style>
 @endpush
+
 @section('title', 'PORTA BOX SOLUTIONS')
 @section('content')
 
@@ -136,6 +137,8 @@
                                     </div>
                                 </div>
                             </div>
+                            
+                            <!-- Container Refrigerados -->
                             <div class="elementor-element elementor-element-7fe59cb1 e-flex e-con-boxed e-con e-parent"
                                  data-id="7fe59cb1" data-element_type="container">
                                 <div class="e-con-inner">
@@ -147,11 +150,11 @@
                                                  style="--ts-columns: 5">
 
                                                 <header class="shortcode-heading-wrapper">
-                                                    <h3 class="shortcode-title">{{ __('header.category.refrigerati') }}</h3>
+                                                    <h3 class="shortcode-title">{{ __('header.category.refrigerados') }}</h3>
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'container-refrigerati']) }}"
+                                                           href="{{ route('category.show', ['category' => 'contentores-refrigerados']) }}"
                                                            target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
@@ -257,7 +260,7 @@
                                 </div>
                             </div>
 
-                            <!-- Container modulari section -->
+                            <!-- Contentores Modulares -->
                             <div class="elementor-element elementor-element-3880d06 e-flex e-con-boxed e-con e-parent"
                                  data-id="3880d06" data-element_type="container">
                                 <div class="e-con-inner">
@@ -269,11 +272,11 @@
                                                  style="--ts-columns: 5">
 
                                                 <header class="shortcode-heading-wrapper">
-                                                    <h3 class="shortcode-title">{{ __('header.category.modulari') }}</h3>
+                                                    <h3 class="shortcode-title">{{ __('header.category.modulares') }}</h3>
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'container-modulari']) }}"
+                                                           href="{{ route('category.show', ['category' => 'contentores-modulares']) }}"
                                                            target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
@@ -429,7 +432,7 @@
                                 </div>
                             </div>
 
-                            <!-- Contenitori 20 Piedi section -->
+                            <!-- Contentores 20 Pés -->
                             <div class="elementor-element elementor-element-7a2dda0 e-flex e-con-boxed e-con e-parent"
                                  data-id="7a2dda0" data-element_type="container">
                                 <div class="e-con-inner">
@@ -441,11 +444,11 @@
                                                  style="--ts-columns: 5">
 
                                                 <header class="shortcode-heading-wrapper">
-                                                    <h3 class="shortcode-title">{{ __('header.category.contenitori_20') }}</h3>
+                                                    <h3 class="shortcode-title">{{ __('header.category.contentores_20') }}</h3>
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'contenitori-20-piedi']) }}"
+                                                           href="{{ route('category.show', ['category' => 'contentores-20-pes']) }}"
                                                            target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
@@ -551,7 +554,7 @@
                                 </div>
                             </div>
 
-                            <!-- Contenitori 40 Piedi section -->
+                            <!-- Contentores 40 Pés -->
                             <div class="elementor-element elementor-element-0e484dd e-flex e-con-boxed e-con e-parent"
                                  data-id="0e484dd" data-element_type="container">
                                 <div class="e-con-inner">
@@ -563,11 +566,11 @@
                                                  style="--ts-columns: 5">
 
                                                 <header class="shortcode-heading-wrapper">
-                                                    <h3 class="shortcode-title">{{ __('header.category.contenitori_40') }}</h3>
+                                                    <h3 class="shortcode-title">{{ __('header.category.contentores_40') }}</h3>
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'contenitori-40-piedi']) }}"
+                                                           href="{{ route('category.show', ['category' => 'contentores-40-pes']) }}"
                                                            target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
@@ -673,7 +676,7 @@
                                 </div>
                             </div>
 
-                            <!-- Contenitori Casa section -->
+                            <!-- Contentores Casa -->
                             <div class="elementor-element elementor-element-9ca49a1 e-flex e-con-boxed e-con e-parent"
                                  data-id="9ca49a1" data-element_type="container">
                                 <div class="e-con-inner">
@@ -685,11 +688,11 @@
                                                  style="--ts-columns: 5">
 
                                                 <header class="shortcode-heading-wrapper">
-                                                    <h3 class="shortcode-title">{{ __('header.category.contenitori_casa') }}</h3>
+                                                    <h3 class="shortcode-title">{{ __('header.category.contentores_casa') }}</h3>
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'contenitori-casa']) }}"
+                                                           href="{{ route('category.show', ['category' => 'contentores-casa']) }}"
                                                            target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
@@ -795,7 +798,7 @@
                                 </div>
                             </div>
 
-                            <!-- Piscina section -->
+                            <!-- Piscinas -->
                             <div class="elementor-element elementor-element-42fc19a e-flex e-con-boxed e-con e-parent"
                                  data-id="42fc19a" data-element_type="container">
                                 <div class="e-con-inner">
@@ -807,11 +810,11 @@
                                                  style="--ts-columns: 5">
 
                                                 <header class="shortcode-heading-wrapper">
-                                                    <h3 class="shortcode-title">{{ __('header.category.piscina') }}</h3>
+                                                    <h3 class="shortcode-title">{{ __('header.category.piscinas') }}</h3>
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'piscina']) }}"
+                                                           href="{{ route('category.show', ['category' => 'piscinas']) }}"
                                                            target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
@@ -917,7 +920,7 @@
                                 </div>
                             </div>
 
-                            <!-- Contenitori 10 Piedi section -->
+                            <!-- Contentores 10 Pés -->
                             <div class="elementor-element elementor-element-42fc19a e-flex e-con-boxed e-con e-parent"
                                  data-id="42fc19a" data-element_type="container">
                                 <div class="e-con-inner">
@@ -929,11 +932,11 @@
                                                  style="--ts-columns: 5">
 
                                                 <header class="shortcode-heading-wrapper">
-                                                    <h3 class="shortcode-title">{{ __('header.category.contenitori_10') }}</h3>
+                                                    <h3 class="shortcode-title">{{ __('header.category.contentores_10') }}</h3>
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'contenitori-10-piedi']) }}"
+                                                           href="{{ route('category.show', ['category' => 'contentores-10-pes']) }}"
                                                            target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
@@ -1039,7 +1042,7 @@
                                 </div>
                             </div>
 
-                            <!-- Caffetteria / Bar / Ristorante section -->
+                            <!-- Cafetaria / Bar / Restaurante -->
                             <div class="elementor-element elementor-element-42fc19a e-flex e-con-boxed e-con e-parent"
                                  data-id="42fc19a" data-element_type="container">
                                 <div class="e-con-inner">
@@ -1051,11 +1054,11 @@
                                                  style="--ts-columns: 5">
 
                                                 <header class="shortcode-heading-wrapper">
-                                                    <h3 class="shortcode-title">{{ __('header.category.caffetteria') }}</h3>
+                                                    <h3 class="shortcode-title">{{ __('header.category.cafetaria') }}</h3>
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'caffetteria-bar-ristorante']) }}"
+                                                           href="{{ route('category.show', ['category' => 'cafetaria-bar-restaurante']) }}"
                                                            target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>

@@ -21,16 +21,16 @@ public function index()
     // Récupérer la langue cible depuis le fichier .env
     $targetLocale = config('app.locale', 'pt');
 
-    // Générer les slugs en portugais
+    // Générer les slugs en portugais du Portugal
     $slugs = [
-        'containerRefrigerati' => Str::slug('Contêineres Refrigerados'),
-        'container_modulari' => Str::slug('Contêineres Modulares'),
-        'contenitori_20_piedi' => Str::slug('Contêineres 20 Pés'),
-        'contenitori_40_piedi' => Str::slug('Contêineres 40 Pés'),
-        'contenitori_casa' => Str::slug('Contêineres Casa'),
-        'piscina' => Str::slug('Piscina'),
-        'contenitori_10_piedi' => Str::slug('Contêineres 10 Pés'),
-        'caffetteria_bar_ristorante' => Str::slug('Cafeteria Bar Restaurante'),
+        'containerRefrigerati' => Str::slug('Contentores Refrigerados'),
+        'container_modulari' => Str::slug('Contentores Modulares'),
+        'contenitori_20_piedi' => Str::slug('Contentores 20 Pés'),
+        'contenitori_40_piedi' => Str::slug('Contentores 40 Pés'),
+        'contenitori_casa' => Str::slug('Contentores Casa'),
+        'piscina' => Str::slug('Piscinas'),        // ← Portugal : Piscinas
+        'contenitori_10_piedi' => Str::slug('Contentores 10 Pés'),
+        'caffetteria_bar_ristorante' => Str::slug('Cafetaria Bar Restaurante'), // ← Portugal : Cafetaria
     ];
 
     $containerRefrigerati = Article::with(['category', 'images'])
@@ -436,6 +436,8 @@ public function index()
 
     public function showShop(Request $request, $category = null)
     {
+
+   
         $selectedCategories = null;
         $minPrice = $request->get('min_price');
         $maxPrice = $request->get('max_price');
@@ -549,6 +551,8 @@ public function index()
             ->count();
 
         $totalProducts = Article::count();
+
+        //  dd($articles );
 
         return view('front.pages.shop', compact(
             'articles',

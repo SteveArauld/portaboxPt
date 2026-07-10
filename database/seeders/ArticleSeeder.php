@@ -54,7 +54,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611363",
                     "discount_percentage" => "-11%",
                     "link" => "/product/2-monoblocchi-uso-ufficio-con-bagno/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Dimensioni al basamento 593 x 243 cm.\nDimensioni al tetto 600 x 250 cm.\nH interna 240 cm H esterna 272 cm.\nPannello Parete sp.40 mm – Poliuretano\n1 Lato lamiera esterna micro nervata BG RAL 9002.\n1 Lato lamiera interna micro nervata BG RAL 9002.\nPannello Tetto sp.30+35 mm – Poliuretano\n1 Lato lamiera esterna 5 greche RAL 9002.\n1 Lato lamiera interna micro nervata BG RAL 9002.\nBasamento alta portanza con struttura in tubolare, rivestito con lamiera grecata, rivestita con legno IDRO V100 sp.18 mm, rivestito con PVC Antiscivolo.\nSerramenti in alluminio RAL 9010\nVetro 4 mm Trasparente.\nN.1 Porta mezzo vetro a un'anta di ingresso, completa di barre antintrusione, con maniglia e serratura standard, con dimensioni100 x 210h esterna cm.\nN.1 Finestra scorrevole, completa di barre antintrusione, con dimensioni 100 x 100h esterna cm.\nN.1 Porta cieca tutto pannello a un'anta, con maniglia e serratura standard, con dimensioni 80 x 210h esterna cm.\nN.1 Finestrino con apertura a vasistas, con vetro 4 mm tampato, senza barre antintrusione, con dimensioni 50 x 50h esterna cm.\nN.1 Porta a soffietto colore GRIGIO.\nImpianto idraulico interno con tubo MEPLA a vista, compreso di:\nN.1 Wc in ceramica + sedile + cassetta esterna.\nN.1 Portarotolo + Scopino.\nN.1 Lavabo in ceramica 60 cm + colonna + mix.\nN.1 Mensola + Specchio.\nN.1 Piatto doccia in ceramica 90 x 90 cm.\nN.1 Asta doccia + Miscelatore + Soffione.\nN.1 Porta sapone angolare.\nN.1 Boiler elettrico 60 Litri Acqua Calda.\nImpianto elettrico standard norma CEE 220V, con tubo PVC Biancoa vista, compreso di:\nN.1 Quadro elettrico.\nN.1 Differenziale Generale.\nN.1 Differenziale per CDZ.\nN.2 Interruttori.\nN.2 Prese.\nN.1 Plafoniera 19W-LED.\nN.1 Plafoniera 45W-LED.\nN.1 Termoconvettore 500W.\nN.1 Condizionatore Mono Split Inverter BTU 9000-HISENSE.\nN.1 Scatola esterna per allaccio impianto elettrico.",
                         "en" => "Base dimensions 593 x 243 cm.\nRoof dimensions 600 x 250 cm.\nInternal height 240 cm External height 272 cm.\nWall Panel thickness 40 mm – Polyurethane\n1 External side micro-ribbed sheet metal BG RAL 9002.\n1 Internal side micro-ribbed sheet metal BG RAL 9002.\nRoof Panel thickness 30+35 mm – Polyurethane\n1 External side 5-corrugated sheet metal RAL 9002.\n1 Internal side micro-ribbed sheet metal BG RAL 9002.\nHigh-load base with tubular structure, covered with corrugated sheet metal, covered with IDRO V100 wood thickness 18 mm, covered with Anti-slip PVC.\nAluminum frames RAL 9010\n4 mm Clear Glass.\nNo.1 Half-glass single-leaf entrance door, complete with anti-intrusion bars, with handle and standard lock, external dimensions 100 x 210h cm.\nNo.1 Sliding window, complete with anti-intrusion bars, external dimensions 100 x 100h cm.\nNo.1 Full-panel blind single-leaf door, with handle and standard lock, external dimensions 80 x 210h cm.\nNo.1 Small tilting window, with 4 mm frosted glass, without anti-intrusion bars, external dimensions 50 x 50h cm.\nNo.1 Folding door GRAY color.\nInternal plumbing system with visible MEPLA pipe, including:\nNo.1 Ceramic toilet + seat + external tank.\nNo.1 Toilet roll holder + Brush holder.\nNo.1 Ceramic sink 60 cm + column + mixer.\nNo.1 Shelf + Mirror.\nNo.1 Ceramic shower tray 90 x 90 cm.\nNo.1 Shower rod + Mixer + Shower head.\nNo.1 Corner soap dish.\nNo.1 60 Liter electric water heater.\nStandard electrical system according to CEE 220V regulations, with visible White PVC pipe, including:\nNo.1 Electrical panel.\nNo.1 Main differential switch.\nNo.1 Differential switch for socket outlets.\nNo.2 Switches.\nNo.2 Sockets.\nNo.1 19W-LED ceiling light.\nNo.1 45W-LED ceiling light.\nNo.1 500W electric convector heater.\nNo.1 HISENSE BTU 9000 Inverter Mono Split Air Conditioner.\nNo.1 External box for electrical system connection.",
@@ -89,24 +89,24 @@ class ArticleSeeder extends Seeder
                 [
                     "id" => "11170",
                     "name" => [
-                        "it" => "Abri Pool House in Composito – La Soluzione Perfetta per il tuo Spazio Piscina",
+                        "it" => "Abri Pool House in Composito – La Soluzione Perfetta per il tuo Spazio piscinas",
                         "en" => "Composite Pool House Shelter – The Perfect Solution for your Pool Area",
                         "fr" => "Abri Pool House en Composite – La Solution Parfaite pour votre Espace Piscine",
-                        "pt" => "Abrigo Pool House em Compósito – A Solução Perfeita para o seu Espaço Piscina",
-                        "es" => "Refugio Pool House en Compuesto – La Solución Perfecta para tu Espacio Piscina"
+                        "pt" => "Abrigo Pool House em Compósito – A Solução Perfeita para o seu Espaço piscinas",
+                        "es" => "Refugio Pool House en Compuesto – La Solución Perfecta para tu Espacio piscinas"
                     ],
                     "price" => "4,200.00",
                     "old_price" => "5,700.00",
                     "sku" => "3276611170",
-                    "discount_percentage" => null,
-                    "link" => "/product/abri-pool-house-in-composito-la-soluzione-perfetta-per-il-tuo-spazio-piscina/",
-                    "categories" => ["conteineres-modulares"],
+                    "discount_perce ntage" => null,
+                    "link" => "/product/abri-pool-house-in-composito-la-soluzione-perfetta-per-il-tuo-spazio-piscinas/",
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
-                        "it" => "Abri Pool House in Composito: struttura moderna e resistente per il tuo spazio piscina. Facile da montare, eco-sostenibile e personalizzabile. Garanzia 7 anni.",
+                        "it" => "Abri Pool House in Composito: struttura moderna e resistente per il tuo spazio piscinas. Facile da montare, eco-sostenibile e personalizzabile. Garanzia 7 anni.",
                         "en" => "Composite Pool House Shelter: modern and resistant structure for your pool area. Easy to assemble, eco-sustainable and customizable. 7-year warranty.",
                         "fr" => "Abri Pool House en Composite : structure moderne et résistante pour votre espace piscine. Facile à monter, éco-durable et personnalisable. Garantie 7 ans.",
-                        "pt" => "Abrigo Pool House em Compósito: estrutura moderna e resistente para o seu espaço de piscina. Fácil de montar, ecológico e personalizável. Garantia de 7 anos.",
-                        "es" => "Refugio Pool House en Compuesto: estructura moderna y resistente para tu espacio de piscina. Fácil de montar, ecológico y personalizable. Garantía de 7 años."
+                        "pt" => "Abrigo Pool House em Compósito: estrutura moderna e resistente para o seu espaço de piscinas. Fácil de montar, ecológico e personalizável. Garantia de 7 anos.",
+                        "es" => "Refugio Pool House en Compuesto: estructura moderna y resistente para tu espacio de piscinas. Fácil de montar, ecológico y personalizable. Garantía de 7 años."
                     ],
                     "images" => [
                         "/assets/uploads/2025/11/ABR-POOL-15-COMPO-300x300.png",
@@ -134,7 +134,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611416",
                     "discount_percentage" => null,
                     "link" => "/product/bellissima-e-confortevole-casa-mobile-chalet-wood-gray/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -187,7 +187,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610540",
                     "discount_percentage" => null,
                     "link" => "/product/casa-container-20-piedi-hc-completamente-attrezzata/",
-                    "categories" => ["contenitori-casa"],
+                    "categories" => ["contentores-casa"],
                     "short_description" => [
                         "it" => "Casa container compatta da 20 piedi HC, rivestita in fibrocemento effetto legno.Dotata di cucina, bagno, isolamento e finiture interne di alta qualità.\nEstetica moderna effetto legno\nIsolamento termico/acustico\nCucina e bagno inclusi\nImpianto elettrico completo\nPronta all'uso",
                         "en" => "Compact 20ft HC container house, clad in wood-effect fiber cement. Equipped with kitchen, bathroom, insulation and high-quality interior finishes.\nModern wood-effect aesthetics\nThermal/acoustic insulation\nKitchen and bathroom included\nComplete electrical system\nReady to use",
@@ -220,7 +220,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611488",
                     "discount_percentage" => null,
                     "link" => "/product/casa-container-35-m%c2%b2-modello-a-cottage-abitabile-tutto-lanno/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -264,7 +264,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610541",
                     "discount_percentage" => null,
                     "link" => "/product/casa-container-abitativa-40-piedi/",
-                    "categories" => ["contenitori-casa"],
+                    "categories" => ["contentores-casa"],
                     "short_description" => [
                         "it" => "Casa container da 40 piedi abitabile, prodotta da Max Shipping Inc.Cucina e bagno inclusi, soggiorno spazioso e consegna veloce in tutto il mondo.\nSpazio abitativo ottimizzato\nCucina attrezzata\nBagno completo\nPerfetta per coppie\nConsegna internazionale rapida",
                         "en" => "40ft habitable container house, manufactured by Max Shipping Inc. Kitchen and bathroom included, spacious living room and fast worldwide delivery.\nOptimized living space\nFitted kitchen\nComplete bathroom\nPerfect for couples\nFast international delivery",
@@ -297,7 +297,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611486",
                     "discount_percentage" => null,
                     "link" => "/product/casa-container-da-40-piedi-hq-12-m-alloggi-moderni-e-funzionali/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -343,7 +343,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610544",
                     "discount_percentage" => null,
                     "link" => "/product/casa-container-modello-playero/",
-                    "categories" => ["contenitori-casa"],
+                    "categories" => ["contentores-casa"],
                     "short_description" => [
                         "it" => "Abitazione container di design con ampi spazi e comfort moderni.\nContainer 40′ High Cube\n1 camera e 1 bagno completo\nCucina in PVC a L e armadio a specchio\n2 porte scorrevoli in vetro, climatizzazione inverter\nIsolamento totale e connessioni per generatore",
                         "en" => "Designer container home with spacious areas and modern comforts.\n40′ High Cube container\n1 bedroom and 1 full bathroom\nL-shaped PVC kitchen and mirrored wardrobe\n2 sliding glass doors, inverter air conditioning\nFull insulation and generator connections",
@@ -384,7 +384,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610543",
                     "discount_percentage" => null,
                     "link" => "/product/casa-container-prefabbricata/",
-                    "categories" => ["contenitori-casa"],
+                    "categories" => ["contentores-casa"],
                     "short_description" => [
                         "it" => "Casa prefabbricata container resistente e veloce da montare.\nStruttura in acciaio Q235B\nPannelli sandwich in lana di roccia da 75 mm\nPavimento ignifugo in MGO da 18 mm\nFinestre antieffrazione in alluminio\nIgnifuga A1, antisismica e antivento",
                         "en" => "Resistant and quick-to-assemble prefabricated container house.\nQ235B steel structure\n75 mm rock wool sandwich panels\n18 mm MGO fireproof flooring\nAluminum anti-break-in windows\nA1 fireproof, earthquake and wind resistant",
@@ -424,7 +424,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610542",
                     "discount_percentage" => null,
                     "link" => "/product/casa-container-prefabbricata-modulabile/",
-                    "categories" => ["contenitori-casa"],
+                    "categories" => ["contentores-casa"],
                     "short_description" => [
                         "it" => "Casa prefabbricata container modulare, progettata per condizioni estreme.\nStruttura in acciaio rinforzato\nIsolamento avanzato con pannelli sandwich\nPersonalizzabile in ogni dettaglio\nResistente a sismi e vento forte\nIdeale per abitazioni, uffici o spazi commerciali",
                         "en" => "Modular prefabricated container house, designed for extreme conditions.\nReinforced steel structure\nAdvanced insulation with sandwich panels\nCustomizable in every detail\nResistant to earthquakes and strong wind\nIdeal for homes, offices or commercial spaces",
@@ -460,7 +460,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610621",
                     "discount_percentage" => null,
                     "link" => "/product/casa-mobile-luisiana-taos-comfort-abitativo/",
-                    "categories" => ["contenitori-casa"],
+                    "categories" => ["contentores-casa"],
                     "short_description" => [
                         "it" => "Casa mobile moderna da 40 m², perfetta per ogni stagione.\nModello 2023 con design contemporaneo\n2 camere da letto e 2 bagni completi\nCucina full optional e soggiorno arredato\nWC separato e predisposizione per lavatrice\nIsolamento termico per uso annuale",
                         "en" => "Modern 40 m² mobile home, perfect for every season.\n2023 model with contemporary design\n2 bedrooms and 2 full bathrooms\nFully equipped kitchen and furnished living room\nSeparate toilet and washing machine preparation\nThermal insulation for year-round use",
@@ -507,7 +507,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "9876543456789",
                     "discount_percentage" => null,
                     "link" => "/product/casa-mobile-moderna-dimensioni-105-x-38-m/",
-                    "categories" => ["contenitori-casa"],
+                    "categories" => ["contentores-casa"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -548,7 +548,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "097654456789",
                     "discount_percentage" => null,
                     "link" => "/product/casa-mobile-moderna-dimensioni-12x4-m/",
-                    "categories" => ["contenitori-casa"],
+                    "categories" => ["contentores-casa"],
                     "short_description" => [
                         "it" => "Moderna casa mobile 12x4m: costruzione in acciaio e legno, isolamento termico avanzato e configurazioni personalizzabili per ogni esigenza vitale.",
                         "en" => "Modern 12x4m mobile home: steel and wood construction, advanced thermal insulation and customizable configurations for every living need.",
@@ -590,7 +590,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "876543456789",
                     "discount_percentage" => null,
                     "link" => "/product/casa-mobile-t2-una-soluzione-abitativa-moderna-e-flessibile/",
-                    "categories" => ["contenitori-casa"],
+                    "categories" => ["contentores-casa"],
                     "short_description" => [
                         "it" => "Mobile Home Container T2: una casa compatta, moderna e personalizzabile, ideale per qualsiasi esigenza. Facile da trasportare, efficiente e sostenibile.",
                         "en" => "T2 Container Mobile Home: a compact, modern and customizable home, ideal for any need. Easy to transport, efficient and sustainable.",
@@ -630,7 +630,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610545",
                     "discount_percentage" => null,
                     "link" => "/product/casa-modulare-gonzalez-spazio-intelligente-da-36-m%c2%b2/",
-                    "categories" => ["contenitori-casa"],
+                    "categories" => ["contentores-casa"],
                     "short_description" => [
                         "it" => "Soluzione abitativa modulare da 36 m² ideale per uso residenziale o turistico.\n1 camera, 1 bagno completo\nOpen space con cucina e soggiorno\nIsolamento poliuretano e lana di vetro\nFinestre termiche in PVC effetto legno\nImpianto elettrico completo e LED",
                         "en" => "36 m² modular housing solution ideal for residential or tourist use.\n1 bedroom, 1 full bathroom\nOpen space with kitchen and living room\nPolyurethane and fiberglass insulation\nThermal PVC windows with wood effect\nComplete electrical system and LED",
@@ -669,7 +669,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610620",
                     "discount_percentage" => null,
                     "link" => "/product/casa-modulare-montes-36-m%c2%b2-di-comfort-design/",
-                    "categories" => ["contenitori-casa"],
+                    "categories" => ["contentores-casa"],
                     "short_description" => [
                         "it" => "Casa modulare da 36 m² con layout efficiente e design moderno.\n2 camere da letto, 1 bagno completo\nAmpie finestre in alluminio nero termico\nIsolamento con poliuretano e lana di vetro\nRivestimenti interni in OSB, legno e cartongesso\nImpianto elettrico completo e luci LED",
                         "en" => "36 m² modular house with efficient layout and modern design.\n2 bedrooms, 1 full bathroom\nLarge thermal black aluminum windows\nInsulation with polyurethane and fiberglass\nInterior finishes in OSB, wood and plasterboard\nComplete electrical system and LED lights",
@@ -708,7 +708,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610539",
                     "discount_percentage" => null,
                     "link" => "/product/casa-prefabbricata-modulare-in-container/",
-                    "categories" => ["contenitori-casa"],
+                    "categories" => ["contentores-casa"],
                     "short_description" => [
                         "it" => "Casa prefabbricata in container in acciaio Q355 HDG, isolata e altamente resistente.Adatta per abitazioni, uffici, alloggi temporanei e strutture modulari.\nStruttura zincata a caldo\nIsolamento tetto in PU ad alta densità\nPareti in EPS o lana di roccia\nFinestre a doppio vetro\nResiste a venti fino a 210 km/h",
                         "en" => "Prefabricated Q355 HDG steel container house, insulated and highly resistant. Suitable for homes, offices, temporary accommodation and modular structures.\nHot-dip galvanized structure\nHigh-density PU roof insulation\nEPS or rock wool walls\nDouble glazed windows\nResists winds up to 210 km/h",
@@ -746,7 +746,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611232",
                     "discount_percentage" => null,
                     "link" => "/product/chiosco-snack-container-ufficio-area-vendita/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Realizzazione di un chiosco, snack bar, food truck, taverna in un container marittimo per il primo viaggio.\n# Nessuna lastra di cemento!\n# Nessuna preparazione!\n# Nessun noioso assemblaggio!\n# Grande volume!\n# Cellulare!\n# Architettura della moda!\n# Nessun permesso di costruire!\n# Senza manutenzione!\nCapire :\n1 container primo viaggio da 40′ (12mx2,45×2,60m)\nAperture:\n1 Tenda a gas 2000 x 1200 mm\n1 Tenda a gas 3000 x 1200 mm\n1 anta 800×2000 mm\nContatori:\n1 Bancone pieghevole 2000x300mm\n1 Bancone pieghevole 3000x300mm\nINSTALLAZIONE ELETTRICA:\n1 tabella 1 riga\n3 luci LED impermeabili\n4 prese di servizio 16A+T\n1 interruttore di alimentazione singolo\n1 pasto veloce\nIsolamento interno:\nPannello Sandwich Alimentare 40mm Bianco\nColore :\nVernice RAL 7016 in tutto il contenitore.",
                         "en" => "Creation of a kiosk, snack bar, food truck, tavern in a first voyage shipping container.\n# No concrete slab!\n# No preparation!\n# No tedious assembly!\n# Large volume!\n# Mobile!\n# Fashion architecture!\n# No building permit!\n# No maintenance!\nIncludes:\n1 first voyage 40′ container (12mx2.45×2.60m)\nOpenings:\n1 Gas awning 2000 x 1200 mm\n1 Gas awning 3000 x 1200 mm\n1 door 800×2000 mm\nCounters:\n1 Folding counter 2000x300mm\n1 Folding counter 3000x300mm\nELECTRICAL INSTALLATION:\n1 panel 1 row\n3 waterproof LED lights\n4 service sockets 16A+T\n1 single power switch\n1 quick meal\nInternal insulation:\n40mm White Food Sandwich Panel\nColor:\nRAL 7016 paint throughout the container.",
@@ -818,7 +818,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611230",
                     "discount_percentage" => null,
                     "link" => "/product/container-chiosco-snack/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Realizzazione di uno snack bar, taverna in un container marittimo.\nInclude:\n1 container primo viaggio da 20′ (6mx2,45×2,60m)\nAperture:\n1 Tenda a gas 3000 x 1200 mm\n1 Anta da 90×200 cm\nContatori:\n1 Bancone pieghevole 3000x300mm\nINSTALLAZIONE ELETTRICA:\n1 tabella 1 riga\n2 luci LED impermeabili\n4 prese di servizio 16A+T\n1 interruttore di alimentazione singolo\n1 pasto veloce\nIsolamento interno:\nPannello Sandwich Alimentare 40mm Bianco\nPavimento: resina gelcoat grigia con scarico a pavimento per il drenaggio\nVerniciatura: vernice RAL 7016 su tutto il contenitore.\nImpianti idraulici: Arrivo ed evacuazione acqua, installazione approvvigionamento idrico.\nCappe:\nFornitura e posa in opera di una cappa da 2 mt con aspirazione a soffitto.\nImmersioni:\nFornitura e installazione di 1 serbatoio da 1200 m + cumulo istantaneo\nFrigoriferi:\n1 frigorifero negativo da 600 L\n2 Tavoli con 3 ante positive in acciaio inox\nFriggitrice:\n1 friggitrice doppia in acciaio inox da 14 litri",
                         "en" => "Creation of a snack bar, tavern in a shipping container.\nIncludes:\n1 first voyage 20′ container (6mx2.45×2.60m)\nOpenings:\n1 Gas awning 3000 x 1200 mm\n1 Door 90×200 cm\nCounters:\n1 Folding counter 3000x300mm\nELECTRICAL INSTALLATION:\n1 panel 1 row\n2 waterproof LED lights\n4 service sockets 16A+T\n1 single power switch\n1 quick meal\nInternal insulation:\n40mm White Food Sandwich Panel\nFloor: gray gelcoat resin with floor drain for drainage\nPainting: RAL 7016 paint throughout the container.\nPlumbing: Water supply and drainage, water supply installation.\nHoods:\nSupply and installation of a 2 m hood with ceiling extraction.\nImmersion:\nSupply and installation of 1 1200 L tank + instant water heater\nRefrigerators:\n1 600 L freezer\n2 Stainless steel tables with 3 positive doors\nDeep fryer:\n1 14 liter double stainless steel deep fryer",
@@ -857,7 +857,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611490",
                     "discount_percentage" => null,
                     "link" => "/product/container-commerciale-da-294-m%c2%b2-soluzione-modulare-per-spazi-di-vendita/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -896,7 +896,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611489",
                     "discount_percentage" => null,
                     "link" => "/product/container-commerciale-da-294-m%c2%b2-spazio-commerciale-modulare-e-funzionale/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -1007,7 +1007,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610868",
                     "discount_percentage" => null,
                     "link" => "/product/container-da-20-piedi-con-lato-aperto/",
-                    "categories" => ["conteineres-20-pes"],
+                    "categories" => ["contentores-20-pes"],
                     "short_description" => [
                         "it" => "Il container da 20 piedi con lato aperto dispone di un'apertura completa della porta lungo un lato longitudinale e di porte standard sul lato anteriore. Ideale per il carico e lo scarico laterale di merci grandi o ingombranti. Realizzato in robusto acciaio CORTEN, certificato CSC, con pavimento in legno multistrato e Lockbox. Impilabile e adatto per carrelli elevatori. Acquista o noleggia ora!",
                         "en" => "The 20 ft open side container features a full door opening along one long side and standard doors on the front end. Ideal for side loading and unloading of large or bulky goods. Made of robust CORTEN steel, CSC certified, with plywood floor and Lockbox. Stackable and forkliftable. Buy or rent now!",
@@ -1080,7 +1080,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610867",
                     "discount_percentage" => null,
                     "link" => "/product/container-da-20-piedi-high-cube-con-pavimento-in-acciaio/",
-                    "categories" => ["conteineres-20-pes"],
+                    "categories" => ["contentores-20-pes"],
                     "short_description" => [
                         "it" => "Container da 20 piedi High Cube con pavimento in acciaio. Container di stoccaggio extra alto con pavimento in acciaio completamente saldato, lockbox, ventilazione e tasche per carrello elevatore. Certificato CSC, realizzato in acciaio CORTEN – ideale per merci pesanti o sensibili allo sporco.",
                         "en" => "20 ft High Cube Container with steel floor. Extra-high storage container with fully welded steel floor, lockbox, ventilation and forklift pockets. CSC certified, made of CORTEN steel – ideal for heavy or dirt-sensitive goods.",
@@ -1113,7 +1113,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611173",
                     "discount_percentage" => null,
                     "link" => "/product/container-da-ufficio-da-10-piedi/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Il nostro container per ufficio da 10 piedi offre uno spazio di lavoro, un ufficio o uno studio che soddisfa le vostre esigenze. E' dotato di riscaldamento, illuminazione installata e isolamento anticondensa.\nÈ la soluzione ideale per privati o aziende che necessitano di uno spazio versatile e flessibile, che possa essere spostato da un cantiere all'altro o facilmente smontabile una volta terminato l'utilizzo. Questo è l'ideale per un uso temporaneo, così come per un uso a lungo termine.\nSpecifiche:\nDimensioni esterne (LxPxH): 2,99 mx 2,43 mx 2,89 m\nDimensioni interne (LxPxA): 2,82 mx 2,35 mx 2,69 m\n1 finestra antivandalica + 1 porta\nFoderato e coibentato in melamina\nPavimento in vinile\nKit elettrico: 2 prese doppie, 1 radiatore, 1 striscia luminosa da 1,5 metri, 1 unità di consumo e collegamento esterno.",
                         "en" => "Our 10 ft office container offers a workspace, office or study that meets your needs. It features heating, installed lighting and anti-condensation insulation.\nIt is the ideal solution for individuals or companies needing a versatile and flexible space that can be moved from site to site or easily dismantled after use. This is ideal for temporary use as well as for long-term use.\nSpecifications:\nExternal dimensions (LxWxH): 2.99 m x 2.43 m x 2.89 m\nInternal dimensions (LxWxH): 2.82 m x 2.35 m x 2.69 m\n1 anti-vandalism window + 1 door\nLined and insulated with melamine\nVinyl flooring\nElectrical kit: 2 double sockets, 1 radiator, 1 light strip of 1.5 meters, 1 consumer unit and external connection.",
@@ -1150,7 +1150,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611725",
                     "discount_percentage" => null,
                     "link" => "/product/container-doppio-sanitario-con-2-cabine-wc-e-doccia/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -1290,7 +1290,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610945",
                     "discount_percentage" => null,
                     "link" => "/product/container-high-cube-da-10-piedi/",
-                    "categories" => ["conteineres-10-pes"],
+                    "categories" => ["contentores-10-pes"],
                     "short_description" => [
                         "it" => "Container compatto con altezza interna aggiuntiva per maggiore spazio di stoccaggio. In acciaio CORTEN, con pavimento in compensato, ventilazione, Lockbox e certificato CSC.  Ideale per lo stoccaggio e il trasporto.",
                         "en" => "Compact container with additional internal height for more storage space. Made of CORTEN steel, with plywood floor, ventilation, Lockbox and CSC certificate. Ideal for storage and transport.",
@@ -1361,7 +1361,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610942",
                     "discount_percentage" => null,
                     "link" => "/product/container-high-cube-da-20-piedi-nuovo/",
-                    "categories" => ["conteineres-20-pes"],
+                    "categories" => ["contentores-20-pes"],
                     "short_description" => [
                         "it" => "Container extra alto con 30 cm in più di altezza interna – ideale per lo stoccaggio e il trasporto a secco. Certificato CSC, con pavimento in legno multistrato, ventilazione, Lockbox e tasche per carrelli elevatori.  Disponibile nel colore RAL a scelta.",
                         "en" => "Extra-high container with 30 cm more internal height – ideal for storage and dry transport. CSC certified, with plywood floor, ventilation, Lockbox and forklift pockets. Available in your choice of RAL color.",
@@ -1543,7 +1543,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611836",
                     "discount_percentage" => null,
                     "link" => "/product/container-marittimo-da-20-piedi-viaggio-unico-con-porta-avvolgibile/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -1616,7 +1616,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611239",
                     "discount_percentage" => null,
                     "link" => "/product/container-marittimo-refrigerato-da-40-piedi-usato/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Caratteristiche generali\nSottocategoria: Container marittimo refrigerato\nMarca: THERMO KING\nEtà: 2014\nCondizione: usato\nProprietà\nTara: 4.650 kg\nCapacità di carico: 30.350 kg\nPeso massimo: 35.000 kg\nDimensioni complessive: (L) 12.190 cm x (L) 2.440 cm x (H) 2.890 cm\nDescrizione\nColore: bianco\nCarico utile: 30350 kg.\nMarchio dell'unità fredda: Thermo King",
                         "en" => "General features\nSubcategory: Refrigerated shipping container\nBrand: THERMO KING\nYear: 2014\nCondition: used\nProperties\nTare weight: 4,650 kg\nPayload: 30,350 kg\nMaximum weight: 35,000 kg\nOverall dimensions: (L) 12,190 cm x (W) 2,440 cm x (H) 2,890 cm\nDescription\nColor: white\nPayload: 30350 kg.\nRefrigeration unit brand: Thermo King",
@@ -1719,7 +1719,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610870",
                     "discount_percentage" => null,
                     "link" => "/product/container-officina-da-20-piedi/",
-                    "categories" => ["conteineres-20-pes"],
+                    "categories" => ["contentores-20-pes"],
                     "short_description" => [
                         "it" => "Container officina da 20 piedi: la tua postazione di lavoro mobileCon banco da lavoro, scaffali, allacciamento elettrico e spazio di stoccaggio, questo container completamente attrezzato è la soluzione ideale per officine temporanee o permanenti. In acciaio CORTEN, certificato CSC, impilabile e disponibile in qualsiasi colore RAL. Disponibile per il noleggio o l'acquisto.",
                         "en" => "20ft workshop container: your mobile workstation. With workbench, shelves, electrical connection and storage space, this fully equipped container is the ideal solution for temporary or permanent workshops. Made of CORTEN steel, CSC certified, stackable and available in any RAL color. Available for rent or purchase.",
@@ -1793,7 +1793,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611838",
                     "discount_percentage" => null,
                     "link" => "/product/container-per-spedizioni-con-apertura-laterale-da-20-piedi/",
-                    "categories" => ["conteineres-20-pes"],
+                    "categories" => ["contentores-20-pes"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -1830,7 +1830,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611834",
                     "discount_percentage" => null,
                     "link" => "/product/container-per-spedizioni-con-apertura-laterale-high-cube-da-20-piedi/",
-                    "categories" => ["conteineres-20-pes"],
+                    "categories" => ["contentores-20-pes"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -1906,7 +1906,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611959",
                     "discount_percentage" => null,
                     "link" => "/product/container-per-spedizioni-con-porta-laterale-da-40-piedi-configurazione-a-2-o-4-porte/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -1946,7 +1946,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611491",
                     "discount_percentage" => null,
                     "link" => "/product/container-per-ufficio-sociale-da-15-m%c2%b2-compatto-e-funzionale/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -2052,7 +2052,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611487",
                     "discount_percentage" => null,
                     "link" => "/product/container-ristorante-hc-da-20-piedi-disposizione-unidirezionale-ideale-per-la-ristorazione-mobile-o-come-chiosco-di-vendita/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -2099,7 +2099,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611565",
                     "discount_percentage" => null,
                     "link" => "/product/container-sanitario-36-6-docce-2-lavandini-scaldabagno-da-300-litri/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -2146,7 +2146,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610944",
                     "discount_percentage" => null,
                     "link" => "/product/container-standard-da-10-piedi-blu/",
-                    "categories" => ["conteineres-10-pes"],
+                    "categories" => ["contentores-10-pes"],
                     "short_description" => [
                         "it" => "Container compatto per lo stoccaggio in acciaio CORTEN con certificato CSC. Dotato di pavimento in compensato, ventilazione, lockbox e tasche per carrelli elevatori. Ideale per lo stoccaggio e il trasporto.",
                         "en" => "Compact CORTEN steel storage container with CSC certificate. Equipped with plywood floor, ventilation, lockbox and forklift pockets. Ideal for storage and transport.",
@@ -2344,7 +2344,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611484",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-padiglione-modulare-3x6m-funzionale-e-attrezzato/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -2388,7 +2388,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611675",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-4220-metri-con-servizi-igienici/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -2435,7 +2435,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611676",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-container-abitativo-con-bagno-doccia/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -2481,7 +2481,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611619",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-da-17-m%c2%b2-padiglione-funzionale-e-mobile-2/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -2519,7 +2519,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611424",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-da-17-m%c2%b2-padiglione-funzionale-e-mobile/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -2557,7 +2557,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611620",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-da-18-m%c2%b2-isolato-e-attrezzato/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -2595,7 +2595,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611529",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-da-18-m%c2%b2-con-servizi-igienici-comfort-e-isolamento-ottimale/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -2637,7 +2637,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611723",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-da-18-m%c2%b2-con-servizi-igienici-comfort-e-isolamento-ottimale-2/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -2676,7 +2676,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611236",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-da-20-piedi/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Incluso di serie:\n1 finestra scorrevole monovetro\n1 serranda di sicurezza in acciaio\nPorta personale in acciaio ad 1 anta\nRivestimento melaminico – Finitura ufficio\nIsolamento in lana di roccia da 50 mm\nPavimento interno in polietilene resistente all'usura\nPacchetto elettrico di base\n2 Luci della staffa\n1 interruttore\n1 radiatore\n2 prese doppie\n1 isolante esterno",
                         "en" => "Standard included:\n1 single-glazed sliding window\n1 steel security shutter\n1-leaf steel personnel door\nMelamine lining – Office finish\n50 mm rock wool insulation\nWear-resistant polyethylene internal floor\nBasic electrical package\n2 Bracket lights\n1 switch\n1 radiator\n2 double sockets\n1 external insulation",
@@ -2711,7 +2711,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610866",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-10-piedi-usato-compatto-economico-e-resistente/",
-                    "categories" => ["conteineres-10-pes"],
+                    "categories" => ["contentores-10-pes"],
                     "short_description" => [
                         "it" => "Un contenitore compatto da 10 piedi, perfetto per chi cerca una soluzione economica e sicura per lo stoccaggio. In acciaio corten, ricondizionato e pronto all'uso.\nStruttura in acciaio corten resistente\nVolume interno 16 m³\nPorte doppie con chiusura sicura",
                         "en" => "A compact 10ft container, perfect for those looking for an economical and secure storage solution. In corten steel, refurbished and ready to use.\nDurable corten steel structure\nInternal volume 16 m³\nDouble doors with secure locking",
@@ -2756,7 +2756,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610487",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-20-piedi-con-apertura-laterale/",
-                    "categories" => ["conteineres-20-pes"],
+                    "categories" => ["contentores-20-pes"],
                     "short_description" => [
                         "it" => "Il contenitore da 20 piedi con apertura laterale offre un accesso completo su uno dei lati lunghi, rendendolo ideale per carichi voluminosi o frequenti operazioni di stoccaggio. Resistente e sicuro, è perfetto per uso industriale, agricolo o logistico.\nApertura laterale su 6 metri (4 ante)\nPavimento in legno trattato, resistente e sicuro\nStruttura in acciaio saldato e verniciato\nVentilazione integrata e chiusura con lucchetto\nDisponibile con impianto elettrico e altre opzioni",
                         "en" => "The 20ft side opening container offers complete access on one of the long sides, making it ideal for bulky loads or frequent storage operations. Strong and secure, it is perfect for industrial, agricultural or logistics use.\n6-meter side opening (4 doors)\nTreated wood floor, strong and safe\nWelded and painted steel structure\nIntegrated ventilation and padlock closure\nAvailable with electrical system and other options",
@@ -2796,7 +2796,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610485",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-20-piedi-dry-usato-con-doppia-porta/",
-                    "categories" => ["conteineres-20-pes"],
+                    "categories" => ["contentores-20-pes"],
                     "short_description" => [
                         "it" => "Il contenitore Dry usato da 20 piedi con doppia apertura è la scelta ideale per chi cerca versatilità, robustezza e sicurezza. Dotato di accesso facilitato da entrambi i lati, si adatta perfettamente a contesti industriali, agricoli e residenziali. La struttura in acciaio e il pavimento trattato contro l'umidità lo rendono resistente nel tempo.\nDoppia porta per accesso frontale e posteriore\nPavimento in legno massiccio da 25 mm trattato\nStruttura in acciaio saldato da 3 mm\nVolume interno 31 m³\nFacile movimentazione con carrello o gru",
                         "en" => "The used 20ft Dry container with double opening is the ideal choice for those seeking versatility, robustness and security. With easy access from both sides, it adapts perfectly to industrial, agricultural and residential contexts. The steel structure and moisture-treated floor make it durable over time.\nDouble door for front and rear access\n25 mm treated solid wood floor\n3 mm welded steel structure\nInternal volume 31 m³\nEasy handling with forklift or crane",
@@ -2831,7 +2831,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610484",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-20-piedi-hc/",
-                    "categories" => ["conteineres-20-pes"],
+                    "categories" => ["contentores-20-pes"],
                     "short_description" => [
                         "it" => "Stai cercando una soluzione di stoccaggio ampia e resistente? Il nostro contenitore HC da 20 piedi di seconda mano è progettato per offrire massima durata, sicurezza e praticità in qualsiasi contesto, dai cantieri ai magazzini agricoli. Realizzato in acciaio saldato, con pavimento in legno trattato e volume interno maggiorato, rappresenta un'ottima scelta anche per usi personalizzati.\nVolume interno di 37 m³ con altezza maggiorata\nStruttura in acciaio da 3 mm e pareti da 1,5 mm\nPavimento in legno da 25 mm resistente all'umidità\nVentilazione e sistema anti-effrazione\nFacile movimentazione con gru o carrello elevatore",
                         "en" => "Are you looking for a spacious and durable storage solution? Our used 20ft HC container is designed to offer maximum durability, safety and practicality in any context, from construction sites to agricultural warehouses. Made of welded steel, with treated wooden floor and increased internal volume, it is an excellent choice also for customized uses.\nInternal volume of 37 m³ with increased height\n3 mm steel structure and 1.5 mm walls\n25 mm moisture-resistant wooden floor\nVentilation and anti-theft system\nEasy handling with crane or forklift",
@@ -2866,7 +2866,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610486",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-20-piedi-high-cube-con-porte-avvolgibili/",
-                    "categories" => ["conteineres-20-pes"],
+                    "categories" => ["contentores-20-pes"],
                     "short_description" => [
                         "it" => "Robusto, versatile ed esteticamente curato, il contenitore 20 piedi High Cube con porte avvolgibili è perfetto per lo stoccaggio sicuro o la trasformazione in officina mobile. La struttura rinforzata in acciaio assicura resistenza nel tempo, mentre le porte avvolgibili garantiscono praticità anche negli spazi più stretti.\nAltezza maggiorata per un volume interno superiore\nPorte avvolgibili robuste e pratiche\nStruttura in acciaio con telaio rinforzato\nColore grigio chiaro dall'estetica discreta\nIdeale per officine, eventi, cantieri o magazzini mobili",
                         "en" => "Robust, versatile and aesthetically pleasing, the 20ft High Cube container with roller shutter doors is perfect for secure storage or conversion into a mobile workshop. The reinforced steel structure ensures durability over time, while the roller shutter doors guarantee practicality even in tight spaces.\nIncreased height for greater internal volume\nRobust and practical roller shutter doors\nSteel structure with reinforced frame\nLight gray color with discreet aesthetics\nIdeal for workshops, events, construction sites or mobile warehouses",
@@ -2908,7 +2908,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610703",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-bar-cafe-6-metri-snack-box-20%e2%80%b2/",
-                    "categories" => ["cafeteria-bar-restaurante"],
+                    "categories" => ["cafetaria-bar-restaurante"],
                     "short_description" => [
                         "it" => "Contenitore Bar Café 6 metri – Soluzione modulare per ristorazione mobile\nBotole di servizio frontali e laterali ampie\nIsolamento termico con lana Dritherm\nRivestimento interno resistente e facile da pulire\nPavimento vinilico antiscivolo\nVerniciatura personalizzabile\nEquipaggiamento cucina su richiesta",
                         "en" => "6 meter Bar Café Container – Modular solution for mobile catering\nWide front and side service hatches\nThermal insulation with Dritherm wool\nDurable and easy-to-clean internal lining\nNon-slip vinyl floor\nCustomizable painting\nKitchen equipment on request",
@@ -2947,7 +2947,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611080",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-bar-demontable-32-metri-soluzione-compatta-e-versatile/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Il Contenitore Bar Démontable 3×2 Metri è una soluzione versatile e robusta per eventi e attività commerciali. Facile da montare, trasportare e personalizzare.",
                         "en" => "The 3×2 Meter Demountable Bar Container is a versatile and robust solution for events and commercial activities. Easy to assemble, transport and customize.",
@@ -2980,7 +2980,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611079",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-bar-demontable-xl-4-x-2-m-soluzione-modulare-per-eventi/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Il Contenitore Bar Démontable XL 4 x 2 m offre uno spazio flessibile e personalizzabile per eventi. Facile da trasportare e montare, è la scelta ideale per il tuo business.",
                         "en" => "The XL 4 x 2 m Demountable Bar Container offers flexible and customizable space for events. Easy to transport and assemble, it is the ideal choice for your business.",
@@ -3014,7 +3014,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610699",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-bar-personalizzato-6-metri/",
-                    "categories" => ["cafeteria-bar-restaurante"],
+                    "categories" => ["cafetaria-bar-restaurante"],
                     "short_description" => [
                         "it" => "Contenitore bar 6 m – food truck personalizzato\nContainer 20 piedi primo viaggio\nBancone pieghevole e marquesina a gas\nIsolamento con pannelli sandwich da 40 mm\nElettricità e idraulica installate\nPavimento in resina con scarico\nEsterno nero elegante",
                         "en" => "6 m bar container – customized food truck\nFirst voyage 20ft container\nFolding counter and gas awning\nInsulation with 40 mm sandwich panels\nElectricity and plumbing installed\nResin floor with drain\nElegant black exterior",
@@ -3052,7 +3052,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610701",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-bar-smontabile-6x2-m/",
-                    "categories" => ["cafeteria-bar-restaurante"],
+                    "categories" => ["cafetaria-bar-restaurante"],
                     "short_description" => [
                         "it" => "Contenitore Bar 6×2 m – Smontabile e modulare\nSuperficie aperta da 12 m²\nStruttura in acciaio zincato verniciato\nPensilina con chiusura + doppi sportelli\nSmontabile e facile da trasportare\nPersonalizzabile con accessori",
                         "en" => "6×2 m Bar Container – Demountable and modular\n12 m² open area\nPainted galvanized steel structure\nCanopy with closure + double doors\nDemountable and easy to transport\nCustomizable with accessories",
@@ -3081,7 +3081,7 @@ class ArticleSeeder extends Seeder
                         "it" => "Contenitore Caffetteria 20 Piedi",
                         "en" => "20ft Coffee Shop Container",
                         "fr" => "Conteneur Cafétéria 20 Pieds",
-                        "pt" => "Contêiner Cafeteria 20 Pés",
+                        "pt" => "Contêiner cafetaria 20 Pés",
                         "es" => "Contenedor Cafetería 20 Pies"
                     ],
                     "price" => "3,203.20",
@@ -3089,7 +3089,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610698",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-caffetteria-20-piedi/",
-                    "categories" => ["cafeteria-bar-restaurante"],
+                    "categories" => ["cafetaria-bar-restaurante"],
                     "short_description" => [
                         "it" => "Contenitore bar 20 piedi – cucina mobile professionale\nCucina attrezzata con forno, frigo, lavastoviglie\nSpazio ottimizzato per servizio clienti\nRobusta struttura in acciaio\nIdeale per bar mobili e food truck\nPronto all'uso con attrezzature incluse",
                         "en" => "20ft bar container – professional mobile kitchen\nKitchen equipped with oven, fridge, dishwasher\nOptimized space for customer service\nRobust steel structure\nIdeal for mobile bars and food trucks\nReady to use with equipment included",
@@ -3167,7 +3167,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610479",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-da-10-piedi-per-uso-agricolo/",
-                    "categories" => ["conteineres-10-pes"],
+                    "categories" => ["contentores-10-pes"],
                     "short_description" => [
                         "it" => "Il contenitore da 10 piedi per uso agricolo è la soluzione perfetta per chi desidera uno spazio sicuro, compatto e resistente per lo stoccaggio in fattoria. Realizzato da container marittimi riciclati, offre solidità e protezione totale.\nStruttura in acciaio riciclato da 20′\nDimensioni compatte: circa 3 metri\nPorta rinforzata e chiusura sicura\nColore verde abete, perfetto per ambienti naturali\nIdeale per stoccaggio di attrezzi, mangimi, sementi e prodotti agricoli",
                         "en" => "The 10ft container for agricultural use is the perfect solution for those wanting a safe, compact and durable space for farm storage. Made from recycled shipping containers, it offers solidity and total protection.\nRecycled 20′ steel structure\nCompact dimensions: about 3 meters\nReinforced door and secure closure\nFir green color, perfect for natural environments\nIdeal for storing tools, feed, seeds and agricultural products",
@@ -3209,7 +3209,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611156",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-da-giardino-15-x-22-m-verde-ral-6005/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Il Contenitore da Giardino 1,5 x 2,2 m in verde RAL 6005 è perfetto per stoccare in sicurezza attrezzi e materiali. Resistente, compatto e facile da montare.",
                         "en" => "The 1.5 x 2.2 m Garden Container in RAL 6005 green is perfect for safely storing tools and materials. Durable, compact and easy to assemble.",
@@ -3244,7 +3244,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610492",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-di-stoccaggio-40-piedi-high-cube/",
-                    "categories" => ["conteineres-40-pes"],
+                    "categories" => ["contentores-40-pes"],
                     "short_description" => [
                         "it" => "Contenitore di stoccaggio 40’ HC usato in ottimo stato, perfetto per uso professionale o privato. Struttura robusta, ventilazione inclusa, pronto all'uso.\nStruttura in acciaio saldato sp. 3 mm\nPavimento in legno 25 mm trattato\nVolume utile: 31 m³\nMovimentabile con gru o carrello elevatore\nProtezione per il lucchetto inclusa",
                         "en" => "Used 40' HC storage container in excellent condition, perfect for professional or private use. Robust structure, ventilation included, ready to use.\n3 mm thick welded steel structure\n25 mm treated wooden floor\nUseful volume: 31 m³\nCan be moved with crane or forklift\nLock protection included",
@@ -3279,7 +3279,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610493",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-di-stoccaggio-40-piedi-high-cube-2/",
-                    "categories" => ["conteineres-40-pes"],
+                    "categories" => ["contentores-40-pes"],
                     "short_description" => [
                         "it" => "Contenitore di stoccaggio 40’ HC nuovo con altezza extra e ampio volume interno. Ideale per magazzino, cantiere o deposito agricolo.\nAltezza interna maggiorata\nPavimento in legno trattato (25 mm)\nStruttura in acciaio saldato 3 mm\nVolume utile: 31 m³\nVentilato e dotato di doppie porte",
                         "en" => "New 40' HC storage container with extra height and large internal volume. Ideal for warehouse, construction site or agricultural storage.\nIncreased internal height\nTreated wooden floor (25 mm)\n3 mm welded steel structure\nUseful volume: 31 m³\nVentilated and equipped with double doors",
@@ -3314,7 +3314,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610494",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-di-stoccaggio-40-piedi-standard/",
-                    "categories" => ["conteineres-40-pes"],
+                    "categories" => ["contentores-40-pes"],
                     "short_description" => [
                         "it" => "Contenitore da 40 piedi standard usato, perfetto per lo stoccaggio in cantieri, magazzini o ambienti agricoli.\nStruttura in acciaio saldato (3 mm)\nPavimento in legno trattato da 25 mm\nVolume utile: 31 m³\n4 prese d'aria, doppie porte\nManipolazione con muletto o gru",
                         "en" => "Used standard 40ft container, perfect for storage on construction sites, warehouses or agricultural environments.\nWelded steel structure (3 mm)\n25 mm treated wooden floor\nUseful volume: 31 m³\n4 air vents, double doors\nHandling with forklift or crane",
@@ -3349,7 +3349,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611163",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-10-piedi-soluzione-compatta-per-stoccaggio/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Contenitore Frigorifero 10 Piedi: compatto, isolato e ideale per alimenti, farmaci o prodotti chimici. Perfetto per stoccaggio e trasporto sicuro a temperatura controllata.",
                         "en" => "10ft Refrigerated Container: compact, insulated and ideal for food, pharmaceuticals or chemicals. Perfect for safe storage and transport at controlled temperature.",
@@ -3383,7 +3383,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611166",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-20-piedi-reefer-soluzione-ideale-per-stoccaggio/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Contenitore Frigorifero 20 Piedi Reefer: perfetto per stoccaggio e trasporto di prodotti freschi e sensibili. Gamma termica da -25°C a +25°C, certificato ISO e pronto all'uso.",
                         "en" => "20ft Reefer Refrigerated Container: perfect for storage and transport of fresh and sensitive products. Temperature range from -25°C to +25°C, ISO certified and ready to use.",
@@ -3419,7 +3419,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611164",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-40-piedi-soluzione-affidabile-per-trasporto/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Contenitore Frigorifero 40 Piedi: robusto, isolato e ideale per alimenti, farmaci e prodotti chimici. Perfetto per trasporto e stoccaggio sicuro a temperatura controllata.",
                         "en" => "40ft Refrigerated Container: robust, insulated and ideal for food, pharmaceuticals and chemicals. Perfect for safe transport and storage at controlled temperature.",
@@ -3452,7 +3452,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611167",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-40-piedi-reefer-usato/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Contenitore Frigorifero 40 Piedi Reefer Usato Classe A: robusto, certificato ISO, ideale per il trasporto e lo stoccaggio a temperatura controllata. Precisione termica e grande capacità interna.",
                         "en" => "Used Class A 40ft Reefer Refrigerated Container: robust, ISO certified, ideal for transport and storage at controlled temperature. Thermal precision and large internal capacity.",
@@ -3485,7 +3485,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611165",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-45-piedi-reefer-soluzione-ideale-per-stoccaggio/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Contenitore Frigorifero 45 Piedi Reefer: robusto, certificato ISO e perfetto per trasporto e stoccaggio di prodotti freschi o sensibili. Precisione da -25°C a +25°C.",
                         "en" => "45ft Reefer Refrigerated Container: robust, ISO certified and perfect for transport and storage of fresh or sensitive products. Precision from -25°C to +25°C.",
@@ -3520,7 +3520,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610475",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-congelatore-20-piedi-rf/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Il contenitore frigorifero 20 piedi RF è progettato per un controllo preciso della temperatura da -25°C a +25°C. Con pareti in poliuretano ad alto isolamento, unità refrigerante Carrier e certificazione CSC, è perfetto per uso alimentare e industriale.\nRange di temperatura: -25°C / +25°C\nIsolamento in schiuma poliuretanica (10–12 cm)\nUnità Carrier ad alta efficienza\nConnessione 380V, presa 32A integrata\nCertificato CSC, pronto all'uso",
                         "en" => "The 20ft RF refrigerated container is designed for precise temperature control from -25°C to +25°C. With high-insulation polyurethane walls, Carrier refrigeration unit and CSC certification, it is perfect for food and industrial use.\nTemperature range: -25°C / +25°C\nPolyurethane foam insulation (10-12 cm)\nHigh efficiency Carrier unit\n380V connection, integrated 32A socket\nCSC certified, ready to use",
@@ -3559,7 +3559,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610471",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-da-10-piedi/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Mantieni i tuoi prodotti freschi, surgelati o sensibili alla temperatura al sicuro con il nostro contenitore frigorifero da 10 piedi. Dotato di un sistema di refrigerazione attivo, isolamento ad alte prestazioni e finiture professionali, è la soluzione compatta e affidabile per lo stoccaggio in condizioni controllate.\nRange di temperatura: da -25°C a +25°C\nIsolamento PIR da 40 mm e XPS da 50 mm sul pavimento\nInterni bianchi in acciaio, igienici e lavabili\nSistema elettrico e gruppo frigorifero integrati\nVentilazione ottimizzata con doppia valvola",
                         "en" => "Keep your fresh, frozen or temperature-sensitive products safe with our 10ft refrigerated container. Equipped with an active refrigeration system, high-performance insulation and professional finishes, it is the compact and reliable solution for storage under controlled conditions.\nTemperature range: from -25°C to +25°C\n40 mm PIR insulation and 50 mm XPS on the floor\nWhite steel interiors, hygienic and washable\nIntegrated electrical system and refrigeration unit\nOptimized ventilation with double valve",
@@ -3596,7 +3596,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610472",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-da-10-piedi-compatto-refrigerato/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Questo contenitore frigorifero da 10 piedi unisce compattezza, efficienza e prestazioni professionali. Con isolamento PIR e refrigerazione attiva, è perfetto per il trasporto o lo stoccaggio di merci sensibili alla temperatura. Igienico, robusto e ottimizzato per ambienti professionali.\nVolume interno: 12,45 m³ / Superficie: 5,48 m²\nRange temperatura: -25°C a +25°C\nIsolamento PIR e pavimento in XPS\nInterni in acciaio bianco, ventilazione integrata\nStruttura impilabile e facile da movimentare",
                         "en" => "This 10ft refrigerated container combines compactness, efficiency and professional performance. With PIR insulation and active refrigeration, it is perfect for transporting or storing temperature-sensitive goods. Hygienic, robust and optimized for professional environments.\nInternal volume: 12.45 m³ / Area: 5.48 m²\nTemperature range: -25°C to +25°C\nPIR insulation and XPS floor\nWhite steel interiors, integrated ventilation\nStackable structure and easy to handle",
@@ -3632,7 +3632,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610473",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-dnv-da-10-piedi/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Il contenitore frigorifero DNV da 10 piedi è progettato per l'utilizzo in ambienti offshore, garantendo refrigerazione sicura ed efficiente anche in condizioni estreme. Struttura certificata, motore affidabile e design resistente lo rendono perfetto per applicazioni industriali marittime.\nCertificazione DNV per uso offshore\nGruppo frigorifero efficiente e affidabile\nStruttura rinforzata per ambienti marittimi\nSistemi di sollevamento e movimentazione inclusi\nIdeale per la catena del freddo in mare aperto",
                         "en" => "The 10ft DNV refrigerated container is designed for use in offshore environments, ensuring safe and efficient refrigeration even in extreme conditions. Certified structure, reliable engine and robust design make it perfect for maritime industrial applications.\nDNV certification for offshore use\nEfficient and reliable refrigeration unit\nReinforced structure for marine environments\nLifting and handling systems included\nIdeal for cold chain at sea",
@@ -3672,7 +3672,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610476",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-reefer-40-piedi-high-cube/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Perfetto per logistica globale e stoccaggio professionale, il contenitore frigorifero Reefer 40 piedi High Cube offre una capacità elevata, controllo preciso della temperatura e costruzione igienica in acciaio inox. Ideale per merci sensibili al freddo, da -40°C a +35°C.\nCapacità: 76 m³\nTemperatura: da -40°C a +35°C\nInterno in acciaio inox e alluminio\nTipo High Cube: maggiore volume utile\nCertificato CSC per uso internazionale",
                         "en" => "Perfect for global logistics and professional storage, the 40ft High Cube Reefer refrigerated container offers high capacity, precise temperature control and hygienic stainless steel construction. Ideal for cold-sensitive goods, from -40°C to +35°C.\nCapacity: 76 m³\nTemperature: from -40°C to +35°C\nStainless steel and aluminum interior\nHigh Cube type: greater useful volume\nCSC certified for international use",
@@ -3708,7 +3708,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610477",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-usato-40-piedi/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Il contenitore frigorifero usato da 40 piedi garantisce una soluzione affidabile e certificata per il trasporto e lo stoccaggio a temperatura controllata. Dotato di isolamento in poliuretano, unità Carrier o Thermo King e rivestimento in acciaio inox, è ideale per merci sensibili.\nTemperatura operativa: -25°C / +25°C\nCertificazione CSC valida 1 anno\nInterno in acciaio inox, facile da pulire\nIsolamento in poliuretano ad alta efficienza\nUnità Carrier o Thermo King di qualità professionale",
                         "en" => "The used 40ft refrigerated container guarantees a reliable and certified solution for transport and storage at controlled temperature. Equipped with polyurethane insulation, Carrier or Thermo King unit and stainless steel lining, it is ideal for sensitive goods.\nOperating temperature: -25°C / +25°C\nCSC certification valid 1 year\nStainless steel interior, easy to clean\nHigh efficiency polyurethane insulation\nProfessional quality Carrier or Thermo King unit",
@@ -3743,7 +3743,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610478",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-usato-40-high-cube/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Cerchi un contenitore refrigerato professionale e pronto all'uso? Il nostro modello usato 40’ High Cube offre spazio, sicurezza e prestazioni elevate. Perfetto per alimenti, farmaci e sostanze sensibili alla temperatura, grazie al sistema refrigerante -40°C / +30°C.\nVolume utile: 67 m³\nStruttura in acciaio saldato e isolato\nPavimento in alluminio zigrinato\nSistema refrigerante 380V -40°C / +30°C\n4 punti di sollevamento + passaggio per forche",
                         "en" => "Looking for a professional, ready-to-use refrigerated container? Our used 40' High Cube model offers space, safety and high performance. Perfect for food, medicine and temperature-sensitive substances, thanks to the -40°C / +30°C refrigeration system.\nUseful volume: 67 m³\nWelded and insulated steel structure\nRibbed aluminum floor\n380V refrigeration system -40°C / +30°C\n4 lifting points + fork pockets",
@@ -3784,7 +3784,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610488",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-hazmat-20-piedi/",
-                    "categories" => ["conteineres-20-pes"],
+                    "categories" => ["contentores-20-pes"],
                     "short_description" => [
                         "it" => "Il contenitore Hazmat da 20 piedi è progettato per il trasporto sicuro di materiali pericolosi. Costruito in acciaio CORTEN con vasca di raccolta, garantisce massima protezione in ambienti industriali.\nStruttura anticorrosiva in acciaio CORTEN\nVasca integrata e valvole di drenaggio\nGriglie in acciaio zincato e ventilazione\nCassetta di sicurezza e tasche per carrelli\nImpilabile, resistente e facile da movimentare",
                         "en" => "The 20ft Hazmat container is designed for the safe transport of dangerous materials. Built in CORTEN steel with collection tank, it guarantees maximum protection in industrial environments.\nAnti-corrosion CORTEN steel structure\nIntegrated tank and drainage valves\nGalvanized steel grates and ventilation\nSafety lockbox and forklift pockets\nStackable, durable and easy to handle",
@@ -3823,7 +3823,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610496",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-high-cube-40-piedi-usato/",
-                    "categories" => ["conteineres-40-pes"],
+                    "categories" => ["contentores-40-pes"],
                     "short_description" => [
                         "it" => "Contenitore marittimo High Cube 40 piedi usato, perfetto per chi ha bisogno di più spazio utile.\nAltezza maggiorata: 2,89 m\nCertificazioni ISO & CSC\nCondizione Cargo Worthy\nStruttura in acciaio Corten\nVendita e noleggio disponibili",
                         "en" => "Used 40ft High Cube shipping container, perfect for those who need more useful space.\nIncreased height: 2.89 m\nISO & CSC certifications\nCargo Worthy condition\nCorten steel structure\nSale and rental available",
@@ -3860,7 +3860,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611833",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-high-cube-open-side-hcos-da-20-piedi/",
-                    "categories" => ["conteineres-20-pes"],
+                    "categories" => ["contentores-20-pes"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -3897,7 +3897,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610480",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-10-piedi/",
-                    "categories" => ["conteineres-10-pes"],
+                    "categories" => ["contentores-10-pes"],
                     "short_description" => [
                         "it" => "Il contenitore marittimo da 10 piedi IICL6 è la soluzione perfetta per chi cerca uno spazio di stoccaggio professionale, compatto e affidabile. Realizzato in acciaio corten ad alta resistenza e rifinito in bianco elegante, è pronto per l'uso immediato in ambienti industriali, commerciali o privati.\nStruttura in acciaio corten ad alta resistenza\nStandard di qualità IICL6 – prestazioni eccellenti\nCapacità interna: ca. 16 m³ | Carico massimo: 10.000 kg\nColore bianco moderno (RAL 9010)\nIdeale per attrezzature, materiali o progetti modulari",
                         "en" => "The IICL6 10ft shipping container is the perfect solution for those looking for a professional, compact and reliable storage space. Made of high-strength corten steel and finished in elegant white, it is ready for immediate use in industrial, commercial or private environments.\nHigh-strength corten steel structure\nIICL6 quality standard – excellent performance\nInternal capacity: approx. 16 m³ | Maximum load: 10,000 kg\nModern white color (RAL 9010)\nIdeal for equipment, materials or modular projects",
@@ -3938,7 +3938,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610481",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-10-piedi-con-doppia-porta/",
-                    "categories" => ["conteineres-10-pes"],
+                    "categories" => ["contentores-10-pes"],
                     "short_description" => [
                         "it" => "Il contenitore marittimo da 10 piedi con doppia porta è la soluzione ideale per chi cerca versatilità, resistenza e accesso pratico. In condizioni “after one trip”, combina design compatto e massima funzionalità.\nDimensioni: 2,99 x 2,44 x 2,59 m\nColore blu RAL 5010\nStruttura robusta in acciaio corten\nDoppio accesso – porte apribili su entrambi i lati\nPerfetto per stoccaggio, officine mobili o moduli personalizzati",
                         "en" => "The 10ft double door shipping container is the ideal solution for those seeking versatility, durability and practical access. In “after one trip” condition, it combines compact design and maximum functionality.\nDimensions: 2.99 x 2.44 x 2.59 m\nBlue RAL 5010 color\nRobust corten steel structure\nDouble access – doors opening on both sides\nPerfect for storage, mobile workshops or custom modules",
@@ -3975,7 +3975,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610482",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-10-piedi-nuovo/",
-                    "categories" => ["conteineres-10-pes"],
+                    "categories" => ["contentores-10-pes"],
                     "short_description" => [
                         "it" => "Questo contenitore marittimo da 10 piedi è la soluzione perfetta per chi cerca uno spazio di stoccaggio compatto, robusto e professionale. La sua struttura nuova, realizzata in acciaio corten ad alta resistenza, garantisce una protezione ottimale contro intemperie e urti. Facile da movimentare e personalizzare, è perfetto per ambienti aziendali, agricoli o industriali dove lo spazio è limitato ma la sicurezza è fondamentale.\nContenitore nuovo, usato una sola volta\nStruttura solida in acciaio corten\nVolume interno di circa 16 m³\nIdeale per stoccaggio sicuro in spazi ristretti\nPronto per consegna immediata",
                         "en" => "This 10ft shipping container is the perfect solution for those looking for a compact, robust and professional storage space. Its new structure, made of high-strength corten steel, guarantees optimal protection against weather and impacts. Easy to handle and customize, it is perfect for business, agricultural or industrial environments where space is limited but security is essential.\nNew container, used only once\nSolid corten steel structure\nInternal volume of approximately 16 m³\nIdeal for secure storage in tight spaces\nReady for immediate delivery",
@@ -4239,7 +4239,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610491",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-20-in-acciaio-corten/",
-                    "categories" => ["conteineres-20-pes"],
+                    "categories" => ["contentores-20-pes"],
                     "short_description" => [
                         "it" => "Contenitore marittimo 20 piedi in acciaio CORTEN disponibile in versione usata o primo viaggio. Certificato CSC, ermetico e dotato di protezione antieffrazione.\nPorte a 270° con doppia anta\nPavimento antiscivolo in legno marino 28 mm\nCertificato CSC valido – conforme ISO\nCappuccio di sicurezza incluso\nAdatto a trasporto, self-storage e trasformazioni",
                         "en" => "20ft shipping container in CORTEN steel available in used or first voyage version. CSC certified, airtight and equipped with anti-theft protection.\n270° opening double doors\n28 mm marine plywood anti-slip floor\nValid CSC certificate – ISO compliant\nSafety lock box included\nSuitable for transport, self-storage and conversions",
@@ -4492,7 +4492,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610483",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-dry-van-10-piedi-usato/",
-                    "categories" => ["conteineres-10-pes"],
+                    "categories" => ["contentores-10-pes"],
                     "short_description" => [
                         "it" => "Hai bisogno di una soluzione di stoccaggio mobile, sicura e salvaspazio? Il nostro contenitore Dry Van da 10 piedi usato offre praticità, resistenza e flessibilità. Grazie alla certificazione CSC, può essere utilizzato anche nel trasporto intermodale. La sua struttura compatta lo rende ideale per cantieri, officine o ambienti industriali con spazio limitato.\nPavimento in legno multistrato da 28 mm\nTenuta stagna contro vento e acqua\nCertificazione CSC per trasporto via terra, mare o ferrovia\nSerratura di sicurezza integrata\nFacile da movimentare con carrelli elevatori",
                         "en" => "Do you need a mobile, safe and space-saving storage solution? Our used 10ft Dry Van container offers practicality, durability and flexibility. Thanks to CSC certification, it can also be used for intermodal transport. Its compact structure makes it ideal for construction sites, workshops or industrial environments with limited space.\n28 mm plywood floor\nWind and water tight seal\nCSC certification for transport by land, sea or rail\nIntegrated security lock\nEasy to handle with forklifts",
@@ -4530,7 +4530,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610497",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-high-cube-40-con-4-porte-laterali-usato/",
-                    "categories" => ["conteineres-40-pes"],
+                    "categories" => ["contentores-40-pes"],
                     "short_description" => [
                         "it" => "Contenitore marittimo High Cube 40' usato, dotato di 4 porte laterali per accesso indipendente alla merce. Soluzione ideale per logistica intensiva, stoccaggio flessibile o adattamenti tecnici.\nStruttura in acciaio Corten\nPorte con chiusura di sicurezza a 4 barre\nFinitura moderna grigio ocra\nAccesso facilitato su più lati",
                         "en" => "Used 40' High Cube shipping container, equipped with 4 side doors for independent access to goods. Ideal solution for intensive logistics, flexible storage or technical adaptations.\nCorten steel structure\nDoors with 4-bar security locking\nModern ochre gray finish\nEasy access on multiple sides",
@@ -4575,7 +4575,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611485",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-modulare-40-piedi-ufficio-mensa-con-finestre-a-bovindo/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -4619,7 +4619,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611157",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-modulare-ampliato-duo-29m%c2%b2-spazio-multifunzionale/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Il Contenitore Modulare Ampliato Duo 29m² offre uno spazio versatile e moderno. Isolato e pronto all'uso, è ideale per uffici o ambienti multifunzionali.",
                         "en" => "The Duo 29m² Expanded Modular Container offers versatile and modern space. Insulated and ready to use, it is ideal for offices or multifunctional environments.",
@@ -4653,7 +4653,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610498",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-open-top-40-usato-categoria-b/",
-                    "categories" => ["conteineres-40-pes"],
+                    "categories" => ["contentores-40-pes"],
                     "short_description" => [
                         "it" => "Contenitore Open Top 40' usato (Categoria B), ideale per carico dall'alto con copertura in telo. Struttura robusta in acciaio Corten, certificato CSC, con pavimento in legno multistrato.\nAccesso superiore per carichi speciali\nTelo resistente alle intemperie\nPavimento da 28 mm\nErmetico a vento e acqua\nPortata utile fino a 25.480 kg",
                         "en" => "Used 40' Open Top container (Category B), ideal for top loading with tarpaulin cover. Robust Corten steel structure, CSC certified, with plywood floor.\nTop access for special loads\nWeather-resistant tarpaulin\n28 mm floor\nWind and water tight\nPayload up to 25,480 kg",
@@ -4689,7 +4689,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611364",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-per-barre-da-20-piedi/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Dimensioni esterne: L 6058 mm x P 2438 mm x A 2591 mm\n&nbsp;\nDimensioni interne: L 5898 mm x P 2352 mm x A 2390 mm\n&nbsp;\nDimensioni della porta: L 2338 mm x P 2280 mm\n&nbsp;\nVolume: 33,1 m³\n&nbsp;\nPallet europei: 11\nPeso a vuoto: 2200 kg\n&nbsp;\nCarico utile: 28280 kg\n&nbsp;\nPeso totale: 30480 kg\n&nbsp;\nCodice tipo ISO: 22G1\n&nbsp;\nChiave del gruppo ISO: 22 GP\n&nbsp;",
                         "en" => "External dimensions: L 6058 mm x W 2438 mm x H 2591 mm\n&nbsp;\nInternal dimensions: L 5898 mm x W 2352 mm x H 2390 mm\n&nbsp;\nDoor dimensions: L 2338 mm x H 2280 mm\n&nbsp;\nVolume: 33.1 m³\n&nbsp;\nEuro pallets: 11\nTare weight: 2200 kg\n&nbsp;\nPayload: 28280 kg\n&nbsp;\nGross weight: 30480 kg\n&nbsp;\nISO type code: 22G1\n&nbsp;\nISO group key: 22 GP\n&nbsp;",
@@ -4727,7 +4727,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611075",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-refrigerato-20-piedi-std-precisione-e-sicurezza/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Contenitore refrigerato da 20 piedi nuovo, progettato per trasporto e stoccaggio sicuro di prodotti sensibili alla temperatura. Garanzia di 2 anni inclusa.",
                         "en" => "New 20ft refrigerated container, designed for safe transport and storage of temperature-sensitive products. 2-year warranty included.",
@@ -4761,7 +4761,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611076",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-refrigerato-20%e2%80%b2-std-usato-soluzione-ideale-per-stoccaggio/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Contenitore refrigerato da 20 piedi usato, progettato per stoccaggio e trasporto sicuro di prodotti sensibili alla temperatura. Coperto da una garanzia di 2 anni.",
                         "en" => "Used 20ft refrigerated container, designed for safe storage and transport of temperature-sensitive products. Covered by a 2-year warranty.",
@@ -4794,7 +4794,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611077",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-refrigerato-40-piedi-hc-alta-capacita-e-prestazioni/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Contenitore refrigerato High Cube da 40 piedi nuovo, perfetto per grandi volumi di merci sensibili alla temperatura. Include garanzia di 2 anni e personalizzazioni disponibili.",
                         "en" => "New 40ft High Cube refrigerated container, perfect for large volumes of temperature-sensitive goods. Includes 2-year warranty and available customizations.",
@@ -4827,7 +4827,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611078",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-refrigerato-40-piedi-hc-usato-grande-capacita-e-affidabilita/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Contenitore refrigerato High Cube da 40 piedi usato, progettato per grandi volumi di merci sensibili alla temperatura. Include garanzia di 2 anni e personalizzazioni disponibili.",
                         "en" => "Used 40ft High Cube refrigerated container, designed for large volumes of temperature-sensitive goods. Includes 2-year warranty and available customizations.",
@@ -4862,7 +4862,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611174",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-sanitario-wc-doccia-serbatoio/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Collega semplicemente elettricità, acqua e acque reflue: subito pronto per l'uso\nCabina WC doppia 3×2 metri con serbatoio acque nere con wc e doccia\n– 2 finestre\n– Profilo sandwich da 80 mm termicamente isolato per una bassa perdita di energia\n– Porta esterna in lamiera d'acciaio Hörmann zincata\n– Orinatoi\n– Impianto elettrico completo secondo le direttive CE\n– Prese 230V\n– 2 plafoniere\n– Collegamento 11KW/400V\n– Rivestimento del pavimento in PVC – robusto e veloce da pulire\n– radiatore elettrico a parete\n– Serbatoio delle acque grigie\n– Scale\nNoleggio possibile a tariffe mensili basse. Possiamo anche produrre in qualsiasi momento in altre dimensioni e colori secondo le vostre specifiche.",
                         "en" => "Simply connect electricity, water and wastewater: immediately ready for use\nDouble toilet cabin 3×2 meters with black water tank with toilet and shower\n– 2 windows\n– 80 mm thermally insulated sandwich panel for low energy loss\n– Galvanized Hörmann steel sheet external door\n– Urinals\n– Complete electrical system according to CE directives\n– 230V sockets\n– 2 ceiling lights\n– 11KW/400V connection\n– PVC floor covering – durable and quick to clean\n– Electric wall radiator\n– Grey water tank\n– Stairs\nRental possible at low monthly rates. We can also produce at any time in other dimensions and colors according to your specifications.",
@@ -4943,7 +4943,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611530",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-sanitario-doppio-24-x-15-m-wc-orinatoio-separati/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -5022,7 +5022,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611305",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-sanitario-wc-doccia-collegabile-grigio/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Il blocco sanitario modulare consente di realizzare installazioni sanitarie in tempi brevissimi, ad un prezzo molto competitivo rispetto ad una soluzione costruttiva.\nCaratteristiche tecniche\nDIMENSIONI\nAltezza esterna: 240 cm\nAltezza interna: 220 cm\nLarghezza: 220 cm\nProfondità: 120 cm\nSTRUTTURA\nDescrizione: Acciaio zincato e laccato.\nColore: Grigio RAL7016\nSpessore: 2 mm\nSoffitto: altezza 240 mm\nFunzionamento: 4 prese nel tetto per ganci di sollevamento\nPARETI E TETTO\nMateriale: pannelli sandwich\nIsolamento: schiuma di poliuretano rigido\nSpessore della parete: 50 mm\nSpessore del tetto: 40 mm\nCopertura tetto: Lamiera di acciaio zincato con greche\nColore pannello: Grigio RAL 7016\nTERRA\nStruttura: pannelli in fibrocemento\nSpessore: 16 mm\nRivestimento: PVC\nCARPENTERIA\nAnta: 2 ante in alluminio, dimensioni 85 x 190 cm\nEstrattore d'aria: 1 in ogni cabina\nSANITARIO\n1 lavabo in ceramica da 35 cm con rubinetto acqua fredda e specchio\n1 WC integrato con cassetta completamente in ceramica\n1 piatto doccia in ceramica\nIngresso e uscita acqua sulla parete posteriore – NF\nELETTRICITÀ: 220 V\nIlluminazione: 1 plafoniera LED in ogni cabina\nPannello: 1 pannello comprensivo di interdifferenziale e interruttori automatici\nInterruttori: 1 in ogni cabina\nUna scatola di giunzione esterna\nScaldabagno non incluso (può essere installato a un costo aggiuntivo).",
                         "en" => "The modular sanitary block allows sanitary installations to be created in a very short time, at a very competitive price compared to a construction solution.\nTechnical features\nDIMENSIONS\nExternal height: 240 cm\nInternal height: 220 cm\nWidth: 220 cm\nDepth: 120 cm\nSTRUCTURE\nDescription: Galvanized and lacquered steel.\nColor: Gray RAL7016\nThickness: 2 mm\nCeiling: height 240 mm\nOperation: 4 roof sockets for lifting hooks\nWALLS AND ROOF\nMaterial: sandwich panels\nInsulation: rigid polyurethane foam\nWall thickness: 50 mm\nRoof thickness: 40 mm\nRoof covering: Corrugated galvanized steel sheet\nPanel color: Gray RAL 7016\nFLOOR\nStructure: fiber cement panels\nThickness: 16 mm\nCovering: PVC\nCARPENTRY\nDoor: 2 aluminum doors, dimensions 85 x 190 cm\nAir extractor: 1 in each cabin\nSANITARY\n1 ceramic washbasin 35 cm with cold water tap and mirror\n1 integrated toilet with fully ceramic cistern\n1 ceramic shower tray\nWater inlet and outlet on the rear wall – NF\nELECTRICITY: 220 V\nLighting: 1 LED ceiling light in each cabin\nPanel: 1 panel including main switch and circuit breakers\nSwitches: 1 in each cabin\nAn external junction box\nWater heater not included (can be installed at an additional cost).",
@@ -5059,7 +5059,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611564",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-sanitario-spogliatoio-629/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -5101,7 +5101,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610700",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-snack-box-20-dry-privilege/",
-                    "categories" => ["cafeteria-bar-restaurante"],
+                    "categories" => ["cafetaria-bar-restaurante"],
                     "short_description" => [
                         "it" => "Snack-BOX 20' DRY Privilege – Chiosco gastronomico top\nContainer 20 piedi primo viaggio\nIsolamento completo e finiture in legno\nPavimento in PVC + impianto elettrico\nAnta frontale sollevabile 1,5 m\nArea tecnica integrata\nVerniciatura personalizzata",
                         "en" => "Snack-BOX 20' DRY Privilege – Top food kiosk\nFirst trip 20 ft container\nComplete insulation and wooden finishes\nPVC flooring + electrical system\n1.5 m liftable front door\nIntegrated technical area\nCustom painting",
@@ -5140,7 +5140,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611425",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-sociale-attrezzato-di-21-m%c2%b2-wc-cucina-e-spogliatoio/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -5179,7 +5179,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611426",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-sociale-di-21-m%c2%b2-wc-e-spogliatoio/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -5216,7 +5216,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610489",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-standard-20-piedi-usato-certificato-csc/",
-                    "categories" => ["conteineres-20-pes"],
+                    "categories" => ["contentores-20-pes"],
                     "short_description" => [
                         "it" => "Il contenitore standard da 20 piedi usato è la soluzione ideale per trasporto intermodale e stoccaggio. Certificato CSC, offre massima resistenza e versatilità.\nStruttura solida e resistente\nPavimento in legno marino trattato\nCertificazioni ISO e CSC\nErmetico a vento e acqua (WWT)\nOmologato per uso internazionale",
                         "en" => "The used 20 ft standard container is the ideal solution for intermodal transport and storage. CSC certified, offers maximum strength and versatility.\nSolid and resistant structure\nTreated marine wooden floor\nISO and CSC certifications\nWind and water tight (WWT)\nApproved for international use",
@@ -5253,7 +5253,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610495",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-standard-40-piedi-usato-certificato-csc/",
-                    "categories" => ["conteineres-40-pes"],
+                    "categories" => ["contentores-40-pes"],
                     "short_description" => [
                         "it" => "Contenitore marittimo standard 40 piedi usato, robusto e certificato per trasporto e stoccaggio.\nCertificato ISO & CSC\nCondizione Cargo Worthy\nTenuta stagna (Wind & Water Tight)\nPavimento in legno marinato\nVendita e noleggio disponibili",
                         "en" => "Used 40 ft standard shipping container, robust and certified for transport and storage.\nISO & CSC certified\nCargo Worthy condition\nWind & Water Tight\nMarine treated wooden floor\nSale and rental available",
@@ -5290,7 +5290,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610474",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-super-frigorifero-doppia-zona-20-piedi/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Massima versatilità per il tuo business con il contenitore super frigorifero doppia zona da 20 piedi. Grazie ai suoi due compartimenti indipendenti, offre temperature differenziate fino a -60°C e +5°C, perfette per la logistica di prodotti surgelati e freschi.\nDoppia zona indipendente: -60°C e +5°C\nIdeale per alimenti, farmaci e surgelati\nIsolamento ad alte prestazioni\nRefrigerazione precisa e sicura\nProgettato per uso intensivo professionale",
                         "en" => "Maximum versatility for your business with the 20 ft dual zone super refrigerated container. Thanks to its two independent compartments, it offers differentiated temperatures up to -60°C and +5°C, perfect for the logistics of frozen and fresh products.\nIndependent dual zone: -60°C and +5°C\nIdeal for food, pharmaceuticals and frozen products\nHigh-performance insulation\nPrecise and safe refrigeration\nDesigned for intensive professional use",
@@ -5480,7 +5480,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611159",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-ufficio-da-cantiere-20%e2%80%b2-usura-normale/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Il Contenitore Ufficio da Cantiere 20' è una soluzione economica e resistente per creare spazi di lavoro temporanei. Dotato di finestre, riscaldamento e impianto elettrico, è pronto all'uso.",
                         "en" => "The 20' Construction Site Office Container is an economical and resistant solution for creating temporary workspaces. Equipped with windows, heating and electrical system, it is ready to use.",
@@ -5515,7 +5515,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611160",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-ufficio-mobile-20%e2%80%b2-usura-normale/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Il Contenitore Ufficio Mobile 20' è una soluzione pratica ed economica per spazi di lavoro temporanei. Isolato, elettrificato e pronto all'uso, è perfetto per cantieri e progetti temporanei.",
                         "en" => "The 20' Mobile Office Container is a practical and economical solution for temporary workspaces. Insulated, electrified and ready to use, it is perfect for construction sites and temporary projects.",
@@ -5589,7 +5589,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611240",
                     "discount_percentage" => null,
                     "link" => "/product/contenitori-refrigerati-da-20-piedi/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Unità container refrigerate da 20 piedi che incorporano un sistema di refrigerazione integrato che consente il trasporto o lo stoccaggio sicuro di prodotti deperibili o di prodotti che devono essere mantenuti a una temperatura specifica. Queste unità sono ideali per lo stoccaggio e il trasporto di merci a temperature calde e fredde. Queste unità utilizzano un semplice ingresso di alimentazione plug and play, che consente di alimentare le unità in modo rapido ed efficiente o possono essere alimentate da un generatore diesel. Le unità container refrigerate sono personalizzabili in termini di lunghezza, potenza e design, e possono essere dotate di diverse tipologie di accessori per soddisfare le esigenze del cliente. Le nostre unità possono anche essere dotate di sistemi di localizzazione GPS e funzionalità satellitare di temperatura remota, che consentono di monitorare e regolare la temperatura del contenitore da remoto.",
                         "en" => "20 ft refrigerated container units incorporating an integrated refrigeration system allowing safe transport or storage of perishable products or products that need to be kept at a specific temperature. These units are ideal for storing and transporting goods at hot and cold temperatures. These units use a simple plug and play power inlet, allowing the units to be powered quickly and efficiently or can be powered by a diesel generator. Refrigerated container units are customizable in terms of length, power and design, and can be equipped with different types of accessories to meet customer needs. Our units can also be equipped with GPS tracking systems and remote satellite temperature functionality, allowing you to monitor and adjust the container temperature remotely.",
@@ -5628,7 +5628,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611231",
                     "discount_percentage" => null,
                     "link" => "/product/frigoriferi-portatili-10-piedi-nuovi/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Le caratteristiche delle nostre celle frigorifere mobili le rendono particolarmente utili quando si lavora con carrelli del supermercato, transpallet manuali o carrelli elevatori elettrici poiché hanno un pavimento piatto per poter rotolare facilmente e disponiamo di rampe leggere che reggono fino a 750Kg e di rampe più robuste che sostenere fino a 4500Kg. Inoltre, l'impianto di illuminazione e l'apertura interna della porta permettono di movimentare la merce al suo interno in tutta sicurezza.\nCon le celle frigorifere portatili da 3 m/10′ puoi controllare la temperatura e l'umidità. Le nostre celle frigorifere portatili coprono un intervallo di temperatura programmabile da +30ºC a -40ºC con una temperatura esterna di +38ºC. C'è anche la possibilità di verificare che la catena del freddo non sia stata interrotta durante lo stoccaggio della merce tramite meccanismi che permettono di memorizzare i valori della temperatura ogni 10 minuti in modo da avere la tranquillità che la merce sia in perfette condizioni.\nLe celle frigorifere mobili sono contenitori marittimi refrigerati con modifiche per facilitarne l'utilizzo come magazzino refrigerato, come ad esempio:\nApertura delle porte tipo cella frigorifera.\nApertura interna.\nIlluminazione interna.\nAllarme uomo bloccato.\nTenda a stecche.\nPavimento piatto per facilitare l'utilizzo di transpallet o carrelli elevatori.\nRampa opzionale.\nSe sei interessato al noleggio o all'acquisto di una delle nostre celle frigorifere portatili, visita la sezione offerte dove troverai le offerte più interessanti oppure contattaci. I nostri rappresentanti di vendita risponderanno a qualsiasi domanda o problema e ti faranno un'offerta di noleggio o vendita su misura per le tue esigenze.",
                         "en" => "The features of our mobile cold rooms make them particularly useful when working with supermarket trolleys, manual pallet trucks or electric forklifts as they have a flat floor for easy rolling and we have light ramps that hold up to 750Kg and more robust ramps that hold up to 4500Kg. In addition, the lighting system and internal door opening allow goods to be handled safely inside.\nWith 3 m/10′ portable cold rooms you can control temperature and humidity. Our portable cold rooms cover a programmable temperature range from +30ºC to -40ºC with an external temperature of +38ºC. There is also the possibility of checking that the cold chain has not been interrupted during storage of goods through mechanisms that allow temperature values to be stored every 10 minutes so that you have the peace of mind that the goods are in perfect condition.\nMobile cold rooms are refrigerated shipping containers with modifications to facilitate their use as a refrigerated warehouse, such as:\nCold room type door opening.\nInternal opening.\nInternal lighting.\nMan trapped alarm.\nStrip curtain.\nFlat floor to facilitate the use of pallet trucks or forklifts.\nOptional ramp.\nIf you are interested in renting or purchasing one of our portable cold rooms, visit the offers section where you will find the most interesting offers or contato us. Our sales representatives will answer any questions or problems and will make you a rental or sale offer tailored to your needs.",
@@ -5663,7 +5663,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611622",
                     "discount_percentage" => null,
                     "link" => "/product/mini-casa-mobile-con-due-camere-da-letto-e-cucina-modello-deluxe-stahlworks/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -5710,7 +5710,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611830",
                     "discount_percentage" => null,
                     "link" => "/product/mini-container-da-12-piedi/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -5748,7 +5748,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611566",
                     "discount_percentage" => null,
                     "link" => "/product/moderna-mini-casa-di-36-m%c2%b2-2-camere-da-letto-e-cucina-attrezzata/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -5795,7 +5795,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611169",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-abitabile-t0-in-container-design-moderno-e-isolamento-ottimale/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Modulo Abitabile T0: compatto, moderno e isolato. Perfetto per spazi abitativi, professionali o ricreativi. Personalizzabile e pronto all'uso.",
                         "en" => "T0 Livable Module: compact, modern and insulated. Perfect for living, professional or recreational spaces. Customizable and ready to use.",
@@ -5830,7 +5830,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611621",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-commerciale-18m%c2%b2-con-servizi-igienici/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -5872,7 +5872,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611162",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-container-abitabile-17-m%c2%b2-soluzione-versatile-per-ogni-esigenza/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Modulo Container Abitabile 17 m²: compatto, economico e versatile. Include bagno completo, cucina attrezzata e isolamento termico. Perfetto per ogni esigenza abitativa o commerciale.",
                         "en" => "17 m² Livable Container Module: compact, economical and versatile. Includes complete bathroom, equipped kitchen and thermal insulation. Perfect for any housing or commercial need.",
@@ -5915,7 +5915,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611175",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-container-abitabile-di-17-mq/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Foto contrattuali (Modulo venduto in perfette condizioni come presentato nelle foto)\nLe caratteristiche elencate di seguito sono le caratteristiche standard di questo modulo. Puoi effettuare un ordine direttamente se queste caratteristiche ti soddisfano.\nSpecifiche:\nDimensioni (LxLxA): 6 mx 2,9 mx 2,7 m\n– Tutto l'anno: realizzati con pannelli sandwich in polistirolo, perfettamente isolanti sia d'estate che d'inverno,\n– Installazione completa di ventilazione, elettricità, acqua e fognature.\n– Dotato di bagno e angolo cottura, basta allacciare acqua, fogna ed elettricità.\n– Durevole: realizzati con materiali di alta qualità, i pannelli sandwich non richiedono manutenzione.\n– Mobile – la casa viene consegnata completamente attrezzata e può essere spostata in qualsiasi momento.\nIsolamento:\n– Pannello sandwich standard di spessore 100 mm con anima in polistirolo con coefficiente di trasmittanza termica pari a 0,38 W/m2K.\nCostruzione:\n– Pannelli sandwich (lamiera zincata verniciata a polvere 0,5 mm – polistirolo 100 mm – lamiera zincata verniciata a polvere 0,5 mm)\n– Angoli (lamiera di acciaio da 0,5 mm)\nBagno :\n– WC compatti,\n– Lavello con mobile 45,\n– Cabina doccia 90×90\n– Scaldabagno elettrico da 50 litri\nCucina :\n– Mobile con lavello 1 vasca e rubinetteria da 80 cm\n– Pensile 80\n– Mobile freestanding 40 cm\n– Pensile 40 cm",
                         "en" => "Contractual photos (Module sold in perfect condition as shown in the photos)\nThe features listed below are the standard features of this module. You can order directly if these features meet your needs.\nSpecifications:\nDimensions (LxWxH): 6 m x 2.9 m x 2.7 m\n– All year round: made with polystyrene sandwich panels, perfectly insulating both in summer and winter,\n– Complete installation of ventilation, electricity, water and sewage.\n– Equipped with bathroom and kitchenette, just connect water, sewage and electricity.\n– Durable: made with high quality materials, the sandwich panels require no maintenance.\n– Mobile – the house is delivered fully equipped and can be moved at any time.\nInsulation:\n– Standard 100 mm thick sandwich panel with polystyrene core with thermal transmittance coefficient of 0.38 W/m2K.\nConstruction:\n– Sandwich panels (0.5 mm powder-coated galvanized sheet – 100 mm polystyrene – 0.5 mm powder-coated galvanized sheet)\n– Corners (0.5 mm steel sheet)\nBathroom:\n– Compact toilet,\n– Sink with 45 cabinet,\n– 90×90 shower cubicle\n– 50 liter electric water heater\nKitchen:\n– Cabinet with 1-bowl sink and 80 cm faucet\n– 80 wall unit\n– 40 cm freestanding cabinet\n– 40 cm wall unit",
@@ -5954,7 +5954,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611229",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-container-abitabile-di-21-m2/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Foto contrattuali (Modulo venduto in perfette condizioni come presentato nelle foto)\nLe caratteristiche elencate di seguito sono le caratteristiche standard di questo modulo. Puoi effettuare un ordine direttamente se queste caratteristiche ti soddisfano. Per tutte le vostre esigenze di personalizzazione, contattateci\nSpecifiche:\nDimensioni (LxPxA): 7 mx 3 mx 2,5 m\n• Telaio in acciaio 100x50x3\n• Pannello sandwich PIR con anima da 100 mm (poliuretano)\n• Bagno con vasca\n• Tapparelle + zanzariere\n• Rivestimento di facciata color noce",
                         "en" => "Contractual photos (Module sold in perfect condition as shown in the photos)\nThe features listed below are the standard features of this module. You can order directly if these features meet your needs. For all your customization needs, contato us\nSpecifications:\nDimensions (LxWxH): 7 m x 3 m x 2.5 m\n• 100x50x3 steel frame\n• PIR sandwich panel with 100 mm core (polyurethane)\n• Bathroom with bathtub\n• Roller shutters + mosquito nets\n• Walnut color facade cladding",
@@ -5994,7 +5994,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611168",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-container-amenage-modernita-flessibilita/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Modulo Container Aménagé: una soluzione versatile e sostenibile, ideale per uffici, spazi abitativi o professionali. Moderno, climatizzato e personalizzabile.",
                         "en" => "Fitted Container Module: a versatile and sustainable solution, ideal for offices, living or professional spaces. Modern, air-conditioned and customizable.",
@@ -6030,7 +6030,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611161",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-container-prefabbricato-18-m%c2%b2-spazio-extra-pronto-alluso/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Module Conteneur Préfabriqué 18 m² : entièrement isolé, équipé de fenêtres, portes, système électrique et éclairage LED. Solution idéale pour les bureaux, les maisons ou les espaces commerciaux.",
                         "en" => "Prefabricated Container Module 18 m²: fully insulated, equipped with windows, doors, electrical system and LED lighting. Ideal solution for offices, homes or commercial spaces.",
@@ -6106,7 +6106,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611228",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-10-mq/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Foto contrattuali (Modulo venduto in perfette condizioni come presentato nelle foto)\nLe caratteristiche elencate di seguito sono le caratteristiche standard di questo modulo. Puoi effettuare un ordine direttamente se queste caratteristiche ti soddisfano. Per tutte le vostre esigenze di personalizzazione, contattateci\nSpecifiche:\nDimensioni\nDimensioni esterne (LxPxA): 4 m x 2,4 m x 2,6 m\nDimensioni interne (LxLxH): 3,8 mx 2,2 mx 2,35 m\nTetto: Copertura coibentata realizzata con pannelli sandwich composti da lamiere di acciaio zincato laccato RAL 9002 e anima isolante in poliuretano da 40 mm.\nRivestimento: Pareti coibentate realizzate con pannelli sandwich composti da lamiere di acciaio zincato laccate RAL 9002 e nucleo isolante in poliuretano da 50 mm.\nPorta esterna: falegnameria in PVC (845 x 1960 mm. Serratura a 4 punti. 3 chiavi fornite).\nFinestre: 2 finestre standard, doppi vetri – infissi in PVC, 970×1200 mm, 1 anta apribile.\nPavimento: telaio in acciaio zincato (rinforzo 200 kg/m²) e pavimento costituito da un pannello in fibrocemento da 16 mm non infiammabile e imputrescibile, non isolato. Rivestimento per pavimenti in PVC per uso pubblico, imitazione parquet.\nAlimentazione elettrica:\n– 1 quadro 220V/50Hz con magnetotermici\n– Cablaggio a superficie\n– 2 prese elettriche 16A+T\n– 1 rilevatore di fumo\nIlluminazione:\n– 2 pannelli LED interni\n– 1 striscia LED esterna.\n– 1 doppio interruttore",
                         "en" => "Contractual photos (Module sold in perfect condition as shown in the photos)\nThe features listed below are the standard features of this module. You can order directly if these features meet your needs. For all your customization needs, contato us\nSpecifications:\nDimensions\nExternal dimensions (LxWxH): 4 m x 2.4 m x 2.6 m\nInternal dimensions (LxWxH): 3.8 m x 2.2 m x 2.35 m\nRoof: Insulated covering made of sandwich panels composed of RAL 9002 lacquered galvanized steel sheets and 40 mm polyurethane insulating core.\nCladding: Insulated walls made of sandwich panels composed of RAL 9002 lacquered galvanized steel sheets and 50 mm polyurethane insulating core.\nExternal door: PVC joinery (845 x 1960 mm. 4-point lock. 3 keys supplied).\nWindows: 2 standard windows, double glazing – PVC frames, 970×1200 mm, 1 opening sash.\nFloor: galvanized steel frame (reinforcement 200 kg/m²) and floor consisting of a 16 mm non-flammable and rot-proof fiber cement panel, not insulated. PVC floor covering for public use, parquet imitation.\nElectrical supply:\n– 1 220V/50Hz panel with circuit breakers\n– Surface wiring\n– 2 electrical sockets 16A+T\n– 1 smoke detector\nLighting:\n– 2 internal LED panels\n– 1 external LED strip.\n– 1 double switch",
@@ -6141,7 +6141,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611176",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-14-mq-con-zona-sanitaria/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Foto contrattuali (Modulo venduto in perfette condizioni come presentato nelle foto)\nLe caratteristiche elencate di seguito sono le caratteristiche standard di questo modulo. Puoi effettuare un ordine direttamente se queste caratteristiche ti soddisfano. Per tutte le vostre esigenze di personalizzazione, contattateci.\nSpecifiche:\nDimensioni\nDimensioni esterne (LxPxA): 5,95 x 2,4 x 2,5 m\nDimensioni interne zona sanitaria: 1,50 m x 2,20 m\nDimensioni interne zona reception: 4,30 m x 2,20 m\nPareti e tetto\nMateriale: pannelli sandwich\nIsolamento: Schiuma di poliuretano rigido\nSpessore della parete: 50 mm\nSpessore soffitto: 40 mm\nCopertura a soffitto: Lamiera di acciaio zincato con onde greche\nTelaio\nDescrizione: Acciaio zincato e laccato\nSpessore: 2 mm\nTetto: altezza 250 mm\nMovimentazione: 4 prese sul tetto per ganci di sollevamento\nPAVIMENTO\nStruttura: Pannelli in fibrocemento\nSpessore: 16 mm\nRivestimento: PVC\nFALEGNAMERIA\nPorta: 1 porta esterna in alluminio dim.90 x 200 cm. 1 porta interna in alluminio dim.80 x 200 cm.\nFinestre: 2 finestre in PVC dim. 100 x 100 cm, doppi vetri, 1 anta\nELETTRICITÀ\nIlluminazione: 2 neon LED\nPrese: 2 prese di corrente\nTabella: 1 tabella comprensiva di interdifferenziale e interruttori automatici\nCambio: 1",
                         "en" => "Contractual photos (Module sold in perfect condition as shown in the photos)\nThe features listed below are the standard features of this module. You can order directly if these features meet your needs. For all your customization needs, contato us.\nSpecifications:\nDimensions\nExternal dimensions (LxWxH): 5.95 x 2.4 x 2.5 m\nInternal dimensions sanitary area: 1.50 m x 2.20 m\nInternal dimensions reception area: 4.30 m x 2.20 m\nWalls and roof\nMaterial: sandwich panels\nInsulation: Rigid polyurethane foam\nWall thickness: 50 mm\nCeiling thickness: 40 mm\nCeiling covering: Galvanized steel sheet with Greek waves\nFrame\nDescription: Galvanized and lacquered steel\nThickness: 2 mm\nRoof: height 250 mm\nHandling: 4 roof sockets for lifting hooks\nFLOOR\nStructure: Fiber cement panels\nThickness: 16 mm\nCovering: PVC\nJOINERY\nDoor: 1 aluminum external door size 90 x 200 cm. 1 aluminum internal door size 80 x 200 cm.\nWindows: 2 PVC windows size 100 x 100 cm, double glazing, 1 sash\nELECTRICITY\nLighting: 2 LED neon lights\nSockets: 2 power sockets\nPanel: 1 panel including differential switch and circuit breakers\nSwitch: 1",
@@ -6182,7 +6182,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611227",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-da-12-m%c2%b2/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Foto contrattuali (Modulo venduto in perfette condizioni come presentato nelle foto)\nLe caratteristiche elencate di seguito sono le caratteristiche standard di questo modulo. Puoi effettuare un ordine direttamente se queste caratteristiche ti soddisfano. Per tutte le vostre esigenze di personalizzazione, contattateci\nSpecifiche:\nDimensioni: LxPxA: 4,94 x 2,50 x 2,70 metri\n– Una struttura di 4,94 x 2,50 m con un'altezza del soffitto di 2,26 m in acciaio zincato laccato bianco\n– Pannelli parete con isolamento in schiuma poliuretanica da 35 mm\n– Tetto in lamiera zincata\n– Isolamento in lana di vetro da 100 mm\n– Soffitto metallico in vassoio di acciaio bianco\n– Pavimento in truciolare CTBH da 22 mm\n– Rivestimento pavimento in PVC blu U2P2\nFalegnameria:\n– 1 porta esterna cieca da 0,90 m\n– Finestra scorrevole in PVC da 1,00 x 1,20 m in doppio vetro e tapparella\nAttrezzatura :\n– Quadro elettrico generale\n– Tubo LED 1x36W\n– Termoconvettore elettrico da 1500 W\n– Prese di corrente",
                         "en" => "Contractual photos (Module sold in perfect condition as shown in the photos)\nThe features listed below are the standard features of this module. You can order directly if these features meet your needs. For all your customization needs, contato us\nSpecifications:\nDimensions: LxWxH: 4.94 x 2.50 x 2.70 meters\n– A structure of 4.94 x 2.50 m with a ceiling height of 2.26 m in white lacquered galvanized steel\n– Wall panels with 35 mm polyurethane foam insulation\n– Galvanized sheet roof\n– 100 mm fiberglass insulation\n– White steel tray metal ceiling\n– 22 mm CTBH chipboard floor\n– Blue U2P2 PVC floor covering\nJoinery:\n– 1 0.90 m solid external door\n– 1.00 x 1.20 m PVC sliding window with double glazing and roller shutter\nEquipment:\n– Main electrical panel\n– LED tube 1x36W\n– 1500 W electric convector heater\n– Power sockets",
@@ -6221,7 +6221,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611226",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-da-15-mq/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Foto contrattuali (Modulo venduto in perfette condizioni come presentato nelle foto)\nLe caratteristiche elencate di seguito sono le caratteristiche standard di questo modulo. Puoi effettuare un ordine direttamente se queste caratteristiche ti soddisfano. Per tutte le vostre esigenze di personalizzazione, contattateci\nSpecifiche:\nDimensioni (LxPxA): 6 mx 2,5 mx 2,58 m\nPareti e tetto\nMateriale: pannelli sandwich\nIsolamento: Schiuma di poliuretano rigido\nSpessore della parete: 50 mm\nSpessore soffitto: 40 mm\nCopertura a soffitto: Lamiera di acciaio zincato con onde greche\nPavimento\nStruttura: Pannelli in fibrocemento\nSpessore: 16 mm\nRivestimento: PVC\nFALEGNAMERIA\nPorta: 1 anta in alluminio satinato dim.90 x 200 cm\nFinestre: 2 finestre in alluminio didim200 x 100 cm, doppi vetri, 1 anta\nELETTRICITÀ\nIlluminazione: 2 neon LED\nPrese: 2 prese di corrente\nTabella: 1 tabella comprensiva di interdifferenziale e interruttori automatici\nCambio: 1",
                         "en" => "Contractual photos (Module sold in perfect condition as shown in the photos)\nThe features listed below are the standard features of this module. You can order directly if these features meet your needs. For all your customization needs, contato us\nSpecifications:\nDimensions (LxWxH): 6 m x 2.5 m x 2.58 m\nWalls and roof\nMaterial: sandwich panels\nInsulation: Rigid polyurethane foam\nWall thickness: 50 mm\nCeiling thickness: 40 mm\nCeiling covering: Galvanized steel sheet with Greek waves\nFloor\nStructure: Fiber cement panels\nThickness: 16 mm\nCovering: PVC\nJOINERY\nDoor: 1 satin aluminum door size 90 x 200 cm\nWindows: 2 aluminum windows size 200 x 100 cm, double glazing, 1 sash\nELECTRICITY\nLighting: 2 LED neon lights\nSockets: 2 power sockets\nPanel: 1 panel including differential switch and circuit breakers\nSwitch: 1",
@@ -6264,7 +6264,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611180",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-da-18-m%c2%b2/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Foto contrattuali (Modulo venduto in perfette condizioni come presentato nelle foto)\nLe caratteristiche elencate di seguito sono le caratteristiche standard di questo modulo. Puoi effettuare un ordine direttamente se queste caratteristiche ti soddisfano. Per tutte le vostre esigenze di personalizzazione, contattateci\nSpecifiche:\nDimensioni: LxPxA: 4,70 x 3,84 x 2,64 metri\n– Pannelli parete con isolamento in lana di roccia da 40 mm\n– 2 telai da 3,84 x 2,35 m in acciaio zincato grigio chiaro su telaio e con altezza soffitto di 2,30 m\n– Tetto in lamiera zincata, isolamento in lana di vetro da 100 mm\n– Rivestimento del soffitto in vassoio di acciaio bianco\n– Nuovo pavimento in truciolare CTBH da 22 mm\n– Nuovo rivestimento del pavimento in plastica\nFalegnameria:\n– 1 anta singola in vetro da 0,90 mt\n– 3 vetrate\n– 2 timpani e 1 lato lungo\n– 2 telai alti con sbarre e OB da 0,50 x 0,40 m con doppi vetri\nAttrezzatura :\n– Quadro elettrico generale monofase stagno\n– 3 fluorescenti doppie impermeabili\n– Faretto LED\n– 3 prese di corrente\n– Termoconvettori elettrici: 2 da 1000 W",
                         "en" => "Contractual photos (Module sold in perfect condition as shown in the photos)\nThe features listed below are the standard features of this module. You can order directly if these features meet your needs. For all your customization needs, contato us\nSpecifications:\nDimensions: LxWxH: 4.70 x 3.84 x 2.64 meters\n– Wall panels with 40 mm rock wool insulation\n– 2 frames of 3.84 x 2.35 m in light gray galvanized steel on frame and with ceiling height of 2.30 m\n– Galvanized sheet roof, 100 mm fiberglass insulation\n– White steel tray ceiling covering\n– New 22 mm CTBH chipboard floor\n– New plastic floor covering\nJoinery:\n– 1 single glass door 0.90 m\n– 3 windows\n– 2 gables and 1 long side\n– 2 high frames with bars and OB of 0.50 x 0.40 m with double glazing\nEquipment:\n– Waterproof single-phase main electrical panel\n– 3 waterproof double fluorescent lights\n– LED spotlight\n– 3 power sockets\n– Electric convector heaters: 2 of 1000 W",
@@ -6303,7 +6303,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611179",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-da-24-mq-con-sanitari/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Foto contrattuali (Modulo venduto in perfette condizioni come presentato nelle foto)\nLe caratteristiche elencate di seguito sono le caratteristiche standard di questo modulo. Puoi effettuare un ordine direttamente se queste caratteristiche ti soddisfano. Per tutte le vostre esigenze di personalizzazione, contattateci\nSpecifiche:\nDimensioni (LxLxA): 8,20 x 2,92 x 2,92 m\n– 1 struttura da 8,20 x 2,92 m con altezza soffitto di 2,48 m in acciaio zincato laccato bianco\n– Pannelli parete con isolamento in schiuma poliuretanica da 40 mm\n– Tetto in lamiera zincata\n– Isolamento in lana di vetro da 100 mm\n– Rivestimento del soffitto in vassoio di acciaio bianco\n– Pavimento in resina\nFalegnameria:\n– Una porta esterna solida di 0,90 m\n– 2 telai alti da 0,40 m x 0,50 m\n– 2 porte interne isoplane da 0,80 mt\nAttrezzatura :\n– Quadro elettrico trifase\n– Doppia fluorescente con griglia e 2 fluorescenti singole stagne\n– Termoconvettori elettrici: 2 da 1000 W\n– Serbatoio acqua calda da 300 litri\n– 1 abbeveratoio con 4 punti acqua e 1 abbeveratoio con 2 punti acqua\n– Toilette inglese: 3\n– Orinatoio: 3\n– Piatto doccia: 3",
                         "en" => "Contractual photos (Module sold in perfect condition as shown in the photos)\nThe features listed below are the standard features of this module. You can order directly if these features meet your needs. For all your customization needs, contato us\nSpecifications:\nDimensions (LxWxH): 8.20 x 2.92 x 2.92 m\n– 1 structure of 8.20 x 2.92 m with ceiling height of 2.48 m in white lacquered galvanized steel\n– Wall panels with 40 mm polyurethane foam insulation\n– Galvanized sheet roof\n– 100 mm fiberglass insulation\n– White steel tray ceiling covering\n– Resin floor\nJoinery:\n– A solid external door of 0.90 m\n– 2 high frames of 0.40 m x 0.50 m\n– 2 internal isoplane doors of 0.80 m\nEquipment:\n– Three-phase electrical panel\n– Double fluorescent with grid and 2 single waterproof fluorescent lights\n– Electric convector heaters: 2 of 1000 W\n– 300 liter hot water tank\n– 1 drinking trough with 4 water points and 1 drinking trough with 2 water points\n– English toilets: 3\n– Urinals: 3\n– Shower trays: 3",
@@ -6343,7 +6343,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611178",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-da-50-mq/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Foto contrattuali (Modulo venduto in perfette condizioni come presentato nelle foto)\nLe caratteristiche elencate di seguito sono le caratteristiche standard di questo modulo. Puoi effettuare un ordine direttamente se queste caratteristiche ti soddisfano. Per tutte le vostre esigenze di personalizzazione, contattateci\nSpecifiche:\nDimensioni (LxPxA): 8,24 mx 6,00 mx 3,00 m\n– 2 telai da 8,24 m x 3 m x 3 m in acciaio zincato laccato bianco e un'altezza del soffitto di 2,51 m\n– Pannelli parete con isolamento in schiuma poliuretanica da 80 mm\n– Tetto in lamiera zincata\n– Rivestimento soffitto in vassoio di acciaio microforato\n– Isolamento in lana di vetro da 100 mm\n– Nuovo pavimento in truciolare CTBH da 22 mm\n– Nuovo rivestimento del pavimento in plastica\nFalegnameria:\n– 1 porta esterna in vetro da 0,90 m\n– 3 finestre di 2,00 x 1,20 m in doppi vetri e tapparella\n– 2 porte interne isoplane da 0,83 m\nAttrezzatura :\n– Quadro elettrico generale monofase\n– 8 fluorescenti a doppia griglia\n– Prese di corrente\n– Termoconvettori elettrici: 3 da 2000 W e 1 da 500 W",
                         "en" => "Contractual photos (Module sold in perfect condition as shown in the photos)\nThe features listed below are the standard features of this module. You can order directly if these features meet your needs. For all your customization needs, contato us\nSpecifications:\nDimensions (LxWxH): 8.24 m x 6.00 m x 3.00 m\n– 2 frames of 8.24 m x 3 m x 3 m in white lacquered galvanized steel and a ceiling height of 2.51 m\n– Wall panels with 80 mm polyurethane foam insulation\n– Galvanized sheet roof\n– Micro-perforated steel tray ceiling covering\n– 100 mm fiberglass insulation\n– New 22 mm CTBH chipboard floor\n– New plastic floor covering\nJoinery:\n– 1 glass external door of 0.90 m\n– 3 windows of 2.00 x 1.20 m with double glazing and roller shutter\n– 2 internal isoplane doors of 0.83 m\nEquipment:\n– Single-phase main electrical panel\n– 8 double-grid fluorescent lights\n– Power sockets\n– Electric convector heaters: 3 of 2000 W and 1 of 500 W",
@@ -6381,7 +6381,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611724",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-di-7-m2-senza-servizi-igienici-possibilita-di-avere-piu-dimensioni/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -6613,7 +6613,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611177",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-sanitario-wc-doppio-uomo-donna/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Foto contrattuali (Modulo venduto in perfette condizioni come presentato nelle foto)\n&nbsp;\nLe caratteristiche elencate di seguito sono le caratteristiche standard di questo modulo. Puoi effettuare un ordine direttamente se queste caratteristiche ti soddisfano. Per tutte le vostre esigenze di personalizzazione, contattateci\nSpecifiche:\nDimensioni (LxPxA): 2,30 x 1,35 x 2,5 m\nProfondità: 1,20 m\nTelaio\nDescrizione: Acciaio zincato e laccato\nSpessore: 2 mm\nTetto: altezza 240 mm\nMovimentazione: 4 prese sul tetto per ganci di sollevamento\nPareti e tetto\nMateriale: pannelli sandwich\nIsolamento: Schiuma di poliuretano rigido\nSpessore della parete: 50 mm\nSpessore soffitto: 40 mm\nCopertura a soffitto: Lamiera di acciaio zincato con onde greche\nPavimento\nStruttura: Pannelli in fibrocemento\nSpessore: 16 mm\nRivestimento: PVC\nFALEGNAMERIA\nAnta: 2 ante in alluminio dim.85×190 cm\nEstrattore d'aria: 1 in ogni cabina\nInstallazione sanitaria\n1 Lavandino in ceramica dim. 35 cm con rubinetto acqua fredda e specchio in ogni cabina\n1 WC all'inglese dotato di serbatoio interamente in ceramica in ogni cabina\nArrivo e uscita dell'acqua in attesa sulla parete di fondo\nELETTRICITÀ a 220 V\nIlluminazione: 1 plafoniera LED in ogni cabina\nTavolo: 1 tavolo comprensivo di interdifferenziale e interruttore automatico\nCambio: 1 in ogni cabina\nUna scatola di connessione esterna",
                         "en" => "Contractual photos (Module sold in perfect condition as shown in the photos)\n&nbsp;\nThe features listed below are the standard features of this module. You can order directly if these features meet your needs. For all your customization needs, contato us\nSpecifications:\nDimensions (LxWxH): 2.30 x 1.35 x 2.5 m\nDepth: 1.20 m\nFrame\nDescription: Galvanized and lacquered steel\nThickness: 2 mm\nRoof: height 240 mm\nHandling: 4 roof sockets for lifting hooks\nWalls and roof\nMaterial: sandwich panels\nInsulation: Rigid polyurethane foam\nWall thickness: 50 mm\nCeiling thickness: 40 mm\nCeiling covering: Galvanized steel sheet with Greek waves\nFloor\nStructure: Fiber cement panels\nThickness: 16 mm\nCovering: PVC\nJOINERY\nDoor: 2 aluminum doors size 85×190 cm\nAir extractor: 1 in each cabin\nSanitary installation\n1 Ceramic sink size 35 cm with cold water tap and mirror in each cabin\n1 English-style toilet with fully ceramic cistern in each cabin\nWater inlet and outlet pending on the back wall\nELECTRICITY 220 V\nLighting: 1 LED ceiling light in each cabin\nPanel: 1 panel including differential switch and circuit breaker\nSwitch: 1 in each cabin\nAn external connection box",
@@ -6651,7 +6651,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611304",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-wc-sanitario-semplice-colore-grigio/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Foto contrattuali (Modulo venduto in perfette condizioni come presentato nelle foto)\nLe caratteristiche elencate di seguito sono le caratteristiche standard di questo modulo. Puoi ordinare direttamente se queste funzionalità ti soddisfano.\nBilancio\nDimensioni: 1,20 x 1,20 x 2,40 mt\nProfondità: 120 cm\nTelaio\nDescrizione: Acciaio zincato e laccato\nSpessore: 2 mm\nSoffitto: altezza 240 mm\nFunzionamento: 4 prese nel tetto per ganci di sollevamento\nPareti e soffitto\nMateriale: pannelli sandwich\nIsolamento: Schiuma di poliuretano rigido\nSpessore della parete: 40 mm\nSpessore del tetto: 40 mm\nCopertura tetto: Lamiera di acciaio zincato con greche\nTerra\nStruttura: Pannelli in fibrocemento\nSpessore: 16 mm\nRivestimento: PVC\nCarpenteria\nAnta: 1 anta in alluminio da 85 x 190 cm.\nVentola di scarico: 1\nInstallazione sanitaria\n1 lavabo in ceramica da 35 cm con rubinetto acqua fredda e specchio.\n1 WC in stile inglese dotato di serbatoio interamente in ceramica\nArrivo e partenza dell'acqua in attesa sulla parete di fondo.\nELETTRICITÀ a 220 V\nIlluminazione: 1 plafoniera LED\nTavola: 1 tavola comprensiva di interdifferenziale e interruttore.\nModifica: 1\nUna scatola di giunzione esterna",
                         "en" => "Contractual photos (Module sold in perfect condition as shown in the photos)\nThe features listed below are the standard features of this module. You can order directly if these features meet your needs.\nBudget\nDimensions: 1.20 x 1.20 x 2.40 m\nDepth: 120 cm\nFrame\nDescription: Galvanized and lacquered steel\nThickness: 2 mm\nCeiling: height 240 mm\nOperation: 4 roof sockets for lifting hooks\nWalls and ceiling\nMaterial: sandwich panels\nInsulation: Rigid polyurethane foam\nWall thickness: 40 mm\nRoof thickness: 40 mm\nRoof covering: Galvanized steel sheet with waves\nFloor\nStructure: Fiber cement panels\nThickness: 16 mm\nCovering: PVC\nJoinery\nDoor: 1 aluminum door 85 x 190 cm.\nExhaust fan: 1\nSanitary installation\n1 ceramic washbasin 35 cm with cold water tap and mirror.\n1 English-style toilet with fully ceramic cistern\nWater inlet and outlet pending on the back wall.\nELECTRICITY 220 V\nLighting: 1 LED ceiling light\nPanel: 1 panel including differential switch and switch.\nSwitch: 1\nAn external junction box",
@@ -6688,7 +6688,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611362",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-6x25-uso-ufficio/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Dimensioni al basamento 593 x 243 cm.\nDimensioni al tetto 600 x 250 cm.\nH interna 240 cm H esterna 262 cm.\nPannello Parete sp.40 mm – Poliuretano\n1 Lato lamiera esterna micro nervata BG RAL 9002.\n1 Lato lamiera interna micro nervata BG RAL 9002.\nPannello Tetto sp.30+35 mm – Poliuretano\n1 Lato lamiera esterna 5 greche RAL 9002.\n1 Lato lamiera interna micro nervata BG RAL 9002.\nBasamento alta portanza con struttura in tubolare\nrivestito con lamiera grecata, rivestito con legno IDRO V100 sp.18 mm, rivestito con PVC Standard.\nSerramenti in alluminio RAL 9010.\nVetro 4 mm trasparente.\nN.1 Porta mezzo vetro, completa di barre antintrusione,\ncon maniglia e serratura standard,\ncon dimensioni 100 x 210h esterna cm.\nN.1 Finestra scorrevole, completa di barre antintrusione,\ncon dimensioni 100 x 100h esterna cm.\nImpianto elettrico standard norma CEE 220V, con tubo PVC a vista, compreso di:\nN.1 Quadro Elettrico.\nN.1 Differenziale Generale.\nN.1 Differenziale per CDZ.\nN.1 Interruttore.\nN.1 Presa\nN.2 Plafoniere 45W-LED.\nN.1 Condizionatore Mono Split Inverter BTU 9000-HISENSE.\nN.1 Scatola esterna per allaccio impianto elettrico.",
                         "en" => "Base dimensions 593 x 243 cm.\nRoof dimensions 600 x 250 cm.\nInternal height 240 cm External height 262 cm.\nWall Panel thickness 40 mm – Polyurethane\n1 External side micro-ribbed sheet metal BG RAL 9002.\n1 Internal side micro-ribbed sheet metal BG RAL 9002.\nRoof Panel thickness 30+35 mm – Polyurethane\n1 External side 5-corrugated sheet metal RAL 9002.\n1 Internal side micro-ribbed sheet metal BG RAL 9002.\nHigh-load base with tubular structure\ncovered with corrugated sheet metal, covered with IDRO V100 wood thickness 18 mm, covered with Standard PVC.\nAluminum frames RAL 9010.\n4 mm clear glass.\nNo.1 Half-glass door, complete with anti-intrusion bars,\nwith handle and standard lock,\nexternal dimensions 100 x 210h cm.\nNo.1 Sliding window, complete with anti-intrusion bars,\nexternal dimensions 100 x 100h cm.\nStandard electrical system according to CEE 220V regulations, with visible PVC pipe, including:\nNo.1 Electrical panel.\nNo.1 Main differential switch.\nNo.1 Differential switch for socket outlets.\nNo.1 Switch.\nNo.1 Socket\nNo.2 45W-LED ceiling lights.\nNo.1 HISENSE BTU 9000 Inverter Mono Split Air Conditioner.\nNo.1 External box for electrical system connection.",
@@ -6731,7 +6731,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611309",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-bagno/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "A corredo della progettazione, per pratica edilizia, compreso di:\nProgettazione strutturale di edificio metallico, (escluso calcolo o verifica strutture di fondazione).\nStesura relazione di calcolo secondo normativa vigente, compresa predisposizione documentazione per denuncia comunale.\nNr.1 Modulo con Dimensioni al basamento 1023 x 293 cm.\nNr.1 Modulo con Dimensioni al tetto 1030 x 300 cm.\nNr.1 Modulo con Dimensioni al tetto 1030 x 50 cm.\nH interna 270 cm H esterna 342 cm.\nPannello Parete e Primo Tetto sp.100 mm – Poliuretano\n1 Lato lamiera esterna LISCIA BG RAL 9002.\n1 Lato lamiera interna LISCIA BG RAL 9002.\nBasamento alta portanza con struttura in tubolare\nrivestito con lamiera grecata, rivestito con Pannello Parete sp.100 mm Poliuretano,\nrivestito con legno CEMENTO sp.16 mm,\nrivestito con Pavimento Vinilico Modulare colorazione LIGHT GREY.\nSecondo tetto, per maggiore coibentazione, massima ermeticità e durata nel tempo, con struttura in tubolare e lattonerie presso piegate, a una falda, rivestite con:\nPannello Tetto sp.30+35 mm – Poliuretano\n1 Lato lamiera esterna 5 greche RAL 9002.\n1 Lato lamiera interna Micro Nervata BG RAL 9002.\nFascione di gronda perimetrale RAL 9002, completo di pluviali di scarico a terra.\nDimensioni 1050 x 370 cm.\nSerramenti in Alluminio RAL 9010.\nVetro Camera 4/9/4mm Stampato.\nN.1 Porta cieca tutto pannello a due ante battenti, con maniglia e serratura standard, con dimensioni 200 x 210h est cm.\nN.4 Porte cieche tutto pannello a un'anta battente, con maniglia e serratura standard, con dimensioni 80 x 210h est cm.\nN.2 Porte cieche tutto pannello a un'anta battente, con maniglia standard e serratura libero/occupato, con dimensioni 100 x 210h est cm.\nN.5 Porte cieche tutto pannello a un'anta battente, con maniglia standard e serratura libero/occupato, con dimensioni 80 x 210h est cm.\nN.11 Finestre con apertura a vasistas, con dimensioni 50 x 50h est cm, complete di zanzariera fissa.\nN.1 Finestra con apertura a vasistas, con dimensioni 100 x 50h est cm, complete di zanzariera fissa.\nImpianto elettrico competo di relazione, incassato, compreso di:\nN.1 Quadro Elettrico.\nN.1 Differenziale Generale. N.1 Plafoniera 45W-LED. N.11 Plafoniere 19W-LED. N.7 Interruttori.\nN.7 Prese.\nN.1 Scatola per allacciamento esterno.\nImpianto Idraulico interno, con tubo MEPLA 20mm, incassato, compreso di:\nN.1 Bagno disabile completi di (Wc + Lavabo in ceramica) e relativi maniglioni.\nN.1 Lavabo in ceramica 90 cm + Struttura + N.2 Miscelatori.\nN.1 Specchio.\nN.5 Wc in ceramica + Sedile + Cassetta esterna.\nN.2 Orinatoi in ceramica. N.5 Portarotolo + Scopino.\nN.4 Lavabo in ceramica 60 cm + Colonna + Miscelatore.\nN.4 Specchio.\nN.1 Boiler elettrico 60 litri, acqua calda.\nRivestimento perimetrale esterno con sottostruttura rivestita con mattonelle di HPL (Finitura finto legno)",
                         "en" => "Included with the design, for building permit application:\nStructural design of metal building, (excluding foundation calculation or verification).\nPreparation of calculation report according to current regulations, including preparation of documentation for municipal filing.\nNo.1 Module with Base dimensions 1023 x 293 cm.\nNo.1 Module with Roof dimensions 1030 x 300 cm.\nNo.1 Module with Roof dimensions 1030 x 50 cm.\nInternal height 270 cm External height 342 cm.\nWall Panel and First Roof thickness 100 mm – Polyurethane\n1 External side SMOOTH sheet metal BG RAL 9002.\n1 Internal side SMOOTH sheet metal BG RAL 9002.\nHigh-load base with tubular structure\ncovered with corrugated sheet metal, covered with Wall Panel thickness 100 mm Polyurethane,\ncovered with CEMENT wood thickness 16 mm,\ncovered with Modular Vinyl Flooring LIGHT GREY color.\nSecond roof, for greater insulation, maximum airtightness and durability over time, with tubular structure and bent sheet metal, single-pitch, covered with:\nRoof Panel thickness 30+35 mm – Polyurethane\n1 External side 5-corrugated sheet metal RAL 9002.\n1 Internal side Micro-Ribbed sheet metal BG RAL 9002.\nPerimeter eaves fascia RAL 9002, complete with downpipes to ground.\nDimensions 1050 x 370 cm.\nAluminum frames RAL 9010.\n4/9/4mm Insulated Glass Frosted.\nNo.1 Full-panel double-leaf swing blind door, with handle and standard lock, external dimensions 200 x 210h cm.\nNo.4 Full-panel single-leaf swing blind doors, with handle and standard lock, external dimensions 80 x 210h cm.\nNo.2 Full-panel single-leaf swing blind doors, with standard handle and free/occupied lock, external dimensions 100 x 210h cm.\nNo.5 Full-panel single-leaf swing blind doors, with standard handle and free/occupied lock, external dimensions 80 x 210h cm.\nNo.11 Tilting windows, external dimensions 50 x 50h cm, complete with fixed mosquito screen.\nNo.1 Tilting window, external dimensions 100 x 50h cm, complete with fixed mosquito screen.\nComplete electrical system with report, recessed, including:\nNo.1 Electrical panel.\nNo.1 Main differential switch. No.1 45W-LED ceiling light. No.11 19W-LED ceiling lights. No.7 Switches.\nNo.7 Sockets.\nNo.1 External connection box.\nInternal plumbing system, with 20mm MEPLA pipe, recessed, including:\nNo.1 Disabled bathroom complete with (Ceramic Toilet + Sink) and related grab rails.\nNo.1 Ceramic sink 90 cm + Structure + No.2 Mixers.\nNo.1 Mirror.\nNo.5 Ceramic toilets + Seat + External cistern.\nNo.2 Ceramic urinals. No.5 Toilet roll holder + Brush holder.\nNo.4 Ceramic sink 60 cm + Column + Mixer.\nNo.4 Mirror.\nNo.1 60 liter electric water heater, hot water.\nExternal perimeter cladding with substructure covered with HPL tiles (Wood-look finish)",
@@ -6782,7 +6782,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611313",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-box-auto/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Nr.2 Pz con Dimensioni al basamento 593 x 293 cm.\nNr.2 Pz con Dimensioni al tetto 600 x 300 cm.\nH interna 240 cm H esterna 277 cm.\nPannello Parete sp.40 mm – Poliuretano\n1 Lato lamiera esterna micro nervata BG RAL 9002.\n1 Lato lamiera interna micro nervata BG RAL 9002.\nPannello Tetto sp.30+35 mm – Poliuretano\n1 Lato lamiera esterna 5 greche RAL 9002.\n1 Lato lamiera interna micro nervata BG RAL 9002.\nSenza basamento.\nCompleto di Nr.10 Squadrette per fissaggio a vs basamento esistente.\nSecondo tetto, per maggiore coibentazione, massima ermeticità e durata nel tempo, con struttura in tubolare e lattonerie presso piegate, a una falda, rivestite con:\nPannello Tetto sp.30+35 mm – Poliuretano\n1 Lato lamiera esterna 5 greche RAL 9002.\n1 Lato lamiera interna Micro Nervata BG RAL 9002\nFascione di gronda perimetrale RAL 9002, completo di pluviali di scarico a terra.\nDimensioni 620 x 620 cm.\nN.2 Basculanti zincate, con apertura motorizzata, complete di maniglia e serratura standard e contrappesi di sicurezza.\nN.2 Finestre in alluminio RAL 9010, con vetro 4 mm trasparente, apertura scorrevole, con dimensioni 100 x 100h esterna cm.\nImpianto elettrico standard norma CEE 220V, con tubo PVC a vista, compreso di:\nN.1 Quadro Elettrico.\nN.1 Differenziale Generale.\nN.1 Differenziale per CDZ.\nN.2 Interruttori.\nN.2 Prese.\nN.4 Plafoniere 45W-LED.\nN.1 Scatola esterna per allaccio impianto elettrico.",
                         "en" => "No.2 Units with Base dimensions 593 x 293 cm.\nNo.2 Units with Roof dimensions 600 x 300 cm.\nInternal height 240 cm External height 277 cm.\nWall Panel thickness 40 mm – Polyurethane\n1 External side micro-ribbed sheet metal BG RAL 9002.\n1 Internal side micro-ribbed sheet metal BG RAL 9002.\nRoof Panel thickness 30+35 mm – Polyurethane\n1 External side 5-corrugated sheet metal RAL 9002.\n1 Internal side micro-ribbed sheet metal BG RAL 9002.\nWithout base.\nComplete with No.10 Brackets for fixing to your existing base.\nSecond roof, for greater insulation, maximum airtightness and durability over time, with tubular structure and bent sheet metal, single-pitch, covered with:\nRoof Panel thickness 30+35 mm – Polyurethane\n1 External side 5-corrugated sheet metal RAL 9002.\n1 Internal side Micro-Ribbed sheet metal BG RAL 9002\nPerimeter eaves fascia RAL 9002, complete with downpipes to ground.\nDimensions 620 x 620 cm.\nNo.2 Galvanized up-and-over doors, with motorized opening, complete with handle and standard lock and safety counterweights.\nNo.2 Aluminum windows RAL 9010, with 4 mm clear glass, sliding opening, external dimensions 100 x 100h cm.\nStandard electrical system according to CEE 220V regulations, with visible PVC pipe, including:\nNo.1 Electrical panel.\nNo.1 Main differential switch.\nNo.1 Differential switch for socket outlets.\nNo.2 Switches.\nNo.2 Sockets.\nNo.4 45W-LED ceiling lights.\nNo.1 External box for electrical system connection.",
@@ -6817,7 +6817,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611311",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-portineria/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "A corredo della progettazione, per pratica edilizia, compreso di:\nProgettazione strutturale di edificio metallico, (escluso calcolo o verifica strutture di fondazione).\nStesura relazione di calcolo secondo normativa vigente, compresa predisposizione documentazione per denuncia comunale.\nProgettazione di impianto idrotermosanitario, per monoblocco ad uso PORTINERIA.\nRedazione Relazione Energetica per edificio di nuova costruzione:\ncon verifiche numeriche dei parametri minimi di legge\ncon analisi delle stratigrafie di progetto e verifica dei ponti termici (assenza condensazioni interstiziali);\ncon verifica del rispetto degli obblighi di integrazione delle fonti rinnovabili\nFornitura di assistenza tecnica, per la compilazione di documentazione tecnica, di progetto impianto elettrico, a servizio di monoblocco ad uso PORTINERIA PG8608 R03.\nL'incarico comprenderà planimetrie, schema quadro elettrico, dimensionamenti e piccola relazione tecnica.\nEscluso relazione energetica e APE.\nNr.1 Modulo con dimensioni al basamento 590 x 343 cm.\nNr.1 Modulo con Dimensioni al tetto 670 x 250 cm.\nNr.1 Modulo con Dimensioni al tetto 670 x 70 cm.\nH interna 270 cm H esterna 344 cm. Tot Mq 25\nPannello Parete E Primo Tetto sp.100 mm – Poliuretano\n1 Lato lamiera esterna LISCIA BG RAL 9002.\n1 Lato lamiera interna LISCIA BG RAL 9002.\nBasamento alta portanza con struttura in tubolare, rivestito con lamiera grecata, rivestito con Pannello Parete sp.100 mm Poliuretano, rivestito con legno IDRO V100 sp.18 mm, rivestito con Pavimento Vinilico Modulare colorazione LIGHT GREY.\nSecondo tetto, per maggiore coibentazione, massima ermeticità e durata nel tempo, con struttura in tubolare e lattonerie presso piegate, a una falda, rivestite con:\nPannello Tetto sp.30+35 mm – Poliuretano\n1 Lato lamiera esterna 5 greche RAL 9002.\n1 Lato lamiera interna Micro Nervata BG RAL 9002.\nFascione di gronda perimetrale RAL 7022, completo di pluviali di scarico a terra.\nDimensioni 690 x 340 cm.\nSerramenti in Alluminio RAL 7022.\nVetro Camera 4/9/4 Trasparente.\nN.1 Porta mezzo vetro a un'anta battente, con maniglia e serratura standard, con dimensioni 100x210h est cm.\nN.1 Finestre con apertura scorrevole, completa di zanzariera scorrevole, con dimensioni 200 x 100h est cm.\nN.1 Finestra fissa, con dimensioni 180 x 100h esterna cm.\nN.1 Porta cieca tutto pannello a un'anta battente, con maniglia standard e serratura libero/occupato, con dimensioni 100 x 210h esterna cm.\nN.1 Finestrino bagno con apertura a vasistas, completo di zanzariera fissa esterna, con dimensioni 100 x 50h esterna cm.\nEscluso impianto elettrico\nEscluso impianto fotovoltaico e linea vita (da installare in loco a vostro carico).\nImpianto idraulico interno con tubo MEPLA a vista, compreso di:\nN.1 Bagno disabili (Wc + Lavabo in ceramica) completo di maniglioni.\nN.1 Boiler elettrico 15 litri, acqua calda.\nRivestimento facciate perimetrali con pellicola adesiva – finitura colore CORTEN.",
                         "en" => "Included with the design, for building permit application:\nStructural design of metal building, (excluding foundation calculation or verification).\nPreparation of calculation report according to current regulations, including preparation of documentation for municipal filing.\nDesign of hydro-thermal-sanitary system, for GATEHOUSE monoblock.\nPreparation of Energy Report for new building:\nwith numerical checks of minimum legal parameters\nwith analysis of project stratigraphy and verification of thermal bridges (absence of interstitial condensation);\nwith verification of compliance with renewable energy integration obligations\nProvision of technical assistance, for the compilation of technical documentation, for the electrical system design, for GATEHOUSE monoblock PG8608 R03.\nThe assignment will include floor plans, electrical panel diagram, sizing and a small technical report.\nExcluding energy report and APE.\nNo.1 Module with base dimensions 590 x 343 cm.\nNo.1 Module with Roof dimensions 670 x 250 cm.\nNo.1 Module with Roof dimensions 670 x 70 cm.\nInternal height 270 cm External height 344 cm. Total area 25 sqm\nWall Panel and First Roof thickness 100 mm – Polyurethane\n1 External side SMOOTH sheet metal BG RAL 9002.\n1 Internal side SMOOTH sheet metal BG RAL 9002.\nHigh-load base with tubular structure, covered with corrugated sheet metal, covered with Wall Panel thickness 100 mm Polyurethane, covered with IDRO V100 wood thickness 18 mm, covered with Modular Vinyl Flooring LIGHT GREY color.\nSecond roof, for greater insulation, maximum airtightness and durability over time, with tubular structure and bent sheet metal, single-pitch, covered with:\nRoof Panel thickness 30+35 mm – Polyurethane\n1 External side 5-corrugated sheet metal RAL 9002.\n1 Internal side Micro-Ribbed sheet metal BG RAL 9002.\nPerimeter eaves fascia RAL 7022, complete with downpipes to ground.\nDimensions 690 x 340 cm.\nAluminum frames RAL 7022.\n4/9/4 Clear Insulated Glass.\nNo.1 Half-glass single-leaf swing door, with handle and standard lock, external dimensions 100x210h cm.\nNo.1 Sliding window, complete with sliding mosquito screen, external dimensions 200 x 100h cm.\nNo.1 Fixed window, external dimensions 180 x 100h cm.\nNo.1 Full-panel single-leaf swing blind door, with standard handle and free/occupied lock, external dimensions 100 x 210h cm.\nNo.1 Bathroom tilting window, complete with external fixed mosquito screen, external dimensions 100 x 50h cm.\nExcluding electrical system\nExcluding photovoltaic system and lifeline (to be installed on site at your expense).\nInternal plumbing system with visible MEPLA pipe, including:\nNo.1 Disabled bathroom (Ceramic Toilet + Sink) complete with grab rails.\nNo.1 15 liter electric water heater, hot water.\nPerimeter facade cladding with adhesive film – CORTEN color finish.",
@@ -6879,7 +6879,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611312",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-portineria-2/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Dimensioni al basamento 393 x 243 cm.\nDimensioni al tetto 520 x 275 cm.\nH interna 270 cm H esterna 332 cm.\nPannello Parete sp.80 mm – Poliuretano\n1 Lato lamiera esterna Micro Nervata BG RAL 9002.\n1 Lato lamiera interna LISCIA BG RAL 9002.\nPannello Tetto sp.80+35 mm – Poliuretano\n1 Lato lamiera esterna 5 greche RAL 9002.\n1 Lato lamiera interna LISCIA BG RAL 9002.\nBasamento alta portanza con struttura in tubolare, rivestito con lamiera grecata, rivestito con Pannello Parete sp.80 mm Poliuretano, rivestito con legno IDRO V100 sp.18mm, rivestito con PVC Antiscivolo.\nSecondo tetto, con struttura in tubolare e lattonerie presso piegate, a una falda, rivestite con:\nPannello Tetto sp.80 mm – Poliuretano\n1 Lato lamiera esterna 5 greche RAL 9002.\n1 Lato lamiera interna Micro Nervata BG RAL 9002.\nFascione di gronda perimetrale RAL 7016, completo di pluviali di scarico a terra.\nSerramenti in Alluminio Freddo RAL 7016.\nVetro 4/9/4 stampato.\nN.1 Porta di Ingresso a un'anta tutto vetro, con maniglione antipanico a 1 punto, con dimensioni 100x210h est cm.\nN.1 Finestre con apertura scorrevole, complete di zanzariera scorrevole, con dimensioni 200 x 100h est cm.\nN.1 Finestre con apertura scorrevole, complete di zanzariera scorrevole, con dimensioni 100 x 100h est cm.\nN.1 Finestre con apertura scorrevole, complete di zanzariera scorrevole, completa di serramento passacarte inferiore, con dimensioni 100 x 100h est cm.\nN.1 Porta cieca tutto pannello a un'anta battente, con maniglia standard e serratura libero/occupato, con dimensioni 80 x 210h esterna cm.\nN.1 Finestrino bagno, con apertura a vasistas, completo di zanzariera fissa esterna, con dimensioni 50 x 50h esterna cm.\nImpianto elettrico norma CEE 220V, compreso di:\nN.1 Quadro Elettrico.\nN.1 Differenziale Generale.\nN.1 Differenziale per CDZ. N.1 Differenziale Prese. N.1 Differenziale Luci.\nN.2 Plafoniere 19W – LED. N.2 Interruttori.\nN.5 Prese.\nN.1 Presa RJ45.\nN.1 Condizionatore Mono SPLIT Inverter BTU 9000-HISENSE.\nN.1 Interfono.\nN.1 Scatola per allacciamento esterno.\nImpianto idraulico interno con tubo MEPLA a vista, compreso di:\nN.1 Wc in ceramica + sedile + cassetta esterna.\nN.1 Portarotolo + Scopino.\nN.1 Lavabo in ceramica 60 cm + colonna + mix.\nN.1 Specchio + Mensola\nN.1 Boiler Elettrico 15 Litri Acqua Calda.\nRivestimento facciate perimetrali con pellicola adesiva – finitura colore CORTEN.",
                         "en" => "Base dimensions 393 x 243 cm.\nRoof dimensions 520 x 275 cm.\nInternal height 270 cm External height 332 cm.\nWall Panel thickness 80 mm – Polyurethane\n1 External side Micro-Ribbed sheet metal BG RAL 9002.\n1 Internal side SMOOTH sheet metal BG RAL 9002.\nRoof Panel thickness 80+35 mm – Polyurethane\n1 External side 5-corrugated sheet metal RAL 9002.\n1 Internal side SMOOTH sheet metal BG RAL 9002.\nHigh-load base with tubular structure, covered with corrugated sheet metal, covered with Wall Panel thickness 80 mm Polyurethane, covered with IDRO V100 wood thickness 18mm, covered with Anti-slip PVC.\nSecond roof, with tubular structure and bent sheet metal, single-pitch, covered with:\nRoof Panel thickness 80 mm – Polyurethane\n1 External side 5-corrugated sheet metal RAL 9002.\n1 Internal side Micro-Ribbed sheet metal BG RAL 9002.\nPerimeter eaves fascia RAL 7016, complete with downpipes to ground.\nCold Aluminum frames RAL 7016.\n4/9/4 frosted glass.\nNo.1 Single-leaf all-glass Entrance door, with 1-point panic bar, external dimensions 100x210h cm.\nNo.1 Sliding windows, complete with sliding mosquito screen, external dimensions 200 x 100h cm.\nNo.1 Sliding windows, complete with sliding mosquito screen, external dimensions 100 x 100h cm.\nNo.1 Sliding windows, complete with sliding mosquito screen, complete with lower pass-through frame, external dimensions 100 x 100h cm.\nNo.1 Full-panel single-leaf swing blind door, with standard handle and free/occupied lock, external dimensions 80 x 210h cm.\nNo.1 Bathroom tilting window, complete with external fixed mosquito screen, external dimensions 50 x 50h cm.\nElectrical system according to CEE 220V regulations, including:\nNo.1 Electrical panel.\nNo.1 Main differential switch.\nNo.1 Differential switch for socket outlets. No.1 Differential switch for Sockets. No.1 Differential switch for Lights.\nNo.2 19W – LED ceiling lights. No.2 Switches.\nNo.5 Sockets.\nNo.1 RJ45 socket.\nNo.1 HISENSE BTU 9000 Inverter Mono SPLIT Air Conditioner.\nNo.1 Intercom.\nNo.1 External connection box.\nInternal plumbing system with visible MEPLA pipe, including:\nNo.1 Ceramic toilet + seat + external cistern.\nNo.1 Toilet roll holder + Brush holder.\nNo.1 Ceramic sink 60 cm + column + mixer.\nNo.1 Mirror + Shelf\nNo.1 15 Liter Electric Water Heater.\nPerimeter facade cladding with adhesive film – CORTEN color finish.",
@@ -6916,7 +6916,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611306",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-ufficio/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "A corredo della progettazione, per pratica edilizia, compreso di:\nRedazione Relazione Strutturale di edificio metallico, (escluso calcolo o verifica strutture di fondazione).\nVerifica strutturale degli elementi metallici del prefabbricato, con predisposizione del fascicolo Ex Legge 1860-71 e NTC 2018 per deposito presso gli organi competenti e relazioni di calcolo che possano essere richieste, dagli organi competenti.\nPredisposizione dei moduli per la denuncia sismico-strutturale.\nRedazione Relazione Energetica, per edificio di nuova costruzione, con verifiche numeriche dei parametri minimi di legge, con analisi delle stratigrafie di progetto e verifica dei ponti termici (assenza condensazioni interstiziali), con verifica del rispetto degli obblighi, di integrazione delle fonti rinnovabili.\nRedazione Relazione Elettrotecnica, per edificio di nuova costruzione, comprensiva di progetto impianto elettrico.\nL'incarico comprenderà planimetrie, schema quadro elettrico, dimensionamenti e piccola relazione tecnica.\nEscluso relazione energetica e APE.\nLa nostra fornitura prevede anche la consegna digitale, di un FASCICOLO TECNICO comprendente:\nLa DoP (Declaration of Performance) che accompagna la marcatura CE del manufatto.\nAttestazione ISO3834-3:2005 (marcatura CE), a completa garanzia strutturale del manufatto, realizzato per vostro conto.\nRegolarità contributiva DURC.\nPiano di manutenzione ordinaria e straordinaria.\nScheda di garanzia per i componenti principali.\nDICO Elettrica e Idraulica a seconda degli allestimenti interni.\nNr.02 Moduli con Dimensioni al basamento 993 x 293 cm.\nNr.02 Moduli con Dimensioni al tetto 1000 x 300 cm.\nH interna 270 cm H esterna 661 cm.\nTot Mq 60.\nPannello Parete e Primo Tetto sp.100 mm – Poliuretano\n1 Lato lamiera esterna LISCIA BG RAL 9002.\n1 Lato lamiera interna LISCIA BG RAL 9002.\nVerniciatura esterna pannello parete RAL6005, compresa.\nBasamento alta portanza con struttura in tubolare, rivestito con lamiera grecata, rivestito con Pannello Parete sp.100 mm – Poliuretano, rivestito con legno IDRO V100 sp.18 mm, rivestito con: Pavimento Vinilico Modulare Colorazione LIGHT GREY.\nSecondo tetto, per maggiore coibentazione, massima ermeticità e durata nel tempo, con struttura in tubolare e lattonerie presso piegate, a una falda, rivestite con:\nPannello Tetto sp.30+35 mm – Poliuretano\n1 Lato lamiera esterna 5 greche RAL 9002.\n1 Lato lamiera interna Micro Nervata BG RAL 9002.\nFascione di gronda perimetrale RAL 9002, completo di pluviali di scarico a terra.\nDimensioni 1020 x 320 cm.\nSerramenti in alluminio RAL 9010. Taglio Termico.\nVetro Camera 3+3/15/3+3 mm trasparente.\nN.1 Porta mezzo vetro a un'anta battente, con maniglia e serratura standard, con dimensioni 100 x 210h esterna cm.\nN.4 Finestre a due ante scorrevoli, complete di zanzariera scorrevole, con dimensioni 200 x 100h esterna cm.\nVetro Camera 3+3/15/3+3 mm stampato.\nN.2 Porte mezzo vetro a un'anta battente, con maniglia e serratura standard, con dimensioni 100 x 210h esterna cm.\nN.2 Finestrini con apertura a vasistas, completo di zanzariera fissa esterna, con dimensioni 50 x 50h esterna cm.\nN.3 Finestrini con apertura a vasistas, completi di zanzariera fissa esterna, con dimensioni 100 x 50h esterna cm.\nN.1 Porta cieche tutto pannello a un'anta battente, con maniglia e serratura standard, con dimensioni 80 x 210h esterna cm.\nN.2 Porte cieche tutto pannello a un'anta battente, con maniglia standard e serratura libero/occupato, con dimensioni 80 x 210h esterna cm.\nN.2 Porte a soffietto colore Grigio.\nImpianto elettrico competo di relazione, con tubo PVC Bianco a vista, compreso di:\nN.1 Quadro Elettrico.\nN.1 Differenziale Generale.\nN.1 Differenziale Prese.\nN.1 Differenziale Luci.\nN.1 Differenziale CDZ.\nN.2 Plafoniere 45W-LED.\nN.3 Plafoniere NOVALUX 35W-LED.\nN.4 Plafoniere 19W-LED.\nN.5 Interruttori.\nN.13 Prese.\nN.2 Condizionatori Mono SPLIT Inverter BTU 9000-HISENSE.\nN.1 Condizionatore Mono SPLIT Inverter BTU 12000-HISENSE.\nN.1 Scatola per allacciamento esterno.\nN.1 Impianto Fotovoltaico a tetto, dimensionato per 3Kw.\nN.1 Linea vita a tetto.\nImpianto idraulico interno con tubo MEPLA a vista, compreso di:\nN.2 Wc in ceramica + Sedile + Cassetta Esterna.\nN.2 Portarotolo + Scopino.\nN.3 Lavabo in Ceramica 60 cm + Colonna + Miscelatore.\nN.3 Specchio.\nN.2 Piatti doccia in ceramica 80 x 80 cm.\nN.2 Aste doccia + Soffione + Miscelatore.\nN.2 Boiler Elettrici 60 Litri Acqua Calda.\nN.1 Scala di accesso (esterna) a una rampa, completa di ballatoio, zincata a caldo, con struttura in tubolare e gradini grigliati, completa di parapetto.",
                         "en" => "Included with the design, for building permit application:\nPreparation of Structural Report for metal building, (excluding foundation calculation or verification).\nStructural verification of the metal elements of the prefabricated building, with preparation of the file under Ex Law 1860-71 and NTC 2018 for filing with the competent authorities and calculation reports that may be requested by the competent authorities.\nPreparation of forms for seismic-structural declaration.\nPreparation of Energy Report, for new building, with numerical checks of minimum legal parameters, analysis of project stratigraphy and verification of thermal bridges (absence of interstitial condensation), verification of compliance with renewable energy integration obligations.\nPreparation of Electrotechnical Report, for new building, including electrical system design.\nThe assignment will include floor plans, electrical panel diagram, sizing and a small technical report.\nExcluding energy report and APE.\nOur supply also includes the digital delivery of a TECHNICAL FILE comprising:\nThe DoP (Declaration of Performance) accompanying the CE marking of the product.\nISO3834-3:2005 certification (CE marking), for complete structural guarantee of the product, made on your behalf.\nDURC contribution regularity.\nOrdinary and extraordinary maintenance plan.\nWarranty sheet for main components.\nElectrical and Hydraulic DECLARATION depending on internal fittings.\nNo.02 Modules with Base dimensions 993 x 293 cm.\nNo.02 Modules with Roof dimensions 1000 x 300 cm.\nInternal height 270 cm External height 661 cm.\nTotal area 60 sqm.\nWall Panel and First Roof thickness 100 mm – Polyurethane\n1 External side SMOOTH sheet metal BG RAL 9002.\n1 Internal side SMOOTH sheet metal BG RAL 9002.\nExternal painting of wall panel RAL6005, included.\nHigh-load base with tubular structure, covered with corrugated sheet metal, covered with Wall Panel thickness 100 mm – Polyurethane, covered with IDRO V100 wood thickness 18 mm, covered with: Modular Vinyl Flooring LIGHT GREY color.\nSecond roof, for greater insulation, maximum airtightness and durability over time, with tubular structure and bent sheet metal, single-pitch, covered with:\nRoof Panel thickness 30+35 mm – Polyurethane\n1 External side 5-corrugated sheet metal RAL 9002.\n1 Internal side Micro-Ribbed sheet metal BG RAL 9002.\nPerimeter eaves fascia RAL 9002, complete with downpipes to ground.\nDimensions 1020 x 320 cm.\nAluminum frames RAL 9010. Thermal Break.\n3+3/15/3+3 mm clear Insulated Glass.\nNo.1 Half-glass single-leaf swing door, with handle and standard lock, external dimensions 100 x 210h cm.\nNo.4 Double-leaf sliding windows, complete with sliding mosquito screen, external dimensions 200 x 100h cm.\n3+3/15/3+3 mm frosted Insulated Glass.\nNo.2 Half-glass single-leaf swing doors, with handle and standard lock, external dimensions 100 x 210h cm.\nNo.2 Tilting windows, complete with external fixed mosquito screen, external dimensions 50 x 50h cm.\nNo.3 Tilting windows, complete with external fixed mosquito screen, external dimensions 100 x 50h cm.\nNo.1 Full-panel single-leaf swing blind door, with handle and standard lock, external dimensions 80 x 210h cm.\nNo.2 Full-panel single-leaf swing blind doors, with standard handle and free/occupied lock, external dimensions 80 x 210h cm.\nNo.2 Folding doors Gray color.\nComplete electrical system with report, with visible White PVC pipe, including:\nNo.1 Electrical panel.\nNo.1 Main differential switch.\nNo.1 Differential switch for Sockets.\nNo.1 Differential switch for Lights.\nNo.1 Differential switch for socket outlets.\nNo.2 45W-LED ceiling lights.\nNo.3 NOVALUX 35W-LED ceiling lights.\nNo.4 19W-LED ceiling lights.\nNo.5 Switches.\nNo.13 Sockets.\nNo.2 HISENSE BTU 9000 Inverter Mono SPLIT Air Conditioners.\nNo.1 HISENSE BTU 12000 Inverter Mono SPLIT Air Conditioner.\nNo.1 External connection box.\nNo.1 Rooftop Photovoltaic system, sized for 3kW.\nNo.1 Roof lifeline.\nInternal plumbing system with visible MEPLA pipe, including:\nNo.2 Ceramic toilets + Seat + External Cistern.\nNo.2 Toilet roll holder + Brush holder.\nNo.3 Ceramic Sinks 60 cm + Column + Mixer.\nNo.3 Mirror.\nNo.2 Ceramic shower trays 80 x 80 cm.\nNo.2 Shower rods + Shower head + Mixer.\nNo.2 Electric Water Heaters 60 Liters.\nNo.1 Single-flight access staircase (external), complete with landing, hot-dip galvanized, with tubular structure and gridded steps, complete with parapet.",
@@ -6953,7 +6953,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611310",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-ufficio-2/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Dimensioni al basamento 593 x 243 cm. Dimensioni al tetto 600 x 250 cm.\nH interna 240 cm H esterna 272 cm.\nPannello parete sp.40 mm – Poliuretano.\n1 Lamiera esterna Micro Nervata BG RAL 9002.\n1 Lamiera interna Micro Nervata BG RAL 9002.\nPannello tetto sp.30+35 mm – Poliuretano.\n1 Lamiera esterna 5 greche BG RAL 9002.\n1 Lamiera interna micro nervata BG RAL 9002.\nBasamento alta portanza con struttura in tubolare zincato, rivestita con lamiere grecate zincate, rivestito con legno Idro V100 sp.18 mm, rivestito con PVC Standard.\nSerramenti in alluminio RAL 9010.\nVetro antisfondamento trasparente.\nN.1 Porta di Ingresso tutto vetro a due ante battenti, con maniglia e serratura standard, con dimensioni 220 x 240h esterna cm.\nN.3 Finestroni fissi con dimensioni 170 x 240h esterna cm.\nImpianto Elettrico Norma CEE 200V, con tubo PVC Bianco a vista,compreso di:\nN.1 Quadro Elettrico.\nN.1 Differenziale Generale.\nN.1 Differenziale per CDZ.\nN.1 Interruttore.\nN.1 Presa.\nN.2 Plafoniere 45W-LED.\nN.1 Condizionatore Mono Split Inverter BTU 9000-HISENSE. N.1 Scatola per allacciamento esterno.",
                         "en" => "Base dimensions 593 x 243 cm. Roof dimensions 600 x 250 cm.\nInternal height 240 cm External height 272 cm.\nWall Panel thickness 40 mm – Polyurethane.\n1 External Micro-Ribbed sheet metal BG RAL 9002.\n1 Internal Micro-Ribbed sheet metal BG RAL 9002.\nRoof Panel thickness 30+35 mm – Polyurethane.\n1 External 5-corrugated sheet metal BG RAL 9002.\n1 Internal micro-ribbed sheet metal BG RAL 9002.\nHigh-load base with galvanized tubular structure, covered with galvanized corrugated sheets, covered with Idro V100 wood thickness 18 mm, covered with Standard PVC.\nAluminum frames RAL 9010.\nClear anti-break glass.\nNo.1 All-glass double-leaf swing Entrance door, with handle and standard lock, external dimensions 220 x 240h cm.\nNo.3 Fixed large windows with external dimensions 170 x 240h cm.\nElectrical System according to CEE 200V regulations, with visible White PVC pipe, including:\nNo.1 Electrical panel.\nNo.1 Main differential switch.\nNo.1 Differential switch for socket outlets.\nNo.1 Switch.\nNo.1 Socket.\nNo.2 45W-LED ceiling lights.\nNo.1 HISENSE BTU 9000 Inverter Mono Split Air Conditioner. No.1 External connection box.",
@@ -6993,7 +6993,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611307",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-ufficio-4x2/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Dimensioni al basamento 393 x 193 cm.\nDimensioni al tetto 400 x 200 cm.\nH interna 220 cm H esterna 242 cm.\nPannello Parete sp.40 mm – Poliuretano\n1 Lato lamiera esterna Micro nervata BG RAL 9002.\n1 Lato lamiera interna Micro nervata BG RAL 9002.\nPannello Tetto sp.30 mm – Poliuretano\n1 Lato lamiera esterna 5 greche RAL 9002.\n1 Lato lamiera interna Micro nervata BG RAL 9002.\nBasamento alta portanza con struttura in tubolare, rivestito con lamiera grecata, rivestita con legno cemento sp.18 mm, rivestito con PVC Antiscivolo.\nSerramenti in alluminio RAL 9010.\nN.1 Porta cieca tutto pannello a un'anta battente, con maniglia e serratura standard, con dimensioni 100 x 210h esterna cm.\nN.1 Finestra con paertura ad anta/ribalta, con vetrio camera 4/9/4 trasparente, completa di tenda veneziana colore Bianco, con dimensioni 100 x 100h esterna cm.\nImpianto elettrico standard norma CEE 220V, con tubo PVC Bianco a vista, compreso di: N.1\nQuadro elettrico.\nN.1 Differenziale Generale.\nN.1 Interruttore.\nN.1 Presa.\nN.1 Plafoniera 19W-LED.\nN.1 Scatola esterna per allaccio impianto elettrico.\nEscluso trasporto e posa in opera.\nEscluso opere murarie e allacciamenti esterni.\nEscluso tutto quanto non indicato a preventivo.\nCome da disegno tecnico PG1329 R00 in allegato.",
                         "en" => "Base dimensions 393 x 193 cm.\nRoof dimensions 400 x 200 cm.\nInternal height 220 cm External height 242 cm.\nWall Panel thickness 40 mm – Polyurethane\n1 External side Micro-ribbed sheet metal BG RAL 9002.\n1 Internal side Micro-ribbed sheet metal BG RAL 9002.\nRoof Panel thickness 30 mm – Polyurethane\n1 External side 5-corrugated sheet metal RAL 9002.\n1 Internal side Micro-ribbed sheet metal BG RAL 9002.\nHigh-load base with tubular structure, covered with corrugated sheet metal, covered with cement wood thickness 18 mm, covered with Anti-slip PVC.\nAluminum frames RAL 9010.\nNo.1 Full-panel single-leaf swing blind door, with handle and standard lock, external dimensions 100 x 210h cm.\nNo.1 Tilt and turn window, with 4/9/4 clear insulated glass, complete with White venetian blind, external dimensions 100 x 100h cm.\nStandard electrical system according to CEE 220V regulations, with visible White PVC pipe, including: No.1\nElectrical panel.\nNo.1 Main differential switch.\nNo.1 Switch.\nNo.1 Socket.\nNo.1 19W-LED ceiling light.\nNo.1 External box for electrical system connection.\nExcluding transport and installation.\nExcluding masonry works and external connections.\nExcluding anything not specified in the quote.\nAs per attached technical drawing PG1329 R00.",
@@ -7031,7 +7031,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611308",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-ufficio-vendite-12x25/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Dimensioni al basamento 1193 x 243 cm.\nDimensioni al tetto 1200 x 250 cm.\nH interna 270 cm H esterna 316 cm.\nTot Mq 30\nPannello Parete sp.100 mm – Poliuretano\n1 Lato lamiera esterna LISCIA BG RAL 9002.\n1 Lato lamiera interna LISCIA BG RAL 9002.\nPannello Tetto sp.100+35 mm – Poliuretano\n1 Lato lamiera esterna micro nervata BG RAL 9002.\n1 Lato lamiera interna micro nervata BG RAL 9002.\nBasamento alta portanza con struttura in tubolare, rivestito con lamiera grecata, rivestita con Pannello Parete sp.100 mm – Poliuretano, rivestito con legno IDRO V100 sp.18 mm, rivestito con:\nPavimento Vinilico Modulare colorazione LIGHT GREY.\nSerramenti in Alluminio RAL 9010.\nVetro Camera 3+3/9/3+3 Antisfondamento trasparente.\nN.1 Porta di ingresso tutto vetro a due ante battenti, con maniglia e serratura standard, con dimensioni 200 x 260h esterna cm.\nN.3 Finestroni fissi tutto vetro, con dimensioni 200 x 260h sterna cm.\nN.1 Porta cieca tutto pannello, a un'anta battente, con maniglia e serratura standard, con dimensioni 80 x 210 h esterna cm.\nNr.1 Cassaforte da appoggio, completa di sportello a basculante, chiavi a doppia mappa, per ricezione chiavi di ritorno.\nImpianto elettrico nascosto, compreso di:\nN.1 Quadro Elettrico.\nN.1 Differenziale Generale.\nN.1 Differenziale CDZ.\nN.2 Interruttori.\nN.5 Prese.\nN.3 Prese RJ45.\nN.4 Plafoniere NOVALUX 35W-LED.\nN.1 Condizionatore mono split inverter BTU 18000-HISENSE.\nN.1 Scatola esterna per allacciamento.",
                         "en" => "Base dimensions 1193 x 243 cm.\nRoof dimensions 1200 x 250 cm.\nInternal height 270 cm External height 316 cm.\nTotal area 30 sqm\nWall Panel thickness 100 mm – Polyurethane\n1 External side SMOOTH sheet metal BG RAL 9002.\n1 Internal side SMOOTH sheet metal BG RAL 9002.\nRoof Panel thickness 100+35 mm – Polyurethane\n1 External side micro-ribbed sheet metal BG RAL 9002.\n1 Internal side micro-ribbed sheet metal BG RAL 9002.\nHigh-load base with tubular structure, covered with corrugated sheet metal, covered with Wall Panel thickness 100 mm – Polyurethane, covered with IDRO V100 wood thickness 18 mm, covered with:\nModular Vinyl Flooring LIGHT GREY color.\nAluminum frames RAL 9010.\n3+3/9/3+3 clear Anti-break Insulated Glass.\nNo.1 All-glass double-leaf swing entrance door, with handle and standard lock, external dimensions 200 x 260h cm.\nNo.3 Fixed all-glass large windows, external dimensions 200 x 260h cm.\nNo.1 Full-panel single-leaf swing blind door, with handle and standard lock, external dimensions 80 x 210 h cm.\nNo.1 Countertop safe, complete with tilting door, double-bit keys, for return key reception.\nRecessed electrical system, including:\nNo.1 Electrical panel.\nNo.1 Main differential switch.\nNo.1 Differential switch for socket outlets.\nNo.2 Switches.\nNo.5 Sockets.\nNo.3 RJ45 sockets.\nNo.4 NOVALUX 35W-LED ceiling lights.\nNo.1 HISENSE BTU 18000 inverter mono split air conditioner.\nNo.1 External connection box.",
@@ -7071,7 +7071,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611419",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-reale-i/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -7113,7 +7113,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611422",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-campo-iii/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -7154,7 +7154,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611420",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-reale-ii/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -7199,7 +7199,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611421",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-reale-iii/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -7243,7 +7243,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611423",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-tempesta-ii/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -7284,7 +7284,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611366",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-10-x-4m-premium/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -7327,7 +7327,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611368",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-10x4m-ii/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -7369,7 +7369,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611726",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-114-x-35-mt-11-970e-iva-inclusa/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -7409,7 +7409,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611418",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-samos-2-1035m/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -7489,7 +7489,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611829",
                     "discount_percentage" => null,
                     "link" => "/product/nuovo-container-high-cube-con-tribune-da-40-piedi-e-74-posti/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -7570,7 +7570,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611238",
                     "discount_percentage" => null,
                     "link" => "/product/nuovo-contenitore-marittimo-refrigerato-da-20-piedi/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Container di spedizione reefer da 20′ / nuovo frigorifero\nLunghezza: 6 metri, altezza esterna: 2.591 e interna: 2.261 (mt.)\nMacchine Carrier o Thermo King\nDimensioni esterne (LxPxH): 6058 x 2438 x 2591 mm.\nNuovo container/frigorifero refrigerato da 20 piedi, utilizzato per applicazioni relative al mantenimento dei prodotti a temperatura costante.\nCoibentato per mantenere al meglio la temperatura assegnata, le pareti interne sono in acciaio inox e il pavimento è in alluminio scanalato tipo T.\nLe marche di macchine che offriamo più comunemente utilizzate sono Carrier e Thermo King, anche se è possibile fornirne anche altre come Star Cool o Daikin.\nÈ conforme ai requisiti di trasporto CSC e TIR e agli standard ISO nella sua costruzione.\nApplicazioni più comuni: Trasporto marittimo e intermodale di merci deperibili, congelamento o conservazione frigorifera, di pesce, frutta, carne, conservazione dell'uva nell'industria vinicola, del cuoio, di prodotti farmaceutici, ecc.\nIl modo corretto di utilizzare questa apparecchiatura è preraffreddare l'unità e, una volta raggiunta questa temperatura, posizionare i prodotti nel contenitore.",
                         "en" => "20′ reefer shipping container / new refrigerator\nLength: 6 meters, external height: 2.591 and internal: 2.261 (m.)\nCarrier or Thermo King machines\nExternal dimensions (LxWxH): 6058 x 2438 x 2591 mm.\nNew 20 foot refrigerated container/refrigerator, used for applications related to maintaining products at constant temperature.\nInsulated to best maintain the assigned temperature, the internal walls are stainless steel and the floor is grooved T-type aluminum.\nThe machine brands we most commonly offer are Carrier and Thermo King, although others such as Star Cool or Daikin can also be supplied.\nIt complies with CSC and TIR transport requirements and ISO standards in its construction.\nMost common applications: Maritime and intermodal transport of perishable goods, freezing or refrigerated storage of fish, fruit, meat, grape preservation in the wine industry, leather, pharmaceutical products, etc.\nThe correct way to use this equipment is to pre-cool the unit and, once this temperature is reached, place the products in the container.",
@@ -7606,7 +7606,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611235",
                     "discount_percentage" => null,
                     "link" => "/product/nuovo-contenitore-per-ufficio-da-20-piedi/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Nuovo container standard da 20 piedi, con impilatore di vetro da 4.500 mm sulla parete laterale. Impianto elettrico e aria condizionata.",
                         "en" => "New 20 ft standard container, with 4.500 mm glass stacker on the side wall. Electrical system and air conditioning.",
@@ -7644,7 +7644,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611237",
                     "discount_percentage" => null,
                     "link" => "/product/nuovo-contenitore-refrigerato-da-40-piedi/",
-                    "categories" => ["conteineres-refrigerados"],
+                    "categories" => ["contentores-refrigerados"],
                     "short_description" => [
                         "it" => "Il nuovo container refrigerato da 40 piedi o anche chiamato container refrigerato refrigerato da 12 m, è ampiamente utilizzato per le attività di stoccaggio di prodotti freschi. Il container refrigerato da 40′ è alimentato da una presa da 380V. È dotato di macchine che operano in un intervallo di temperatura compreso tra +25°C e -25°C.\nTutti i nostri contenitori refrigerati Reefer sono dotati di certificato CSC Veritas e di un test PTI (refrigeration unit test) valido.\nLavoriamo con motori Carrier, Thermoking, Daikin e Starcool.\nDIMENSIONI INTERNE\n-Lunghezza: 11.583 mm\n-Larghezza: 2294 mm\n-Altezza: 2.569 mm\n-Altezza interna (fino al limite di carico): 2.469 mm\nDimensioni esterne\n– Lunghezza: 12.192 mm\n– Larghezza: 2438 mm\n– Altezza: 2.896 mm\nDimensioni della porta\n-Larghezza: 2292 mm\n-Altezza: 2.562 mm\nTemperatura: da -25 a 25°C\nRefrigerante\n-R134A\n-R404\n-R442 su richiesta\nStruttura: CORTEN e INOX\nTERRA\nGUIDA IN ALLUMINIO A T\nGestione tramite console Daikin, Thermoking o Carrier\nStoccaggio fino a 23 Europallet\nApertura a doppia anta su una delle facce esterne\nLe porte si aprono a 270°\nInformazioni aggiuntive\n– Carico massimo: 29.350 kg\n– Peso a vuoto: 4.650 kg\n– Peso massimo: 34.000 kg\n– Volume interno utile (fino alla linea massima di ventilazione): 65,60 m3",
                         "en" => "The new 40 ft refrigerated container, also called 12 m refrigerated container, is widely used for fresh product storage activities. The 40′ refrigerated container is powered by a 380V socket. It is equipped with machines operating in a temperature range between +25°C and -25°C.\nAll our Reefer refrigerated containers are equipped with CSC Veritas certificate and a valid PTI (refrigeration unit test).\nWe work with Carrier, Thermoking, Daikin and Starcool engines.\nINTERNAL DIMENSIONS\n-Length: 11,583 mm\n-Width: 2294 mm\n-Height: 2,569 mm\n-Internal height (up to load limit): 2,469 mm\nExternal dimensions\n– Length: 12,192 mm\n– Width: 2438 mm\n– Height: 2,896 mm\nDoor dimensions\n-Width: 2292 mm\n-Height: 2,562 mm\nTemperature: from -25 to 25°C\nRefrigerant\n-R134A\n-R404\n-R442 on request\nStructure: CORTEN and INOX\nFLOOR\nT-TYPE ALUMINUM GUIDE\nManagement via Daikin, Thermoking or Carrier console\nStorage up to 23 Europallet\nDouble door opening on one of the external faces\nDoors open at 270°\nAdditional information\n– Maximum load: 29,350 kg\n– Empty weight: 4,650 kg\n– Maximum weight: 34,000 kg\n– Useful internal volume (up to maximum ventilation line): 65.60 m3",
@@ -7679,7 +7679,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611674",
                     "discount_percentage" => null,
                     "link" => "/product/piccola-casa-deluxe-19-piedi-x-20-piedi-stahlworks-2025/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -7715,24 +7715,24 @@ class ArticleSeeder extends Seeder
                 [
                     "id" => "10731",
                     "name" => [
-                        "it" => "Piscina Container LC 15'",
+                        "it" => "piscinas Container LC 15'",
                         "en" => "LC 15' Container Pool",
                         "fr" => "Piscine Container LC 15'",
-                        "pt" => "Piscina Contentor LC 15'",
-                        "es" => "Piscina Contenedor LC 15'"
+                        "pt" => "piscinas Contentor LC 15'",
+                        "es" => "piscinas Contenedor LC 15'"
                     ],
                     "price" => "3,543.54",
                     "old_price" => "5,062.20",
                     "sku" => "3276610731",
                     "discount_percentage" => null,
-                    "link" => "/product/piscina-container-lc-15/",
-                    "categories" => ["piscina"],
+                    "link" => "/product/piscinas-container-lc-15/",
+                    "categories" => ["piscinas"],
                     "short_description" => [
-                        "it" => "La Piscina Container LC 15' offre un'esperienza esclusiva in spazi ridotti.Questo modulo compatto, realizzato in acciaio resistente, è perfetto per chi cerca una piscina privata moderna, funzionale e facilmente trasportabile.\nDesign stackable (fino a 3 unità) per spazi modulari\nOttime capacità di carico e isolamento, ideale per ambienti esterni\nPossibilità di personalizzazione per adattarsi ad ogni esigenza",
+                        "it" => "La piscinas Container LC 15' offre un'esperienza esclusiva in spazi ridotti.Questo modulo compatto, realizzato in acciaio resistente, è perfetto per chi cerca una piscinas privata moderna, funzionale e facilmente trasportabile.\nDesign stackable (fino a 3 unità) per spazi modulari\nOttime capacità di carico e isolamento, ideale per ambienti esterni\nPossibilità di personalizzazione per adattarsi ad ogni esigenza",
                         "en" => "The LC 15' Container Pool offers an exclusive experience in small spaces. This compact module, made of resistant steel, is perfect for those looking for a modern, functional and easily transportable private pool.\nStackable design (up to 3 units) for modular spaces\nExcellent load capacity and insulation, ideal for outdoor environments\nCustomization possibility to adapt to every need",
                         "fr" => "La Piscine Container LC 15' offre une expérience exclusive dans les petits espaces. Ce module compact, en acier résistant, est parfait pour ceux qui recherchent une piscine privée moderne, fonctionnelle et facilement transportable.\nDesign empilable (jusqu'à 3 unités) pour espaces modulables\nExcellente capacité de charge et isolation, idéal pour les environnements extérieurs\nPossibilité de personnalisation pour s'adapter à chaque besoin",
-                        "pt" => "A Piscina Contentor LC 15' oferece uma experiência exclusiva em espaços reduzidos. Este módulo compacto, em aço resistente, é perfeito para quem procura uma piscina privada moderna, funcional e facilmente transportável.\nDesign empilhável (até 3 unidades) para espaços modulares\nExcelente capacidade de carga e isolamento, ideal para ambientes exteriores\nPossibilidade de personalização para se adaptar a cada necessidade",
-                        "es" => "La Piscina Contenedor LC 15' ofrece una experiencia exclusiva en espacios reducidos. Este módulo compacto, de acero resistente, es perfecto para quienes buscan una piscina privada moderna, funcional y fácilmente transportable.\nDiseño apilable (hasta 3 unidades) para espacios modulares\nExcelente capacidad de carga y aislamiento, ideal para ambientes exteriores\nPosibilidad de personalización para adaptarse a cada necesidad"
+                        "pt" => "A piscinas Contentor LC 15' oferece uma experiência exclusiva em espaços reduzidos. Este módulo compacto, em aço resistente, é perfeito para quem procura uma piscinas privada moderna, funcional e facilmente transportável.\nDesign empilhável (até 3 unidades) para espaços modulares\nExcelente capacidade de carga e isolamento, ideal para ambientes exteriores\nPossibilidade de personalização para se adaptar a cada necessidade",
+                        "es" => "La piscinas Contenedor LC 15' ofrece una experiencia exclusiva en espacios reducidos. Este módulo compacto, de acero resistente, es perfecto para quienes buscan una piscinas privada moderna, funcional y fácilmente transportable.\nDiseño apilable (hasta 3 unidades) para espacios modulares\nExcelente capacidad de carga y aislamiento, ideal para ambientes exteriores\nPosibilidad de personalización para adaptarse a cada necesidad"
                     ],
                     "images" => [
                         "/assets/uploads/2025/11/6-54-300x300.jpeg",
@@ -7751,24 +7751,24 @@ class ArticleSeeder extends Seeder
                 [
                     "id" => "10705",
                     "name" => [
-                        "it" => "Piscina Contenitore 12 Metri",
+                        "it" => "piscinas Contenitore 12 Metri",
                         "en" => "12 Meter Container Pool",
                         "fr" => "Piscine Conteneur 12 Mètres",
-                        "pt" => "Piscina Contentor 12 Metros",
-                        "es" => "Piscina Contenedor 12 Metros"
+                        "pt" => "piscinas Contentor 12 Metros",
+                        "es" => "piscinas Contenedor 12 Metros"
                     ],
                     "price" => "5,625.62",
                     "old_price" => "8,036.60",
                     "sku" => "3276610705",
                     "discount_percentage" => null,
-                    "link" => "/product/piscina-contenitore-12-metri/",
-                    "categories" => ["piscina"],
+                    "link" => "/product/piscinas-contenitore-12-metri/",
+                    "categories" => ["piscinas"],
                     "short_description" => [
-                        "it" => "Piscina Contenitore 12 Metri – Design industriale e comfort senza lavori\nInstallazione senza permessi\nCapacità oltre 30.000 litri\nIlluminazione LED subacquea\nSistema di filtrazione completo\nLocale tecnico integrato o esterno\n100% personalizzabile",
+                        "it" => "piscinas Contenitore 12 Metri – Design industriale e comfort senza lavori\nInstallazione senza permessi\nCapacità oltre 30.000 litri\nIlluminazione LED subacquea\nSistema di filtrazione completo\nLocale tecnico integrato o esterno\n100% personalizzabile",
                         "en" => "12 Meter Container Pool – Industrial design and comfort without construction work\nInstallation without permits\nCapacity over 30,000 liters\nUnderwater LED lighting\nComplete filtration system\nIntegrated or external technical room\n100% customizable",
                         "fr" => "Piscine Conteneur 12 Mètres – Design industriel et confort sans travaux\nInstallation sans permis\nCapacité de plus de 30 000 litres\nÉclairage LED subaquatique\nSystème de filtration complet\nLocal technique intégré ou externe\n100% personnalisable",
-                        "pt" => "Piscina Contentor 12 Metros – Design industrial e conforto sem obras\nInstalação sem licenças\nCapacidade superior a 30.000 litros\nIluminação LED subaquática\nSistema de filtração completo\nCompartimento técnico integrado ou externo\n100% personalizável",
-                        "es" => "Piscina Contenedor 12 Metros – Diseño industrial y confort sin obras\nInstalación sin permisos\nCapacidad superior a 30.000 litros\nIluminación LED subacuática\nSistema de filtración completo\nCuarto técnico integrado o externo\n100% personalizable"
+                        "pt" => "piscinas Contentor 12 Metros – Design industrial e conforto sem obras\nInstalação sem licenças\nCapacidade superior a 30.000 litros\nIluminação LED subaquática\nSistema de filtração completo\nCompartimento técnico integrado ou externo\n100% personalizável",
+                        "es" => "piscinas Contenedor 12 Metros – Diseño industrial y confort sin obras\nInstalación sin permisos\nCapacidad superior a 30.000 litros\nIluminación LED subacuática\nSistema de filtración completo\nCuarto técnico integrado o externo\n100% personalizable"
                     ],
                     "images" => [
                         "/assets/uploads/2025/11/1-16-300x300.webp",
@@ -7791,24 +7791,24 @@ class ArticleSeeder extends Seeder
                 [
                     "id" => "10794",
                     "name" => [
-                        "it" => "Piscina Contenitore 20' – Design Pronto all'Uso",
+                        "it" => "piscinas Contenitore 20' – Design Pronto all'Uso",
                         "en" => "20' Container Pool – Ready-to-Use Design",
                         "fr" => "Piscine Conteneur 20' – Design Prêt à l'Emploi",
-                        "pt" => "Piscina Contentor 20' – Design Pronto a Usar",
-                        "es" => "Piscina Contenedor 20' – Diseño Listo para Usar"
+                        "pt" => "piscinas Contentor 20' – Design Pronto a Usar",
+                        "es" => "piscinas Contenedor 20' – Diseño Listo para Usar"
                     ],
                     "price" => "4,954.95",
                     "old_price" => "7,078.50",
                     "sku" => "3276610794",
                     "discount_percentage" => null,
-                    "link" => "/product/piscina-contenitore-20-design-pronto-alluso/",
-                    "categories" => ["piscina"],
+                    "link" => "/product/piscinas-contenitore-20-design-pronto-alluso/",
+                    "categories" => ["piscinas"],
                     "short_description" => [
-                        "it" => "Una piscina container di design, completamente attrezzata e pronta all'uso per trasformare il tuo spazio esterno in un'oasi privata. Nessuno scavo, nessuna attesa.\nStruttura container rinforzata con rivestimento effetto mosaico\nLED sommersi e scala in acciaio inox\nPorta bambini, piattaforma WPC, pronta in 1 giorno",
+                        "it" => "Una piscinas container di design, completamente attrezzata e pronta all'uso per trasformare il tuo spazio esterno in un'oasi privata. Nessuno scavo, nessuna attesa.\nStruttura container rinforzata con rivestimento effetto mosaico\nLED sommersi e scala in acciaio inox\nPorta bambini, piattaforma WPC, pronta in 1 giorno",
                         "en" => "A designer container pool, fully equipped and ready to use to transform your outdoor space into a private oasis. No excavation, no waiting.\nReinforced container structure with mosaic effect coating\nSubmerged LEDs and stainless steel ladder\nChild safety gate, WPC platform, ready in 1 day",
                         "fr" => "Une piscine conteneur de designer, entièrement équipée et prête à l'emploi pour transformer votre espace extérieur en oasis privée. Aucun terrassement, aucune attente.\nStructure conteneur renforcée avec revêtement effet mosaïque\nLED immergées et échelle en acier inoxydable\nBarrière enfant, plateforme WPC, prête en 1 jour",
-                        "pt" => "Uma piscina contentor de design, completamente equipada e pronta a usar para transformar o seu espaço exterior num oásis privado. Sem escavações, sem esperas.\nEstrutura de contentor reforçada com revestimento efeito mosaico\nLED submersos e escada em aço inoxidável\nPorta de segurança para crianças, plataforma WPC, pronta em 1 dia",
-                        "es" => "Una piscina contenedor de diseño, completamente equipada y lista para usar para transformar tu espacio exterior en un oasis privado. Sin excavaciones, sin esperas.\nEstructura de contenedor reforzada con revestimiento efecto mosaico\nLED sumergidos y escalera de acero inoxidable\nPuerta de seguridad para niños, plataforma WPC, lista en 1 día"
+                        "pt" => "Uma piscinas contentor de design, completamente equipada e pronta a usar para transformar o seu espaço exterior num oásis privado. Sem escavações, sem esperas.\nEstrutura de contentor reforçada com revestimento efeito mosaico\nLED submersos e escada em aço inoxidável\nPorta de segurança para crianças, plataforma WPC, pronta em 1 dia",
+                        "es" => "Una piscinas contenedor de diseño, completamente equipada y lista para usar para transformar tu espacio exterior en un oasis privado. Sin excavaciones, sin esperas.\nEstructura de contenedor reforzada con revestimiento efecto mosaico\nLED sumergidos y escalera de acero inoxidable\nPuerta de seguridad para niños, plataforma WPC, lista en 1 día"
                     ],
                     "images" => [
                         "/assets/uploads/2025/11/2-74-300x300.jpeg",
@@ -7827,24 +7827,24 @@ class ArticleSeeder extends Seeder
                 [
                     "id" => "10792",
                     "name" => [
-                        "it" => "Piscina Contenitore 20' – Pronta all'Uso, Stile Garantito",
+                        "it" => "piscinas Contenitore 20' – Pronta all'Uso, Stile Garantito",
                         "en" => "20' Container Pool – Ready to Use, Guaranteed Style",
                         "fr" => "Piscine Conteneur 20' – Prête à l'Emploi, Style Garanti",
-                        "pt" => "Piscina Contentor 20' – Pronta a Usar, Estilo Garantido",
-                        "es" => "Piscina Contenedor 20' – Lista para Usar, Estilo Garantizado"
+                        "pt" => "piscinas Contentor 20' – Pronta a Usar, Estilo Garantido",
+                        "es" => "piscinas Contenedor 20' – Lista para Usar, Estilo Garantizado"
                     ],
                     "price" => "3,923.92",
                     "old_price" => "5,605.60",
                     "sku" => "3276610792",
                     "discount_percentage" => null,
-                    "link" => "/product/piscina-contenitore-20%e2%80%b2-pronta-alluso-stile-garantito/",
-                    "categories" => ["piscina"],
+                    "link" => "/product/piscinas-contenitore-20%e2%80%b2-pronta-alluso-stile-garantito/",
+                    "categories" => ["piscinas"],
                     "short_description" => [
-                        "it" => "Una piscina container elegante e resistente per trasformare il tuo giardino in un angolo di benessere.Grazie alla struttura in acciaio rinforzato e agli accessori di lusso, è pronta all'uso in poche ore!\nLED multicolore, frigo integrato, zona tanning\nRivestimento epossidico e isolamento termico\nRiscaldamento e filtrazione inclusi",
+                        "it" => "Una piscinas container elegante e resistente per trasformare il tuo giardino in un angolo di benessere.Grazie alla struttura in acciaio rinforzato e agli accessori di lusso, è pronta all'uso in poche ore!\nLED multicolore, frigo integrato, zona tanning\nRivestimento epossidico e isolamento termico\nRiscaldamento e filtrazione inclusi",
                         "en" => "An elegant and resistant container pool to transform your garden into a wellness corner. Thanks to the reinforced steel structure and luxury accessories, it is ready to use in a few hours!\nMulticolored LEDs, integrated fridge, tanning area\nEpoxy coating and thermal insulation\nHeating and filtration included",
                         "fr" => "Une piscine conteneur élégante et résistante pour transformer votre jardin en coin bien-être. Grâce à la structure en acier renforcé et aux accessoires de luxe, elle est prête à l'emploi en quelques heures!\nLED multicolores, frigo intégré, zone de bronzage\nRevêtement époxy et isolation thermique\nChauffage et filtration inclus",
-                        "pt" => "Uma piscina contentor elegante e resistente para transformar o seu jardim num recanto de bem-estar. Graças à estrutura de aço reforçado e aos acessórios de luxo, está pronta a usar em poucas horas!\nLED multicolor, frigorífico integrado, zona de bronzeamento\nRevestimento epóxi e isolamento térmico\nAquecimento e filtração incluídos",
-                        "es" => "Una elegante y resistente piscina contenedor para transformar tu jardín en un rincón de bienestar. ¡Gracias a la estructura de acero reforzado y los accesorios de lujo, está lista para usar en pocas horas!\nLED multicolor, nevera integrada, zona de bronceado\nRevestimiento epoxi y aislamiento térmico\nCalefacción y filtración incluidas"
+                        "pt" => "Uma piscinas contentor elegante e resistente para transformar o seu jardim num recanto de bem-estar. Graças à estrutura de aço reforçado e aos acessórios de luxo, está pronta a usar em poucas horas!\nLED multicolor, frigorífico integrado, zona de bronzeamento\nRevestimento epóxi e isolamento térmico\nAquecimento e filtração incluídos",
+                        "es" => "Una elegante y resistente piscinas contenedor para transformar tu jardín en un rincón de bienestar. ¡Gracias a la estructura de acero reforzado y los accesorios de lujo, está lista para usar en pocas horas!\nLED multicolor, nevera integrada, zona de bronceado\nRevestimiento epoxi y aislamiento térmico\nCalefacción y filtración incluidas"
                     ],
                     "images" => [
                         "/assets/uploads/2025/11/1-73-300x300.jpeg",
@@ -7864,24 +7864,24 @@ class ArticleSeeder extends Seeder
                 [
                     "id" => "10704",
                     "name" => [
-                        "it" => "Piscina Contenitore Premium 6,2 x 2,5 m",
+                        "it" => "piscinas Contenitore Premium 6,2 x 2,5 m",
                         "en" => "Premium Container Pool 6.2 x 2.5 m",
                         "fr" => "Piscine Conteneur Premium 6,2 x 2,5 m",
-                        "pt" => "Piscina Contentor Premium 6,2 x 2,5 m",
-                        "es" => "Piscina Contenedor Premium 6,2 x 2,5 m"
+                        "pt" => "piscinas Contentor Premium 6,2 x 2,5 m",
+                        "es" => "piscinas Contenedor Premium 6,2 x 2,5 m"
                     ],
                     "price" => "5,630.62",
                     "old_price" => "8,043.75",
                     "sku" => "3276610704",
                     "discount_percentage" => null,
-                    "link" => "/product/piscina-contenitore-premium-62-x-25-m/",
-                    "categories" => ["piscina"],
+                    "link" => "/product/piscinas-contenitore-premium-62-x-25-m/",
+                    "categories" => ["piscinas"],
                     "short_description" => [
-                        "it" => "Piscina Contenitore Premium 6,2 m – Design moderno e comfort 4 stagioni\nPronta all'uso con pompa di calore inclusa\nCopertura scorrevole in plexiglass\nIlluminazione LED per bagni notturni\nFondo e scale in WPC antiscivolo\nSistema di filtrazione ad alte prestazioni\nKit di pulizia incluso",
+                        "it" => "piscinas Contenitore Premium 6,2 m – Design moderno e comfort 4 stagioni\nPronta all'uso con pompa di calore inclusa\nCopertura scorrevole in plexiglass\nIlluminazione LED per bagni notturni\nFondo e scale in WPC antiscivolo\nSistema di filtrazione ad alte prestazioni\nKit di pulizia incluso",
                         "en" => "Premium Container Pool 6.2 m – Modern design and 4-season comfort\nReady to use with heat pump included\nSliding plexiglass cover\nLED lighting for night swimming\nAnti-slip WPC bottom and stairs\nHigh-performance filtration system\nCleaning kit included",
                         "fr" => "Piscine Conteneur Premium 6,2 m – Design moderne et confort 4 saisons\nPrête à l'emploi avec pompe à chaleur incluse\nCouverture coulissante en plexiglas\nÉclairage LED pour bains de nuit\nFond et marches en WPC antidérapant\nSystème de filtration haute performance\nKit de nettoyage inclus",
-                        "pt" => "Piscina Contentor Premium 6,2 m – Design moderno e conforto 4 estações\nPronta a usar com bomba de calor incluída\nCobertura deslizante em plexiglass\nIluminação LED para banhos noturnos\nFundo e escadas em WPC antiderrapante\nSistema de filtração de alto desempenho\nKit de limpeza incluído",
-                        "es" => "Piscina Contenedor Premium 6,2 m – Diseño moderno y confort 4 estaciones\nLista para usar con bomba de calor incluida\nCubierta corredera de plexiglás\nIluminación LED para baños nocturnos\nFondo y escaleras de WPC antideslizante\nSistema de filtración de alto rendimiento\nKit de limpieza incluido"
+                        "pt" => "piscinas Contentor Premium 6,2 m – Design moderno e conforto 4 estações\nPronta a usar com bomba de calor incluída\nCobertura deslizante em plexiglass\nIluminação LED para banhos noturnos\nFundo e escadas em WPC antiderrapante\nSistema de filtração de alto desempenho\nKit de limpeza incluído",
+                        "es" => "piscinas Contenedor Premium 6,2 m – Diseño moderno y confort 4 estaciones\nLista para usar con bomba de calor incluida\nCubierta corredera de plexiglás\nIluminación LED para baños nocturnos\nFondo y escaleras de WPC antideslizante\nSistema de filtración de alto rendimiento\nKit de limpieza incluido"
                     ],
                     "images" => [
                         "/assets/uploads/2025/11/1-8-300x300.jpg",
@@ -7903,24 +7903,24 @@ class ArticleSeeder extends Seeder
                 [
                     "id" => "10791",
                     "name" => [
-                        "it" => "Piscina ElitePool Sport & Spa",
+                        "it" => "piscinas ElitePool Sport & Spa",
                         "en" => "ElitePool Sport & Spa Pool",
                         "fr" => "Piscine ElitePool Sport & Spa",
-                        "pt" => "Piscina ElitePool Sport & Spa",
-                        "es" => "Piscina ElitePool Sport & Spa"
+                        "pt" => "piscinas ElitePool Sport & Spa",
+                        "es" => "piscinas ElitePool Sport & Spa"
                     ],
                     "price" => "3,378.37",
                     "old_price" => "4,826.25",
                     "sku" => "3276610791",
                     "discount_percentage" => null,
-                    "link" => "/product/piscina-elitepool-sport-spa/",
-                    "categories" => ["piscina"],
+                    "link" => "/product/piscinas-elitepool-sport-spa/",
+                    "categories" => ["piscinas"],
                     "short_description" => [
-                        "it" => "La ElitePool Sport & Spa è la piscina modulare perfetta per chi desidera combinare sport, relax e design in un'unica soluzione compatta e tecnologica.Dotata di sistema di nuoto controcorrente, finestra panoramica integrata e copertura automatica, garantisce un'esperienza di lusso direttamente nel tuo giardino.\nVasca in polipropilene e struttura in acciaio\nIlluminazione LED e pompa di calore\nCopertura scorrevole automatica con telecomando",
+                        "it" => "La ElitePool Sport & Spa è la piscinas modulare perfetta per chi desidera combinare sport, relax e design in un'unica soluzione compatta e tecnologica.Dotata di sistema di nuoto controcorrente, finestra panoramica integrata e copertura automatica, garantisce un'esperienza di lusso direttamente nel tuo giardino.\nVasca in polipropilene e struttura in acciaio\nIlluminazione LED e pompa di calore\nCopertura scorrevole automatica con telecomando",
                         "en" => "The ElitePool Sport & Spa is the perfect modular pool for those who want to combine sport, relaxation and design in a single compact and technological solution. Equipped with a counter-current swimming system, integrated panoramic window and automatic cover, it guarantees a luxury experience directly in your garden.\nPolypropylene tank and steel structure\nLED lighting and heat pump\nAutomatic sliding cover with remote control",
                         "fr" => "La ElitePool Sport & Spa est la piscine modulaire parfaite pour ceux qui souhaitent combiner sport, détente et design dans une seule solution compacte et technologique. Dotée d'un système de nage à contre-courant, d'une fenêtre panoramique intégrée et d'une couverture automatique, elle garantit une expérience de luxe directement dans votre jardin.\nBassin en polypropylène et structure en acier\nÉclairage LED et pompe à chaleur\nCouverture coulissante automatique avec télécommande",
-                        "pt" => "A ElitePool Sport & Spa é a piscina modular perfeita para quem deseja combinar desporto, relaxamento e design numa única solução compacta e tecnológica. Equipada com sistema de natação contra-corrente, janela panorâmica integrada e cobertura automática, garante uma experiência de luxo diretamente no seu jardim.\nTanque em polipropileno e estrutura em aço\nIluminação LED e bomba de calor\nCobertura deslizante automática com comando",
-                        "es" => "La ElitePool Sport & Spa es la piscina modular perfecta para quienes desean combinar deporte, relax y diseño en una única solución compacta y tecnológica. Equipada con sistema de natación a contracorriente, ventana panorámica integrada y cubierta automática, garantiza una experiencia de lujo directamente en tu jardín.\nVaso de polipropileno y estructura de acero\nIluminación LED y bomba de calor\nCubierta corredera automática con mando a distancia"
+                        "pt" => "A ElitePool Sport & Spa é a piscinas modular perfeita para quem deseja combinar desporto, relaxamento e design numa única solução compacta e tecnológica. Equipada com sistema de natação contra-corrente, janela panorâmica integrada e cobertura automática, garante uma experiência de luxo diretamente no seu jardim.\nTanque em polipropileno e estrutura em aço\nIluminação LED e bomba de calor\nCobertura deslizante automática com comando",
+                        "es" => "La ElitePool Sport & Spa es la piscinas modular perfecta para quienes desean combinar deporte, relax y diseño en una única solución compacta y tecnológica. Equipada con sistema de natación a contracorriente, ventana panorámica integrada y cubierta automática, garantiza una experiencia de lujo directamente en tu jardín.\nVaso de polipropileno y estructura de acero\nIluminación LED y bomba de calor\nCubierta corredera automática con mando a distancia"
                     ],
                     "images" => [
                         "/assets/uploads/2025/11/1-6-1-300x270.jpg",
@@ -7940,24 +7940,24 @@ class ArticleSeeder extends Seeder
                 [
                     "id" => "10793",
                     "name" => [
-                        "it" => "Piscina Sport & Spa in Polipropilene",
+                        "it" => "piscinas Sport & Spa in Polipropilene",
                         "en" => "Polypropylene Sport & Spa Pool",
                         "fr" => "Piscine Sport & Spa en Polypropylène",
-                        "pt" => "Piscina Sport & Spa em Polipropileno",
-                        "es" => "Piscina Sport & Spa en Polipropileno"
+                        "pt" => "piscinas Sport & Spa em Polipropileno",
+                        "es" => "piscinas Sport & Spa en Polipropileno"
                     ],
                     "price" => "5,105.10",
                     "old_price" => "7,293.00",
                     "sku" => "3276610793",
                     "discount_percentage" => null,
-                    "link" => "/product/piscina-sport-spa-in-polipropilene/",
-                    "categories" => ["piscina"],
+                    "link" => "/product/piscinas-sport-spa-in-polipropilene/",
+                    "categories" => ["piscinas"],
                     "short_description" => [
-                        "it" => "Un'esperienza completa di benessere e sport in giardino con la piscina fuori terra Sport & Spa in polipropilene. Allenati, rilassati e goditi l'eleganza.\nSistema Jet-Swim regolabile per nuoto controcorrente\nPompa di calore, LED e filtrazione inclusi\nPronta all'uso in 24 ore, senza opere murarie",
+                        "it" => "Un'esperienza completa di benessere e sport in giardino con la piscinas fuori terra Sport & Spa in polipropilene. Allenati, rilassati e goditi l'eleganza.\nSistema Jet-Swim regolabile per nuoto controcorrente\nPompa di calore, LED e filtrazione inclusi\nPronta all'uso in 24 ore, senza opere murarie",
                         "en" => "A complete wellness and sports experience in the garden with the Sport & Spa above-ground polypropylene pool. Train, relax and enjoy the elegance.\nAdjustable Jet-Swim system for counter-current swimming\nHeat pump, LED and filtration included\nReady to use in 24 hours, no masonry work",
                         "fr" => "Une expérience complète de bien-être et de sport dans le jardin avec la piscine hors-sol Sport & Spa en polypropylène. Entraînez-vous, détendez-vous et profitez de l'élégance.\nSystème Jet-Swim réglable pour nage à contre-courant\nPompe à chaleur, LED et filtration inclus\nPrête à l'emploi en 24 heures, sans maçonnerie",
-                        "pt" => "Uma experiência completa de bem-estar e desporto no jardim com a piscina acima do solo Sport & Spa em polipropileno. Treine, relaxe e desfrute da elegância.\nSistema Jet-Swim ajustável para natação contra-corrente\nBomba de calor, LED e filtração incluídos\nPronta a usar em 24 horas, sem obras de alvenaria",
-                        "es" => "Una experiencia completa de bienestar y deporte en el jardín con la piscina elevada Sport & Spa de polipropileno. Entrena, relájate y disfruta de la elegancia.\nSistema Jet-Swim ajustable para natación a contracorriente\nBomba de calor, LED y filtración incluidos\nLista para usar en 24 horas, sin obras de albañilería"
+                        "pt" => "Uma experiência completa de bem-estar e desporto no jardim com a piscinas acima do solo Sport & Spa em polipropileno. Treine, relaxe e desfrute da elegância.\nSistema Jet-Swim ajustável para natação contra-corrente\nBomba de calor, LED e filtração incluídos\nPronta a usar em 24 horas, sem obras de alvenaria",
+                        "es" => "Una experiencia completa de bienestar y deporte en el jardín con la piscinas elevada Sport & Spa de polipropileno. Entrena, relájate y disfruta de la elegancia.\nSistema Jet-Swim ajustable para natación a contracorriente\nBomba de calor, LED y filtración incluidos\nLista para usar en 24 horas, sin obras de albañilería"
                     ],
                     "images" => [
                         "/assets/uploads/2025/11/1-7-1-300x276.jpg",
@@ -7989,7 +7989,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611367",
                     "discount_percentage" => null,
                     "link" => "/product/re-della-nuova-casa-1/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",
@@ -8079,7 +8079,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611233",
                     "discount_percentage" => null,
                     "link" => "/product/snack-contenitore-guinguette/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Realizzazione di uno snack bar, food truck, taverna in un container marittimo.\nCapire :\n1 container primo viaggio da 20′ (6mx2,45×2,60m)\nAperture:\n1 Tenda a gas 2000 x 1200 mm\n1 Tenda a gas 3000 x 1200 mm\nContatori:\n1 Bancone pieghevole 2000x300mm\n1 Bancone pieghevole 3000x300mm\nINSTALLAZIONE ELETTRICA:\n1 tabella a 2 righe\n2 luci LED impermeabili\n10 prese di servizio 16A+T\n1 interruttore di alimentazione singolo\n1 pasto veloce\nIsolamento interno:\nPannello Sandwich Alimentare 40mm Bianco\nPavimento: resina gelcoat grigia con scarico a pavimento per il drenaggio\nVerniciatura: vernice RAL 7016 su tutto il contenitore.\nRivestimento in legno: realizzazione rivestimento in legno di abete Douglas\nImpianto idraulico: ingresso e uscita dell'acqua, installazione dell'approvvigionamento idrico.\nCappa: Fornitura e posa in opera di una cappa da 2 mt con aspirazione a soffitto.\nImmersione: Fornitura e installazione di un'immersione cumuliforme istantanea",
                         "en" => "Creation of a snack bar, food truck, tavern in a shipping container.\nIncludes:\n1 first trip 20′ container (6mx2.45×2.60m)\nOpenings:\n1 Gas strut window 2000 x 1200 mm\n1 Gas strut window 3000 x 1200 mm\nCounters:\n1 Folding counter 2000x300mm\n1 Folding counter 3000x300mm\nELECTRICAL INSTALLATION:\n1 2-row panel\n2 waterproof LED lights\n10 service sockets 16A+T\n1 single power switch\n1 quick meal\nInternal insulation:\n40mm White Food Sandwich Panel\nFloor: gray gelcoat resin with floor drain for drainage\nPainting: RAL 7016 paint on the entire container.\nWood cladding: Douglas fir wood cladding\nPlumbing system: water inlet and outlet, water supply installation.\nHood: Supply and installation of a 2 m hood with ceiling extraction.\nImmersion: Supply and installation of an instantaneous cumulus immersion heater",
@@ -8114,7 +8114,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610702",
                     "discount_percentage" => null,
                     "link" => "/product/snack-box-20%e2%80%b2-con-accessori-speciali/",
-                    "categories" => ["cafeteria-bar-restaurante"],
+                    "categories" => ["cafetaria-bar-restaurante"],
                     "short_description" => [
                         "it" => "Snack-BOX 20' – Contenitore professionale per uso alimentare\nIsolamento termico e vernice alimentare\nSerranda elettrica + porta acciaio Corten\nPavimento antiscivolo con scarico\nImpianto elettrico certificato\nPerfetto per street food, fiere e chioschi mobili",
                         "en" => "20' Snack-BOX – Professional container for food use\nThermal insulation and food-safe paint\nElectric roller shutter + Corten steel door\nAnti-slip floor with drain\nCertified electrical system\nPerfect for street food, fairs and mobile kiosks",
@@ -8156,7 +8156,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610500",
                     "discount_percentage" => null,
                     "link" => "/product/tiny-house-modular-l15/",
-                    "categories" => ["contenitori-casa"],
+                    "categories" => ["contentores-casa"],
                     "short_description" => [
                         "it" => "Tiny House Modular L15 su container marittimo 20' High Cube nuova e abitabile.Perfetta come casa secondaria, ufficio privato o soluzione abitativa sostenibile.\nSuperficie utile: 11,2 m²\nIsolamento U ≤ 0,16 W/m²K\nCucina e bagno completi\nClimatizzazione e LED inclusi\nPronta all'uso, 100% arredata",
                         "en" => "Tiny House Modular L15 on new and habitable 20' High Cube shipping container. Perfect as a second home, private office or sustainable housing solution.\nUsable area: 11.2 m²\nInsulation U ≤ 0.16 W/m²K\nComplete kitchen and bathroom\nAir conditioning and LED included\nReady to use, 100% furnished",
@@ -8198,7 +8198,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611234",
                     "discount_percentage" => null,
                     "link" => "/product/tribuna-tribuna-container/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Tribune e tribune per eventi sportivi, spettacoli, concerti e spettacoli di ogni tipo.\nLa tribuna/tribuna può misurare 6 m x 2,45 m oppure 12 m x 2,45 m.\nTribuna completamente coperta, trasportabile e impermeabile",
                         "en" => "Bleachers and stands for sporting events, shows, concerts and performances of all kinds.\nThe bleachers/stand can measure 6 m x 2.45 m or 12 m x 2.45 m.\nFully covered, transportable and waterproof bleacher",
@@ -8233,7 +8233,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611158",
                     "discount_percentage" => null,
                     "link" => "/product/ufficio-container-di-18-m%c2%b2-con-servizi-igienici/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "Ufficio container di 18 m² con servizi igienici integrati, ideale per uno spazio di lavoro moderno e confortevole. Installazione veloce e garanzia di 2 anni.",
                         "en" => "18 m² office container with integrated toilet facilities, ideal for a modern and comfortable workspace. Quick installation and 2-year warranty.",
@@ -8356,7 +8356,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276610499",
                     "discount_percentage" => null,
                     "link" => "/product/unita-di-contenimento-40-high-cube-nuova/",
-                    "categories" => ["conteineres-40-pes"],
+                    "categories" => ["contentores-40-pes"],
                     "short_description" => [
                         "it" => "Unità di contenimento 40' HC nuova, perfetta per stoccaggio o progetti modulari.Struttura in acciaio CORTEN, volume ottimizzato, massima resistenza.\nDimensioni interne: 12,03 × 2,35 × 2,69 m\nVolume utile: 76,4 m³\nPeso: 3.940 kg circa\nStruttura robusta e nuova\nIdeale per usi industriali o abitativi",
                         "en" => "New 40' HC containment unit, perfect for storage or modular projects. CORTEN steel structure, optimized volume, maximum resistance.\nInternal dimensions: 12.03 × 2.35 × 2.69 m\nUsable volume: 76.4 m³\nWeight: approx. 3,940 kg\nRobust and new structure\nIdeal for industrial or residential uses",
@@ -8473,7 +8473,7 @@ class ArticleSeeder extends Seeder
                     "sku" => "3276611567",
                     "discount_percentage" => null,
                     "link" => "/product/xxl-tiny-house-chalet-di-lusso-pieghevole-40-piedi-12-metri/",
-                    "categories" => ["conteineres-modulares"],
+                    "categories" => ["contentores-modulares"],
                     "short_description" => [
                         "it" => "",
                         "en" => "",

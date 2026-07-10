@@ -59,31 +59,31 @@
         <option {{ $category == 'cafeteria-bar-restaurante' ? 'selected' : '' }} value="cafeteria-bar-restaurante">
             {{ __('header.category.caffetteria') }}
         </option>
-        <option {{ $category == 'conteineres-de-armazenamento' ? 'selected' : '' }} value="conteineres-de-armazenamento">
+        <option {{ $category == 'contentores-de-armazenamento' ? 'selected' : '' }} value="contentores-de-armazenamento">
             {{ __('header.category.stoccaggio') }}
         </option>
         <option {{ $category == 'conteiner-com-abertura-lateral' ? 'selected' : '' }} value="conteiner-com-abertura-lateral">
             {{ __('header.category.laterale_aperto') }}
         </option>
-        <option {{ $category == 'conteineres-modulares' ? 'selected' : '' }} value="conteineres-modulares">
+        <option {{ $category == 'contentores-modulares' ? 'selected' : '' }} value="contentores-modulares">
             {{ __('header.category.modulari') }}
         </option>
-        <option {{ $category == 'conteineres-refrigerados' ? 'selected' : '' }} value="conteineres-refrigerados">
+        <option {{ $category == 'contentores-refrigerados' ? 'selected' : '' }} value="contentores-refrigerados">
             {{ __('header.category.refrigerati') }}
         </option>
-        <option {{ $category == 'conteineres-padrao-usados' ? 'selected' : '' }} value="conteineres-padrao-usados">
+        <option {{ $category == 'contentores-padrao-usados' ? 'selected' : '' }} value="contentores-padrao-usados">
             {{ __('header.category.standard_usati') }}
         </option>
-        <option {{ $category == 'conteineres-10-pes' ? 'selected' : '' }} value="conteineres-10-pes">
+        <option {{ $category == 'contentores-10-pes' ? 'selected' : '' }} value="contentores-10-pes">
             {{ __('header.category.contenitori_10') }}
         </option>
-        <option {{ $category == 'conteineres-20-pes' ? 'selected' : '' }} value="conteineres-20-pes">
+        <option {{ $category == 'contentores-20-pes' ? 'selected' : '' }} value="contentores-20-pes">
             {{ __('header.category.contenitori_20') }}
         </option>
-        <option {{ $category == 'conteineres-40-pes' ? 'selected' : '' }} value="conteineres-40-pes">
+        <option {{ $category == 'contentores-40-pes' ? 'selected' : '' }} value="contentores-40-pes">
             {{ __('header.category.contenitori_40') }}
         </option>
-        <option {{ $category == 'conteineres-casa' ? 'selected' : '' }} value="conteineres-casa">
+        <option {{ $category == 'contentores-casa' ? 'selected' : '' }} value="contentores-casa">
             {{ __('header.category.contenitori_casa') }}
         </option>
         <option {{ $category == 'nao-categorizado' ? 'selected' : '' }} value="nao-categorizado">
