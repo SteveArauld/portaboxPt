@@ -83,14 +83,14 @@
         <div class="breadcrumb-title-wrapper breadcrumb-v3">
             <div class="container">
                 <div class="breadcrumb-title">
-                    <h1 class="heading-title page-title entry-title">{{ __('Validation de la commande') }}</h1>
+                    <h1 class="heading-title page-title entry-title">{{ __('Finalizar compra') }}</h1>
                     <div class="ts-breadcrumbs breadcrumbs">
                         <div class="breadcrumbs-container">
-                            <a href="{{ url('/') }}">{{ __('Accueil') }}</a>
+                            <a href="{{ url('/') }}">{{ __('Início') }}</a>
                             <span class="brn_arrow">/</span>
-                            <a href="{{ route('cart') }}">{{ __('Mon panier') }}</a>
+                            <a href="{{ route('cart') }}">{{ __('Meu carrinho') }}</a>
                             <span class="brn_arrow">/</span>
-                            <span>{{ __('Commande') }}</span>
+                            <span>{{ __('Pedido') }}</span>
                         </div>
                     </div>
                 </div>
@@ -101,8 +101,8 @@
             <div id="pbs-checkout-empty" style="display:none;">
                 <div style="text-align:center; padding:80px 20px; background:#fff; border:1px solid #eef0f3; border-radius:14px;">
                     <div style="font-size:64px; margin-bottom:16px; color:#c6213b;"><i class="fas fa-cart-shopping"></i></div>
-                    <p style="color:#94a3b8; font-size:17px; margin-bottom:24px;">{{ __('Votre panier est vide.') }}</p>
-                    <a href="{{ route('shop') }}" class="pbs-btn pbs-btn-primary" style="display:inline-block; width:auto; padding:14px 40px;">{{ __('Découvrir nos produits') }}</a>
+                    <p style="color:#94a3b8; font-size:17px; margin-bottom:24px;">{{ __('Seu carrinho está vazio.') }}</p>
+                    <a href="{{ route('shop') }}" class="pbs-btn pbs-btn-primary" style="display:inline-block; width:auto; padding:14px 40px;">{{ __('Descubra nossos produtos') }}</a>
                 </div>
             </div>
 
@@ -232,16 +232,16 @@
 
                 <div>
                     <div class="pbs-summary">
-                        <h3><i class="fas fa-receipt"></i> {{ __('Votre commande') }}</h3>
+                        <h3><i class="fas fa-receipt"></i> {{ __('Seu pedido') }}</h3>
                         <div id="pbs-checkout-items"></div>
                         <div class="pbs-summary-total">
                             <span>{{ __('Total') }}</span>
                             <strong id="pbs-checkout-total">0,00 €</strong>
                         </div>
                         <button type="submit" class="pbs-btn pbs-btn-primary pbs-place-order" id="pbs-place-order-btn">
-                            {{ __('Confirmer la commande') }}
+                            {{ __('Confirmar pedido') }}
                         </button>
-                        <a href="{{ route('cart') }}" class="pbs-btn pbs-btn-outline">{{ __('Retour au panier') }}</a>
+                        <a href="{{ route('cart') }}" class="pbs-btn pbs-btn-outline">{{ __('Voltar ao carrinho') }}</a>
                     </div>
                 </div>
             </form>

@@ -15,6 +15,6 @@
             data-image="{{ $cbImgUrl }}"
             data-url="{{ route('product.show', $item->slug) }}">
          <i class="fas fa-plus"></i>
-                        <span class="pbs-add-label">{{ __('Ajouter au panier') }}</span>
+                        <span class="pbs-add-label">{{ __('Adicionar ao carrinho') }}</span>
     </button>
 </div>

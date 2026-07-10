@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', __('Mon panier'))
+@section('title', __('Meu carrinho'))
 
 @push('styles')
     <style>
@@ -113,12 +113,12 @@
         <div class="breadcrumb-title-wrapper breadcrumb-v3">
             <div class="container">
                 <div class="breadcrumb-title">
-                    <h1 class="heading-title page-title entry-title">{{ __('Mon panier') }}</h1>
+                    <h1 class="heading-title page-title entry-title">{{ __('Meu carrinho') }}</h1>
                     <div class="ts-breadcrumbs breadcrumbs">
                         <div class="breadcrumbs-container">
-                            <a href="{{ url('/') }}">{{ __('Accueil') }}</a>
+                            <a href="{{ url('/') }}">{{ __('Início') }}</a>
                             <span class="brn_arrow">/</span>
-                            <span>{{ __('Mon panier') }}</span>
+                            <span>{{ __('Meu carrinho') }}</span>
                         </div>
                     </div>
                 </div>
@@ -145,8 +145,8 @@
                     container.innerHTML =
                         '<div class="pbs-empty-cart">' +
                         '<div class="ico"><i class="fas fa-cart-shopping"></i></div>' +
-                        '<p>{{ __('Votre panier est vide.') }}</p>' +
-                        '<a href="' + shopUrl + '" class="pbs-btn pbs-btn-primary">{{ __('Découvrir nos produits') }}</a>' +
+                        '<p>{{ __('Seu carrinho está vazio.') }}</p>' +
+                        '<a href="' + shopUrl + '" class="pbs-btn pbs-btn-primary">{{ __('Descubra nossos produtos') }}</a>' +
                         '</div>';
                     return;
                 }

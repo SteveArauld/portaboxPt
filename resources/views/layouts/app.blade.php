@@ -586,13 +586,13 @@
      data-cart-url="{{ route('cart') }}"
      data-checkout-url="{{ route('checkout') }}"
      data-currency="€"
-     data-empty-text="{{ __('Votre panier est vide.') }}"
-     data-added-text="{{ __('Produit ajouté au panier') }}"></div>
+     data-empty-text="{{ __('Seu carrinho está vazio.') }}"
+     data-added-text="{{ __('Produto adicionado ao carrinho') }}"></div>
 
 <div id="pbs-drawer-overlay" class="pbs-drawer-overlay"></div>
-<aside id="pbs-drawer" class="pbs-drawer" aria-label="{{ __('Panier') }}">
+<aside id="pbs-drawer" class="pbs-drawer" aria-label="{{ __('Carrinho') }}">
     <div class="pbs-drawer-header">
-        <h3><i class="fas fa-shopping-cart"></i> {{ __('Mon panier') }}</h3>
+        <h3><i class="fas fa-shopping-cart"></i> {{ __('Meu carrinho') }}</h3>
         <button type="button" class="pbs-drawer-close" data-cart-close aria-label="{{ __('Fermer') }}"><i class="fas fa-times"></i></button>
     </div>
     <div class="pbs-drawer-body">
@@ -600,11 +600,11 @@
     </div>
     <div class="pbs-drawer-footer" id="pbs-drawer-footer" style="display:none;">
         <div class="pbs-drawer-total-row">
-            <span>{{ __('Sous-total') }}</span>
+            <span>{{ __('Subtotal') }}</span>
             <strong id="pbs-drawer-total">0,00 €</strong>
         </div>
-        <a href="{{ route('cart') }}" class="pbs-btn pbs-btn-primary">{{ __('Voir le panier') }}</a>
-        <a href="{{ route('checkout') }}" class="pbs-btn pbs-btn-outline">{{ __('Commander') }}</a>
+        <a href="{{ route('cart') }}" class="pbs-btn pbs-btn-primary">{{ __('Ver carrinho') }}</a>
+        <a href="{{ route('checkout') }}" class="pbs-btn pbs-btn-outline">{{ __('Comprar') }}</a>
     </div>
 </aside>
 

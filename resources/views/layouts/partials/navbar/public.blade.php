@@ -174,7 +174,7 @@
 
                 <div class="header-left">
                     <!-- Bouton panier -->
-                    <button type="button" class="pbs-cart-toggle" data-cart-toggle aria-label="{{ __('Panier') }}">
+                    <button type="button" class="pbs-cart-toggle" data-cart-toggle aria-label="{{ __('Carrinho') }}">
                         <i class="fas fa-shopping-cart"></i>
                         <span class="pbs-cart-count">0</span>
                     </button>
