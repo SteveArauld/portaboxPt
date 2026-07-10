@@ -27,10 +27,6 @@
 
         <div class="page-container show_breadcrumb_v3 no-sidebar">
 
-
-
-
-
             <div id="main-content">
                 <div id="primary" class="site-content">
                     <article id="post-3" class="post-3 page type-page status-publish hentry">
@@ -39,23 +35,23 @@
 
                         <p>
                             {{ __('privacy.section1.text1') }}
-                            <strong><a href="{{ route('home') }}">{{ __('privacy.company_url') }}</a></strong>,
+                            <strong><a href="{{ route('home') }}">{{ route('home') }}</a></strong>,
                             {{ __('privacy.section1.text2') }}
                         </p>
 
                         <p>
                             <strong>{{ __('privacy.company_name') }}</strong><br>
-                             <strong>{{ __('privacy.section1.address') }}</strong> Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
-                             <strong>{{ __('privacy.section1.phone') }}</strong> +39 350 872 4295<br>
-                             <strong>{{ __('privacy.section1.email') }}</strong> <a>contato@portocontentores.pt</a><br>
-                             <strong>{{ __('privacy.section1.website') }}</strong> <a href="{{ route('home') }}">{{ route('home') }}</a>
+                            <strong>{{ __('privacy.section1.address') }}</strong> {{ __('privacy.address') }}<br>
+                            <strong>{{ __('privacy.section1.phone') }}</strong> {{ __('privacy.phone') }}<br>
+                            <strong>{{ __('privacy.section1.email') }}</strong> <a href="mailto:{{ __('privacy.email') }}">{{ __('privacy.email') }}</a><br>
+                            <strong>{{ __('privacy.section1.website') }}</strong> <a href="{{ route('home') }}">{{ route('home') }}</a>
                         </p>
 
                         <p>
-                            <strong>{{ __('privacy.section1.vat') }}</strong> 06330420651<br>
-                            <strong>{{ __('privacy.section1.european_vat') }}</strong> IT06330420651<br>
-                            <strong>{{ __('privacy.section1.legal_address') }}</strong> Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
-                            <strong>{{ __('privacy.section1.activity') }}</strong> {{ __('privacy.section1.activity_text') }}
+                            <strong>{{ __('privacy.section1.vat') }}</strong> {{ __('privacy.vat') }}<br>
+                            <strong>{{ __('privacy.section1.european_vat') }}</strong> {{ __('privacy.european_vat') }}<br>
+                            <strong>{{ __('privacy.section1.legal_address') }}</strong> {{ __('privacy.address') }}<br>
+                            <strong>{{ __('privacy.section1.activity') }}</strong> {{ __('privacy.activity') }}
                         </p>
 
                         <p>
@@ -178,7 +174,7 @@
 
                         <p>
                             {{ __('privacy.section9.text2') }}<br>
-                             <strong><a>contato@portocontentores.pt</a></strong>
+                            <strong><a href="mailto:{{ __('privacy.email') }}">{{ __('privacy.email') }}</a></strong>
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -226,9 +222,9 @@
 
                         <p>
                             <strong>{{ __('privacy.company_name') }}</strong><br>
-                             Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
-                             <a>contato@portocontentores.pt</a><br>
-                            WhatsApp: <strong>+39 350 872 4295</strong>
+                            {{ __('privacy.address') }}<br>
+                            <a href="mailto:{{ __('privacy.email') }}">{{ __('privacy.email') }}</a><br>
+                            WhatsApp: <strong>{{ __('privacy.phone') }}</strong>
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -241,14 +237,12 @@
                         <figure class="wp-block-image size-full is-resized">
                             <img fetchpriority="high" decoding="async" width="512" height="512"
                                  src="/assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1.png"
-                                 alt="" class="wp-image-12724" style="width:299px;height:auto"
+                                 alt="{{ __('privacy.company_name') }}" class="wp-image-12724" style="width:299px;height:auto"
                                  sizes="(max-width: 512px) 100vw, 512px">
                         </figure>
                     </article>
                 </div>
             </div>
-
-
 
         </div>
 

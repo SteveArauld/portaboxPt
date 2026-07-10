@@ -27,10 +27,6 @@
 
         <div class="page-container show_breadcrumb_v3 no-sidebar">
 
-
-
-
-
             <div id="main-content">
                 <div id="primary" class="site-content">
                     <article id="post-13" class="post-13 page type-page status-publish hentry">
@@ -150,7 +146,7 @@
 
                         <h3 class="wp-block-heading">{{ __('refund.section6.subtitle1') }}</h3>
 
-                        <p>{{ __('refund.section6.text1') }}<br> <strong><a>contato@portocontentores.pt</a></strong></p>
+                        <p>{{ __('refund.section6.text1') }}<br> <strong><a href="mailto:info@portocontentores.pt">info@portocontentores.pt</a></strong></p>
 
                         <p>{{ __('refund.section6.text2') }}</p>
 
@@ -175,9 +171,9 @@
                         </ul>
 
                         <p><strong>{{ __('refund.section6.text7') }}</strong></p>
-                        <p><strong>{{ __('refund.company_name') }}</strong><br> Via Case Rosse, 19/B – 84131 Salerno (SA), Italia</p>
+                        <p><strong>{{ __('refund.company_name') }}</strong><br> {{ __('refund.address') }}</p>
 
-                        <p>{{ __('refund.section6.text8') }} <strong>7</strong> {{ __('refund.section6.text9') }} {{ __('refund.section6.text10') }}</p>
+                        <p>{{ __('refund.section6.text8') }} <strong>2</strong> {{ __('refund.section6.text9') }} {{ __('refund.section6.text10') }}</p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
 
@@ -187,7 +183,7 @@
 
                         <ul class="wp-block-list">
                             <li>{{ __('refund.section6.list3_item1') }}</li>
-                            <li>{{ __('refund.section6.list3_item2') }} <strong>7</strong> {{ __('refund.section6.text12') }}</li>
+                            <li>{{ __('refund.section6.list3_item2') }} <strong>30</strong> {{ __('refund.section6.text12') }}</li>
                         </ul>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -209,9 +205,9 @@
                         <p>{{ __('refund.section8.text1') }}</p>
 
                         <p>
-                             <strong><a>contato@portocontentores.pt</a></strong><br>
-                            <strong>{{ __('refund.section8.whatsapp') }}</strong> +39 350 872 4295<br>
-                             <strong>{{ __('refund.section8.address') }}</strong> Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
+                            <strong><a href="mailto:info@portocontentores.pt">info@portocontentores.pt</a></strong><br>
+                            <strong>{{ __('refund.section8.whatsapp') }}</strong> +351 912 345 678<br>
+                            <strong>{{ __('refund.section8.address') }}</strong> {{ __('refund.address') }}<br>
                             <strong>{{ __('refund.section8.hours') }}</strong> {{ __('refund.section8.hours_text') }}
                         </p>
 
@@ -243,15 +239,13 @@
                             <img fetchpriority="high" decoding="async"
                                  width="512" height="512"
                                  src="/assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1.png"
-                                 alt="" class="wp-image-12724"
+                                 alt="{{ __('refund.company_name') }}" class="wp-image-12724"
                                  style="width:251px;height:auto"
                                  sizes="(max-width: 512px) 100vw, 512px">
                         </figure>
                     </article>
                 </div>
             </div>
-
-
 
         </div>
 

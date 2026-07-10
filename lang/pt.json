@@ -810,7 +810,117 @@
   "header.category.contentores_casa": "Contentores Casa",
   "header.category.piscinas": "Piscinas",
   "header.category.contentores_10": "Contentores 10 Pés",
-  "header.category.cafetaria": "Cafetaria / Bar / Restaurante"
+  "header.category.cafetaria": "Cafetaria / Bar / Restaurante",
 
 
+
+    "legal.title": "Menções Legais",
+    "legal.heading_title": "Menções Legais",
+    "legal.breadcrumb_home": "Início",
+    "legal.breadcrumb_current": "Menções Legais",
+    
+    "legal.section1_title": "1. Objeto e Conformidade Legal",
+    "legal.section1_item1": "A identidade do titular do site",
+    "legal.section1_item2": "As condições gerais de utilização e responsabilidade",
+    "legal.section1_item3": "As regras relativas à proteção de dados pessoais e aos direitos dos utilizadores",
+    "legal.section1_item4": "As informações exigidas pelo Google Shopping em matéria de transparência comercial",
+    
+    "legal.section2_title": "2. Editor do Site",
+    "legal.section2_text": "O site <strong><a href=\":url\">:url</a></strong> é propriedade e é gerido por:",
+    "legal.company_name": "PORTO CONTENTORES, LDA.",
+    "legal.nif": "NIF: 514826739",
+    "legal.registration": "Número de Registo Comercial: 514826739",
+    "legal.share_capital": "Capital Social: 50.000,00 €",
+    "legal.phone": "Telefone / WhatsApp: +351 912 345 678",
+    "legal.email": "E-mail:",
+    "legal.email_address": "info@portocontentores.pt",
+    "legal.website": "Site:",
+    "legal.section2_description": "A empresa atua no setor de venda de contentores marítimos, contentores habitacionais, contentores refrigerados e soluções modulares em Portugal.",
+    
+    "legal.section3_title": "3. Direção de Publicação",
+    "legal.section3_text": "O Diretor de Publicação do site é o Representante Legal da <strong>:company</strong>, responsável pelos conteúdos e pela sua atualização.",
+    
+    "legal.section4_title": "4. Alojamento e Manutenção do Site",
+    "legal.section4_text": "O site <strong><a href=\":url\">:url</a></strong> está alojado em servidores localizados na União Europeia, em conformidade com as normas de segurança, confidencialidade e proteção de dados previstas pelo RGPD.",
+    "legal.section4_provider_guarantees": "O fornecedor garante:",
+    "legal.section4_guarantee1": "a segurança física e digital dos dados",
+    "legal.section4_guarantee2": "cópias de segurança periódicas",
+    "legal.section4_guarantee3": "continuidade e estabilidade do serviço",
+    
+    "legal.section5_title": "5. Propriedade Intelectual",
+    "legal.section5_text": "Todos os conteúdos presentes no site — textos, imagens, logótipos, vídeos, elementos gráficos, documentos e estrutura do site — são propriedade exclusiva da <strong>:company</strong> ou utilizados com autorização dos respetivos titulares.",
+    "legal.section5_restriction": "É proibida qualquer reprodução, distribuição, tradução, modificação ou publicação total ou parcial dos conteúdos sem autorização escrita.",
+    "legal.section5_citation": "\"Fonte: :company – <a href=\":url\">:url</a>\"",
+    
+    "legal.section6_title": "6. Dados Pessoais e Proteção da Privacidade",
+    "legal.section6_intro": "<strong>:company</strong> compromete-se a proteger os dados pessoais dos utilizadores, em conformidade com o Regulamento (UE) 2016/679 (RGPD) e com a legislação portuguesa em vigor.",
+    "legal.section6_subtitle1": "Recolha e Finalidades dos Dados",
+    "legal.section6_data_purpose_intro": "Os dados pessoais recolhidos no site são utilizados para:",
+    "legal.section6_purpose1": "Gerir pedidos, encomendas e contactos comerciais",
+    "legal.section6_purpose2": "Melhorar os serviços e a experiência do utilizador",
+    "legal.section6_purpose3": "Cumprir obrigações legais, contabilísticas e fiscais",
+    "legal.section6_purpose4": "Enviar comunicações informativas e comerciais mediante consentimento do utilizador",
+    "legal.section6_subtitle2": "Direitos dos Utilizadores",
+    "legal.section6_rights_intro": "Cada utilizador pode exercer os seguintes direitos:",
+    "legal.section6_right1": "Acesso, retificação ou eliminação dos dados pessoais",
+    "legal.section6_right2": "Limitação ou oposição ao tratamento",
+    "legal.section6_right3": "Portabilidade dos dados",
+    "legal.section6_right4": "Revogação do consentimento em qualquer momento",
+    "legal.section6_requests": "Os pedidos devem ser enviados para:<br><strong><a href=\"mailto::email\">:email</a></strong>",
+    "legal.section6_more_info": "Para mais detalhes, consulte a Política de Privacidade do site.",
+    
+    "legal.section7_title": "7. Cookies e Tecnologias de Rastreamento",
+    "legal.section7_intro": "O site utiliza cookies técnicos, funcionais e analíticos para:",
+    "legal.section7_purpose1": "Melhorar a navegação",
+    "legal.section7_purpose2": "Guardar preferências",
+    "legal.section7_purpose3": "Analisar estatísticas",
+    "legal.section7_purpose4": "Otimizar a experiência do utilizador",
+    "legal.section7_configuration": "O utilizador pode configurar o seu navegador para recusar cookies ou ser avisado antes da instalação.<br>O uso continuado do site implica a aceitação dos cookies, de acordo com a Política de Cookies publicada no site.",
+    
+    "legal.section8_title": "8. Responsabilidade",
+    "legal.section8_intro": "<strong>:company</strong> compromete-se a manter as informações do site precisas e atualizadas. No entanto, não pode ser responsabilizada por:",
+    "legal.section8_liability1": "Erros técnicos, tipográficos ou omissões",
+    "legal.section8_liability2": "Interrupções temporárias do serviço",
+    "legal.section8_liability3": "Danos diretos ou indiretos decorrentes da utilização do site",
+    "legal.section8_liability4": "Conteúdos presentes em sites externos ligados através de links",
+    "legal.section8_correction": "Em caso de erro evidente (por exemplo, um preço incorreto), a empresa reserva-se o direito de corrigir a informação e informar tempestivamente o cliente.",
+    "legal.section8_user_responsibility": "O utilizador é responsável pela configuração do seu dispositivo, pela segurança informática e pelo acesso à rede.",
+    
+    "legal.section9_title": "9. Ligações Externas",
+    "legal.section9_text": "O site <strong><a href=\":url\">:url</a></strong> pode conter links para sites de terceiros.<br><strong>:company</strong> não exerce qualquer controlo sobre esses sites e declina toda a responsabilidade quanto a conteúdos, segurança e políticas de privacidade.",
+    
+    "legal.section10_title": "10. Legislação Aplicável e Resolução de Controvérsias",
+    "legal.section10_applicable_law": "As presentes Menções Legais são regidas pela legislação portuguesa e europeia.",
+    "legal.section10_amicable": "Em caso de controvérsia, a empresa privilegiará uma solução amigável através do seu serviço de atendimento ao cliente.",
+    "legal.section10_odr": "Na falta de acordo, o utilizador poderá recorrer à plataforma europeia de resolução de controvérsias online (ODR) ou a uma entidade de mediação portuguesa.",
+    "legal.section10_jurisdiction": "Em última instância, serão competentes os Tribunais de <strong>:city</strong>, salvo disposição legal em contrário.",
+    
+    "legal.section11_title": "11. Modificações às Menções Legais",
+    "legal.section11_modifications": "<strong>:company</strong> pode modificar o presente documento em qualquer momento e sem aviso prévio.<br>A versão atualizada será sempre publicada nesta página, com indicação da data de revisão.",
+    "legal.section11_recommendation": "Recomenda-se a visita periódica a esta secção.",
+    
+    "legal.section12_title": "12. Contactos",
+    "legal.address": "Rua das Contentores, 45 – 4000-100 Porto, Portugal",
+    "legal.city": "Porto",
+    "legal.last_update": "Última atualização: 24 de novembro de 2025",
+    "legal.all_rights_reserved": "Todos os direitos reservados.",
+
+
+    "privacy.address": "Rua das Contentores, 45 – 4000-100 Porto, Portugal",
+    "privacy.phone": "+351 912 345 678",
+    "privacy.email": "info@portocontentores.pt",
+    "privacy.vat": "514826739",
+    "privacy.european_vat": "PT514826739",
+    "privacy.activity": "Venda de contentores marítimos, contentores habitacionais, contentores refrigerados e soluções modulares em Portugal.",
+
+        "terms.email": "contato@portocontentores.pt",
+
+        "terms.section4.payment2": "Transferência bancária",
+"terms.section4.payment3": "Sistemas de pagamento seguros indicados no site",
+
+    "terms.address": "Rua das Contentores, 45 – 4000-100 Porto, Portugal",
+    "terms.phone": "+351 912 345 678",
+    "terms.vat": "514826739",
+    "terms.european_vat": "PT514826739",
+    "terms.city": "Porto"
 }

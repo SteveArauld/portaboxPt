@@ -26,10 +26,6 @@
 
         <div class="page-container show_breadcrumb_v3 no-sidebar">
 
-
-
-
-
             <div id="main-content">
                 <div id="primary" class="site-content">
                     <article id="post-2" class="post-2 page type-page status-publish hentry">
@@ -38,7 +34,7 @@
 
                         <p>
                             <strong>{{ __('terms.company_name') }}</strong><br>
-                            <a href="{{ route('home') }}">{{ __('terms.company_url') }}</a>
+                            <a href="{{ route('home') }}">{{ route('home') }}</a>
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -59,19 +55,19 @@
 
                         <p>
                             <strong>{{ __('terms.company_name') }}</strong><br>
-                             <strong>{{ __('terms.section2.legal_address') }}</strong> Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
-                             <strong>{{ __('terms.section2.phone') }}</strong> +39 350 872 4295<br>
-                            <strong>{{ __('terms.section2.email') }}</strong> <a>contato@portocontentores.pt</a><br>
+                            <strong>{{ __('terms.section2.legal_address') }}</strong> {{ __('terms.address') }}<br>
+                            <strong>{{ __('terms.section2.phone') }}</strong> {{ __('terms.phone') }}<br>
+                            <strong>{{ __('terms.section2.email') }}</strong> <a href="mailto:{{ __('terms.email') }}">{{ __('terms.email') }}</a><br>
                             <strong>{{ __('terms.section2.website') }}</strong> <a href="{{ route('home') }}">{{ route('home') }}</a>
                         </p>
 
                         <p>
-                            <strong>{{ __('terms.section2.vat') }}</strong> 06330420651<br>
-                            <strong>{{ __('terms.section2.european_vat') }}</strong> IT06330420651
+                            <strong>{{ __('terms.section2.vat') }}</strong> {{ __('terms.vat') }}<br>
+                            <strong>{{ __('terms.section2.european_vat') }}</strong> {{ __('terms.european_vat') }}
                         </p>
 
                         <p>
-                            <strong>{{ __('terms.section2.activity') }}</strong> {{ __('terms.section2.activity_text') }}
+                            <strong>{{ __('terms.section2.activity') }}</strong> {{ __('terms.activity') }}
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -234,9 +230,9 @@
                         <p>{{ __('terms.section9.text1') }}</p>
 
                         <p>
-                            <a>contato@portocontentores.pt</a><br>
-                            WhatsApp: +39 377 594 6734<br>
-                             {{ __('terms.section9.hours') }} {{ __('terms.section9.hours_text') }}
+                            <a href="mailto:{{ __('terms.email') }}">{{ __('terms.email') }}</a><br>
+                            WhatsApp: {{ __('terms.phone') }}<br>
+                            {{ __('terms.section9.hours') }} {{ __('terms.section9.hours_text') }}
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -255,7 +251,7 @@
                             <li>{{ __('terms.section10.right5') }}</li>
                         </ul>
 
-                        <p>{{ __('terms.section10.text4') }} <strong><a>contato@portocontentores.pt</a></strong></p>
+                        <p>{{ __('terms.section10.text4') }} <strong><a href="mailto:{{ __('terms.email') }}">{{ __('terms.email') }}</a></strong></p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
 
@@ -275,7 +271,7 @@
 
                         <h2 class="wp-block-heading">{{ __('terms.section12.title') }}</h2>
 
-                        <p>{{ __('terms.section12.text1') }}<br>{{ __('terms.section12.text2') }}<br> <strong>Salerno (Italia)</strong>.</p>
+                        <p>{{ __('terms.section12.text1') }}<br>{{ __('terms.section12.text2') }}<br> <strong>{{ __('terms.city') }}</strong>.</p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
 
@@ -283,14 +279,14 @@
 
                         <p>
                             <strong>{{ __('terms.company_name') }}</strong><br>
-                             Via Case Rosse, 19/B – 84131 Salerno (SA), Italia<br>
-                            <a>contato@portocontentores.pt</a><br>
-                            +39 +39 351 000 0001<br>
+                            {{ __('terms.address') }}<br>
+                            <a href="mailto:{{ __('terms.email') }}">{{ __('terms.email') }}</a><br>
+                            {{ __('terms.phone') }}<br>
                             <a href="{{ route('home') }}">{{ route('home') }}</a>
                         </p>
 
                         <p>
-                             <strong>{{ __('terms.last_update') }}</strong> {{ __('terms.date') }}<br>
+                            <strong>{{ __('terms.last_update') }}</strong> {{ __('terms.date') }}<br>
                             © <strong>{{ __('terms.company_name') }}</strong> – {{ __('terms.copyright') }}
                         </p>
 
@@ -298,7 +294,7 @@
                             <img fetchpriority="high" decoding="async"
                                  width="512" height="512"
                                  src="/assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1.png"
-                                 alt="" class="wp-image-12724"
+                                 alt="{{ __('terms.company_name') }}" class="wp-image-12724"
                                  style="width:483px;height:auto"
                                  sizes="(max-width: 512px) 100vw, 512px">
                         </figure>
@@ -307,8 +303,6 @@
                     </article>
                 </div>
             </div>
-
-
 
         </div>
 
