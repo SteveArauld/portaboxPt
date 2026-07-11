@@ -593,7 +593,7 @@
 <aside id="pbs-drawer" class="pbs-drawer" aria-label="{{ __('Carrinho') }}">
     <div class="pbs-drawer-header">
         <h3><i class="fas fa-shopping-cart"></i> {{ __('Meu carrinho') }}</h3>
-        <button type="button" class="pbs-drawer-close" data-cart-close aria-label="{{ __('Fermer') }}"><i class="fas fa-times"></i></button>
+        <button type="button" class="pbs-drawer-close" data-cart-close aria-label="{{ __('cart.drawer.close') }}"><i class="fas fa-times"></i></button>
     </div>
     <div class="pbs-drawer-body">
         <div id="pbs-drawer-items"></div>

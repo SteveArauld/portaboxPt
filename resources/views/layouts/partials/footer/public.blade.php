@@ -553,7 +553,7 @@
     <div class="chaty-channel-list" id="csaas-channels-0">
         <div class="chaty-channel Whatsapp-channel-link" id="Whatsapp-0-channel" data-id="Whatsapp-0" data-widget="0"
              data-channel="Whatsapp">
-             <a href="https://wa.me/+393508724295?text={{ urlencode(__('whatsapp_message')) }}"
+             <a href="https://wa.me/351912026453?text={{ urlencode(__('whatsapp_message')) }}"
              target="_blank"
              rel="nofollow noopener"
              aria-label="Whatsapp"

@@ -157,7 +157,7 @@
                         '<img src="' + img + '" alt="" onerror="this.src=\'https://via.placeholder.com/80x80?text=No+Image\'">' +
                         '<div class="pbs-cart-cell-info">' +
                         '<a class="pbs-cart-prod-name" href="' + (it.url || '#') + '">' + it.name + '</a>' +
-                        (it.sku ? '<div class="pbs-cart-sku">{{ __('Réf.') }} ' + it.sku + '</div>' : '') +
+                        (it.sku ? '<div class="pbs-cart-sku">{{ __('cart.ref') }} ' + it.sku + '</div>' : '') +
                         '<div class="pbs-cart-unit">' + window.Cart.format(it.price) + '</div>' +
                         '</div>' +
                         '<div class="pbs-cart-cell-qty"><div class="pbs-qty">' +
@@ -174,11 +174,11 @@
                     '<div class="pbs-cart-layout">' +
                     '<div class="pbs-cart-table">' + rows + '</div>' +
                     '<div class="pbs-summary">' +
-                    '<h3>{{ __('Récapitulatif') }}</h3>' +
-                    '<div class="pbs-summary-row"><span>{{ __('Articles') }}</span><span>' + window.Cart.count() + '</span></div>' +
+                    '<h3>{{ __('cart.summary') }}</h3>' +
+                    '<div class="pbs-summary-row"><span>{{ __('cart.items') }}</span><span>' + window.Cart.count() + '</span></div>' +
                     '<div class="pbs-summary-total"><span>{{ __('Total') }}</span><strong>' + window.Cart.format(window.Cart.total()) + '</strong></div>' +
-                    '<a href="' + checkoutUrl + '" class="pbs-btn pbs-btn-primary">{{ __('Passer la commande') }}</a>' +
-                    '<a href="' + shopUrl + '" class="pbs-btn pbs-btn-outline">{{ __('Continuer mes achats') }}</a>' +
+                    '<a href="' + checkoutUrl + '" class="pbs-btn pbs-btn-primary">{{ __('cart.checkout') }}</a>' +
+                    '<a href="' + shopUrl + '" class="pbs-btn pbs-btn-outline">{{ __('cart.continue_shopping') }}</a>' +
                     '</div>' +
                     '</div>';
             }

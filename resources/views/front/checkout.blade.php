@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', __('Validation de la commande'))
+@section('title', __('checkout.title'))
 
 @push('styles')
     <style>
@@ -114,35 +114,35 @@
                     <div class="pbs-alert" id="pbs-checkout-alert"></div>
 
                     <div class="pbs-card">
-                        <h3><i class="fas fa-user"></i> {{ __('Vos coordonnées') }}</h3>
+                        <h3><i class="fas fa-user"></i> {{ __('checkout.your_details') }}</h3>
                         <div class="pbs-field-row">
                             <div class="pbs-field">
-                                <label>{{ __('Nom complet') }} <span class="req">*</span></label>
+                                <label>{{ __('checkout.full_name') }} <span class="req">*</span></label>
                                 <input type="text" name="customer_name" required>
                                 <div class="err" data-err="customer_name"></div>
                             </div>
                             <div class="pbs-field">
-                                <label>{{ __('Email') }} <span class="req">*</span></label>
+                                <label>{{ __('checkout.email') }} <span class="req">*</span></label>
                                 <input type="email" name="email" required>
                                 <div class="err" data-err="email"></div>
                             </div>
                         </div>
                         <div class="pbs-field-row">
                             <div class="pbs-field">
-                                <label>{{ __('Téléphone') }} (WhatsApp) <span class="req">*</span></label>
-                                <input type="tel" name="phone" placeholder="+33612345678" required>
+                                <label>{{ __('checkout.phone') }} (WhatsApp) <span class="req">*</span></label>
+                                <input type="tel" name="phone" placeholder="+351912026453" required>
                                 <div class="err" data-err="phone"></div>
                             </div>
                         </div>
                     </div>
 
                     <div class="pbs-card">
-                        <h3><i class="fas fa-location-dot"></i> {{ __('Adresse de facturation') }}</h3>
+                        <h3><i class="fas fa-location-dot"></i> {{ __('checkout.billing_address') }}</h3>
                         <div class="pbs-field-row">
                             <div class="pbs-field">
-                                <label>{{ __('Pays') }} <span class="req">*</span></label>
+                                <label>{{ __('checkout.country') }} <span class="req">*</span></label>
                                 <select name="country" required>
-                                    <option value="">{{ __('Sélectionnez un pays') }}</option>
+                                    <option value="">{{ __('checkout.select_country') }}</option>
                                     @foreach ($countries as $c)
                                         <option value="{{ $c['name'] }}">{{ $c['name'] }}</option>
                                     @endforeach
@@ -150,24 +150,24 @@
                                 <div class="err" data-err="country"></div>
                             </div>
                             <div class="pbs-field">
-                                <label>{{ __('Région / Province') }}</label>
+                                <label>{{ __('checkout.region') }}</label>
                                 <input type="text" name="region">
                             </div>
                         </div>
                         <div class="pbs-field-row">
                             <div class="pbs-field">
-                                <label>{{ __('Ville') }}</label>
+                                <label>{{ __('checkout.city') }}</label>
                                 <input type="text" name="city">
                             </div>
                             <div class="pbs-field">
-                                <label>{{ __('Code postal') }}</label>
+                                <label>{{ __('checkout.postal_code') }}</label>
                                 <input type="text" name="postal_code">
                             </div>
                         </div>
                         <div class="pbs-field-row">
                             <div class="pbs-field full">
-                                <label>{{ __('Adresse') }} <span class="req">*</span></label>
-                                <input type="text" name="address" placeholder="{{ __('Rue, numéro, complément...') }}" required>
+                                <label>{{ __('checkout.address') }} <span class="req">*</span></label>
+                                <input type="text" name="address" placeholder="{{ __('checkout.address_placeholder') }}" required>
                                 <div class="err" data-err="address"></div>
                             </div>
                         </div>
@@ -176,21 +176,21 @@
                     <div class="pbs-card">
                         <label class="pbs-check-wrap">
                             <input type="checkbox" name="ship_to_different" id="pbs-ship-diff" value="1">
-                            <span><i class="fas fa-truck"></i> {{ __('Livrer à une adresse différente') }}</span>
+                            <span><i class="fas fa-truck"></i> {{ __('checkout.ship_to_different') }}</span>
                         </label>
 
                         <div id="pbs-shipping-fields">
-                            <h3 style="margin-top:24px;"><i class="fas fa-box"></i> {{ __('Adresse de livraison') }}</h3>
+                            <h3 style="margin-top:24px;"><i class="fas fa-box"></i> {{ __('checkout.shipping_address') }}</h3>
                             <div class="pbs-field-row">
                                 <div class="pbs-field">
-                                    <label>{{ __('Nom du destinataire') }} <span class="req">*</span></label>
+                                    <label>{{ __('checkout.recipient_name') }} <span class="req">*</span></label>
                                     <input type="text" name="shipping_name">
                                     <div class="err" data-err="shipping_name"></div>
                                 </div>
                                 <div class="pbs-field">
-                                    <label>{{ __('Pays') }} <span class="req">*</span></label>
+                                    <label>{{ __('checkout.country') }} <span class="req">*</span></label>
                                     <select name="shipping_country">
-                                        <option value="">{{ __('Sélectionnez un pays') }}</option>
+                                        <option value="">{{ __('checkout.select_country') }}</option>
                                         @foreach ($countries as $c)
                                             <option value="{{ $c['name'] }}">{{ $c['name'] }}</option>
                                         @endforeach
@@ -200,21 +200,21 @@
                             </div>
                             <div class="pbs-field-row">
                                 <div class="pbs-field">
-                                    <label>{{ __('Région / Province') }}</label>
+                                    <label>{{ __('checkout.region') }}</label>
                                     <input type="text" name="shipping_region">
                                 </div>
                                 <div class="pbs-field">
-                                    <label>{{ __('Ville') }}</label>
+                                    <label>{{ __('checkout.city') }}</label>
                                     <input type="text" name="shipping_city">
                                 </div>
                                 <div class="pbs-field">
-                                    <label>{{ __('Code postal') }}</label>
+                                    <label>{{ __('checkout.postal_code') }}</label>
                                     <input type="text" name="shipping_postal_code">
                                 </div>
                             </div>
                             <div class="pbs-field-row">
                                 <div class="pbs-field full">
-                                    <label>{{ __('Adresse de livraison') }} <span class="req">*</span></label>
+                                    <label>{{ __('checkout.shipping_address') }} <span class="req">*</span></label>
                                     <input type="text" name="shipping_address">
                                     <div class="err" data-err="shipping_address"></div>
                                 </div>
@@ -223,9 +223,9 @@
                     </div>
 
                     <div class="pbs-card">
-                        <h3><i class="fas fa-pen"></i> {{ __('Notes de commande') }}</h3>
+                        <h3><i class="fas fa-pen"></i> {{ __('checkout.order_notes') }}</h3>
                         <div class="pbs-field">
-                            <textarea name="notes" placeholder="{{ __('Informations complémentaires sur votre commande ou votre livraison (facultatif)') }}"></textarea>
+                            <textarea name="notes" placeholder="{{ __('checkout.notes_placeholder') }}"></textarea>
                         </div>
                     </div>
                 </div>
@@ -314,7 +314,7 @@
                 var btn = document.getElementById('pbs-place-order-btn');
                 btn.disabled = true;
                 var label = btn.textContent;
-                btn.innerHTML = '<span class="pbs-spinner"></span>{{ __('Traitement...') }}';
+                btn.innerHTML = '<span class="pbs-spinner"></span>{{ __('checkout.processing') }}';
 
                 fetch(storeUrl, {
                     method: 'POST',
@@ -334,7 +334,7 @@
                         showErrors(r.data.errors);
                     }
                     var alert = document.getElementById('pbs-checkout-alert');
-                    alert.textContent = r.data.message || '{{ __('Veuillez vérifier les champs du formulaire.') }}';
+                    alert.textContent = r.data.message || '{{ __('checkout.form_error') }}';
                     alert.style.display = 'block';
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                 })
@@ -342,7 +342,7 @@
                     btn.disabled = false;
                     btn.textContent = label;
                     var alert = document.getElementById('pbs-checkout-alert');
-                    alert.textContent = '{{ __('Une erreur réseau est survenue. Veuillez réessayer.') }}';
+                    alert.textContent = '{{ __('checkout.network_error') }}';
                     alert.style.display = 'block';
                 });
             });
