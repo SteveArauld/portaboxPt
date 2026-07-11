@@ -1192,7 +1192,7 @@
                                                             <div class="author-image-meta">
                                                                 <div class="author-meta">
                                                                     <span class="author">
-                                                                        <a href="#" target="_blank">{{ __('home.testimonials.author.marco') }}</a>
+                                                                        <a href="#" target="_blank">{{ __('home.testimonials.author1') }}</a>
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -1209,7 +1209,7 @@
                                                             <div class="author-image-meta">
                                                                 <div class="author-meta">
                                                                     <span class="author">
-                                                                        <a href="#" target="_blank">{{ __('home.testimonials.author.giulia') }}</a>
+                                                                        <a href="#" target="_blank">{{ __('home.testimonials.author2') }}</a>
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -1226,7 +1226,7 @@
                                                             <div class="author-image-meta">
                                                                 <div class="author-meta">
                                                                     <span class="author">
-                                                                        <a href="#" target="_blank">{{ __('home.testimonials.author.luca') }}</a>
+                                                                        <a href="#" target="_blank">{{ __('home.testimonials.author3') }}</a>
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -1243,7 +1243,7 @@
                                                             <div class="author-image-meta">
                                                                 <div class="author-meta">
                                                                     <span class="author">
-                                                                        <a href="#" target="_blank">{{ __('home.testimonials.author.elena') }}</a>
+                                                                        <a href="#" target="_blank">{{ __('home.testimonials.author4') }}</a>
                                                                     </span>
                                                                 </div>
                                                             </div>

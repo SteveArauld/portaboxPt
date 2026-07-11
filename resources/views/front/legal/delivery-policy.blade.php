@@ -64,7 +64,7 @@
                         <p> <strong>{{ __('delivery.section2.international') }}</strong></p>
 
                         <p>{{ __('delivery.section2.international_text') }}<br>
-                             <strong><a>contato@portocontentores.pt</a></strong>
+                             <strong><a href="mailto:{{ __('contato.email_address') }}">{{ __('contato.email_address') }}</a></strong>
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -156,7 +156,7 @@
                         <p>{{ __('delivery.section5.text2') }}</p>
 
                         <p>{{ __('delivery.section5.text3') }}<br>
-                             <strong><a>contato@portocontentores.pt</a></strong>
+                             <strong><a href="mailto:{{ __('contato.email_address') }}">{{ __('contato.email_address') }}</a></strong>
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -204,7 +204,7 @@
                             <li>{{ __('delivery.section8.item2') }}</li>
                             <li>{{ __('delivery.section8.item3') }}</li>
                             <li>{{ __('delivery.section8.item4') }}<br>
-                                 <strong><a>contato@portocontentores.pt</a></strong>
+                                 <strong><a href="mailto:{{ __('contato.email_address') }}">{{ __('contato.email_address') }}</a></strong>
                             </li>
                         </ul>
 
@@ -239,7 +239,7 @@
                         <h3 class="wp-block-heading">{{ __('delivery.section9.subtitle') }}</h3>
 
                         <p>{{ __('delivery.section9.text2') }}<br>
-                             <strong><a>contato@portocontentores.pt</a></strong>
+                             <strong><a href="mailto:{{ __('contato.email_address') }}">{{ __('contato.email_address') }}</a></strong>
                         </p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -249,9 +249,9 @@
                         <p>{{ __('delivery.section10.text1') }}</p>
 
                         <p>
-                            <strong>{{ __('delivery.section10.whatsapp') }}</strong>+351 912 345 678<br>
+                            <strong>{{ __('delivery.section10.whatsapp') }}</strong> {{ __('contato.phone_number') }}<br>
                              <strong>{{ __('delivery.section10.email') }}</strong>
-                            <a>contato@portocontentores.pt</a><br>
+                            <a href="mailto:{{ __('contato.email_address') }}">{{ __('contato.email_address') }}</a><br>
                             
                             
                             <strong>{{ __('delivery.section10.hours') }}</strong> {{ __('delivery.section10.hours_text') }}

@@ -146,7 +146,7 @@
 
                         <h3 class="wp-block-heading">{{ __('refund.section6.subtitle1') }}</h3>
 
-                        <p>{{ __('refund.section6.text1') }}<br> <strong><a href="mailto:info@portocontentores.pt">info@portocontentores.pt</a></strong></p>
+                        <p>{{ __('refund.section6.text1') }}<br> <strong><a href="mailto:{{ __('contato.email_address') }}">{{ __('contato.email_address') }}</a></strong></p>
 
                         <p>{{ __('refund.section6.text2') }}</p>
 
@@ -171,9 +171,9 @@
                         </ul>
 
                         <p><strong>{{ __('refund.section6.text7') }}</strong></p>
-                        <p><strong>{{ __('refund.company_name') }}</strong><br> {{ __('refund.address') }}</p>
+                        <p><strong>{{ __('refund.company_name') }}</strong><br> {{ __('contato.address_without_prefix') }}</p>
 
-                        <p>{{ __('refund.section6.text8') }} <strong>2</strong> {{ __('refund.section6.text9') }} {{ __('refund.section6.text10') }}</p>
+                        <p>{{ __('refund.section6.text8') }} <strong>14</strong> {{ __('refund.section6.text9') }} {{ __('refund.section6.text10') }}</p>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
 
@@ -183,7 +183,7 @@
 
                         <ul class="wp-block-list">
                             <li>{{ __('refund.section6.list3_item1') }}</li>
-                            <li>{{ __('refund.section6.list3_item2') }} <strong>30</strong> {{ __('refund.section6.text12') }}</li>
+                            <li>{{ __('refund.section6.list3_item2') }} <strong>7</strong> {{ __('refund.section6.text12') }}</li>
                         </ul>
 
                         <hr class="wp-block-separator has-alpha-channel-opacity">
@@ -205,9 +205,9 @@
                         <p>{{ __('refund.section8.text1') }}</p>
 
                         <p>
-                            <strong><a href="mailto:info@portocontentores.pt">info@portocontentores.pt</a></strong><br>
-                            <strong>{{ __('refund.section8.whatsapp') }}</strong> +351 912 345 678<br>
-                            <strong>{{ __('refund.section8.address') }}</strong> {{ __('refund.address') }}<br>
+                            <strong><a href="mailto:{{ __('contato.email_address') }}">{{ __('contato.email_address') }}</a></strong><br>
+                            <strong>{{ __('refund.section8.whatsapp') }}</strong> {{ __('contato.phone_number') }}<br>
+                            <strong>{{ __('refund.section8.address') }}</strong> {{ __('contato.address_without_prefix') }}<br>
                             <strong>{{ __('refund.section8.hours') }}</strong> {{ __('refund.section8.hours_text') }}
                         </p>
 

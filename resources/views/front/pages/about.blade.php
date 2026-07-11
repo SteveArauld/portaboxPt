@@ -172,6 +172,25 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="elementor-element elementor-element-legal-info e-flex e-con-boxed e-con e-parent"
+                                 data-id="legal-info" data-element_type="container">
+                                <div class="e-con-inner">
+                                    <div class="elementor-element elementor-element-legal-title elementor-widget__width-initial elementor-widget elementor-widget-heading"
+                                         data-id="legal-title" data-element_type="widget" data-widget_type="heading.default">
+                                        <h3 class="elementor-heading-title elementor-size-default">{{ __('about.legal_title') }}</h3>
+                                    </div>
+                                    <div class="elementor-element elementor-element-legal-text elementor-widget__width-inherit elementor-widget elementor-widget-text-editor"
+                                         data-id="legal-text" data-element_type="widget" data-widget_type="text-editor.default">
+                                        <p>
+                                            <strong>{{ __('legal.company_name') }}</strong><br>
+                                            {{ __('legal.section2.legal_address') }}<br>
+                                            <strong>{{ __('legal.nif') }}</strong><br>
+                                            <strong>{{ __('legal.email') }}</strong> <a href="mailto:{{ __('legal.email_address') }}">{{ __('legal.email_address') }}</a><br>
+                                            <strong>{{ __('contato.phone') }}</strong>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </article>
                 </div>

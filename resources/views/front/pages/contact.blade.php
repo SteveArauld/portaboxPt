@@ -102,10 +102,7 @@
                                     <div class="elementor-element elementor-element-0605244 elementor-widget elementor-widget-text-editor"
                                          data-id="0605244" data-element_type="widget"
                                          data-widget_type="text-editor.default">
-                                        <p>{{ __('contato.email') }} <strong data-start="1196" data-end="1231"><a
-                                                        class="decorated-link cursor-pointer" rel="noopener"
-                                                        data-start="1198" data-end="1229">contato@portocontentores.pt</a></strong>
-                                        </p>
+                                        <p>{{ __('contato.email') }}</p>
                                     </div>
                                 </div>
                             </div>

@@ -4,9 +4,9 @@
         <div class="container">
             <div class="header-right">
                 <div class="hotline">
-                    <a href="tel:contato@portocontentores.pt">
+                    <a href="mailto:{{ __('contato.email_address') }}">
                         <span>{{ __('header.email') }}</span>
-                        <span>contato@portocontentores.pt</span>
+                        <span>{{ __('contato.email_address') }}</span>
                     </a>
                 </div>
             </div>
@@ -100,9 +100,9 @@
 
                 <div class="header-center">
                     <div class="hotline">
-                        <a href="tel:contato@portocontentores.pt">
+                        <a href="mailto:{{ __('contato.email_address') }}">
                             <span>{{ __('header.email') }}</span>
-                            <span>contato@portocontentores.pt</span>
+                            <span>{{ __('contato.email_address') }}</span>
                         </a>
                     </div>
 

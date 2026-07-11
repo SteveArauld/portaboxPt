@@ -83,12 +83,12 @@
     "footer.features.delivery": "Consegna efficiente: ricevi il tuo ordine rapidamente.",
     "footer.features.security": "Sicurezza certificata: conforme agli standard ISO",
     "footer.features.support": "Assistenza specialistica: i nostri consulenti sono al tuo servizio.",
-    "footer.company.name": "Porto Contentores",
-    "footer.company.address": "Indirizzo: Via Case Rosse, 19/B 84131 Salerno (SA), Italia",
-    "footer.company.whatsapp": "Whatsapp:+351 912 345 678",
+    "footer.company.name": "PORTO CONTENTORES, LDA.",
+    "footer.company.address": "Indirizzo: R. de São Simão, 3320-313 Bunheiro, Portogallo",
+    "footer.company.whatsapp": "Whatsapp: +351 912 026 453",
     "footer.company.email": "E-mail: contato@portocontentores.pt",
-    "footer.company.vat": "Partita IVA: PT501234560",
-    "footer.company.european_vat": "VAT Europeo: <strong>PT501234560</strong>",
+    "footer.company.vat": "Partita IVA: 508140552",
+    "footer.company.european_vat": "VAT Europeo: PT508140552",
     "footer.categories.title": "Categorie di contenitori",
     "footer.info.title": "Ulteriori informazioni",
     "footer.info.legal": "Menzioni Legali",
@@ -877,7 +877,7 @@
     "Voir le panier": "Vedi carrello",
     "Commander": "Ordina",
 
-        "Ajouter au panier": "Aggiungi al carrello",
+    "Ajouter au panier": "Aggiungi al carrello"
 
         
 
