@@ -7,7 +7,7 @@ use Illuminate\Http\Response;
 
 class GoogleFeedController extends Controller
 {
-    private string $locale = 'it';
+    private string $locale = 'pt';
     private string $currency = 'EUR';
 
     /**
@@ -96,6 +96,10 @@ if ($images->isNotEmpty()) {
             $this->appendG($dom, $item, 'price', number_format($article->price, 2, '.', '') . ' ' . $this->currency);
         }
 
+        // Prix unitaire pour les produits vendus à l'unité
+        $this->appendG($dom, $item, 'unit_pricing_measure', '1 piece');
+        $this->appendG($dom, $item, 'unit_pricing_base_measure', '1 piece');
+
         $this->appendG($dom, $item, 'condition', 'new');
         $this->appendG($dom, $item, 'brand', config('app.name'));
 
@@ -107,6 +111,9 @@ if ($images->isNotEmpty()) {
         }
 
         $this->appendG($dom, $item, 'identifier_exists', 'no');
+
+        // Désactiver les annonces locales car pas de magasins physiques
+        $this->appendG($dom, $item, 'excluded_destination', 'free_local_listings local_inventory_ads');
 
         return $item;
     }

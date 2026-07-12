@@ -821,6 +821,10 @@
     "Confirmer la commande": "Confirmar pedido",
     "Retour au panier": "Voltar ao carrinho",
     "Qté": "Qtd",
+
+    "checkout.order_success_email_sent": "Seu pedido foi registrado com sucesso. Um email de confirmação foi enviado para você.",
+    "checkout.order_success_email_failed": "Seu pedido foi registrado, mas o email de confirmação não pôde ser enviado. Por favor, verifique seu spam ou entre em contato conosco.",
+    "checkout.order_creation_failed": "Ocorreu um erro ao registrar seu pedido. Por favor, tente novamente.",
     "Traitement...": "Processando...",
     "Veuillez vérifier les champs du formulaire.": "Verifique os campos do formulário.",
     "Une erreur réseau est survenue. Veuillez réessayer.": "Ocorreu um erro de rede. Tente novamente.",

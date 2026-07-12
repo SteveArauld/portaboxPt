@@ -149,19 +149,22 @@ class OrderController extends Controller
 
             $order->load('items');
 
-            $this->sendOrderEmails($order);
+            $emailSent = $this->sendOrderEmails($order);
 
             return response()->json([
-                'success'  => true,
-                'message'  => __('Votre commande a bien été enregistrée.'),
-                'redirect' => route('order.confirmation', $order->order_number),
+                'success'     => true,
+                'message'     => $emailSent 
+                    ? __('checkout.order_success_email_sent')
+                    : __('checkout.order_success_email_failed'),
+                'email_sent'  => $emailSent,
+                'redirect'    => route('order.confirmation', $order->order_number),
             ]);
         } catch (Exception $e) {
             Log::error('Erreur création commande: ' . $e->getMessage());
 
             return response()->json([
                 'success' => false,
-                'message' => __("Une erreur est survenue lors de l'enregistrement de votre commande. Veuillez réessayer."),
+                'message' => __('checkout.order_creation_failed'),
             ], 500);
         }
     }
@@ -185,7 +188,7 @@ class OrderController extends Controller
         return $number;
     }
 
-    private function sendOrderEmails(Order $order): void
+    private function sendOrderEmails(Order $order): bool
     {
         $adminAddress = config('mail.admin_address', config('mail.from.address'));
 
@@ -204,9 +207,12 @@ class OrderController extends Controller
                     ->subject(__('Confirmation de votre commande') . ' #' . $order->order_number)
                     ->from(config('mail.from.address'), config('mail.from.name'));
             });
+
+            return true;
         } catch (Exception $e) {
             // On n'interrompt pas la commande si l'email échoue, mais on le journalise.
             Log::error('Erreur envoi email commande ' . $order->order_number . ': ' . $e->getMessage());
+            return false;
         }
     }
 }
