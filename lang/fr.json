@@ -819,8 +819,34 @@
     "Veuillez entrer votre région": "Veuillez entrer votre région",
     "Veuillez sélectionner votre région": "Veuillez sélectionner votre région",
 
-    "whatsapp_message": "Bonjour, je souhaite avoir des informations"
+    "whatsapp_message": "Bonjour, je souhaite avoir des informations",
 
+    "Nouvelle commande": "Nouvelle commande",
+    "Notification administrateur": "Notification administrateur",
+    "Une nouvelle commande vient d'être passée sur le site.": "Une nouvelle commande vient d'être passée sur le site.",
+    "Informations client": "Informations client",
+    "Date": "Date",
+    "Adresse de facturation": "Adresse de facturation",
+    "Adresse de livraison": "Adresse de livraison",
+    "Produits commandés": "Produits commandés",
+    "Notes du client": "Notes du client",
+    "Notification automatique — Action requise": "Notification automatique — Action requise",
 
+    "Confirmation de votre commande": "Confirmation de votre commande",
+    "Commande confirmée": "Commande confirmée",
+    "Commande": "Commande",
+    "Bonjour": "Bonjour",
+    "Nous avons bien reçu votre commande et nous vous en remercions. Voici le récapitulatif :": "Nous avons bien reçu votre commande et nous vous en remercions. Voici le récapitulatif :",
+    "Récapitulatif de la commande": "Récapitulatif de la commande",
+    "Produit": "Produit",
+    "Réf.": "Réf.",
+    "Qté": "Qté",
+    "Prochaines étapes": "Prochaines étapes",
+    "Notre équipe examine votre commande.": "Notre équipe examine votre commande.",
+    "Un conseiller vous contatoera pour finaliser le paiement et la livraison.": "Un conseiller vous contactera pour finaliser le paiement et la livraison.",
+    "Vous recevrez les informations de suivi dès l'expédition.": "Vous recevrez les informations de suivi dès l'expédition.",
+    "Merci de votre confiance !": "Merci de votre confiance !",
+    "Continuer mes achats": "Continuer mes achats",
+    "Tous droits réservés.": "Tous droits réservés."
 
 }

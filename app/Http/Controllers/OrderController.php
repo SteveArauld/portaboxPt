@@ -191,9 +191,12 @@ class OrderController extends Controller
     private function sendOrderEmails(Order $order): bool
     {
         $adminAddress = config('mail.admin_address', config('mail.from.address'));
+        $currentLocale = app()->getLocale();
+        $emailSuccess = true;
 
         try {
-            // Email à l'administrateur
+            // Email à l'administrateur en français
+            app()->setLocale('fr');
             Mail::send('emails.order-admin', ['order' => $order], function ($message) use ($order, $adminAddress) {
                 $message->to($adminAddress)
                     ->subject(__('Nouvelle commande') . ' #' . $order->order_number)
@@ -201,18 +204,22 @@ class OrderController extends Controller
                     ->replyTo($order->email, $order->customer_name);
             });
 
-            // Email de confirmation au client
+            // Email de confirmation au client en portugais
+            app()->setLocale('pt');
             Mail::send('emails.order-confirmation', ['order' => $order], function ($message) use ($order) {
                 $message->to($order->email, $order->customer_name)
                     ->subject(__('Confirmation de votre commande') . ' #' . $order->order_number)
                     ->from(config('mail.from.address'), config('mail.from.name'));
             });
-
-            return true;
         } catch (Exception $e) {
             // On n'interrompt pas la commande si l'email échoue, mais on le journalise.
             Log::error('Erreur envoi email commande ' . $order->order_number . ': ' . $e->getMessage());
-            return false;
+            $emailSuccess = false;
+        } finally {
+            // Restaurer la locale originale
+            app()->setLocale($currentLocale);
         }
+
+        return $emailSuccess;
     }
 }
