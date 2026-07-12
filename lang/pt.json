@@ -823,7 +823,7 @@
     "Qté": "Qtd",
 
     "checkout.order_success_email_sent": "Seu pedido foi registrado com sucesso. Um email de confirmação foi enviado para você.",
-    "checkout.order_success_email_failed": "Seu pedido foi registrado, mas o email de confirmação não pôde ser enviado. Por favor, verifique seu spam ou entre em contato conosco.",
+    "checkout.order_success_email_failed": "Ocorreu um erro ao enviar o email de confirmação. Por favor, tente novamente. Se o erro persistir, entre em contato com o serviço ao cliente.",
     "checkout.order_creation_failed": "Ocorreu um erro ao registrar seu pedido. Por favor, tente novamente.",
 
     "Confirmation de votre commande": "Confirmação do seu pedido",
