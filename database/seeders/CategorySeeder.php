@@ -241,14 +241,24 @@ class CategorySeeder extends Seeder
             ]
         ];
 
-        // Désactiver les contraintes de clé étrangère
-        DB::statement('SET FOREIGN_KEY_CHECKS=0');
+        // Désactiver les contraintes de clé étrangère selon le driver
+        $driver = DB::connection()->getDriverName();
+        
+        if ($driver === 'sqlite') {
+            DB::statement('PRAGMA foreign_keys = OFF;');
+        } else {
+            DB::statement('SET FOREIGN_KEY_CHECKS=0;');
+        }
         
         // Supprimer toutes les catégories existantes pour repartir de zéro
         Category::truncate();
         
         // Réactiver les contraintes de clé étrangère
-        DB::statement('SET FOREIGN_KEY_CHECKS=1');
+        if ($driver === 'sqlite') {
+            DB::statement('PRAGMA foreign_keys = ON;');
+        } else {
+            DB::statement('SET FOREIGN_KEY_CHECKS=1;');
+        }
 
         // Créer les nouvelles catégories
         foreach ($categories as $categoryData) {
