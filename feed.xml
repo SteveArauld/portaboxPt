@@ -30,12 +30,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>8000.00 EUR</g:price>
 <g:sale_price>7100.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611363</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611170</g:id>
@@ -51,12 +56,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5700.00 EUR</g:price>
 <g:sale_price>4200.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611170</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611416</g:id>
@@ -81,12 +91,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>10900.00 EUR</g:price>
 <g:sale_price>9175.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611416</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610540</g:id>
@@ -101,12 +116,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5033.60 EUR</g:price>
 <g:sale_price>3523.52 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610540</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Casa ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611488</g:id>
@@ -131,12 +151,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>10500.00 EUR</g:price>
 <g:sale_price>8565.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611488</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610541</g:id>
@@ -151,12 +176,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>6163.30 EUR</g:price>
 <g:sale_price>4314.31 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610541</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Casa ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611486</g:id>
@@ -181,12 +211,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>9000.00 EUR</g:price>
 <g:sale_price>8430.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611486</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610544</g:id>
@@ -209,12 +244,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>6806.80 EUR</g:price>
 <g:sale_price>4764.76 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610544</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Casa ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610543</g:id>
@@ -236,12 +276,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5319.60 EUR</g:price>
 <g:sale_price>3723.72 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610543</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Casa ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610542</g:id>
@@ -259,12 +304,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>6999.85 EUR</g:price>
 <g:sale_price>4899.89 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610542</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Casa ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610621</g:id>
@@ -289,12 +339,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>6866.00 EUR</g:price>
 <g:sale_price>4200.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610621</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Casa ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>9876543456789</g:id>
@@ -316,12 +371,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/7654345687909-300x300.webp</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>5500.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>9876543456789</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Casa ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>097654456789</g:id>
@@ -344,12 +404,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/7654334657810-300x300.webp</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>8000.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>097654456789</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Casa ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>876543456789</g:id>
@@ -370,12 +435,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/876433456789008-300x300.webp</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>3050.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>876543456789</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Casa ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610545</g:id>
@@ -396,12 +466,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5720.00 EUR</g:price>
 <g:sale_price>3200.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610545</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Casa ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610620</g:id>
@@ -422,12 +497,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5278.30 EUR</g:price>
 <g:sale_price>3400.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610620</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Casa ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610539</g:id>
@@ -447,12 +527,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5136.70 EUR</g:price>
 <g:sale_price>3500.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610539</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Casa ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611232</g:id>
@@ -470,12 +555,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>8100.00 EUR</g:price>
 <g:sale_price>6100.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611232</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611054</g:id>
@@ -492,12 +582,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/a0a2dea73060_fotos_40hcdd_5_normal-300x300.webp</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>2100.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611054</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611230</g:id>
@@ -516,12 +611,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5000.00 EUR</g:price>
 <g:sale_price>4100.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611230</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611490</g:id>
@@ -542,12 +642,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>8800.00 EUR</g:price>
 <g:sale_price>7900.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611490</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611489</g:id>
@@ -568,12 +673,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/a1ef6f_4c5b2d83c51f4de48c158ff0d4d095cc7Emv2-300x300.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>7350.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611489</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611051</g:id>
@@ -587,12 +697,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/a0a2dea73060_foto_2-1-300x300.webp</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1100.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611051</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611832</g:id>
@@ -612,12 +727,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1400.00 EUR</g:price>
 <g:sale_price>902.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611832</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610868</g:id>
@@ -632,12 +752,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2495.00 EUR</g:price>
 <g:sale_price>2150.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610868</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 20 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610871</g:id>
@@ -658,12 +783,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/a0a2dea73060_fotos_2aso_2_normal-300x300.webp</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>3400.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610871</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610867</g:id>
@@ -677,12 +807,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/fd7d652d39eb_20hcsf3_1000x9999-300x300.webp</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1800.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610867</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 20 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611173</g:id>
@@ -701,12 +836,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>900.00 EUR</g:price>
 <g:sale_price>750.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611173</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611725</g:id>
@@ -729,12 +869,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2000.00 EUR</g:price>
 <g:sale_price>1815.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611725</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610950</g:id>
@@ -748,12 +893,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/20ft-Kuehlcontainer-300x300.png</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>7840.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610950</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610951</g:id>
@@ -767,12 +917,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/20ft-thermo-300x300.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>5960.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610951</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611061</g:id>
@@ -786,12 +941,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/10ft-thermo-refrigerated-container-300x300.png</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>3480.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611061</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610945</g:id>
@@ -805,12 +965,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/a0a2dea73060_img_0602-300x300.webp</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1480.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610945</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 10 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610869</g:id>
@@ -829,12 +994,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/a0a2dea73060_fotos_20_hc_os_normal-300x300.webp</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>3470.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610869</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610942</g:id>
@@ -848,12 +1018,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/a0a2dea73060_fotos_img_7980_normal-300x300.webp</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1950.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610942</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 20 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610952</g:id>
@@ -867,12 +1042,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/a0a2dea73060_fotos_dsc03347_normal-300x300.webp</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1650.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610952</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610872</g:id>
@@ -897,12 +1077,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>6750.00 EUR</g:price>
 <g:sale_price>6450.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610872</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611062</g:id>
@@ -923,12 +1108,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>800.00 EUR</g:price>
 <g:sale_price>629.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611062</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610946</g:id>
@@ -943,12 +1133,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1900.00 EUR</g:price>
 <g:sale_price>1480.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610946</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611836</g:id>
@@ -970,12 +1165,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2050.00 EUR</g:price>
 <g:sale_price>1310.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611836</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611056</g:id>
@@ -989,12 +1189,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/a45af521-9d15-406d-98ff-73675ca623b9-1024x683-1-300x300.webp</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1749.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611056</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611239</g:id>
@@ -1013,12 +1218,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5100.00 EUR</g:price>
 <g:sale_price>4900.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611239</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611052</g:id>
@@ -1032,12 +1242,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/10ft-See-Containers-300x300.png</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1870.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611052</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611060</g:id>
@@ -1052,12 +1267,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1350.00 EUR</g:price>
 <g:sale_price>1145.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611060</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610870</g:id>
@@ -1072,12 +1292,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4300.00 EUR</g:price>
 <g:sale_price>3570.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610870</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 20 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611365</g:id>
@@ -1100,12 +1325,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1500.00 EUR</g:price>
 <g:sale_price>1190.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611365</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611838</g:id>
@@ -1124,12 +1354,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2000.00 EUR</g:price>
 <g:sale_price>1250.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611838</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 20 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611834</g:id>
@@ -1146,12 +1381,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1800.00 EUR</g:price>
 <g:sale_price>1250.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611834</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 20 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611958</g:id>
@@ -1174,12 +1414,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2300.00 EUR</g:price>
 <g:sale_price>1645.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611958</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611959</g:id>
@@ -1201,12 +1446,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3000.00 EUR</g:price>
 <g:sale_price>2350.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611959</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611491</g:id>
@@ -1228,12 +1478,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3750.00 EUR</g:price>
 <g:sale_price>3520.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611491</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610949</g:id>
@@ -1248,12 +1503,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4780.00 EUR</g:price>
 <g:sale_price>4280.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610949</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610947</g:id>
@@ -1267,12 +1527,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/40ft-refrigerated-container-300x300.png</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>8760.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610947</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611487</g:id>
@@ -1297,12 +1562,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4500.00 EUR</g:price>
 <g:sale_price>4050.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611487</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611565</g:id>
@@ -1327,12 +1597,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>6300.00 EUR</g:price>
 <g:sale_price>5250.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611565</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610944</g:id>
@@ -1346,12 +1621,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/a0a2dea73060_10ft-300x300.webp</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1300.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610944</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 10 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610943</g:id>
@@ -1366,12 +1646,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1800.00 EUR</g:price>
 <g:sale_price>1650.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610943</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611055</g:id>
@@ -1385,12 +1670,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/a0a2dea73060_20sf2-300x300.webp</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1700.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611055</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610873</g:id>
@@ -1404,12 +1694,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/a0a2dea73060_photo_2019_09_30_08_39_29-291x300.webp</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1200.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610873</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611057</g:id>
@@ -1423,12 +1718,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/1-2-2-300x300.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>2390.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611057</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611058</g:id>
@@ -1442,12 +1742,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/20ft-by-8ft-standard-container-NEW-300x300.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1950.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611058</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611484</g:id>
@@ -1472,12 +1777,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4500.00 EUR</g:price>
 <g:sale_price>4200.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611484</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611675</g:id>
@@ -1502,12 +1812,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2500.00 EUR</g:price>
 <g:sale_price>2100.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611675</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611676</g:id>
@@ -1532,12 +1847,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3600.00 EUR</g:price>
 <g:sale_price>3150.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611676</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611619</g:id>
@@ -1557,12 +1877,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4000.00 EUR</g:price>
 <g:sale_price>3800.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611619</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611424</g:id>
@@ -1582,12 +1907,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5220.00 EUR</g:price>
 <g:sale_price>4799.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611424</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611620</g:id>
@@ -1607,12 +1937,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4500.00 EUR</g:price>
 <g:sale_price>4215.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611620</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611529</g:id>
@@ -1636,12 +1971,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5400.00 EUR</g:price>
 <g:sale_price>4950.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611529</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611723</g:id>
@@ -1662,12 +2002,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5100.00 EUR</g:price>
 <g:sale_price>4120.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611723</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611236</g:id>
@@ -1684,12 +2029,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2100.00 EUR</g:price>
 <g:sale_price>1510.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611236</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610866</g:id>
@@ -1714,12 +2064,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>872.30 EUR</g:price>
 <g:sale_price>610.61 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610866</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 10 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610487</g:id>
@@ -1741,12 +2096,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2502.50 EUR</g:price>
 <g:sale_price>1751.75 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610487</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 20 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610485</g:id>
@@ -1763,12 +2123,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1889.03 EUR</g:price>
 <g:sale_price>1322.32 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610485</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 20 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610484</g:id>
@@ -1785,12 +2150,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2359.50 EUR</g:price>
 <g:sale_price>1651.65 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610484</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 20 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610486</g:id>
@@ -1814,12 +2184,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2852.85 EUR</g:price>
 <g:sale_price>1996.99 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610486</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 20 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610703</g:id>
@@ -1840,12 +2215,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2602.60 EUR</g:price>
 <g:sale_price>1821.82 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610703</g:mpn>
 <g:product_type>
 <![CDATA[ Cafetaria Bar Restaurante ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611080</g:id>
@@ -1859,12 +2239,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/Contenitore-Bar-Demontable-3x2-Metri-Soluzione-Compatta-e-Versatile-300x300.png</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1150.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611080</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611079</g:id>
@@ -1879,12 +2264,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/Contenitore-Bar-Demontable-XL-4-x-2-m-Soluzione-Modulare-per-Eventi-300x300.png</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1220.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611079</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610699</g:id>
@@ -1903,12 +2293,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2745.60 EUR</g:price>
 <g:sale_price>1921.92 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610699</g:mpn>
 <g:product_type>
 <![CDATA[ Cafetaria Bar Restaurante ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610701</g:id>
@@ -1927,12 +2322,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2173.60 EUR</g:price>
 <g:sale_price>1521.52 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610701</g:mpn>
 <g:product_type>
 <![CDATA[ Cafetaria Bar Restaurante ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610698</g:id>
@@ -1951,12 +2351,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4576.00 EUR</g:price>
 <g:sale_price>3203.20 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610698</g:mpn>
 <g:product_type>
 <![CDATA[ Cafetaria Bar Restaurante ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610622</g:id>
@@ -1979,12 +2384,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3746.60 EUR</g:price>
 <g:sale_price>2622.62 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610622</g:mpn>
 <g:product_type>
 <![CDATA[ Escritório ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610479</g:id>
@@ -2008,12 +2418,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1029.60 EUR</g:price>
 <g:sale_price>710.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610479</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 10 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611156</g:id>
@@ -2029,12 +2444,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/Contenitore-da-Giardino-15-x-22-m-Verde-RAL-6005-0-300x300.png</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>780.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611156</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610492</g:id>
@@ -2051,12 +2471,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3546.40 EUR</g:price>
 <g:sale_price>2320.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610492</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 40 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610493</g:id>
@@ -2073,12 +2498,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3603.60 EUR</g:price>
 <g:sale_price>2450.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610493</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 40 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610494</g:id>
@@ -2095,12 +2525,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3117.40 EUR</g:price>
 <g:sale_price>2055.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610494</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 40 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611163</g:id>
@@ -2115,12 +2550,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/Contenitore-Frigorifero-10-Piedi-Soluzione-Compatta-per-Stoccaggio-e-Trasporto-a-Temperatura-Controllata-0-300x300.png</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1200.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611163</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611166</g:id>
@@ -2138,12 +2578,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4000.00 EUR</g:price>
 <g:sale_price>3600.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611166</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611164</g:id>
@@ -2158,12 +2603,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5500.00 EUR</g:price>
 <g:sale_price>4600.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611164</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611167</g:id>
@@ -2177,12 +2627,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/Contenitore-Frigorifero-40-Piedi-Reefer-Usato-Classe-A-300x300.png</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>4500.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611167</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611165</g:id>
@@ -2198,12 +2653,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/Contenitore-Frigorifero-45-Piedi-Reefer-Soluzione-Ideale-per-Stoccaggio-e-Trasporto-a-Temperatura-Controllata-0-300x300.png</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>6000.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611165</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610475</g:id>
@@ -2223,12 +2683,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3846.70 EUR</g:price>
 <g:sale_price>2510.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610475</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610471</g:id>
@@ -2247,12 +2712,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2788.50 EUR</g:price>
 <g:sale_price>1951.95 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610471</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610472</g:id>
@@ -2270,12 +2740,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2216.50 EUR</g:price>
 <g:sale_price>1551.55 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610472</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610473</g:id>
@@ -2297,12 +2772,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2216.50 EUR</g:price>
 <g:sale_price>1425.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610473</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610476</g:id>
@@ -2320,12 +2800,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4461.60 EUR</g:price>
 <g:sale_price>3099.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610476</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610477</g:id>
@@ -2342,12 +2827,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3317.60 EUR</g:price>
 <g:sale_price>2220.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610477</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610478</g:id>
@@ -2370,12 +2860,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4504.50 EUR</g:price>
 <g:sale_price>3095.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610478</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610488</g:id>
@@ -2396,12 +2891,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2545.40 EUR</g:price>
 <g:sale_price>1525.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610488</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 20 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610496</g:id>
@@ -2420,12 +2920,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3303.30 EUR</g:price>
 <g:sale_price>2199.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610496</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 40 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611833</g:id>
@@ -2444,12 +2949,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1900.00 EUR</g:price>
 <g:sale_price>1350.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611833</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 20 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610480</g:id>
@@ -2472,12 +2982,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1136.85 EUR</g:price>
 <g:sale_price>795.79 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610480</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 10 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610481</g:id>
@@ -2496,12 +3011,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1029.60 EUR</g:price>
 <g:sale_price>720.72 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610481</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 10 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610482</g:id>
@@ -2526,12 +3046,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1086.80 EUR</g:price>
 <g:sale_price>760.76 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610482</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 10 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611073</g:id>
@@ -2547,12 +3072,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/Contenitore-Marittimo-10-Piedi-STD-Usato-Compatto-e-Resistente-0-300x300.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>700.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611073</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611065</g:id>
@@ -2573,12 +3103,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1850.00 EUR</g:price>
 <g:sale_price>1150.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611065</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611063</g:id>
@@ -2595,12 +3130,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1150.00 EUR</g:price>
 <g:sale_price>907.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611063</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611064</g:id>
@@ -2618,12 +3158,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1850.00 EUR</g:price>
 <g:sale_price>1450.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611064</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611066</g:id>
@@ -2645,12 +3190,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1200.00 EUR</g:price>
 <g:sale_price>907.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611066</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611072</g:id>
@@ -2668,12 +3218,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1000.00 EUR</g:price>
 <g:sale_price>800.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611072</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610491</g:id>
@@ -2693,12 +3248,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2345.20 EUR</g:price>
 <g:sale_price>1475.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610491</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 20 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611069</g:id>
@@ -2720,12 +3280,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1900.00 EUR</g:price>
 <g:sale_price>1210.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611069</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611067</g:id>
@@ -2744,12 +3309,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2000.00 EUR</g:price>
 <g:sale_price>1510.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611067</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611074</g:id>
@@ -2767,12 +3337,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1850.00 EUR</g:price>
 <g:sale_price>1140.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611074</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611068</g:id>
@@ -2787,12 +3362,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2500.00 EUR</g:price>
 <g:sale_price>1849.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611068</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611070</g:id>
@@ -2807,12 +3387,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1860.00 EUR</g:price>
 <g:sale_price>1210.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611070</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611071</g:id>
@@ -2830,12 +3415,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1800.00 EUR</g:price>
 <g:sale_price>1150.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611071</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610483</g:id>
@@ -2855,12 +3445,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>929.50 EUR</g:price>
 <g:sale_price>650.65 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610483</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 10 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610497</g:id>
@@ -2885,12 +3480,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3875.30 EUR</g:price>
 <g:sale_price>2510.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610497</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 40 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611485</g:id>
@@ -2915,12 +3515,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>7500.00 EUR</g:price>
 <g:sale_price>6900.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611485</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611157</g:id>
@@ -2936,12 +3541,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5000.00 EUR</g:price>
 <g:sale_price>4500.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611157</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610498</g:id>
@@ -2959,12 +3569,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2509.95 EUR</g:price>
 <g:sale_price>1910.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610498</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 40 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611364</g:id>
@@ -2984,12 +3599,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2500.00 EUR</g:price>
 <g:sale_price>1849.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611364</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611075</g:id>
@@ -3004,12 +3624,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/Contenitore-Refrigerato-20-Piedi-STD-Precisione-e-Sicurezza-0-300x300.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1700.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611075</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611076</g:id>
@@ -3023,12 +3648,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/Contenitore-Refrigerato-20′-STD-–-Usato-300x300.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1200.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611076</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611077</g:id>
@@ -3042,12 +3672,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/Contenitore-Refrigerato-40-Piedi-HC-–-Alta-Capacita-e-Prestazioni-5-300x300.jpg</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>5100.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611077</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611078</g:id>
@@ -3063,12 +3698,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/Contenitore-Refrigerato-40-Piedi-HC-Usato-Grande-Capacita-e-Affidabilita-0-300x300.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>4500.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611078</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611174</g:id>
@@ -3093,12 +3733,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2500.00 EUR</g:price>
 <g:sale_price>1800.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611174</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610795</g:id>
@@ -3115,12 +3760,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2738.45 EUR</g:price>
 <g:sale_price>1916.91 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610795</g:mpn>
 <g:product_type>
 <![CDATA[ Sanitário ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611530</g:id>
@@ -3145,12 +3795,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1180.00 EUR</g:price>
 <g:sale_price>1020.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611530</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610796</g:id>
@@ -3168,12 +3823,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2488.20 EUR</g:price>
 <g:sale_price>1741.74 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610796</g:mpn>
 <g:product_type>
 <![CDATA[ Sanitário ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611305</g:id>
@@ -3192,12 +3852,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2500.00 EUR</g:price>
 <g:sale_price>1860.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611305</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611564</g:id>
@@ -3220,12 +3885,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5000.00 EUR</g:price>
 <g:sale_price>4399.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611564</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610700</g:id>
@@ -3246,12 +3916,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3217.50 EUR</g:price>
 <g:sale_price>2252.25 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610700</g:mpn>
 <g:product_type>
 <![CDATA[ Cafetaria Bar Restaurante ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611425</g:id>
@@ -3272,12 +3947,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>6300.00 EUR</g:price>
 <g:sale_price>5499.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611425</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611426</g:id>
@@ -3296,12 +3976,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>6300.00 EUR</g:price>
 <g:sale_price>5699.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611426</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610489</g:id>
@@ -3320,12 +4005,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1823.25 EUR</g:price>
 <g:sale_price>1210.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610489</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 20 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610495</g:id>
@@ -3344,12 +4034,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3045.90 EUR</g:price>
 <g:sale_price>2099.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610495</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 40 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610474</g:id>
@@ -3371,12 +4066,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4505.50 EUR</g:price>
 <g:sale_price>3799.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610474</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610696</g:id>
@@ -3396,12 +4096,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3303.30 EUR</g:price>
 <g:sale_price>2312.31 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610696</g:mpn>
 <g:product_type>
 <![CDATA[ Escritório ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610627</g:id>
@@ -3421,12 +4126,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4232.80 EUR</g:price>
 <g:sale_price>2962.96 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610627</g:mpn>
 <g:product_type>
 <![CDATA[ Escritório ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610628</g:id>
@@ -3445,12 +4155,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2745.60 EUR</g:price>
 <g:sale_price>1921.92 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610628</g:mpn>
 <g:product_type>
 <![CDATA[ Escritório ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610629</g:id>
@@ -3469,12 +4184,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3174.60 EUR</g:price>
 <g:sale_price>2222.22 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610629</g:mpn>
 <g:product_type>
 <![CDATA[ Escritório ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611159</g:id>
@@ -3490,12 +4210,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/Contenitore-Ufficio-da-Cantiere-20′-–-Usura-Normale-2-300x300.png</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1260.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611159</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611160</g:id>
@@ -3511,12 +4236,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/Contenitore-Ufficio-Mobile-20′-–-Usura-Normale-1-300x300.png</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1500.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611160</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610625</g:id>
@@ -3537,12 +4267,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3546.40 EUR</g:price>
 <g:sale_price>2482.48 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610625</g:mpn>
 <g:product_type>
 <![CDATA[ Escritório ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611240</g:id>
@@ -3563,12 +4298,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4100.00 EUR</g:price>
 <g:sale_price>3499.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611240</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611231</g:id>
@@ -3585,12 +4325,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2000.00 EUR</g:price>
 <g:sale_price>1550.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611231</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611622</g:id>
@@ -3615,12 +4360,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>10800.00 EUR</g:price>
 <g:sale_price>8995.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611622</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611830</g:id>
@@ -3640,12 +4390,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1100.00 EUR</g:price>
 <g:sale_price>1025.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611830</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611566</g:id>
@@ -3670,12 +4425,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>10800.00 EUR</g:price>
 <g:sale_price>9100.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611566</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611169</g:id>
@@ -3692,12 +4452,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>6850.00 EUR</g:price>
 <g:sale_price>5500.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611169</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611621</g:id>
@@ -3720,12 +4485,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/1000002913-300x300.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>5100.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611621</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611162</g:id>
@@ -3749,12 +4519,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/1000003584-300x300.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>5100.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611162</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611175</g:id>
@@ -3774,12 +4549,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/37e3c5_22b03e84de0840d2968ebed73d21a5e0mv2-300x300.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>5100.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611175</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611229</g:id>
@@ -3801,12 +4581,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>6100.00 EUR</g:price>
 <g:sale_price>4299.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611229</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611168</g:id>
@@ -3823,12 +4608,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/Modulo-Container-Amenage-Modernita-Flessibilita-0-300x300.png</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1650.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611168</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611161</g:id>
@@ -3844,12 +4634,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/Modulo-Container-Prefabbricato-18-m²-Spazio-Extra-Pronto-allUso-0-300x300.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>4160.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611161</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610623</g:id>
@@ -3872,12 +4667,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3775.20 EUR</g:price>
 <g:sale_price>2642.64 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610623</g:mpn>
 <g:product_type>
 <![CDATA[ Escritório ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611228</g:id>
@@ -3894,12 +4694,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2000.00 EUR</g:price>
 <g:sale_price>1910.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611228</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611176</g:id>
@@ -3922,12 +4727,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4500.00 EUR</g:price>
 <g:sale_price>4100.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611176</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611227</g:id>
@@ -3948,12 +4758,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2400.00 EUR</g:price>
 <g:sale_price>2320.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611227</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611226</g:id>
@@ -3978,12 +4793,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3700.00 EUR</g:price>
 <g:sale_price>3599.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611226</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611180</g:id>
@@ -4003,12 +4823,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/batiment_bulle_vente_18m²-1-300x300.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>4500.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611180</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611179</g:id>
@@ -4030,12 +4855,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>8500.00 EUR</g:price>
 <g:sale_price>6960.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611179</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611178</g:id>
@@ -4055,12 +4885,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>9400.00 EUR</g:price>
 <g:sale_price>7900.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611178</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611724</g:id>
@@ -4079,12 +4914,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1400.00 EUR</g:price>
 <g:sale_price>1210.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611724</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610626</g:id>
@@ -4106,12 +4946,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3996.85 EUR</g:price>
 <g:sale_price>2797.79 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610626</g:mpn>
 <g:product_type>
 <![CDATA[ Escritório ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610707</g:id>
@@ -4131,12 +4976,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3646.50 EUR</g:price>
 <g:sale_price>2552.55 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610707</g:mpn>
 <g:product_type>
 <![CDATA[ Sanitário ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610865</g:id>
@@ -4156,12 +5006,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1099.67 EUR</g:price>
 <g:sale_price>769.77 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610865</g:mpn>
 <g:product_type>
 <![CDATA[ Sanitário ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610706</g:id>
@@ -4179,12 +5034,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2626.91 EUR</g:price>
 <g:sale_price>1838.84 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610706</g:mpn>
 <g:product_type>
 <![CDATA[ Sanitário ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610797</g:id>
@@ -4209,12 +5069,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2459.60 EUR</g:price>
 <g:sale_price>1721.72 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610797</g:mpn>
 <g:product_type>
 <![CDATA[ Sanitário ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611177</g:id>
@@ -4234,12 +5099,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1300.00 EUR</g:price>
 <g:sale_price>880.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611177</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611304</g:id>
@@ -4257,12 +5127,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>680.00 EUR</g:price>
 <g:sale_price>550.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611304</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611362</g:id>
@@ -4287,12 +5162,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1800.00 EUR</g:price>
 <g:sale_price>1580.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611362</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611309</g:id>
@@ -4317,12 +5197,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>11000.00 EUR</g:price>
 <g:sale_price>9800.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611309</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611313</g:id>
@@ -4339,12 +5224,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>7200.00 EUR</g:price>
 <g:sale_price>6100.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611313</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611311</g:id>
@@ -4369,12 +5259,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>6200.00 EUR</g:price>
 <g:sale_price>5099.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611311</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611312</g:id>
@@ -4393,12 +5288,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4000.00 EUR</g:price>
 <g:sale_price>3090.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611312</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611306</g:id>
@@ -4416,12 +5316,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>7600.00 EUR</g:price>
 <g:sale_price>6900.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611306</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611310</g:id>
@@ -4443,12 +5348,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4000.00 EUR</g:price>
 <g:sale_price>3390.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611310</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611307</g:id>
@@ -4468,12 +5378,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>910.00 EUR</g:price>
 <g:sale_price>899.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611307</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611308</g:id>
@@ -4495,12 +5410,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>7600.00 EUR</g:price>
 <g:sale_price>5590.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611308</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611419</g:id>
@@ -4524,12 +5444,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>9100.00 EUR</g:price>
 <g:sale_price>8890.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611419</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611422</g:id>
@@ -4552,12 +5477,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>13000.00 EUR</g:price>
 <g:sale_price>11620.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611422</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611420</g:id>
@@ -4582,12 +5512,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>10500.00 EUR</g:price>
 <g:sale_price>9300.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611420</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611421</g:id>
@@ -4612,12 +5547,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>12000.00 EUR</g:price>
 <g:sale_price>10050.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611421</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611423</g:id>
@@ -4640,12 +5580,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>11970.00 EUR</g:price>
 <g:sale_price>10435.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611423</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611366</g:id>
@@ -4670,12 +5615,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>12000.00 EUR</g:price>
 <g:sale_price>10090.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611366</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611368</g:id>
@@ -4699,12 +5649,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>12000.00 EUR</g:price>
 <g:sale_price>9299.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611368</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611726</g:id>
@@ -4726,12 +5681,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>11000.00 EUR</g:price>
 <g:sale_price>9810.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611726</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611418</g:id>
@@ -4756,12 +5716,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>9800.00 EUR</g:price>
 <g:sale_price>8100.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611418</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611835</g:id>
@@ -4780,12 +5745,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1300.00 EUR</g:price>
 <g:sale_price>905.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611835</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611829</g:id>
@@ -4810,12 +5780,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>6500.00 EUR</g:price>
 <g:sale_price>4450.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611829</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611837</g:id>
@@ -4834,12 +5809,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2000.00 EUR</g:price>
 <g:sale_price>1350.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611837</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611238</g:id>
@@ -4857,12 +5837,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4100.00 EUR</g:price>
 <g:sale_price>3580.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611238</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611235</g:id>
@@ -4882,12 +5867,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2600.00 EUR</g:price>
 <g:sale_price>1810.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611235</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611237</g:id>
@@ -4903,12 +5893,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/5D3078A0-A4A1-441C-9C61-3111AC8F1E76-300x300.jpg</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>5600.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611237</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Refrigerados ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611674</g:id>
@@ -4933,12 +5928,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>9500.00 EUR</g:price>
 <g:sale_price>8900.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611674</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610731</g:id>
@@ -4956,12 +5956,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5062.20 EUR</g:price>
 <g:sale_price>3543.54 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610731</g:mpn>
 <g:product_type>
 <![CDATA[ Piscinas ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610705</g:id>
@@ -4983,12 +5988,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>8036.60 EUR</g:price>
 <g:sale_price>5625.62 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610705</g:mpn>
 <g:product_type>
 <![CDATA[ Piscinas ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610794</g:id>
@@ -5006,12 +6016,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>7078.50 EUR</g:price>
 <g:sale_price>4954.95 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610794</g:mpn>
 <g:product_type>
 <![CDATA[ Piscinas ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610792</g:id>
@@ -5030,12 +6045,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5605.60 EUR</g:price>
 <g:sale_price>3923.92 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610792</g:mpn>
 <g:product_type>
 <![CDATA[ Piscinas ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610704</g:id>
@@ -5056,12 +6076,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>8043.75 EUR</g:price>
 <g:sale_price>5630.62 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610704</g:mpn>
 <g:product_type>
 <![CDATA[ Piscinas ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610791</g:id>
@@ -5080,12 +6105,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>4826.25 EUR</g:price>
 <g:sale_price>3378.37 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610791</g:mpn>
 <g:product_type>
 <![CDATA[ Piscinas ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610793</g:id>
@@ -5105,12 +6135,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>7293.00 EUR</g:price>
 <g:sale_price>5105.10 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610793</g:mpn>
 <g:product_type>
 <![CDATA[ Piscinas ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611367</g:id>
@@ -5135,12 +6170,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>10560.00 EUR</g:price>
 <g:sale_price>9699.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611367</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610948</g:id>
@@ -5154,12 +6194,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/a0a2dea73060_p1020526_small_1000x9999-300x300.webp</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>6970.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610948</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611233</g:id>
@@ -5176,12 +6221,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5500.00 EUR</g:price>
 <g:sale_price>4100.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611233</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610702</g:id>
@@ -5205,12 +6255,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>2466.75 EUR</g:price>
 <g:sale_price>1726.72 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610702</g:mpn>
 <g:product_type>
 <![CDATA[ Cafetaria Bar Restaurante ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610500</g:id>
@@ -5234,12 +6289,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>7035.60 EUR</g:price>
 <g:sale_price>4924.92 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610500</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Casa ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611234</g:id>
@@ -5256,12 +6316,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>5500.00 EUR</g:price>
 <g:sale_price>4600.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611234</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611158</g:id>
@@ -5280,12 +6345,17 @@
 <g:additional_image_link>https://portocontentores.pt/assets/uploads/2025/11/Ufficio-Container-di-18-m²-con-Servizi-Igienici-3-300x300.png</g:additional_image_link>
 <g:availability>in_stock</g:availability>
 <g:price>4000.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611158</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610697</g:id>
@@ -5310,12 +6380,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3760.90 EUR</g:price>
 <g:sale_price>2632.63 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610697</g:mpn>
 <g:product_type>
 <![CDATA[ Escritório ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610624</g:id>
@@ -5337,12 +6412,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>9881.30 EUR</g:price>
 <g:sale_price>6916.91 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610624</g:mpn>
 <g:product_type>
 <![CDATA[ Escritório ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276610499</g:id>
@@ -5363,12 +6443,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>3989.70 EUR</g:price>
 <g:sale_price>2792.79 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276610499</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores 40 Pés ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611053</g:id>
@@ -5382,12 +6467,17 @@
 <g:image_link>https://portocontentores.pt/assets/uploads/2025/11/a0a2dea73060_08lb_03-1-1-300x300.webp</g:image_link>
 <g:availability>in_stock</g:availability>
 <g:price>1780.00 EUR</g:price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611053</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611172</g:id>
@@ -5412,12 +6502,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>1150.00 EUR</g:price>
 <g:sale_price>907.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611172</g:mpn>
 <g:product_type>
 <![CDATA[ Não Categorizado ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 <item>
 <g:id>3276611567</g:id>
@@ -5442,12 +6537,17 @@
 <g:availability>in_stock</g:availability>
 <g:price>12500.00 EUR</g:price>
 <g:sale_price>9900.00 EUR</g:sale_price>
+<g:unit_pricing_measure>1 piece</g:unit_pricing_measure>
+<g:unit_pricing_base_measure>1 piece</g:unit_pricing_base_measure>
 <g:condition>new</g:condition>
-<g:brand>Porto Contentores</g:brand>
+<g:brand>
+<![CDATA[ Porto Contentores ]]>
+</g:brand>
+<g:mpn>3276611567</g:mpn>
 <g:product_type>
 <![CDATA[ Contentores Modulares ]]>
 </g:product_type>
-<g:identifier_exists>no</g:identifier_exists>
+<g:excluded_destination>free_local_listings local_inventory_ads</g:excluded_destination>
 </item>
 </channel>
 </rss>

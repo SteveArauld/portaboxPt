@@ -5,13 +5,14 @@ namespace Database\Seeders;
 use App\Models\Category;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\DB;
 
 class CategorySeeder extends Seeder
 {
     public function run(): void
     {
         // Récupérer la langue cible depuis le fichier .env
-        $targetLocale = config('app.locale', 'pt'); // par défaut 'pt'
+        $targetLocale = config('app.locale', 'pt');
 
         $categories = [
             [
@@ -19,7 +20,7 @@ class CategorySeeder extends Seeder
                     'it' => 'Container Modulari',
                     'en' => 'Modular Containers',
                     'fr' => 'Conteneurs Modulaires',
-                    'pt' => 'Contentores Modulares',  // ← Corrigé : Contentores (avec "o")
+                    'pt' => 'Contentores Modulares',
                     'es' => 'Contenedores Modulares'
                 ],
                 'description' => [
@@ -35,7 +36,7 @@ class CategorySeeder extends Seeder
                     'it' => 'Contenitori Casa',
                     'en' => 'Home Containers',
                     'fr' => 'Conteneurs Habitat',
-                    'pt' => 'Contentores Casa',  // ✅ Déjà corrigé
+                    'pt' => 'Contentores Casa',
                     'es' => 'Contenedores Casa'
                 ],
                 'description' => [
@@ -51,7 +52,7 @@ class CategorySeeder extends Seeder
                     'it' => 'Container di Stoccaggio',
                     'en' => 'Storage Containers',
                     'fr' => 'Conteneurs de Stockage',
-                    'pt' => 'Contentores de Armazenamento',  // ← Corrigé : Contentores (avec "o")
+                    'pt' => 'Contentores de Armazenamento',
                     'es' => 'Contenedores de Almacenamiento'
                 ],
                 'description' => [
@@ -67,7 +68,7 @@ class CategorySeeder extends Seeder
                     'it' => 'Contenitori 10 Piedi',
                     'en' => '10ft Containers',
                     'fr' => 'Conteneurs 10 Pieds',
-                    'pt' => 'Contentores 10 Pés',  // ← Corrigé : Contentores (avec "o")
+                    'pt' => 'Contentores 10 Pés',
                     'es' => 'Contenedores 10 Pies'
                 ],
                 'description' => [
@@ -83,7 +84,7 @@ class CategorySeeder extends Seeder
                     'it' => 'Contenitori 20 Piedi',
                     'en' => '20ft Containers',
                     'fr' => 'Conteneurs 20 Pieds',
-                    'pt' => 'Contentores 20 Pés',  // ← Corrigé : Contentores (avec "o")
+                    'pt' => 'Contentores 20 Pés',
                     'es' => 'Contenedores 20 Pies'
                 ],
                 'description' => [
@@ -99,7 +100,7 @@ class CategorySeeder extends Seeder
                     'it' => 'Contenitori 40 Piedi',
                     'en' => '40ft Containers',
                     'fr' => 'Conteneurs 40 Pieds',
-                    'pt' => 'Contentores 40 Pés',  // ← Corrigé : Contentores (avec "o")
+                    'pt' => 'Contentores 40 Pés',
                     'es' => 'Contenedores 40 Pies'
                 ],
                 'description' => [
@@ -115,7 +116,7 @@ class CategorySeeder extends Seeder
                     'it' => 'Container Refrigerati',
                     'en' => 'Refrigerated Containers',
                     'fr' => 'Conteneurs Réfrigérés',
-                    'pt' => 'Contentores Refrigerados',  // ← Corrigé : Contentores (avec "o")
+                    'pt' => 'Contentores Refrigerados',
                     'es' => 'Contenedores Refrigerados'
                 ],
                 'description' => [
@@ -131,7 +132,7 @@ class CategorySeeder extends Seeder
                     'it' => 'Container Standard Usati',
                     'en' => 'Used Standard Containers',
                     'fr' => 'Conteneurs Standards d\'Occasion',
-                    'pt' => 'Contentores Padrão Usados',  // ← Corrigé : Contentores (avec "o")
+                    'pt' => 'Contentores Padrão Usados',
                     'es' => 'Contenedores Estándar Usados'
                 ],
                 'description' => [
@@ -147,7 +148,7 @@ class CategorySeeder extends Seeder
                     'it' => 'Caffetteria Bar Ristorante',
                     'en' => 'Coffee Bar Restaurant',
                     'fr' => 'Cafétéria Bar Restaurant',
-                    'pt' => 'Cafetaria Bar Restaurante',  // ← Corrigé : Cafetaria (avec un "t")
+                    'pt' => 'Cafetaria Bar Restaurante',
                     'es' => 'Cafetería Bar Restaurante'
                 ],
                 'description' => [
@@ -195,7 +196,7 @@ class CategorySeeder extends Seeder
                     'it' => 'Container Laterale Aperto',
                     'en' => 'Open Side Container',
                     'fr' => 'Conteneur à Ouverture Latérale',
-                    'pt' => 'Contentor com Abertura Lateral',  // ← Corrigé : Contentor (singulier avec "o")
+                    'pt' => 'Contentor com Abertura Lateral',
                     'es' => 'Contenedor con Apertura Lateral'
                 ],
                 'description' => [
@@ -211,7 +212,7 @@ class CategorySeeder extends Seeder
                     'it' => 'Piscina',
                     'en' => 'Swimming Pool',
                     'fr' => 'Piscine',
-                    'pt' => 'Piscinas',  // ← Corrigé : Piscinas (pluriel)
+                    'pt' => 'Piscinas',
                     'es' => 'Piscinas'
                 ],
                 'description' => [
@@ -240,10 +241,16 @@ class CategorySeeder extends Seeder
             ]
         ];
 
-        // 1. Supprimer toutes les catégories existantes pour repartir de zéro
+        // Désactiver les contraintes de clé étrangère
+        DB::statement('SET FOREIGN_KEY_CHECKS=0');
+        
+        // Supprimer toutes les catégories existantes pour repartir de zéro
         Category::truncate();
+        
+        // Réactiver les contraintes de clé étrangère
+        DB::statement('SET FOREIGN_KEY_CHECKS=1');
 
-        // 2. Créer les nouvelles catégories
+        // Créer les nouvelles catégories
         foreach ($categories as $categoryData) {
             // Générer le slug à partir du nom en portugais (Portugal)
             $ptName = $categoryData['name']['pt'] ?? $categoryData['name']['it'] ?? 'Não categorizado';

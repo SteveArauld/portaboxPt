@@ -80,9 +80,9 @@ class GoogleFeedController extends Controller
                         $item = $this->buildItem($dom, $article, $skipped);
                         $channel->appendChild($item);
                     } catch (\Throwable $e) {
-                        $skipped[] = $article->sku . ' (' . $e->getMessage() . ')';
+                        $skipped[] = $article->id. ' (' . $e->getMessage() . ')';
                         Log::warning('GoogleFeed: produit ignoré à cause d\'une erreur', [
-                            'sku' => $article->sku,
+                            'sku' => $article->id,
                             'error' => $e->getMessage(),
                         ]);
                     }
@@ -117,17 +117,17 @@ class GoogleFeedController extends Controller
         // Plutôt que de laisser le tag absent silencieusement, on met un
         // fallback lisible et on logue l'anomalie pour correction manuelle.
         if (trim($name) === '') {
-            $name = 'Produit ' . $article->sku;
-            $skipped[] = $article->sku . ' (title vide, fallback utilisé)';
+            $name = 'Produit ' . $article->id;
+            $skipped[] = $article->id. ' (title vide, fallback utilisé)';
         }
         if (trim(strip_tags((string) $description)) === '') {
             $description = $name;
-            $skipped[] = $article->sku . ' (description vide, fallback utilisé)';
+            $skipped[] = $article->id. ' (description vide, fallback utilisé)';
         }
 
         $description = strip_tags($description);
 
-        $this->appendG($dom, $item, 'id', $article->sku);
+        $this->appendG($dom, $item, 'id', $article->id);
         $this->appendG($dom, $item, 'title', $name, true);
         $this->appendG($dom, $item, 'description', $description, true);
         $this->appendG($dom, $item, 'link', route('product.show', $article->slug));
@@ -139,7 +139,7 @@ class GoogleFeedController extends Controller
                 $this->appendG($dom, $item, 'additional_image_link', $this->imageUrl($image->image_path));
             }
         } else {
-            $skipped[] = $article->sku . ' (aucune image - image_link manquant, Google va rejeter cette ligne)';
+            $skipped[] = $article->id. ' (aucune image - image_link manquant, Google va rejeter cette ligne)';
         }
 
         $availability = $article->stock > 0 ? 'in_stock' : 'out_of_stock';
@@ -164,7 +164,7 @@ class GoogleFeedController extends Controller
         // PAS identifier_exists=no (contradiction sinon, source d'avertissements
         // Merchant Center). Sinon on retombe sur identifier_exists=no.
         $brand = $article->brand ?? $this->defaultBrand;
-        $mpn = $article->mpn ?? $article->sku;
+        $mpn = $article->mpn ?? $article->id;
         $gtin = $article->gtin ?? null;
 
         if ($brand && ($mpn || $gtin)) {
