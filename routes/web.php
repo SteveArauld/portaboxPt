@@ -43,5 +43,10 @@ Route::get('/politica-de-devolucao-e-reembolso', [HomeController::class, 'refund
 Route::get('/politica-de-pagamento', [HomeController::class, 'paymentPolicy'])->name('payment.policy');
 
 // Feed
-Route::get('/feeed/google-merchant.xml', [GoogleFeedController::class, 'generate'])
+// Téléchargement direct du fichier XML
+Route::get('/feed/google-merchant.xml', [GoogleFeedController::class, 'download'])
     ->name('feed.google-merchant');
+
+// Affichage inline (pour debug)
+Route::get('/feed/google-merchant-view', [GoogleFeedController::class, 'generate'])
+    ->name('feed.google-merchant.view');

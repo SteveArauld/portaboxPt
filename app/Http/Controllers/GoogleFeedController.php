@@ -16,36 +16,34 @@ class GoogleFeedController extends Controller
     private string $defaultBrand = 'Porto Contentores';
 
     /**
-     * Génère le flux et le PROPOSE EN TÉLÉCHARGEMENT direct au navigateur.
+     * Génère le flux et le retourne directement dans le navigateur (téléchargement).
      * C'est la méthode à appeler depuis la route.
      */
     public function download(): Response
     {
-        $path = $this->generateFile();
+        $xml = $this->generateXml();
 
-        return response()->download(
-            $path,
-            'google-merchant-feed.xml',
-            ['Content-Type' => 'application/xml; charset=UTF-8']
-        );
+        return response($xml, 200)
+            ->header('Content-Type', 'application/xml; charset=UTF-8')
+            ->header('Content-Disposition', 'attachment; filename="google-merchant-feed.xml"');
     }
 
     /**
-     * Génère le flux et le retourne inline (utile pour debug / vérification rapide
-     * sans télécharger). Garde l'ancien comportement disponible séparément.
+     * Génère le flux et l'affiche dans le navigateur (inline).
+     * Utile pour voir le XML sans le télécharger.
      */
     public function generate(): Response
     {
-        $path = $this->generateFile();
+        $xml = $this->generateXml();
 
-        return response(file_get_contents($path), 200)
+        return response($xml, 200)
             ->header('Content-Type', 'application/xml; charset=UTF-8');
     }
 
     /**
-     * Construit le XML, l'écrit sur le disque et retourne le chemin du fichier.
+     * Construit le XML et le retourne sous forme de chaîne.
      */
-    private function generateFile(): string
+    private function generateXml(): string
     {
         $dom = new \DOMDocument('1.0', 'UTF-8');
         $dom->formatOutput = true;
@@ -75,12 +73,11 @@ class GoogleFeedController extends Controller
         }])
             ->chunk(200, function ($articles) use ($dom, $channel, &$skipped) {
                 foreach ($articles as $article) {
-                    // On ne laisse jamais une exception sur UN produit casser tout le flux
                     try {
                         $item = $this->buildItem($dom, $article, $skipped);
                         $channel->appendChild($item);
                     } catch (\Throwable $e) {
-                        $skipped[] = $article->id. ' (' . $e->getMessage() . ')';
+                        $skipped[] = $article->id . ' (' . $e->getMessage() . ')';
                         Log::warning('GoogleFeed: produit ignoré à cause d\'une erreur', [
                             'sku' => $article->id,
                             'error' => $e->getMessage(),
@@ -93,15 +90,7 @@ class GoogleFeedController extends Controller
             Log::warning('GoogleFeed: produits avec champs incomplets', ['skus' => $skipped]);
         }
 
-        $xml = $dom->saveXML();
-
-        $path = public_path('feed/google-merchant.xml');
-        if (!is_dir(dirname($path))) {
-            mkdir(dirname($path), 0755, true);
-        }
-        file_put_contents($path, $xml);
-
-        return $path;
+        return $dom->saveXML();
     }
 
     private function buildItem(\DOMDocument $dom, Article $article, array &$skipped): \DOMElement
@@ -113,16 +102,13 @@ class GoogleFeedController extends Controller
             ?? $this->translate($article, 'short_description')
             ?? $name;
 
-        // Filet de sécurité : Google REJETTE une ligne sans title/description.
-        // Plutôt que de laisser le tag absent silencieusement, on met un
-        // fallback lisible et on logue l'anomalie pour correction manuelle.
         if (trim($name) === '') {
             $name = 'Produit ' . $article->id;
-            $skipped[] = $article->id. ' (title vide, fallback utilisé)';
+            $skipped[] = $article->id . ' (title vide, fallback utilisé)';
         }
         if (trim(strip_tags((string) $description)) === '') {
             $description = $name;
-            $skipped[] = $article->id. ' (description vide, fallback utilisé)';
+            $skipped[] = $article->id . ' (description vide, fallback utilisé)';
         }
 
         $description = strip_tags($description);
@@ -139,7 +125,7 @@ class GoogleFeedController extends Controller
                 $this->appendG($dom, $item, 'additional_image_link', $this->imageUrl($image->image_path));
             }
         } else {
-            $skipped[] = $article->id. ' (aucune image - image_link manquant, Google va rejeter cette ligne)';
+            $skipped[] = $article->id . ' (aucune image - image_link manquant, Google va rejeter cette ligne)';
         }
 
         $availability = $article->stock > 0 ? 'in_stock' : 'out_of_stock';
@@ -155,14 +141,8 @@ class GoogleFeedController extends Controller
         $this->appendG($dom, $item, 'unit_pricing_measure', '1 piece');
         $this->appendG($dom, $item, 'unit_pricing_base_measure', '1 piece');
 
-        // condition : lit la colonne 'condition' si elle existe (migration brand/mpn/condition),
-        // sinon 'new' par défaut. Ne casse rien tant que la migration n'est pas encore passée.
         $this->appendG($dom, $item, 'condition', $article->condition ?? 'new');
 
-        // brand / mpn / gtin : logique cohérente avec identifier_exists.
-        // Si on a un identifiant réel (mpn/gtin), on l'envoie ET on n'envoie
-        // PAS identifier_exists=no (contradiction sinon, source d'avertissements
-        // Merchant Center). Sinon on retombe sur identifier_exists=no.
         $brand = $article->brand ?? $this->defaultBrand;
         $mpn = $article->mpn ?? $article->id;
         $gtin = $article->gtin ?? null;
@@ -186,7 +166,6 @@ class GoogleFeedController extends Controller
             }
         }
 
-        // Désactiver les annonces locales car pas de magasins physiques
         $this->appendG($dom, $item, 'excluded_destination', 'free_local_listings local_inventory_ads');
 
         return $item;
@@ -257,7 +236,6 @@ class GoogleFeedController extends Controller
             }
         }
 
-        // Dernier recours : la première valeur non vide du tableau
         foreach ($translations as $value) {
             if (!empty($value)) {
                 return $value;
