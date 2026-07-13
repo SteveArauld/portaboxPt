@@ -138,8 +138,38 @@ class GoogleFeedController extends Controller
             $this->appendG($dom, $item, 'price', number_format($article->price, 2, '.', '') . ' ' . $this->currency);
         }
 
-        $this->appendG($dom, $item, 'unit_pricing_measure', '1 piece');
-        $this->appendG($dom, $item, 'unit_pricing_base_measure', '1 piece');
+        // ============================================================
+        // CORRECTION 1: UNIT_PRICING_MEASURE et UNIT_PRICING_BASE_MEASURE
+        // ============================================================
+        $unit = $this->getUnitPricing($article);
+        $this->appendG($dom, $item, 'unit_pricing_measure', $unit);
+        $this->appendG($dom, $item, 'unit_pricing_base_measure', $unit);
+
+        // ============================================================
+        // CORRECTION 2: CERTIFICATION (CE pour l'Europe)
+        // ============================================================
+        $certification = $this->getCertification($article);
+        if ($certification) {
+            $this->appendG($dom, $item, 'certification', $certification);
+        }
+
+        // ============================================================
+        // CORRECTION 3: PRODUCT_TYPE - Gérer "Não Categorizado"
+        // ============================================================
+        if ($article->category) {
+            $categoryName = $this->translate($article, 'category.name');
+            if ($categoryName && $categoryName !== 'Não Categorizado' && $categoryName !== 'Sin Categoría' && $categoryName !== 'Non Categorizzato') {
+                $this->appendG($dom, $item, 'product_type', $categoryName, true);
+            } else {
+                // Pour les produits non catégorisés, mettre une catégorie par défaut
+                $this->appendG($dom, $item, 'product_type', 'Contentores Modulares', true);
+                $skipped[] = $article->id . ' (catégorie "Não Categorizado" remplacée par Contentores Modulares)';
+            }
+        } else {
+            // Si pas de catégorie du tout
+            $this->appendG($dom, $item, 'product_type', 'Contentores Modulares', true);
+            $skipped[] = $article->id . ' (aucune catégorie, fallback Contentores Modulares)';
+        }
 
         $this->appendG($dom, $item, 'condition', $article->condition ?? 'new');
 
@@ -159,13 +189,9 @@ class GoogleFeedController extends Controller
             $this->appendG($dom, $item, 'identifier_exists', 'no');
         }
 
-        if ($article->category) {
-            $categoryName = $this->translate($article, 'category.name');
-            if ($categoryName) {
-                $this->appendG($dom, $item, 'product_type', $categoryName, true);
-            }
-        }
-
+        // ============================================================
+        // CORRECTION 4: EXCLUDED_DESTINATION - Déjà présent ✅
+        // ============================================================
         $this->appendG($dom, $item, 'excluded_destination', 'free_local_listings local_inventory_ads');
 
         return $item;
@@ -242,6 +268,79 @@ class GoogleFeedController extends Controller
             }
         }
 
+        return null;
+    }
+
+    /**
+     * Détermine l'unité de prix selon la catégorie du produit
+     */
+    private function getUnitPricing(Article $article): string
+    {
+        $categoryName = $article->category?->getTranslation('name', 'pt') ?? '';
+        $categoryNameLower = strtolower($categoryName);
+        
+        // Conteneurs par taille
+        if (str_contains($categoryNameLower, '10 pés') || 
+            str_contains($categoryNameLower, '10 pies') ||
+            str_contains($categoryNameLower, '20 pés') || 
+            str_contains($categoryNameLower, '20 pies') ||
+            str_contains($categoryNameLower, '40 pés') || 
+            str_contains($categoryNameLower, '40 pies')) {
+            return '1 container';
+        }
+        
+        // Par surface (m²)
+        if (str_contains($categoryNameLower, 'm²') || 
+            str_contains($categoryNameLower, 'metro') ||
+            str_contains($categoryNameLower, 'metro quadrado')) {
+            return '1 m²';
+        }
+        
+        // Par litre
+        if (str_contains($categoryNameLower, 'litro') || 
+            str_contains($categoryNameLower, 'litre') ||
+            str_contains($categoryNameLower, 'l')) {
+            return '1 L';
+        }
+        
+        // Par kg
+        if (str_contains($categoryNameLower, 'kg') || 
+            str_contains($categoryNameLower, 'kilograma') ||
+            str_contains($categoryNameLower, 'kilo')) {
+            return '1 kg';
+        }
+        
+        // Par défaut: à l'unité
+        return '1 piece';
+    }
+
+    /**
+     * Détermine la certification du produit
+     */
+    private function getCertification(Article $article): ?string
+    {
+        // Si le produit a une certification spécifique
+        if (isset($article->certification) && !empty($article->certification)) {
+            return $article->certification;
+        }
+        
+        // Si le produit a la certification CE
+        if (isset($article->ce_certified) && $article->ce_certified) {
+            return 'CE';
+        }
+        
+        // Pour les conteneurs, certification CE par défaut (produits UE)
+        $categoryName = $article->category?->getTranslation('name', 'pt') ?? '';
+        $categoryNameLower = strtolower($categoryName);
+        if (str_contains($categoryNameLower, 'contentor') || 
+            str_contains($categoryNameLower, 'conteneur') ||
+            str_contains($categoryNameLower, 'container') ||
+            str_contains($categoryNameLower, 'piscina') ||
+            str_contains($categoryNameLower, 'abrigo')) {
+            return 'CE';
+        }
+        
+        // Pas de certification
         return null;
     }
 }
