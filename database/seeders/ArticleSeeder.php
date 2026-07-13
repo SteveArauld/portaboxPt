@@ -8555,7 +8555,7 @@ class ArticleSeeder extends Seeder
                         'old_price' => $oldPrice,
                         'discount_percentage' => $item['discount_percentage'] ?? null,
                         'short_description' => $item['short_description'],
-                        'description' => $item['description'],
+                        'description' => $item['short_description'],
                         'link' => $item['link'] ?? null,
                         'stock' => rand(1, 20),
                         'category_id' => $this->getCategoryId($item['categories'], $categories, $targetLocale)

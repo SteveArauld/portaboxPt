@@ -213,7 +213,12 @@ class OrderController extends Controller
             });
         } catch (Exception $e) {
             // On n'interrompt pas la commande si l'email échoue, mais on le journalise.
-            Log::error('Erreur envoi email commande ' . $order->order_number . ': ' . $e->getMessage());
+            Log::error('Erreur envoi email commande ' . $order->order_number . ': ' . $e->getMessage(), [
+                'exception' => get_class($e),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+                'trace' => $e->getTraceAsString(),
+            ]);
             $emailSuccess = false;
         } finally {
             // Restaurer la locale originale

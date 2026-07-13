@@ -12,26 +12,31 @@ class Article extends Model
     use HasTranslations;
 
     protected $fillable = [
-        'name', 
-        'slug', 
-        'sku', 
-        'price', 
-        'old_price', 
-        'discount_percentage', 
-        'short_description', 
-        'description', 
-        'link', 
-        'stock', 
+        'name',
+        'slug',
+        'sku',
+        'brand',
+        'mpn',
+        'gtin',
+        'condition',
+        'price',
+        'old_price',
+        'discount_percentage',
+        'short_description',
+        'description',
+        'link',
+        'stock',
         'category_id'
     ];
 
+    // IMPORTANT : ne JAMAIS ajouter 'name', 'short_description' ou 'description'
+    // ici en cast 'array'. HasTranslations gère déjà la sérialisation JSON de
+    // ces champs en interne. Les deux mécanismes combinés produisent des
+    // valeurs corrompues (string au lieu d'array, traductions vides, etc.)
     protected $casts = [
         'price' => 'decimal:2',
         'old_price' => 'decimal:2',
         'stock' => 'integer',
-        'name' => 'array',
-        'short_description' => 'array',
-        'description' => 'array',
     ];
 
     public $translatable = [
@@ -39,7 +44,6 @@ class Article extends Model
         'short_description',
         'description'
     ];
-
 
     public function category(): BelongsTo
     {
