@@ -139,28 +139,33 @@ class GoogleFeedController extends Controller
         }
 
         // ============================================================
-        // CORRECTION 1: UNIT_PRICING_MEASURE et UNIT_PRICING_BASE_MEASURE
-        // TOUJOURS PRÉSENTS, MÊME POUR LES PRODUITS SANS CATÉGORIE
+        // UNIT_PRICING_MEASURE / UNIT_PRICING_BASE_MEASURE
+        // Uniquement envoyé quand pertinent (produit vendu au m² ou au kg)
+        // avec un format d'unité valide et sans espace ("1kg", pas "1 kg").
+        // Google ne l'exige pas pour des produits vendus à l'unité
+        // (conteneurs, maisons modulaires), donc on n'envoie rien dans ce cas
+        // plutôt que d'envoyer une unité invalide ("piece", "container").
         // ============================================================
         $unit = $this->getUnitPricing($article);
-        $this->appendG($dom, $item, 'unit_pricing_measure', $unit);
-        $this->appendG($dom, $item, 'unit_pricing_base_measure', $unit);
-
-        // ============================================================
-        // CORRECTION 2: CERTIFICATION - Format correct pour Google
-        // Google attend: country:certification_code ou simplement CE
-        // ============================================================
-        $certification = $this->getCertification($article);
-        if ($certification) {
-            // Format correct pour Google: "CE" ou "country:CE"
-            $this->appendG($dom, $item, 'certification', $certification);
-        } else {
-            // Si pas de certification, on ne met rien (pas de tag)
-            $skipped[] = $article->id . ' (pas de certification)';
+        if ($unit) {
+            $this->appendG($dom, $item, 'unit_pricing_measure', $unit);
+            $this->appendG($dom, $item, 'unit_pricing_base_measure', $unit);
         }
 
         // ============================================================
-        // CORRECTION 3: PRODUCT_TYPE - Gérer "Não Categorizado"
+        // CERTIFICATION
+        // Cet attribut sert uniquement à l'étiquette énergie EPREL de l'UE
+        // (format obligatoire "EC:EPREL:CODE"), pas au marquage CE générique.
+        // On ne l'envoie que si une vraie certification EPREL existe pour
+        // ce produit ; sinon on omet simplement l'attribut.
+        // ============================================================
+        $certification = $this->getCertification($article);
+        if ($certification) {
+            $this->appendG($dom, $item, 'certification', $certification);
+        }
+
+        // ============================================================
+        // PRODUCT_TYPE - Gérer "Não Categorizado"
         // ============================================================
         if ($article->category) {
             $categoryName = $this->translate($article, 'category.name');
@@ -196,9 +201,13 @@ class GoogleFeedController extends Controller
         }
 
         // ============================================================
-        // CORRECTION 4: EXCLUDED_DESTINATION - Déjà présent ✅
+        // EXCLUDED_DESTINATION
+        // Une balise <g:excluded_destination> distincte par valeur
+        // (le format XML de Google n'accepte pas une chaîne avec espaces).
         // ============================================================
-        $this->appendG($dom, $item, 'excluded_destination', 'free_local_listings local_inventory_ads');
+        foreach (['free_local_listings', 'local_inventory_ads'] as $destination) {
+            $this->appendG($dom, $item, 'excluded_destination', $destination);
+        }
 
         return $item;
     }
@@ -278,89 +287,59 @@ class GoogleFeedController extends Controller
     }
 
     /**
-     * Détermine l'unité de prix selon la catégorie du produit
-     * Retourne TOUJOURS une valeur (jamais null)
+     * Détermine l'unité de prix selon la catégorie du produit.
+     * Ne retourne une valeur QUE quand c'est pertinent (vente au m² ou au kg),
+     * avec un format valide pour Google : unité collée au nombre, sans espace,
+     * et un code d'unité reconnu (kg, l, sqm...). "piece" et "container" ne
+     * sont PAS des unités valides pour Google, donc on ne les envoie plus.
+     * Retourne null si l'attribut n'est pas applicable au produit.
      */
-    private function getUnitPricing(Article $article): string
+    private function getUnitPricing(Article $article): ?string
     {
         $categoryName = $article->category?->getTranslation('name', 'pt') ?? '';
         $categoryNameLower = strtolower($categoryName);
-        
-        // Conteneurs par taille
-        if (str_contains($categoryNameLower, '10 pés') || 
-            str_contains($categoryNameLower, '10 pies') ||
-            str_contains($categoryNameLower, '20 pés') || 
-            str_contains($categoryNameLower, '20 pies') ||
-            str_contains($categoryNameLower, '40 pés') || 
-            str_contains($categoryNameLower, '40 pies')) {
-            return '1 container';
+
+        // Par surface (m²) -> unité Google valide : sqm
+        if (str_contains($categoryNameLower, 'm²') ||
+            str_contains($categoryNameLower, 'metro quadrado') ||
+            str_contains($categoryNameLower, 'metro')) {
+            return '1sqm';
         }
-        
-        // Par surface (m²)
-        if (str_contains($categoryNameLower, 'm²') || 
-            str_contains($categoryNameLower, 'metro') ||
-            str_contains($categoryNameLower, 'metro quadrado')) {
-            return '1 m²';
-        }
-        
-        // Par litre
-        if (str_contains($categoryNameLower, 'litro') || 
-            str_contains($categoryNameLower, 'litre') ||
-            str_contains($categoryNameLower, 'l')) {
-            return '1 L';
-        }
-        
-        // Par kg
-        if (str_contains($categoryNameLower, 'kg') || 
+
+        // Par kg -> unité Google valide : kg
+        if (str_contains($categoryNameLower, 'kg') ||
             str_contains($categoryNameLower, 'kilograma') ||
             str_contains($categoryNameLower, 'kilo')) {
-            return '1 kg';
+            return '1kg';
         }
-        
-        // Par défaut: à l'unité (toujours une valeur)
-        return '1 piece';
+
+        // Par litre -> unité Google valide : l
+        if (str_contains($categoryNameLower, 'litro') ||
+            str_contains($categoryNameLower, 'litre')) {
+            return '1l';
+        }
+
+        // Conteneurs, maisons modulaires, etc. vendus à l'unité :
+        // cet attribut n'est pas exigé par Google pour ce type de vente,
+        // donc on ne l'envoie pas plutôt que d'inventer une unité invalide.
+        return null;
     }
 
     /**
-     * Détermine la certification du produit
-     * Retourne CE pour tous les produits UE (Portugal)
+     * Détermine la certification EPREL du produit (énergie UE), au format
+     * exact attendu par Google : "EC:EPREL:CODE". Retourne null si le
+     * produit n'a pas de certification EPREL réelle enregistrée -
+     * n'invente jamais de valeur type "CE", qui n'est pas un format valide
+     * pour cet attribut.
      */
     private function getCertification(Article $article): ?string
     {
-        // Si le produit a une certification spécifique
-        if (isset($article->certification) && !empty($article->certification)) {
-            // Format correct pour Google: "CE" ou "country:CE"
-            return $article->certification;
+        if (!empty($article->certification_authority)
+            && !empty($article->certification_name)
+            && !empty($article->certification_code)) {
+            return $article->certification_authority . ':' . $article->certification_name . ':' . $article->certification_code;
         }
-        
-        // Si le produit a la certification CE
-        if (isset($article->ce_certified) && $article->ce_certified) {
-            return 'CE';
-        }
-        
-        // Pour les conteneurs, certification CE par défaut (produits UE)
-        $categoryName = $article->category?->getTranslation('name', 'pt') ?? '';
-        $categoryNameLower = strtolower($categoryName);
-        if (str_contains($categoryNameLower, 'contentor') || 
-            str_contains($categoryNameLower, 'conteneur') ||
-            str_contains($categoryNameLower, 'container') ||
-            str_contains($categoryNameLower, 'piscina') ||
-            str_contains($categoryNameLower, 'abrigo') ||
-            str_contains($categoryNameLower, 'casa') ||
-            str_contains($categoryNameLower, 'monobloc') ||
-            str_contains($categoryNameLower, 'sanit') ||
-            str_contains($categoryNameLower, 'office')) {
-            return 'CE';
-        }
-        
-        // Pour les produits de la catégorie "Não Categorizado" ou sans catégorie
-        // On met CE par défaut car c'est un produit vendu en UE
-        if ($categoryName === '' || $categoryName === 'Não Categorizado' || $categoryName === 'Sin Categoría') {
-            return 'CE';
-        }
-        
-        // Toujours retourner CE pour les produits vendus au Portugal (UE)
-        // Cela évite l'erreur "Missing certification attribute"
-        return 'CE';
+
+        return null;
     }
 }
