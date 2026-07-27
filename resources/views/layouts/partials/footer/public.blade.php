@@ -259,6 +259,8 @@
                             </div>
                         </div>
                     </div>
+                    @include('front.partials.payment-methods')
+
                     <div class="elementor-element elementor-element-f1e0fb9 elementor-widget elementor-widget-image"
                          data-id="f1e0fb9" data-element_type="widget" data-widget_type="image.default">
                         <img loading="lazy" width="120" height="120" src="/assets/uploads/2024/07/EU.webp"

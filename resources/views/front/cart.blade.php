@@ -127,6 +127,8 @@
 
         <div class="pbs-page">
             <div id="pbs-cart-content"></div>
+
+            @include('front.partials.payment-methods', ['align' => 'center'])
         </div>
     </div>
 @endsection

@@ -46,8 +46,6 @@
     "Verify Email Address": "Verify Email Address",
     "Whoops!": "Whoops!",
     "You are receiving this email because we received a password reset request for your account.": "You are receiving this email because we received a password reset request for your account.",
-
-
     "header.email": "Email",
     "header.all_categories": "All Categories",
     "header.category.caffetteria": "Cafeteria / Bar / Restaurant",
@@ -77,7 +75,6 @@
     "header.menu.shop": "Shop",
     "header.menu.faq": "FAQ",
     "header.menu.contato": "contato",
-
     "footer.features.delivery": "Efficient delivery: receive your order quickly.",
     "footer.features.security": "Certified security: compliant with ISO standards.",
     "footer.features.support": "Specialized support: our advisors are at your service.",
@@ -105,7 +102,6 @@
     "footer.mobile.main_menu": "Main Menu",
     "footer.mobile.menu": "Menu",
     "footer.back_to_top": "Back to top",
-
     "delivery.page_title": "Delivery Policy",
     "delivery.breadcrumb_home": "Home",
     "delivery.breadcrumb_current": "Delivery Policy",
@@ -210,7 +206,6 @@
     "delivery.last_update": "Last update:",
     "delivery.date": "February 14, 2025",
     "delivery.copyright": "© – All rights reserved.",
-
     "home.slider.loading": "Loading slider...",
     "home.slider.slide1.title": "Shipping Containers for Every Need",
     "home.slider.slide2.title": "Ready-to-live-in Container Homes",
@@ -239,7 +234,6 @@
     "home.testimonials.text2": "The team built a completely customized container home for me. Perfect finishes, excellent insulation, and punctual delivery. I am really satisfied with the result.",
     "home.testimonials.text3": "We got a refrigerated container for our agricultural business. It works perfectly and maintains a stable temperature even with large loads. Excellent technical support.",
     "home.testimonials.text4": "Impeccable experience. The staff is friendly, competent, and helped me choose the most suitable solution for my needs. The container arrived in excellent condition.",
-
     "product.breadcrumb.home": "Home",
     "product.breadcrumb.category": "Category",
     "product.stock.in_stock": "In stock (:stock available)",
@@ -267,15 +261,12 @@
     "product.inquiry.message": "Your message *",
     "product.inquiry.message_placeholder": "Write your request here...",
     "product.inquiry.submit": "Send request",
-"product.inquiry.success": "Your order has been successfully recorded. We will contato you shortly to confirm the details.",    "product.inquiry.error": "An error occurred while sending your request. Please try again.",
+    "product.inquiry.success": "Your order has been successfully recorded. We will contato you shortly to confirm the details.",
+    "product.inquiry.error": "An error occurred while sending your request. Please try again.",
     "product.related.title": "Related Products",
-
-
     "product.inquiry.max_stock_reached": "You have reached the maximum available quantity (:stock)",
     "product.inquiry.quantity_exceeds_stock": "The requested quantity (:quantity) exceeds the available stock (:stock)",
     "product.inquiry.product_out_of_stock": "This product is out of stock",
-
-
     "shop.page_title": "Shop",
     "shop.breadcrumb_home": "Home",
     "shop.filters.categories": "Categories",
@@ -302,7 +293,6 @@
     "shop.products.price_suffix": "VAT included",
     "shop.pagination.previous": "Previous",
     "shop.pagination.next": "Next",
-
     "contato.page_title": "contato",
     "contato.title": "contato Us",
     "contato.address": "Address: Via Case Rosse, 19/B 84131 Salerno (SA), Italy",
@@ -314,10 +304,8 @@
     "contato.form.subject": "Subject *",
     "contato.form.message": "Message",
     "contato.form.submit": "Send",
-
     "contato.form.success": "Your message has been sent successfully! We will get back to you as soon as possible.",
     "contato.form.validation_error": "Please fill in all fields correctly.",
-
     "faq.page_title": "FAQ",
     "faq.breadcrumb_home": "Home",
     "faq.breadcrumb_current": "FAQ",
@@ -329,7 +317,6 @@
     "faq.a3": "<p>As soon as your order is shipped, you will receive an email with the tracking number.<br>You can check the delivery status directly on the transport company's website.</p>",
     "faq.q4": "04. Are your products covered by a warranty?",
     "faq.a4": "<p>Yes. All our products include a 2-year manufacturer's warranty.<br>The duration may vary depending on the manufacturer.<br>In case of malfunction during the warranty period, please contato our customer service.</p>",
-
     "about.page_title": "About Us",
     "about.breadcrumb_home": "Home",
     "about.breadcrumb_current": "About Us",
@@ -341,7 +328,6 @@
     "about.innovation_text": "At Porto Contentores, we believe in innovation as a driver of growth. Thanks to an experienced team, we create modern, resistant, and adaptable modular structures for multiple uses. Each intervention is designed to guarantee safety, comfort, and maximum efficiency.",
     "about.quality_title": "Quality that Makes the Difference",
     "about.quality_text": "Our containers are selected and modified according to high standards, with certified materials and controlled processes. We offer ISO, insulated, refrigerated containers, and housing solutions with careful attention to detail. Quality is our daily commitment.",
-
     "terms.page_title": "Terms and Conditions",
     "terms.breadcrumb_home": "Home",
     "terms.breadcrumb_current": "Terms and Conditions",
@@ -462,7 +448,6 @@
     "terms.last_update": "Last update:",
     "terms.date": "February 14, 2025",
     "terms.copyright": "© – All rights reserved.",
-
     "privacy.page_title": "Privacy Policy",
     "privacy.breadcrumb_home": "Home",
     "privacy.breadcrumb_current": "Privacy Policy",
@@ -570,7 +555,6 @@
     "privacy.last_update": "Last update:",
     "privacy.date": "February 14, 2025",
     "privacy.copyright": "© – All rights reserved.",
-
     "payment.page_title": "Payment Policy",
     "payment.breadcrumb_home": "Home",
     "payment.breadcrumb_current": "Payment Policy",
@@ -590,7 +574,6 @@
     "payment.section4.text1": "The customer must ensure with their bank that the total amount of the order is credited to the account made available by",
     "payment.section4.text2": "and that their name and order number are clearly indicated during the transfer.",
     "payment.section4.text3": "Any bank fees charged by the customer's bank are the responsibility of the customer.",
-
     "refund.page_title": "Return and Refund Policy",
     "refund.breadcrumb_home": "Home",
     "refund.breadcrumb_current": "Return and Refund Policy",
@@ -695,10 +678,7 @@
     "refund.last_update": "Last update:",
     "refund.date": "February 14, 2025",
     "refund.copyright": "© – All rights reserved.",
-
-
     "logs.inquiry_error": "Error sending product inquiry:",
-
     "email.order_confirmation_title": "Order Confirmation",
     "email.order_confirmed": "Order confirmed!",
     "email.order_number": "Order No.",
@@ -730,7 +710,6 @@
     "email.all_rights_reserved": "All rights reserved",
     "email.inquiry_admin_subject": "New product order: :product",
     "email.inquiry_confirmation_subject": "Order received - :product",
-
     "email.inquiry_confirmed": "Inquiry confirmed",
     "email.inquiry_number": "Inquiry number",
     "email.inquiry_received": "We have received your inquiry for :product",
@@ -749,7 +728,6 @@
     "email.step_quote": "You will receive a personalized quote",
     "email.step_followup": "We will ensure complete follow-up",
     "email.thank_you_inquiry": "Thank you for your trust!",
-
     "email.admin_title": "New Product Inquiry",
     "email.admin_header": "New Product Inquiry",
     "email.admin_name_label": "Name:",
@@ -760,8 +738,6 @@
     "email.admin_quantity_label": "Requested quantity:",
     "email.admin_message_label": "Message:",
     "email.view_product": "View product",
-
-
     "Livraison gratuite": "Free shipping",
     "Profiter de l'offre dès maintenant": "Take advantage of the offer now",
     "Expédition rapide": "Fast shipping",
@@ -792,8 +768,6 @@
     " Paiement 100% sécurisé": " 100% secure payment",
     " Assistance téléphonique": " Telephone assistance",
     " Stock limité - Commandez vite !": " Limited stock - Order quickly!",
-
-
     "Pays": "Country",
     "Région": "Region",
     "Sélectionnez un pays": "Select a country",
@@ -806,9 +780,6 @@
     "Saisie manuelle activée": "Manual entry activated",
     "Veuillez entrer votre région": "Please enter your region",
     "Veuillez sélectionner votre région": "Please select your region",
-
-
-    "whatsapp_message": "Hello, I would like to get some information"
-
-
+    "whatsapp_message": "Hello, I would like to get some information",
+    "payments.title": "Payment methods"
 }

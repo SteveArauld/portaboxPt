@@ -46,7 +46,6 @@
     "Verify Email Address": "Verifique o endereço de e-mail",
     "Whoops!": "Ops!",
     "You are receiving this email because we received a password reset request for your account.": "Recebeu esse e-mail porque foi solicitada a redefinição da palavra-passe da sua conta.",
-
     "header.email": "E-mail",
     "header.all_categories": "Todas as categorias",
     "header.category.caffetteria": "Cafeteria / Bar / Restaurante",
@@ -76,7 +75,6 @@
     "header.menu.shop": "Loja",
     "header.menu.faq": "Perguntas frequentes (FAQ)",
     "header.menu.contato": "Contato",
-
     "footer.features.delivery": "Entrega eficiente: receba seu pedido rapidamente.",
     "footer.features.security": "Segurança certificada: em conformidade com as normas ISO",
     "footer.features.support": "Suporte especializado: nossos consultores estão ao seu serviço.",
@@ -104,7 +102,6 @@
     "footer.mobile.main_menu": "Menu principal",
     "footer.mobile.menu": "Menu",
     "footer.back_to_top": "Voltar ao topo",
-
     "delivery.page_title": "Política de Entrega",
     "delivery.breadcrumb_home": "Início",
     "delivery.breadcrumb_current": "Política de Entrega",
@@ -209,7 +206,6 @@
     "delivery.last_update": "Última atualização:",
     "delivery.date": "14 de fevereiro de 2025",
     "delivery.copyright": "© Porto Contentores – Todos os direitos reservados.",
-
     "home.slider.loading": "Carregando slider...",
     "home.slider.slide1.title": "Contentores Marítimos para Cada Necessidade",
     "home.slider.slide2.title": "Casas Contentor Prontas para Habitar",
@@ -236,7 +232,6 @@
     "home.testimonials.author3": "António Costa",
     "home.testimonials.text4": "A experiência de compra foi excelente. A equipa é simpática, competente e ajudou-me a escolher o contentor mais adequado para as minhas necessidades. O produto chegou dentro do prazo e em perfeito estado.",
     "home.testimonials.author4": "Sofia Martins",
-
     "product.breadcrumb.home": "Início",
     "product.breadcrumb.category": "Categoria",
     "product.stock.in_stock": "Em estoque (:stock disponíveis)",
@@ -270,7 +265,6 @@
     "product.inquiry.max_stock_reached": "Você atingiu a quantidade máxima disponível (:stock)",
     "product.inquiry.quantity_exceeds_stock": "A quantidade solicitada (:quantity) excede o estoque disponível (:stock)",
     "product.inquiry.product_out_of_stock": "Este produto está fora de estoque",
-
     "shop.page_title": "Loja",
     "shop.breadcrumb_home": "Início",
     "shop.filters.categories": "Categorias",
@@ -297,13 +291,11 @@
     "shop.products.price_suffix": "IVA incluído",
     "shop.pagination.previous": "Anterior",
     "shop.pagination.next": "Próximo",
-
     "cart.ref": "Ref.",
     "cart.summary": "Resumo",
     "cart.items": "Artigos",
     "cart.checkout": "Finalizar compra",
     "cart.continue_shopping": "Continuar compras",
-
     "checkout.title": "Finalizar compra",
     "checkout.your_details": "Suas coordenadas",
     "checkout.full_name": "Nome completo",
@@ -326,9 +318,7 @@
     "checkout.processing": "Processando...",
     "checkout.form_error": "Por favor, verifique os campos do formulário.",
     "checkout.network_error": "Ocorreu um erro de rede. Por favor, tente novamente.",
-
     "cart.drawer.close": "Fechar",
-
     "contato.page_title": "Contato",
     "contato.title": "Entre em contato conosco",
     "contato.address": "Endereço: R. de São Simão, 3320-313 Bunheiro, Portugal",
@@ -345,7 +335,6 @@
     "contato.form.submit": "Enviar",
     "contato.form.success": "Sua mensagem foi enviada com sucesso! Responderemos o mais breve possível.",
     "contato.form.validation_error": "Por favor, preencha todos os campos corretamente.",
-
     "faq.page_title": "Perguntas frequentes (FAQ)",
     "faq.breadcrumb_home": "Início",
     "faq.breadcrumb_current": "Perguntas frequentes (FAQ)",
@@ -357,7 +346,6 @@
     "faq.a3": "Assim que seu pedido for enviado, você receberá um e-mail com o número de rastreamento. Você pode verificar o status da entrega diretamente no site da transportadora.",
     "faq.q4": "04. Seus produtos têm garantia?",
     "faq.a4": "Sim. Todos os nossos produtos incluem garantia do fabricante de 2 anos. A duração pode variar conforme o fabricante. Em caso de mau funcionamento durante o período de garantia, entre em contato com nosso serviço ao cliente.",
-
     "about.page_title": "Quem somos",
     "about.breadcrumb_home": "Início",
     "about.breadcrumb_current": "Quem somos",
@@ -369,7 +357,6 @@
     "about.quality_title": "A Qualidade que Faz a Diferença",
     "about.quality_text": "Nossos contentores são selecionados e modificados de acordo com altos padrões, com materiais certificados e processos controlados. Oferecemos contentores ISO, isolados, refrigerados e soluções habitacionais cuidadas nos detalhes. A qualidade é nosso compromisso diário.",
     "about.legal_title": "Informações Legais",
-
     "terms.page_title": "Termos e Condições Gerais (CGV)",
     "terms.breadcrumb_home": "Início",
     "terms.breadcrumb_current": "Termos e Condições Gerais (CGV)",
@@ -489,7 +476,6 @@
     "terms.last_update": "Última atualização:",
     "terms.date": "14 de fevereiro de 2025",
     "terms.copyright": "© Porto Contentores – Todos os direitos reservados.",
-
     "privacy.page_title": "Política de Privacidade",
     "privacy.breadcrumb_home": "Início",
     "privacy.breadcrumb_current": "Política de Privacidade",
@@ -597,7 +583,6 @@
     "privacy.last_update": "Última atualização:",
     "privacy.date": "14 de fevereiro de 2025",
     "privacy.copyright": "© Porto Contentores – Todos os direitos reservados.",
-
     "payment.page_title": "Política de Pagamento",
     "payment.breadcrumb_home": "Início",
     "payment.breadcrumb_current": "Política de Pagamento",
@@ -617,7 +602,6 @@
     "payment.section4.text1": "O cliente deverá certificar-se junto do seu banco de que o valor total do pedido é creditado na conta disponibilizada por",
     "payment.section4.text2": "e que o seu nome e número do pedido sejam claramente indicados na transferência.",
     "payment.section4.text3": "Eventuais custos bancários cobrados pelo banco do cliente são da responsabilidade do cliente.",
-
     "refund.page_title": "Política de Devolução e Reembolso",
     "refund.breadcrumb_home": "Início",
     "refund.breadcrumb_current": "Política de Devolução e Reembolso",
@@ -723,7 +707,6 @@
     "refund.last_update": "Última atualização:",
     "refund.date": "14 de fevereiro de 2025",
     "refund.copyright": "© Porto Contentores – Todos os direitos reservados.",
-
     "email.order_confirmation_title": "Confirmação de encomenda",
     "email.order_confirmed": "Encomenda confirmada!",
     "email.order_number": "N° encomenda",
@@ -783,9 +766,7 @@
     "email.admin_quantity_label": "Quantidade solicitada:",
     "email.admin_message_label": "Mensagem:",
     "email.view_product": "Ver produto",
-
     "whatsapp_message": "Olá, gostaria de obter informações",
-
     "Panier": "Carrinho",
     "Mon panier": "Meu carrinho",
     "Accueil": "Início",
@@ -796,8 +777,7 @@
     "Articles": "Itens",
     "Total": "Total",
     "Passer la commande": "Finalizar pedido",
-    "Continuer mes achats": "Continuar comprando",
-
+    "Continuer mes achats": "Continuar minhas compras",
     "Validation de la commande": "Validação do pedido",
     "Commande": "Pedido",
     "Vos coordonnées": "Seus dados",
@@ -821,65 +801,50 @@
     "Confirmer la commande": "Confirmar pedido",
     "Retour au panier": "Voltar ao carrinho",
     "Qté": "Qtd",
-
     "checkout.order_success_email_sent": "Seu pedido foi registrado com sucesso. Um email de confirmação foi enviado para você.",
     "checkout.order_success_email_failed": "Ocorreu um erro ao enviar o email de confirmação. Por favor, tente novamente. Se o erro persistir, entre em contato com o serviço ao cliente.",
     "checkout.order_creation_failed": "Ocorreu um erro ao registrar seu pedido. Por favor, tente novamente.",
-
     "Confirmation de votre commande": "Confirmação do seu pedido",
     "Commande confirmée": "Pedido confirmado",
-    "Commande": "Pedido",
     "Bonjour": "Olá",
     "Nous avons bien reçu votre commande et nous vous en remercions. Voici le récapitulatif :": "Recebemos seu pedido e agradecemos. Aqui está o resumo:",
     "Récapitulatif de la commande": "Resumo do pedido",
     "Produit": "Produto",
-    "Réf.": "Ref.",
-    "Qté": "Qtd",
     "Prochaines étapes": "Próximos passos",
     "Notre équipe examine votre commande.": "Nossa equipe está analisando seu pedido.",
     "Un conseiller vous contatoera pour finaliser le paiement et la livraison.": "Um conselheiro entrará em contato para finalizar o pagamento e a entrega.",
     "Vous recevrez les informations de suivi dès l'expédition.": "Você receberá as informações de rastreamento assim que o pedido for enviado.",
     "Merci de votre confiance !": "Obrigado pela sua confiança!",
-    "Continuer mes achats": "Continuar minhas compras",
     "Tous droits réservés.": "Todos os direitos reservados.",
     "Traitement...": "Processando...",
     "Veuillez vérifier les champs du formulaire.": "Verifique os campos do formulário.",
     "Une erreur réseau est survenue. Veuillez réessayer.": "Ocorreu um erro de rede. Tente novamente.",
-
     "Fermer": "Fechar",
     "Sous-total": "Subtotal",
     "Voir le panier": "Ver carrinho",
     "Commander": "Comprar",
     "Ajouter au panier": "Adicionar ao carrinho",
-
     "Votre numéro avec indicatif (ex: +33612345678)": "Seu número com indicativo (ex: +351912026453)",
     "Format: +33612345678": "Formato: +351912026453",
     "Format de téléphone invalide. Utilisez le format international ex: +33612345678": "Formato de telefone inválido. Use o formato internacional ex: +351912026453",
-
-"home.testimonials.rating_4.5": "Avaliado com 4.5 de 5",
-
- "header.category.refrigerados": "Contentores Refrigerados",
-  "header.category.modulares": "Contentores Modulares",
-  "header.category.contentores_20": "Contentores 20 Pés",
-  "header.category.contentores_40": "Contentores 40 Pés",
-  "header.category.contentores_casa": "Contentores Casa",
-  "header.category.piscinas": "Piscinas",
-  "header.category.contentores_10": "Contentores 10 Pés",
-  "header.category.cafetaria": "Cafetaria / Bar / Restaurante",
-
-
-
+    "home.testimonials.rating_4.5": "Avaliado com 4.5 de 5",
+    "header.category.refrigerados": "Contentores Refrigerados",
+    "header.category.modulares": "Contentores Modulares",
+    "header.category.contentores_20": "Contentores 20 Pés",
+    "header.category.contentores_40": "Contentores 40 Pés",
+    "header.category.contentores_casa": "Contentores Casa",
+    "header.category.piscinas": "Piscinas",
+    "header.category.contentores_10": "Contentores 10 Pés",
+    "header.category.cafetaria": "Cafetaria / Bar / Restaurante",
     "legal.title": "Menções Legais",
     "legal.heading_title": "Menções Legais",
     "legal.breadcrumb_home": "Início",
     "legal.breadcrumb_current": "Menções Legais",
-    
     "legal.section1_title": "1. Objeto e Conformidade Legal",
     "legal.section1_item1": "A identidade do titular do site",
     "legal.section1_item2": "As condições gerais de utilização e responsabilidade",
     "legal.section1_item3": "As regras relativas à proteção de dados pessoais e aos direitos dos utilizadores",
     "legal.section1_item4": "As informações exigidas pelo Google Shopping em matéria de transparência comercial",
-    
     "legal.section2_title": "2. Editor do Site",
     "legal.section2_text": "O site <strong><a href=\":url\">:url</a></strong> é propriedade e é gerido por:",
     "legal.company_name": "PORTO CONTENTORES, LDA.",
@@ -892,22 +857,18 @@
     "legal.email_address": "contato@portocontentores.pt",
     "legal.website": "Site:",
     "legal.section2_description": "A empresa atua no setor de venda de contentores marítimos, contentores habitacionais, contentores refrigerados e soluções modulares em Portugal.",
-    
     "legal.section3_title": "3. Direção de Publicação",
     "legal.section3_text": "O Diretor de Publicação do site é o Representante Legal da <strong>:company</strong>, responsável pelos conteúdos e pela sua atualização.",
-    
     "legal.section4_title": "4. Alojamento e Manutenção do Site",
     "legal.section4_text": "O site <strong><a href=\":url\">:url</a></strong> está alojado em servidores localizados na União Europeia, em conformidade com as normas de segurança, confidencialidade e proteção de dados previstas pelo RGPD.",
     "legal.section4_provider_guarantees": "O fornecedor garante:",
     "legal.section4_guarantee1": "a segurança física e digital dos dados",
     "legal.section4_guarantee2": "cópias de segurança periódicas",
     "legal.section4_guarantee3": "continuidade e estabilidade do serviço",
-    
     "legal.section5_title": "5. Propriedade Intelectual",
     "legal.section5_text": "Todos os conteúdos presentes no site — textos, imagens, logótipos, vídeos, elementos gráficos, documentos e estrutura do site — são propriedade exclusiva da <strong>:company</strong> ou utilizados com autorização dos respetivos titulares.",
     "legal.section5_restriction": "É proibida qualquer reprodução, distribuição, tradução, modificação ou publicação total ou parcial dos conteúdos sem autorização escrita.",
     "legal.section5_citation": "\"Fonte: :company – <a href=\":url\">:url</a>\"",
-    
     "legal.section6_title": "6. Dados Pessoais e Proteção da Privacidade",
     "legal.section6_intro": "<strong>:company</strong> compromete-se a proteger os dados pessoais dos utilizadores, em conformidade com o Regulamento (UE) 2016/679 (RGPD) e com a legislação portuguesa em vigor.",
     "legal.section6_subtitle1": "Recolha e Finalidades dos Dados",
@@ -924,7 +885,6 @@
     "legal.section6_right4": "Revogação do consentimento em qualquer momento",
     "legal.section6_requests": "Os pedidos devem ser enviados para:<br><strong><a href=\"mailto::email\">:email</a></strong>",
     "legal.section6_more_info": "Para mais detalhes, consulte a Política de Privacidade do site.",
-    
     "legal.section7_title": "7. Cookies e Tecnologias de Rastreamento",
     "legal.section7_intro": "O site utiliza cookies técnicos, funcionais e analíticos para:",
     "legal.section7_purpose1": "Melhorar a navegação",
@@ -932,7 +892,6 @@
     "legal.section7_purpose3": "Analisar estatísticas",
     "legal.section7_purpose4": "Otimizar a experiência do utilizador",
     "legal.section7_configuration": "O utilizador pode configurar o seu navegador para recusar cookies ou ser avisado antes da instalação.<br>O uso continuado do site implica a aceitação dos cookies, de acordo com a Política de Cookies publicada no site.",
-    
     "legal.section8_title": "8. Responsabilidade",
     "legal.section8_intro": "<strong>:company</strong> compromete-se a manter as informações do site precisas e atualizadas. No entanto, não pode ser responsabilizada por:",
     "legal.section8_liability1": "Erros técnicos, tipográficos ou omissões",
@@ -941,42 +900,34 @@
     "legal.section8_liability4": "Conteúdos presentes em sites externos ligados através de links",
     "legal.section8_correction": "Em caso de erro evidente (por exemplo, um preço incorreto), a empresa reserva-se o direito de corrigir a informação e informar tempestivamente o cliente.",
     "legal.section8_user_responsibility": "O utilizador é responsável pela configuração do seu dispositivo, pela segurança informática e pelo acesso à rede.",
-    
     "legal.section9_title": "9. Ligações Externas",
     "legal.section9_text": "O site <strong><a href=\":url\">:url</a></strong> pode conter links para sites de terceiros.<br><strong>:company</strong> não exerce qualquer controlo sobre esses sites e declina toda a responsabilidade quanto a conteúdos, segurança e políticas de privacidade.",
-    
     "legal.section10_title": "10. Legislação Aplicável e Resolução de Controvérsias",
     "legal.section10_applicable_law": "As presentes Menções Legais são regidas pela legislação portuguesa e europeia.",
     "legal.section10_amicable": "Em caso de controvérsia, a empresa privilegiará uma solução amigável através do seu serviço de atendimento ao cliente.",
     "legal.section10_odr": "Na falta de acordo, o utilizador poderá recorrer à plataforma europeia de resolução de controvérsias online (ODR) ou a uma entidade de mediação portuguesa.",
     "legal.section10_jurisdiction": "Em última instância, serão competentes os Tribunais de <strong>:city</strong>, salvo disposição legal em contrário.",
-    
     "legal.section11_title": "11. Modificações às Menções Legais",
     "legal.section11_modifications": "<strong>:company</strong> pode modificar o presente documento em qualquer momento e sem aviso prévio.<br>A versão atualizada será sempre publicada nesta página, com indicação da data de revisão.",
     "legal.section11_recommendation": "Recomenda-se a visita periódica a esta secção.",
-    
     "legal.section12_title": "12. Contactos",
     "legal.address": "R. de São Simão, 3320-313 Bunheiro, Portugal",
     "legal.city": "Porto",
     "legal.last_update": "Última atualização: 24 de novembro de 2025",
     "legal.all_rights_reserved": "Todos os direitos reservados.",
-
-
     "privacy.address": "R. de São Simão, 3320-313 Bunheiro, Portugal",
     "privacy.phone": "+351 912 026 453",
     "privacy.email": "contato@portocontentores.pt",
     "privacy.vat": "508140552",
     "privacy.european_vat": "PT508140552",
     "privacy.activity": "Venda de contentores marítimos, contentores habitacionais, contentores refrigerados e soluções modulares em Portugal.",
-
-        "terms.email": "contato@portocontentores.pt",
-
-        "terms.section4.payment2": "Transferência bancária",
-"terms.section4.payment3": "Sistemas de pagamento seguros indicados no site",
-
+    "terms.email": "contato@portocontentores.pt",
+    "terms.section4.payment2": "Transferência bancária",
+    "terms.section4.payment3": "Sistemas de pagamento seguros indicados no site",
     "terms.address": "R. de São Simão, 3320-313 Bunheiro, Portugal",
     "terms.phone": "+351 912 026 453",
     "terms.vat": "508140552",
     "terms.european_vat": "PT508140552",
-    "terms.city": "Porto"
+    "terms.city": "Porto",
+    "payments.title": "Métodos de pagamento"
 }

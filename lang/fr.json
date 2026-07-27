@@ -46,10 +46,6 @@
     "Verify Email Address": "Vérifier l'adresse e-mail",
     "Whoops!": "Oups !",
     "You are receiving this email because we received a password reset request for your account.": "Vous recevez cet e-mail car nous avons reçu une demande de réinitialisation de mot de passe pour votre compte.",
-
-
-
-
     "header.email": "Email",
     "header.all_categories": "Toutes les catégories",
     "header.category.caffetteria": "Cafétéria / Bar / Restaurant",
@@ -79,7 +75,6 @@
     "header.menu.shop": "Boutique",
     "header.menu.faq": "Questions fréquentes (FAQ)",
     "header.menu.contato": "contato",
-
     "footer.features.delivery": "Livraison efficace : recevez votre commande rapidement.",
     "footer.features.security": "Sécurité certifiée : conforme aux normes ISO",
     "footer.features.support": "Assistance spécialisée : nos conseillers sont à votre service.",
@@ -107,9 +102,6 @@
     "footer.mobile.main_menu": "Menu principal",
     "footer.mobile.menu": "Menu",
     "footer.back_to_top": "Retour en haut",
-
-
-
     "delivery.page_title": "Politique de Livraison",
     "delivery.breadcrumb_home": "Accueil",
     "delivery.breadcrumb_current": "Politique de Livraison",
@@ -214,8 +206,6 @@
     "delivery.last_update": "Dernière mise à jour :",
     "delivery.date": "14 février 2025",
     "delivery.copyright": "© – Tous droits réservés.",
-
-
     "home.slider.loading": "Chargement du slider...",
     "home.slider.slide1.title": "Conteneurs Maritimes pour Chaque Besoin",
     "home.slider.slide2.title": "Maisons en Conteneur Prêtes à Habiter",
@@ -244,8 +234,6 @@
     "home.testimonials.text2": "L'équipe a réalisé pour moi un conteneur d'habitation complètement personnalisé. Finitions parfaites, isolation excellente et livraison ponctuelle. Je suis vraiment satisfaite du résultat.",
     "home.testimonials.text3": "Nous avons pris un conteneur frigorifique pour notre entreprise agricole. Il fonctionne parfaitement et maintient la température stable même avec des charges importantes. Excellent support technique.",
     "home.testimonials.text4": "Expérience impeccable. Le personnel est aimable, compétent et m'a aidée à choisir la solution la plus adaptée à mes besoins. Le conteneur est arrivé en excellent état.",
-
-
     "product.breadcrumb.home": "Accueil",
     "product.breadcrumb.category": "Catégorie",
     "product.stock.in_stock": "En stock (:stock disponibles)",
@@ -261,7 +249,7 @@
     "product.meta.sku": "SKU :",
     "product.meta.categories": "Catégories :",
     "product.description.title": "Description",
- "product.inquiry.title": "Passez commande maintenant",
+    "product.inquiry.title": "Passez commande maintenant",
     "product.inquiry.name": "Nom et Prénom *",
     "product.inquiry.name_placeholder": "Votre nom",
     "product.inquiry.email": "Email *",
@@ -276,13 +264,9 @@
     "product.inquiry.success": "Votre commande a été enregistrée avec succès. Nous vous contatoerons dans les plus brefs délais pour confirmer les détails.",
     "product.inquiry.error": "Une erreur est survenue lors de l'envoi de votre demande. Veuillez réessayer.",
     "product.related.title": "Produits associés",
-
-
     "product.inquiry.max_stock_reached": "Vous avez atteint la quantité maximale disponible (:stock)",
     "product.inquiry.quantity_exceeds_stock": "La quantité demandée (:quantity) dépasse le stock disponible (:stock)",
     "product.inquiry.product_out_of_stock": "Ce produit n'est pas disponible en stock",
-
-
     "shop.page_title": "Boutique",
     "shop.breadcrumb_home": "Accueil",
     "shop.filters.categories": "Catégories",
@@ -309,7 +293,6 @@
     "shop.products.price_suffix": "TVA incluse",
     "shop.pagination.previous": "Précédent",
     "shop.pagination.next": "Suivant",
-
     "contato.page_title": "contato",
     "contato.title": "contatoez-nous",
     "contato.address": "Adresse : Via Case Rosse, 19/B 84131 Salerno (SA), Italie",
@@ -323,8 +306,6 @@
     "contato.form.submit": "Envoyer",
     "contato.form.success": "Votre message a été envoyé avec succès ! Nous vous répondrons dans les plus brefs délais.",
     "contato.form.validation_error": "Veuillez remplir correctement tous les champs du formulaire.",
-
-
     "faq.page_title": "Questions fréquentes (FAQ)",
     "faq.breadcrumb_home": "Accueil",
     "faq.breadcrumb_current": "Questions fréquentes (FAQ)",
@@ -336,7 +317,6 @@
     "faq.a3": "<p>Dès que votre commande sera expédiée, vous recevrez un e-mail avec le numéro de suivi.<br>Vous pouvez vérifier l'état de la livraison directement sur le site web de la compagnie de transport.</p>",
     "faq.q4": "04. Vos produits sont-ils couverts par une garantie ?",
     "faq.a4": "<p>Oui. Tous nos produits incluent une garantie constructeur de 2 ans.<br>La durée peut varier selon le fabricant.<br>En cas de dysfonctionnement pendant la période de garantie, veuillez contatoer notre service client.</p>",
-
     "about.page_title": "Qui sommes-nous",
     "about.breadcrumb_home": "Accueil",
     "about.breadcrumb_current": "Qui sommes-nous",
@@ -348,8 +328,6 @@
     "about.innovation_text": "Chez Porto Contentores, nous croyons en l'innovation comme moteur de croissance. Grâce à une équipe expérimentée, nous réalisons des structures modulaires modernes, résistantes et adaptables à de multiples usages. Chaque intervention est pensée pour garantir sécurité, confort et efficacité maximale.",
     "about.quality_title": "La Qualité qui Fait la Différence",
     "about.quality_text": "Nos conteneurs sont sélectionnés et modifiés selon des standards élevés, avec des matériaux certifiés et des processus contrôlés. Nous proposons des conteneurs ISO, isolés, réfrigérés et des solutions d'habitation soignées dans les détails. La qualité est notre engagement quotidien.",
-
-
     "terms.page_title": "Conditions Générales de Vente (CGV)",
     "terms.breadcrumb_home": "Accueil",
     "terms.breadcrumb_current": "Conditions Générales de Vente (CGV)",
@@ -470,10 +448,6 @@
     "terms.last_update": "Dernière mise à jour :",
     "terms.date": "14 février 2025",
     "terms.copyright": "© – Tous droits réservés.",
-
-
-
-
     "privacy.page_title": "Politique de Confidentialité",
     "privacy.breadcrumb_home": "Accueil",
     "privacy.breadcrumb_current": "Politique de Confidentialité",
@@ -581,8 +555,6 @@
     "privacy.last_update": "Dernière mise à jour :",
     "privacy.date": "14 février 2025",
     "privacy.copyright": "© – Tous droits réservés.",
-
-
     "payment.page_title": "Politique de Paiement",
     "payment.breadcrumb_home": "Accueil",
     "payment.breadcrumb_current": "Politique de Paiement",
@@ -602,8 +574,6 @@
     "payment.section4.text1": "Le client devra s'assurer auprès de sa banque que le montant total de la commande est crédité sur le compte mis à disposition par",
     "payment.section4.text2": "et que son nom et numéro de commande soient clairement indiqués lors du virement.",
     "payment.section4.text3": "D'éventuels frais bancaires facturés par la banque du client sont à la charge du client.",
-
-
     "refund.page_title": "Politique de Retour et Remboursement",
     "refund.breadcrumb_home": "Accueil",
     "refund.breadcrumb_current": "Politique de Retour et Remboursement",
@@ -708,7 +678,6 @@
     "refund.last_update": "Dernière mise à jour :",
     "refund.date": "14 février 2025",
     "refund.copyright": "© – Tous droits réservés.",
-
     "email.order_confirmation_title": "Confirmation de commande",
     "email.order_confirmed": "Commande confirmée !",
     "email.order_number": "N° commande",
@@ -738,12 +707,9 @@
     "email.track_order": "Suivre ma commande",
     "email.continue_shopping": "Continuer mes achats",
     "email.all_rights_reserved": "Tous droits réservés",
-
-
     "email.inquiry_admin_subject": "Nouvelle commande de produit : :product",
     "email.inquiry_confirmation_subject": "Commande reçue - :product",
     "email.logs.inquiry_error": "Erreur lors de l'envoi de la commande :",
-
     "email.inquiry_confirmed": "Demande confirmée",
     "email.inquiry_number": "N° de demande",
     "email.inquiry_received": "Nous avons bien reçu votre demande pour :product",
@@ -762,8 +728,6 @@
     "email.step_quote": "Vous recevrez un devis personnalisé",
     "email.step_followup": "Nous assurerons un suivi complet",
     "email.thank_you_inquiry": "Merci de votre confiance !",
-
-
     "email.admin_title": "Nouvelle commande de produit",
     "email.admin_header": "Nouvelle commande de produit",
     "email.admin_name_label": "Nom :",
@@ -774,7 +738,6 @@
     "email.admin_quantity_label": "Quantité demandée :",
     "email.admin_message_label": "Message :",
     "email.view_product": "Voir le produit",
-
     "Livraison gratuite": "Livraison gratuite",
     "Profiter de l'offre dès maintenant": "Profiter de l'offre dès maintenant",
     "Expédition rapide": "Expédition rapide",
@@ -805,7 +768,6 @@
     " Paiement 100% sécurisé": " Paiement 100% sécurisé",
     " Assistance téléphonique": " Assistance téléphonique",
     " Stock limité - Commandez vite !": " Stock limité - Commandez vite !",
-
     "Pays": "Pays",
     "Région": "Région",
     "Sélectionnez un pays": "Sélectionnez un pays",
@@ -818,9 +780,7 @@
     "Saisie manuelle activée": "Saisie manuelle activée",
     "Veuillez entrer votre région": "Veuillez entrer votre région",
     "Veuillez sélectionner votre région": "Veuillez sélectionner votre région",
-
     "whatsapp_message": "Bonjour, je souhaite avoir des informations",
-
     "Nouvelle commande": "Nouvelle commande",
     "Notification administrateur": "Notification administrateur",
     "Une nouvelle commande vient d'être passée sur le site.": "Une nouvelle commande vient d'être passée sur le site.",
@@ -831,7 +791,6 @@
     "Produits commandés": "Produits commandés",
     "Notes du client": "Notes du client",
     "Notification automatique — Action requise": "Notification automatique — Action requise",
-
     "Confirmation de votre commande": "Confirmation de votre commande",
     "Commande confirmée": "Commande confirmée",
     "Commande": "Commande",
@@ -847,6 +806,6 @@
     "Vous recevrez les informations de suivi dès l'expédition.": "Vous recevrez les informations de suivi dès l'expédition.",
     "Merci de votre confiance !": "Merci de votre confiance !",
     "Continuer mes achats": "Continuer mes achats",
-    "Tous droits réservés.": "Tous droits réservés."
-
+    "Tous droits réservés.": "Tous droits réservés.",
+    "payments.title": "Moyens de paiement"
 }

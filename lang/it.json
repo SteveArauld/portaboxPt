@@ -46,10 +46,6 @@
     "Verify Email Address": "Verifica indirizzo email",
     "Whoops!": "Ops!",
     "You are receiving this email because we received a password reset request for your account.": "Hai ricevuto questa email perché abbiamo ricevuto una richiesta di reset della password per il tuo account.",
-
-
-
-
     "header.email": "Email",
     "header.all_categories": "Tutte Le Categorie",
     "header.category.caffetteria": "Caffetteria / Bar / Ristorante",
@@ -79,7 +75,6 @@
     "header.menu.shop": "Negozio",
     "header.menu.faq": "Domande frequenti (FAQ)",
     "header.menu.contato": "Contatto",
-
     "footer.features.delivery": "Consegna efficiente: ricevi il tuo ordine rapidamente.",
     "footer.features.security": "Sicurezza certificata: conforme agli standard ISO",
     "footer.features.support": "Assistenza specialistica: i nostri consulenti sono al tuo servizio.",
@@ -107,9 +102,6 @@
     "footer.mobile.main_menu": "Main Menu",
     "footer.mobile.menu": "Menu",
     "footer.back_to_top": "Back to Top",
-
-
-
     "delivery.page_title": "Politica di Consegna",
     "delivery.breadcrumb_home": "Casa",
     "delivery.breadcrumb_current": "Politica di Consegna",
@@ -214,7 +206,6 @@
     "delivery.last_update": "Ultimo aggiornamento:",
     "delivery.date": "14 febbraio 2025",
     "delivery.copyright": "© – Tutti i diritti riservati.",
-
     "home.slider.loading": "Caricamento slider...",
     "home.slider.slide1.title": "Container Marittimi<br>per Ogni Esigenza",
     "home.slider.slide2.title": "Case in Container<br>Pronte da Abitare",
@@ -243,7 +234,6 @@
     "home.testimonials.text2": "Il team ha realizzato per me un container abitativo completamente personalizzato. Finiture perfette, isolamento eccellente e consegna puntuale. Sono davvero soddisfatta del risultato.",
     "home.testimonials.text3": "Abbiamo preso un container frigorifero per la nostra azienda agricola. Funziona alla perfezione e mantiene la temperatura stabile anche con carichi importanti. Ottimo supporto tecnico.",
     "home.testimonials.text4": "Esperienza impeccabile. Lo staff è gentile, preparato e mi ha aiutata a scegliere la soluzione più adatta alle mie esigenze. Il container è arrivato in condizioni eccellenti.",
-
     "product.breadcrumb.home": "Home",
     "product.breadcrumb.category": "Categoria",
     "product.stock.in_stock": "In stock (:stock disponibili)",
@@ -271,18 +261,12 @@
     "product.inquiry.message": "Il tuo messaggio *",
     "product.inquiry.message_placeholder": "Scrivi qui la tua richiesta...",
     "product.inquiry.submit": "Invia richiesta",
-"product.inquiry.success": "Il tuo ordine è stato registrato con successo. Ti contatteremo a breve per confermare i dettagli.",
+    "product.inquiry.success": "Il tuo ordine è stato registrato con successo. Ti contatteremo a breve per confermare i dettagli.",
     "product.inquiry.error": "Si è verificato un errore durante l'invio della richiesta. Per favore riprova.",
     "product.related.title": "Prodotti correlati",
-
-
-
-
     "product.inquiry.max_stock_reached": "Hai raggiunto la quantità massima disponibile (:stock)",
     "product.inquiry.quantity_exceeds_stock": "La quantità richiesta (:quantity) supera la scorta disponibile (:stock)",
     "product.inquiry.product_out_of_stock": "Questo prodotto non è disponibile in magazzino",
-
-
     "shop.page_title": "Negozio - :name",
     "shop.breadcrumb_home": "Home",
     "shop.filters.categories": "Categorie",
@@ -309,7 +293,6 @@
     "shop.products.price_suffix": "IVA inclusa",
     "shop.pagination.previous": "Precedente",
     "shop.pagination.next": "Successivo",
-
     "contato.page_title": "Contatto",
     "contato.title": "Contattaci",
     "contato.address": "Indirizzo : Via Case Rosse, 19/B 84131 Salerno (SA), Italia",
@@ -321,10 +304,8 @@
     "contato.form.subject": "Soggetto *",
     "contato.form.message": "Messaggio",
     "contato.form.submit": "Inviare",
-
     "contato.form.success": "Il tuo messaggio è stato inviato con successo! Ti risponderemo al più presto.",
     "contato.form.validation_error": "Si prega di compilare correttamente tutti i campi.",
-
     "faq.page_title": "Domande frequenti (FAQ)",
     "faq.breadcrumb_home": "Casa",
     "faq.breadcrumb_current": "Domande frequenti (FAQ)",
@@ -336,7 +317,6 @@
     "faq.a3": "<p>Non appena il tuo ordine verrà spedito, riceverai un'e-mail con il numero di tracciamento.<br>Puoi controllare lo stato della consegna direttamente sul sito web della compagnia di spedizione.</p>",
     "faq.q4": "04. I vostri prodotti sono coperti da garanzia?",
     "faq.a4": "<p>Sì. Tutti i nostri prodotti includono una garanzia del produttore di 2 anni.<br>La durata può variare a seconda del produttore.<br>In caso di malfunzionamento durante il periodo di garanzia, si prega di contattare il nostro servizio clienti.</p>",
-
     "about.page_title": "Chi siamo",
     "about.breadcrumb_home": "Casa",
     "about.breadcrumb_current": "Chi siamo",
@@ -348,8 +328,6 @@
     "about.innovation_text": "Crediamo nell'innovazione come motore di crescita. Grazie a un team esperto, realizziamo strutture modulari moderne, resistenti e adattabili a molteplici utilizzi. Ogni intervento è pensato per garantire sicurezza, comfort e massima efficienza.",
     "about.quality_title": "Qualità che Fa la Differenza",
     "about.quality_text": "I nostri container sono selezionati e modificati secondo standard elevati, con materiali certificati e processi controllati. Offriamo container ISO, coibentati, refrigerati e soluzioni abitative curate nei dettagli. La qualità è il nostro impegno quotidiano.",
-
-
     "terms.page_title": "Condizioni Generali di Vendita (CGV)",
     "terms.breadcrumb_home": "Casa",
     "terms.breadcrumb_current": "Condizioni Generali di Vendita (CGV)",
@@ -470,8 +448,6 @@
     "terms.last_update": "Ultimo aggiornamento:",
     "terms.date": "14 febbraio 2025",
     "terms.copyright": "© – Tutti i diritti riservati.",
-
-
     "privacy.page_title": "Informativa sulla Privacy",
     "privacy.breadcrumb_home": "Casa",
     "privacy.breadcrumb_current": "Informativa sulla Privacy",
@@ -579,8 +555,6 @@
     "privacy.last_update": "Ultimo aggiornamento:",
     "privacy.date": "14 febbraio 2025",
     "privacy.copyright": "© – Tutti i diritti riservati.",
-
-
     "payment.page_title": "Politica di pagamento",
     "payment.breadcrumb_home": "Casa",
     "payment.breadcrumb_current": "Politica di pagamento",
@@ -600,8 +574,6 @@
     "payment.section4.text1": "Il cliente dovrà assicurarsi presso la propria banca che l'importo totale dell'ordine sia accreditato sul conto messo a disposizione da",
     "payment.section4.text2": "e che il proprio nome e numero d'ordine siano chiaramente indicati durante il bonifico.",
     "payment.section4.text3": "Eventuali spese bancarie addebitate dalla banca del cliente sono a carico del cliente.",
-
-
     "refund.page_title": "Politica di Reso e Rimborso",
     "refund.breadcrumb_home": "Casa",
     "refund.breadcrumb_current": "Politica di Reso e Rimborso",
@@ -706,11 +678,7 @@
     "refund.last_update": "Ultimo aggiornamento:",
     "refund.date": "14 febbraio 2025",
     "refund.copyright": "© – Tutti i diritti riservati.",
-
-
     "logs.inquiry_error": "Errore invio richiesta prodotto:",
-
-
     "email.order_confirmation_title": "Conferma d'ordine",
     "email.order_confirmed": "Ordine confermato!",
     "email.order_number": "N. ordine",
@@ -742,8 +710,6 @@
     "email.all_rights_reserved": "Tutti i diritti riservati",
     "email.inquiry_admin_subject": "Nuovo ordine prodotto: :product",
     "email.inquiry_confirmation_subject": "Ordine ricevuto - :product",
-
-
     "email.inquiry_confirmed": "Richiesta confermata",
     "email.inquiry_number": "Numero richiesta",
     "email.inquiry_received": "Abbiamo ricevuto la tua richiesta per :product",
@@ -762,7 +728,6 @@
     "email.step_quote": "Riceverai un preventivo personalizzato",
     "email.step_followup": "Garantiremo un follow-up completo",
     "email.thank_you_inquiry": "Grazie per la tua fiducia!",
-
     "email.admin_title": "Nuova richiesta prodotto",
     "email.admin_header": "Nuova richiesta prodotto",
     "email.admin_name_label": "Nome:",
@@ -773,8 +738,6 @@
     "email.admin_quantity_label": "Quantità richiesta:",
     "email.admin_message_label": "Messaggio:",
     "email.view_product": "Visualizza prodotto",
-
-
     "Livraison gratuite": "Spedizione gratuita",
     "Profiter de l'offre dès maintenant": "Approfitta dell'offerta ora",
     "Expédition rapide": "Spedizione rapida",
@@ -817,12 +780,8 @@
     "Saisie manuelle activée": "Inserimento manuale attivato",
     "Veuillez entrer votre région": "Inserisci la tua regione",
     "Veuillez sélectionner votre région": "Seleziona la tua regione",
-
-
     "whatsapp_message": "Buongiorno, vorrei avere informazioni",
-
     "Panier": "Carrello",
-
     "Mon panier": "Il mio carrello",
     "Accueil": "Home",
     "Votre panier est vide.": "Il tuo carrello è vuoto.",
@@ -833,22 +792,9 @@
     "Total": "Totale",
     "Passer la commande": "Procedi all'ordine",
     "Continuer mes achats": "Continua gli acquisti",
-    "Panier": "Carrello",
-
-
-     "Validation de la commande": "Conferma dell'ordine",
-    "Accueil": "Home",
-    "Mon panier": "Il mio carrello",
+    "Validation de la commande": "Conferma dell'ordine",
     "Commande": "Ordine",
-    "Votre panier est vide.": "Il tuo carrello è vuoto.",
-    "Découvrir nos produits": "Scopri i nostri prodotti",
-    "Vos coordonnées": "I tuoi dati",
-    "Nom complet": "Nome completo",
-    "Email": "Email",
-    "Téléphone": "Telefono",
     "Adresse de facturation": "Indirizzo di fatturazione",
-    "Pays": "Paese",
-    "Sélectionnez un pays": "Seleziona un paese",
     "Région / Province": "Regione / Provincia",
     "Ville": "Città",
     "Code postal": "Codice postale",
@@ -857,29 +803,19 @@
     "Livrer à une adresse différente": "Consegnare a un indirizzo diverso",
     "Adresse de livraison": "Indirizzo di consegna",
     "Nom du destinataire": "Nome del destinatario",
-    "Adresse de livraison": "Indirizzo di consegna",
     "Notes de commande": "Note dell'ordine",
     "Informations complémentaires sur votre commande ou votre livraison (facultatif)": "Informazioni aggiuntive sul tuo ordine o sulla consegna (facoltativo)",
     "Votre commande": "Il tuo ordine",
-    "Total": "Totale",
     "Confirmer la commande": "Conferma l'ordine",
     "Retour au panier": "Torna al carrello",
     "Qté": "Qtà",
     "Traitement...": "Elaborazione...",
     "Veuillez vérifier les champs du formulaire.": "Verifica i campi del modulo.",
     "Une erreur réseau est survenue. Veuillez réessayer.": "Si è verificato un errore di rete. Riprova.",
-
-
-     "Panier": "Carrello",
-    "Mon panier": "Il mio carrello",
     "Fermer": "Chiudi",
     "Sous-total": "Subtotale",
     "Voir le panier": "Vedi carrello",
     "Commander": "Ordina",
-
-    "Ajouter au panier": "Aggiungi al carrello"
-
-        
-
-
+    "Ajouter au panier": "Aggiungi al carrello",
+    "payments.title": "Metodi di pagamento"
 }

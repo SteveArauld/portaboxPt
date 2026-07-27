@@ -253,6 +253,8 @@
                             {{ __('Confirmar pedido') }}
                         </button>
                         <a href="{{ route('cart') }}" class="pbs-btn pbs-btn-outline">{{ __('Voltar ao carrinho') }}</a>
+
+                        @include('front.partials.payment-methods', ['align' => 'center'])
                     </div>
                 </div>
             </form>
