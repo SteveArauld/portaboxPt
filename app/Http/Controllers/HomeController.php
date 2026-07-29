@@ -8,6 +8,7 @@ use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Session;
@@ -91,7 +92,22 @@ public function index()
             $query->orderBy('position');
         }])
         ->where('slug', $slug)
-        ->firstOrFail();
+        ->first();
+
+        // Ancien slug (catalogue italien) : redirection permanente vers la nouvelle URL.
+        if (! $article) {
+            $redirect = DB::table('article_slug_redirects')->where('old_slug', $slug)->first();
+
+            if ($redirect) {
+                $target = Article::find($redirect->article_id);
+
+                if ($target) {
+                    return redirect()->route('product.show', ['slug' => $target->slug], 301);
+                }
+            }
+
+            abort(404);
+        }
 
         $imagesCount = $article->images->count();
 
