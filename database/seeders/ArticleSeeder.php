@@ -6,6 +6,7 @@ use App\Models\Article;
 use App\Models\Category;
 use App\Models\ArticleImage;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
 
 class ArticleSeeder extends Seeder
@@ -8563,6 +8564,16 @@ class ArticleSeeder extends Seeder
                         'stock' => rand(1, 20),
                         'category_id' => $this->getCategoryId($item['categories'], $categories, $targetLocale)
                     ]);
+
+                    // Conserver l'ancien slug italien comme redirection 301,
+                    // sinon les URLs deja indexees par Google renverraient un 404.
+                    $legacySlug = Str::slug($item['name']['it'] ?? '');
+                    if ($legacySlug !== '' && $legacySlug !== $slug) {
+                        DB::table('article_slug_redirects')->updateOrInsert(
+                            ['old_slug' => $legacySlug],
+                            ['article_id' => $article->id, 'updated_at' => now(), 'created_at' => now()]
+                        );
+                    }
 
                     // Ajouter les images
                     if (!empty($item['images'])) {

@@ -52,7 +52,7 @@
     </style>
 @endpush
 
-@section('title', 'PORTA BOX SOLUTIONS')
+@section('title', 'azinheira contentores')
 @section('content')
 
     <div id="main" class="wrapper ">
