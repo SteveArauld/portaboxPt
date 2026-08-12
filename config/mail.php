@@ -124,6 +124,6 @@ return [
     |
     */
 
-    'admin_address' => env('MAIL_ADMIN_ADDRESS', 'contato@portocontentores.pt'),
+    'admin_address' => env('MAIL_ADMIN_ADDRESS', 'contato@azinheiracontentores.com'),
 
 ];

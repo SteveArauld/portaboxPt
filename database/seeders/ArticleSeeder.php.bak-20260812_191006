@@ -50,9 +50,9 @@ class ArticleSeeder extends Seeder
                         "es" => "2 MONOBLOCOS OFICINA CON BAÑO"
                     ],
                     "price" => "7,100.00",
-                    "old_price" => null,
+                    "old_price" => "8,000.00",
                     "sku" => "3276611363",
-                    "discount_percentage" => null,
+                    "discount_percentage" => "-11%",
                     "link" => "/product/2-monoblocchi-uso-ufficio-con-bagno/",
                     "categories" => ["contentores-modulares"],
                     "short_description" => [
@@ -96,7 +96,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Refugio Pool House en Compuesto – La Solución Perfecta para tu Espacio piscinas"
                     ],
                     "price" => "4,200.00",
-                    "old_price" => null,
+                    "old_price" => "5,700.00",
                     "sku" => "3276611170",
                     "discount_perce ntage" => null,
                     "link" => "/product/abri-pool-house-in-composito-la-soluzione-perfetta-per-il-tuo-spazio-piscinas/",
@@ -130,7 +130,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Hermosa y confortable casa móvil Chalet Wood Gray"
                     ],
                     "price" => "9,175.00",
-                    "old_price" => null,
+                    "old_price" => "10,900.00",
                     "sku" => "3276611416",
                     "discount_percentage" => null,
                     "link" => "/product/bellissima-e-confortevole-casa-mobile-chalet-wood-gray/",
@@ -183,7 +183,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Casa contenedor 20 pies HC – Completamente equipada"
                     ],
                     "price" => "3,523.52",
-                    "old_price" => null,
+                    "old_price" => "5,033.60",
                     "sku" => "3276610540",
                     "discount_percentage" => null,
                     "link" => "/product/casa-container-20-piedi-hc-completamente-attrezzata/",
@@ -216,7 +216,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Casa contenedor 35 m² – Modelo Cottage, habitable todo el año"
                     ],
                     "price" => "8,565.00",
-                    "old_price" => null,
+                    "old_price" => "10,500.00",
                     "sku" => "3276611488",
                     "discount_percentage" => null,
                     "link" => "/product/casa-container-35-m%c2%b2-modello-a-cottage-abitabile-tutto-lanno/",
@@ -260,7 +260,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Casa contenedor residencial 40 pies"
                     ],
                     "price" => "4,314.31",
-                    "old_price" => null,
+                    "old_price" => "6,163.30",
                     "sku" => "3276610541",
                     "discount_percentage" => null,
                     "link" => "/product/casa-container-abitativa-40-piedi/",
@@ -293,7 +293,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Casa contenedor 40 pies HQ / 12 m – Alojamientos modernos y funcionales"
                     ],
                     "price" => "8,430.00",
-                    "old_price" => null,
+                    "old_price" => "9,000.00",
                     "sku" => "3276611486",
                     "discount_percentage" => null,
                     "link" => "/product/casa-container-da-40-piedi-hq-12-m-alloggi-moderni-e-funzionali/",
@@ -339,7 +339,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Casa Contenedor Modelo PLAYERO"
                     ],
                     "price" => "4,764.76",
-                    "old_price" => null,
+                    "old_price" => "6,806.80",
                     "sku" => "3276610544",
                     "discount_percentage" => null,
                     "link" => "/product/casa-container-modello-playero/",
@@ -380,7 +380,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Casa Contenedor Prefabricada"
                     ],
                     "price" => "3,723.72",
-                    "old_price" => null,
+                    "old_price" => "5,319.60",
                     "sku" => "3276610543",
                     "discount_percentage" => null,
                     "link" => "/product/casa-container-prefabbricata/",
@@ -420,7 +420,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Casa Contenedor Prefabricada Modulable"
                     ],
                     "price" => "4,899.89",
-                    "old_price" => null,
+                    "old_price" => "6,999.85",
                     "sku" => "3276610542",
                     "discount_percentage" => null,
                     "link" => "/product/casa-container-prefabbricata-modulabile/",
@@ -456,7 +456,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Casa Móvil Luisiana Taos – Confort Habitacional"
                     ],
                     "price" => "4,200.00",
-                    "old_price" => null,
+                    "old_price" => "6,866.00",
                     "sku" => "3276610621",
                     "discount_percentage" => null,
                     "link" => "/product/casa-mobile-luisiana-taos-comfort-abitativo/",
@@ -626,7 +626,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Casa Modular González – Espacio Inteligente de 36 m²"
                     ],
                     "price" => "3,200.00",
-                    "old_price" => null,
+                    "old_price" => "5,720.00",
                     "sku" => "3276610545",
                     "discount_percentage" => null,
                     "link" => "/product/casa-modulare-gonzalez-spazio-intelligente-da-36-m%c2%b2/",
@@ -665,7 +665,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Casa Modular Montes – 36 m² de Confort, Diseño"
                     ],
                     "price" => "3,400.00",
-                    "old_price" => null,
+                    "old_price" => "5,278.30",
                     "sku" => "3276610620",
                     "discount_percentage" => null,
                     "link" => "/product/casa-modulare-montes-36-m%c2%b2-di-comfort-design/",
@@ -704,7 +704,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Casa prefabricada modular en contenedor"
                     ],
                     "price" => "3,500.00",
-                    "old_price" => null,
+                    "old_price" => "5,136.70",
                     "sku" => "3276610539",
                     "discount_percentage" => null,
                     "link" => "/product/casa-prefabbricata-modulare-in-container/",
@@ -742,7 +742,7 @@ class ArticleSeeder extends Seeder
                         "es" => "QUIOSCO/SNACK CONTENEDOR – OFICINA – ÁREA DE VENTA"
                     ],
                     "price" => "6,100.00",
-                    "old_price" => null,
+                    "old_price" => "8,100.00",
                     "sku" => "3276611232",
                     "discount_percentage" => null,
                     "link" => "/product/chiosco-snack-container-ufficio-area-vendita/",
@@ -814,7 +814,7 @@ class ArticleSeeder extends Seeder
                         "es" => "CONTENEDOR QUIOSCO – SNACK"
                     ],
                     "price" => "4,100.00",
-                    "old_price" => null,
+                    "old_price" => "5,000.00",
                     "sku" => "3276611230",
                     "discount_percentage" => null,
                     "link" => "/product/container-chiosco-snack/",
@@ -853,7 +853,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Comercial de 29,4 m² – Solución Modular para Espacios Comerciales"
                     ],
                     "price" => "7,900.00",
-                    "old_price" => null,
+                    "old_price" => "8,800.00",
                     "sku" => "3276611490",
                     "discount_percentage" => null,
                     "link" => "/product/container-commerciale-da-294-m%c2%b2-soluzione-modulare-per-spazi-di-vendita/",
@@ -965,7 +965,7 @@ class ArticleSeeder extends Seeder
                         "es" => "CONTENEDOR DE 20 PIES"
                     ],
                     "price" => "902.00",
-                    "old_price" => null,
+                    "old_price" => "1,400.00",
                     "sku" => "3276611832",
                     "discount_percentage" => null,
                     "link" => "/product/container-da-20-piedi/",
@@ -1003,7 +1003,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor de 20 pies de lado abierto"
                     ],
                     "price" => "2,150.00",
-                    "old_price" => null,
+                    "old_price" => "2,495.00",
                     "sku" => "3276610868",
                     "discount_percentage" => null,
                     "link" => "/product/container-da-20-piedi-con-lato-aperto/",
@@ -1109,7 +1109,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor de oficina de 10 pies"
                     ],
                     "price" => "750.00",
-                    "old_price" => null,
+                    "old_price" => "900.00",
                     "sku" => "3276611173",
                     "discount_percentage" => null,
                     "link" => "/product/container-da-ufficio-da-10-piedi/",
@@ -1146,7 +1146,7 @@ class ArticleSeeder extends Seeder
                         "es" => "CONTENEDOR SANITARIO DOBLE CON 2 CABINAS – WC Y DUCHA"
                     ],
                     "price" => "1,815.00",
-                    "old_price" => null,
+                    "old_price" => "2,000.00",
                     "sku" => "3276611725",
                     "discount_percentage" => null,
                     "link" => "/product/container-doppio-sanitario-con-2-cabine-wc-e-doccia/",
@@ -1423,7 +1423,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor de 40 pies High Cube Open Side"
                     ],
                     "price" => "6,450.00",
-                    "old_price" => null,
+                    "old_price" => "6,750.00",
                     "sku" => "3276610872",
                     "discount_percentage" => null,
                     "link" => "/product/container-high-cube-open-side-da-40-piedi/",
@@ -1467,7 +1467,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo 10 Pies STD – Compacto y Resistente"
                     ],
                     "price" => "629.00",
-                    "old_price" => null,
+                    "old_price" => "800.00",
                     "sku" => "3276611062",
                     "discount_percentage" => null,
                     "link" => "/product/container-marittimo-10-piedi-std-compatto-e-resistente/",
@@ -1506,7 +1506,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor marítimo de 20 pies x 8 pies verde oscuro"
                     ],
                     "price" => "1,480.00",
-                    "old_price" => null,
+                    "old_price" => "1,900.00",
                     "sku" => "3276610946",
                     "discount_percentage" => null,
                     "link" => "/product/container-marittimo-da-20-piedi-x-8-piedi-verde-scuro/",
@@ -1539,7 +1539,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor marítimo de 20 pies, viaje único, con puerta enrollable."
                     ],
                     "price" => "1,310.00",
-                    "old_price" => null,
+                    "old_price" => "2,050.00",
                     "sku" => "3276611836",
                     "discount_percentage" => null,
                     "link" => "/product/container-marittimo-da-20-piedi-viaggio-unico-con-porta-avvolgibile/",
@@ -1612,7 +1612,7 @@ class ArticleSeeder extends Seeder
                         "es" => "CONTENEDOR MARÍTIMO REFRIGERADO 40 PIES USADO"
                     ],
                     "price" => "4,900.00",
-                    "old_price" => null,
+                    "old_price" => "5,100.00",
                     "sku" => "3276611239",
                     "discount_percentage" => null,
                     "link" => "/product/container-marittimo-refrigerato-da-40-piedi-usato/",
@@ -1682,7 +1682,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor marítimo usado 20 pies azul"
                     ],
                     "price" => "1,145.00",
-                    "old_price" => null,
+                    "old_price" => "1,350.00",
                     "sku" => "3276611060",
                     "discount_percentage" => null,
                     "link" => "/product/container-marittimo-usato-da-20-piedi-blu/",
@@ -1715,7 +1715,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor taller 20 pies"
                     ],
                     "price" => "3,570.00",
-                    "old_price" => null,
+                    "old_price" => "4,300.00",
                     "sku" => "3276610870",
                     "discount_percentage" => null,
                     "link" => "/product/container-officina-da-20-piedi/",
@@ -1748,7 +1748,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor taller 10 pies"
                     ],
                     "price" => "1,190.00",
-                    "old_price" => null,
+                    "old_price" => "1,500.00",
                     "sku" => "3276611365",
                     "discount_percentage" => null,
                     "link" => "/product/container-per-officina-da-10-piedi/",
@@ -1789,7 +1789,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor marítimo con apertura lateral 20 pies"
                     ],
                     "price" => "1,250.00",
-                    "old_price" => null,
+                    "old_price" => "2,000.00",
                     "sku" => "3276611838",
                     "discount_percentage" => null,
                     "link" => "/product/container-per-spedizioni-con-apertura-laterale-da-20-piedi/",
@@ -1826,7 +1826,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor marítimo High Cube con apertura lateral 20 pies"
                     ],
                     "price" => "1,250.00",
-                    "old_price" => null,
+                    "old_price" => "1,800.00",
                     "sku" => "3276611834",
                     "discount_percentage" => null,
                     "link" => "/product/container-per-spedizioni-con-apertura-laterale-high-cube-da-20-piedi/",
@@ -1861,7 +1861,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor marítimo High Cube con apertura lateral 40 pies"
                     ],
                     "price" => "1,645.00",
-                    "old_price" => null,
+                    "old_price" => "2,300.00",
                     "sku" => "3276611958",
                     "discount_percentage" => null,
                     "link" => "/product/container-per-spedizioni-con-apertura-laterale-high-cube-da-40-piedi/",
@@ -1902,7 +1902,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor marítimo con puerta lateral 40 pies – Configuración de 2 o 4 puertas"
                     ],
                     "price" => "2,350.00",
-                    "old_price" => null,
+                    "old_price" => "3,000.00",
                     "sku" => "3276611959",
                     "discount_percentage" => null,
                     "link" => "/product/container-per-spedizioni-con-porta-laterale-da-40-piedi-configurazione-a-2-o-4-porte/",
@@ -1942,7 +1942,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor oficina social 15 m²: compacto y funcional"
                     ],
                     "price" => "3,520.00",
-                    "old_price" => null,
+                    "old_price" => "3,750.00",
                     "sku" => "3276611491",
                     "discount_percentage" => null,
                     "link" => "/product/container-per-ufficio-sociale-da-15-m%c2%b2-compatto-e-funzionale/",
@@ -1982,7 +1982,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor reefer doméstico 20 pies"
                     ],
                     "price" => "4,280.00",
-                    "old_price" => null,
+                    "old_price" => "4,780.00",
                     "sku" => "3276610949",
                     "discount_percentage" => null,
                     "link" => "/product/container-reefer-domestico-da-20-piedi/",
@@ -2048,7 +2048,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor restaurante HC 20 pies – Distribución unidireccional Ideal para restauración móvil o como quiosco de venta."
                     ],
                     "price" => "4,050.00",
-                    "old_price" => null,
+                    "old_price" => "4,500.00",
                     "sku" => "3276611487",
                     "discount_percentage" => null,
                     "link" => "/product/container-ristorante-hc-da-20-piedi-disposizione-unidirezionale-ideale-per-la-ristorazione-mobile-o-come-chiosco-di-vendita/",
@@ -2095,7 +2095,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor sanitario 3×6 – 6 duchas, 2 lavabos, calentador de agua 300 litros"
                     ],
                     "price" => "5,250.00",
-                    "old_price" => null,
+                    "old_price" => "6,300.00",
                     "sku" => "3276611565",
                     "discount_percentage" => null,
                     "link" => "/product/container-sanitario-36-6-docce-2-lavandini-scaldabagno-da-300-litri/",
@@ -2175,7 +2175,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor estándar 20 pies"
                     ],
                     "price" => "1,650.00",
-                    "old_price" => null,
+                    "old_price" => "1,800.00",
                     "sku" => "3276610943",
                     "discount_percentage" => null,
                     "link" => "/product/container-standard-da-20-piedi/",
@@ -2340,7 +2340,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Oficina / Pabellón Modular 3x6m – Funcional y Equipado"
                     ],
                     "price" => "4,200.00",
-                    "old_price" => null,
+                    "old_price" => "4,500.00",
                     "sku" => "3276611484",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-padiglione-modulare-3x6m-funzionale-e-attrezzato/",
@@ -2384,7 +2384,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor oficina 4×2,20 metros con aseos"
                     ],
                     "price" => "2,100.00",
-                    "old_price" => null,
+                    "old_price" => "2,500.00",
                     "sku" => "3276611675",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-4220-metri-con-servizi-igienici/",
@@ -2431,7 +2431,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor oficina Contenedor habitable con baño/ducha"
                     ],
                     "price" => "3,150.00",
-                    "old_price" => null,
+                    "old_price" => "3,600.00",
                     "sku" => "3276611676",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-container-abitativo-con-bagno-doccia/",
@@ -2477,7 +2477,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor oficina 17 m² – Pabellón funcional y móvil"
                     ],
                     "price" => "3,800.00",
-                    "old_price" => null,
+                    "old_price" => "4,000.00",
                     "sku" => "3276611619",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-da-17-m%c2%b2-padiglione-funzionale-e-mobile-2/",
@@ -2515,7 +2515,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor oficina 17 m² – Pabellón funcional y móvil"
                     ],
                     "price" => "4,799.00",
-                    "old_price" => null,
+                    "old_price" => "5,220.00",
                     "sku" => "3276611424",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-da-17-m%c2%b2-padiglione-funzionale-e-mobile/",
@@ -2553,7 +2553,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor oficina 18 m² – aislado y equipado"
                     ],
                     "price" => "4,215.00",
-                    "old_price" => null,
+                    "old_price" => "4,500.00",
                     "sku" => "3276611620",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-da-18-m%c2%b2-isolato-e-attrezzato/",
@@ -2591,7 +2591,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor oficina 18 m² con aseos: confort y aislamiento óptimo"
                     ],
                     "price" => "4,950.00",
-                    "old_price" => null,
+                    "old_price" => "5,400.00",
                     "sku" => "3276611529",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-da-18-m%c2%b2-con-servizi-igienici-comfort-e-isolamento-ottimale/",
@@ -2633,7 +2633,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor oficina 18 m² con aseos: confort y aislamiento óptimo"
                     ],
                     "price" => "4,120.00",
-                    "old_price" => null,
+                    "old_price" => "5,100.00",
                     "sku" => "3276611723",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-da-18-m%c2%b2-con-servizi-igienici-comfort-e-isolamento-ottimale-2/",
@@ -2672,7 +2672,7 @@ class ArticleSeeder extends Seeder
                         "es" => "CONTENEDOR OFICINA 20 PIES"
                     ],
                     "price" => "1,510.00",
-                    "old_price" => null,
+                    "old_price" => "2,100.00",
                     "sku" => "3276611236",
                     "discount_percentage" => null,
                     "link" => "/product/container-ufficio-da-20-piedi/",
@@ -2707,7 +2707,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor 10 Pies Usado – Compacto, Económico y Resistente"
                     ],
                     "price" => "610.61",
-                    "old_price" => null,
+                    "old_price" => "872.30",
                     "sku" => "3276610866",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-10-piedi-usato-compatto-economico-e-resistente/",
@@ -2752,7 +2752,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor 20 pies con apertura lateral"
                     ],
                     "price" => "1,751.75",
-                    "old_price" => null,
+                    "old_price" => "2,502.50",
                     "sku" => "3276610487",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-20-piedi-con-apertura-laterale/",
@@ -2792,7 +2792,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor 20 pies Dry usado con doble puerta"
                     ],
                     "price" => "1,322.32",
-                    "old_price" => null,
+                    "old_price" => "1,889.03",
                     "sku" => "3276610485",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-20-piedi-dry-usato-con-doppia-porta/",
@@ -2827,7 +2827,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor 20 pies HC"
                     ],
                     "price" => "1,651.65",
-                    "old_price" => null,
+                    "old_price" => "2,359.50",
                     "sku" => "3276610484",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-20-piedi-hc/",
@@ -2862,7 +2862,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor 20 pies High Cube con puertas enrollables"
                     ],
                     "price" => "1,996.99",
-                    "old_price" => null,
+                    "old_price" => "2,852.85",
                     "sku" => "3276610486",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-20-piedi-high-cube-con-porte-avvolgibili/",
@@ -2904,7 +2904,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Bar Café 6 metros Snack-Box 20′"
                     ],
                     "price" => "1,821.82",
-                    "old_price" => null,
+                    "old_price" => "2,602.60",
                     "sku" => "3276610703",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-bar-cafe-6-metri-snack-box-20%e2%80%b2/",
@@ -3010,7 +3010,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Bar Personalizado 6 Metros"
                     ],
                     "price" => "1,921.92",
-                    "old_price" => null,
+                    "old_price" => "2,745.60",
                     "sku" => "3276610699",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-bar-personalizzato-6-metri/",
@@ -3048,7 +3048,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Bar Desmontable 6×2 m"
                     ],
                     "price" => "1,521.52",
-                    "old_price" => null,
+                    "old_price" => "2,173.60",
                     "sku" => "3276610701",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-bar-smontabile-6x2-m/",
@@ -3085,7 +3085,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Cafetería 20 Pies"
                     ],
                     "price" => "3,203.20",
-                    "old_price" => null,
+                    "old_price" => "4,576.00",
                     "sku" => "3276610698",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-caffetteria-20-piedi/",
@@ -3122,7 +3122,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Comercial \"Linz\""
                     ],
                     "price" => "2,622.62",
-                    "old_price" => null,
+                    "old_price" => "3,746.60",
                     "sku" => "3276610622",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-commerciale-linz/",
@@ -3163,7 +3163,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor 10 Pies para Uso Agrícola"
                     ],
                     "price" => "710.00",
-                    "old_price" => null,
+                    "old_price" => "1,029.60",
                     "sku" => "3276610479",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-da-10-piedi-per-uso-agricolo/",
@@ -3240,7 +3240,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor de almacenamiento 40 pies High Cube"
                     ],
                     "price" => "2,320.00",
-                    "old_price" => null,
+                    "old_price" => "3,546.40",
                     "sku" => "3276610492",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-di-stoccaggio-40-piedi-high-cube/",
@@ -3275,7 +3275,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor de almacenamiento 40 pies High Cube"
                     ],
                     "price" => "2,450.00",
-                    "old_price" => null,
+                    "old_price" => "3,603.60",
                     "sku" => "3276610493",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-di-stoccaggio-40-piedi-high-cube-2/",
@@ -3310,7 +3310,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor de almacenamiento estándar 40 pies"
                     ],
                     "price" => "2,055.00",
-                    "old_price" => null,
+                    "old_price" => "3,117.40",
                     "sku" => "3276610494",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-di-stoccaggio-40-piedi-standard/",
@@ -3379,7 +3379,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Frigorífico 20 Pies Reefer – Solución Ideal de Almacenamiento"
                     ],
                     "price" => "3,600.00",
-                    "old_price" => null,
+                    "old_price" => "4,000.00",
                     "sku" => "3276611166",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-20-piedi-reefer-soluzione-ideale-per-stoccaggio/",
@@ -3415,7 +3415,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Frigorífico 40 Pies – Solución Fiable para Transporte"
                     ],
                     "price" => "4,600.00",
-                    "old_price" => null,
+                    "old_price" => "5,500.00",
                     "sku" => "3276611164",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-40-piedi-soluzione-affidabile-per-trasporto/",
@@ -3516,7 +3516,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Frigorífico Congelador 20 Pies RF"
                     ],
                     "price" => "2,510.00",
-                    "old_price" => null,
+                    "old_price" => "3,846.70",
                     "sku" => "3276610475",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-congelatore-20-piedi-rf/",
@@ -3555,7 +3555,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Frigorífico 10 Pies"
                     ],
                     "price" => "1,951.95",
-                    "old_price" => null,
+                    "old_price" => "2,788.50",
                     "sku" => "3276610471",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-da-10-piedi/",
@@ -3592,7 +3592,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Frigorífico 10 Pies – Compacto, Refrigerado"
                     ],
                     "price" => "1,551.55",
-                    "old_price" => null,
+                    "old_price" => "2,216.50",
                     "sku" => "3276610472",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-da-10-piedi-compatto-refrigerato/",
@@ -3628,7 +3628,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Frigorífico DNV 10 Pies"
                     ],
                     "price" => "1,425.00",
-                    "old_price" => null,
+                    "old_price" => "2,216.50",
                     "sku" => "3276610473",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-dnv-da-10-piedi/",
@@ -3668,7 +3668,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Frigorífico Reefer 40 Pies High Cube"
                     ],
                     "price" => "3,099.00",
-                    "old_price" => null,
+                    "old_price" => "4,461.60",
                     "sku" => "3276610476",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-reefer-40-piedi-high-cube/",
@@ -3704,7 +3704,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Frigorífico Usado 40 Pies"
                     ],
                     "price" => "2,220.00",
-                    "old_price" => null,
+                    "old_price" => "3,317.60",
                     "sku" => "3276610477",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-usato-40-piedi/",
@@ -3739,7 +3739,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Frigorífico Usado 40′ High Cube"
                     ],
                     "price" => "3,095.00",
-                    "old_price" => null,
+                    "old_price" => "4,504.50",
                     "sku" => "3276610478",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-frigorifero-usato-40-high-cube/",
@@ -3780,7 +3780,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Hazmat 20 pies"
                     ],
                     "price" => "1,525.00",
-                    "old_price" => null,
+                    "old_price" => "2,545.40",
                     "sku" => "3276610488",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-hazmat-20-piedi/",
@@ -3819,7 +3819,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor High Cube 40 pies – Usado"
                     ],
                     "price" => "2,199.00",
-                    "old_price" => null,
+                    "old_price" => "3,303.30",
                     "sku" => "3276610496",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-high-cube-40-piedi-usato/",
@@ -3856,7 +3856,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor High Cube Open Side (HCOS) 20 pies"
                     ],
                     "price" => "1,350.00",
-                    "old_price" => null,
+                    "old_price" => "1,900.00",
                     "sku" => "3276611833",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-high-cube-open-side-hcos-da-20-piedi/",
@@ -3893,7 +3893,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo 10 Pies"
                     ],
                     "price" => "795.79",
-                    "old_price" => null,
+                    "old_price" => "1,136.85",
                     "sku" => "3276610480",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-10-piedi/",
@@ -3934,7 +3934,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo 10 Pies con Doble Puerta"
                     ],
                     "price" => "720.72",
-                    "old_price" => null,
+                    "old_price" => "1,029.60",
                     "sku" => "3276610481",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-10-piedi-con-doppia-porta/",
@@ -3971,7 +3971,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo 10 Pies Nuevo"
                     ],
                     "price" => "760.76",
-                    "old_price" => null,
+                    "old_price" => "1,086.80",
                     "sku" => "3276610482",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-10-piedi-nuovo/",
@@ -4049,7 +4049,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo 20 Pies DD – Doble Acceso y Versatilidad"
                     ],
                     "price" => "1,150.00",
-                    "old_price" => null,
+                    "old_price" => "1,850.00",
                     "sku" => "3276611065",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-20-piedi-dd-doppio-accesso-e-versatilita/",
@@ -4088,7 +4088,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo 20 Pies HC – Espacio Extra y Resistencia"
                     ],
                     "price" => "907.00",
-                    "old_price" => null,
+                    "old_price" => "1,150.00",
                     "sku" => "3276611063",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-20-piedi-hc-spazio-extra-e-resistenza/",
@@ -4123,7 +4123,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo 20 Pies OS – Acceso Lateral Total"
                     ],
                     "price" => "1,450.00",
-                    "old_price" => null,
+                    "old_price" => "1,850.00",
                     "sku" => "3276611064",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-20-piedi-os-accesso-laterale-totale/",
@@ -4159,7 +4159,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo 20 Pies STD – Versátil y Resistente"
                     ],
                     "price" => "907.00",
-                    "old_price" => null,
+                    "old_price" => "1,200.00",
                     "sku" => "3276611066",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-20-piedi-std-versatile-e-resistente/",
@@ -4199,7 +4199,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo 20 Pies STD Usado – Versátil y Económico"
                     ],
                     "price" => "800.00",
-                    "old_price" => null,
+                    "old_price" => "1,000.00",
                     "sku" => "3276611072",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-20-piedi-std-usato-versatile-ed-economico/",
@@ -4235,7 +4235,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor marítimo 20′ en acero CORTEN"
                     ],
                     "price" => "1,475.00",
-                    "old_price" => null,
+                    "old_price" => "2,345.20",
                     "sku" => "3276610491",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-20-in-acciaio-corten/",
@@ -4273,7 +4273,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo 40 Pies HC – Alta Capacidad y Versatilidad"
                     ],
                     "price" => "1,210.00",
-                    "old_price" => null,
+                    "old_price" => "1,900.00",
                     "sku" => "3276611069",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-40-piedi-hc-alta-capacita-e-versatilita/",
@@ -4313,7 +4313,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo 40 Pies HC DD – Alta Capacidad y Doble Acceso"
                     ],
                     "price" => "1,510.00",
-                    "old_price" => null,
+                    "old_price" => "2,000.00",
                     "sku" => "3276611067",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-40-piedi-hc-dd-alta-capacita-e-doppio-accesso/",
@@ -4350,7 +4350,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo 40 Pies HC Usado – Alta Capacidad y Versatilidad"
                     ],
                     "price" => "1,140.00",
-                    "old_price" => null,
+                    "old_price" => "1,850.00",
                     "sku" => "3276611074",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-40-piedi-hc-usato-alta-capacita-e-versatilita/",
@@ -4386,7 +4386,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo 40 Pies OS – Acceso Lateral Total y Practicidad"
                     ],
                     "price" => "1,849.00",
-                    "old_price" => null,
+                    "old_price" => "2,500.00",
                     "sku" => "3276611068",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-40-piedi-os-accesso-laterale-totale-e-praticita/",
@@ -4419,7 +4419,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo 40 Pies STD – Amplio Espacio y Versatilidad"
                     ],
                     "price" => "1,210.00",
-                    "old_price" => null,
+                    "old_price" => "1,860.00",
                     "sku" => "3276611070",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-40-piedi-std-spazio-ampio-e-versatilita/",
@@ -4452,7 +4452,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo 40 Pies STD Usado – Espacioso y Económico"
                     ],
                     "price" => "1,150.00",
-                    "old_price" => null,
+                    "old_price" => "1,800.00",
                     "sku" => "3276611071",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-40-piedi-std-usato-spazioso-ed-economico/",
@@ -4488,7 +4488,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor marítimo Dry Van 10 pies usado"
                     ],
                     "price" => "650.65",
-                    "old_price" => null,
+                    "old_price" => "929.50",
                     "sku" => "3276610483",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-dry-van-10-piedi-usato/",
@@ -4526,7 +4526,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Marítimo High Cube 40′ con 4 Puertas Laterales – Usado"
                     ],
                     "price" => "2,510.00",
-                    "old_price" => null,
+                    "old_price" => "3,875.30",
                     "sku" => "3276610497",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-marittimo-high-cube-40-con-4-porte-laterali-usato/",
@@ -4571,7 +4571,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor modular 40 pies – Oficina/Cantina con ventanales"
                     ],
                     "price" => "6,900.00",
-                    "old_price" => null,
+                    "old_price" => "7,500.00",
                     "sku" => "3276611485",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-modulare-40-piedi-ufficio-mensa-con-finestre-a-bovindo/",
@@ -4615,7 +4615,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Modular Ampliado Duo 29m² – Espacio Multifuncional"
                     ],
                     "price" => "4,500.00",
-                    "old_price" => null,
+                    "old_price" => "5,000.00",
                     "sku" => "3276611157",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-modulare-ampliato-duo-29m%c2%b2-spazio-multifunzionale/",
@@ -4649,7 +4649,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Open Top 40′ – Usado Categoría B"
                     ],
                     "price" => "1,910.00",
-                    "old_price" => null,
+                    "old_price" => "2,509.95",
                     "sku" => "3276610498",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-open-top-40-usato-categoria-b/",
@@ -4685,7 +4685,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor para barras 20 pies"
                     ],
                     "price" => "1,849.00",
-                    "old_price" => null,
+                    "old_price" => "2,500.00",
                     "sku" => "3276611364",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-per-barre-da-20-piedi/",
@@ -4858,7 +4858,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor sanitario – WC + ducha + tanque"
                     ],
                     "price" => "1,800.00",
-                    "old_price" => null,
+                    "old_price" => "2,500.00",
                     "sku" => "3276611174",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-sanitario-wc-doccia-serbatoio/",
@@ -4904,7 +4904,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Sanitario 2×2 m con Ducha y Tanque"
                     ],
                     "price" => "1,916.91",
-                    "old_price" => null,
+                    "old_price" => "2,738.45",
                     "sku" => "3276610795",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-sanitario-2x2-m-con-doccia-e-serbatoio/",
@@ -4939,7 +4939,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor sanitario doble 2,4 x 1,5 m – WC + urinario separados"
                     ],
                     "price" => "1,020.00",
-                    "old_price" => null,
+                    "old_price" => "1,180.00",
                     "sku" => "3276611530",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-sanitario-doppio-24-x-15-m-wc-orinatoio-separati/",
@@ -4982,7 +4982,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Sanitario Doble 3×2 m"
                     ],
                     "price" => "1,741.74",
-                    "old_price" => null,
+                    "old_price" => "2,488.20",
                     "sku" => "3276610796",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-sanitario-doppio-3x2-m/",
@@ -5018,7 +5018,7 @@ class ArticleSeeder extends Seeder
                         "es" => "CONTENEDOR SANITARIO WC + DUCHA CONECTABLE GRIS"
                     ],
                     "price" => "1,860.00",
-                    "old_price" => null,
+                    "old_price" => "2,500.00",
                     "sku" => "3276611305",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-sanitario-wc-doccia-collegabile-grigio/",
@@ -5055,7 +5055,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor sanitario/vestuario 6×2,9"
                     ],
                     "price" => "4,399.00",
-                    "old_price" => null,
+                    "old_price" => "5,000.00",
                     "sku" => "3276611564",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-sanitario-spogliatoio-629/",
@@ -5097,7 +5097,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Snack-BOX 20' DRY Privilege"
                     ],
                     "price" => "2,252.25",
-                    "old_price" => null,
+                    "old_price" => "3,217.50",
                     "sku" => "3276610700",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-snack-box-20-dry-privilege/",
@@ -5136,7 +5136,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor social equipado de 21 m² – WC, cocina y vestuario"
                     ],
                     "price" => "5,499.00",
-                    "old_price" => null,
+                    "old_price" => "6,300.00",
                     "sku" => "3276611425",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-sociale-attrezzato-di-21-m%c2%b2-wc-cucina-e-spogliatoio/",
@@ -5175,7 +5175,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor social de 21 m² – WC y vestuario"
                     ],
                     "price" => "5,699.00",
-                    "old_price" => null,
+                    "old_price" => "6,300.00",
                     "sku" => "3276611426",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-sociale-di-21-m%c2%b2-wc-e-spogliatoio/",
@@ -5212,7 +5212,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Estándar 20 pies – Usado certificado CSC"
                     ],
                     "price" => "1,210.00",
-                    "old_price" => null,
+                    "old_price" => "1,823.25",
                     "sku" => "3276610489",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-standard-20-piedi-usato-certificato-csc/",
@@ -5249,7 +5249,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor estándar 40 pies – Usado certificado CSC"
                     ],
                     "price" => "2,099.00",
-                    "old_price" => null,
+                    "old_price" => "3,045.90",
                     "sku" => "3276610495",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-standard-40-piedi-usato-certificato-csc/",
@@ -5286,7 +5286,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Super Frigorífico Doble Zona 20 Pies"
                     ],
                     "price" => "3,799.00",
-                    "old_price" => null,
+                    "old_price" => "4,505.50",
                     "sku" => "3276610474",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-super-frigorifero-doppia-zona-20-piedi/",
@@ -5326,7 +5326,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Oficina 20 Pies con Ventanal Lateral"
                     ],
                     "price" => "2,312.31",
-                    "old_price" => null,
+                    "old_price" => "3,303.30",
                     "sku" => "3276610696",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-ufficio-20-piedi-con-vetrata-laterale/",
@@ -5364,7 +5364,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Oficina 20' Completamente Equipado"
                     ],
                     "price" => "2,962.96",
-                    "old_price" => null,
+                    "old_price" => "4,232.80",
                     "sku" => "3276610627",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-ufficio-20-completamente-attrezzato/",
@@ -5402,7 +5402,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Oficina 6×3 m"
                     ],
                     "price" => "1,921.92",
-                    "old_price" => null,
+                    "old_price" => "2,745.60",
                     "sku" => "3276610628",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-ufficio-6x3-m/",
@@ -5439,7 +5439,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Oficina 6×3 m Modelo H1-630"
                     ],
                     "price" => "2,222.22",
-                    "old_price" => null,
+                    "old_price" => "3,174.60",
                     "sku" => "3276610629",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-ufficio-6x3-m-modello-h1-630/",
@@ -5546,7 +5546,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Contenedor Oficina Estándar 6,00 × 2,43 m"
                     ],
                     "price" => "2,482.48",
-                    "old_price" => null,
+                    "old_price" => "3,546.40",
                     "sku" => "3276610625",
                     "discount_percentage" => null,
                     "link" => "/product/contenitore-ufficio-standard-600-x-243-m/",
@@ -5585,7 +5585,7 @@ class ArticleSeeder extends Seeder
                         "es" => "CONTENEDORES REFRIGERADOS 20 PIES"
                     ],
                     "price" => "3,499.00",
-                    "old_price" => null,
+                    "old_price" => "4,100.00",
                     "sku" => "3276611240",
                     "discount_percentage" => null,
                     "link" => "/product/contenitori-refrigerati-da-20-piedi/",
@@ -5624,7 +5624,7 @@ class ArticleSeeder extends Seeder
                         "es" => "FRIGORÍFICOS PORTÁTILES 10 PIES NUEVOS"
                     ],
                     "price" => "1,550.00",
-                    "old_price" => null,
+                    "old_price" => "2,000.00",
                     "sku" => "3276611231",
                     "discount_percentage" => null,
                     "link" => "/product/frigoriferi-portatili-10-piedi-nuovi/",
@@ -5659,7 +5659,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Mini casa móvil con dos dormitorios y cocina – Modelo Deluxe Stahlworks"
                     ],
                     "price" => "8,995.00",
-                    "old_price" => null,
+                    "old_price" => "10,800.00",
                     "sku" => "3276611622",
                     "discount_percentage" => null,
                     "link" => "/product/mini-casa-mobile-con-due-camere-da-letto-e-cucina-modello-deluxe-stahlworks/",
@@ -5706,7 +5706,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Mini contenedor de 12 pies"
                     ],
                     "price" => "1,025.00",
-                    "old_price" => null,
+                    "old_price" => "1,100.00",
                     "sku" => "3276611830",
                     "discount_percentage" => null,
                     "link" => "/product/mini-container-da-12-piedi/",
@@ -5744,7 +5744,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Moderna mini casa de 36 m² – 2 dormitorios y cocina equipada"
                     ],
                     "price" => "9,100.00",
-                    "old_price" => null,
+                    "old_price" => "10,800.00",
                     "sku" => "3276611566",
                     "discount_percentage" => null,
                     "link" => "/product/moderna-mini-casa-di-36-m%c2%b2-2-camere-da-letto-e-cucina-attrezzata/",
@@ -5791,7 +5791,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo Habitable T0 en Contenedor – Diseño Moderno y Aislamiento Óptimo"
                     ],
                     "price" => "5,500.00",
-                    "old_price" => null,
+                    "old_price" => "6,850.00",
                     "sku" => "3276611169",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-abitabile-t0-in-container-design-moderno-e-isolamento-ottimale/",
@@ -5950,7 +5950,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo Contenedor Habitable de 21 m²"
                     ],
                     "price" => "4,299.00",
-                    "old_price" => null,
+                    "old_price" => "6,100.00",
                     "sku" => "3276611229",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-container-abitabile-di-21-m2/",
@@ -6061,7 +6061,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo Prefabricado “DALÍ” 8×3 m"
                     ],
                     "price" => "2,642.64",
-                    "old_price" => null,
+                    "old_price" => "3,775.20",
                     "sku" => "3276610623",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-dali-8x3-m/",
@@ -6102,7 +6102,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo prefabricado 10 m²"
                     ],
                     "price" => "1,910.00",
-                    "old_price" => null,
+                    "old_price" => "2,000.00",
                     "sku" => "3276611228",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-10-mq/",
@@ -6137,7 +6137,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo prefabricado 14 m² con área sanitaria"
                     ],
                     "price" => "4,100.00",
-                    "old_price" => null,
+                    "old_price" => "4,500.00",
                     "sku" => "3276611176",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-14-mq-con-zona-sanitaria/",
@@ -6178,7 +6178,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo prefabricado de 12 m²"
                     ],
                     "price" => "2,320.00",
-                    "old_price" => null,
+                    "old_price" => "2,400.00",
                     "sku" => "3276611227",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-da-12-m%c2%b2/",
@@ -6217,7 +6217,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo prefabricado de 15 m²"
                     ],
                     "price" => "3,599.00",
-                    "old_price" => null,
+                    "old_price" => "3,700.00",
                     "sku" => "3276611226",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-da-15-mq/",
@@ -6299,7 +6299,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo Prefabricado de 24 m² con Sanitarios"
                     ],
                     "price" => "6,960.00",
-                    "old_price" => null,
+                    "old_price" => "8,500.00",
                     "sku" => "3276611179",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-da-24-mq-con-sanitari/",
@@ -6339,7 +6339,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo prefabricado de 50 m²"
                     ],
                     "price" => "7,900.00",
-                    "old_price" => null,
+                    "old_price" => "9,400.00",
                     "sku" => "3276611178",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-da-50-mq/",
@@ -6377,7 +6377,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo prefabricado de 7 m² sin aseos (posibilidad de tener más tamaños)"
                     ],
                     "price" => "1,210.00",
-                    "old_price" => null,
+                    "old_price" => "1,400.00",
                     "sku" => "3276611724",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-di-7-m2-senza-servizi-igienici-possibilita-di-avere-piu-dimensioni/",
@@ -6414,7 +6414,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo Prefabricado Negro – Elegante, Aislado y Multifuncional"
                     ],
                     "price" => "2,797.79",
-                    "old_price" => null,
+                    "old_price" => "3,996.85",
                     "sku" => "3276610626",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-prefabbricato-nero-elegante-isolato-e-multifunzione/",
@@ -6454,7 +6454,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo Sanitario 6×2,44 m con 5 WC"
                     ],
                     "price" => "2,552.55",
-                    "old_price" => null,
+                    "old_price" => "3,646.50",
                     "sku" => "3276610707",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-sanitario-6x244-m-con-5-wc/",
@@ -6492,7 +6492,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo Sanitario Compacto S1"
                     ],
                     "price" => "769.77",
-                    "old_price" => null,
+                    "old_price" => "1,099.67",
                     "sku" => "3276610865",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-sanitario-compatto-s1/",
@@ -6530,7 +6530,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo Sanitario con Ducha y WC Separados"
                     ],
                     "price" => "1,838.84",
-                    "old_price" => null,
+                    "old_price" => "2,626.91",
                     "sku" => "3276610706",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-sanitario-con-doccia-e-wc-separati/",
@@ -6566,7 +6566,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo Sanitario PMR con WC y Ducha"
                     ],
                     "price" => "1,721.72",
-                    "old_price" => null,
+                    "old_price" => "2,459.60",
                     "sku" => "3276610797",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-sanitario-pmr-con-wc-e-doccia/",
@@ -6609,7 +6609,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Módulo Sanitario WC Doble Hombre – Mujer"
                     ],
                     "price" => "880.00",
-                    "old_price" => null,
+                    "old_price" => "1,300.00",
                     "sku" => "3276611177",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-sanitario-wc-doppio-uomo-donna/",
@@ -6647,7 +6647,7 @@ class ArticleSeeder extends Seeder
                         "es" => "MÓDULO WC SANITARIO SIMPLE – COLOR GRIS"
                     ],
                     "price" => "550.00",
-                    "old_price" => null,
+                    "old_price" => "680.00",
                     "sku" => "3276611304",
                     "discount_percentage" => null,
                     "link" => "/product/modulo-wc-sanitario-semplice-colore-grigio/",
@@ -6684,7 +6684,7 @@ class ArticleSeeder extends Seeder
                         "es" => "MONOBLOCO 6×2,5 USO OFICINA"
                     ],
                     "price" => "1,580.00",
-                    "old_price" => null,
+                    "old_price" => "1,800.00",
                     "sku" => "3276611362",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-6x25-uso-ufficio/",
@@ -6727,7 +6727,7 @@ class ArticleSeeder extends Seeder
                         "es" => "MONOBLOCO BAÑO"
                     ],
                     "price" => "9,800.00",
-                    "old_price" => null,
+                    "old_price" => "11,000.00",
                     "sku" => "3276611309",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-bagno/",
@@ -6778,7 +6778,7 @@ class ArticleSeeder extends Seeder
                         "es" => "MONOBLOCO BOX AUTO"
                     ],
                     "price" => "6,100.00",
-                    "old_price" => null,
+                    "old_price" => "7,200.00",
                     "sku" => "3276611313",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-box-auto/",
@@ -6813,7 +6813,7 @@ class ArticleSeeder extends Seeder
                         "es" => "MONOBLOCO GARITA"
                     ],
                     "price" => "5,099.00",
-                    "old_price" => null,
+                    "old_price" => "6,200.00",
                     "sku" => "3276611311",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-portineria/",
@@ -6875,7 +6875,7 @@ class ArticleSeeder extends Seeder
                         "es" => "MONOBLOCO GARITA"
                     ],
                     "price" => "3,090.00",
-                    "old_price" => null,
+                    "old_price" => "4,000.00",
                     "sku" => "3276611312",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-portineria-2/",
@@ -6912,7 +6912,7 @@ class ArticleSeeder extends Seeder
                         "es" => "MONOBLOCO OFICINA"
                     ],
                     "price" => "6,900.00",
-                    "old_price" => null,
+                    "old_price" => "7,600.00",
                     "sku" => "3276611306",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-ufficio/",
@@ -6949,7 +6949,7 @@ class ArticleSeeder extends Seeder
                         "es" => "MONOBLOCO OFICINA"
                     ],
                     "price" => "3,390.00",
-                    "old_price" => null,
+                    "old_price" => "4,000.00",
                     "sku" => "3276611310",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-ufficio-2/",
@@ -6989,7 +6989,7 @@ class ArticleSeeder extends Seeder
                         "es" => "MONOBLOCO OFICINA 4×2"
                     ],
                     "price" => "899.00",
-                    "old_price" => null,
+                    "old_price" => "910.00",
                     "sku" => "3276611307",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-ufficio-4x2/",
@@ -7027,7 +7027,7 @@ class ArticleSeeder extends Seeder
                         "es" => "MONOBLOCO OFICINA DE VENTAS 12×2,5"
                     ],
                     "price" => "5,590.00",
-                    "old_price" => null,
+                    "old_price" => "7,600.00",
                     "sku" => "3276611308",
                     "discount_percentage" => null,
                     "link" => "/product/monoblocco-uso-ufficio-vendite-12x25/",
@@ -7067,7 +7067,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Nueva Casa – Reale I"
                     ],
                     "price" => "8,890.00",
-                    "old_price" => null,
+                    "old_price" => "9,100.00",
                     "sku" => "3276611419",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-reale-i/",
@@ -7109,7 +7109,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Nueva Casa – Campo III"
                     ],
                     "price" => "11,620.00",
-                    "old_price" => null,
+                    "old_price" => "13,000.00",
                     "sku" => "3276611422",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-campo-iii/",
@@ -7150,7 +7150,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Nueva Casa – Reale II"
                     ],
                     "price" => "9,300.00",
-                    "old_price" => null,
+                    "old_price" => "10,500.00",
                     "sku" => "3276611420",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-reale-ii/",
@@ -7195,7 +7195,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Nueva Casa – Reale III"
                     ],
                     "price" => "10,050.00",
-                    "old_price" => null,
+                    "old_price" => "12,000.00",
                     "sku" => "3276611421",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-reale-iii/",
@@ -7239,7 +7239,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Nueva casa – Tempesta II"
                     ],
                     "price" => "10,435.00",
-                    "old_price" => null,
+                    "old_price" => "11,970.00",
                     "sku" => "3276611423",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-tempesta-ii/",
@@ -7280,7 +7280,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Nueva casa 10 x 4m – Premium"
                     ],
                     "price" => "10,090.00",
-                    "old_price" => null,
+                    "old_price" => "12,000.00",
                     "sku" => "3276611366",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-10-x-4m-premium/",
@@ -7323,7 +7323,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Nueva casa 10x4m – II"
                     ],
                     "price" => "9,299.00",
-                    "old_price" => null,
+                    "old_price" => "12,000.00",
                     "sku" => "3276611368",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-10x4m-ii/",
@@ -7365,7 +7365,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Nueva casa 11,4 x 3,5 m"
                     ],
                     "price" => "9,810.00",
-                    "old_price" => null,
+                    "old_price" => "11,000.00",
                     "sku" => "3276611726",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-114-x-35-mt-11-970e-iva-inclusa/",
@@ -7405,7 +7405,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Nueva casa Samos 2 – 10×3,5m"
                     ],
                     "price" => "8,100.00",
-                    "old_price" => null,
+                    "old_price" => "9,800.00",
                     "sku" => "3276611418",
                     "discount_percentage" => null,
                     "link" => "/product/nuova-casa-samos-2-1035m/",
@@ -7448,7 +7448,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Nuevo contenedor de 20 pies (Ofrecemos descuento por compra de múltiples unidades)"
                     ],
                     "price" => "905.00",
-                    "old_price" => null,
+                    "old_price" => "1,300.00",
                     "sku" => "3276611835",
                     "discount_percentage" => null,
                     "link" => "/product/nuovo-container-da-20-piedi-offriamo-uno-sconto-per-lacquisto-di-piu-unita/",
@@ -7485,7 +7485,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Nuevo contenedor High Cube de 40 pies con gradas para 74 asientos."
                     ],
                     "price" => "4,450.00",
-                    "old_price" => null,
+                    "old_price" => "6,500.00",
                     "sku" => "3276611829",
                     "discount_percentage" => null,
                     "link" => "/product/nuovo-container-high-cube-con-tribune-da-40-piedi-e-74-posti/",
@@ -7529,7 +7529,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Nuevo contenedor de envío de 20 pies con apertura lateral"
                     ],
                     "price" => "1,350.00",
-                    "old_price" => null,
+                    "old_price" => "2,000.00",
                     "sku" => "3276611837",
                     "discount_percentage" => null,
                     "link" => "/product/nuovo-container-per-spedizioni-con-apertura-laterale-da-20-piedi/",
@@ -7566,7 +7566,7 @@ class ArticleSeeder extends Seeder
                         "es" => "NUEVO CONTENEDOR MARÍTIMO REFRIGERADO 20 PIES"
                     ],
                     "price" => "3,580.00",
-                    "old_price" => null,
+                    "old_price" => "4,100.00",
                     "sku" => "3276611238",
                     "discount_percentage" => null,
                     "link" => "/product/nuovo-contenitore-marittimo-refrigerato-da-20-piedi/",
@@ -7602,7 +7602,7 @@ class ArticleSeeder extends Seeder
                         "es" => "NUEVO CONTENEDOR PARA OFICINA 20 PIES"
                     ],
                     "price" => "1,810.00",
-                    "old_price" => null,
+                    "old_price" => "2,600.00",
                     "sku" => "3276611235",
                     "discount_percentage" => null,
                     "link" => "/product/nuovo-contenitore-per-ufficio-da-20-piedi/",
@@ -7675,7 +7675,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Pequeña casa Deluxe 19 pies x 20 pies – Stahlworks 2025"
                     ],
                     "price" => "8,900.00",
-                    "old_price" => null,
+                    "old_price" => "9,500.00",
                     "sku" => "3276611674",
                     "discount_percentage" => null,
                     "link" => "/product/piccola-casa-deluxe-19-piedi-x-20-piedi-stahlworks-2025/",
@@ -7722,7 +7722,7 @@ class ArticleSeeder extends Seeder
                         "es" => "piscinas Contenedor LC 15'"
                     ],
                     "price" => "3,543.54",
-                    "old_price" => null,
+                    "old_price" => "5,062.20",
                     "sku" => "3276610731",
                     "discount_percentage" => null,
                     "link" => "/product/piscinas-container-lc-15/",
@@ -7758,7 +7758,7 @@ class ArticleSeeder extends Seeder
                         "es" => "piscinas Contenedor 12 Metros"
                     ],
                     "price" => "5,625.62",
-                    "old_price" => null,
+                    "old_price" => "8,036.60",
                     "sku" => "3276610705",
                     "discount_percentage" => null,
                     "link" => "/product/piscinas-contenitore-12-metri/",
@@ -7798,7 +7798,7 @@ class ArticleSeeder extends Seeder
                         "es" => "piscinas Contenedor 20' – Diseño Listo para Usar"
                     ],
                     "price" => "4,954.95",
-                    "old_price" => null,
+                    "old_price" => "7,078.50",
                     "sku" => "3276610794",
                     "discount_percentage" => null,
                     "link" => "/product/piscinas-contenitore-20-design-pronto-alluso/",
@@ -7834,7 +7834,7 @@ class ArticleSeeder extends Seeder
                         "es" => "piscinas Contenedor 20' – Lista para Usar, Estilo Garantizado"
                     ],
                     "price" => "3,923.92",
-                    "old_price" => null,
+                    "old_price" => "5,605.60",
                     "sku" => "3276610792",
                     "discount_percentage" => null,
                     "link" => "/product/piscinas-contenitore-20%e2%80%b2-pronta-alluso-stile-garantito/",
@@ -7871,7 +7871,7 @@ class ArticleSeeder extends Seeder
                         "es" => "piscinas Contenedor Premium 6,2 x 2,5 m"
                     ],
                     "price" => "5,630.62",
-                    "old_price" => null,
+                    "old_price" => "8,043.75",
                     "sku" => "3276610704",
                     "discount_percentage" => null,
                     "link" => "/product/piscinas-contenitore-premium-62-x-25-m/",
@@ -7910,7 +7910,7 @@ class ArticleSeeder extends Seeder
                         "es" => "piscinas ElitePool Sport & Spa"
                     ],
                     "price" => "3,378.37",
-                    "old_price" => null,
+                    "old_price" => "4,826.25",
                     "sku" => "3276610791",
                     "discount_percentage" => null,
                     "link" => "/product/piscinas-elitepool-sport-spa/",
@@ -7947,7 +7947,7 @@ class ArticleSeeder extends Seeder
                         "es" => "piscinas Sport & Spa en Polipropileno"
                     ],
                     "price" => "5,105.10",
-                    "old_price" => null,
+                    "old_price" => "7,293.00",
                     "sku" => "3276610793",
                     "discount_percentage" => null,
                     "link" => "/product/piscinas-sport-spa-in-polipropilene/",
@@ -7985,7 +7985,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Rey de la Nueva Casa – 1"
                     ],
                     "price" => "9,699.00",
-                    "old_price" => null,
+                    "old_price" => "10,560.00",
                     "sku" => "3276611367",
                     "discount_percentage" => null,
                     "link" => "/product/re-della-nuova-casa-1/",
@@ -8075,7 +8075,7 @@ class ArticleSeeder extends Seeder
                         "es" => "SNACK – CONTENEDOR GUINGUETTE"
                     ],
                     "price" => "4,100.00",
-                    "old_price" => null,
+                    "old_price" => "5,500.00",
                     "sku" => "3276611233",
                     "discount_percentage" => null,
                     "link" => "/product/snack-contenitore-guinguette/",
@@ -8110,7 +8110,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Snack-BOX 20' con Accesorios Especiales"
                     ],
                     "price" => "1,726.72",
-                    "old_price" => null,
+                    "old_price" => "2,466.75",
                     "sku" => "3276610702",
                     "discount_percentage" => null,
                     "link" => "/product/snack-box-20%e2%80%b2-con-accessori-speciali/",
@@ -8152,7 +8152,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Tiny House Modular L15"
                     ],
                     "price" => "4,924.92",
-                    "old_price" => null,
+                    "old_price" => "7,035.60",
                     "sku" => "3276610500",
                     "discount_percentage" => null,
                     "link" => "/product/tiny-house-modular-l15/",
@@ -8194,7 +8194,7 @@ class ArticleSeeder extends Seeder
                         "es" => "GRADA / GRADA CONTENEDOR"
                     ],
                     "price" => "4,600.00",
-                    "old_price" => null,
+                    "old_price" => "5,500.00",
                     "sku" => "3276611234",
                     "discount_percentage" => null,
                     "link" => "/product/tribuna-tribuna-container/",
@@ -8267,7 +8267,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Oficina de Jardín 20 Pies a Medida"
                     ],
                     "price" => "2,632.63",
-                    "old_price" => null,
+                    "old_price" => "3,760.90",
                     "sku" => "3276610697",
                     "discount_percentage" => null,
                     "link" => "/product/ufficio-da-giardino-20-piedi-su-misura/",
@@ -8312,7 +8312,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Oficina Modular Portátil – 4 Módulos de 6×9,72 m"
                     ],
                     "price" => "6,916.91",
-                    "old_price" => null,
+                    "old_price" => "9,881.30",
                     "sku" => "3276610624",
                     "discount_percentage" => null,
                     "link" => "/product/ufficio-modulare-portatile-4-moduli-da-6x972-m/",
@@ -8352,7 +8352,7 @@ class ArticleSeeder extends Seeder
                         "es" => "Unidad de Contención 40' High Cube – Nueva"
                     ],
                     "price" => "2,792.79",
-                    "old_price" => null,
+                    "old_price" => "3,989.70",
                     "sku" => "3276610499",
                     "discount_percentage" => null,
                     "link" => "/product/unita-di-contenimento-40-high-cube-nuova/",
@@ -8424,7 +8424,7 @@ class ArticleSeeder extends Seeder
                         "es" => "VENTA CONTENEDOR 20 pies HC | Nuevo 20 pies HC | Nuevo"
                     ],
                     "price" => "907.00",
-                    "old_price" => null,
+                    "old_price" => "1,150.00",
                     "sku" => "3276611172",
                     "discount_percentage" => null,
                     "link" => "/product/vendita-container-20-piedi-hc-nuovo-20-piedi-hc-nuovo/",
@@ -8469,7 +8469,7 @@ class ArticleSeeder extends Seeder
                         "es" => "XXL Tiny House / Chalet de lujo plegable – 40 pies / 12 metros"
                     ],
                     "price" => "9,900.00",
-                    "old_price" => null,
+                    "old_price" => "12,500.00",
                     "sku" => "3276611567",
                     "discount_percentage" => null,
                     "link" => "/product/xxl-tiny-house-chalet-di-lusso-pieghevole-40-piedi-12-metri/",
@@ -8524,18 +8524,15 @@ class ArticleSeeder extends Seeder
 
         foreach ($articlesData as $item) {
             try {
-                // Le slug doit être en portugais : c'est la langue du site.
-                // Repli sur les autres langues si la traduction PT manque.
-                $slugSource = $item['name']['pt']
-                    ?? $item['name']['en']
-                    ?? $item['name']['it'];
+                // Utiliser le nom en italien pour générer le slug
+                $italianName = $item['name']['it'];
 
                 // Nettoyer et convertir les prix
                 $price = $this->cleanPrice($item['price']);
                 $oldPrice = isset($item['old_price']) ? $this->cleanPrice($item['old_price']) : null;
 
                 // Créer un slug unique
-                $baseSlug = Str::slug($slugSource);
+                $baseSlug = Str::slug($italianName);
                 $slug = $baseSlug;
                 $counter = 1;
 
