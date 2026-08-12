@@ -683,9 +683,9 @@
 <script type="text/javascript" src="{{ asset('assets/themes/merto/js/jquery.sticky6f3e.js') }}"
         id="jquery-sticky-js"></script>
 
-<script type="text/javascript"
+<!-- <script type="text/javascript"
         src="{{ asset('assets/vendor/google-listings-and-ads/js/build/gtag-events6841.html') }}"
-        id="gla-gtag-events-js"></script>
+        id="gla-gtag-events-js"></script> -->
 
 
 
