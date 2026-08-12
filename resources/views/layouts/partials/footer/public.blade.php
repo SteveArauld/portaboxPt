@@ -74,10 +74,10 @@
                      data-id="56b3867" data-element_type="container">
                     <div class="elementor-element elementor-element-1084eb0 elementor-widget elementor-widget-image"
                          data-id="1084eb0" data-element_type="widget" data-widget_type="image.default">
-                        <img loading="lazy" width="2560" height="822"
-                             src="/assets/uploads/2024/07/Porto-Contentores-2560x822-1.png"
+                        <img loading="lazy" width="100" height="100" style="width: 100px !important;"
+                             src="/assets/uploads/2026/02/logo.png"
                              class="attachment-full size-full wp-image-12730" alt=""
-                             sizes="(max-width: 2560px) 100vw, 2560px"/>
+                             sizes="(max-width: 100px) 100vw, 100px"/>
                     </div>
                     <div class="elementor-element elementor-element-b17095d elementor-widget elementor-widget-text-editor"
                          data-id="b17095d" data-element_type="widget" data-widget_type="text-editor.default">
@@ -282,10 +282,10 @@
                         </div>
                         <div class="elementor-element elementor-element-6113d52 elementor-widget elementor-widget-image"
                              data-id="6113d52" data-element_type="widget" data-widget_type="image.default">
-                            <img loading="lazy" width="2560" height="822"
-                                 src="/assets/uploads/2024/07/Porto-Contentores-2560x822-1.png"
+                            <img loading="lazy" width="50" height="50" style="width: 50px !important;"
+                                 src="/assets/uploads/2026/02/logo.png"
                                  class="attachment-full size-full wp-image-12730" alt=""
-                                 sizes="(max-width: 2560px) 100vw, 2560px"/>
+                                 sizes="(max-width: 50px) 100vw, 50px"/>
                         </div>
                     </div>
                 </div>

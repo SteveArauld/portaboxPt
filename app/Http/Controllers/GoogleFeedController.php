@@ -13,7 +13,7 @@ class GoogleFeedController extends Controller
      */
     private string $locale = 'pt';
     private string $currency = 'EUR';
-    private string $defaultBrand = 'Porto Contentores';
+    private string $defaultBrand = 'Azinheira Contentores';
 
     /**
      * Génère le flux et le retourne directement dans le navigateur (téléchargement).

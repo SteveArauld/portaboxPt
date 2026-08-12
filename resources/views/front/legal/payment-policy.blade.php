@@ -68,6 +68,23 @@
 
                         <h2 class="wp-block-heading">{{ __('payment.section4.title') }}</h2>
 
+                        <p>{{ __('payment.accepted_intro') }}</p>
+
+                        <ul class="wp-block-list">
+                            <li>{{ __('payment.method1') }}</li>
+                            <li>{{ __('payment.method2') }}</li>
+                            <li>{{ __('payment.method3') }}</li>
+                            <li>{{ __('payment.method4') }}</li>
+                        </ul>
+
+                        @include('front.partials.payment-methods', ['showTitle' => false])
+
+                        <p>{{ __('payment.transfer_note') }}</p>
+
+                        <h2 class="wp-block-heading">{{ __('payment.process_title') }}</h2>
+
+                        <p>{{ __('payment.process_text') }}</p>
+
                         <p>
                             {{ __('payment.section4.text1') }} <strong>{{ __('payment.company_name') }}</strong>
                             {{ __('payment.section4.text2') }}
@@ -77,11 +94,11 @@
 
                         <figure class="wp-block-image size-full is-resized">
                             <img fetchpriority="high" decoding="async"
-                                 width="512" height="512"
-                                 src="/assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1.png"
+                                 width="50" height="50" style="width: 50px !important;"
+                                 src="/assets/uploads/2026/02/logo.png"
                                  alt="" class="wp-image-12724"
-                                 style="width:413px;height:auto"
-                                 sizes="(max-width: 512px) 100vw, 512px">
+                            
+                                 sizes="(max-width: 50px) 100vw, 50px">
                         </figure>
                     </article>
                 </div>

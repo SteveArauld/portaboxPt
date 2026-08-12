@@ -16,27 +16,27 @@
     <link rel='preconnect' href='https://fonts.gstatic.com/' crossorigin/>
 
 {{--    <link rel='stylesheet' id='chaty-css-css'
-          href='{{ asset("assets/plugins/chaty-pro/css/chaty-front.minb5e3.css") }}'
+          href='{{ asset("assets/vendor/chaty-pro/css/chaty-front.minb5e3.css") }}'
           type='text/css' media='all'/>--}}
     <link rel='stylesheet' id='contato-form-7-css'
-          href='{{ asset("assets/plugins/contato-form-7/includes/css/styles1b46.css") }}' type='text/css'
+          href='{{ asset("assets/vendor/contato-form-7/includes/css/styles1b46.css") }}' type='text/css'
           media='all'/>
     <link rel='stylesheet' id='sr7css-css'
-          href='{{ asset("assets/plugins/revslider/public/css/sr7659f.css") }}' type='text/css'
+          href='{{ asset("assets/vendor/revslider/public/css/sr7659f.css") }}' type='text/css'
           media='all'/>
     <link rel='stylesheet' id='ts-style-css'
-          href='{{ asset("assets/plugins/themesky/css/themeskyc358.css") }}' type='text/css' media='all'/>
+          href='{{ asset("assets/vendor/themesky/css/themeskyc358.css") }}' type='text/css' media='all'/>
     <link rel='stylesheet' id='swiper-css'
-          href='{{ asset("assets/plugins/themesky/css/swiper-bundle.minc358.css") }}' type='text/css'
+          href='{{ asset("assets/vendor/themesky/css/swiper-bundle.minc358.css") }}' type='text/css'
           media='all'/>
     <link rel='stylesheet' id='woocommerce-layout-css'
-          href='{{ asset("assets/plugins/woocommerce/assets/css/woocommerce-layoutf607.css") }}'
+          href='{{ asset("assets/vendor/css/woocommerce-layoutf607.css") }}'
           type='text/css' media='all'/>
     <link rel='stylesheet' id='woocommerce-smallscreen-css'
-          href='{{ asset("assets/plugins/woocommerce/assets/css/woocommerce-smallscreenf607.css") }}'
+          href='{{ asset("assets/vendor/css/woocommerce-smallscreenf607.css") }}'
           type='text/css' media='only screen and (max-width: 768px)'/>
     <link rel='stylesheet' id='woocommerce-general-css'
-          href='{{ asset("assets/plugins/woocommerce/assets/css/woocommercef607.css") }}' type='text/css'
+          href='{{ asset("assets/vendor/css/woocommercef607.css") }}' type='text/css'
           media='all'/>
 
     <link rel='stylesheet' id='elementor-frontend-css'
@@ -46,7 +46,7 @@
           href='{{ asset("assets/uploads/elementor/css/post-10348aec1.css") }}' type='text/css'
           media='all'/>
     <link rel='stylesheet' id='widget-heading-css'
-          href='{{ asset("assets/plugins/elementor/assets/css/widget-heading.min1504.css") }}'
+          href='{{ asset("assets/vendor/elementor/assets/css/widget-heading.min1504.css") }}'
           type='text/css' media='all'/>
     <link rel='stylesheet' id='elementor-post-8171-css'
           href='{{ asset("assets/uploads/elementor/css/post-8171840d.css") }}' type='text/css'
@@ -84,45 +84,45 @@
     <script type="text/javascript" src="{{ asset('assets/js/jquery/jquery-migrate.min5589.js') }}"
             id="jquery-migrate-js"></script>
     <script type="text/javascript"
-            src="{{ asset('assets/plugins/revslider/public/js/libs/tptools659f.js') }}" id="tp-tools-js"
+            src="{{ asset('assets/vendor/revslider/public/js/libs/tptools659f.js') }}" id="tp-tools-js"
             async="async" data-wp-strategy="async"></script>
     <script type="text/javascript"
-            src="{{ asset('assets/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.minae83.js') }}"
+            src="{{ asset('assets/vendor/js/jquery-blockui/jquery.blockUI.minae83.js') }}"
             id="wc-jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
     <script type="text/javascript"
-            src="{{ asset('assets/plugins/woocommerce/assets/js/js-cookie/js.cookie.minf503.js') }}"
+            src="{{ asset('assets/vendor/js/js-cookie/js.cookie.minf503.js') }}"
             id="wc-js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
     <script type="text/javascript"
-            src="{{ asset('assets/plugins/woocommerce/assets/js/frontend/woocommerce.minf607.js') }}"
+            src="{{ asset('assets/vendor/js/frontend/woocommerce.minf607.js') }}"
             id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
     <script type="text/javascript"
-            src="{{ asset('assets/plugins/woocommerce/assets/js/frontend/cart-fragments.minf607.js') }}"
+            src="{{ asset('assets/vendor/js/frontend/cart-fragments.minf607.js') }}"
             id="wc-cart-fragments-js" defer="defer" data-wp-strategy="defer"></script>
     <script type="text/javascript"
-            src="{{ asset('assets/plugins/woocommerce/assets/js/flexslider/jquery.flexslider.minb871.js') }}"
+            src="{{ asset('assets/vendor/js/flexslider/jquery.flexslider.minb871.js') }}"
             id="wc-flexslider-js" defer="defer" data-wp-strategy="defer"></script>
     <script type="text/javascript" src="{{ asset('assets/js/underscore.min3ab8.js') }}"
             id="underscore-js"></script>
     <script type="text/javascript" src="{{ asset('assets/js/wp-util.min4d80.js') }}"
             id="wp-util-js"></script>
     <script type="text/javascript"
-            src="{{ asset('assets/plugins/woocommerce/assets/js/frontend/add-to-cart-variation.minf607.js') }}"
+            src="{{ asset('assets/vendor/js/frontend/add-to-cart-variation.minf607.js') }}"
             id="wc-add-to-cart-variation-js" defer="defer" data-wp-strategy="defer"></script>
     <script type="text/javascript"
-            src="{{ asset('assets/plugins/woocommerce/assets/js/zoom/jquery.zoom.minc932.js') }}"
+            src="{{ asset('assets/vendor/js/zoom/jquery.zoom.minc932.js') }}"
             id="wc-zoom-js" defer="defer" data-wp-strategy="defer"></script>
 
 
     <meta name="generator"
           content="Powered by Slider Revolution 6.7.38 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface."/>
-    <link rel="icon" href="{{ asset('assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1-32x32.png') }}"
+    <link rel="icon" href="{{ asset('assets/uploads/2026/02/logo.png') }}"
           sizes="32x32"/>
-    <link rel="icon" href="{{ asset('assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1-192x192.png') }}"
+    <link rel="icon" href="{{ asset('assets/uploads/2026/02/logo.png') }}"
           sizes="192x192"/>
     <link rel="apple-touch-icon"
-          href="{{ asset('assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1-180x180.png') }}"/>
+          href="{{ asset('assets/uploads/2026/02/logo.png') }}"/>
     <meta name="msapplication-TileImage"
-          content="{{ asset('assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1-270x270.png') }}"/>
+          content="{{ asset('assets/uploads/2026/02/logo.png') }}"/>
 
           <meta name="google-site-verification" content="5S0R9M998FMcss3SDaLUDAqxhFYcroIcWZ8tsKUykqY" />
 
@@ -469,7 +469,7 @@
         document.addEventListener('DOMContentLoaded', function () {
             // Corriger d'abord l'URL du plugin
             if (window.SR7 && window.SR7.E) {
-                SR7.E.plugin_url = '{{ asset("assets/plugins/revslider/") }}';
+                SR7.E.plugin_url = '{{ asset("assets/vendor/revslider/") }}';
             }
 
             // Attendre un peu
@@ -618,31 +618,31 @@
     </div>
 </aside>
 
-<link href="{{ asset('assets/plugins/revslider/public/css/fonts/revicons/css/revicons.css') }}" rel="stylesheet"
+<link href="{{ asset('assets/vendor/revslider/public/css/fonts/revicons/css/revicons.css') }}" rel="stylesheet"
       property="stylesheet" media="all" type="text/css"/>
 
 
 <link rel='stylesheet' id='wc-blocks-style-css'
-      href='{{ asset("assets/plugins/woocommerce/assets/client/blocks/wc-blocks5210.css") }}'
+      href='{{ asset("assets/vendor/client/blocks/wc-blocks5210.css") }}'
       type='text/css' media='all'/>
 <link rel='stylesheet' id='elementor-post-9597-css'
       href='{{ asset("assets/uploads/elementor/css/post-9597c8c9.css") }}' type='text/css'
       media='all'/>
 <link rel='stylesheet' id='widget-spacer-css'
-      href='{{ asset("assets/plugins/elementor/assets/css/widget-spacer.min1504.css") }}' type='text/css'
+      href='{{ asset("assets/vendor/elementor/assets/css/widget-spacer.min1504.css") }}' type='text/css'
       media='all'/>
 <link rel='stylesheet' id='widget-icon-box-css'
       href='{{ asset("assets/uploads/elementor/css/custom-widget-icon-box.minaec1.css") }}'
       type='text/css' media='all'/>
 <link rel='stylesheet' id='widget-image-css'
-      href='{{ asset("assets/plugins/elementor/assets/css/widget-image.min1504.css") }}' type='text/css'
+      href='{{ asset("assets/vendor/elementor/assets/css/widget-image.min1504.css") }}' type='text/css'
       media='all'/>
 <link rel='stylesheet' id='e-swiper-css'
-      href='{{ asset("assets/plugins/elementor/assets/css/conditionals/e-swiper.min1504.css") }}'
+      href='{{ asset("assets/vendor/elementor/assets/css/conditionals/e-swiper.min1504.css") }}'
       type='text/css' media='all'/>
 
 {{--<script type="text/javascript"
-        src="{{ asset('assets/plugins/chaty-pro/js/cht-front-script.minb5e3.js') }}"
+        src="{{ asset('assets/vendor/chaty-pro/js/cht-front-script.minb5e3.js') }}"
         id="chaty-js" defer="defer" data-wp-strategy="defer"></script>--}}
 <script type="text/javascript" src="{{ asset('assets/js/dist/hooks.minaf5f.js') }}"
         id="wp-hooks-js"></script>
@@ -650,32 +650,32 @@
         id="wp-i18n-js"></script>
 
 <script type="text/javascript"
-        src="{{ asset('assets/plugins/contato-form-7/includes/js/index1b46.html') }}"
+        src="{{ asset('assets/vendor/contato-form-7/includes/js/index1b46.html') }}"
         id="contato-form-7-js"></script>
 
-<script type="text/javascript" src="{{ asset('assets/plugins/themesky/js/themeskyc358.html') }}"
+<script type="text/javascript" src="{{ asset('assets/vendor/themesky/js/themeskyc358.html') }}"
         id="ts-script-js"></script>
 <script type="text/javascript"
-        src="{{ asset('assets/plugins/elementor/assets/lib/swiper/v8/swiper.min94a4.html') }}"
+        src="{{ asset('assets/vendor/elementor/assets/lib/swiper/v8/swiper.min94a4.html') }}"
         id="swiper-js"></script>
 <script type="text/javascript"
-        src="{{ asset('assets/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.minf607.html') }}"
+        src="{{ asset('assets/vendor/js/sourcebuster/sourcebuster.minf607.html') }}"
         id="sourcebuster-js-js"></script>
 
 <script type="text/javascript"
-        src="{{ asset('assets/plugins/woocommerce/assets/js/frontend/order-attribution.minf607.html') }}"
+        src="{{ asset('assets/vendor/js/frontend/order-attribution.minf607.html') }}"
         id="wc-order-attribution-js"></script>
 <script type="text/javascript"
-        src="{{ asset('assets/plugins/elementor/assets/js/webpack.runtime.min1504.html') }}"
+        src="{{ asset('assets/vendor/elementor/assets/js/webpack.runtime.min1504.html') }}"
         id="elementor-webpack-runtime-js"></script>
 <script type="text/javascript"
-        src="{{ asset('assets/plugins/elementor/assets/js/frontend-modules.min1504.html') }}"
+        src="{{ asset('assets/vendor/elementor/assets/js/frontend-modules.min1504.html') }}"
         id="elementor-frontend-modules-js"></script>
 <script type="text/javascript" src="{{ asset('assets/js/jquery/ui/core.minb37e.html') }}"
         id="jquery-ui-core-js"></script>
 
 <script type="text/javascript"
-        src="{{ asset('assets/plugins/elementor/assets/js/frontend.min1504.html') }}"
+        src="{{ asset('assets/vendor/elementor/assets/js/frontend.min1504.html') }}"
         id="elementor-frontend-js"></script>
 
 <script type="text/javascript" src="{{ asset('assets/themes/merto/js/main6f3e.js') }}"
@@ -684,7 +684,7 @@
         id="jquery-sticky-js"></script>
 
 <script type="text/javascript"
-        src="{{ asset('assets/plugins/google-listings-and-ads/js/build/gtag-events6841.html') }}"
+        src="{{ asset('assets/vendor/google-listings-and-ads/js/build/gtag-events6841.html') }}"
         id="gla-gtag-events-js"></script>
 
 

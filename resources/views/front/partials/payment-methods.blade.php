@@ -1,40 +1,41 @@
 @php
+    // Moyens de paiement du marche portugais.
+    // Logos officiels SIBS/Ifthenpay en version blanche : ils exigent un fond sombre.
     $pbsPayments = [
-        'american-express'  => 'American Express',
-        'apple-pay'         => 'Apple Pay',
-        'bancontact'        => 'Bancontact',
-        'cartes-bancaires'  => 'Cartes Bancaires',
-        'eps'               => 'EPS',
-        'klarna'            => 'Klarna',
-        'mastercard'        => 'Mastercard',
-        'mobilepay'         => 'MobilePay',
-        'paypal'            => 'PayPal',
-        'visa'              => 'Visa',
+        'multibanco'             => 'Multibanco',
+        'mbway'                  => 'MB WAY',
+        'visa'                   => 'Visa',
+        'mastercard'             => 'Mastercard',
+        'transferencia-bancaria' => __('payments.bank_transfer'),
     ];
     $showTitle = $showTitle ?? true;
     $align     = $align ?? 'left';
 @endphp
 
 @once
-        <style>
-            .pbs-payments { margin-top: 18px; }
-            .pbs-payments-title {
-                font-size: 13px; font-weight: 700; text-transform: uppercase;
-                letter-spacing: .04em; color: inherit; opacity: .85; margin: 0 0 10px;
-            }
-            .pbs-payments-list {
-                list-style: none; margin: 0; padding: 0;
-                display: flex; flex-wrap: wrap; gap: 6px;
-            }
-            .pbs-payments-list li { line-height: 0; }
-            .pbs-payments-list img {
-                width: 38px; height: 24px; display: block;
-                border-radius: 3px; filter: saturate(.2); transition: filter .2s ease;
-            }
-            .pbs-payments-list li:hover img { filter: saturate(1); }
-            .pbs-payments.is-center { text-align: center; }
-            .pbs-payments.is-center .pbs-payments-list { justify-content: center; }
-        </style>
+    <style>
+        .pbs-payments { margin-top: 18px; }
+        .pbs-payments-title {
+            font-size: 13px; font-weight: 700; text-transform: uppercase;
+            letter-spacing: .04em; color: inherit; opacity: .85; margin: 0 0 10px;
+        }
+        .pbs-payments-list {
+            list-style: none; margin: 0; padding: 0;
+            display: flex; flex-wrap: wrap; gap: 8px;
+        }
+        .pbs-payments-list li {
+            display: flex; align-items: center; justify-content: center;
+            width: 62px; height: 34px; padding: 0 7px;
+            background: #1a1a1a; border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, .14);
+        }
+        .pbs-payments-list img {
+            max-width: 100%; max-height: 17px;
+            width: auto; height: auto; display: block;
+        }
+        .pbs-payments.is-center { text-align: center; }
+        .pbs-payments.is-center .pbs-payments-list { justify-content: center; }
+    </style>
 @endonce
 
 <div class="pbs-payments {{ $align === 'center' ? 'is-center' : '' }}">
@@ -45,7 +46,7 @@
         @foreach ($pbsPayments as $slug => $label)
             <li>
                 <img src="{{ asset('assets/images/payments/' . $slug . '.svg') }}"
-                     width="38" height="24" loading="lazy" alt="{{ $label }}" title="{{ $label }}">
+                     loading="lazy" alt="{{ $label }}" title="{{ $label }}">
             </li>
         @endforeach
     </ul>

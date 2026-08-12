@@ -4,10 +4,10 @@
 
 @push('styles')
     <link rel="stylesheet" id="widget-toggle-css"
-          href="../assets/uploads/elementor/css/custom-widget-toggle.minaec1.css" type="text/css"
+          href="/assets/uploads/elementor/css/custom-widget-toggle.minaec1.css" type="text/css"
           media="all">
     <link rel="stylesheet" id="elementor-post-9575-css"
-          href="../assets/uploads/elementor/css/post-95756f26.css" type="text/css" media="all">
+          href="/assets/uploads/elementor/css/post-95756f26.css" type="text/css" media="all">
 
 
 @endpush

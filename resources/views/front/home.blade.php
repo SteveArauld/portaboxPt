@@ -1269,7 +1269,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             // Corriger l'URL du plugin
             if (window.SR7 && window.SR7.E) {
-                SR7.E.plugin_url = '/assets/plugins/revslider/';
+                SR7.E.plugin_url = '/assets/vendor/revslider/';
             }
 
             const sliderContainer = document.querySelector('.slider-container');

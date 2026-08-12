@@ -64,6 +64,11 @@
         }
         .pbs-summary-total strong { font-size: 24px; color: #c6213b; }
         .pbs-place-order { margin-top: 20px; }
+        .pbs-payment-notice {
+            margin: 16px 0 0; padding: 12px 14px; border-radius: 9px;
+            background: #f8fafc; border: 1px solid #eef0f3;
+            font-size: 12.5px; line-height: 1.5; color: #475569;
+        }
         .pbs-place-order:disabled { opacity: 0.6; cursor: not-allowed; }
         .pbs-alert {
             display: none; padding: 14px 18px; border-radius: 10px; margin-bottom: 20px;
@@ -253,6 +258,8 @@
                             {{ __('Confirmar pedido') }}
                         </button>
                         <a href="{{ route('cart') }}" class="pbs-btn pbs-btn-outline">{{ __('Voltar ao carrinho') }}</a>
+
+                        <p class="pbs-payment-notice">{{ __('checkout.payment_notice') }}</p>
 
                         @include('front.partials.payment-methods', ['align' => 'center'])
                     </div>

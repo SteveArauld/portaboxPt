@@ -6,7 +6,7 @@
 
 
     <link rel="stylesheet" id="elementor-post-9588-css"
-          href="../assets/uploads/elementor/css/post-9588ee84.css" type="text/css" media="all">
+          href="/assets/uploads/elementor/css/post-9588ee84.css" type="text/css" media="all">
 
 @endpush
 
@@ -58,7 +58,7 @@
                                              data-id="3dc8e6c" data-element_type="widget"
                                              data-widget_type="image.default">
                                             <img fetchpriority="high" decoding="async" width="1024" height="576"
-                                                 src="../assets/uploads/2026/02/81-1024x576.png"
+                                                 src="/assets/uploads/2026/02/81-1024x576.png"
                                                  class="attachment-large size-large wp-image-12738" alt=""
                                                  sizes="(max-width: 1024px) 100vw, 1024px">
                                         </div>
@@ -110,7 +110,7 @@
                                                          data-id="43e5aba6" data-element_type="widget"
                                                          data-widget_type="image.default">
                                                         <img decoding="async" width="1600" height="1200"
-                                                             src="../assets/uploads/2026/02/Image_m.png"
+                                                             src="/assets/uploads/2026/02/Image_m.png"
                                                              class="attachment-full size-full wp-image-12737" alt=""
                                                              sizes="(max-width: 1600px) 100vw, 1600px">
                                                     </div>
@@ -142,7 +142,7 @@
                                     <div class="elementor-element elementor-element-4567667 elementor-widget elementor-widget-image"
                                          data-id="4567667" data-element_type="widget" data-widget_type="image.default">
                                         <img decoding="async" width="700" height="542"
-                                             src="../assets/uploads/2025/11/1000059480-700x542-1.jpg"
+                                             src="/assets/uploads/2025/11/1000059480-700x542-1.jpg"
                                              class="attachment-large size-large wp-image-12282" alt=""
                                              sizes="(max-width: 700px) 100vw, 700px">
                                     </div>

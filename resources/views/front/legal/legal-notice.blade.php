@@ -43,6 +43,8 @@
 
                         <p>
                             <strong>{{ __('legal.company_name') }}</strong><br>
+                            <strong>{{ __('legal.legal_form') }}</strong><br>
+                            <strong>{{ __('legal.section2.legal_address') }}</strong><br>
                             <strong>{{ __('legal.nif') }}</strong><br>
                             <strong>{{ __('legal.registration') }}</strong><br>
                             <strong>{{ __('legal.share_capital') }}</strong>
@@ -195,12 +197,12 @@
 
                         <figure class="wp-block-image size-full is-resized">
                             <img fetchpriority="high" decoding="async"
-                                width="512" height="512"
-                                src="/assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1.png"
+                                width="50" height="50" style="width: 50px !important;"
+                                src="/assets/uploads/2026/02/logo.png"
                                 alt="{{ __('legal.company_name') }}"
                                 class="wp-image-12724"
-                                style="width:401px;height:auto"
-                                sizes="(max-width: 512px) 100vw, 512px">
+                                
+                                sizes="(max-width: 50px) 100vw, 50px">
                         </figure>
                     </article>
                 </div>

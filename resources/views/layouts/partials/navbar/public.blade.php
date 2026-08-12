@@ -86,14 +86,14 @@
                 <div class="logo-wrapper">
                     <div class="logo">
                         <a href="{{ route('home') }}">
-                            <img src="../assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1.png"
-                                alt="Porto Contentores" title="Porto Contentores" class="normal-logo" />
+                            <img src="/assets/uploads/2026/02/logo.png" width="50" height="50" style="width: 50px !important;"
+                                alt="Azinheira Contentores" title="Azinheira Contentores" class="normal-logo" />
 
-                            <img src="../assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1.png"
-                                alt="Porto Contentores" title="Porto Contentores" class="mobile-logo" />
+                            <img src="/assets/uploads/2026/02/logo.png" width="50" height="50" style="width: 50px !important;"
+                                alt="Azinheira Contentores" title="Azinheira Contentores" class="mobile-logo" />
 
-                            <img src="../assets/uploads/2026/02/cropped-Porto-Contentores-scaled-1.png"
-                                alt="Porto Contentores" title="Porto Contentores" class="sticky-logo" />
+                            <img src="/assets/uploads/2026/02/logo.png" width="50" height="50" style="width: 50px !important;"
+                                alt="Azinheira Contentores" title="Azinheira Contentores" class="sticky-logo" />
                         </a>
                     </div>
                 </div>
