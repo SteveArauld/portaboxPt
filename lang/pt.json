@@ -87,7 +87,7 @@
     "footer.categories.title": "Categorias de contentores",
     "footer.info.title": "Informações adicionais",
     "footer.info.legal": "Aviso legal",
-    "footer  footer.policies.privacy": "Política de privacidade",
+    "footer.policies.privacy": "Política de privacidade",
     "footer.policies.terms": "Termos e condições gerais (CGV)",
     "footer.policies.delivery": "Política de entrega",
     "footer.policies.refund": "Política de devolução e reembolso",
@@ -937,5 +937,13 @@
     "payment.transfer_note": "O pagamento por transferência bancária deve indicar claramente o seu nome e o número do pedido.",
     "payment.process_title": "5. Como Decorre o Pagamento",
     "payment.process_text": "O pagamento não é cobrado no momento da confirmação do pedido. Após validar o seu pedido, receberá por e-mail, no prazo de 24 horas úteis, os dados necessários ao pagamento: a referência Multibanco, o número para MB WAY ou o IBAN para transferência bancária. A encomenda é preparada e expedida após confirmação da boa cobrança.",
-    "checkout.payment_notice": "Ao confirmar, o seu pedido é registado sem cobrança imediata. Receberá por e-mail os dados de pagamento (referência Multibanco, MB WAY ou IBAN) no prazo de 24 horas úteis."
+    "checkout.payment_notice": "Ao confirmar, o seu pedido é registado sem cobrança imediata. Receberá por e-mail os dados de pagamento (referência Multibanco, MB WAY ou IBAN) no prazo de 24 horas úteis.",
+    "footer.info.about": "Quem somos",
+    "footer.info.faq": "Perguntas frequentes (FAQ)",
+    "footer.info.contato": "Contato",
+    "footer.info.shop": "Loja",
+    "footer.policies.title": "Nossas políticas",
+    "about.mission": "A nossa missão é transformar contentores standard em espaços inteligentes: habitações, escritórios, armazéns, módulos refrigerados e bungalows funcionais. Com competência e foco no cliente, acompanhamos cada pedido com soluções à medida, rápidas e profissionais.",
+    "terms.activity": "Venda de contentores marítimos, contentores refrigerados, contentores habitacionais e contentores modificados.",
+    "email.inquiry_confirmation_title": "Encomenda recebida"
 }

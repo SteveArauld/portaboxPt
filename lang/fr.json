@@ -834,5 +834,7 @@
     "payment.transfer_note": "Le paiement par virement bancaire doit indiquer clairement votre nom et le numéro de commande.",
     "payment.process_title": "5. Comment se Déroule le Paiement",
     "payment.process_text": "Le paiement n'est pas prélevé au moment de la confirmation de la commande. Après validation de votre commande, vous recevrez par e-mail, sous 24 heures ouvrées, les informations nécessaires au paiement : la référence Multibanco, le numéro pour MB WAY ou l'IBAN pour virement bancaire. La commande est préparée et expédiée après confirmation de l'encaissement.",
-    "checkout.payment_notice": "En confirmant, votre commande est enregistrée sans prélèvement immédiat. Vous recevrez par e-mail les informations de paiement (référence Multibanco, MB WAY ou IBAN) sous 24 heures ouvrées."
+    "checkout.payment_notice": "En confirmant, votre commande est enregistrée sans prélèvement immédiat. Vous recevrez par e-mail les informations de paiement (référence Multibanco, MB WAY ou IBAN) sous 24 heures ouvrées.",
+    "terms.activity": "Vente de conteneurs maritimes, conteneurs réfrigérés, conteneurs d'habitation et conteneurs modifiés.",
+    "email.inquiry_confirmation_title": "Commande reçue"
 }

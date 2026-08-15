@@ -808,5 +808,7 @@
     "payment.transfer_note": "Bank transfer payments must clearly state your name and order number.",
     "payment.process_title": "5. How Payment Works",
     "payment.process_text": "Payment is not charged when the order is confirmed. After validating your order, you will receive by email, within 24 business hours, the details required for payment: the Multibanco reference, the MB WAY number or the IBAN for bank transfer. The order is prepared and shipped once payment has been confirmed.",
-    "checkout.payment_notice": "By confirming, your order is registered without immediate charge. You will receive the payment details (Multibanco reference, MB WAY or IBAN) by email within 24 business hours."
+    "checkout.payment_notice": "By confirming, your order is registered without immediate charge. You will receive the payment details (Multibanco reference, MB WAY or IBAN) by email within 24 business hours.",
+    "terms.activity": "Sale of shipping containers, refrigerated containers, housing containers and modified containers.",
+    "email.inquiry_confirmation_title": "Order received"
 }

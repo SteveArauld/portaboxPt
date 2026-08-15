@@ -844,5 +844,7 @@
     "payment.transfer_note": "Il pagamento tramite bonifico bancario deve indicare chiaramente il vostro nome e il numero d'ordine.",
     "payment.process_title": "5. Come Avviene il Pagamento",
     "payment.process_text": "Il pagamento non viene addebitato al momento della conferma dell'ordine. Dopo aver convalidato l'ordine, riceverà via e-mail, entro 24 ore lavorative, i dati necessari al pagamento: il riferimento Multibanco, il numero per MB WAY o l'IBAN per bonifico bancario. L'ordine viene preparato e spedito dopo la conferma dell'incasso.",
-    "checkout.payment_notice": "Confermando, il suo ordine viene registrato senza addebito immediato. Riceverà via e-mail i dati di pagamento (riferimento Multibanco, MB WAY o IBAN) entro 24 ore lavorative."
+    "checkout.payment_notice": "Confermando, il suo ordine viene registrato senza addebito immediato. Riceverà via e-mail i dati di pagamento (riferimento Multibanco, MB WAY o IBAN) entro 24 ore lavorative.",
+    "terms.activity": "Vendita di container marittimi, container refrigerati, container abitativi e container modificati.",
+    "email.inquiry_confirmation_title": "Ordine ricevuto"
 }

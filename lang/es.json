@@ -808,5 +808,7 @@
     "payment.transfer_note": "El pago por transferencia bancaria debe indicar claramente su nombre y el número de pedido.",
     "payment.process_title": "5. Cómo se Realiza el Pago",
     "payment.process_text": "El pago no se cobra en el momento de la confirmación del pedido. Tras validar su pedido, recibirá por correo electrónico, en un plazo de 24 horas hábiles, los datos necesarios para el pago: la referencia Multibanco, el número para MB WAY o el IBAN para transferencia bancaria. El pedido se prepara y se envía una vez confirmado el cobro.",
-    "checkout.payment_notice": "Al confirmar, su pedido se registra sin cargo inmediato. Recibirá por correo electrónico los datos de pago (referencia Multibanco, MB WAY o IBAN) en un plazo de 24 horas hábiles."
+    "checkout.payment_notice": "Al confirmar, su pedido se registra sin cargo inmediato. Recibirá por correo electrónico los datos de pago (referencia Multibanco, MB WAY o IBAN) en un plazo de 24 horas hábiles.",
+    "terms.activity": "Venta de contenedores marítimos, contenedores refrigerados, contenedores habitacionales y contenedores modificados.",
+    "email.inquiry_confirmation_title": "Pedido recibido"
 }
