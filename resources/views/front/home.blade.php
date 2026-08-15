@@ -87,7 +87,7 @@
                                                             <sr7-slide id="SR7_7_1-17" data-key="17">
                                                                 <sr7-bg id="SR7_7_1-17-11" class="sr7-layer">
                                                                     <noscript><img decoding="async"
-                                                                                   src="assets/uploads/2026/02/Image_m.png"
+                                                                                   src="/assets/uploads/2026/02/Image_m.png"
                                                                                    alt=""
                                                                                    title="WhatsApp Image 2025-12-03 at 15.33.52"></noscript>
                                                                 </sr7-bg>
@@ -98,7 +98,7 @@
                                                             <sr7-slide id="SR7_7_1-18" data-key="18">
                                                                 <sr7-bg id="SR7_7_1-18-11" class="sr7-layer">
                                                                     <noscript><img decoding="async"
-                                                                                   src="assets/uploads/2026/02/81.png"
+                                                                                   src="/assets/uploads/2026/02/81.png"
                                                                                    alt="" title="81"></noscript>
                                                                 </sr7-bg>
                                                                 <sr7-txt id="SR7_7_1-18-1" class="sr7-layer">{{ __('home.slider.slide2.title') }}</sr7-txt>
@@ -108,7 +108,7 @@
                                                             <sr7-slide id="SR7_7_1-19" data-key="19">
                                                                 <sr7-bg id="SR7_7_1-19-11" class="sr7-layer">
                                                                     <noscript><img decoding="async"
-                                                                                   src="assets/uploads/2026/02/47.png"
+                                                                                   src="/assets/uploads/2026/02/47.png"
                                                                                    alt="" title="47"></noscript>
                                                                 </sr7-bg>
                                                                 <sr7-txt id="SR7_7_1-19-1" class="sr7-layer">{{ __('home.slider.slide3.title') }}</sr7-txt>
@@ -155,7 +155,7 @@
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
                                                            href="{{ route('category.show', ['category' => 'contentores-refrigerados']) }}"
-                                                           target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
+>{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
 
@@ -277,7 +277,7 @@
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
                                                            href="{{ route('category.show', ['category' => 'contentores-modulares']) }}"
-                                                           target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
+>{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
 
@@ -397,19 +397,13 @@
                                                         <div class="background-overlay"></div>
 
                                                         <div class="banner-bg">
+                                                            {{-- Une seule image : la version mobile et la version desktop
+                                                                 pointaient vers le même fichier, et aucune règle CSS de base
+                                                                 ne masquait .mobile-banner hors media query. --}}
                                                             <img loading="lazy" decoding="async" width="2048"
                                                                  height="1536"
-                                                                 src="assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png"
-                                                                 class="bg-image mobile-banner" alt=""
-                                                                 srcset="/assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 2048w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 300w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 1024w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 768w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 1536w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 700w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 1300w"
-                                                                 sizes="(max-width: 2048px) 100vw, 2048px"/>
-                                                            <img
-                                                                    loading="lazy" decoding="async" width="2048"
-                                                                    height="1536"
-                                                                    src="assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png"
-                                                                    class="bg-image bg-image main-banner" alt=""
-                                                                    srcset="/assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 2048w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 300w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 1024w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 768w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 1536w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 700w, /assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png 1300w"
-                                                                    sizes="(max-width: 2048px) 100vw, 2048px"/>
+                                                                 src="/assets/uploads/2026/02/487213817_654904667295100_6377728539844489717_n.png"
+                                                                 class="bg-image" alt="{{ __('home.banner.title') }}"/>
                                                         </div>
 
                                                         <div class="box-content">
@@ -417,8 +411,7 @@
                                                                 <div class="top-description">{{ __('home.banner.top_description') }}</div>
                                                                 <h2>{{ __('home.banner.title') }}</h2>
                                                                 <div class="ts-banner-button">
-                                                                    <a class="button" href="{{ route('shop') }}"
-                                                                       target="_blank" rel="nofollow">
+                                                                    <a class="button" href="{{ route('shop') }}">
                                                                         {{ __('home.banner.button') }}
                                                                     </a>
                                                                 </div>
@@ -449,7 +442,7 @@
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
                                                            href="{{ route('category.show', ['category' => 'contentores-20-pes']) }}"
-                                                           target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
+>{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
 
@@ -571,7 +564,7 @@
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
                                                            href="{{ route('category.show', ['category' => 'contentores-40-pes']) }}"
-                                                           target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
+>{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
 
@@ -693,7 +686,7 @@
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
                                                            href="{{ route('category.show', ['category' => 'contentores-casa']) }}"
-                                                           target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
+>{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
 
@@ -815,7 +808,7 @@
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
                                                            href="{{ route('category.show', ['category' => 'piscinas']) }}"
-                                                           target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
+>{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
 
@@ -937,7 +930,7 @@
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
                                                            href="{{ route('category.show', ['category' => 'contentores-10-pes']) }}"
-                                                           target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
+>{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
 
@@ -1059,7 +1052,7 @@
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
                                                            href="{{ route('category.show', ['category' => 'cafetaria-bar-restaurante']) }}"
-                                                           target="_blank" rel="nofollow">{{ __('home.products.view_all') }}</a>
+>{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
 

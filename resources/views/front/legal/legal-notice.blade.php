@@ -46,8 +46,10 @@
                             <strong>{{ __('legal.legal_form') }}</strong><br>
                             <strong>{{ __('legal.section2.legal_address') }}</strong><br>
                             <strong>{{ __('legal.nif') }}</strong><br>
-                            <strong>{{ __('legal.registration') }}</strong><br>
-                            <strong>{{ __('legal.share_capital') }}</strong>
+                            <strong>{{ __('legal.registration') }}</strong>
+                            @if (trim(__('legal.share_capital')) !== '')
+                                <br><strong>{{ __('legal.share_capital') }}</strong>
+                            @endif
                         </p>
 
                         <p>
