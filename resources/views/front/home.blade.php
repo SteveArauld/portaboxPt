@@ -1158,7 +1158,7 @@
                             </div>
 
                             <!-- Testimonials section -->
-                            <div class="elementor-element elementor-element-bfd003c e-flex e-con-boxed e-con e-parent"
+                            <!-- <div class="elementor-element elementor-element-bfd003c e-flex e-con-boxed e-con e-parent"
                                  data-id="bfd003c" data-element_type="container">
                                 <div class="e-con-inner">
                                     <div class="elementor-element elementor-element-b4f9c1d elementor-widget elementor-widget-heading"
@@ -1247,7 +1247,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </article>
                 </div>
