@@ -93,7 +93,7 @@
                                                                 </sr7-bg>
                                                                 <sr7-txt id="SR7_7_1-17-1" class="sr7-layer">{{ __('home.slider.slide1.title') }}</sr7-txt>
                                                                 <a id="SR7_7_1-17-10" class="sr7-layer"
-                                                                   href="{{ route('shop') }}" target="_blank" rel="noopener">{{ __('home.slider.button') }}</a>
+                                                                   href="{{ route('shop') }}">{{ __('home.slider.button') }}</a>
                                                             </sr7-slide>
                                                             <sr7-slide id="SR7_7_1-18" data-key="18">
                                                                 <sr7-bg id="SR7_7_1-18-11" class="sr7-layer">
@@ -103,7 +103,7 @@
                                                                 </sr7-bg>
                                                                 <sr7-txt id="SR7_7_1-18-1" class="sr7-layer">{{ __('home.slider.slide2.title') }}</sr7-txt>
                                                                 <a id="SR7_7_1-18-10" class="sr7-layer"
-                                                                   href="{{ route('shop') }}" target="_blank" rel="noopener">{{ __('home.slider.button') }}</a>
+                                                                   href="{{ route('shop') }}">{{ __('home.slider.button') }}</a>
                                                             </sr7-slide>
                                                             <sr7-slide id="SR7_7_1-19" data-key="19">
                                                                 <sr7-bg id="SR7_7_1-19-11" class="sr7-layer">
@@ -113,7 +113,7 @@
                                                                 </sr7-bg>
                                                                 <sr7-txt id="SR7_7_1-19-1" class="sr7-layer">{{ __('home.slider.slide3.title') }}</sr7-txt>
                                                                 <a id="SR7_7_1-19-10" class="sr7-layer"
-                                                                   href="{{ route('shop') }}" target="_blank" rel="noopener">{{ __('home.slider.button') }}</a>
+                                                                   href="{{ route('shop') }}">{{ __('home.slider.button') }}</a>
                                                             </sr7-slide>
                                                             <sr7-slide id="SR7_7_1-34" data-key="34">
                                                             </sr7-slide>
@@ -1185,7 +1185,7 @@
                                                             <div class="author-image-meta">
                                                                 <div class="author-meta">
                                                                     <span class="author">
-                                                                        <a href="#" target="_blank">{{ __('home.testimonials.author1') }}</a>
+                                                                        {{ __('home.testimonials.author1') }}
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -1202,7 +1202,7 @@
                                                             <div class="author-image-meta">
                                                                 <div class="author-meta">
                                                                     <span class="author">
-                                                                        <a href="#" target="_blank">{{ __('home.testimonials.author2') }}</a>
+                                                                        {{ __('home.testimonials.author2') }}
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -1219,7 +1219,7 @@
                                                             <div class="author-image-meta">
                                                                 <div class="author-meta">
                                                                     <span class="author">
-                                                                        <a href="#" target="_blank">{{ __('home.testimonials.author3') }}</a>
+                                                                        {{ __('home.testimonials.author3') }}
                                                                     </span>
                                                                 </div>
                                                             </div>
@@ -1236,7 +1236,7 @@
                                                             <div class="author-image-meta">
                                                                 <div class="author-meta">
                                                                     <span class="author">
-                                                                        <a href="#" target="_blank">{{ __('home.testimonials.author4') }}</a>
+                                                                        {{ __('home.testimonials.author4') }}
                                                                     </span>
                                                                 </div>
                                                             </div>
