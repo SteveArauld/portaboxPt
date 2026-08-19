@@ -10,6 +10,10 @@
         {{ trim(View::yieldContent('title') . ' | ' . config('app.name')) }}
     </title>
 
+    {{-- Versions linguistiques : indique à Google que ces URLs sont le même
+         contenu dans des langues différentes, et non du contenu dupliqué. --}}
+    @include('layouts.partials.hreflang')
+
 
     <meta name='robots' content='max-image-preview:large'/>
     <link rel='dns-prefetch' href='http://fonts.googleapis.com/'/>

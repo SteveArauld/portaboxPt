@@ -8544,29 +8544,17 @@ class ArticleSeeder extends Seeder
                     continue;
                 }
 
-                // Un slug par langue : /produto/... en portugais,
-                // /de/produkt/... en allemand, etc. L'unicité est vérifiée
-                // langue par langue, deux produits pouvant partager un nom
-                // dans une langue sans le partager dans une autre.
-                $slug = [];
+                // Slug en portugais : c'est la langue du site.
+                $slugSource = $this->firstFilled($item['name']);
+                $baseSlug   = Str::slug($slugSource);
+                $slug       = $baseSlug;
+                $counter    = 1;
 
-                foreach (array_keys(config('locales.available')) as $locale) {
-                    $source = $item['name'][$locale] ?? $this->firstFilled($item['name']);
-                    $base   = Str::slug($source) ?: Str::slug($this->firstFilled($item['name']));
-
-                    $candidate = $base;
-                    $counter   = 1;
-
-                    while (
-                        in_array($candidate, $usedSlugs[$locale] ?? [], true)
-                        || Article::where("slug->{$locale}", $candidate)->exists()
-                    ) {
-                        $candidate = $base . '-' . (++$counter);
-                    }
-
-                    $usedSlugs[$locale][] = $candidate;
-                    $slug[$locale] = $candidate;
+                while (in_array($slug, $usedSlugs) || Article::where('slug', $slug)->exists()) {
+                    $slug = $baseSlug . '-' . $counter;
+                    $counter++;
                 }
+                $usedSlugs[] = $slug;
 
                 $article = Article::create([
                     'name'                => $item['name'],
@@ -8738,35 +8726,6 @@ class ArticleSeeder extends Seeder
             }
         }
 
-        // Slugs manquants : une fiche déjà en base peut n'avoir que le
-        // portugais si elle date d'avant la localisation des slugs.
-        foreach ($this->locales as $locale) {
-            if (trim((string) $article->getTranslation('slug', $locale, false)) !== '') {
-                continue;
-            }
-
-            $source = $item['name'][$locale] ?? $this->firstFilled($item['name']);
-            $base   = Str::slug((string) $source);
-
-            if ($base === '') {
-                continue;
-            }
-
-            $candidate = $base;
-            $counter   = 1;
-
-            while (
-                Article::where("slug->{$locale}", $candidate)
-                    ->where('id', '!=', $article->id)
-                    ->exists()
-            ) {
-                $candidate = $base . '-' . (++$counter);
-            }
-
-            $article->setTranslation('slug', $locale, $candidate);
-            $dirty = true;
-        }
-
         if ($dirty) {
             $article->save();
         }
@@ -8801,14 +8760,12 @@ class ArticleSeeder extends Seeder
     /**
      * Enregistre les anciens slugs (toutes langues) en redirection 301.
      */
-    private function registerLegacySlugs(Article $article, array $names, array $currentSlugs): void
+    private function registerLegacySlugs(Article $article, array $names, string $currentSlug): void
     {
         foreach ($names as $name) {
             $legacySlug = Str::slug((string) $name);
 
-            // Un slug désormais servi par l'une des langues n'est pas « ancien » :
-            // l'enregistrer en redirection créerait une boucle vers lui-même.
-            if ($legacySlug === '' || in_array($legacySlug, $currentSlugs, true)) {
+            if ($legacySlug === '' || $legacySlug === $currentSlug) {
                 continue;
             }
 

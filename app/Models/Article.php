@@ -41,9 +41,34 @@ class Article extends Model
 
     public $translatable = [
         'name',
+        'slug',
         'short_description',
         'description'
     ];
+
+    /**
+     * Retrouve une fiche par son slug, dans une langue donnée.
+     *
+     * Le slug étant traduit, /produto/{slug} et /de/produkt/{slug} portent des
+     * valeurs différentes pour un même produit. On cherche d'abord dans la
+     * langue demandée, puis dans les autres : cela permet de reconnaître une
+     * URL qui vise le bon produit mais dans la mauvaise langue, et de la
+     * rediriger au lieu de renvoyer un 404.
+     */
+    public function scopeWhereSlug($query, string $slug, ?string $locale = null)
+    {
+        $locale ??= app()->getLocale();
+
+        return $query->where(function ($q) use ($slug, $locale) {
+            $q->where("slug->{$locale}", $slug);
+
+            foreach (array_keys(config('locales.available', [])) as $other) {
+                if ($other !== $locale) {
+                    $q->orWhere("slug->{$other}", $slug);
+                }
+            }
+        });
+    }
 
     public function category(): BelongsTo
     {

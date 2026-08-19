@@ -117,79 +117,79 @@
                                 <ul id="menu-acquista-per-categorie" class="menu">
                                     <li id="menu-item-12175"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12175">
-                                        <a href="{{ route('category.show', ['category' => 'contentores-20-pes']) }}">
+                                        <a href="@categoryUrl('contentores-20-pes')">
                                             {{ __('header.category.contenitori_20') }}
                                         </a>
                                     </li>
                                     <li id="menu-item-12177"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12177">
-                                        <a href="{{ route('category.show', ['category' => 'contentores-40-pes']) }}">
+                                        <a href="@categoryUrl('contentores-40-pes')">
                                             {{ __('header.category.contenitori_40') }}
                                         </a>
                                     </li>
                                     <li id="menu-item-12179"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12179">
-                                        <a href="{{ route('category.show', ['category' => 'contentores-casa']) }}">
+                                        <a href="@categoryUrl('contentores-casa')">
                                             {{ __('header.category.contenitori_casa') }}
                                         </a>
                                     </li>
                                     <li id="menu-item-12181"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12181">
-                                        <a href="{{ route('category.show', ['category' => 'contentores-modulares']) }}">
+                                        <a href="@categoryUrl('contentores-modulares')">
                                             {{ __('header.category.modulari') }}
                                         </a>
                                     </li>
                                     <li id="menu-item-12171"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12171">
-                                        <a href="{{ route('category.show', ['category' => 'contentores-10-pes']) }}">
+                                        <a href="@categoryUrl('contentores-10-pes')">
                                             {{ __('header.category.contenitori_10') }}
                                         </a>
                                     </li>
                                     <li id="menu-item-12186"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12186">
-                                        <a href="{{ route('category.show', ['category' => 'contentores-padrao-usados']) }}">
+                                        <a href="@categoryUrl('contentores-padrao-usados')">
                                             {{ __('header.category.standard_usati') }}
                                         </a>
                                     </li>
                                     <li id="menu-item-12176"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12176">
-                                        <a href="{{ route('category.show', ['category' => 'escritorio']) }}">
+                                        <a href="@categoryUrl('escritorio')">
                                             {{ __('header.category.ufficio') }}
                                         </a>
                                     </li>
                                     <li id="menu-item-12178"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12178">
-                                        <a href="{{ route('category.show', ['category' => 'piscina']) }}">
+                                        <a href="@categoryUrl('piscina')">
                                             {{ __('header.category.piscina') }}
                                         </a>
                                     </li>
                                     <li id="menu-item-12180"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12180">
-                                        <a href="{{ route('category.show', ['category' => 'contentores-de-armazenamento']) }}">
+                                        <a href="@categoryUrl('contentores-de-armazenamento')">
                                             {{ __('header.category.stoccaggio') }}
                                         </a>
                                     </li>
                                     <li id="menu-item-12191"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12191">
-                                        <a href="{{ route('category.show', ['category' => 'cafeteria-bar-restaurante']) }}">
+                                        <a href="@categoryUrl('cafeteria-bar-restaurante')">
                                             {{ __('header.category.caffetteria') }}
                                         </a>
                                     </li>
                                     <li id="menu-item-12192"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12192">
-                                        <a href="{{ route('category.show', ['category' => 'sanitario']) }}">
+                                        <a href="@categoryUrl('sanitario')">
                                             {{ __('header.category.sanitario') }}
                                         </a>
                                     </li>
                                     <li id="menu-item-12193"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12193">
-                                        <a href="{{ route('category.show', ['category' => 'conteiner-com-abertura-lateral']) }}">
+                                        <a href="@categoryUrl('conteiner-com-abertura-lateral')">
                                             {{ __('header.category.laterale_aperto') }}
                                         </a>
                                     </li>
                                     <li id="menu-item-12366"
                                         class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12366">
-                                        <a href="{{ route('category.show', ['category' => 'contentores-refrigerados']) }}">
+                                        <a href="@categoryUrl('contentores-refrigerados')">
                                             {{ __('header.category.refrigerati') }}
                                         </a>
                                     </li>
@@ -305,67 +305,67 @@
         <nav class="vertical-menu pc-menu ts-mega-menu-wrapper">
             <ul id="menu-acquista-per-categorie-1" class="menu">
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat ts-normal-menu">
-                    <a href="{{ route('category.show', ['category' => 'contentores-20-pes']) }}">
+                    <a href="@categoryUrl('contentores-20-pes')">
                         <span class="menu-label">{{ __('header.category.contenitori_20') }}</span>
                     </a>
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat ts-normal-menu">
-                    <a href="{{ route('category.show', ['category' => 'contentores-40-pes']) }}">
+                    <a href="@categoryUrl('contentores-40-pes')">
                         <span class="menu-label">{{ __('header.category.contenitori_40') }}</span>
                     </a>
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat ts-normal-menu">
-                    <a href="{{ route('category.show', ['category' => 'contentores-casa']) }}">
+                    <a href="@categoryUrl('contentores-casa')">
                         <span class="menu-label">{{ __('header.category.contenitori_casa') }}</span>
                     </a>
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat ts-normal-menu">
-                    <a href="{{ route('category.show', ['category' => 'contentores-modulares']) }}">
+                    <a href="@categoryUrl('contentores-modulares')">
                         <span class="menu-label">{{ __('header.category.modulari') }}</span>
                     </a>
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat ts-normal-menu">
-                    <a href="{{ route('category.show', ['category' => 'contentores-10-pes']) }}">
+                    <a href="@categoryUrl('contentores-10-pes')">
                         <span class="menu-label">{{ __('header.category.contenitori_10') }}</span>
                     </a>
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat ts-normal-menu">
-                    <a href="{{ route('category.show', ['category' => 'contentores-padrao-usados']) }}">
+                    <a href="@categoryUrl('contentores-padrao-usados')">
                         <span class="menu-label">{{ __('header.category.standard_usati') }}</span>
                     </a>
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat ts-normal-menu">
-                    <a href="{{ route('category.show', ['category' => 'escritorio']) }}">
+                    <a href="@categoryUrl('escritorio')">
                         <span class="menu-label">{{ __('header.category.ufficio') }}</span>
                     </a>
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat ts-normal-menu">
-                    <a href="{{ route('category.show', ['category' => 'piscina']) }}">
+                    <a href="@categoryUrl('piscina')">
                         <span class="menu-label">{{ __('header.category.piscina') }}</span>
                     </a>
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat ts-normal-menu">
-                    <a href="{{ route('category.show', ['category' => 'contentores-de-armazenamento']) }}">
+                    <a href="@categoryUrl('contentores-de-armazenamento')">
                         <span class="menu-label">{{ __('header.category.stoccaggio') }}</span>
                     </a>
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat ts-normal-menu">
-                    <a href="{{ route('category.show', ['category' => 'cafeteria-bar-restaurante']) }}">
+                    <a href="@categoryUrl('cafeteria-bar-restaurante')">
                         <span class="menu-label">{{ __('header.category.caffetteria') }}</span>
                     </a>
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat ts-normal-menu">
-                    <a href="{{ route('category.show', ['category' => 'sanitario']) }}">
+                    <a href="@categoryUrl('sanitario')">
                         <span class="menu-label">{{ __('header.category.sanitario') }}</span>
                     </a>
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat ts-normal-menu">
-                    <a href="{{ route('category.show', ['category' => 'conteiner-com-abertura-lateral']) }}">
+                    <a href="@categoryUrl('conteiner-com-abertura-lateral')">
                         <span class="menu-label">{{ __('header.category.laterale_aperto') }}</span>
                     </a>
                 </li>
                 <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat ts-normal-menu">
-                    <a href="{{ route('category.show', ['category' => 'contentores-refrigerados']) }}">
+                    <a href="@categoryUrl('contentores-refrigerados')">
                         <span class="menu-label">{{ __('header.category.refrigerati') }}</span>
                     </a>
                 </li>
@@ -420,67 +420,67 @@
                     <nav class="vertical-menu">
                         <ul id="menu-acquista-per-categorie-2" class="menu">
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12175 ts-normal-menu">
-                                <a href="{{ route('category.show', ['category' => 'contentores-20-pes']) }}">
+                                <a href="@categoryUrl('contentores-20-pes')">
                                     <span class="menu-label">{{ __('header.category.contenitori_20') }}</span>
                                 </a>
                             </li>
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12177 ts-normal-menu">
-                                <a href="{{ route('category.show', ['category' => 'contentores-40-pes']) }}">
+                                <a href="@categoryUrl('contentores-40-pes')">
                                     <span class="menu-label">{{ __('header.category.contenitori_40') }}</span>
                                 </a>
                             </li>
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12179 ts-normal-menu">
-                                <a href="{{ route('category.show', ['category' => 'contentores-casa']) }}">
+                                <a href="@categoryUrl('contentores-casa')">
                                     <span class="menu-label">{{ __('header.category.contenitori_casa') }}</span>
                                 </a>
                             </li>
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12181 ts-normal-menu">
-                                <a href="{{ route('category.show', ['category' => 'contentores-modulares']) }}">
+                                <a href="@categoryUrl('contentores-modulares')">
                                     <span class="menu-label">{{ __('header.category.modulari') }}</span>
                                 </a>
                             </li>
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12171 ts-normal-menu">
-                                <a href="{{ route('category.show', ['category' => 'contentores-10-pes']) }}">
+                                <a href="@categoryUrl('contentores-10-pes')">
                                     <span class="menu-label">{{ __('header.category.contenitori_10') }}</span>
                                 </a>
                             </li>
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12186 ts-normal-menu">
-                                <a href="{{ route('category.show', ['category' => 'contentores-padrao-usados']) }}">
+                                <a href="@categoryUrl('contentores-padrao-usados')">
                                     <span class="menu-label">{{ __('header.category.standard_usati') }}</span>
                                 </a>
                             </li>
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12176 ts-normal-menu">
-                                <a href="{{ route('category.show', ['category' => 'escritorio']) }}">
+                                <a href="@categoryUrl('escritorio')">
                                     <span class="menu-label">{{ __('header.category.ufficio') }}</span>
                                 </a>
                             </li>
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12178 ts-normal-menu">
-                                <a href="{{ route('category.show', ['category' => 'piscina']) }}">
+                                <a href="@categoryUrl('piscina')">
                                     <span class="menu-label">{{ __('header.category.piscina') }}</span>
                                 </a>
                             </li>
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12180 ts-normal-menu">
-                                <a href="{{ route('category.show', ['category' => 'contentores-de-armazenamento']) }}">
+                                <a href="@categoryUrl('contentores-de-armazenamento')">
                                     <span class="menu-label">{{ __('header.category.stoccaggio') }}</span>
                                 </a>
                             </li>
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12191 ts-normal-menu">
-                                <a href="{{ route('category.show', ['category' => 'cafeteria-bar-restaurante']) }}">
+                                <a href="@categoryUrl('cafeteria-bar-restaurante')">
                                     <span class="menu-label">{{ __('header.category.caffetteria') }}</span>
                                 </a>
                             </li>
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12192 ts-normal-menu">
-                                <a href="{{ route('category.show', ['category' => 'sanitario']) }}">
+                                <a href="@categoryUrl('sanitario')">
                                     <span class="menu-label">{{ __('header.category.sanitario') }}</span>
                                 </a>
                             </li>
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12193 ts-normal-menu">
-                                <a href="{{ route('category.show', ['category' => 'conteiner-com-abertura-lateral']) }}">
+                                <a href="@categoryUrl('conteiner-com-abertura-lateral')">
                                     <span class="menu-label">{{ __('header.category.laterale_aperto') }}</span>
                                 </a>
                             </li>
                             <li class="menu-item menu-item-type-taxonomy menu-item-object-product_cat menu-item-12366 ts-normal-menu">
-                                <a href="{{ route('category.show', ['category' => 'contentores-refrigerados']) }}">
+                                <a href="@categoryUrl('contentores-refrigerados')">
                                     <span class="menu-label">{{ __('header.category.refrigerati') }}</span>
                                 </a>
                             </li>

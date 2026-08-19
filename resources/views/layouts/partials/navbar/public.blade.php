@@ -2,13 +2,15 @@
     <div class="overlay"></div>
     <div class="header-top visible-md hidden-xs">
         <div class="container">
-            <div class="header-right">
+            <div class="header-right" style="display:flex; align-items:center; gap:18px; justify-content:flex-end;">
                 <div class="hotline">
                     <a href="mailto:{{ __('contato.email_address') }}">
                         <span>{{ __('header.email') }}</span>
                         <span>{{ __('contato.email_address') }}</span>
                     </a>
                 </div>
+
+                @include('layouts.partials.language-switcher')
             </div>
         </div>
     </div>

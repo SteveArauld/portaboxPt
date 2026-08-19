@@ -19,25 +19,58 @@ class GoogleFeedController extends Controller
      * Génère le flux et le retourne directement dans le navigateur (téléchargement).
      * C'est la méthode à appeler depuis la route.
      */
-    public function download(): Response
+    public function download(?string $locale = null): Response
     {
+        $this->useLocale($locale);
         $xml = $this->generateXml();
 
         return response($xml, 200)
             ->header('Content-Type', 'application/xml; charset=UTF-8')
-            ->header('Content-Disposition', 'attachment; filename="google-merchant-feed.xml"');
+            ->header('Content-Disposition', 'attachment; filename="google-merchant-' . $this->locale . '.xml"');
     }
 
     /**
      * Génère le flux et l'affiche dans le navigateur (inline).
      * Utile pour voir le XML sans le télécharger.
      */
-    public function generate(): Response
+    public function generate(?string $locale = null): Response
     {
+        $this->useLocale($locale);
         $xml = $this->generateXml();
 
         return response($xml, 200)
             ->header('Content-Type', 'application/xml; charset=UTF-8');
+    }
+
+    /**
+     * Fixe la langue du flux. Un flux Merchant Center porte une seule langue :
+     * titres, descriptions, catégories et surtout les liens doivent tous
+     * pointer vers la version linguistique correspondante du site.
+     */
+    private function useLocale(?string $locale): void
+    {
+        $available = array_keys(config('locales.available', []));
+
+        if ($locale !== null && in_array($locale, $available, true)) {
+            $this->locale = $locale;
+        }
+
+        app()->setLocale($this->locale);
+    }
+
+    /**
+     * Catégorie de repli, dans la langue du flux.
+     */
+    private function defaultProductType(): string
+    {
+        return match ($this->locale) {
+            'de' => 'Modulare Container',
+            'en' => 'Modular Containers',
+            'es' => 'Contenedores Modulares',
+            'fr' => 'Conteneurs Modulaires',
+            'it' => 'Container Modulari',
+            default => 'Contentores Modulares',
+        };
     }
 
     /**
@@ -64,6 +97,7 @@ class GoogleFeedController extends Controller
 
         $descNode = $dom->createElement('description');
         $descNode->appendChild($this->cdata($dom, 'Catalogo prodotti'));
+        $channel->appendChild($dom->createElement('language', $this->locale));
         $channel->appendChild($descNode);
 
         $skipped = [];
@@ -116,7 +150,7 @@ class GoogleFeedController extends Controller
         $this->appendG($dom, $item, 'id', $article->id);
         $this->appendG($dom, $item, 'title', $name, true);
         $this->appendG($dom, $item, 'description', $description, true);
-        $this->appendG($dom, $item, 'link', route('product.show', $article->slug));
+        $this->appendG($dom, $item, 'link', route($this->locale . '.product.show', $article->getTranslation('slug', $this->locale)));
 
         $images = $article->images;
         if ($images->isNotEmpty()) {
@@ -173,13 +207,13 @@ class GoogleFeedController extends Controller
                 $this->appendG($dom, $item, 'product_type', $categoryName, true);
             } else {
                 // Pour les produits non catégorisés, mettre une catégorie par défaut
-                $this->appendG($dom, $item, 'product_type', 'Contentores Modulares', true);
-                $skipped[] = $article->id . ' (catégorie "Não Categorizado" remplacée par Contentores Modulares)';
+                $this->appendG($dom, $item, 'product_type', $this->defaultProductType(), true);
+                $skipped[] = $article->id . ' (catégorie "Não Categorizado" remplacée)';
             }
         } else {
             // Si pas de catégorie du tout
-            $this->appendG($dom, $item, 'product_type', 'Contentores Modulares', true);
-            $skipped[] = $article->id . ' (aucune catégorie, fallback Contentores Modulares)';
+            $this->appendG($dom, $item, 'product_type', $this->defaultProductType(), true);
+            $skipped[] = $article->id . ' (aucune catégorie, fallback appliqué)';
         }
 
         $this->appendG($dom, $item, 'condition', $article->condition ?? 'new');
@@ -271,7 +305,7 @@ class GoogleFeedController extends Controller
             return null;
         }
 
-        foreach ([$this->locale, 'it', 'pt', 'en'] as $fallbackLocale) {
+        foreach (array_merge([$this->locale], config('locales.fallback_chain', ['pt', 'en'])) as $fallbackLocale) {
             if (!empty($translations[$fallbackLocale])) {
                 return $translations[$fallbackLocale];
             }
@@ -296,7 +330,8 @@ class GoogleFeedController extends Controller
      */
     private function getUnitPricing(Article $article): ?string
     {
-        $categoryName = $article->category?->getTranslation('name', 'pt') ?? '';
+        $categoryName = $article->category?->getTranslation('name', $this->locale, false)
+            ?: ($article->category?->getTranslation('name', 'pt') ?? '');
         $categoryNameLower = strtolower($categoryName);
 
         // Par surface (m²) -> unité Google valide : sqm

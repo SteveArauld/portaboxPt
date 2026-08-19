@@ -36,42 +36,42 @@ public function index()
 
     $containerRefrigerati = Article::with(['category', 'images'])
         ->whereHas('category', function ($query) use ($slugs) {
-            $query->where('slug', $slugs['containerRefrigerati']);
+            $query->where('slug->pt', $slugs['containerRefrigerati']);
         })->paginate(20);
 
     $container_modulari = Article::with(['category', 'images'])
         ->whereHas('category', function ($query) use ($slugs) {
-            $query->where('slug', $slugs['container_modulari']);
+            $query->where('slug->pt', $slugs['container_modulari']);
         })->paginate(20);
 
     $contenitori_20_piedi = Article::with(['category', 'images'])
         ->whereHas('category', function ($query) use ($slugs) {
-            $query->where('slug', $slugs['contenitori_20_piedi']);
+            $query->where('slug->pt', $slugs['contenitori_20_piedi']);
         })->paginate(20);
 
     $contenitori_40_piedi = Article::with(['category', 'images'])
         ->whereHas('category', function ($query) use ($slugs) {
-            $query->where('slug', $slugs['contenitori_40_piedi']);
+            $query->where('slug->pt', $slugs['contenitori_40_piedi']);
         })->paginate(20);
 
     $contenitori_casa = Article::with(['category', 'images'])
         ->whereHas('category', function ($query) use ($slugs) {
-            $query->where('slug', $slugs['contenitori_casa']);
+            $query->where('slug->pt', $slugs['contenitori_casa']);
         })->paginate(20);
 
     $piscina = Article::with(['category', 'images'])
         ->whereHas('category', function ($query) use ($slugs) {
-            $query->where('slug', $slugs['piscina']);
+            $query->where('slug->pt', $slugs['piscina']);
         })->paginate(5);
 
     $contenitori_10_piedi = Article::with(['category', 'images'])
         ->whereHas('category', function ($query) use ($slugs) {
-            $query->where('slug', $slugs['contenitori_10_piedi']);
+            $query->where('slug->pt', $slugs['contenitori_10_piedi']);
         })->paginate(20);
 
     $caffetteria_bar_ristorante = Article::with(['category', 'images'])
         ->whereHas('category', function ($query) use ($slugs) {
-            $query->where('slug', $slugs['caffetteria_bar_ristorante']);
+            $query->where('slug->pt', $slugs['caffetteria_bar_ristorante']);
         })->paginate(5);
 
     return view('front.home', compact(
@@ -88,10 +88,12 @@ public function index()
 
     public function showProduct($slug)
     {
+        $locale = app()->getLocale();
+
         $article = Article::with(['category', 'images' => function ($query) {
             $query->orderBy('position');
         }])
-        ->where('slug', $slug)
+        ->whereSlug($slug, $locale)
         ->first();
 
         // Ancien slug (catalogue italien) : redirection permanente vers la nouvelle URL.
@@ -102,11 +104,19 @@ public function index()
                 $target = Article::find($redirect->article_id);
 
                 if ($target) {
-                    return redirect()->route('product.show', ['slug' => $target->slug], 301);
+                    return redirect()->route('product.show', ['slug' => $target->getTranslation('slug', $locale)], 301);
                 }
             }
 
             abort(404);
+        }
+
+        // Le produit a été trouvé via le slug d'une AUTRE langue (lien ancien ou
+        // partagé) : on renvoie vers l'URL canonique de la langue courante.
+        if ($article->getTranslation('slug', $locale) !== $slug) {
+            return redirect()->route('product.show', [
+                'slug' => $article->getTranslation('slug', $locale),
+            ], 301);
         }
 
         $imagesCount = $article->images->count();
@@ -504,15 +514,21 @@ public function index()
             });
         }
 
+        // Les slugs de catégorie sont traduits : whereIn/where sur la colonne
+        // comparerait une chaîne au JSON complet et ne ramènerait jamais rien.
         if ($category) {
             $query->whereHas('category', function ($q) use ($category) {
-                $q->where('slug', $category);
+                $q->whereSlug($category);
             });
         }
 
         if (!empty($selectedCategories)) {
             $query->whereHas('category', function ($q) use ($selectedCategories) {
-                $q->whereIn('slug', $selectedCategories);
+                $q->where(function ($inner) use ($selectedCategories) {
+                    foreach ($selectedCategories as $slug) {
+                        $inner->orWhere(fn ($c) => $c->whereSlug($slug));
+                    }
+                });
             });
         }
 
@@ -655,24 +671,76 @@ public function index()
         return view('front.legal.payment-policy');
     }
 
-    public function switchLangue(Request $request, $locale)
+    /**
+     * Bascule la langue du site en restant sur la même page.
+     *
+     * On ne renvoie pas vers l'accueil : on retrouve la route équivalente
+     * dans la langue demandée et on la reconstruit avec les mêmes
+     * paramètres, de sorte que /politica-de-entrega bascule vers
+     * /de/lieferbedingungen et non vers /de.
+     */
+    public function switchLangue(Request $request, string $locale)
     {
-        $allowedLocales = ['fr', 'en', 'it', 'pt', 'es'];
-
-        if (!in_array($locale, $allowedLocales)) {
-            abort(400);
+        if (!array_key_exists($locale, config('locales.available'))) {
+            abort(404);
         }
 
-        // Stocker dans la session
+        App::setLocale($locale);
         Session::put('locale', $locale);
 
-        // Définir la locale pour cette requête
-        App::setLocale($locale);
-
-        // Créer un cookie (5 ans)
         $cookie = Cookie::make('locale', $locale, 60 * 24 * 365 * 5);
 
-        // Rediriger
-        return redirect()->back()->withCookie($cookie);
+        return redirect($this->equivalentUrl($request, $locale))->withCookie($cookie);
+    }
+
+    /**
+     * URL de la page d'origine, exprimée dans la langue demandée.
+     * Retombe sur l'accueil de cette langue si la page n'est pas traduisible.
+     */
+    private function equivalentUrl(Request $request, string $locale): string
+    {
+        $previous = $request->headers->get('referer');
+
+        if (!$previous) {
+            return route($locale . '.home');
+        }
+
+        // On résout la route correspondant à l'URL de provenance.
+        $path = '/' . ltrim(parse_url($previous, PHP_URL_PATH) ?? '/', '/');
+
+        try {
+            $route = app('router')->getRoutes()->match(
+                Request::create($path, 'GET')
+            );
+        } catch (\Throwable) {
+            return route($locale . '.home');
+        }
+
+        // « pt.delivery.policy » -> « delivery.policy »
+        $name = $route->getName();
+        if (!$name) {
+            return route($locale . '.home');
+        }
+
+        $bare = preg_replace('/^[a-z]{2}\./', '', $name, 1);
+        $target = $locale . '.' . $bare;
+
+        if (!app('router')->getRoutes()->hasNamedRoute($target)) {
+            return route($locale . '.home');
+        }
+
+        // Les slugs sont traduits : conserver celui de la page d'origine
+        // produirait /de/produkt/<slug-portugais>.
+        $params = $route->parameters();
+
+        if (isset($params['slug']) && $article = Article::whereSlug($params['slug'])->first()) {
+            $params['slug'] = $article->getTranslation('slug', $locale);
+        }
+
+        if (isset($params['category']) && $cat = Category::whereSlug($params['category'])->first()) {
+            $params['category'] = $cat->getTranslation('slug', $locale);
+        }
+
+        return route($target, $params);
     }
 }

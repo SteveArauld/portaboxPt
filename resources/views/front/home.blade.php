@@ -154,7 +154,7 @@
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'contentores-refrigerados']) }}"
+                                                           href="@categoryUrl('contentores-refrigerados')"
 >{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
@@ -276,7 +276,7 @@
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'contentores-modulares']) }}"
+                                                           href="@categoryUrl('contentores-modulares')"
 >{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
@@ -441,7 +441,7 @@
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'contentores-20-pes']) }}"
+                                                           href="@categoryUrl('contentores-20-pes')"
 >{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
@@ -563,7 +563,7 @@
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'contentores-40-pes']) }}"
+                                                           href="@categoryUrl('contentores-40-pes')"
 >{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
@@ -685,7 +685,7 @@
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'contentores-casa']) }}"
+                                                           href="@categoryUrl('contentores-casa')"
 >{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
@@ -807,7 +807,7 @@
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'piscinas']) }}"
+                                                           href="@categoryUrl('piscinas')"
 >{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
@@ -929,7 +929,7 @@
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'contentores-10-pes']) }}"
+                                                           href="@categoryUrl('contentores-10-pes')"
 >{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
@@ -1051,7 +1051,7 @@
 
                                                     <div class="shop-more">
                                                         <a class="shop-more-button"
-                                                           href="{{ route('category.show', ['category' => 'cafetaria-bar-restaurante']) }}"
+                                                           href="@categoryUrl('cafetaria-bar-restaurante')"
 >{{ __('home.products.view_all') }}</a>
                                                     </div>
                                                 </header>
