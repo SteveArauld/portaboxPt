@@ -358,12 +358,12 @@
                     @if(!empty($unit_price))
                     <div class="stat-item">
                         <span class="stat-label">Prix unitaire</span>
-                        <span class="stat-value">{{ number_format($unit_price, 2) }} €</span>
+                        <span class="stat-value">@price($unit_price) €</span>
                     </div>
 
                     <div class="stat-item">
                         <span class="stat-label">Total estimé</span>
-                        <span class="stat-value">{{ number_format($unit_price * $quantity, 2) }} €</span>
+                        <span class="stat-value">@price($unit_price * $quantity) €</span>
                     </div>
                     @endif
                 </div>

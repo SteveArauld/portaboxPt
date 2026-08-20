@@ -68,9 +68,6 @@
                                 <option {{ $category == 'contentores-casa' ? 'selected' : '' }} value="contentores-casa">
                                     {{ __('header.category.contenitori_casa') }}
                                 </option>
-                                <option {{ $category == 'nao-categorizado' ? 'selected' : '' }} value="nao-categorizado">
-                                    {{ __('header.category.non_categorizzato') }}
-                                </option>
                                 <option {{ $category == 'piscina' ? 'selected' : '' }} value="piscina">{{ __('header.category.piscina') }}</option>
                                 <option {{ $category == 'sanitario' ? 'selected' : '' }} value="sanitario">{{ __('header.category.sanitario') }}</option>
                                 <option {{ $category == 'escritorio' ? 'selected' : '' }} value="escritorio">{{ __('header.category.ufficio') }}</option>
@@ -146,9 +143,6 @@
                                 </option>
                                 <option {{ $category == 'contentores-casa' ? 'selected' : '' }} value="contentores-casa">
                                     {{ __('header.category.contenitori_casa') }}
-                                </option>
-                                <option {{ $category == 'nao-categorizado' ? 'selected' : '' }} value="nao-categorizado">
-                                    {{ __('header.category.non_categorizzato') }}
                                 </option>
                                 <option {{ $category == 'piscina' ? 'selected' : '' }} value="piscina">{{ __('header.category.piscina') }}</option>
                                 <option {{ $category == 'sanitario' ? 'selected' : '' }} value="sanitario">{{ __('header.category.sanitario') }}

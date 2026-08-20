@@ -208,23 +208,23 @@
                                                                             @if($article->old_price && $article->old_price > $article->price)
                                                                                 <del aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->old_price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->old_price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </del>
                                                                                 <ins aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </ins>
                                                                             @else
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                <bdi>@price($article->price)&nbsp;<span
                                                                                             class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                             </span>
                                                                             @endif
-                                                                            <small class="woocommerce-price-suffix">{{ __('home.products.price_suffix') }}</small>
+                                                                            <small class="woocommerce-price-suffix">{!! __('home.products.price_suffix') !!}</small>
                                                                         </span>
                                                                     </div>
 
@@ -330,23 +330,23 @@
                                                                             @if($article->old_price && $article->old_price > $article->price)
                                                                                 <del aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->old_price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->old_price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </del>
                                                                                 <ins aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </ins>
                                                                             @else
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                <bdi>@price($article->price)&nbsp;<span
                                                                                             class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                             </span>
                                                                             @endif
-                                                                            <small class="woocommerce-price-suffix">{{ __('home.products.price_suffix') }}</small>
+                                                                            <small class="woocommerce-price-suffix">{!! __('home.products.price_suffix') !!}</small>
                                                                         </span>
                                                                     </div>
 
@@ -495,23 +495,23 @@
                                                                             @if($article->old_price && $article->old_price > $article->price)
                                                                                 <del aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->old_price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->old_price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </del>
                                                                                 <ins aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </ins>
                                                                             @else
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                <bdi>@price($article->price)&nbsp;<span
                                                                                             class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                             </span>
                                                                             @endif
-                                                                            <small class="woocommerce-price-suffix">{{ __('home.products.price_suffix') }}</small>
+                                                                            <small class="woocommerce-price-suffix">{!! __('home.products.price_suffix') !!}</small>
                                                                         </span>
                                                                     </div>
 
@@ -617,23 +617,23 @@
                                                                             @if($article->old_price && $article->old_price > $article->price)
                                                                                 <del aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->old_price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->old_price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </del>
                                                                                 <ins aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </ins>
                                                                             @else
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                <bdi>@price($article->price)&nbsp;<span
                                                                                             class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                             </span>
                                                                             @endif
-                                                                            <small class="woocommerce-price-suffix">{{ __('home.products.price_suffix') }}</small>
+                                                                            <small class="woocommerce-price-suffix">{!! __('home.products.price_suffix') !!}</small>
                                                                         </span>
                                                                     </div>
 
@@ -739,23 +739,23 @@
                                                                             @if($article->old_price && $article->old_price > $article->price)
                                                                                 <del aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->old_price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->old_price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </del>
                                                                                 <ins aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </ins>
                                                                             @else
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                <bdi>@price($article->price)&nbsp;<span
                                                                                             class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                             </span>
                                                                             @endif
-                                                                            <small class="woocommerce-price-suffix">{{ __('home.products.price_suffix') }}</small>
+                                                                            <small class="woocommerce-price-suffix">{!! __('home.products.price_suffix') !!}</small>
                                                                         </span>
                                                                     </div>
 
@@ -861,23 +861,23 @@
                                                                             @if($article->old_price && $article->old_price > $article->price)
                                                                                 <del aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->old_price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->old_price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </del>
                                                                                 <ins aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </ins>
                                                                             @else
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                <bdi>@price($article->price)&nbsp;<span
                                                                                             class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                             </span>
                                                                             @endif
-                                                                            <small class="woocommerce-price-suffix">{{ __('home.products.price_suffix') }}</small>
+                                                                            <small class="woocommerce-price-suffix">{!! __('home.products.price_suffix') !!}</small>
                                                                         </span>
                                                                     </div>
 
@@ -983,23 +983,23 @@
                                                                             @if($article->old_price && $article->old_price > $article->price)
                                                                                 <del aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->old_price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->old_price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </del>
                                                                                 <ins aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </ins>
                                                                             @else
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                <bdi>@price($article->price)&nbsp;<span
                                                                                             class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                             </span>
                                                                             @endif
-                                                                            <small class="woocommerce-price-suffix">{{ __('home.products.price_suffix') }}</small>
+                                                                            <small class="woocommerce-price-suffix">{!! __('home.products.price_suffix') !!}</small>
                                                                         </span>
                                                                     </div>
 
@@ -1105,23 +1105,23 @@
                                                                             @if($article->old_price && $article->old_price > $article->price)
                                                                                 <del aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->old_price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->old_price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </del>
                                                                                 <ins aria-hidden="true">
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                    <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                    <bdi>@price($article->price)&nbsp;<span
                                                                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                                 </span>
                                                                             </ins>
                                                                             @else
                                                                                 <span class="woocommerce-Price-amount amount">
-                                                                                <bdi>{{ number_format($article->price, 2, '.', ',') }}&nbsp;<span
+                                                                                <bdi>@price($article->price)&nbsp;<span
                                                                                             class="woocommerce-Price-currencySymbol">€</span></bdi>
                                                                             </span>
                                                                             @endif
-                                                                            <small class="woocommerce-price-suffix">{{ __('home.products.price_suffix') }}</small>
+                                                                            <small class="woocommerce-price-suffix">{!! __('home.products.price_suffix') !!}</small>
                                                                         </span>
                                                                     </div>
 

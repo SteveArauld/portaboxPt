@@ -51,6 +51,13 @@ class AppServiceProvider extends ServiceProvider
             'categoryUrl',
             fn (string $expression) => "<?php echo \\App\\Models\\Category::urlFor({$expression}); ?>"
         );
+
+        // @price($article->price) -> « 7,840.00 » partout, « 7.840,00 » en
+        // allemand. Le format des autres langues est inchangé.
+        Blade::directive(
+            'price',
+            fn (string $expression) => "<?php echo \\App\\Support\\Price::format({$expression}); ?>"
+        );
     }
 
     /**

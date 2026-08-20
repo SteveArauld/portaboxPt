@@ -14,6 +14,8 @@
             cartUrl: d.cartUrl || '/carrello',
             checkoutUrl: d.checkoutUrl || '/cassa',
             currency: d.currency || '€',
+            decimal: d.decimal || '.',
+            thousands: d.thousands || ',',
             emptyText: d.emptyText || 'Votre panier est vide.',
             addedText: d.addedText || 'Produit ajouté au panier'
         };
@@ -36,8 +38,17 @@
     function formatPrice(n) {
         var cfg = getConfig();
         var num = Number(n) || 0;
-        var formatted = num.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-        return formatted + ' ' + cfg.currency;
+
+        // Séparateurs fournis par le serveur (data-decimal / data-thousands)
+        // pour que le panier formate comme le rendu Blade. L'allemand attend
+        // 7.840,00 ; les autres langues gardent 7,840.00.
+        var decimal = cfg.decimal || '.';
+        var thousands = cfg.thousands || ',';
+
+        var parts = num.toFixed(2).split('.');
+        var whole = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, thousands);
+
+        return whole + decimal + parts[1] + ' ' + cfg.currency;
     }
 
     var Cart = {

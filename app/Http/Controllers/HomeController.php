@@ -480,7 +480,12 @@ public function index()
         $search2 = $request->get('search_Prin');
         $sort = $request->get('sort', 'default');
 
-        $categories = Category::orderBy('name')->get();
+        // « Não Categorizado » est une catégorie technique : elle n'a pas sa
+        // place dans un filtre public, quelle que soit la langue. Conservée
+        // en base, elle sert de rattachement par défaut aux fiches orphelines.
+        $categories = Category::orderBy('name')
+            ->where('slug->pt', '!=', 'nao-categorizado')
+            ->get();
 
         $query = Article::with(['category', 'images']);
 

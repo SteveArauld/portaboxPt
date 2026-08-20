@@ -70,11 +70,14 @@
 
                         <p>{{ __('payment.accepted_intro') }}</p>
 
+                        {{-- Une entrée vide signifie que ce marché ne propose pas ce
+                             moyen de paiement (l'allemand n'accepte pas la carte). --}}
                         <ul class="wp-block-list">
-                            <li>{{ __('payment.method1') }}</li>
-                            <li>{{ __('payment.method2') }}</li>
-                            <li>{{ __('payment.method3') }}</li>
-                            <li>{{ __('payment.method4') }}</li>
+                            @foreach (['payment.method1', 'payment.method2', 'payment.method3', 'payment.method4'] as $pbsMethodKey)
+                                @if (trim(__($pbsMethodKey)) !== '')
+                                    <li>{{ __($pbsMethodKey) }}</li>
+                                @endif
+                            @endforeach
                         </ul>
 
                         @include('front.partials.payment-methods', ['showTitle' => false])

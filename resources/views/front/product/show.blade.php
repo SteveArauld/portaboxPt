@@ -1028,34 +1028,34 @@
                                 @if ($article->old_price && $article->old_price > $article->price)
                                     <del aria-hidden="true">
                                         <span class="woocommerce-Price-amount amount">
-                                            <bdi>{{ number_format($article->old_price, 2) }}&nbsp;<span
+                                            <bdi>@price($article->old_price)&nbsp;<span
                                                     class="woocommerce-Price-currencySymbol">€</span></bdi>
                                         </span>
                                     </del>
                                     <span
-                                        class="screen-reader-text">{{ __('product.price.original', ['price' => number_format($article->old_price, 2)]) }}</span>
+                                        class="screen-reader-text">{{ __('product.price.original', ['price' => \App\Support\Price::format($article->old_price)]) }}</span>
                                     <ins aria-hidden="true">
                                         <span class="woocommerce-Price-amount amount">
-                                            <bdi>{{ number_format($article->price, 2) }}&nbsp;<span
+                                            <bdi>@price($article->price)&nbsp;<span
                                                     class="woocommerce-Price-currencySymbol">€</span></bdi>
                                         </span>
                                     </ins>
                                     <span
-                                        class="screen-reader-text">{{ __('product.price.current', ['price' => number_format($article->price, 2)]) }}</span>
+                                        class="screen-reader-text">{{ __('product.price.current', ['price' => \App\Support\Price::format($article->price)]) }}</span>
                                 @else
                                     <span class="woocommerce-Price-amount amount">
-                                        <bdi>{{ number_format($article->price, 2) }}&nbsp;<span
+                                        <bdi>@price($article->price)&nbsp;<span
                                                 class="woocommerce-Price-currencySymbol">€</span></bdi>
                                     </span>
                                 @endif
-                                <small class="woocommerce-price-suffix">{{ __('product.price.suffix') }}</small>
+                                <small class="woocommerce-price-suffix">{!! __('product.price.suffix') !!}</small>
                             </p>
 
                             @if ($article->old_price && $article->old_price > $article->price)
                                 <span class="ts-discount-number">
                                     ({{ __('product.price.save') }} <span class="number">
                                         <span class="woocommerce-Price-amount amount">
-                                            <bdi>{{ number_format($article->old_price - $article->price, 2) }}&nbsp;<span
+                                            <bdi>@price($article->old_price - $article->price)&nbsp;<span
                                                     class="woocommerce-Price-currencySymbol">€</span></bdi>
                                         </span>
                                     </span>)
@@ -1433,21 +1433,21 @@
                                                             @if ($related->old_price && $related->old_price > $related->price)
                                                                 <del aria-hidden="true">
                                                                     <span class="woocommerce-Price-amount amount">
-                                                                        <bdi>{{ number_format($related->old_price, 2) }}&nbsp;€</bdi>
+                                                                        <bdi>@price($related->old_price)&nbsp;€</bdi>
                                                                     </span>
                                                                 </del>
                                                                 <ins aria-hidden="true">
                                                                     <span class="woocommerce-Price-amount amount">
-                                                                        <bdi>{{ number_format($related->price, 2) }}&nbsp;€</bdi>
+                                                                        <bdi>@price($related->price)&nbsp;€</bdi>
                                                                     </span>
                                                                 </ins>
                                                             @else
                                                                 <span class="woocommerce-Price-amount amount">
-                                                                    <bdi>{{ number_format($related->price, 2) }}&nbsp;€</bdi>
+                                                                    <bdi>@price($related->price)&nbsp;€</bdi>
                                                                 </span>
                                                             @endif
                                                             <small
-                                                                class="woocommerce-price-suffix">{{ __('product.price.suffix') }}</small>
+                                                                class="woocommerce-price-suffix">{!! __('product.price.suffix') !!}</small>
                                                         </span>
 
                                                         @include('front.partials.cart-button', ['item' => $related])

@@ -59,6 +59,23 @@ class GoogleFeedController extends Controller
     }
 
     /**
+     * Description du canal, dans la langue du flux.
+     * Elle était figée sur « Catalogo prodotti » — de l'italien, servi y
+     * compris dans le flux portugais.
+     */
+    private function channelDescription(): string
+    {
+        return match ($this->locale) {
+            'de' => 'Produktkatalog',
+            'en' => 'Product catalogue',
+            'es' => 'Catálogo de productos',
+            'fr' => 'Catalogue de produits',
+            'it' => 'Catalogo prodotti',
+            default => 'Catálogo de produtos',
+        };
+    }
+
+    /**
      * Catégorie de repli, dans la langue du flux.
      */
     private function defaultProductType(): string
@@ -93,10 +110,13 @@ class GoogleFeedController extends Controller
         $titleNode->appendChild($this->cdata($dom, config('app.name')));
         $channel->appendChild($titleNode);
 
-        $channel->appendChild($dom->createElement('link', config('app.url')));
+        // Le lien du canal doit désigner l'accueil DANS la langue du flux :
+        // config('app.url') renverrait toujours la racine portugaise, même
+        // dans le flux allemand.
+        $channel->appendChild($dom->createElement('link', route($this->locale . '.home')));
 
         $descNode = $dom->createElement('description');
-        $descNode->appendChild($this->cdata($dom, 'Catalogo prodotti'));
+        $descNode->appendChild($this->cdata($dom, $this->channelDescription()));
         $channel->appendChild($dom->createElement('language', $this->locale));
         $channel->appendChild($descNode);
 

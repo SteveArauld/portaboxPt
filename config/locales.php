@@ -47,4 +47,62 @@ return [
 
     'fallback_chain' => ['pt', 'en', 'it'],
 
+    /*
+    |--------------------------------------------------------------------------
+    | Moyens de paiement affichés par langue
+    |--------------------------------------------------------------------------
+    |
+    | Chaque entrée : 'icon' = fichier de public/assets/images/payments/,
+    | 'label' = nom affiché dans la langue du marché. 'label' sert d'attribut
+    | alt et d'infobulle.
+    |
+    | ATTENTION : cette liste est un engagement commercial. N'y ajouter un
+    | moyen que s'il est effectivement encaissable, sous peine de tomber sous
+    | la politique « Misrepresentation » de Google Merchant Center.
+    |
+    | AUCUNE langue n'affiche Visa ni Mastercard : le site n'encaisse rien à
+    | la commande. Le client reçoit une référence Multibanco, un numéro
+    | MB WAY ou un IBAN par e-mail sous 24 h ouvrées. Afficher des logos de
+    | carte annoncerait un encaissement qui n'existe pas.
+    |
+    | Multibanco et MB WAY sont des systèmes portugais, mais ils restent
+    | utilisables depuis l'étranger (référence payable en homebanking,
+    | MB WAY par numéro portugais) : ils sont donc proposés partout, à côté
+    | du virement nommé selon l'usage local.
+    |
+    */
+
+    'payment_methods' => [
+        'pt' => [
+            ['icon' => 'multibanco', 'label' => 'Multibanco'],
+            ['icon' => 'mbway', 'label' => 'MB WAY'],
+            ['icon' => 'transferencia-bancaria', 'label' => 'Transferência bancária'],
+        ],
+        'en' => [
+            ['icon' => 'multibanco', 'label' => 'Multibanco'],
+            ['icon' => 'mbway', 'label' => 'MB WAY'],
+            ['icon' => 'transferencia-bancaria', 'label' => 'SEPA bank transfer'],
+        ],
+        'es' => [
+            ['icon' => 'multibanco', 'label' => 'Multibanco'],
+            ['icon' => 'mbway', 'label' => 'MB WAY'],
+            ['icon' => 'transferencia-bancaria', 'label' => 'Transferencia SEPA'],
+        ],
+        'fr' => [
+            ['icon' => 'multibanco', 'label' => 'Multibanco'],
+            ['icon' => 'mbway', 'label' => 'MB WAY'],
+            ['icon' => 'transferencia-bancaria', 'label' => 'Virement SEPA'],
+        ],
+        'it' => [
+            ['icon' => 'multibanco', 'label' => 'Multibanco'],
+            ['icon' => 'mbway', 'label' => 'MB WAY'],
+            ['icon' => 'transferencia-bancaria', 'label' => 'Bonifico SEPA'],
+        ],
+        'de' => [
+            ['icon' => 'multibanco', 'label' => 'Multibanco'],
+            ['icon' => 'mbway', 'label' => 'MB WAY'],
+            ['icon' => 'transferencia-bancaria', 'label' => 'Banküberweisung'],
+        ],
+    ],
+
 ];

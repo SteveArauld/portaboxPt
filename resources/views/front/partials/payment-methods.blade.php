@@ -1,13 +1,11 @@
 @php
-    // Moyens de paiement du marche portugais.
-    // Logos officiels SIBS/Ifthenpay en version blanche : ils exigent un fond sombre.
-    $pbsPayments = [
-        'multibanco'             => 'Multibanco',
-        'mbway'                  => 'MB WAY',
-        'visa'                   => 'Visa',
-        'mastercard'             => 'Mastercard',
-        'transferencia-bancaria' => __('payments.bank_transfer'),
-    ];
+    // Moyens de paiement du marché correspondant à la langue affichée :
+    // Multibanco et MB WAY au Portugal, virement nommé selon l'usage local
+    // ailleurs. La liste vit dans config/locales.php.
+    // Logos officiels SIBS en version blanche : ils exigent un fond sombre.
+    $pbsPayments = config('locales.payment_methods.' . app()->getLocale())
+        ?? config('locales.payment_methods.' . config('locales.default'), []);
+
     $showTitle = $showTitle ?? true;
     $align     = $align ?? 'left';
 @endphp
@@ -43,10 +41,10 @@
         <p class="pbs-payments-title">{{ __('payments.title') }}</p>
     @endif
     <ul class="pbs-payments-list" role="list">
-        @foreach ($pbsPayments as $slug => $label)
+        @foreach ($pbsPayments as $pbsMethod)
             <li>
-                <img src="{{ asset('assets/images/payments/' . $slug . '.svg') }}"
-                     loading="lazy" alt="{{ $label }}" title="{{ $label }}">
+                <img src="{{ asset('assets/images/payments/' . $pbsMethod['icon'] . '.svg') }}"
+                     loading="lazy" alt="{{ $pbsMethod['label'] }}" title="{{ $pbsMethod['label'] }}">
             </li>
         @endforeach
     </ul>

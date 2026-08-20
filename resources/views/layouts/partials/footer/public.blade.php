@@ -525,7 +525,6 @@
                     <option value="contentores-20-pes">{{ __('header.category.contenitori_20') }}</option>
                     <option value="contentores-40-pes">{{ __('header.category.contenitori_40') }}</option>
                     <option value="contentores-casa">{{ __('header.category.contenitori_casa') }}</option>
-                    <option value="nao-categorizado">{{ __('header.category.non_categorizzato') }}</option>
                     <option value="piscina">{{ __('header.category.piscina') }}</option>
                     <option value="sanitario">{{ __('header.category.sanitario') }}</option>
                     <option value="escritorio">{{ __('header.category.ufficio') }}</option>

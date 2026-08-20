@@ -55,14 +55,14 @@
                 @foreach ($order->items as $item)
                     <tr>
                         <td>{{ $item->name }}@if ($item->sku)<br><small style="color:#94a3b8;">{{ __('Réf.') }} {{ $item->sku }}</small>@endif</td>
-                        <td class="r">{{ number_format($item->price, 2) }} €</td>
+                        <td class="r">@price($item->price) €</td>
                         <td class="r">{{ $item->quantity }}</td>
-                        <td class="r">{{ number_format($item->line_total, 2) }} €</td>
+                        <td class="r">@price($item->line_total) €</td>
                     </tr>
                 @endforeach
                 <tr class="total-row">
                     <td colspan="3" class="r">{{ __('Total') }}</td>
-                    <td class="r">{{ number_format($order->total, 2) }} €</td>
+                    <td class="r">@price($order->total) €</td>
                 </tr>
             </tbody>
         </table>

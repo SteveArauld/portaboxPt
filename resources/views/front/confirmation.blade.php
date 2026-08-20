@@ -62,15 +62,15 @@
                             <div class="n">{{ $item->name }}</div>
                             <div class="meta">
                                 @if ($item->sku){{ __('Réf.') }} {{ $item->sku }} · @endif
-                                {{ __('Qté') }}: {{ $item->quantity }} × {{ number_format($item->price, 2) }} €
+                                {{ __('Qté') }}: {{ $item->quantity }} × @price($item->price) €
                             </div>
                         </div>
-                        <div class="lt">{{ number_format($item->line_total, 2) }} €</div>
+                        <div class="lt">@price($item->line_total) €</div>
                     </div>
                 @endforeach
                 <div class="pbs-conf-total">
                     <span>{{ __('Total') }}</span>
-                    <strong>{{ number_format($order->total, 2) }} €</strong>
+                    <strong>@price($order->total) €</strong>
                 </div>
             </div>
 

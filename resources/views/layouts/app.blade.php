@@ -600,6 +600,8 @@
      data-cart-url="{{ route('cart') }}"
      data-checkout-url="{{ route('checkout') }}"
      data-currency="€"
+     data-decimal="{{ \App\Support\Price::separators()['decimal'] }}"
+     data-thousands="{{ \App\Support\Price::separators()['thousands'] }}"
      data-empty-text="{{ __('Seu carrinho está vazio.') }}"
      data-added-text="{{ __('Produto adicionado ao carrinho') }}"></div>
 
