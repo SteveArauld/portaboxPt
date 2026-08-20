@@ -20,6 +20,9 @@ return Application::configure(basePath: dirname(__DIR__))
     ->withMiddleware(function (Middleware $middleware): void {
     $middleware->web(append: [
         \App\Http\Middleware\LanguageMiddleware::class,
+        // Placé après LanguageMiddleware : il n'agit que sur la racine « / »,
+        // et seulement pour un visiteur humain sans préférence enregistrée.
+        \App\Http\Middleware\GeoLanguageRedirect::class,
         \App\Http\Middleware\ForceHttps::class,
     ]);
     })

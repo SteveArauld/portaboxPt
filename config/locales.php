@@ -37,6 +37,29 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Langues proposées dans le sélecteur
+    |--------------------------------------------------------------------------
+    |
+    | Sous-ensemble de 'available' affiché à l'utilisateur. Les langues
+    | absentes d'ici restent pleinement fonctionnelles — routes, balises
+    | hreflang, flux Merchant — mais ne sont pas mises en avant tant que
+    | leurs traductions ne sont pas validées.
+    |
+    | Décommenter une ligne suffit à publier la langue dans le menu.
+    |
+    */
+
+    'switcher' => [
+        'pt',
+        'it',
+        'de',
+        // 'en',
+        // 'es',
+        // 'fr',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Chaîne de repli des traductions produits
     |--------------------------------------------------------------------------
     |
@@ -65,10 +88,14 @@ return [
     | MB WAY ou un IBAN par e-mail sous 24 h ouvrées. Afficher des logos de
     | carte annoncerait un encaissement qui n'existe pas.
     |
-    | Multibanco et MB WAY sont des systèmes portugais, mais ils restent
-    | utilisables depuis l'étranger (référence payable en homebanking,
-    | MB WAY par numéro portugais) : ils sont donc proposés partout, à côté
-    | du virement nommé selon l'usage local.
+    | Multibanco et MB WAY ne sont proposés QU'AU PORTUGAL. Ce sont des
+    | instruments nationaux : une référence Multibanco se règle dans un
+    | homebanking portugais, et MB WAY exige un numéro de téléphone associé
+    | à une banque portugaise. Les afficher à un client italien ou allemand
+    | lui promettrait un moyen de paiement qu'il ne peut pas utiliser.
+    |
+    | Hors du Portugal, le virement SEPA est le seul moyen réellement
+    | disponible ; il est nommé selon l'usage de chaque marché.
     |
     */
 
@@ -79,29 +106,19 @@ return [
             ['icon' => 'transferencia-bancaria', 'label' => 'Transferência bancária'],
         ],
         'en' => [
-            ['icon' => 'multibanco', 'label' => 'Multibanco'],
-            ['icon' => 'mbway', 'label' => 'MB WAY'],
             ['icon' => 'transferencia-bancaria', 'label' => 'SEPA bank transfer'],
         ],
         'es' => [
-            ['icon' => 'multibanco', 'label' => 'Multibanco'],
-            ['icon' => 'mbway', 'label' => 'MB WAY'],
             ['icon' => 'transferencia-bancaria', 'label' => 'Transferencia SEPA'],
         ],
         'fr' => [
-            ['icon' => 'multibanco', 'label' => 'Multibanco'],
-            ['icon' => 'mbway', 'label' => 'MB WAY'],
             ['icon' => 'transferencia-bancaria', 'label' => 'Virement SEPA'],
         ],
         'it' => [
-            ['icon' => 'multibanco', 'label' => 'Multibanco'],
-            ['icon' => 'mbway', 'label' => 'MB WAY'],
             ['icon' => 'transferencia-bancaria', 'label' => 'Bonifico SEPA'],
         ],
         'de' => [
-            ['icon' => 'multibanco', 'label' => 'Multibanco'],
-            ['icon' => 'mbway', 'label' => 'MB WAY'],
-            ['icon' => 'transferencia-bancaria', 'label' => 'Banküberweisung'],
+            ['icon' => 'transferencia-bancaria', 'label' => 'SEPA-Überweisung'],
         ],
     ],
 

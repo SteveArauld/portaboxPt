@@ -2,15 +2,13 @@
     <div class="overlay"></div>
     <div class="header-top visible-md hidden-xs">
         <div class="container">
-            <div class="header-right" style="display:flex; align-items:center; gap:18px; justify-content:flex-end;">
+            <div class="header-right">
                 <div class="hotline">
                     <a href="mailto:{{ __('contato.email_address') }}">
                         <span>{{ __('header.email') }}</span>
                         <span>{{ __('contato.email_address') }}</span>
                     </a>
                 </div>
-
-                @include('layouts.partials.language-switcher')
             </div>
         </div>
     </div>
@@ -169,6 +167,12 @@
                 </div>
 
                 <div class="header-left">
+                    {{-- Sélecteur de langue : placé ici, dans le bandeau fixe,
+                         il reste accessible à toutes les tailles d'écran.
+                         Le bandeau supérieur qui l'accueillait auparavant porte
+                         « visible-md hidden-xs » : il disparaissait sur mobile. --}}
+                    @include('layouts.partials.language-switcher')
+
                     <!-- Bouton panier -->
                     <button type="button" class="pbs-cart-toggle" data-cart-toggle aria-label="{{ __('Carrinho') }}">
                         <i class="fas fa-shopping-cart"></i>

@@ -1,7 +1,22 @@
 @php
-    $pbsLocales = config('locales.available');
+    // Seules les langues listées dans locales.switcher sont proposées.
+    // Les autres restent accessibles par leur URL et référencées en hreflang.
+    $pbsAll     = config('locales.available');
     $pbsCurrent = app()->getLocale();
-    $pbsActive  = $pbsLocales[$pbsCurrent] ?? reset($pbsLocales);
+
+    $pbsLocales = array_intersect_key(
+        $pbsAll,
+        array_flip(config('locales.switcher', array_keys($pbsAll)))
+    );
+
+    // La langue affichée doit figurer dans le menu, même si elle n'est pas
+    // encore publiée : sinon le bouton annoncerait une autre langue que
+    // celle de la page.
+    if (!isset($pbsLocales[$pbsCurrent]) && isset($pbsAll[$pbsCurrent])) {
+        $pbsLocales = [$pbsCurrent => $pbsAll[$pbsCurrent]] + $pbsLocales;
+    }
+
+    $pbsActive = $pbsLocales[$pbsCurrent] ?? reset($pbsLocales);
 @endphp
 
 @once
@@ -17,7 +32,9 @@
         .pbs-lang-toggle img { width: 20px; height: 14px; object-fit: cover; border-radius: 2px; display: block; }
         .pbs-lang-toggle .pbs-lang-caret { font-size: 10px; opacity: .6; }
         .pbs-lang-menu {
-            position: absolute; top: calc(100% + 6px); inset-inline-end: 0; z-index: 999;
+            /* Le bandeau de navigation est en position: fixed avec z-index 1000 :
+               le menu doit passer au-dessus, sinon il est masqué à l'ouverture. */
+            position: absolute; top: calc(100% + 6px); inset-inline-end: 0; z-index: 1002;
             min-width: 168px; margin: 0; padding: 6px; list-style: none;
             background: #fff; border: 1px solid #eef0f3; border-radius: 9px;
             box-shadow: 0 8px 24px rgba(15, 23, 42, .12);
@@ -32,26 +49,33 @@
         .pbs-lang-menu a:hover { background: #f8fafc; color: #c6213b; }
         .pbs-lang-menu a[aria-current="true"] { font-weight: 700; background: #f1f5f9; }
         .pbs-lang-menu img { width: 20px; height: 14px; object-fit: cover; border-radius: 2px; display: block; }
+
+        /* Sur petit écran, le drapeau suffit : le nom complet de la langue
+           pousserait le bouton panier hors du bandeau. */
+        @media (max-width: 767px) {
+            .pbs-lang-toggle { padding: 6px 8px; gap: 5px; }
+            .pbs-lang-toggle .pbs-lang-name { display: none; }
+        }
     </style>
 @endonce
 
 <div class="pbs-lang" data-pbs-lang>
     <button type="button" class="pbs-lang-toggle" aria-haspopup="true" aria-expanded="false">
         <img src="{{ asset('assets/images/flags/' . $pbsActive['flag']) }}" alt="" width="20" height="14">
-        <span>{{ $pbsActive['name'] }}</span>
+        <span class="pbs-lang-name">{{ $pbsActive['name'] }}</span>
         <span class="pbs-lang-caret" aria-hidden="true">▼</span>
     </button>
 
     <ul class="pbs-lang-menu" role="list">
         @foreach ($pbsLocales as $code => $meta)
-            <li>
+            
                 <a href="{{ route('lang.switch', $code) }}"
                    hreflang="{{ $meta['hreflang'] }}"
                    @if ($code === $pbsCurrent) aria-current="true" @endif>
                     <img src="{{ asset('assets/images/flags/' . $meta['flag']) }}" alt="" width="20" height="14">
                     <span>{{ $meta['name'] }}</span>
                 </a>
-            </li>
+            
         @endforeach
     </ul>
 </div>
